@@ -32,3 +32,6 @@ terraform.rc
 .venv/
 __pycache__/
 .mypy_cache/
+
+# Project specific
+.generate/service_list.json
