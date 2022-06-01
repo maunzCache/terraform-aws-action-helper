@@ -1,5 +1,20 @@
 #!/usr/bin/env python3
 
+#########
+# Usage #
+#########
+# Get/Cache information
+# ./generate_module.py --docs-page list_amazonec2
+#
+# Generate submodule
+# ./generate_module.py --docs-page list_amazonec2 --generate
+
+#########
+# TODOs #
+#########
+# Add unit tests
+# Go through all TODOs in this file an resolve them
+
 import argparse
 import json
 import urllib.request
@@ -125,7 +140,14 @@ def generate_actions_from_service(service_docs_page_name: str) -> Tuple[str, dic
         if access_level_data in html_access_levels:
             # Actions are links. Get the value from the second link in the td
             # Its to dangerous to parse the id of the first link
-            html_text = row_data[0].findall('a')[1].text
+            try:
+                html_text = row_data[0].findall('a')[1].text
+            except Exception as e:
+                print(
+                    f'Action has to link to API. Use fallback. Original error:{e}')
+                # TODO: Sanitizes strings that don't have API links. I don't know how to to this better currently.
+                html_text = row_data[0].text_content().replace(
+                    '\n', '').strip()
             actions[access_level_data].append(html_text)
 
     return (service_name, actions, service_prefix)
@@ -180,10 +202,6 @@ def main(args: argparse.Namespace):
 if __name__ == '__main__':
     # TODO: Implement simple arg parse for only doing one of the things
     # Or all at once
-
-    # Usage:
-    # ./generate_module.py --docs-page list_amazonec2
-    # ./generate_module.py --docs-page list_amazonec2 --generate
 
     parser = argparse.ArgumentParser(description='TODO: Write me please')
     parser.add_argument('--docs-page', type=str, help='TODO: Write me please')

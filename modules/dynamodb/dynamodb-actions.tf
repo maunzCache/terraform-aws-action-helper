@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/{{ cookiecutter.service_docs_page_name }}.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazondynamodb.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,13 +57,77 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "{{cookiecutter.service_prefix}}"
+  prefix = "dynamodb"
 
   access_level = {
-    write                  = {{ cookiecutter.service_actions.write | jsonify }}
-    permissions_management = {{ cookiecutter.service_actions.permissions_management | jsonify }}
-    read                   = {{ cookiecutter.service_actions.read | jsonify }}
-    list                   = {{ cookiecutter.service_actions.list | jsonify }}
-    tagging                = {{ cookiecutter.service_actions.tagging | jsonify }}
+    write                  = [
+    "BatchWriteItem",
+    "CreateBackup",
+    "CreateGlobalTable",
+    "CreateTable",
+    "CreateTableReplica",
+    "DeleteBackup",
+    "DeleteItem",
+    "DeleteTable",
+    "DeleteTableReplica",
+    "DisableKinesisStreamingDestination",
+    "EnableKinesisStreamingDestination",
+    "ExportTableToPointInTime",
+    "PartiQLDelete",
+    "PartiQLInsert",
+    "PartiQLUpdate",
+    "PurchaseReservedCapacityOfferings",
+    "PutItem",
+    "RestoreTableFromAwsBackup",
+    "RestoreTableFromBackup",
+    "RestoreTableToPointInTime",
+    "StartAwsBackupJob",
+    "UpdateContinuousBackups",
+    "UpdateContributorInsights",
+    "UpdateGlobalTable",
+    "UpdateGlobalTableSettings",
+    "UpdateItem",
+    "UpdateTable",
+    "UpdateTableReplicaAutoScaling",
+    "UpdateTimeToLive"
+]
+    permissions_management = []
+    read                   = [
+    "BatchGetItem",
+    "ConditionCheckItem",
+    "DescribeBackup",
+    "DescribeContinuousBackups",
+    "DescribeContributorInsights",
+    "DescribeExport",
+    "DescribeGlobalTable",
+    "DescribeGlobalTableSettings",
+    "DescribeKinesisStreamingDestination",
+    "DescribeLimits",
+    "DescribeReservedCapacity",
+    "DescribeReservedCapacityOfferings",
+    "DescribeStream",
+    "DescribeTable",
+    "DescribeTableReplicaAutoScaling",
+    "DescribeTimeToLive",
+    "GetItem",
+    "GetRecords",
+    "GetShardIterator",
+    "ListStreams",
+    "ListTagsOfResource",
+    "PartiQLSelect",
+    "Query",
+    "Scan"
+]
+    list                   = [
+    "ListBackups",
+    "ListContributorInsights",
+    "ListExports",
+    "ListGlobalTables",
+    "ListTables"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }
