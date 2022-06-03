@@ -1,0 +1,25 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.2.0
+    hooks:
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+  - repo: local
+    hooks:
+      - &tfdocs
+        id: terraform-docs
+        name: terraform-docs
+        language: docker_image
+        entry: quay.io/terraform-docs/terraform-docs:latest
+        pass_filenames: false
+        args:
+          - ./
+      - <<: *tfdocs
+        args:
+          - ./modules/dynamodb
+      - <<: *tfdocs
+        args:
+          - ./modules/ec2
+      - <<: *tfdocs
+        args:
+          - ./modules/iam

@@ -385,7 +385,35 @@ If you find and bugs, have recommendations or want to add/update a module, feel 
 
 I prefer test driven development as well as clean code, so if you need to update any code, please try to stick to the current code style and provide testing.
 
-<!-- Generated tf-docs code -->
+<!-- BEGIN_TF_DOCS -->
+## Providers
+
+No providers.
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| filter\_actions | Whether the actions strings should be filtered by substrings defined in filtering. | `bool` | `false` | no |
+| filtering | Allows to filter by substrings if filter\_actions is true. If no value is given (empty string), no filtering will be done. | ```object({ starts_with = string contains = string ends_with = string })``` | ```{ "contains": "", "ends_with": "", "starts_with": "" }``` | no |
+| generate\_services | List of submodules to use for action list generation. | `list(string)` | ```[ "dynamodb", "ec2", "iam" ]``` | no |
+| minify\_regex | Expression by which the aciton name is filtered. Add capturing groups for potential replacements. | `string` | `"/([A-Z][^A-Z]+).+/"` | no |
+| minify\_replacement | Expression which represents the replacement value for the match of the minify\_regex. | `string` | `"$1*"` | no |
+| minify\_strings | Whether to summarize actions by a regular expression or not. | `bool` | `true` | no |
+| use\_prefix | Whether to include the service prefix in the action string e. g. iam:TagResource (if true) or TagResource (if false) | `bool` | `true` | no |
+
+## Modules
+
+| Name | Source | Version |
+|------|--------|---------|
+| dynamodb | ./modules/dynamodb | n/a |
+| ec2 | ./modules/ec2 | n/a |
+| iam | ./modules/iam | n/a |
+
+## Resources
+
+No resources.
+<!-- END_TF_DOCS -->
 
 ## License
 
