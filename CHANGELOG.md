@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.0] - 2022-06-03
+
 ### Added
 
 - Initial project setup.
@@ -14,3 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Implemented the following features for the submodules:
   - Filtering of action names
   - Minifying of action names
+
+[Unreleased]: https://github.com/maunzCache/aws-action-helper/compare/v1.0.0...HEAD
+<!-- [1.0.1]: https://github.com/maunzCache/aws-action-helper/compare/v1.0.0...v1.0.1 -->
+[v1.0.0]: https://github.com/maunzCache/aws-action-helper/releases/tag/v1.0.0
