@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
 
-#########
-# Usage #
-#########
-# Get/Cache information
-# ./generate_module.py --docs-page list_amazonec2
-#
-# Generate submodule
-# ./generate_module.py --docs-page list_amazonec2 --generate
+"""
+General information
+###################
+This script is volatile and will fail if AWS changes the layout of their documenation.
+Maybe there will be some kind of API or other source of truth for this kind of information,
+Making everything here obsolete, but it was fun while it lasted.
 
-#########
-# TODOs #
-#########
-# Add unit tests
-# Go through all TODOs in this file an resolve them
+Usage
+#####
+Get/Cache information
+./generate_module.py --docs-page list_amazonec2
+
+Generate submodule
+./generate_module.py --docs-page list_amazonec2 --generate
+"""
 
 import argparse
 import json
@@ -24,20 +25,18 @@ from typing import Tuple
 from cookiecutter.main import cookiecutter
 from lxml import html
 
+service_list_cache_name = 'service_list.json'
+
 aws_docs_base_url = 'https://docs.aws.amazon.com'
 aws_docs_api_path = 'service-authorization/latest/reference'
-# TODO: Use string helper method for concatination
 aws_docs_url = f'{aws_docs_base_url}/{aws_docs_api_path}'
 
-# Maybe an enum
 html_access_levels = ['write', 'list', 'read',
                       'tagging', 'permissions_management']
 
 
 def generate_service_list_from_html() -> dict:
-    # TODO: Create local cache
-    # We are lucky to have an "API" here.
-    # Otherwise it would be bad because it uses some angular/react style lib for loading
+    # File containing the document structure of the service documentation
     doc_url = f'{aws_docs_url}/toc-contents.json'
 
     with urllib.request.urlopen(doc_url) as response:
@@ -49,15 +48,17 @@ def generate_service_list_from_html() -> dict:
         json_content = json.loads(json_string)
         raw_service_page_list = json_content['contents'][0]['contents'][0]['contents']
 
+        # Iterate through all navigation items
         for raw_entry in raw_service_page_list:
             # TODO: Consider leaving the .html so that is more flexibel in the future
-            # However, requires to be passed to all submethods
             link_name = raw_entry['href'].replace('.html', '')
 
+            # Warn if a service contains duplicates
+            # TODO: Investigate if this is an issue
             if link_name in service_dict.keys():
                 print(f'Found duplicate: {link_name}')
 
-            # Value should be the prefix/service name
+            # Set empty value for the cache
             service_dict[link_name] = ''
     except Exception as e:
         # TODO: Lets make this better later
@@ -69,9 +70,9 @@ def generate_service_list_from_html() -> dict:
 
 
 def write_service_list_cache(service_dict: dict):
-    # TODO: May override existing service names
     try:
-        cache_file = Path('service_list.json')
+        # Note: Will be written where script is executed
+        cache_file = Path(service_list_cache_name)
         cache_file.write_text(json.dumps(service_dict, indent=2), 'utf-8')
     except Exception as e:
         # TODO: Lets make this better later
@@ -80,7 +81,7 @@ def write_service_list_cache(service_dict: dict):
 
 def load_service_list_cache() -> dict:
     service_list = {}
-    cache_file = Path('service_list.json')
+    cache_file = Path(service_list_cache_name)
     if cache_file.exists():
         try:
             service_list_json = cache_file.read_text('utf-8')
@@ -93,7 +94,7 @@ def load_service_list_cache() -> dict:
 
 
 def generate_actions_from_service(service_docs_page_name: str) -> Tuple[str, dict, str]:
-    # TODO: Create local cache
+    # TODO: Create local cache for each HTML file
     doc_url = f'{aws_docs_url}/{service_docs_page_name}.html'
 
     with urllib.request.urlopen(doc_url) as response:
@@ -102,21 +103,19 @@ def generate_actions_from_service(service_docs_page_name: str) -> Tuple[str, dic
 
     html_tree = html.fromstring(html_string)
 
-    service_name_wrapper = html_tree.cssselect(
-        '#main-col-body p code.code')
+    # Note: This is volatile if the markup changes
+    service_name_wrapper = html_tree.cssselect('#main-col-body p code.code')
 
-    # Assume first code tag contains the prefix name
-    # TODO: Ensure that parent contains (service prefix: {{ THE_NAME }})
+    # Assume first 'code' tag contains the prefix name
     service_prefix = service_name_wrapper[0].text
-    # TODO: For now assume prefix and service name match
     service_name = service_prefix
 
-    # Assumes that the first table is always the action table
+    # Assumes that the first 'table' tag is always the action table
     # document.getElementById('main-col-body').getElementsByClassName('table-contents')[0].getElementsByTagName('table')
     action_table = html_tree.cssselect(
         '#main-col-body .table-contents table')[0]
 
-    # table head
+    # Table head
     # <th>Actions</th>
     # <th>Description</th>
     # <th>Access level</th>
@@ -139,12 +138,12 @@ def generate_actions_from_service(service_docs_page_name: str) -> Tuple[str, dic
         access_level_data = raw_access_data.lower().replace(' ', '_')
         if access_level_data in html_access_levels:
             # Actions are links. Get the value from the second link in the td
-            # Its to dangerous to parse the id of the first link
+            # Its to volatile to parse the id of the first link
             try:
                 html_text = row_data[0].findall('a')[1].text
             except Exception as e:
                 print(
-                    f'Action has to link to API. Use fallback. Original error:{e}')
+                    f'Action has link to API. Use fallback. Original error:{e}')
                 # TODO: Sanitizes strings that don't have API links. I don't know how to to this better currently.
                 html_text = row_data[0].text_content().replace(
                     '\n', '').strip()
@@ -166,19 +165,6 @@ def generate_from_cookiecutter(service_name: str, service_docs_page_name: str, s
 
 
 def main(args: argparse.Namespace):
-    # Notice: The script below is volatile and will fail if AWS changes the layout
-    # Maybe there will be some kind of API or other source of truth for this kind of information
-    # Making everything here obsolete
-    # But it was fun while it last
-
-    # Implement:
-    # For each page, look for the service prefix hardcoded in (service prefix: {{ THE_NAME }})
-    # Map the value to the page or vice-versa. The service prefix will be the service name
-    # Save this information once, only fetch on demand
-    #
-    # For cookicutter:
-    # Note: Beware of special cases! e.g. (permission only) added as suffix or empty tables or more than one word permissions
-
     service_list = load_service_list_cache()
     if len(service_list) == 0:
         service_list = generate_service_list_from_html()
@@ -191,7 +177,7 @@ def main(args: argparse.Namespace):
         service_list[docs_page_name] = service_name
         write_service_list_cache(service_list)
     else:
-        print('Docs page does not exist')
+        print('Docs page does not exist.')
         exit(0)
 
     if args.generate:
@@ -200,16 +186,15 @@ def main(args: argparse.Namespace):
 
 
 if __name__ == '__main__':
-    # TODO: Implement simple arg parse for only doing one of the things
-    # Or all at once
-
-    parser = argparse.ArgumentParser(description='TODO: Write me please')
-    parser.add_argument('--docs-page', type=str, help='TODO: Write me please')
-    # TODO: Below not implemented yet. Should only work if cache has been created or force cache creation
-    parser.add_argument('--service_name', type=str,
-                        help='TODO: Write me please')
+    parser = argparse.ArgumentParser(
+        description='Generate submodules based on the AWS service documentation page. Does only cache information by default.')
+    parser.add_argument('--docs-page', type=str,
+                        help='Filename of the service without the file type e.g. list_amazonec2')
+    # TODO: Implement
+    # parser.add_argument('--service_name', type=str,
+    #                     help='TODO: Write me please')
     parser.add_argument('--generate', action='store_true',
-                        help='TODO: Write me please')
+                        help='Use this flag to generate the module.')
 
     args = parser.parse_args()
 
