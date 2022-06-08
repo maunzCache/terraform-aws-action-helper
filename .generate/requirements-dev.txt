@@ -2,3 +2,4 @@ autopep8
 mypy
 pycodestyle
 pytest
+pytest-cov

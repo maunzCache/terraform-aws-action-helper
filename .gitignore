@@ -32,6 +32,9 @@ terraform.rc
 .venv/
 __pycache__/
 .mypy_cache/
+.pytest_cache/
+.coverage
+coverage.xml
 
 # Project specific
 .generate/service_list.json

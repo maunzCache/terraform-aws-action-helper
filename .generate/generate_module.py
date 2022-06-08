@@ -38,10 +38,7 @@ html_access_levels = ['write', 'list', 'read',
 def generate_service_list_from_html() -> dict:
     # File containing the document structure of the service documentation
     doc_url = f'{aws_docs_url}/toc-contents.json'
-
-    with urllib.request.urlopen(doc_url) as response:
-        response_bytes = response.read()
-        json_string = response_bytes.decode('utf-8')
+    json_string = get_file_content_from_url(doc_url)
 
     service_dict: dict = {}
     try:
@@ -67,6 +64,16 @@ def generate_service_list_from_html() -> dict:
     write_service_list_cache(service_dict)
 
     return service_dict
+
+
+def get_file_content_from_url(url: str) -> str:
+    json_string = ''
+
+    with urllib.request.urlopen(url) as response:
+        response_bytes = response.read()
+        json_string = response_bytes.decode('utf-8')
+
+    return json_string
 
 
 def write_service_list_cache(service_dict: dict):
@@ -96,11 +103,7 @@ def load_service_list_cache() -> dict:
 def generate_actions_from_service(service_docs_page_name: str) -> Tuple[str, dict, str]:
     # TODO: Create local cache for each HTML file
     doc_url = f'{aws_docs_url}/{service_docs_page_name}.html'
-
-    with urllib.request.urlopen(doc_url) as response:
-        response_bytes = response.read()
-        html_string = response_bytes.decode('utf-8')
-
+    html_string = get_file_content_from_url(doc_url)
     html_tree = html.fromstring(html_string)
 
     # Note: This is volatile if the markup changes
