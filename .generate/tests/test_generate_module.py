@@ -7,6 +7,8 @@ from generate_module import (generate_actions_from_service,
                              get_file_content_from_url, load_service_list_cache,
                              main, write_service_list_cache)
 
+# TODO: Test results can be persisted as file. This is a bug.
+
 
 @mock.patch('generate_module.get_file_content_from_url')
 def test_generate_service_list_from_html(mock_file_content):

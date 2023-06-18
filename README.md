@@ -13,7 +13,7 @@ A slightly downside is, however, that using this in a bigger project will result
 
 ## Module usage
 
-To use the module simply reference it from github. Access to the output it granted via the variable `services`. The next level is the AWS service name abbreviation, which matches the service prefix value e.g. ec2, iam, ... . The service map separates actions into one of five categories:
+To use the module simply reference it from github. Access to the output it granted via the variable `services`. The next level is the AWS service name abbreviation, which matches the service prefix value e.g. `ec2`, `iam`, ... . The service map separates actions into one of five categories:
 
 1. list
 2. permissions_management
@@ -21,7 +21,7 @@ To use the module simply reference it from github. Access to the output it grant
 4. tagging
 5. write
 
-Each of category yields a list with the action names.
+Each category yields a list with the action names.
 
 Example:
 
@@ -107,9 +107,9 @@ services = {
 
 Another included feature is the filtering of actions before creating output. Action names can be filtered by:
 
-1. **starts_with**: The actions name starts with this sting
-2. **contains**: The actions name contains this substing
-3. **ends_with**: The actions name end with this sting
+1. **starts_with**: The actions name starts with this string
+2. **contains**: The actions name contains this substring
+3. **ends_with**: The actions name end with this string
 
 The order of evaluation matches the order of the above list. So be careful if you want to mix filters.
 
@@ -259,7 +259,7 @@ services = {
 }
 ```
 
-#### end_with
+#### ends_with
 
 Example:
 
@@ -326,7 +326,7 @@ Please note that the script is fragile in regards to getting the information. As
 
 ### Usage
 
-Ensure to install all python dependencies first
+Ensure to install all python dependencies first:
 
 ```shell
 python3 -m pip install -r requirements.txt

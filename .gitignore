@@ -35,6 +35,5 @@ __pycache__/
 .pytest_cache/
 .coverage
 coverage.xml
-
-# Project specific
-.generate/service_list.json
+*.egg-info/
+build/
