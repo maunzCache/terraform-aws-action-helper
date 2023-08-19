@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awshealthapisandnotifications.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsentityresolution.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,28 +57,33 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "health"
+  prefix = "entityresolution"
 
   access_level = {
-    write                  = []
-    permissions_management = [
-    "DisableHealthServiceAccessForOrganization",
-    "EnableHealthServiceAccessForOrganization"
+    write                  = [
+    "CreateMatchingWorkflow",
+    "CreateSchemaMapping",
+    "DeleteMatchingWorkflow",
+    "DeleteSchemaMapping",
+    "StartMatchingJob",
+    "UpdateMatchingWorkflow"
 ]
+    permissions_management = []
     read                   = [
-    "DescribeAffectedAccountsForOrganization",
-    "DescribeAffectedEntities",
-    "DescribeAffectedEntitiesForOrganization",
-    "DescribeEntityAggregates",
-    "DescribeEventAggregates",
-    "DescribeEventDetails",
-    "DescribeEventDetailsForOrganization",
-    "DescribeEventTypes",
-    "DescribeEvents",
-    "DescribeEventsForOrganization",
-    "DescribeHealthServiceStatusForOrganization"
+    "GetMatchId",
+    "GetMatchingJob",
+    "GetMatchingWorkflow",
+    "GetSchemaMapping",
+    "ListTagsForResource"
 ]
-    list                   = []
-    tagging                = []
+    list                   = [
+    "ListMatchingJobs",
+    "ListMatchingWorkflows",
+    "ListSchemaMappings"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

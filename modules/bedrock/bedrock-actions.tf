@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awshealthapisandnotifications.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonbedrock.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,28 +57,50 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "health"
+  prefix = "bedrock"
 
   access_level = {
-    write                  = []
-    permissions_management = [
-    "DisableHealthServiceAccessForOrganization",
-    "EnableHealthServiceAccessForOrganization"
+    write                  = [
+    "CreateAgent",
+    "CreateAgentActionGroup",
+    "CreateAgentAlias",
+    "CreateAgentDraftSnapshot",
+    "CreateModelCustomizationJob",
+    "DeleteCustomModel",
+    "DeletePrompt",
+    "InvokeAgent",
+    "InvokeModel",
+    "InvokeModelWithResponseStream",
+    "StopModelCustomizationJob",
+    "UpdateAgent",
+    "UpdateAgentActionGroup",
+    "UpdateAgentAlias",
+    "UpdatePrompt"
 ]
+    permissions_management = []
     read                   = [
-    "DescribeAffectedAccountsForOrganization",
-    "DescribeAffectedEntities",
-    "DescribeAffectedEntitiesForOrganization",
-    "DescribeEntityAggregates",
-    "DescribeEventAggregates",
-    "DescribeEventDetails",
-    "DescribeEventDetailsForOrganization",
-    "DescribeEventTypes",
-    "DescribeEvents",
-    "DescribeEventsForOrganization",
-    "DescribeHealthServiceStatusForOrganization"
+    "GetAgent",
+    "GetAgentActionGroup",
+    "GetAgentAlias",
+    "GetAgentVersion",
+    "GetCustomModel",
+    "GetModelCustomizationJob",
+    "GetPrompt"
 ]
-    list                   = []
-    tagging                = []
+    list                   = [
+    "ListAgentActionGroups",
+    "ListAgentAliases",
+    "ListAgentVersions",
+    "ListAgents",
+    "ListCustomModels",
+    "ListFoundationModels",
+    "ListModelCustomizationJobs",
+    "ListPrompts",
+    "ListTagsForResource"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

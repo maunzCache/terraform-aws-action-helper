@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awshealthapisandnotifications.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awshealthimaging.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,28 +57,35 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "health"
+  prefix = "medical-imaging"
 
   access_level = {
-    write                  = []
-    permissions_management = [
-    "DisableHealthServiceAccessForOrganization",
-    "EnableHealthServiceAccessForOrganization"
+    write                  = [
+    "CopyImageSet",
+    "CreateDatastore",
+    "DeleteDatastore",
+    "DeleteImageSet",
+    "StartDICOMImportJob",
+    "UpdateImageSetMetadata"
 ]
+    permissions_management = []
     read                   = [
-    "DescribeAffectedAccountsForOrganization",
-    "DescribeAffectedEntities",
-    "DescribeAffectedEntitiesForOrganization",
-    "DescribeEntityAggregates",
-    "DescribeEventAggregates",
-    "DescribeEventDetails",
-    "DescribeEventDetailsForOrganization",
-    "DescribeEventTypes",
-    "DescribeEvents",
-    "DescribeEventsForOrganization",
-    "DescribeHealthServiceStatusForOrganization"
+    "GetDICOMImportJob",
+    "GetDatastore",
+    "GetImageFrame",
+    "GetImageSet",
+    "GetImageSetMetadata",
+    "SearchImageSets"
 ]
-    list                   = []
-    tagging                = []
+    list                   = [
+    "ListDICOMImportJobs",
+    "ListDatastores",
+    "ListImageSetVersions",
+    "ListTagsForResource"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

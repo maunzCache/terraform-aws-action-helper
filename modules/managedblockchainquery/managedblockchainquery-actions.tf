@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awshealthapisandnotifications.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmanagedblockchainquery.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,28 +57,21 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "health"
+  prefix = "managedblockchain-query"
 
   access_level = {
     write                  = []
-    permissions_management = [
-    "DisableHealthServiceAccessForOrganization",
-    "EnableHealthServiceAccessForOrganization"
-]
+    permissions_management = []
     read                   = [
-    "DescribeAffectedAccountsForOrganization",
-    "DescribeAffectedEntities",
-    "DescribeAffectedEntitiesForOrganization",
-    "DescribeEntityAggregates",
-    "DescribeEventAggregates",
-    "DescribeEventDetails",
-    "DescribeEventDetailsForOrganization",
-    "DescribeEventTypes",
-    "DescribeEvents",
-    "DescribeEventsForOrganization",
-    "DescribeHealthServiceStatusForOrganization"
+    "BatchGetTokenBalance",
+    "GetTokenBalance",
+    "GetTransaction"
 ]
-    list                   = []
+    list                   = [
+    "ListTokenBalances",
+    "ListTransactionEvents",
+    "ListTransactions"
+]
     tagging                = []
   }
 }

@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awshealthapisandnotifications.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awspaymentcryptography.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,28 +57,48 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "health"
+  prefix = "payment-cryptography"
 
   access_level = {
-    write                  = []
-    permissions_management = [
-    "DisableHealthServiceAccessForOrganization",
-    "EnableHealthServiceAccessForOrganization"
+    write                  = [
+    "CreateAlias",
+    "CreateKey",
+    "DecryptData",
+    "DeleteAlias",
+    "DeleteKey",
+    "EncryptData",
+    "ExportKey",
+    "GenerateCardValidationData",
+    "GenerateMac",
+    "GeneratePinData",
+    "ImportKey",
+    "ReEncryptData",
+    "RestoreKey",
+    "StartKeyUsage",
+    "StopKeyUsage",
+    "TranslatePinData",
+    "UpdateAlias",
+    "VerifyAuthRequestCryptogram",
+    "VerifyCardValidationData",
+    "VerifyMac",
+    "VerifyPinData"
 ]
+    permissions_management = []
     read                   = [
-    "DescribeAffectedAccountsForOrganization",
-    "DescribeAffectedEntities",
-    "DescribeAffectedEntitiesForOrganization",
-    "DescribeEntityAggregates",
-    "DescribeEventAggregates",
-    "DescribeEventDetails",
-    "DescribeEventDetailsForOrganization",
-    "DescribeEventTypes",
-    "DescribeEvents",
-    "DescribeEventsForOrganization",
-    "DescribeHealthServiceStatusForOrganization"
+    "GetAlias",
+    "GetKey",
+    "GetParametersForExport",
+    "GetParametersForImport",
+    "GetPublicKeyCertificate",
+    "ListTagsForResource"
 ]
-    list                   = []
-    tagging                = []
+    list                   = [
+    "ListAliases",
+    "ListKeys"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

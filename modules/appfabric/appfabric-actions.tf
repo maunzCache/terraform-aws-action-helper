@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awshealthapisandnotifications.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsappfabric.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,28 +57,43 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "health"
+  prefix = "appfabric"
 
   access_level = {
-    write                  = []
-    permissions_management = [
-    "DisableHealthServiceAccessForOrganization",
-    "EnableHealthServiceAccessForOrganization"
+    write                  = [
+    "BatchGetUserAccessTasks",
+    "ConnectAppAuthorization",
+    "CreateAppAuthorization",
+    "CreateAppBundle",
+    "CreateIngestion",
+    "CreateIngestionDestination",
+    "DeleteAppAuthorization",
+    "DeleteAppBundle",
+    "DeleteIngestion",
+    "DeleteIngestionDestination",
+    "StartIngestion",
+    "StartUserAccessTasks",
+    "StopIngestion",
+    "UpdateAppAuthorization",
+    "UpdateIngestionDestination"
 ]
+    permissions_management = []
     read                   = [
-    "DescribeAffectedAccountsForOrganization",
-    "DescribeAffectedEntities",
-    "DescribeAffectedEntitiesForOrganization",
-    "DescribeEntityAggregates",
-    "DescribeEventAggregates",
-    "DescribeEventDetails",
-    "DescribeEventDetailsForOrganization",
-    "DescribeEventTypes",
-    "DescribeEvents",
-    "DescribeEventsForOrganization",
-    "DescribeHealthServiceStatusForOrganization"
+    "GetAppAuthorization",
+    "GetAppBundle",
+    "GetIngestion",
+    "GetIngestionDestination",
+    "ListTagsForResource"
 ]
-    list                   = []
-    tagging                = []
+    list                   = [
+    "ListAppAuthorizations",
+    "ListAppBundles",
+    "ListIngestionDestinations",
+    "ListIngestions"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awshealthapisandnotifications.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsresiliencehub.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,28 +57,71 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "health"
+  prefix = "resiliencehub"
 
   access_level = {
-    write                  = []
-    permissions_management = [
-    "DisableHealthServiceAccessForOrganization",
-    "EnableHealthServiceAccessForOrganization"
+    write                  = [
+    "AddDraftAppVersionResourceMappings",
+    "BatchUpdateRecommendationStatus",
+    "CreateApp",
+    "CreateAppVersionAppComponent",
+    "CreateAppVersionResource",
+    "CreateRecommendationTemplate",
+    "CreateResiliencyPolicy",
+    "DeleteApp",
+    "DeleteAppAssessment",
+    "DeleteAppInputSource",
+    "DeleteAppVersionAppComponent",
+    "DeleteAppVersionResource",
+    "DeleteRecommendationTemplate",
+    "DeleteResiliencyPolicy",
+    "ImportResourcesToDraftAppVersion",
+    "PublishAppVersion",
+    "PutDraftAppVersionTemplate",
+    "RemoveDraftAppVersionResourceMappings",
+    "ResolveAppVersionResources",
+    "StartAppAssessment",
+    "UpdateApp",
+    "UpdateAppVersion",
+    "UpdateAppVersionAppComponent",
+    "UpdateAppVersionResource",
+    "UpdateResiliencyPolicy"
 ]
+    permissions_management = []
     read                   = [
-    "DescribeAffectedAccountsForOrganization",
-    "DescribeAffectedEntities",
-    "DescribeAffectedEntitiesForOrganization",
-    "DescribeEntityAggregates",
-    "DescribeEventAggregates",
-    "DescribeEventDetails",
-    "DescribeEventDetailsForOrganization",
-    "DescribeEventTypes",
-    "DescribeEvents",
-    "DescribeEventsForOrganization",
-    "DescribeHealthServiceStatusForOrganization"
+    "DescribeApp",
+    "DescribeAppAssessment",
+    "DescribeAppVersion",
+    "DescribeAppVersionAppComponent",
+    "DescribeAppVersionResource",
+    "DescribeAppVersionResourcesResolutionStatus",
+    "DescribeAppVersionTemplate",
+    "DescribeDraftAppVersionResourcesImportStatus",
+    "DescribeResiliencyPolicy",
+    "ListTagsForResource"
 ]
-    list                   = []
-    tagging                = []
+    list                   = [
+    "ListAlarmRecommendations",
+    "ListAppAssessmentComplianceDrifts",
+    "ListAppAssessments",
+    "ListAppComponentCompliances",
+    "ListAppComponentRecommendations",
+    "ListAppInputSources",
+    "ListAppVersionAppComponents",
+    "ListAppVersionResourceMappings",
+    "ListAppVersionResources",
+    "ListAppVersions",
+    "ListApps",
+    "ListRecommendationTemplates",
+    "ListResiliencyPolicies",
+    "ListSopRecommendations",
+    "ListSuggestedResiliencyPolicies",
+    "ListTestRecommendations",
+    "ListUnsupportedAppVersionResources"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

@@ -47,14 +47,3 @@ variable "minify_replacement" {
   default     = "$1*"
   description = "Expression which represents the replacement value for the match of the minify_regex."
 }
-
-########################
-# Implemented services #
-########################
-# TODO: Decide if empty or all by default
-# Maybe add a variable which yields all service names from generate script
-variable "generate_services" {
-  type        = list(string)
-  default     = ["dynamodb", "ec2", "iam"]
-  description = "List of submodules to use for action list generation."
-}

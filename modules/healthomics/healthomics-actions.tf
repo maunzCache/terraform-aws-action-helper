@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awshealthapisandnotifications.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awshealthomics.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,28 +57,99 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "health"
+  prefix = "omics"
 
   access_level = {
-    write                  = []
-    permissions_management = [
-    "DisableHealthServiceAccessForOrganization",
-    "EnableHealthServiceAccessForOrganization"
+    write                  = [
+    "AbortMultipartReadSetUpload",
+    "AcceptShare",
+    "BatchDeleteReadSet",
+    "CancelAnnotationImportJob",
+    "CancelRun",
+    "CancelVariantImportJob",
+    "CompleteMultipartReadSetUpload",
+    "CreateAnnotationStore",
+    "CreateAnnotationStoreVersion",
+    "CreateMultipartReadSetUpload",
+    "CreateReferenceStore",
+    "CreateRunGroup",
+    "CreateSequenceStore",
+    "CreateShare",
+    "CreateVariantStore",
+    "CreateWorkflow",
+    "DeleteAnnotationStore",
+    "DeleteAnnotationStoreVersions",
+    "DeleteReference",
+    "DeleteReferenceStore",
+    "DeleteRun",
+    "DeleteRunGroup",
+    "DeleteSequenceStore",
+    "DeleteShare",
+    "DeleteVariantStore",
+    "DeleteWorkflow",
+    "StartAnnotationImportJob",
+    "StartReadSetActivationJob",
+    "StartReadSetExportJob",
+    "StartReadSetImportJob",
+    "StartReferenceImportJob",
+    "StartRun",
+    "StartVariantImportJob",
+    "UpdateAnnotationStore",
+    "UpdateAnnotationStoreVersion",
+    "UpdateRunGroup",
+    "UpdateVariantStore",
+    "UpdateWorkflow",
+    "UploadReadSetPart"
 ]
+    permissions_management = []
     read                   = [
-    "DescribeAffectedAccountsForOrganization",
-    "DescribeAffectedEntities",
-    "DescribeAffectedEntitiesForOrganization",
-    "DescribeEntityAggregates",
-    "DescribeEventAggregates",
-    "DescribeEventDetails",
-    "DescribeEventDetailsForOrganization",
-    "DescribeEventTypes",
-    "DescribeEvents",
-    "DescribeEventsForOrganization",
-    "DescribeHealthServiceStatusForOrganization"
+    "GetAnnotationImportJob",
+    "GetAnnotationStore",
+    "GetAnnotationStoreVersion",
+    "GetReadSet",
+    "GetReadSetActivationJob",
+    "GetReadSetExportJob",
+    "GetReadSetImportJob",
+    "GetReadSetMetadata",
+    "GetReference",
+    "GetReferenceImportJob",
+    "GetReferenceMetadata",
+    "GetReferenceStore",
+    "GetRun",
+    "GetRunGroup",
+    "GetRunTask",
+    "GetSequenceStore",
+    "GetShare",
+    "GetVariantImportJob",
+    "GetVariantStore",
+    "GetWorkflow"
 ]
-    list                   = []
-    tagging                = []
+    list                   = [
+    "ListAnnotationImportJobs",
+    "ListAnnotationStoreVersions",
+    "ListAnnotationStores",
+    "ListMultipartReadSetUploads",
+    "ListReadSetActivationJobs",
+    "ListReadSetExportJobs",
+    "ListReadSetImportJobs",
+    "ListReadSetUploadParts",
+    "ListReadSets",
+    "ListReferenceImportJobs",
+    "ListReferenceStores",
+    "ListReferences",
+    "ListRunGroups",
+    "ListRunTasks",
+    "ListRuns",
+    "ListSequenceStores",
+    "ListShares",
+    "ListTagsForResource",
+    "ListVariantImportJobs",
+    "ListVariantStores",
+    "ListWorkflows"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

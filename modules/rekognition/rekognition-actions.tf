@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsresiliencehubservice.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonrekognition.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 

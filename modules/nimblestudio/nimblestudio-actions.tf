@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonomics.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonnimblestudio.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
