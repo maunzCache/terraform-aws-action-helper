@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonkendra.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,58 +57,79 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "cleanrooms"
+  prefix = "kendra"
 
   access_level = {
     write                  = [
-    "CreateAnalysisTemplate",
-    "CreateCollaboration",
-    "CreateConfiguredTable",
-    "CreateConfiguredTableAnalysisRule",
-    "CreateConfiguredTableAssociation",
-    "CreateMembership",
-    "DeleteAnalysisTemplate",
-    "DeleteCollaboration",
-    "DeleteConfiguredTable",
-    "DeleteConfiguredTableAnalysisRule",
-    "DeleteConfiguredTableAssociation",
-    "DeleteMember",
-    "DeleteMembership",
-    "StartProtectedQuery",
-    "UpdateAnalysisTemplate",
-    "UpdateCollaboration",
-    "UpdateConfiguredTable",
-    "UpdateConfiguredTableAnalysisRule",
-    "UpdateConfiguredTableAssociation",
-    "UpdateMembership",
-    "UpdateProtectedQuery"
+    "AssociateEntitiesToExperience",
+    "AssociatePersonasToEntities",
+    "BatchDeleteDocument",
+    "BatchDeleteFeaturedResultsSet",
+    "BatchPutDocument",
+    "ClearQuerySuggestions",
+    "CreateAccessControlConfiguration",
+    "CreateDataSource",
+    "CreateExperience",
+    "CreateFaq",
+    "CreateFeaturedResultsSet",
+    "CreateIndex",
+    "CreateQuerySuggestionsBlockList",
+    "CreateThesaurus",
+    "DeleteAccessControlConfiguration",
+    "DeleteDataSource",
+    "DeleteExperience",
+    "DeleteFaq",
+    "DeleteIndex",
+    "DeletePrincipalMapping",
+    "DeleteQuerySuggestionsBlockList",
+    "DeleteThesaurus",
+    "DisassociateEntitiesFromExperience",
+    "DisassociatePersonasFromEntities",
+    "PutPrincipalMapping",
+    "StartDataSourceSyncJob",
+    "StopDataSourceSyncJob",
+    "SubmitFeedback",
+    "UpdateAccessControlConfiguration",
+    "UpdateDataSource",
+    "UpdateExperience",
+    "UpdateFeaturedResultsSet",
+    "UpdateIndex",
+    "UpdateQuerySuggestionsBlockList",
+    "UpdateQuerySuggestionsConfig",
+    "UpdateThesaurus"
 ]
     permissions_management = []
     read                   = [
-    "BatchGetCollaborationAnalysisTemplate",
-    "BatchGetSchema",
-    "GetAnalysisTemplate",
-    "GetCollaboration",
-    "GetCollaborationAnalysisTemplate",
-    "GetConfiguredTable",
-    "GetConfiguredTableAnalysisRule",
-    "GetConfiguredTableAssociation",
-    "GetMembership",
-    "GetProtectedQuery",
-    "GetSchema",
-    "GetSchemaAnalysisRule"
+    "BatchGetDocumentStatus",
+    "DescribeAccessControlConfiguration",
+    "DescribeDataSource",
+    "DescribeExperience",
+    "DescribeFaq",
+    "DescribeFeaturedResultsSet",
+    "DescribeIndex",
+    "DescribePrincipalMapping",
+    "DescribeQuerySuggestionsBlockList",
+    "DescribeQuerySuggestionsConfig",
+    "DescribeThesaurus",
+    "GetQuerySuggestions",
+    "GetSnapshots",
+    "ListTagsForResource",
+    "Query",
+    "Retrieve"
 ]
     list                   = [
-    "ListAnalysisTemplates",
-    "ListCollaborationAnalysisTemplates",
-    "ListCollaborations",
-    "ListConfiguredTableAssociations",
-    "ListConfiguredTables",
-    "ListMembers",
-    "ListMemberships",
-    "ListProtectedQueries",
-    "ListSchemas",
-    "ListTagsForResource"
+    "ListAccessControlConfigurations",
+    "ListDataSourceSyncJobs",
+    "ListDataSources",
+    "ListEntityPersonas",
+    "ListExperienceEntities",
+    "ListExperiences",
+    "ListFaqs",
+    "ListFeaturedResultsSets",
+    "ListGroupsOlderThanOrderingId",
+    "ListIndices",
+    "ListQuerySuggestionsBlockLists",
+    "ListThesauri"
 ]
     tagging                = [
     "TagResource",

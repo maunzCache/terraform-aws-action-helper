@@ -90,6 +90,7 @@ locals {
     "StopChannel",
     "StopMultiplex",
     "TransferInputDevice",
+    "UpdateAccountConfiguration",
     "UpdateChannel",
     "UpdateChannelClass",
     "UpdateInput",
@@ -101,6 +102,7 @@ locals {
 ]
     permissions_management = []
     read                   = [
+    "DescribeAccountConfiguration",
     "DescribeChannel",
     "DescribeInput",
     "DescribeInputDevice",
@@ -110,7 +112,8 @@ locals {
     "DescribeMultiplexProgram",
     "DescribeOffering",
     "DescribeReservation",
-    "DescribeSchedule"
+    "DescribeSchedule",
+    "DescribeThumbnails"
 ]
     list                   = [
     "ListChannels",

@@ -85,6 +85,7 @@ locals {
     "StartFileTransfer",
     "StartServer",
     "StopServer",
+    "TestConnection",
     "UpdateAccess",
     "UpdateAgreement",
     "UpdateCertificate",

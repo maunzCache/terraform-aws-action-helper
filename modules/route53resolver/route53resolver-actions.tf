@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53resolver.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,58 +57,82 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "cleanrooms"
+  prefix = "route53resolver"
 
   access_level = {
     write                  = [
-    "CreateAnalysisTemplate",
-    "CreateCollaboration",
-    "CreateConfiguredTable",
-    "CreateConfiguredTableAnalysisRule",
-    "CreateConfiguredTableAssociation",
-    "CreateMembership",
-    "DeleteAnalysisTemplate",
-    "DeleteCollaboration",
-    "DeleteConfiguredTable",
-    "DeleteConfiguredTableAnalysisRule",
-    "DeleteConfiguredTableAssociation",
-    "DeleteMember",
-    "DeleteMembership",
-    "StartProtectedQuery",
-    "UpdateAnalysisTemplate",
-    "UpdateCollaboration",
-    "UpdateConfiguredTable",
-    "UpdateConfiguredTableAnalysisRule",
-    "UpdateConfiguredTableAssociation",
-    "UpdateMembership",
-    "UpdateProtectedQuery"
+    "AssociateFirewallRuleGroup",
+    "AssociateResolverEndpointIpAddress",
+    "AssociateResolverQueryLogConfig",
+    "AssociateResolverRule",
+    "CreateFirewallDomainList",
+    "CreateFirewallRule",
+    "CreateFirewallRuleGroup",
+    "CreateOutpostResolver",
+    "CreateResolverEndpoint",
+    "CreateResolverQueryLogConfig",
+    "CreateResolverRule",
+    "DeleteFirewallDomainList",
+    "DeleteFirewallRule",
+    "DeleteFirewallRuleGroup",
+    "DeleteOutpostResolver",
+    "DeleteResolverEndpoint",
+    "DeleteResolverQueryLogConfig",
+    "DeleteResolverRule",
+    "DisassociateFirewallRuleGroup",
+    "DisassociateResolverEndpointIpAddress",
+    "DisassociateResolverQueryLogConfig",
+    "DisassociateResolverRule",
+    "ImportFirewallDomains",
+    "UpdateFirewallConfig",
+    "UpdateFirewallDomains",
+    "UpdateFirewallRule",
+    "UpdateFirewallRuleGroupAssociation",
+    "UpdateOutpostResolver",
+    "UpdateResolverConfig",
+    "UpdateResolverDnssecConfig",
+    "UpdateResolverEndpoint",
+    "UpdateResolverRule"
 ]
-    permissions_management = []
+    permissions_management = [
+    "PutFirewallRuleGroupPolicy",
+    "PutResolverQueryLogConfigPolicy",
+    "PutResolverRulePolicy"
+]
     read                   = [
-    "BatchGetCollaborationAnalysisTemplate",
-    "BatchGetSchema",
-    "GetAnalysisTemplate",
-    "GetCollaboration",
-    "GetCollaborationAnalysisTemplate",
-    "GetConfiguredTable",
-    "GetConfiguredTableAnalysisRule",
-    "GetConfiguredTableAssociation",
-    "GetMembership",
-    "GetProtectedQuery",
-    "GetSchema",
-    "GetSchemaAnalysisRule"
+    "GetFirewallConfig",
+    "GetFirewallDomainList",
+    "GetFirewallRuleGroup",
+    "GetFirewallRuleGroupAssociation",
+    "GetFirewallRuleGroupPolicy",
+    "GetOutpostResolver",
+    "GetResolverConfig",
+    "GetResolverDnssecConfig",
+    "GetResolverEndpoint",
+    "GetResolverQueryLogConfig",
+    "GetResolverQueryLogConfigAssociation",
+    "GetResolverQueryLogConfigPolicy",
+    "GetResolverRule",
+    "GetResolverRuleAssociation",
+    "GetResolverRulePolicy",
+    "ListTagsForResource"
 ]
     list                   = [
-    "ListAnalysisTemplates",
-    "ListCollaborationAnalysisTemplates",
-    "ListCollaborations",
-    "ListConfiguredTableAssociations",
-    "ListConfiguredTables",
-    "ListMembers",
-    "ListMemberships",
-    "ListProtectedQueries",
-    "ListSchemas",
-    "ListTagsForResource"
+    "ListFirewallConfigs",
+    "ListFirewallDomainLists",
+    "ListFirewallDomains",
+    "ListFirewallRuleGroupAssociations",
+    "ListFirewallRuleGroups",
+    "ListFirewallRules",
+    "ListOutpostResolvers",
+    "ListResolverConfigs",
+    "ListResolverDnssecConfigs",
+    "ListResolverEndpointIpAddresses",
+    "ListResolverEndpoints",
+    "ListResolverQueryLogConfigAssociations",
+    "ListResolverQueryLogConfigs",
+    "ListResolverRuleAssociations",
+    "ListResolverRules"
 ]
     tagging                = [
     "TagResource",

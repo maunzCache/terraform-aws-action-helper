@@ -72,12 +72,16 @@ locals {
     read                   = [
     "GetConsoleActionSetEnforced",
     "GetPurchaseOrder",
+    "ListTagsForResource",
     "ViewPurchaseOrders"
 ]
     list                   = [
     "ListPurchaseOrderInvoices",
     "ListPurchaseOrders"
 ]
-    tagging                = []
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

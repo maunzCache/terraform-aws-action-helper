@@ -69,6 +69,7 @@ locals {
     "DeleteTheme",
     "PutMetadataFlag",
     "ResetMetadataFlag",
+    "StartCodegenJob",
     "UpdateComponent",
     "UpdateForm",
     "UpdateTheme"
@@ -78,12 +79,14 @@ locals {
     "ExportComponents",
     "ExportForms",
     "ExportThemes",
+    "GetCodegenJob",
     "GetComponent",
     "GetForm",
     "GetMetadata",
     "GetTheme"
 ]
     list                   = [
+    "ListCodegenJobs",
     "ListComponents",
     "ListForms",
     "ListThemes"

@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonfsx.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,59 +57,60 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "cleanrooms"
+  prefix = "fsx"
 
   access_level = {
     write                  = [
-    "CreateAnalysisTemplate",
-    "CreateCollaboration",
-    "CreateConfiguredTable",
-    "CreateConfiguredTableAnalysisRule",
-    "CreateConfiguredTableAssociation",
-    "CreateMembership",
-    "DeleteAnalysisTemplate",
-    "DeleteCollaboration",
-    "DeleteConfiguredTable",
-    "DeleteConfiguredTableAnalysisRule",
-    "DeleteConfiguredTableAssociation",
-    "DeleteMember",
-    "DeleteMembership",
-    "StartProtectedQuery",
-    "UpdateAnalysisTemplate",
-    "UpdateCollaboration",
-    "UpdateConfiguredTable",
-    "UpdateConfiguredTableAnalysisRule",
-    "UpdateConfiguredTableAssociation",
-    "UpdateMembership",
-    "UpdateProtectedQuery"
+    "AssociateFileGateway",
+    "AssociateFileSystemAliases",
+    "CancelDataRepositoryTask",
+    "CopyBackup",
+    "CreateBackup",
+    "CreateDataRepositoryAssociation",
+    "CreateDataRepositoryTask",
+    "CreateFileCache",
+    "CreateFileSystem",
+    "CreateFileSystemFromBackup",
+    "CreateSnapshot",
+    "CreateStorageVirtualMachine",
+    "CreateVolume",
+    "CreateVolumeFromBackup",
+    "DeleteBackup",
+    "DeleteDataRepositoryAssociation",
+    "DeleteFileCache",
+    "DeleteFileSystem",
+    "DeleteSnapshot",
+    "DeleteStorageVirtualMachine",
+    "DeleteVolume",
+    "DisassociateFileGateway",
+    "DisassociateFileSystemAliases",
+    "ReleaseFileSystemNfsV3Locks",
+    "RestoreVolumeFromSnapshot",
+    "UpdateDataRepositoryAssociation",
+    "UpdateFileCache",
+    "UpdateFileSystem",
+    "UpdateSnapshot",
+    "UpdateStorageVirtualMachine",
+    "UpdateVolume"
 ]
-    permissions_management = []
+    permissions_management = [
+    "BypassSnaplockEnterpriseRetention",
+    "ManageBackupPrincipalAssociations"
+]
     read                   = [
-    "BatchGetCollaborationAnalysisTemplate",
-    "BatchGetSchema",
-    "GetAnalysisTemplate",
-    "GetCollaboration",
-    "GetCollaborationAnalysisTemplate",
-    "GetConfiguredTable",
-    "GetConfiguredTableAnalysisRule",
-    "GetConfiguredTableAssociation",
-    "GetMembership",
-    "GetProtectedQuery",
-    "GetSchema",
-    "GetSchemaAnalysisRule"
-]
-    list                   = [
-    "ListAnalysisTemplates",
-    "ListCollaborationAnalysisTemplates",
-    "ListCollaborations",
-    "ListConfiguredTableAssociations",
-    "ListConfiguredTables",
-    "ListMembers",
-    "ListMemberships",
-    "ListProtectedQueries",
-    "ListSchemas",
+    "DescribeAssociatedFileGateways",
+    "DescribeBackups",
+    "DescribeDataRepositoryAssociations",
+    "DescribeDataRepositoryTasks",
+    "DescribeFileCaches",
+    "DescribeFileSystemAliases",
+    "DescribeFileSystems",
+    "DescribeSnapshots",
+    "DescribeStorageVirtualMachines",
+    "DescribeVolumes",
     "ListTagsForResource"
 ]
+    list                   = []
     tagging                = [
     "TagResource",
     "UntagResource"

@@ -95,10 +95,16 @@ locals {
     null,
     null,
     null,
+    null,
+    null,
+    null,
+    null,
     null
 ]
     permissions_management = []
     read                   = [
+    null,
+    null,
     null,
     null,
     null,

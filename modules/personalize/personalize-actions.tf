@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonpersonalize.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,57 +57,84 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "cleanrooms"
+  prefix = "personalize"
 
   access_level = {
     write                  = [
-    "CreateAnalysisTemplate",
-    "CreateCollaboration",
-    "CreateConfiguredTable",
-    "CreateConfiguredTableAnalysisRule",
-    "CreateConfiguredTableAssociation",
-    "CreateMembership",
-    "DeleteAnalysisTemplate",
-    "DeleteCollaboration",
-    "DeleteConfiguredTable",
-    "DeleteConfiguredTableAnalysisRule",
-    "DeleteConfiguredTableAssociation",
-    "DeleteMember",
-    "DeleteMembership",
-    "StartProtectedQuery",
-    "UpdateAnalysisTemplate",
-    "UpdateCollaboration",
-    "UpdateConfiguredTable",
-    "UpdateConfiguredTableAnalysisRule",
-    "UpdateConfiguredTableAssociation",
-    "UpdateMembership",
-    "UpdateProtectedQuery"
+    "CreateBatchInferenceJob",
+    "CreateBatchSegmentJob",
+    "CreateCampaign",
+    "CreateDataset",
+    "CreateDatasetExportJob",
+    "CreateDatasetGroup",
+    "CreateDatasetImportJob",
+    "CreateEventTracker",
+    "CreateFilter",
+    "CreateMetricAttribution",
+    "CreateRecommender",
+    "CreateSchema",
+    "CreateSolution",
+    "CreateSolutionVersion",
+    "DeleteCampaign",
+    "DeleteDataset",
+    "DeleteDatasetGroup",
+    "DeleteEventTracker",
+    "DeleteFilter",
+    "DeleteMetricAttribution",
+    "DeleteRecommender",
+    "DeleteSchema",
+    "DeleteSolution",
+    "PutEvents",
+    "PutItems",
+    "PutUsers",
+    "StartRecommender",
+    "StopRecommender",
+    "StopSolutionVersionCreation",
+    "UpdateCampaign",
+    "UpdateDataset",
+    "UpdateMetricAttribution",
+    "UpdateRecommender"
 ]
     permissions_management = []
     read                   = [
-    "BatchGetCollaborationAnalysisTemplate",
-    "BatchGetSchema",
-    "GetAnalysisTemplate",
-    "GetCollaboration",
-    "GetCollaborationAnalysisTemplate",
-    "GetConfiguredTable",
-    "GetConfiguredTableAnalysisRule",
-    "GetConfiguredTableAssociation",
-    "GetMembership",
-    "GetProtectedQuery",
-    "GetSchema",
-    "GetSchemaAnalysisRule"
+    "DescribeAlgorithm",
+    "DescribeBatchInferenceJob",
+    "DescribeBatchSegmentJob",
+    "DescribeCampaign",
+    "DescribeDataset",
+    "DescribeDatasetExportJob",
+    "DescribeDatasetGroup",
+    "DescribeDatasetImportJob",
+    "DescribeEventTracker",
+    "DescribeFeatureTransformation",
+    "DescribeFilter",
+    "DescribeMetricAttribution",
+    "DescribeRecipe",
+    "DescribeRecommender",
+    "DescribeSchema",
+    "DescribeSolution",
+    "DescribeSolutionVersion",
+    "GetPersonalizedRanking",
+    "GetRecommendations",
+    "GetSolutionMetrics"
 ]
     list                   = [
-    "ListAnalysisTemplates",
-    "ListCollaborationAnalysisTemplates",
-    "ListCollaborations",
-    "ListConfiguredTableAssociations",
-    "ListConfiguredTables",
-    "ListMembers",
-    "ListMemberships",
-    "ListProtectedQueries",
+    "ListBatchInferenceJobs",
+    "ListBatchSegmentJobs",
+    "ListCampaigns",
+    "ListDatasetExportJobs",
+    "ListDatasetGroups",
+    "ListDatasetImportJobs",
+    "ListDatasets",
+    "ListEventTrackers",
+    "ListFilters",
+    "ListMetricAttributionMetrics",
+    "ListMetricAttributions",
+    "ListRecipes",
+    "ListRecommenders",
     "ListSchemas",
+    "ListSolutionVersions",
+    "ListSolutions",
     "ListTagsForResource"
 ]
     tagging                = [

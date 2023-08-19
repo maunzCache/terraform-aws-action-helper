@@ -101,6 +101,7 @@ locals {
     "GetControl",
     "GetEvidence",
     "GetEvidenceByEvidenceFolder",
+    "GetEvidenceFileUploadUrl",
     "GetEvidenceFolder",
     "GetEvidenceFoldersByAssessment",
     "GetEvidenceFoldersByAssessmentControl",

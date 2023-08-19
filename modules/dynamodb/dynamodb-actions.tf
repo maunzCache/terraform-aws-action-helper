@@ -73,6 +73,7 @@ locals {
     "DisableKinesisStreamingDestination",
     "EnableKinesisStreamingDestination",
     "ExportTableToPointInTime",
+    "ImportTable",
     "PartiQLDelete",
     "PartiQLInsert",
     "PartiQLUpdate",
@@ -86,6 +87,7 @@ locals {
     "UpdateContributorInsights",
     "UpdateGlobalTable",
     "UpdateGlobalTableSettings",
+    "UpdateGlobalTableVersion",
     "UpdateItem",
     "UpdateTable",
     "UpdateTableReplicaAutoScaling",
@@ -98,9 +100,11 @@ locals {
     "DescribeBackup",
     "DescribeContinuousBackups",
     "DescribeContributorInsights",
+    "DescribeEndpoints",
     "DescribeExport",
     "DescribeGlobalTable",
     "DescribeGlobalTableSettings",
+    "DescribeImport",
     "DescribeKinesisStreamingDestination",
     "DescribeLimits",
     "DescribeReservedCapacity",
@@ -123,6 +127,7 @@ locals {
     "ListContributorInsights",
     "ListExports",
     "ListGlobalTables",
+    "ListImports",
     "ListTables"
 ]
     tagging                = [

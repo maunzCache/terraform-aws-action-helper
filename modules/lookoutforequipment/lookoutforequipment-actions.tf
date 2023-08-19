@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonlookoutforequipment.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,58 +57,54 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "cleanrooms"
+  prefix = "lookoutequipment"
 
   access_level = {
     write                  = [
-    "CreateAnalysisTemplate",
-    "CreateCollaboration",
-    "CreateConfiguredTable",
-    "CreateConfiguredTableAnalysisRule",
-    "CreateConfiguredTableAssociation",
-    "CreateMembership",
-    "DeleteAnalysisTemplate",
-    "DeleteCollaboration",
-    "DeleteConfiguredTable",
-    "DeleteConfiguredTableAnalysisRule",
-    "DeleteConfiguredTableAssociation",
-    "DeleteMember",
-    "DeleteMembership",
-    "StartProtectedQuery",
-    "UpdateAnalysisTemplate",
-    "UpdateCollaboration",
-    "UpdateConfiguredTable",
-    "UpdateConfiguredTableAnalysisRule",
-    "UpdateConfiguredTableAssociation",
-    "UpdateMembership",
-    "UpdateProtectedQuery"
+    "CreateDataset",
+    "CreateInferenceScheduler",
+    "CreateLabel",
+    "CreateLabelGroup",
+    "CreateModel",
+    "DeleteDataset",
+    "DeleteInferenceScheduler",
+    "DeleteLabel",
+    "DeleteLabelGroup",
+    "DeleteModel",
+    "DeleteResourcePolicy",
+    "ImportDataset",
+    "ImportModelVersion",
+    "PutResourcePolicy",
+    "StartDataIngestionJob",
+    "StartInferenceScheduler",
+    "StopInferenceScheduler",
+    "UpdateActiveModelVersion",
+    "UpdateInferenceScheduler",
+    "UpdateLabelGroup"
 ]
     permissions_management = []
     read                   = [
-    "BatchGetCollaborationAnalysisTemplate",
-    "BatchGetSchema",
-    "GetAnalysisTemplate",
-    "GetCollaboration",
-    "GetCollaborationAnalysisTemplate",
-    "GetConfiguredTable",
-    "GetConfiguredTableAnalysisRule",
-    "GetConfiguredTableAssociation",
-    "GetMembership",
-    "GetProtectedQuery",
-    "GetSchema",
-    "GetSchemaAnalysisRule"
+    "DescribeDataIngestionJob",
+    "DescribeDataset",
+    "DescribeInferenceScheduler",
+    "DescribeLabelGroup",
+    "DescribeModel",
+    "DescribeModelVersion",
+    "DescribeResourcePolicy",
+    "Describelabel",
+    "ListInferenceEvents",
+    "ListInferenceExecutions",
+    "ListTagsForResource"
 ]
     list                   = [
-    "ListAnalysisTemplates",
-    "ListCollaborationAnalysisTemplates",
-    "ListCollaborations",
-    "ListConfiguredTableAssociations",
-    "ListConfiguredTables",
-    "ListMembers",
-    "ListMemberships",
-    "ListProtectedQueries",
-    "ListSchemas",
-    "ListTagsForResource"
+    "ListDataIngestionJobs",
+    "ListDatasets",
+    "ListInferenceSchedulers",
+    "ListLabelGroups",
+    "ListLabels",
+    "ListModelVersions",
+    "ListModels",
+    "ListSensorStatistics"
 ]
     tagging                = [
     "TagResource",

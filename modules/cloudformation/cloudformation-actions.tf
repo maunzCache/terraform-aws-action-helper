@@ -61,6 +61,7 @@ locals {
 
   access_level = {
     write                  = [
+    "ActivateOrganizationsAccess",
     "ActivateType",
     "CancelUpdateStack",
     "ContinueUpdateRollback",
@@ -69,6 +70,7 @@ locals {
     "CreateStackInstances",
     "CreateStackSet",
     "CreateUploadBucket",
+    "DeactivateOrganizationsAccess",
     "DeactivateType",
     "DeleteChangeSet",
     "DeleteStack",
@@ -100,6 +102,7 @@ locals {
     "DescribeAccountLimits",
     "DescribeChangeSet",
     "DescribeChangeSetHooks",
+    "DescribeOrganizationsAccess",
     "DescribePublisher",
     "DescribeStackDriftDetectionStatus",
     "DescribeStackEvents",
@@ -125,6 +128,7 @@ locals {
     "ListChangeSets",
     "ListExports",
     "ListImports",
+    "ListStackInstanceResourceDrifts",
     "ListStackInstances",
     "ListStackResources",
     "ListStackSetOperationResults",

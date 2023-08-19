@@ -101,6 +101,7 @@ locals {
     "GetReservationPurchaseRecommendation",
     "GetReservationUtilization",
     "GetRightsizingRecommendation",
+    "GetSavingsPlanPurchaseRecommendationDetails",
     "GetSavingsPlansCoverage",
     "GetSavingsPlansPurchaseRecommendation",
     "GetSavingsPlansUtilization",

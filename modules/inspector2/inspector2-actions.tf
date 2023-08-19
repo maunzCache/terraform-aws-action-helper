@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoninspector2.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,58 +57,59 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "cleanrooms"
+  prefix = "inspector2"
 
   access_level = {
     write                  = [
-    "CreateAnalysisTemplate",
-    "CreateCollaboration",
-    "CreateConfiguredTable",
-    "CreateConfiguredTableAnalysisRule",
-    "CreateConfiguredTableAssociation",
-    "CreateMembership",
-    "DeleteAnalysisTemplate",
-    "DeleteCollaboration",
-    "DeleteConfiguredTable",
-    "DeleteConfiguredTableAnalysisRule",
-    "DeleteConfiguredTableAssociation",
-    "DeleteMember",
-    "DeleteMembership",
-    "StartProtectedQuery",
-    "UpdateAnalysisTemplate",
-    "UpdateCollaboration",
-    "UpdateConfiguredTable",
-    "UpdateConfiguredTableAnalysisRule",
-    "UpdateConfiguredTableAssociation",
-    "UpdateMembership",
-    "UpdateProtectedQuery"
+    "AssociateMember",
+    "BatchUpdateMemberEc2DeepInspectionStatus",
+    "CancelFindingsReport",
+    "CancelSbomExport",
+    "CreateFilter",
+    "CreateFindingsReport",
+    "CreateSbomExport",
+    "DeleteFilter",
+    "Disable",
+    "DisableDelegatedAdminAccount",
+    "DisassociateMember",
+    "Enable",
+    "EnableDelegatedAdminAccount",
+    "ResetEncryptionKey",
+    "UpdateConfiguration",
+    "UpdateEc2DeepInspectionConfiguration",
+    "UpdateEncryptionKey",
+    "UpdateFilter",
+    "UpdateOrgEc2DeepInspectionConfiguration",
+    "UpdateOrganizationConfiguration"
 ]
     permissions_management = []
     read                   = [
-    "BatchGetCollaborationAnalysisTemplate",
-    "BatchGetSchema",
-    "GetAnalysisTemplate",
-    "GetCollaboration",
-    "GetCollaborationAnalysisTemplate",
-    "GetConfiguredTable",
-    "GetConfiguredTableAnalysisRule",
-    "GetConfiguredTableAssociation",
-    "GetMembership",
-    "GetProtectedQuery",
-    "GetSchema",
-    "GetSchemaAnalysisRule"
+    "BatchGetAccountStatus",
+    "BatchGetCodeSnippet",
+    "BatchGetFindingDetails",
+    "BatchGetFreeTrialInfo",
+    "BatchGetMemberEc2DeepInspectionStatus",
+    "DescribeOrganizationConfiguration",
+    "GetConfiguration",
+    "GetDelegatedAdminAccount",
+    "GetEc2DeepInspectionConfiguration",
+    "GetEncryptionKey",
+    "GetFindingsReportStatus",
+    "GetMember",
+    "GetSbomExport",
+    "ListTagsForResource",
+    "SearchVulnerabilities"
 ]
     list                   = [
-    "ListAnalysisTemplates",
-    "ListCollaborationAnalysisTemplates",
-    "ListCollaborations",
-    "ListConfiguredTableAssociations",
-    "ListConfiguredTables",
+    "ListAccountPermissions",
+    "ListCoverage",
+    "ListCoverageStatistics",
+    "ListDelegatedAdminAccounts",
+    "ListFilters",
+    "ListFindingAggregations",
+    "ListFindings",
     "ListMembers",
-    "ListMemberships",
-    "ListProtectedQueries",
-    "ListSchemas",
-    "ListTagsForResource"
+    "ListUsageTotals"
 ]
     tagging                = [
     "TagResource",

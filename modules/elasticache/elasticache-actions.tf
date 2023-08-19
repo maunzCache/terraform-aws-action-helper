@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelasticache.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,62 +57,84 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "cleanrooms"
+  prefix = "elasticache"
 
   access_level = {
     write                  = [
-    "CreateAnalysisTemplate",
-    "CreateCollaboration",
-    "CreateConfiguredTable",
-    "CreateConfiguredTableAnalysisRule",
-    "CreateConfiguredTableAssociation",
-    "CreateMembership",
-    "DeleteAnalysisTemplate",
-    "DeleteCollaboration",
-    "DeleteConfiguredTable",
-    "DeleteConfiguredTableAnalysisRule",
-    "DeleteConfiguredTableAssociation",
-    "DeleteMember",
-    "DeleteMembership",
-    "StartProtectedQuery",
-    "UpdateAnalysisTemplate",
-    "UpdateCollaboration",
-    "UpdateConfiguredTable",
-    "UpdateConfiguredTableAnalysisRule",
-    "UpdateConfiguredTableAssociation",
-    "UpdateMembership",
-    "UpdateProtectedQuery"
+    "AuthorizeCacheSecurityGroupIngress",
+    "BatchApplyUpdateAction",
+    "BatchStopUpdateAction",
+    "CompleteMigration",
+    "Connect",
+    "CopySnapshot",
+    "CreateCacheCluster",
+    "CreateCacheParameterGroup",
+    "CreateCacheSecurityGroup",
+    "CreateCacheSubnetGroup",
+    "CreateGlobalReplicationGroup",
+    "CreateReplicationGroup",
+    "CreateSnapshot",
+    "CreateUser",
+    "CreateUserGroup",
+    "DecreaseNodeGroupsInGlobalReplicationGroup",
+    "DecreaseReplicaCount",
+    "DeleteCacheCluster",
+    "DeleteCacheParameterGroup",
+    "DeleteCacheSecurityGroup",
+    "DeleteCacheSubnetGroup",
+    "DeleteGlobalReplicationGroup",
+    "DeleteReplicationGroup",
+    "DeleteSnapshot",
+    "DeleteUser",
+    "DeleteUserGroup",
+    "DisassociateGlobalReplicationGroup",
+    "FailoverGlobalReplicationGroup",
+    "IncreaseNodeGroupsInGlobalReplicationGroup",
+    "IncreaseReplicaCount",
+    "ModifyCacheCluster",
+    "ModifyCacheParameterGroup",
+    "ModifyCacheSubnetGroup",
+    "ModifyGlobalReplicationGroup",
+    "ModifyReplicationGroup",
+    "ModifyReplicationGroupShardConfiguration",
+    "ModifyUser",
+    "ModifyUserGroup",
+    "PurchaseReservedCacheNodesOffering",
+    "RebalanceSlotsInGlobalReplicationGroup",
+    "RebootCacheCluster",
+    "ResetCacheParameterGroup",
+    "RevokeCacheSecurityGroupIngress",
+    "StartMigration",
+    "TestFailover",
+    "TestMigration"
 ]
     permissions_management = []
     read                   = [
-    "BatchGetCollaborationAnalysisTemplate",
-    "BatchGetSchema",
-    "GetAnalysisTemplate",
-    "GetCollaboration",
-    "GetCollaborationAnalysisTemplate",
-    "GetConfiguredTable",
-    "GetConfiguredTableAnalysisRule",
-    "GetConfiguredTableAssociation",
-    "GetMembership",
-    "GetProtectedQuery",
-    "GetSchema",
-    "GetSchemaAnalysisRule"
-]
-    list                   = [
-    "ListAnalysisTemplates",
-    "ListCollaborationAnalysisTemplates",
-    "ListCollaborations",
-    "ListConfiguredTableAssociations",
-    "ListConfiguredTables",
-    "ListMembers",
-    "ListMemberships",
-    "ListProtectedQueries",
-    "ListSchemas",
     "ListTagsForResource"
 ]
+    list                   = [
+    "DescribeCacheClusters",
+    "DescribeCacheEngineVersions",
+    "DescribeCacheParameterGroups",
+    "DescribeCacheParameters",
+    "DescribeCacheSecurityGroups",
+    "DescribeCacheSubnetGroups",
+    "DescribeEngineDefaultParameters",
+    "DescribeEvents",
+    "DescribeGlobalReplicationGroups",
+    "DescribeReplicationGroups",
+    "DescribeReservedCacheNodes",
+    "DescribeReservedCacheNodesOfferings",
+    "DescribeServiceUpdates",
+    "DescribeSnapshots",
+    "DescribeUpdateActions",
+    "DescribeUserGroups",
+    "DescribeUsers",
+    "ListAllowedNodeTypeModifications"
+]
     tagging                = [
-    "TagResource",
-    "UntagResource"
+    "AddTagsToResource",
+    "RemoveTagsFromResource"
 ]
   }
 }

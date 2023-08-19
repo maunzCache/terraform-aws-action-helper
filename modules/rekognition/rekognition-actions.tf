@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsresiliencehubservice.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,58 +57,86 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "cleanrooms"
+  prefix = "rekognition"
 
   access_level = {
     write                  = [
-    "CreateAnalysisTemplate",
-    "CreateCollaboration",
-    "CreateConfiguredTable",
-    "CreateConfiguredTableAnalysisRule",
-    "CreateConfiguredTableAssociation",
-    "CreateMembership",
-    "DeleteAnalysisTemplate",
-    "DeleteCollaboration",
-    "DeleteConfiguredTable",
-    "DeleteConfiguredTableAnalysisRule",
-    "DeleteConfiguredTableAssociation",
-    "DeleteMember",
-    "DeleteMembership",
-    "StartProtectedQuery",
-    "UpdateAnalysisTemplate",
-    "UpdateCollaboration",
-    "UpdateConfiguredTable",
-    "UpdateConfiguredTableAnalysisRule",
-    "UpdateConfiguredTableAssociation",
-    "UpdateMembership",
-    "UpdateProtectedQuery"
+    "AssociateFaces",
+    "CopyProjectVersion",
+    "CreateCollection",
+    "CreateDataset",
+    "CreateFaceLivenessSession",
+    "CreateProject",
+    "CreateProjectVersion",
+    "CreateStreamProcessor",
+    "CreateUser",
+    "DeleteCollection",
+    "DeleteDataset",
+    "DeleteFaces",
+    "DeleteProject",
+    "DeleteProjectPolicy",
+    "DeleteProjectVersion",
+    "DeleteStreamProcessor",
+    "DeleteUser",
+    "DisassociateFaces",
+    "DistributeDatasetEntries",
+    "IndexFaces",
+    "PutProjectPolicy",
+    "StartCelebrityRecognition",
+    "StartContentModeration",
+    "StartFaceDetection",
+    "StartFaceLivenessSession",
+    "StartFaceSearch",
+    "StartLabelDetection",
+    "StartPersonTracking",
+    "StartProjectVersion",
+    "StartSegmentDetection",
+    "StartStreamProcessor",
+    "StartTextDetection",
+    "StopProjectVersion",
+    "StopStreamProcessor",
+    "UpdateDatasetEntries",
+    "UpdateStreamProcessor"
 ]
     permissions_management = []
     read                   = [
-    "BatchGetCollaborationAnalysisTemplate",
-    "BatchGetSchema",
-    "GetAnalysisTemplate",
-    "GetCollaboration",
-    "GetCollaborationAnalysisTemplate",
-    "GetConfiguredTable",
-    "GetConfiguredTableAnalysisRule",
-    "GetConfiguredTableAssociation",
-    "GetMembership",
-    "GetProtectedQuery",
-    "GetSchema",
-    "GetSchemaAnalysisRule"
+    "CompareFaces",
+    "DescribeCollection",
+    "DescribeDataset",
+    "DescribeProjectVersions",
+    "DescribeProjects",
+    "DescribeStreamProcessor",
+    "DetectCustomLabels",
+    "DetectFaces",
+    "DetectLabels",
+    "DetectModerationLabels",
+    "DetectProtectiveEquipment",
+    "DetectText",
+    "GetCelebrityInfo",
+    "GetCelebrityRecognition",
+    "GetContentModeration",
+    "GetFaceDetection",
+    "GetFaceLivenessSessionResults",
+    "GetFaceSearch",
+    "GetLabelDetection",
+    "GetPersonTracking",
+    "GetSegmentDetection",
+    "GetTextDetection",
+    "ListCollections",
+    "ListDatasetEntries",
+    "ListDatasetLabels",
+    "ListFaces",
+    "ListProjectPolicies",
+    "ListTagsForResource",
+    "ListUsers",
+    "RecognizeCelebrities",
+    "SearchFaces",
+    "SearchFacesByImage",
+    "SearchUsers",
+    "SearchUsersByImage"
 ]
     list                   = [
-    "ListAnalysisTemplates",
-    "ListCollaborationAnalysisTemplates",
-    "ListCollaborations",
-    "ListConfiguredTableAssociations",
-    "ListConfiguredTables",
-    "ListMembers",
-    "ListMemberships",
-    "ListProtectedQueries",
-    "ListSchemas",
-    "ListTagsForResource"
+    "ListStreamProcessors"
 ]
     tagging                = [
     "TagResource",

@@ -62,12 +62,14 @@ locals {
   access_level = {
     write                  = [
     "AcceptAgreement",
+    "PutAccountSettings",
     "TerminateAgreement"
 ]
     permissions_management = []
     read                   = [
     "DownloadAgreement",
     "Get",
+    "GetAccountSettings",
     "GetReport",
     "GetReportMetadata",
     "GetTermForReport"

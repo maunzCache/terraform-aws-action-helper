@@ -67,6 +67,7 @@ locals {
     "PutResourcePermission",
     "RegisterApplication",
     "RestoreDatabase",
+    "StartApplicationRefresh",
     "UpdateApplicationSettings",
     "UpdateHANABackupSettings"
 ]

@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonappstream2.0.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,58 +57,89 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "cleanrooms"
+  prefix = "appstream"
 
   access_level = {
     write                  = [
-    "CreateAnalysisTemplate",
-    "CreateCollaboration",
-    "CreateConfiguredTable",
-    "CreateConfiguredTableAnalysisRule",
-    "CreateConfiguredTableAssociation",
-    "CreateMembership",
-    "DeleteAnalysisTemplate",
-    "DeleteCollaboration",
-    "DeleteConfiguredTable",
-    "DeleteConfiguredTableAnalysisRule",
-    "DeleteConfiguredTableAssociation",
-    "DeleteMember",
-    "DeleteMembership",
-    "StartProtectedQuery",
-    "UpdateAnalysisTemplate",
-    "UpdateCollaboration",
-    "UpdateConfiguredTable",
-    "UpdateConfiguredTableAnalysisRule",
-    "UpdateConfiguredTableAssociation",
-    "UpdateMembership",
-    "UpdateProtectedQuery"
+    "AssociateAppBlockBuilderAppBlock",
+    "AssociateApplicationFleet",
+    "AssociateApplicationToEntitlement",
+    "AssociateFleet",
+    "BatchAssociateUserStack",
+    "BatchDisassociateUserStack",
+    "CopyImage",
+    "CreateAppBlock",
+    "CreateAppBlockBuilder",
+    "CreateAppBlockBuilderStreamingURL",
+    "CreateApplication",
+    "CreateDirectoryConfig",
+    "CreateEntitlement",
+    "CreateFleet",
+    "CreateImageBuilder",
+    "CreateImageBuilderStreamingURL",
+    "CreateStack",
+    "CreateStreamingURL",
+    "CreateUpdatedImage",
+    "CreateUsageReportSubscription",
+    "CreateUser",
+    "DeleteAppBlock",
+    "DeleteAppBlockBuilder",
+    "DeleteApplication",
+    "DeleteDirectoryConfig",
+    "DeleteEntitlement",
+    "DeleteFleet",
+    "DeleteImage",
+    "DeleteImageBuilder",
+    "DeleteImagePermissions",
+    "DeleteStack",
+    "DeleteUsageReportSubscription",
+    "DeleteUser",
+    "DisableUser",
+    "DisassociateAppBlockBuilderAppBlock",
+    "DisassociateApplicationFleet",
+    "DisassociateApplicationFromEntitlement",
+    "DisassociateFleet",
+    "EnableUser",
+    "ExpireSession",
+    "StartAppBlockBuilder",
+    "StartFleet",
+    "StartImageBuilder",
+    "StopAppBlockBuilder",
+    "StopFleet",
+    "StopImageBuilder",
+    "Stream",
+    "UpdateAppBlockBuilder",
+    "UpdateApplication",
+    "UpdateDirectoryConfig",
+    "UpdateEntitlement",
+    "UpdateFleet",
+    "UpdateImagePermissions",
+    "UpdateStack"
 ]
     permissions_management = []
     read                   = [
-    "BatchGetCollaborationAnalysisTemplate",
-    "BatchGetSchema",
-    "GetAnalysisTemplate",
-    "GetCollaboration",
-    "GetCollaborationAnalysisTemplate",
-    "GetConfiguredTable",
-    "GetConfiguredTableAnalysisRule",
-    "GetConfiguredTableAssociation",
-    "GetMembership",
-    "GetProtectedQuery",
-    "GetSchema",
-    "GetSchemaAnalysisRule"
+    "DescribeAppBlockBuilderAppBlockAssociations",
+    "DescribeAppBlockBuilders",
+    "DescribeAppBlocks",
+    "DescribeApplicationFleetAssociations",
+    "DescribeApplications",
+    "DescribeDirectoryConfigs",
+    "DescribeEntitlements",
+    "DescribeFleets",
+    "DescribeImageBuilders",
+    "DescribeImagePermissions",
+    "DescribeImages",
+    "DescribeSessions",
+    "DescribeStacks",
+    "DescribeUsageReportSubscriptions",
+    "DescribeUserStackAssociations",
+    "DescribeUsers",
+    "ListAssociatedFleets",
+    "ListAssociatedStacks",
+    "ListTagsForResource"
 ]
     list                   = [
-    "ListAnalysisTemplates",
-    "ListCollaborationAnalysisTemplates",
-    "ListCollaborations",
-    "ListConfiguredTableAssociations",
-    "ListConfiguredTables",
-    "ListMembers",
-    "ListMemberships",
-    "ListProtectedQueries",
-    "ListSchemas",
-    "ListTagsForResource"
+    "ListEntitledApplications"
 ]
     tagging                = [
     "TagResource",

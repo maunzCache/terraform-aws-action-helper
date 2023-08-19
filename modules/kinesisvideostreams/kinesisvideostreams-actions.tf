@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonkinesisvideostreams.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,62 +57,60 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "cleanrooms"
+  prefix = "kinesisvideo"
 
   access_level = {
     write                  = [
-    "CreateAnalysisTemplate",
-    "CreateCollaboration",
-    "CreateConfiguredTable",
-    "CreateConfiguredTableAnalysisRule",
-    "CreateConfiguredTableAssociation",
-    "CreateMembership",
-    "DeleteAnalysisTemplate",
-    "DeleteCollaboration",
-    "DeleteConfiguredTable",
-    "DeleteConfiguredTableAnalysisRule",
-    "DeleteConfiguredTableAssociation",
-    "DeleteMember",
-    "DeleteMembership",
-    "StartProtectedQuery",
-    "UpdateAnalysisTemplate",
-    "UpdateCollaboration",
-    "UpdateConfiguredTable",
-    "UpdateConfiguredTableAnalysisRule",
-    "UpdateConfiguredTableAssociation",
-    "UpdateMembership",
-    "UpdateProtectedQuery"
+    "ConnectAsMaster",
+    "ConnectAsViewer",
+    "CreateSignalingChannel",
+    "CreateStream",
+    "DeleteEdgeConfiguration",
+    "DeleteSignalingChannel",
+    "DeleteStream",
+    "JoinStorageSession",
+    "PutMedia",
+    "SendAlexaOfferToMaster",
+    "StartEdgeConfigurationUpdate",
+    "UpdateDataRetention",
+    "UpdateImageGenerationConfiguration",
+    "UpdateMediaStorageConfiguration",
+    "UpdateNotificationConfiguration",
+    "UpdateSignalingChannel",
+    "UpdateStream"
 ]
     permissions_management = []
     read                   = [
-    "BatchGetCollaborationAnalysisTemplate",
-    "BatchGetSchema",
-    "GetAnalysisTemplate",
-    "GetCollaboration",
-    "GetCollaborationAnalysisTemplate",
-    "GetConfiguredTable",
-    "GetConfiguredTableAnalysisRule",
-    "GetConfiguredTableAssociation",
-    "GetMembership",
-    "GetProtectedQuery",
-    "GetSchema",
-    "GetSchemaAnalysisRule"
+    "DescribeEdgeConfiguration",
+    "DescribeImageGenerationConfiguration",
+    "DescribeMediaStorageConfiguration",
+    "DescribeNotificationConfiguration",
+    "GetClip",
+    "GetDASHStreamingSessionURL",
+    "GetDataEndpoint",
+    "GetHLSStreamingSessionURL",
+    "GetIceServerConfig",
+    "GetImages",
+    "GetMedia",
+    "GetMediaForFragmentList",
+    "GetSignalingChannelEndpoint",
+    "ListTagsForResource",
+    "ListTagsForStream"
 ]
     list                   = [
-    "ListAnalysisTemplates",
-    "ListCollaborationAnalysisTemplates",
-    "ListCollaborations",
-    "ListConfiguredTableAssociations",
-    "ListConfiguredTables",
-    "ListMembers",
-    "ListMemberships",
-    "ListProtectedQueries",
-    "ListSchemas",
-    "ListTagsForResource"
+    "DescribeMappedResourceConfiguration",
+    "DescribeSignalingChannel",
+    "DescribeStream",
+    "ListEdgeAgentConfigurations",
+    "ListFragments",
+    "ListSignalingChannels",
+    "ListStreams"
 ]
     tagging                = [
     "TagResource",
-    "UntagResource"
+    "TagStream",
+    "UntagResource",
+    "UntagStream"
 ]
   }
 }

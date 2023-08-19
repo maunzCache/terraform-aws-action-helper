@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoninteractivevideoservice.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,58 +57,55 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "cleanrooms"
+  prefix = "ivs"
 
   access_level = {
     write                  = [
-    "CreateAnalysisTemplate",
-    "CreateCollaboration",
-    "CreateConfiguredTable",
-    "CreateConfiguredTableAnalysisRule",
-    "CreateConfiguredTableAssociation",
-    "CreateMembership",
-    "DeleteAnalysisTemplate",
-    "DeleteCollaboration",
-    "DeleteConfiguredTable",
-    "DeleteConfiguredTableAnalysisRule",
-    "DeleteConfiguredTableAssociation",
-    "DeleteMember",
-    "DeleteMembership",
-    "StartProtectedQuery",
-    "UpdateAnalysisTemplate",
-    "UpdateCollaboration",
-    "UpdateConfiguredTable",
-    "UpdateConfiguredTableAnalysisRule",
-    "UpdateConfiguredTableAssociation",
-    "UpdateMembership",
-    "UpdateProtectedQuery"
+    "BatchStartViewerSessionRevocation",
+    "CreateChannel",
+    "CreateParticipantToken",
+    "CreateRecordingConfiguration",
+    "CreateStage",
+    "CreateStreamKey",
+    "DeleteChannel",
+    "DeletePlaybackKeyPair",
+    "DeleteRecordingConfiguration",
+    "DeleteStage",
+    "DeleteStreamKey",
+    "DisconnectParticipant",
+    "ImportPlaybackKeyPair",
+    "PutMetadata",
+    "StartViewerSessionRevocation",
+    "StopStream",
+    "UpdateChannel",
+    "UpdateStage"
 ]
     permissions_management = []
     read                   = [
-    "BatchGetCollaborationAnalysisTemplate",
-    "BatchGetSchema",
-    "GetAnalysisTemplate",
-    "GetCollaboration",
-    "GetCollaborationAnalysisTemplate",
-    "GetConfiguredTable",
-    "GetConfiguredTableAnalysisRule",
-    "GetConfiguredTableAssociation",
-    "GetMembership",
-    "GetProtectedQuery",
-    "GetSchema",
-    "GetSchemaAnalysisRule"
+    "BatchGetChannel",
+    "BatchGetStreamKey",
+    "GetChannel",
+    "GetParticipant",
+    "GetPlaybackKeyPair",
+    "GetRecordingConfiguration",
+    "GetStage",
+    "GetStageSession",
+    "GetStream",
+    "GetStreamKey",
+    "GetStreamSession",
+    "ListTagsForResource"
 ]
     list                   = [
-    "ListAnalysisTemplates",
-    "ListCollaborationAnalysisTemplates",
-    "ListCollaborations",
-    "ListConfiguredTableAssociations",
-    "ListConfiguredTables",
-    "ListMembers",
-    "ListMemberships",
-    "ListProtectedQueries",
-    "ListSchemas",
-    "ListTagsForResource"
+    "ListChannels",
+    "ListParticipantEvents",
+    "ListParticipants",
+    "ListPlaybackKeyPairs",
+    "ListRecordingConfigurations",
+    "ListStageSessions",
+    "ListStages",
+    "ListStreamKeys",
+    "ListStreamSessions",
+    "ListStreams"
 ]
     tagging                = [
     "TagResource",

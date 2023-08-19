@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmanagedstreamingforapachekafka.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,58 +57,60 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "cleanrooms"
+  prefix = "kafka"
 
   access_level = {
     write                  = [
-    "CreateAnalysisTemplate",
-    "CreateCollaboration",
-    "CreateConfiguredTable",
-    "CreateConfiguredTableAnalysisRule",
-    "CreateConfiguredTableAssociation",
-    "CreateMembership",
-    "DeleteAnalysisTemplate",
-    "DeleteCollaboration",
-    "DeleteConfiguredTable",
-    "DeleteConfiguredTableAnalysisRule",
-    "DeleteConfiguredTableAssociation",
-    "DeleteMember",
-    "DeleteMembership",
-    "StartProtectedQuery",
-    "UpdateAnalysisTemplate",
-    "UpdateCollaboration",
-    "UpdateConfiguredTable",
-    "UpdateConfiguredTableAnalysisRule",
-    "UpdateConfiguredTableAssociation",
-    "UpdateMembership",
-    "UpdateProtectedQuery"
+    "BatchAssociateScramSecret",
+    "BatchDisassociateScramSecret",
+    "CreateCluster",
+    "CreateClusterV2",
+    "CreateConfiguration",
+    "CreateVpcConnection",
+    "DeleteCluster",
+    "DeleteClusterPolicy",
+    "DeleteConfiguration",
+    "DeleteVpcConnection",
+    "PutClusterPolicy",
+    "RebootBroker",
+    "RejectClientVpcConnection",
+    "UpdateBrokerCount",
+    "UpdateBrokerStorage",
+    "UpdateBrokerType",
+    "UpdateClusterConfiguration",
+    "UpdateClusterKafkaVersion",
+    "UpdateConfiguration",
+    "UpdateConnectivity",
+    "UpdateMonitoring",
+    "UpdateSecurity",
+    "UpdateStorage"
 ]
     permissions_management = []
     read                   = [
-    "BatchGetCollaborationAnalysisTemplate",
-    "BatchGetSchema",
-    "GetAnalysisTemplate",
-    "GetCollaboration",
-    "GetCollaborationAnalysisTemplate",
-    "GetConfiguredTable",
-    "GetConfiguredTableAnalysisRule",
-    "GetConfiguredTableAssociation",
-    "GetMembership",
-    "GetProtectedQuery",
-    "GetSchema",
-    "GetSchemaAnalysisRule"
+    "DescribeCluster",
+    "DescribeClusterOperation",
+    "DescribeClusterOperationV2",
+    "DescribeClusterV2",
+    "DescribeConfiguration",
+    "DescribeConfigurationRevision",
+    "DescribeVpcConnection",
+    "GetBootstrapBrokers",
+    "GetClusterPolicy",
+    "ListTagsForResource"
 ]
     list                   = [
-    "ListAnalysisTemplates",
-    "ListCollaborationAnalysisTemplates",
-    "ListCollaborations",
-    "ListConfiguredTableAssociations",
-    "ListConfiguredTables",
-    "ListMembers",
-    "ListMemberships",
-    "ListProtectedQueries",
-    "ListSchemas",
-    "ListTagsForResource"
+    "GetCompatibleKafkaVersions",
+    "ListClientVpcConnections",
+    "ListClusterOperations",
+    "ListClusterOperationsV2",
+    "ListClusters",
+    "ListClustersV2",
+    "ListConfigurationRevisions",
+    "ListConfigurations",
+    "ListKafkaVersions",
+    "ListNodes",
+    "ListScramSecrets",
+    "ListVpcConnections"
 ]
     tagging                = [
     "TagResource",

@@ -64,6 +64,7 @@ locals {
     "AddStorageSystem",
     "CancelTaskExecution",
     "CreateAgent",
+    "CreateLocationAzureBlob",
     "CreateLocationEfs",
     "CreateLocationFsxLustre",
     "CreateLocationFsxOntap",
@@ -85,6 +86,7 @@ locals {
     "StopDiscoveryJob",
     "UpdateAgent",
     "UpdateDiscoveryJob",
+    "UpdateLocationAzureBlob",
     "UpdateLocationHdfs",
     "UpdateLocationNfs",
     "UpdateLocationObjectStorage",
@@ -97,6 +99,7 @@ locals {
     read                   = [
     "DescribeAgent",
     "DescribeDiscoveryJob",
+    "DescribeLocationAzureBlob",
     "DescribeLocationEfs",
     "DescribeLocationFsxLustre",
     "DescribeLocationFsxOntap",

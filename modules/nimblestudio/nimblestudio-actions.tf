@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonomics.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,59 +57,64 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "cleanrooms"
+  prefix = "nimble"
 
   access_level = {
     write                  = [
-    "CreateAnalysisTemplate",
-    "CreateCollaboration",
-    "CreateConfiguredTable",
-    "CreateConfiguredTableAnalysisRule",
-    "CreateConfiguredTableAssociation",
-    "CreateMembership",
-    "DeleteAnalysisTemplate",
-    "DeleteCollaboration",
-    "DeleteConfiguredTable",
-    "DeleteConfiguredTableAnalysisRule",
-    "DeleteConfiguredTableAssociation",
-    "DeleteMember",
-    "DeleteMembership",
-    "StartProtectedQuery",
-    "UpdateAnalysisTemplate",
-    "UpdateCollaboration",
-    "UpdateConfiguredTable",
-    "UpdateConfiguredTableAnalysisRule",
-    "UpdateConfiguredTableAssociation",
-    "UpdateMembership",
-    "UpdateProtectedQuery"
+    "AcceptEulas",
+    "CreateLaunchProfile",
+    "CreateStreamingImage",
+    "CreateStreamingSession",
+    "CreateStreamingSessionStream",
+    "CreateStudio",
+    "CreateStudioComponent",
+    "DeleteLaunchProfile",
+    "DeleteLaunchProfileMember",
+    "DeleteStreamingImage",
+    "DeleteStreamingSession",
+    "DeleteStudio",
+    "DeleteStudioComponent",
+    "DeleteStudioMember",
+    "PutLaunchProfileMembers",
+    "PutStudioLogEvents",
+    "PutStudioMembers",
+    "StartStreamingSession",
+    "StartStudioSSOConfigurationRepair",
+    "StopStreamingSession",
+    "UpdateLaunchProfile",
+    "UpdateLaunchProfileMember",
+    "UpdateStreamingImage",
+    "UpdateStudio",
+    "UpdateStudioComponent"
 ]
     permissions_management = []
     read                   = [
-    "BatchGetCollaborationAnalysisTemplate",
-    "BatchGetSchema",
-    "GetAnalysisTemplate",
-    "GetCollaboration",
-    "GetCollaborationAnalysisTemplate",
-    "GetConfiguredTable",
-    "GetConfiguredTableAnalysisRule",
-    "GetConfiguredTableAssociation",
-    "GetMembership",
-    "GetProtectedQuery",
-    "GetSchema",
-    "GetSchemaAnalysisRule"
-]
-    list                   = [
-    "ListAnalysisTemplates",
-    "ListCollaborationAnalysisTemplates",
-    "ListCollaborations",
-    "ListConfiguredTableAssociations",
-    "ListConfiguredTables",
-    "ListMembers",
-    "ListMemberships",
-    "ListProtectedQueries",
-    "ListSchemas",
+    "GetEula",
+    "GetFeatureMap",
+    "GetLaunchProfile",
+    "GetLaunchProfileDetails",
+    "GetLaunchProfileInitialization",
+    "GetLaunchProfileMember",
+    "GetStreamingImage",
+    "GetStreamingSession",
+    "GetStreamingSessionBackup",
+    "GetStreamingSessionStream",
+    "GetStudio",
+    "GetStudioComponent",
+    "GetStudioMember",
+    "ListEulaAcceptances",
+    "ListEulas",
+    "ListLaunchProfileMembers",
+    "ListLaunchProfiles",
+    "ListStreamingImages",
+    "ListStreamingSessionBackups",
+    "ListStreamingSessions",
+    "ListStudioComponents",
+    "ListStudioMembers",
+    "ListStudios",
     "ListTagsForResource"
 ]
+    list                   = []
     tagging                = [
     "TagResource",
     "UntagResource"

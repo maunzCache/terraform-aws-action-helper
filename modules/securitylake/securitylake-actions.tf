@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsecuritylake.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,57 +57,43 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "cleanrooms"
+  prefix = "securitylake"
 
   access_level = {
     write                  = [
-    "CreateAnalysisTemplate",
-    "CreateCollaboration",
-    "CreateConfiguredTable",
-    "CreateConfiguredTableAnalysisRule",
-    "CreateConfiguredTableAssociation",
-    "CreateMembership",
-    "DeleteAnalysisTemplate",
-    "DeleteCollaboration",
-    "DeleteConfiguredTable",
-    "DeleteConfiguredTableAnalysisRule",
-    "DeleteConfiguredTableAssociation",
-    "DeleteMember",
-    "DeleteMembership",
-    "StartProtectedQuery",
-    "UpdateAnalysisTemplate",
-    "UpdateCollaboration",
-    "UpdateConfiguredTable",
-    "UpdateConfiguredTableAnalysisRule",
-    "UpdateConfiguredTableAssociation",
-    "UpdateMembership",
-    "UpdateProtectedQuery"
+    "CreateAwsLogSource",
+    "CreateCustomLogSource",
+    "CreateDataLake",
+    "CreateDataLakeExceptionSubscription",
+    "CreateDataLakeOrganizationConfiguration",
+    "CreateSubscriber",
+    "CreateSubscriberNotification",
+    "DeleteAwsLogSource",
+    "DeleteCustomLogSource",
+    "DeleteDataLake",
+    "DeleteDataLakeExceptionSubscription",
+    "DeleteDataLakeOrganizationConfiguration",
+    "DeleteSubscriber",
+    "DeleteSubscriberNotification",
+    "DeregisterDataLakeDelegatedAdministrator",
+    "RegisterDataLakeDelegatedAdministrator",
+    "UpdateDataLake",
+    "UpdateDataLakeExceptionSubscription",
+    "UpdateSubscriber",
+    "UpdateSubscriberNotification"
 ]
     permissions_management = []
     read                   = [
-    "BatchGetCollaborationAnalysisTemplate",
-    "BatchGetSchema",
-    "GetAnalysisTemplate",
-    "GetCollaboration",
-    "GetCollaborationAnalysisTemplate",
-    "GetConfiguredTable",
-    "GetConfiguredTableAnalysisRule",
-    "GetConfiguredTableAssociation",
-    "GetMembership",
-    "GetProtectedQuery",
-    "GetSchema",
-    "GetSchemaAnalysisRule"
+    "GetDataLakeExceptionSubscription",
+    "GetDataLakeOrganizationConfiguration",
+    "GetDataLakeSources",
+    "GetSubscriber"
 ]
     list                   = [
-    "ListAnalysisTemplates",
-    "ListCollaborationAnalysisTemplates",
-    "ListCollaborations",
-    "ListConfiguredTableAssociations",
-    "ListConfiguredTables",
-    "ListMembers",
-    "ListMemberships",
-    "ListProtectedQueries",
-    "ListSchemas",
+    "ListDataLakeExceptions",
+    "ListDataLakes",
+    "ListLogSources",
+    "ListSubscribers",
     "ListTagsForResource"
 ]
     tagging                = [

@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelasticmapreduce.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,62 +57,98 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "cleanrooms"
+  prefix = "elasticmapreduce"
 
   access_level = {
     write                  = [
-    "CreateAnalysisTemplate",
-    "CreateCollaboration",
-    "CreateConfiguredTable",
-    "CreateConfiguredTableAnalysisRule",
-    "CreateConfiguredTableAssociation",
-    "CreateMembership",
-    "DeleteAnalysisTemplate",
-    "DeleteCollaboration",
-    "DeleteConfiguredTable",
-    "DeleteConfiguredTableAnalysisRule",
-    "DeleteConfiguredTableAssociation",
-    "DeleteMember",
-    "DeleteMembership",
-    "StartProtectedQuery",
-    "UpdateAnalysisTemplate",
-    "UpdateCollaboration",
-    "UpdateConfiguredTable",
-    "UpdateConfiguredTableAnalysisRule",
-    "UpdateConfiguredTableAssociation",
-    "UpdateMembership",
-    "UpdateProtectedQuery"
+    "AddInstanceFleet",
+    "AddInstanceGroups",
+    "AddJobFlowSteps",
+    "AttachEditor",
+    "CancelSteps",
+    "CreateEditor",
+    "CreatePersistentAppUI",
+    "CreateRepository",
+    "CreateSecurityConfiguration",
+    "CreateStudio",
+    "CreateStudioPresignedUrl",
+    "CreateStudioSessionMapping",
+    "DeleteEditor",
+    "DeleteRepository",
+    "DeleteSecurityConfiguration",
+    "DeleteStudio",
+    "DeleteStudioSessionMapping",
+    "DetachEditor",
+    "GetClusterSessionCredentials",
+    "GetOnClusterAppUIPresignedURL",
+    "GetPersistentAppUIPresignedURL",
+    "LinkRepository",
+    "ModifyCluster",
+    "ModifyInstanceFleet",
+    "ModifyInstanceGroups",
+    "OpenEditorInConsole",
+    "PutAutoScalingPolicy",
+    "PutAutoTerminationPolicy",
+    "PutManagedScalingPolicy",
+    "RemoveAutoScalingPolicy",
+    "RemoveAutoTerminationPolicy",
+    "RemoveManagedScalingPolicy",
+    "RunJobFlow",
+    "SetTerminationProtection",
+    "SetVisibleToAllUsers",
+    "StartEditor",
+    "StartNotebookExecution",
+    "StopEditor",
+    "StopNotebookExecution",
+    "TerminateJobFlows",
+    "UnlinkRepository",
+    "UpdateEditor",
+    "UpdateRepository",
+    "UpdateStudio",
+    "UpdateStudioSessionMapping"
 ]
-    permissions_management = []
+    permissions_management = [
+    "DeleteWorkspaceAccess",
+    "PutBlockPublicAccessConfiguration",
+    "PutWorkspaceAccess"
+]
     read                   = [
-    "BatchGetCollaborationAnalysisTemplate",
-    "BatchGetSchema",
-    "GetAnalysisTemplate",
-    "GetCollaboration",
-    "GetCollaborationAnalysisTemplate",
-    "GetConfiguredTable",
-    "GetConfiguredTableAnalysisRule",
-    "GetConfiguredTableAssociation",
-    "GetMembership",
-    "GetProtectedQuery",
-    "GetSchema",
-    "GetSchemaAnalysisRule"
+    "DescribeCluster",
+    "DescribeEditor",
+    "DescribeJobFlows",
+    "DescribeNotebookExecution",
+    "DescribePersistentAppUI",
+    "DescribeReleaseLabel",
+    "DescribeRepository",
+    "DescribeSecurityConfiguration",
+    "DescribeStep",
+    "DescribeStudio",
+    "GetAutoTerminationPolicy",
+    "GetBlockPublicAccessConfiguration",
+    "GetManagedScalingPolicy",
+    "GetStudioSessionMapping",
+    "ListBootstrapActions",
+    "ListInstanceFleets",
+    "ListInstanceGroups",
+    "ListInstances",
+    "ListSteps"
 ]
     list                   = [
-    "ListAnalysisTemplates",
-    "ListCollaborationAnalysisTemplates",
-    "ListCollaborations",
-    "ListConfiguredTableAssociations",
-    "ListConfiguredTables",
-    "ListMembers",
-    "ListMemberships",
-    "ListProtectedQueries",
-    "ListSchemas",
-    "ListTagsForResource"
+    "ListClusters",
+    "ListEditors",
+    "ListNotebookExecutions",
+    "ListReleaseLabels",
+    "ListRepositories",
+    "ListSecurityConfigurations",
+    "ListStudioSessionMappings",
+    "ListStudios",
+    "ListSupportedInstanceTypes",
+    "ListWorkspaceAccessIdentities",
+    "ViewEventsFromAllClustersInConsole"
 ]
     tagging                = [
-    "TagResource",
-    "UntagResource"
+    "AddTags",
+    "RemoveTags"
 ]
   }
 }

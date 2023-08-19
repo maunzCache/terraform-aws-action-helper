@@ -69,6 +69,7 @@ locals {
     "CreateBackupVault",
     "CreateFramework",
     "CreateLegalHold",
+    "CreateLogicallyAirGappedBackupVault",
     "CreateReportPlan",
     "DeleteBackupPlan",
     "DeleteBackupSelection",
@@ -96,7 +97,9 @@ locals {
 ]
     permissions_management = [
     "DeleteBackupVaultAccessPolicy",
-    "PutBackupVaultAccessPolicy"
+    "DeleteBackupVaultSharingPolicy",
+    "PutBackupVaultAccessPolicy",
+    "PutBackupVaultSharingPolicy"
 ]
     read                   = [
     "DescribeBackupJob",
@@ -117,6 +120,7 @@ locals {
     "GetBackupSelection",
     "GetBackupVaultAccessPolicy",
     "GetBackupVaultNotifications",
+    "GetBackupVaultSharingPolicy",
     "GetLegalHold",
     "GetRecoveryPointRestoreMetadata",
     "GetSupportedResourceTypes",
@@ -133,6 +137,7 @@ locals {
     "ListFrameworks",
     "ListLegalHolds",
     "ListProtectedResources",
+    "ListProtectedResourcesByBackupVault",
     "ListRecoveryPointsByBackupVault",
     "ListRecoveryPointsByLegalHold",
     "ListRecoveryPointsByResource",

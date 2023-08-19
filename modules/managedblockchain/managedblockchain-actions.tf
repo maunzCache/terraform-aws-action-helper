@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmanagedblockchain.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,58 +57,46 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "cleanrooms"
+  prefix = "managedblockchain"
 
   access_level = {
     write                  = [
-    "CreateAnalysisTemplate",
-    "CreateCollaboration",
-    "CreateConfiguredTable",
-    "CreateConfiguredTableAnalysisRule",
-    "CreateConfiguredTableAssociation",
-    "CreateMembership",
-    "DeleteAnalysisTemplate",
-    "DeleteCollaboration",
-    "DeleteConfiguredTable",
-    "DeleteConfiguredTableAnalysisRule",
-    "DeleteConfiguredTableAssociation",
+    "CreateAccessor",
+    "CreateMember",
+    "CreateNetwork",
+    "CreateNode",
+    "CreateProposal",
+    "DeleteAccessor",
     "DeleteMember",
-    "DeleteMembership",
-    "StartProtectedQuery",
-    "UpdateAnalysisTemplate",
-    "UpdateCollaboration",
-    "UpdateConfiguredTable",
-    "UpdateConfiguredTableAnalysisRule",
-    "UpdateConfiguredTableAssociation",
-    "UpdateMembership",
-    "UpdateProtectedQuery"
+    "DeleteNode",
+    "RejectInvitation",
+    "UpdateMember",
+    "UpdateNode",
+    "VoteOnProposal"
 ]
-    permissions_management = []
+    permissions_management = [
+    "GET",
+    "Invoke",
+    "POST"
+]
     read                   = [
-    "BatchGetCollaborationAnalysisTemplate",
-    "BatchGetSchema",
-    "GetAnalysisTemplate",
-    "GetCollaboration",
-    "GetCollaborationAnalysisTemplate",
-    "GetConfiguredTable",
-    "GetConfiguredTableAnalysisRule",
-    "GetConfiguredTableAssociation",
-    "GetMembership",
-    "GetProtectedQuery",
-    "GetSchema",
-    "GetSchemaAnalysisRule"
+    "GetAccessor",
+    "GetMember",
+    "GetNetwork",
+    "GetNode",
+    "GetProposal",
+    "InvokeRpcBitcoinMainnet",
+    "InvokeRpcBitcoinTestnet",
+    "ListProposalVotes",
+    "ListTagsForResource"
 ]
     list                   = [
-    "ListAnalysisTemplates",
-    "ListCollaborationAnalysisTemplates",
-    "ListCollaborations",
-    "ListConfiguredTableAssociations",
-    "ListConfiguredTables",
+    "ListAccessors",
+    "ListInvitations",
     "ListMembers",
-    "ListMemberships",
-    "ListProtectedQueries",
-    "ListSchemas",
-    "ListTagsForResource"
+    "ListNetworks",
+    "ListNodes",
+    "ListProposals"
 ]
     tagging                = [
     "TagResource",

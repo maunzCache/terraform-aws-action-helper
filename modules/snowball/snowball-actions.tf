@@ -91,6 +91,7 @@ locals {
     "ListClusters",
     "ListCompatibleImages",
     "ListJobs",
+    "ListPickupLocations",
     "ListServiceVersions"
 ]
     tagging                = []

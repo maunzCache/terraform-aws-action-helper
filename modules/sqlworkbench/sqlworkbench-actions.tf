@@ -107,6 +107,8 @@ locals {
     "ExportNotebook",
     "GetAccountInfo",
     "GetAccountSettings",
+    "GetAutocompletionMetadata",
+    "GetAutocompletionResource",
     "GetChart",
     "GetConnection",
     "GetNotebook",

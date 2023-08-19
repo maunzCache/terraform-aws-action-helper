@@ -71,6 +71,7 @@ locals {
     "RefreshCheck",
     "SetAccountAccess",
     "SetOrganizationAccess",
+    "UpdateEngagement",
     "UpdateEngagementStatus",
     "UpdateNotificationConfigurations",
     "UpdateNotificationPreferences",

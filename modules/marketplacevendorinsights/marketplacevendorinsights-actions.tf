@@ -68,6 +68,7 @@ locals {
     "DeactivateSecurityProfile",
     "DeleteDataSource",
     "DisassociateDataSource",
+    "UpdateDataSource",
     "UpdateSecurityProfile",
     "UpdateSecurityProfileSnapshotCreationConfiguration",
     "UpdateSecurityProfileSnapshotReleaseConfiguration"

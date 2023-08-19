@@ -84,6 +84,7 @@ locals {
     "GetDataSetImportTask",
     "GetDeployment",
     "GetEnvironment",
+    "GetSignedBluinsightsUrl",
     "ListApplicationVersions",
     "ListBatchJobDefinitions",
     "ListBatchJobExecutions",

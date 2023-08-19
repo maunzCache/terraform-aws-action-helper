@@ -63,9 +63,13 @@ locals {
     write                  = [
     "CreateActivity",
     "CreateStateMachine",
+    "CreateStateMachineAlias",
     "DeleteActivity",
     "DeleteStateMachine",
+    "DeleteStateMachineAlias",
+    "DeleteStateMachineVersion",
     "GetActivityTask",
+    "PublishStateMachineVersion",
     "SendTaskFailure",
     "SendTaskHeartbeat",
     "SendTaskSuccess",
@@ -73,7 +77,8 @@ locals {
     "StartSyncExecution",
     "StopExecution",
     "UpdateMapRun",
-    "UpdateStateMachine"
+    "UpdateStateMachine",
+    "UpdateStateMachineAlias"
 ]
     permissions_management = []
     read                   = [
@@ -81,15 +86,18 @@ locals {
     "DescribeExecution",
     "DescribeMapRun",
     "DescribeStateMachine",
+    "DescribeStateMachineAlias",
     "DescribeStateMachineForExecution",
-    "GetExecutionHistory",
-    "ListExecutions",
-    "ListTagsForResource"
+    "GetExecutionHistory"
 ]
     list                   = [
     "ListActivities",
+    "ListExecutions",
     "ListMapRuns",
-    "ListStateMachines"
+    "ListStateMachineAliases",
+    "ListStateMachineVersions",
+    "ListStateMachines",
+    "ListTagsForResource"
 ]
     tagging                = [
     "TagResource",

@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonworkdocs.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -57,62 +57,75 @@ locals {
     tagging                = [for action in local.minified_actions.tagging : var.use_prefix == true ? "${local.prefix}:${action}" : action]
   }
 
-  prefix = "cleanrooms"
+  prefix = "workdocs"
 
   access_level = {
     write                  = [
-    "CreateAnalysisTemplate",
-    "CreateCollaboration",
-    "CreateConfiguredTable",
-    "CreateConfiguredTableAnalysisRule",
-    "CreateConfiguredTableAssociation",
-    "CreateMembership",
-    "DeleteAnalysisTemplate",
-    "DeleteCollaboration",
-    "DeleteConfiguredTable",
-    "DeleteConfiguredTableAnalysisRule",
-    "DeleteConfiguredTableAssociation",
-    "DeleteMember",
-    "DeleteMembership",
-    "StartProtectedQuery",
-    "UpdateAnalysisTemplate",
-    "UpdateCollaboration",
-    "UpdateConfiguredTable",
-    "UpdateConfiguredTableAnalysisRule",
-    "UpdateConfiguredTableAssociation",
-    "UpdateMembership",
-    "UpdateProtectedQuery"
+    "AbortDocumentVersionUpload",
+    "ActivateUser",
+    "AddNotificationPermissions",
+    "AddResourcePermissions",
+    "AddUserToGroup",
+    "CreateComment",
+    "CreateCustomMetadata",
+    "CreateFolder",
+    "CreateInstance",
+    "CreateLabels",
+    "CreateNotificationSubscription",
+    "CreateUser",
+    "DeactivateUser",
+    "DeleteComment",
+    "DeleteCustomMetadata",
+    "DeleteDocument",
+    "DeleteDocumentVersion",
+    "DeleteFolder",
+    "DeleteFolderContents",
+    "DeleteInstance",
+    "DeleteLabels",
+    "DeleteNotificationPermissions",
+    "DeleteNotificationSubscription",
+    "DeleteUser",
+    "DeregisterDirectory",
+    "InitiateDocumentVersionUpload",
+    "RegisterDirectory",
+    "RemoveAllResourcePermissions",
+    "RemoveResourcePermission",
+    "RestoreDocumentVersions",
+    "UpdateDocument",
+    "UpdateDocumentVersion",
+    "UpdateFolder",
+    "UpdateInstanceAlias",
+    "UpdateUser",
+    "UpdateUserAdministrativeSettings"
 ]
     permissions_management = []
     read                   = [
-    "BatchGetCollaborationAnalysisTemplate",
-    "BatchGetSchema",
-    "GetAnalysisTemplate",
-    "GetCollaboration",
-    "GetCollaborationAnalysisTemplate",
-    "GetConfiguredTable",
-    "GetConfiguredTableAnalysisRule",
-    "GetConfiguredTableAssociation",
-    "GetMembership",
-    "GetProtectedQuery",
-    "GetSchema",
-    "GetSchemaAnalysisRule"
+    "CheckAlias",
+    "DownloadDocumentVersion",
+    "GetCurrentUser",
+    "GetDocument",
+    "GetDocumentPath",
+    "GetDocumentVersion",
+    "GetFolder",
+    "GetFolderPath",
+    "GetGroup",
+    "GetResources"
 ]
     list                   = [
-    "ListAnalysisTemplates",
-    "ListCollaborationAnalysisTemplates",
-    "ListCollaborations",
-    "ListConfiguredTableAssociations",
-    "ListConfiguredTables",
-    "ListMembers",
-    "ListMemberships",
-    "ListProtectedQueries",
-    "ListSchemas",
-    "ListTagsForResource"
+    "DescribeActivities",
+    "DescribeAvailableDirectories",
+    "DescribeComments",
+    "DescribeDocumentVersions",
+    "DescribeFolderContents",
+    "DescribeGroups",
+    "DescribeInstances",
+    "DescribeNotificationPermissions",
+    "DescribeNotificationSubscriptions",
+    "DescribeResourcePermissions",
+    "DescribeRootFolders",
+    "DescribeUsers",
+    "SearchResources"
 ]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    tagging                = []
   }
 }
