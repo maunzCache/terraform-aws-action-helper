@@ -13,6 +13,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Implemented unit tests in `test_generate_module.py`.
   - Added additional `pytest.ini` file for configuring test runtime.
   - Updated `requirements-dev.txt` to contain `pytest-cov`.
+    - Moved to `pyproject.toml`.
+- Bulk update for modules using the `--all` parameter.
+
+### Changed
+
+- Replaced `terragrunt-doc` local docker with official hook.
+- Empty `main.tf` and suggest loading submodules on demand.
+  - Note: Due to the massive amount of AWS services, using this module multiple in a project time will bloat your harddrive.
+- Pregenerate terraform-docs `README.md` file via `cookicutter`.
+- Replace `trimprefix` and `trimsuffix` with the corresponding `startswith` or `endswith` function.
+  - Note: Requires Terraform `>= 1.3`
+
+### Fixed
+
+- Required renaming of the Github repository link in README file.
 
 ## [v1.0.0] - 2022-06-03
 
@@ -24,6 +39,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Filtering of action names
   - Minifying of action names
 
-[Unreleased]: https://github.com/maunzCache/aws-action-helper/compare/v1.0.0...HEAD
-<!-- [1.0.1]: https://github.com/maunzCache/aws-action-helper/compare/v1.0.0...v1.0.1 -->
-[v1.0.0]: https://github.com/maunzCache/aws-action-helper/releases/tag/v1.0.0
+[Unreleased]: https://github.com/maunzCache/terraform-aws-action-helper/compare/v1.0.0...HEAD
+<!-- [1.0.1]: https://github.com/maunzCache/terraform-aws-action-helper/compare/v1.0.0...v1.0.1 -->
+[v1.0.0]: https://github.com/maunzCache/terraform-aws-action-helper/releases/tag/v1.0.0
