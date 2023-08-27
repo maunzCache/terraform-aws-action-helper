@@ -49,6 +49,6 @@ None.
   - Filtering of action names
   - Minifying of action names
 
-[Unreleased]: https://github.com/maunzCache/terraform-aws-action-helper/compare/v1.0.0...HEAD
-<!-- [1.0.1]: https://github.com/maunzCache/terraform-aws-action-helper/compare/v1.0.0...v1.0.1 -->
+[Unreleased]: https://github.com/maunzCache/terraform-aws-action-helper/compare/v2.0.0...HEAD
+[v2.0.0]: https://github.com/maunzCache/terraform-aws-action-helper/compare/v1.0.0...v2.0.0
 [v1.0.0]: https://github.com/maunzCache/terraform-aws-action-helper/releases/tag/v1.0.0
