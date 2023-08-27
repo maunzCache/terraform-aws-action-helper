@@ -81,7 +81,7 @@ def test_generate_actions_from_service_returns_service_name(mock_file_content):
     '''
     mock_file_content.return_value = dummy_html_as_str
 
-    test_service_docs_page_name = 'whatever'
+    test_service_docs_page_name = 'my-service-name'
 
     expected_result = dummy_service_name
 
@@ -111,7 +111,7 @@ def test_generate_actions_from_service_returns_actions(mock_file_content):
                 <table>
                     <tr>
                         <td>
-                            <a>Some cool link</a>
+                            <a id="{dummy_service_name}-{dummy_write_action}"></a>
                             <a>{dummy_write_action}</a>
                         </td>
                         <td></td>
@@ -119,7 +119,7 @@ def test_generate_actions_from_service_returns_actions(mock_file_content):
                     </tr>
                     <tr>
                         <td>
-                            <a>Some cool link</a>
+                            <a id="{dummy_service_name}-{dummy_write_action_permission}"></a>
                             <a>{dummy_write_action_permission} [permission only]</a>
                         </td>
                         <td></td>
@@ -133,7 +133,7 @@ def test_generate_actions_from_service_returns_actions(mock_file_content):
     '''
     mock_file_content.return_value = dummy_html_as_str
 
-    test_service_docs_page_name = 'whatever'
+    test_service_docs_page_name = 'my-service-name'
 
     expected_result = {
         'list': [],
@@ -168,7 +168,7 @@ def test_generate_actions_from_service_returns_service_prefix(mock_file_content)
                 <table>
                     <tr>
                         <td>
-                            <a>Some cool link</a>
+                            <a id="{dummy_service_name}-{dummy_write_action}"></a>
                             <a>{dummy_write_action}</a>
                         </td>
                         <td></td>
@@ -182,7 +182,7 @@ def test_generate_actions_from_service_returns_service_prefix(mock_file_content)
     '''
     mock_file_content.return_value = dummy_html_as_str
 
-    test_service_docs_page_name = 'whatever'
+    test_service_docs_page_name = 'my-service-name'
 
     expected_result = dummy_service_name
 

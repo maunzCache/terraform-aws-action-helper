@@ -51,7 +51,7 @@ html_access_levels = ['write', 'list', 'read',
 def main(args: argparse.Namespace):
     service_list = load_service_list_cache()
     if len(service_list) == 0:
-        service_list = generate_service_list_from_html() # TODO: Outdated pages are not properly updated e.g. list_awsbilling.html has migrated to list_awsbilling_.html
+        service_list = generate_service_list_from_html()
 
     if args.all:
         # TODO: Deduplicate code from args.docs_page case
@@ -256,9 +256,8 @@ if __name__ == '__main__':
                         help='Use this flag to consider all services. Mutually exclusive to --docs-page')
     parser.add_argument('--docs-page', type=str,
                         help='Filename of the service without the file type e.g. list_amazonec2.')
-    # TODO: Implement
     # parser.add_argument('--service_name', type=str,
-    #                     help='TODO: Write me please')
+    #                     help='TODO: Implement me please')
     parser.add_argument('--generate', action='store_true',
                         help='Use this flag to generate the module.')
 
