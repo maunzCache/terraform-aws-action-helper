@@ -53,6 +53,6 @@ variable "minify_replacement" {
 ########################
 variable "generate_services" {
   type        = list(string)
-  default     = ["dynamodb", "ec2", "iam"]
+  default     = ["dynamodb", "ec2"]
   description = "List of submodules to use for action list generation."
 }

@@ -5,10 +5,19 @@ This script is volatile and will fail if AWS changes the layout of their documen
 Maybe there will be some kind of API or other source of truth for this kind of information,
 Making everything here obsolete, but it was fun while it lasted.
 
+TODO: Consider generating from https://awspolicygen.s3.amazonaws.com/js/policies.js
+TODO: Replace template file name with simple service name
+
 Usage
 #####
 Create service_list.json
 python -m generate_module
+
+Get/Cache all information for service_list.json
+python -m generate_module --all
+
+Generate all submodules to modules/ directory
+python -m generate_module --all --generate
 
 Get/Cache information for service_list.json
 python -m generate_module --docs-page list_amazonec2
@@ -19,14 +28,13 @@ python -m generate_module --docs-page list_amazonec2 --generate
 
 import argparse
 import json
+import logging
 import urllib.request
 from pathlib import Path
 from typing import Tuple
 
 from cookiecutter.main import cookiecutter
 from lxml import html
-
-import logging
 
 logging.basicConfig(level=logging.INFO)
 
@@ -105,6 +113,7 @@ def generate_service_list_from_html() -> dict:
     try:
         json_content = json.loads(json_string)
         raw_service_page_list = json_content['contents'][0]['contents'][0]['contents']
+        logging.debug(raw_service_page_list)
 
         # Iterate through all navigation items
         for raw_entry in raw_service_page_list:
@@ -154,6 +163,7 @@ def generate_actions_from_service(service_docs_page_name: str) -> Tuple[str, dic
     service_prefix = service_name_wrapper[0].text
     logging.debug(service_prefix)
 
+    # TODO: Not working for awsiq
     service_name = service_docs_page_name.replace('list_', '')  # TODO: Replace special chars for terraform.
     logging.debug(f'{service_prefix}/{service_name}')
 
@@ -188,14 +198,16 @@ def generate_actions_from_service(service_docs_page_name: str) -> Tuple[str, dic
             # Actions are links. Get the value from the second link in the td
             # Its to volatile to parse the id of the first link
             try:
-                html_text = row_data[0].findall('a')[1].text
+                a_id_text = row_data[0].findall('a')[0].attrib.get('id')
+                a_id_text = a_id_text.replace(f'{service_name}-', '')
             except Exception as e:
                 logging.warning(
                     f'Action has link to API. Use fallback. Original error:{e}')
                 # TODO: Sanitizes strings that don't have API links. I don't know how to to this better currently.
-                html_text = row_data[0].text_content().replace(
+                a_id_text = row_data[0].text_content().replace(
                     '\n', '').strip()
-            actions[access_level_data].append(html_text)
+            final_action_name = a_id_text.replace('[permission only]', '').strip()
+            actions[access_level_data].append(final_action_name)
 
     return (service_name, actions, service_prefix)
 
@@ -206,6 +218,8 @@ def get_file_content_from_url(url: str) -> str:
     with urllib.request.urlopen(url) as response:
         response_bytes = response.read()
         json_string = response_bytes.decode('utf-8')
+
+        # TODO: Calc hash and save to file
 
     return json_string
 
@@ -224,7 +238,7 @@ def generate_from_cookiecutter(service_name: str, service_docs_page_name: str, s
     # TODO: If service_name has duplicates, modules will be overridden
 
     cookiecutter_vars = {
-        'service_name': service_name.removeprefix('aws'),
+        'service_name': service_name.removeprefix('aws').removeprefix('amazon'),
         'service_docs_page_name': service_docs_page_name,
         'service_actions': service_actions,
         'service_prefix': service_prefix,

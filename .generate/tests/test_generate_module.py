@@ -95,6 +95,7 @@ def test_generate_actions_from_service_returns_service_name(mock_file_content):
 def test_generate_actions_from_service_returns_actions(mock_file_content):
     dummy_service_name = 'my-service-name'
     dummy_write_action = 'my-action'
+    dummy_write_action_permission = 'my-action-permission'
     dummy_html_as_str = f'''
     <!DOCTYPE html>
     <html>
@@ -116,6 +117,14 @@ def test_generate_actions_from_service_returns_actions(mock_file_content):
                         <td></td>
                         <td>Write</td>
                     </tr>
+                    <tr>
+                        <td>
+                            <a>Some cool link</a>
+                            <a>{dummy_write_action_permission} [permission only]</a>
+                        </td>
+                        <td></td>
+                        <td>Write</td>
+                    </tr>
                 </table>
             </div>
         </div>
@@ -131,7 +140,7 @@ def test_generate_actions_from_service_returns_actions(mock_file_content):
         'permissions_management': [],
         'read': [],
         'tagging': [],
-        'write': [dummy_write_action]
+        'write': [dummy_write_action, dummy_write_action_permission]
     }
 
     _, actual_result, _ = generate_actions_from_service(

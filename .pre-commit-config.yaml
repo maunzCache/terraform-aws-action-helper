@@ -4,23 +4,9 @@ repos:
     hooks:
       - id: check-merge-conflict
       - id: end-of-file-fixer
-  - repo: local
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.83.0
     hooks:
-      - &tfdocs
-        id: terraform-docs
-        name: terraform-docs
-        language: docker_image
-        entry: quay.io/terraform-docs/terraform-docs:latest
-        pass_filenames: false
+      - id: terraform_fmt
         args:
-          - ./
-      - <<: *tfdocs
-        args:
-          - ./modules/dynamodb
-      - <<: *tfdocs
-        args:
-          - ./modules/ec2
-      - <<: *tfdocs
-        args:
-          - ./modules/iam
-# TODO: Generate terraform-docs for all submodules
+          - --args=-recursive
