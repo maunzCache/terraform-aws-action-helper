@@ -8,26 +8,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+None.
+
+## [v2.0.0] - 2023-08-27
+
 ### Added
 
 - Implemented unit tests in `test_generate_module.py`.
+  - Known Issue: Running tests will create a blank `service_list.json` file.
   - Added additional `pytest.ini` file for configuring test runtime.
   - Updated `requirements-dev.txt` to contain `pytest-cov`.
     - Moved to `pyproject.toml`.
 - Bulk update for modules using the `--all` parameter.
-
-### Changed
-
-- Replaced `terragrunt-doc` local docker with official hook.
-- Empty `main.tf` and suggest loading submodules on demand.
-  - Note: Due to the massive amount of AWS services, using this module multiple in a project time will bloat your harddrive.
-- Pregenerate terraform-docs `README.md` file via `cookicutter`.
-- Replace `trimprefix` and `trimsuffix` with the corresponding `startswith` or `endswith` function.
-  - Note: Requires Terraform `>= 1.3`
+- A bunch of TODO markers in the script.
+  - Sorry about the half-baked result, but i really want to release the module updates.
 
 ### Fixed
 
 - Required renaming of the Github repository link in README file.
+
+### Changed
+
+- Empty `main.tf` and suggest loading submodules on demand.
+  - Note: Due to the massive amount of AWS services, using this module multiple in a project time will bloat your hard drive.
+- Pregenerate `terraform-doc`s `README.md` file via `cookiecutter`.
+- Replace `trimprefix` and `trimsuffix` with the corresponding `startswith` or `endswith` function.
+  - Note: Requires Terraform `>= 1.3`
+
+### Removed
+
+- `terragrunt-doc` pre-commit hook no longer required.
 
 ## [v1.0.0] - 2022-06-03
 
