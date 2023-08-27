@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "generate-module"
+version = "1.0.0"
+description = "My first Python package"
+requires-python = ">=3.10"
+authors = [
+    {name = "Kevin Kortum", email = "kevin.kortum@gmx.de"},
+]
+dependencies = [
+    "cookiecutter",
+    "cssselect",
+    "lxml"
+]
+
+[project.optional-dependencies]
+dev = [
+    "autopep8",
+    "isort",
+    "mypy",
+    "pycodestyle",
+    "pydocstyle",
+    "pytest >= 7.4",
+    "pytest-cov"
+]

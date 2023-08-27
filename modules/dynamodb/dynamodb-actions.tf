@@ -4,14 +4,13 @@ locals {
   # TODO: Code below duplicates. Find a better way to DRY it.
 
   // Helper to filter out actions
-  // Based on https://github.com/hashicorp/terraform/issues/28209
-  // Reads as: If filtering is empty use action or if action - after removing prefix - is not longer the action, return the action
+  // Reads as: If filtering is empty, return current action. If filtering is provided, return action on matching condition.
   starts_with_filtered_actions = {
-    write                  = distinct([for action in local.access_level.write : (length(var.filtering.starts_with) == 0) || (trimprefix(action, var.filtering.starts_with) != action) == true ? action : ""])
-    permissions_management = distinct([for action in local.access_level.permissions_management : (length(var.filtering.starts_with) == 0) || (trimprefix(action, var.filtering.starts_with) != action) == true ? action : ""])
-    read                   = distinct([for action in local.access_level.read : (length(var.filtering.starts_with) == 0) || (trimprefix(action, var.filtering.starts_with) != action) == true ? action : ""])
-    list                   = distinct([for action in local.access_level.list : (length(var.filtering.starts_with) == 0) || (trimprefix(action, var.filtering.starts_with) != action) == true ? action : ""])
-    tagging                = distinct([for action in local.access_level.tagging : (length(var.filtering.starts_with) == 0) || (trimprefix(action, var.filtering.starts_with) != action) == true ? action : ""])
+    write                  = distinct([for action in local.access_level.write : (length(var.filtering.starts_with) == 0) || startswith(action, var.filtering.starts_with) ? action : ""])
+    permissions_management = distinct([for action in local.access_level.permissions_management : (length(var.filtering.starts_with) == 0) || startswith(action, var.filtering.starts_with) ? action : ""])
+    read                   = distinct([for action in local.access_level.read : (length(var.filtering.starts_with) == 0) || startswith(action, var.filtering.starts_with) ? action : ""])
+    list                   = distinct([for action in local.access_level.list : (length(var.filtering.starts_with) == 0) || startswith(action, var.filtering.starts_with) ? action : ""])
+    tagging                = distinct([for action in local.access_level.tagging : (length(var.filtering.starts_with) == 0) || startswith(action, var.filtering.starts_with) ? action : ""])
   }
 
   contains_filtered_actions = {
@@ -23,11 +22,11 @@ locals {
   }
 
   ends_with_filtered_actions = {
-    write                  = distinct([for action in local.contains_filtered_actions.write : (length(var.filtering.ends_with) == 0) || (trimsuffix(action, var.filtering.ends_with) != action) == true ? action : ""])
-    permissions_management = distinct([for action in local.contains_filtered_actions.permissions_management : (length(var.filtering.ends_with) == 0) || (trimsuffix(action, var.filtering.ends_with) != action) == true ? action : ""])
-    read                   = distinct([for action in local.contains_filtered_actions.read : (length(var.filtering.ends_with) == 0) || (trimsuffix(action, var.filtering.ends_with) != action) == true ? action : ""])
-    list                   = distinct([for action in local.contains_filtered_actions.list : (length(var.filtering.ends_with) == 0) || (trimsuffix(action, var.filtering.ends_with) != action) == true ? action : ""])
-    tagging                = distinct([for action in local.contains_filtered_actions.tagging : (length(var.filtering.ends_with) == 0) || (trimsuffix(action, var.filtering.ends_with) != action) == true ? action : ""])
+    write                  = distinct([for action in local.contains_filtered_actions.write : (length(var.filtering.ends_with) == 0) || endswith(action, var.filtering.ends_with) ? action : ""])
+    permissions_management = distinct([for action in local.contains_filtered_actions.permissions_management : (length(var.filtering.ends_with) == 0) || endswith(action, var.filtering.ends_with) ? action : ""])
+    read                   = distinct([for action in local.contains_filtered_actions.read : (length(var.filtering.ends_with) == 0) || endswith(action, var.filtering.ends_with) ? action : ""])
+    list                   = distinct([for action in local.contains_filtered_actions.list : (length(var.filtering.ends_with) == 0) || endswith(action, var.filtering.ends_with) ? action : ""])
+    tagging                = distinct([for action in local.contains_filtered_actions.tagging : (length(var.filtering.ends_with) == 0) || endswith(action, var.filtering.ends_with) ? action : ""])
   }
 
   // Remove entries that are not matched by the filter.
@@ -60,74 +59,79 @@ locals {
   prefix = "dynamodb"
 
   access_level = {
-    write                  = [
-    "BatchWriteItem",
-    "CreateBackup",
-    "CreateGlobalTable",
-    "CreateTable",
-    "CreateTableReplica",
-    "DeleteBackup",
-    "DeleteItem",
-    "DeleteTable",
-    "DeleteTableReplica",
-    "DisableKinesisStreamingDestination",
-    "EnableKinesisStreamingDestination",
-    "ExportTableToPointInTime",
-    "PartiQLDelete",
-    "PartiQLInsert",
-    "PartiQLUpdate",
-    "PurchaseReservedCapacityOfferings",
-    "PutItem",
-    "RestoreTableFromAwsBackup",
-    "RestoreTableFromBackup",
-    "RestoreTableToPointInTime",
-    "StartAwsBackupJob",
-    "UpdateContinuousBackups",
-    "UpdateContributorInsights",
-    "UpdateGlobalTable",
-    "UpdateGlobalTableSettings",
-    "UpdateItem",
-    "UpdateTable",
-    "UpdateTableReplicaAutoScaling",
-    "UpdateTimeToLive"
-]
+    write = [
+      "BatchWriteItem",
+      "CreateBackup",
+      "CreateGlobalTable",
+      "CreateTable",
+      "CreateTableReplica",
+      "DeleteBackup",
+      "DeleteItem",
+      "DeleteTable",
+      "DeleteTableReplica",
+      "DisableKinesisStreamingDestination",
+      "EnableKinesisStreamingDestination",
+      "ExportTableToPointInTime",
+      "ImportTable",
+      "PartiQLDelete",
+      "PartiQLInsert",
+      "PartiQLUpdate",
+      "PurchaseReservedCapacityOfferings",
+      "PutItem",
+      "RestoreTableFromAwsBackup",
+      "RestoreTableFromBackup",
+      "RestoreTableToPointInTime",
+      "StartAwsBackupJob",
+      "UpdateContinuousBackups",
+      "UpdateContributorInsights",
+      "UpdateGlobalTable",
+      "UpdateGlobalTableSettings",
+      "UpdateGlobalTableVersion",
+      "UpdateItem",
+      "UpdateTable",
+      "UpdateTableReplicaAutoScaling",
+      "UpdateTimeToLive"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetItem",
-    "ConditionCheckItem",
-    "DescribeBackup",
-    "DescribeContinuousBackups",
-    "DescribeContributorInsights",
-    "DescribeExport",
-    "DescribeGlobalTable",
-    "DescribeGlobalTableSettings",
-    "DescribeKinesisStreamingDestination",
-    "DescribeLimits",
-    "DescribeReservedCapacity",
-    "DescribeReservedCapacityOfferings",
-    "DescribeStream",
-    "DescribeTable",
-    "DescribeTableReplicaAutoScaling",
-    "DescribeTimeToLive",
-    "GetItem",
-    "GetRecords",
-    "GetShardIterator",
-    "ListStreams",
-    "ListTagsOfResource",
-    "PartiQLSelect",
-    "Query",
-    "Scan"
-]
-    list                   = [
-    "ListBackups",
-    "ListContributorInsights",
-    "ListExports",
-    "ListGlobalTables",
-    "ListTables"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchGetItem",
+      "ConditionCheckItem",
+      "DescribeBackup",
+      "DescribeContinuousBackups",
+      "DescribeContributorInsights",
+      "DescribeEndpoints",
+      "DescribeExport",
+      "DescribeGlobalTable",
+      "DescribeGlobalTableSettings",
+      "DescribeImport",
+      "DescribeKinesisStreamingDestination",
+      "DescribeLimits",
+      "DescribeReservedCapacity",
+      "DescribeReservedCapacityOfferings",
+      "DescribeStream",
+      "DescribeTable",
+      "DescribeTableReplicaAutoScaling",
+      "DescribeTimeToLive",
+      "GetItem",
+      "GetRecords",
+      "GetShardIterator",
+      "ListStreams",
+      "ListTagsOfResource",
+      "PartiQLSelect",
+      "Query",
+      "Scan"
+    ]
+    list = [
+      "ListBackups",
+      "ListContributorInsights",
+      "ListExports",
+      "ListGlobalTables",
+      "ListImports",
+      "ListTables"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

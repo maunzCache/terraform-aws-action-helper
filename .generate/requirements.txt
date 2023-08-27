@@ -1,4 +1,0 @@
-cookiecutter
-cssselect
-# html5lib
-lxml
