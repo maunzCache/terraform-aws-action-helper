@@ -59,45 +59,45 @@ locals {
   prefix = "payment-cryptography"
 
   access_level = {
-    write                  = [
-    "CreateAlias",
-    "CreateKey",
-    "DecryptData",
-    "DeleteAlias",
-    "DeleteKey",
-    "EncryptData",
-    "ExportKey",
-    "GenerateCardValidationData",
-    "GenerateMac",
-    "GeneratePinData",
-    "ImportKey",
-    "ReEncryptData",
-    "RestoreKey",
-    "StartKeyUsage",
-    "StopKeyUsage",
-    "TranslatePinData",
-    "UpdateAlias",
-    "VerifyAuthRequestCryptogram",
-    "VerifyCardValidationData",
-    "VerifyMac",
-    "VerifyPinData"
-]
+    write = [
+      "CreateAlias",
+      "CreateKey",
+      "DecryptData",
+      "DeleteAlias",
+      "DeleteKey",
+      "EncryptData",
+      "ExportKey",
+      "GenerateCardValidationData",
+      "GenerateMac",
+      "GeneratePinData",
+      "ImportKey",
+      "ReEncryptData",
+      "RestoreKey",
+      "StartKeyUsage",
+      "StopKeyUsage",
+      "TranslatePinData",
+      "UpdateAlias",
+      "VerifyAuthRequestCryptogram",
+      "VerifyCardValidationData",
+      "VerifyMac",
+      "VerifyPinData"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAlias",
-    "GetKey",
-    "GetParametersForExport",
-    "GetParametersForImport",
-    "GetPublicKeyCertificate",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAliases",
-    "ListKeys"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetAlias",
+      "GetKey",
+      "GetParametersForExport",
+      "GetParametersForImport",
+      "GetPublicKeyCertificate",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAliases",
+      "ListKeys"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

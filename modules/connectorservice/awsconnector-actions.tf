@@ -59,15 +59,15 @@ locals {
   prefix = "awsconnector"
 
   access_level = {
-    write                  = [
-    "RegisterConnector"
-]
+    write = [
+      "RegisterConnector"
+    ]
     permissions_management = []
-    read                   = [
-    "GetConnectorHealth",
-    "ValidateConnectorId"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetConnectorHealth",
+      "ValidateConnectorId"
+    ]
+    list    = []
+    tagging = []
   }
 }

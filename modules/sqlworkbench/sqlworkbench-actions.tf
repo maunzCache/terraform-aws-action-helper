@@ -59,82 +59,82 @@ locals {
   prefix = "sqlworkbench"
 
   access_level = {
-    write                  = [
-    "AssociateConnectionWithChart",
-    "AssociateConnectionWithTab",
-    "AssociateNotebookWithTab",
-    "AssociateQueryWithTab",
-    "BatchDeleteFolder",
-    "CreateAccount",
-    "CreateChart",
-    "CreateConnection",
-    "CreateFolder",
-    "CreateNotebook",
-    "CreateNotebookCell",
-    "CreateNotebookFromVersion",
-    "CreateNotebookVersion",
-    "CreateSavedQuery",
-    "DeleteChart",
-    "DeleteConnection",
-    "DeleteNotebook",
-    "DeleteNotebookCell",
-    "DeleteNotebookVersion",
-    "DeleteSavedQuery",
-    "DeleteTab",
-    "DriverExecute",
-    "DuplicateNotebook",
-    "GenerateSession",
-    "ImportNotebook",
-    "PutTab",
-    "PutUserWorkspaceSettings",
-    "RestoreNotebookVersion",
-    "UpdateAccountConnectionSettings",
-    "UpdateAccountExportSettings",
-    "UpdateAccountGeneralSettings",
-    "UpdateChart",
-    "UpdateConnection",
-    "UpdateFileFolder",
-    "UpdateFolder",
-    "UpdateNotebook",
-    "UpdateNotebookCellContent",
-    "UpdateNotebookCellLayout",
-    "UpdateSavedQuery"
-]
+    write = [
+      "AssociateConnectionWithChart",
+      "AssociateConnectionWithTab",
+      "AssociateNotebookWithTab",
+      "AssociateQueryWithTab",
+      "BatchDeleteFolder",
+      "CreateAccount",
+      "CreateChart",
+      "CreateConnection",
+      "CreateFolder",
+      "CreateNotebook",
+      "CreateNotebookCell",
+      "CreateNotebookFromVersion",
+      "CreateNotebookVersion",
+      "CreateSavedQuery",
+      "DeleteChart",
+      "DeleteConnection",
+      "DeleteNotebook",
+      "DeleteNotebookCell",
+      "DeleteNotebookVersion",
+      "DeleteSavedQuery",
+      "DeleteTab",
+      "DriverExecute",
+      "DuplicateNotebook",
+      "GenerateSession",
+      "ImportNotebook",
+      "PutTab",
+      "PutUserWorkspaceSettings",
+      "RestoreNotebookVersion",
+      "UpdateAccountConnectionSettings",
+      "UpdateAccountExportSettings",
+      "UpdateAccountGeneralSettings",
+      "UpdateChart",
+      "UpdateConnection",
+      "UpdateFileFolder",
+      "UpdateFolder",
+      "UpdateNotebook",
+      "UpdateNotebookCellContent",
+      "UpdateNotebookCellLayout",
+      "UpdateSavedQuery"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetNotebookCell",
-    "ExportNotebook",
-    "GetAccountInfo",
-    "GetAccountSettings",
-    "GetAutocompletionMetadata",
-    "GetAutocompletionResource",
-    "GetChart",
-    "GetConnection",
-    "GetNotebook",
-    "GetNotebookVersion",
-    "GetQueryExecutionHistory",
-    "GetSavedQuery",
-    "GetSchemaInference",
-    "GetUserInfo",
-    "GetUserWorkspaceSettings",
-    "ListSampleDatabases",
-    "ListTaggedResources",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListConnections",
-    "ListDatabases",
-    "ListFiles",
-    "ListNotebookVersions",
-    "ListNotebooks",
-    "ListQueryExecutionHistory",
-    "ListRedshiftClusters",
-    "ListSavedQueryVersions",
-    "ListTabs"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchGetNotebookCell",
+      "ExportNotebook",
+      "GetAccountInfo",
+      "GetAccountSettings",
+      "GetAutocompletionMetadata",
+      "GetAutocompletionResource",
+      "GetChart",
+      "GetConnection",
+      "GetNotebook",
+      "GetNotebookVersion",
+      "GetQueryExecutionHistory",
+      "GetSavedQuery",
+      "GetSchemaInference",
+      "GetUserInfo",
+      "GetUserWorkspaceSettings",
+      "ListSampleDatabases",
+      "ListTaggedResources",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListConnections",
+      "ListDatabases",
+      "ListFiles",
+      "ListNotebookVersions",
+      "ListNotebooks",
+      "ListQueryExecutionHistory",
+      "ListRedshiftClusters",
+      "ListSavedQueryVersions",
+      "ListTabs"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

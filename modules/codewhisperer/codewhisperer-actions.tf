@@ -59,22 +59,22 @@ locals {
   prefix = "codewhisperer"
 
   access_level = {
-    write                  = [
-    "CreateProfile",
-    "DeleteProfile",
-    "UpdateProfile"
-]
+    write = [
+      "CreateProfile",
+      "DeleteProfile",
+      "UpdateProfile"
+    ]
     permissions_management = []
-    read                   = [
-    "GenerateRecommendations"
-]
-    list                   = [
-    "ListProfiles",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GenerateRecommendations"
+    ]
+    list = [
+      "ListProfiles",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

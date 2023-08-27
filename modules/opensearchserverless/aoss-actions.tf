@@ -59,46 +59,46 @@ locals {
   prefix = "aoss"
 
   access_level = {
-    write                  = [
-    "APIAccessAll",
-    "CreateAccessPolicy",
-    "CreateCollection",
-    "CreateSecurityConfig",
-    "CreateSecurityPolicy",
-    "CreateVpcEndpoint",
-    "DashboardsAccessAll",
-    "DeleteAccessPolicy",
-    "DeleteCollection",
-    "DeleteSecurityConfig",
-    "DeleteSecurityPolicy",
-    "DeleteVpcEndpoint",
-    "TagResource",
-    "UntagResource",
-    "UpdateAccessPolicy",
-    "UpdateAccountSettings",
-    "UpdateCollection",
-    "UpdateSecurityConfig",
-    "UpdateSecurityPolicy",
-    "UpdateVpcEndpoint"
-]
+    write = [
+      "APIAccessAll",
+      "CreateAccessPolicy",
+      "CreateCollection",
+      "CreateSecurityConfig",
+      "CreateSecurityPolicy",
+      "CreateVpcEndpoint",
+      "DashboardsAccessAll",
+      "DeleteAccessPolicy",
+      "DeleteCollection",
+      "DeleteSecurityConfig",
+      "DeleteSecurityPolicy",
+      "DeleteVpcEndpoint",
+      "TagResource",
+      "UntagResource",
+      "UpdateAccessPolicy",
+      "UpdateAccountSettings",
+      "UpdateCollection",
+      "UpdateSecurityConfig",
+      "UpdateSecurityPolicy",
+      "UpdateVpcEndpoint"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetCollection",
-    "BatchGetVpcEndpoint",
-    "GetAccessPolicy",
-    "GetAccountSettings",
-    "GetPoliciesStats",
-    "GetSecurityConfig",
-    "GetSecurityPolicy"
-]
-    list                   = [
-    "ListAccessPolicies",
-    "ListCollections",
-    "ListSecurityConfigs",
-    "ListSecurityPolicies",
-    "ListTagsForResource",
-    "ListVpcEndpoints"
-]
-    tagging                = []
+    read = [
+      "BatchGetCollection",
+      "BatchGetVpcEndpoint",
+      "GetAccessPolicy",
+      "GetAccountSettings",
+      "GetPoliciesStats",
+      "GetSecurityConfig",
+      "GetSecurityPolicy"
+    ]
+    list = [
+      "ListAccessPolicies",
+      "ListCollections",
+      "ListSecurityConfigs",
+      "ListSecurityPolicies",
+      "ListTagsForResource",
+      "ListVpcEndpoints"
+    ]
+    tagging = []
   }
 }

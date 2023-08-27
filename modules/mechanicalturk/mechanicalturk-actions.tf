@@ -59,52 +59,52 @@ locals {
   prefix = "mechanicalturk"
 
   access_level = {
-    write                  = [
-    "AcceptQualificationRequest",
-    "ApproveAssignment",
-    "AssociateQualificationWithWorker",
-    "CreateAdditionalAssignmentsForHIT",
-    "CreateHIT",
-    "CreateHITType",
-    "CreateHITWithHITType",
-    "CreateQualificationType",
-    "CreateWorkerBlock",
-    "DeleteHIT",
-    "DeleteQualificationType",
-    "DeleteWorkerBlock",
-    "DisassociateQualificationFromWorker",
-    "NotifyWorkers",
-    "RejectAssignment",
-    "RejectQualificationRequest",
-    "SendBonus",
-    "SendTestEventNotification",
-    "UpdateExpirationForHIT",
-    "UpdateHITReviewStatus",
-    "UpdateHITTypeOfHIT",
-    "UpdateNotificationSettings",
-    "UpdateQualificationType"
-]
+    write = [
+      "AcceptQualificationRequest",
+      "ApproveAssignment",
+      "AssociateQualificationWithWorker",
+      "CreateAdditionalAssignmentsForHIT",
+      "CreateHIT",
+      "CreateHITType",
+      "CreateHITWithHITType",
+      "CreateQualificationType",
+      "CreateWorkerBlock",
+      "DeleteHIT",
+      "DeleteQualificationType",
+      "DeleteWorkerBlock",
+      "DisassociateQualificationFromWorker",
+      "NotifyWorkers",
+      "RejectAssignment",
+      "RejectQualificationRequest",
+      "SendBonus",
+      "SendTestEventNotification",
+      "UpdateExpirationForHIT",
+      "UpdateHITReviewStatus",
+      "UpdateHITTypeOfHIT",
+      "UpdateNotificationSettings",
+      "UpdateQualificationType"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAccountBalance",
-    "GetAssignment",
-    "GetFileUploadURL",
-    "GetHIT",
-    "GetQualificationScore",
-    "GetQualificationType"
-]
-    list                   = [
-    "ListAssignmentsForHIT",
-    "ListBonusPayments",
-    "ListHITs",
-    "ListHITsForQualificationType",
-    "ListQualificationRequests",
-    "ListQualificationTypes",
-    "ListReviewPolicyResultsForHIT",
-    "ListReviewableHITs",
-    "ListWorkerBlocks",
-    "ListWorkersWithQualificationType"
-]
-    tagging                = []
+    read = [
+      "GetAccountBalance",
+      "GetAssignment",
+      "GetFileUploadURL",
+      "GetHIT",
+      "GetQualificationScore",
+      "GetQualificationType"
+    ]
+    list = [
+      "ListAssignmentsForHIT",
+      "ListBonusPayments",
+      "ListHITs",
+      "ListHITsForQualificationType",
+      "ListQualificationRequests",
+      "ListQualificationTypes",
+      "ListReviewPolicyResultsForHIT",
+      "ListReviewableHITs",
+      "ListWorkerBlocks",
+      "ListWorkersWithQualificationType"
+    ]
+    tagging = []
   }
 }

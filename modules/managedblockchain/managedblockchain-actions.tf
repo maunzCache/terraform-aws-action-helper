@@ -59,47 +59,47 @@ locals {
   prefix = "managedblockchain"
 
   access_level = {
-    write                  = [
-    "CreateAccessor",
-    "CreateMember",
-    "CreateNetwork",
-    "CreateNode",
-    "CreateProposal",
-    "DeleteAccessor",
-    "DeleteMember",
-    "DeleteNode",
-    "RejectInvitation",
-    "UpdateMember",
-    "UpdateNode",
-    "VoteOnProposal"
-]
+    write = [
+      "CreateAccessor",
+      "CreateMember",
+      "CreateNetwork",
+      "CreateNode",
+      "CreateProposal",
+      "DeleteAccessor",
+      "DeleteMember",
+      "DeleteNode",
+      "RejectInvitation",
+      "UpdateMember",
+      "UpdateNode",
+      "VoteOnProposal"
+    ]
     permissions_management = [
-    "GET",
-    "Invoke",
-    "POST"
-]
-    read                   = [
-    "GetAccessor",
-    "GetMember",
-    "GetNetwork",
-    "GetNode",
-    "GetProposal",
-    "InvokeRpcBitcoinMainnet",
-    "InvokeRpcBitcoinTestnet",
-    "ListProposalVotes",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAccessors",
-    "ListInvitations",
-    "ListMembers",
-    "ListNetworks",
-    "ListNodes",
-    "ListProposals"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "GET",
+      "Invoke",
+      "POST"
+    ]
+    read = [
+      "GetAccessor",
+      "GetMember",
+      "GetNetwork",
+      "GetNode",
+      "GetProposal",
+      "InvokeRpcBitcoinMainnet",
+      "InvokeRpcBitcoinTestnet",
+      "ListProposalVotes",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAccessors",
+      "ListInvitations",
+      "ListMembers",
+      "ListNetworks",
+      "ListNodes",
+      "ListProposals"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

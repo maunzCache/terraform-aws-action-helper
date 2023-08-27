@@ -59,28 +59,28 @@ locals {
   prefix = "oam"
 
   access_level = {
-    write                  = [
-    "CreateLink",
-    "CreateSink",
-    "DeleteLink",
-    "DeleteSink",
-    "PutSinkPolicy",
-    "UpdateLink"
-]
+    write = [
+      "CreateLink",
+      "CreateSink",
+      "DeleteLink",
+      "DeleteSink",
+      "PutSinkPolicy",
+      "UpdateLink"
+    ]
     permissions_management = []
-    read                   = [
-    "GetLink",
-    "GetSink",
-    "GetSinkPolicy",
-    "ListAttachedLinks",
-    "ListLinks",
-    "ListSinks",
-    "ListTagsForResource"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetLink",
+      "GetSink",
+      "GetSinkPolicy",
+      "ListAttachedLinks",
+      "ListLinks",
+      "ListSinks",
+      "ListTagsForResource"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

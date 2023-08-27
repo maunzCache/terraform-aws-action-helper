@@ -59,83 +59,83 @@ locals {
   prefix = "lambda"
 
   access_level = {
-    write                  = [
-    "CreateAlias",
-    "CreateCodeSigningConfig",
-    "CreateEventSourceMapping",
-    "CreateFunction",
-    "CreateFunctionUrlConfig",
-    "DeleteAlias",
-    "DeleteCodeSigningConfig",
-    "DeleteEventSourceMapping",
-    "DeleteFunction",
-    "DeleteFunctionCodeSigningConfig",
-    "DeleteFunctionConcurrency",
-    "DeleteFunctionEventInvokeConfig",
-    "DeleteFunctionUrlConfig",
-    "DeleteLayerVersion",
-    "DeleteProvisionedConcurrencyConfig",
-    "InvokeAsync",
-    "InvokeFunction",
-    "InvokeFunctionUrl",
-    "PublishLayerVersion",
-    "PublishVersion",
-    "PutFunctionCodeSigningConfig",
-    "PutFunctionConcurrency",
-    "PutFunctionEventInvokeConfig",
-    "PutProvisionedConcurrencyConfig",
-    "PutRuntimeManagementConfig",
-    "UpdateAlias",
-    "UpdateCodeSigningConfig",
-    "UpdateEventSourceMapping",
-    "UpdateFunctionCode",
-    "UpdateFunctionCodeSigningConfig",
-    "UpdateFunctionConfiguration",
-    "UpdateFunctionEventInvokeConfig",
-    "UpdateFunctionUrlConfig"
-]
+    write = [
+      "CreateAlias",
+      "CreateCodeSigningConfig",
+      "CreateEventSourceMapping",
+      "CreateFunction",
+      "CreateFunctionUrlConfig",
+      "DeleteAlias",
+      "DeleteCodeSigningConfig",
+      "DeleteEventSourceMapping",
+      "DeleteFunction",
+      "DeleteFunctionCodeSigningConfig",
+      "DeleteFunctionConcurrency",
+      "DeleteFunctionEventInvokeConfig",
+      "DeleteFunctionUrlConfig",
+      "DeleteLayerVersion",
+      "DeleteProvisionedConcurrencyConfig",
+      "InvokeAsync",
+      "InvokeFunction",
+      "InvokeFunctionUrl",
+      "PublishLayerVersion",
+      "PublishVersion",
+      "PutFunctionCodeSigningConfig",
+      "PutFunctionConcurrency",
+      "PutFunctionEventInvokeConfig",
+      "PutProvisionedConcurrencyConfig",
+      "PutRuntimeManagementConfig",
+      "UpdateAlias",
+      "UpdateCodeSigningConfig",
+      "UpdateEventSourceMapping",
+      "UpdateFunctionCode",
+      "UpdateFunctionCodeSigningConfig",
+      "UpdateFunctionConfiguration",
+      "UpdateFunctionEventInvokeConfig",
+      "UpdateFunctionUrlConfig"
+    ]
     permissions_management = [
-    "AddLayerVersionPermission",
-    "AddPermission",
-    "DisableReplication",
-    "EnableReplication",
-    "RemoveLayerVersionPermission",
-    "RemovePermission"
-]
-    read                   = [
-    "GetAccountSettings",
-    "GetAlias",
-    "GetCodeSigningConfig",
-    "GetEventSourceMapping",
-    "GetFunction",
-    "GetFunctionCodeSigningConfig",
-    "GetFunctionConcurrency",
-    "GetFunctionConfiguration",
-    "GetFunctionEventInvokeConfig",
-    "GetFunctionUrlConfig",
-    "GetLayerVersion",
-    "GetLayerVersionPolicy",
-    "GetPolicy",
-    "GetProvisionedConcurrencyConfig",
-    "GetRuntimeManagementConfig",
-    "ListTags"
-]
-    list                   = [
-    "ListAliases",
-    "ListCodeSigningConfigs",
-    "ListEventSourceMappings",
-    "ListFunctionEventInvokeConfigs",
-    "ListFunctionUrlConfigs",
-    "ListFunctions",
-    "ListFunctionsByCodeSigningConfig",
-    "ListLayerVersions",
-    "ListLayers",
-    "ListProvisionedConcurrencyConfigs",
-    "ListVersionsByFunction"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "AddLayerVersionPermission",
+      "AddPermission",
+      "DisableReplication",
+      "EnableReplication",
+      "RemoveLayerVersionPermission",
+      "RemovePermission"
+    ]
+    read = [
+      "GetAccountSettings",
+      "GetAlias",
+      "GetCodeSigningConfig",
+      "GetEventSourceMapping",
+      "GetFunction",
+      "GetFunctionCodeSigningConfig",
+      "GetFunctionConcurrency",
+      "GetFunctionConfiguration",
+      "GetFunctionEventInvokeConfig",
+      "GetFunctionUrlConfig",
+      "GetLayerVersion",
+      "GetLayerVersionPolicy",
+      "GetPolicy",
+      "GetProvisionedConcurrencyConfig",
+      "GetRuntimeManagementConfig",
+      "ListTags"
+    ]
+    list = [
+      "ListAliases",
+      "ListCodeSigningConfigs",
+      "ListEventSourceMappings",
+      "ListFunctionEventInvokeConfigs",
+      "ListFunctionUrlConfigs",
+      "ListFunctions",
+      "ListFunctionsByCodeSigningConfig",
+      "ListLayerVersions",
+      "ListLayers",
+      "ListProvisionedConcurrencyConfigs",
+      "ListVersionsByFunction"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

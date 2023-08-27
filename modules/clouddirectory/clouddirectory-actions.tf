@@ -59,80 +59,80 @@ locals {
   prefix = "clouddirectory"
 
   access_level = {
-    write                  = [
-    "AddFacetToObject",
-    "ApplySchema",
-    "AttachObject",
-    "AttachPolicy",
-    "AttachToIndex",
-    "AttachTypedLink",
-    "BatchWrite",
-    "CreateDirectory",
-    "CreateFacet",
-    "CreateIndex",
-    "CreateObject",
-    "CreateSchema",
-    "CreateTypedLinkFacet",
-    "DeleteDirectory",
-    "DeleteFacet",
-    "DeleteObject",
-    "DeleteSchema",
-    "DeleteTypedLinkFacet",
-    "DetachFromIndex",
-    "DetachObject",
-    "DetachPolicy",
-    "DetachTypedLink",
-    "DisableDirectory",
-    "EnableDirectory",
-    "PublishSchema",
-    "PutSchemaFromJson",
-    "RemoveFacetFromObject",
-    "UpdateFacet",
-    "UpdateLinkAttributes",
-    "UpdateObjectAttributes",
-    "UpdateSchema",
-    "UpdateTypedLinkFacet",
-    "UpgradeAppliedSchema",
-    "UpgradePublishedSchema"
-]
+    write = [
+      "AddFacetToObject",
+      "ApplySchema",
+      "AttachObject",
+      "AttachPolicy",
+      "AttachToIndex",
+      "AttachTypedLink",
+      "BatchWrite",
+      "CreateDirectory",
+      "CreateFacet",
+      "CreateIndex",
+      "CreateObject",
+      "CreateSchema",
+      "CreateTypedLinkFacet",
+      "DeleteDirectory",
+      "DeleteFacet",
+      "DeleteObject",
+      "DeleteSchema",
+      "DeleteTypedLinkFacet",
+      "DetachFromIndex",
+      "DetachObject",
+      "DetachPolicy",
+      "DetachTypedLink",
+      "DisableDirectory",
+      "EnableDirectory",
+      "PublishSchema",
+      "PutSchemaFromJson",
+      "RemoveFacetFromObject",
+      "UpdateFacet",
+      "UpdateLinkAttributes",
+      "UpdateObjectAttributes",
+      "UpdateSchema",
+      "UpdateTypedLinkFacet",
+      "UpgradeAppliedSchema",
+      "UpgradePublishedSchema"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchRead",
-    "GetAppliedSchemaVersion",
-    "GetDirectory",
-    "GetFacet",
-    "GetLinkAttributes",
-    "GetObjectAttributes",
-    "GetObjectInformation",
-    "GetSchemaAsJson",
-    "GetTypedLinkFacetInformation",
-    "ListAttachedIndices",
-    "ListFacetAttributes",
-    "ListFacetNames",
-    "ListIncomingTypedLinks",
-    "ListIndex",
-    "ListObjectAttributes",
-    "ListObjectChildren",
-    "ListObjectParentPaths",
-    "ListObjectParents",
-    "ListObjectPolicies",
-    "ListOutgoingTypedLinks",
-    "ListPolicyAttachments",
-    "ListTagsForResource",
-    "ListTypedLinkFacetAttributes",
-    "ListTypedLinkFacetNames",
-    "LookupPolicy"
-]
-    list                   = [
-    "ListAppliedSchemaArns",
-    "ListDevelopmentSchemaArns",
-    "ListDirectories",
-    "ListManagedSchemaArns",
-    "ListPublishedSchemaArns"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchRead",
+      "GetAppliedSchemaVersion",
+      "GetDirectory",
+      "GetFacet",
+      "GetLinkAttributes",
+      "GetObjectAttributes",
+      "GetObjectInformation",
+      "GetSchemaAsJson",
+      "GetTypedLinkFacetInformation",
+      "ListAttachedIndices",
+      "ListFacetAttributes",
+      "ListFacetNames",
+      "ListIncomingTypedLinks",
+      "ListIndex",
+      "ListObjectAttributes",
+      "ListObjectChildren",
+      "ListObjectParentPaths",
+      "ListObjectParents",
+      "ListObjectPolicies",
+      "ListOutgoingTypedLinks",
+      "ListPolicyAttachments",
+      "ListTagsForResource",
+      "ListTypedLinkFacetAttributes",
+      "ListTypedLinkFacetNames",
+      "LookupPolicy"
+    ]
+    list = [
+      "ListAppliedSchemaArns",
+      "ListDevelopmentSchemaArns",
+      "ListDirectories",
+      "ListManagedSchemaArns",
+      "ListPublishedSchemaArns"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,25 +59,25 @@ locals {
   prefix = "identity-sync"
 
   access_level = {
-    write                  = [
-    "CreateSyncFilter",
-    "CreateSyncProfile",
-    "CreateSyncTarget",
-    "DeleteSyncFilter",
-    "DeleteSyncProfile",
-    "DeleteSyncTarget",
-    "StartSync",
-    "StopSync",
-    "UpdateSyncTarget"
-]
+    write = [
+      "CreateSyncFilter",
+      "CreateSyncProfile",
+      "CreateSyncTarget",
+      "DeleteSyncFilter",
+      "DeleteSyncProfile",
+      "DeleteSyncTarget",
+      "StartSync",
+      "StopSync",
+      "UpdateSyncTarget"
+    ]
     permissions_management = []
-    read                   = [
-    "GetSyncProfile",
-    "GetSyncTarget"
-]
-    list                   = [
-    "ListSyncFilters"
-]
-    tagging                = []
+    read = [
+      "GetSyncProfile",
+      "GetSyncTarget"
+    ]
+    list = [
+      "ListSyncFilters"
+    ]
+    tagging = []
   }
 }

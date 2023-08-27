@@ -59,25 +59,25 @@ locals {
   prefix = "supportapp"
 
   access_level = {
-    write                  = [
-    "CreateSlackChannelConfiguration",
-    "DeleteAccountAlias",
-    "DeleteSlackChannelConfiguration",
-    "DeleteSlackWorkspaceConfiguration",
-    "PutAccountAlias",
-    "RedeemSlackOauthCode",
-    "RegisterSlackWorkspaceForOrganization",
-    "UpdateSlackChannelConfiguration"
-]
+    write = [
+      "CreateSlackChannelConfiguration",
+      "DeleteAccountAlias",
+      "DeleteSlackChannelConfiguration",
+      "DeleteSlackWorkspaceConfiguration",
+      "PutAccountAlias",
+      "RedeemSlackOauthCode",
+      "RegisterSlackWorkspaceForOrganization",
+      "UpdateSlackChannelConfiguration"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeSlackChannels",
-    "GetAccountAlias",
-    "GetSlackOauthParameters",
-    "ListSlackChannelConfigurations",
-    "ListSlackWorkspaceConfigurations"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "DescribeSlackChannels",
+      "GetAccountAlias",
+      "GetSlackOauthParameters",
+      "ListSlackChannelConfigurations",
+      "ListSlackWorkspaceConfigurations"
+    ]
+    list    = []
+    tagging = []
   }
 }

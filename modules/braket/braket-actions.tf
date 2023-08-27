@@ -59,26 +59,26 @@ locals {
   prefix = "braket"
 
   access_level = {
-    write                  = [
-    "CancelJob",
-    "CancelQuantumTask",
-    "CreateJob",
-    "CreateQuantumTask"
-]
+    write = [
+      "CancelJob",
+      "CancelQuantumTask",
+      "CreateJob",
+      "CreateQuantumTask"
+    ]
     permissions_management = []
-    read                   = [
-    "GetDevice",
-    "GetJob",
-    "GetQuantumTask",
-    "ListTagsForResource",
-    "SearchDevices",
-    "SearchJobs",
-    "SearchQuantumTasks"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetDevice",
+      "GetJob",
+      "GetQuantumTask",
+      "ListTagsForResource",
+      "SearchDevices",
+      "SearchJobs",
+      "SearchQuantumTasks"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

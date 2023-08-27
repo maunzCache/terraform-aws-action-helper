@@ -59,48 +59,48 @@ locals {
   prefix = "iottwinmaker"
 
   access_level = {
-    write                  = [
-    "BatchPutPropertyValues",
-    "CreateComponentType",
-    "CreateEntity",
-    "CreateScene",
-    "CreateSyncJob",
-    "CreateWorkspace",
-    "DeleteComponentType",
-    "DeleteEntity",
-    "DeleteScene",
-    "DeleteSyncJob",
-    "DeleteWorkspace",
-    "UpdateComponentType",
-    "UpdateEntity",
-    "UpdatePricingPlan",
-    "UpdateScene",
-    "UpdateWorkspace"
-]
+    write = [
+      "BatchPutPropertyValues",
+      "CreateComponentType",
+      "CreateEntity",
+      "CreateScene",
+      "CreateSyncJob",
+      "CreateWorkspace",
+      "DeleteComponentType",
+      "DeleteEntity",
+      "DeleteScene",
+      "DeleteSyncJob",
+      "DeleteWorkspace",
+      "UpdateComponentType",
+      "UpdateEntity",
+      "UpdatePricingPlan",
+      "UpdateScene",
+      "UpdateWorkspace"
+    ]
     permissions_management = []
-    read                   = [
-    "ExecuteQuery",
-    "GetComponentType",
-    "GetEntity",
-    "GetPricingPlan",
-    "GetPropertyValue",
-    "GetPropertyValueHistory",
-    "GetScene",
-    "GetSyncJob",
-    "GetWorkspace"
-]
-    list                   = [
-    "ListComponentTypes",
-    "ListEntities",
-    "ListScenes",
-    "ListSyncJobs",
-    "ListSyncResources",
-    "ListTagsForResource",
-    "ListWorkspaces"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "ExecuteQuery",
+      "GetComponentType",
+      "GetEntity",
+      "GetPricingPlan",
+      "GetPropertyValue",
+      "GetPropertyValueHistory",
+      "GetScene",
+      "GetSyncJob",
+      "GetWorkspace"
+    ]
+    list = [
+      "ListComponentTypes",
+      "ListEntities",
+      "ListScenes",
+      "ListSyncJobs",
+      "ListSyncResources",
+      "ListTagsForResource",
+      "ListWorkspaces"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

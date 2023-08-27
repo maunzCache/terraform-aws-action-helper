@@ -59,51 +59,51 @@ locals {
   prefix = "inspector"
 
   access_level = {
-    write                  = [
-    "AddAttributesToFindings",
-    "CreateAssessmentTarget",
-    "CreateAssessmentTemplate",
-    "CreateExclusionsPreview",
-    "CreateResourceGroup",
-    "DeleteAssessmentRun",
-    "DeleteAssessmentTarget",
-    "DeleteAssessmentTemplate",
-    "RegisterCrossAccountAccessRole",
-    "RemoveAttributesFromFindings",
-    "StartAssessmentRun",
-    "StopAssessmentRun",
-    "SubscribeToEvent",
-    "UnsubscribeFromEvent",
-    "UpdateAssessmentTarget"
-]
+    write = [
+      "AddAttributesToFindings",
+      "CreateAssessmentTarget",
+      "CreateAssessmentTemplate",
+      "CreateExclusionsPreview",
+      "CreateResourceGroup",
+      "DeleteAssessmentRun",
+      "DeleteAssessmentTarget",
+      "DeleteAssessmentTemplate",
+      "RegisterCrossAccountAccessRole",
+      "RemoveAttributesFromFindings",
+      "StartAssessmentRun",
+      "StopAssessmentRun",
+      "SubscribeToEvent",
+      "UnsubscribeFromEvent",
+      "UpdateAssessmentTarget"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAssessmentRuns",
-    "DescribeAssessmentTargets",
-    "DescribeAssessmentTemplates",
-    "DescribeCrossAccountAccessRole",
-    "DescribeExclusions",
-    "DescribeFindings",
-    "DescribeResourceGroups",
-    "DescribeRulesPackages",
-    "GetAssessmentReport",
-    "GetExclusionsPreview",
-    "GetTelemetryMetadata",
-    "ListTagsForResource",
-    "PreviewAgents"
-]
-    list                   = [
-    "ListAssessmentRunAgents",
-    "ListAssessmentRuns",
-    "ListAssessmentTargets",
-    "ListAssessmentTemplates",
-    "ListEventSubscriptions",
-    "ListExclusions",
-    "ListFindings",
-    "ListRulesPackages"
-]
-    tagging                = [
-    "SetTagsForResource"
-]
+    read = [
+      "DescribeAssessmentRuns",
+      "DescribeAssessmentTargets",
+      "DescribeAssessmentTemplates",
+      "DescribeCrossAccountAccessRole",
+      "DescribeExclusions",
+      "DescribeFindings",
+      "DescribeResourceGroups",
+      "DescribeRulesPackages",
+      "GetAssessmentReport",
+      "GetExclusionsPreview",
+      "GetTelemetryMetadata",
+      "ListTagsForResource",
+      "PreviewAgents"
+    ]
+    list = [
+      "ListAssessmentRunAgents",
+      "ListAssessmentRuns",
+      "ListAssessmentTargets",
+      "ListAssessmentTemplates",
+      "ListEventSubscriptions",
+      "ListExclusions",
+      "ListFindings",
+      "ListRulesPackages"
+    ]
+    tagging = [
+      "SetTagsForResource"
+    ]
   }
 }

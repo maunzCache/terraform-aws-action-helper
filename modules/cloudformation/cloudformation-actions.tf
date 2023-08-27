@@ -59,88 +59,88 @@ locals {
   prefix = "cloudformation"
 
   access_level = {
-    write                  = [
-    "ActivateOrganizationsAccess",
-    "ActivateType",
-    "CancelUpdateStack",
-    "ContinueUpdateRollback",
-    "CreateChangeSet",
-    "CreateStack",
-    "CreateStackInstances",
-    "CreateStackSet",
-    "CreateUploadBucket",
-    "DeactivateOrganizationsAccess",
-    "DeactivateType",
-    "DeleteChangeSet",
-    "DeleteStack",
-    "DeleteStackInstances",
-    "DeleteStackSet",
-    "DeregisterType",
-    "ExecuteChangeSet",
-    "ImportStacksToStackSet",
-    "PublishType",
-    "RecordHandlerProgress",
-    "RegisterPublisher",
-    "RegisterType",
-    "RollbackStack",
-    "SetTypeConfiguration",
-    "SetTypeDefaultVersion",
-    "SignalResource",
-    "StopStackSetOperation",
-    "TestType",
-    "UpdateStack",
-    "UpdateStackInstances",
-    "UpdateStackSet",
-    "UpdateTerminationProtection"
-]
+    write = [
+      "ActivateOrganizationsAccess",
+      "ActivateType",
+      "CancelUpdateStack",
+      "ContinueUpdateRollback",
+      "CreateChangeSet",
+      "CreateStack",
+      "CreateStackInstances",
+      "CreateStackSet",
+      "CreateUploadBucket",
+      "DeactivateOrganizationsAccess",
+      "DeactivateType",
+      "DeleteChangeSet",
+      "DeleteStack",
+      "DeleteStackInstances",
+      "DeleteStackSet",
+      "DeregisterType",
+      "ExecuteChangeSet",
+      "ImportStacksToStackSet",
+      "PublishType",
+      "RecordHandlerProgress",
+      "RegisterPublisher",
+      "RegisterType",
+      "RollbackStack",
+      "SetTypeConfiguration",
+      "SetTypeDefaultVersion",
+      "SignalResource",
+      "StopStackSetOperation",
+      "TestType",
+      "UpdateStack",
+      "UpdateStackInstances",
+      "UpdateStackSet",
+      "UpdateTerminationProtection"
+    ]
     permissions_management = [
-    "SetStackPolicy"
-]
-    read                   = [
-    "BatchDescribeTypeConfigurations",
-    "DescribeAccountLimits",
-    "DescribeChangeSet",
-    "DescribeChangeSetHooks",
-    "DescribeOrganizationsAccess",
-    "DescribePublisher",
-    "DescribeStackDriftDetectionStatus",
-    "DescribeStackEvents",
-    "DescribeStackInstance",
-    "DescribeStackResource",
-    "DescribeStackResourceDrifts",
-    "DescribeStackResources",
-    "DescribeStackSet",
-    "DescribeStackSetOperation",
-    "DescribeType",
-    "DescribeTypeRegistration",
-    "DetectStackDrift",
-    "DetectStackResourceDrift",
-    "DetectStackSetDrift",
-    "EstimateTemplateCost",
-    "GetStackPolicy",
-    "GetTemplate",
-    "GetTemplateSummary",
-    "ValidateTemplate"
-]
-    list                   = [
-    "DescribeStacks",
-    "ListChangeSets",
-    "ListExports",
-    "ListImports",
-    "ListStackInstanceResourceDrifts",
-    "ListStackInstances",
-    "ListStackResources",
-    "ListStackSetOperationResults",
-    "ListStackSetOperations",
-    "ListStackSets",
-    "ListStacks",
-    "ListTypeRegistrations",
-    "ListTypeVersions",
-    "ListTypes"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "SetStackPolicy"
+    ]
+    read = [
+      "BatchDescribeTypeConfigurations",
+      "DescribeAccountLimits",
+      "DescribeChangeSet",
+      "DescribeChangeSetHooks",
+      "DescribeOrganizationsAccess",
+      "DescribePublisher",
+      "DescribeStackDriftDetectionStatus",
+      "DescribeStackEvents",
+      "DescribeStackInstance",
+      "DescribeStackResource",
+      "DescribeStackResourceDrifts",
+      "DescribeStackResources",
+      "DescribeStackSet",
+      "DescribeStackSetOperation",
+      "DescribeType",
+      "DescribeTypeRegistration",
+      "DetectStackDrift",
+      "DetectStackResourceDrift",
+      "DetectStackSetDrift",
+      "EstimateTemplateCost",
+      "GetStackPolicy",
+      "GetTemplate",
+      "GetTemplateSummary",
+      "ValidateTemplate"
+    ]
+    list = [
+      "DescribeStacks",
+      "ListChangeSets",
+      "ListExports",
+      "ListImports",
+      "ListStackInstanceResourceDrifts",
+      "ListStackInstances",
+      "ListStackResources",
+      "ListStackSetOperationResults",
+      "ListStackSetOperations",
+      "ListStackSets",
+      "ListStacks",
+      "ListTypeRegistrations",
+      "ListTypeVersions",
+      "ListTypes"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

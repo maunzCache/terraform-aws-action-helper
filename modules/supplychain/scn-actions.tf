@@ -59,27 +59,27 @@ locals {
   prefix = "scn"
 
   access_level = {
-    write                  = [
-    "AssignAdminPermissionsToUser",
-    "CreateInstance",
-    "CreateSSOApplication",
-    "DeleteInstance",
-    "DeleteSSOApplication",
-    "RemoveAdminPermissionsForUser",
-    "UpdateInstance"
-]
+    write = [
+      "AssignAdminPermissionsToUser",
+      "CreateInstance",
+      "CreateSSOApplication",
+      "DeleteInstance",
+      "DeleteSSOApplication",
+      "RemoveAdminPermissionsForUser",
+      "UpdateInstance"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeInstance"
-]
-    list                   = [
-    "ListAdminUsers",
-    "ListInstances",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeInstance"
+    ]
+    list = [
+      "ListAdminUsers",
+      "ListInstances",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

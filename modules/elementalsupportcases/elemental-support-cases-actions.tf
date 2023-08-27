@@ -59,17 +59,17 @@ locals {
   prefix = "elemental-support-cases"
 
   access_level = {
-    write                  = [
-    "CheckCasePermission",
-    "CreateCase",
-    "UpdateCase"
-]
+    write = [
+      "CheckCasePermission",
+      "CreateCase",
+      "UpdateCase"
+    ]
     permissions_management = []
-    read                   = [
-    "GetCase",
-    "GetCases"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetCase",
+      "GetCases"
+    ]
+    list    = []
+    tagging = []
   }
 }

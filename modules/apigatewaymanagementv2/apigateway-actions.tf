@@ -59,17 +59,17 @@ locals {
   prefix = "apigateway"
 
   access_level = {
-    write                  = [
-    "DELETE",
-    "PATCH",
-    "POST",
-    "PUT"
-]
+    write = [
+      "DELETE",
+      "PATCH",
+      "POST",
+      "PUT"
+    ]
     permissions_management = []
-    read                   = [
-    "GET"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GET"
+    ]
+    list    = []
+    tagging = []
   }
 }

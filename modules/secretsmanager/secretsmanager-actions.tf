@@ -59,37 +59,37 @@ locals {
   prefix = "secretsmanager"
 
   access_level = {
-    write                  = [
-    "CancelRotateSecret",
-    "CreateSecret",
-    "DeleteSecret",
-    "PutSecretValue",
-    "RemoveRegionsFromReplication",
-    "ReplicateSecretToRegions",
-    "RestoreSecret",
-    "RotateSecret",
-    "StopReplicationToReplica",
-    "UpdateSecret",
-    "UpdateSecretVersionStage"
-]
+    write = [
+      "CancelRotateSecret",
+      "CreateSecret",
+      "DeleteSecret",
+      "PutSecretValue",
+      "RemoveRegionsFromReplication",
+      "ReplicateSecretToRegions",
+      "RestoreSecret",
+      "RotateSecret",
+      "StopReplicationToReplica",
+      "UpdateSecret",
+      "UpdateSecretVersionStage"
+    ]
     permissions_management = [
-    "DeleteResourcePolicy",
-    "PutResourcePolicy",
-    "ValidateResourcePolicy"
-]
-    read                   = [
-    "DescribeSecret",
-    "GetRandomPassword",
-    "GetResourcePolicy",
-    "GetSecretValue",
-    "ListSecretVersionIds"
-]
-    list                   = [
-    "ListSecrets"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "DeleteResourcePolicy",
+      "PutResourcePolicy",
+      "ValidateResourcePolicy"
+    ]
+    read = [
+      "DescribeSecret",
+      "GetRandomPassword",
+      "GetResourcePolicy",
+      "GetSecretValue",
+      "ListSecretVersionIds"
+    ]
+    list = [
+      "ListSecrets"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

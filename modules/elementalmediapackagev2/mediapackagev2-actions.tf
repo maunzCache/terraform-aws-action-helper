@@ -59,41 +59,41 @@ locals {
   prefix = "mediapackagev2"
 
   access_level = {
-    write                  = [
-    "CreateChannel",
-    "CreateChannelGroup",
-    "CreateOriginEndpoint",
-    "DeleteChannel",
-    "DeleteChannelGroup",
-    "DeleteChannelPolicy",
-    "DeleteOriginEndpoint",
-    "DeleteOriginEndpointPolicy",
-    "PutChannelPolicy",
-    "PutObject",
-    "PutOriginEndpointPolicy",
-    "UpdateChannel",
-    "UpdateChannelGroup",
-    "UpdateOriginEndpoint"
-]
+    write = [
+      "CreateChannel",
+      "CreateChannelGroup",
+      "CreateOriginEndpoint",
+      "DeleteChannel",
+      "DeleteChannelGroup",
+      "DeleteChannelPolicy",
+      "DeleteOriginEndpoint",
+      "DeleteOriginEndpointPolicy",
+      "PutChannelPolicy",
+      "PutObject",
+      "PutOriginEndpointPolicy",
+      "UpdateChannel",
+      "UpdateChannelGroup",
+      "UpdateOriginEndpoint"
+    ]
     permissions_management = []
-    read                   = [
-    "GetChannel",
-    "GetChannelGroup",
-    "GetChannelPolicy",
-    "GetHeadObject",
-    "GetObject",
-    "GetOriginEndpoint",
-    "GetOriginEndpointPolicy",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListChannelGroups",
-    "ListChannels",
-    "ListOriginEndpoints"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetChannel",
+      "GetChannelGroup",
+      "GetChannelPolicy",
+      "GetHeadObject",
+      "GetObject",
+      "GetOriginEndpoint",
+      "GetOriginEndpointPolicy",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListChannelGroups",
+      "ListChannels",
+      "ListOriginEndpoints"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

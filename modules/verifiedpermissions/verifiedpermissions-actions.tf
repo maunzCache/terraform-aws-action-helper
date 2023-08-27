@@ -59,37 +59,37 @@ locals {
   prefix = "verifiedpermissions"
 
   access_level = {
-    write                  = [
-    "CreateIdentitySource",
-    "CreatePolicy",
-    "CreatePolicyStore",
-    "CreatePolicyTemplate",
-    "DeleteIdentitySource",
-    "DeletePolicy",
-    "DeletePolicyStore",
-    "DeletePolicyTemplate",
-    "PutSchema",
-    "UpdateIdentitySource",
-    "UpdatePolicy",
-    "UpdatePolicyStore",
-    "UpdatePolicyTemplate"
-]
+    write = [
+      "CreateIdentitySource",
+      "CreatePolicy",
+      "CreatePolicyStore",
+      "CreatePolicyTemplate",
+      "DeleteIdentitySource",
+      "DeletePolicy",
+      "DeletePolicyStore",
+      "DeletePolicyTemplate",
+      "PutSchema",
+      "UpdateIdentitySource",
+      "UpdatePolicy",
+      "UpdatePolicyStore",
+      "UpdatePolicyTemplate"
+    ]
     permissions_management = []
-    read                   = [
-    "GetIdentitySource",
-    "GetPolicy",
-    "GetPolicyStore",
-    "GetPolicyTemplate",
-    "GetSchema",
-    "IsAuthorized",
-    "IsAuthorizedWithToken"
-]
-    list                   = [
-    "ListIdentitySources",
-    "ListPolicies",
-    "ListPolicyStores",
-    "ListPolicyTemplates"
-]
-    tagging                = []
+    read = [
+      "GetIdentitySource",
+      "GetPolicy",
+      "GetPolicyStore",
+      "GetPolicyTemplate",
+      "GetSchema",
+      "IsAuthorized",
+      "IsAuthorizedWithToken"
+    ]
+    list = [
+      "ListIdentitySources",
+      "ListPolicies",
+      "ListPolicyStores",
+      "ListPolicyTemplates"
+    ]
+    tagging = []
   }
 }

@@ -59,65 +59,65 @@ locals {
   prefix = "profile"
 
   access_level = {
-    write                  = [
-    "AddProfileKey",
-    "CreateCalculatedAttributeDefinition",
-    "CreateDomain",
-    "CreateEventStream",
-    "CreateIntegrationWorkflow",
-    "CreateProfile",
-    "DeleteCalculatedAttributeDefinition",
-    "DeleteDomain",
-    "DeleteEventStream",
-    "DeleteIntegration",
-    "DeleteProfile",
-    "DeleteProfileKey",
-    "DeleteProfileObject",
-    "DeleteProfileObjectType",
-    "DeleteWorkflow",
-    "MergeProfiles",
-    "PutIntegration",
-    "PutProfileObject",
-    "PutProfileObjectType",
-    "UpdateCalculatedAttributeDefinition",
-    "UpdateDomain",
-    "UpdateProfile"
-]
+    write = [
+      "AddProfileKey",
+      "CreateCalculatedAttributeDefinition",
+      "CreateDomain",
+      "CreateEventStream",
+      "CreateIntegrationWorkflow",
+      "CreateProfile",
+      "DeleteCalculatedAttributeDefinition",
+      "DeleteDomain",
+      "DeleteEventStream",
+      "DeleteIntegration",
+      "DeleteProfile",
+      "DeleteProfileKey",
+      "DeleteProfileObject",
+      "DeleteProfileObjectType",
+      "DeleteWorkflow",
+      "MergeProfiles",
+      "PutIntegration",
+      "PutProfileObject",
+      "PutProfileObjectType",
+      "UpdateCalculatedAttributeDefinition",
+      "UpdateDomain",
+      "UpdateProfile"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAutoMergingPreview",
-    "GetCalculatedAttributeDefinition",
-    "GetCalculatedAttributeForProfile",
-    "GetDomain",
-    "GetEventStream",
-    "GetIdentityResolutionJob",
-    "GetIntegration",
-    "GetProfileObjectType",
-    "GetProfileObjectTypeTemplate",
-    "GetWorkflow",
-    "GetWorkflowSteps",
-    "ListTagsForResource",
-    "SearchProfiles"
-]
-    list                   = [
-    "GetMatches",
-    "GetSimilarProfiles",
-    "ListAccountIntegrations",
-    "ListCalculatedAttributeDefinitions",
-    "ListCalculatedAttributesForProfile",
-    "ListDomains",
-    "ListEventStreams",
-    "ListIdentityResolutionJobs",
-    "ListIntegrations",
-    "ListProfileObjectTypeTemplates",
-    "ListProfileObjectTypes",
-    "ListProfileObjects",
-    "ListRuleBasedMatches",
-    "ListWorkflows"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetAutoMergingPreview",
+      "GetCalculatedAttributeDefinition",
+      "GetCalculatedAttributeForProfile",
+      "GetDomain",
+      "GetEventStream",
+      "GetIdentityResolutionJob",
+      "GetIntegration",
+      "GetProfileObjectType",
+      "GetProfileObjectTypeTemplate",
+      "GetWorkflow",
+      "GetWorkflowSteps",
+      "ListTagsForResource",
+      "SearchProfiles"
+    ]
+    list = [
+      "GetMatches",
+      "GetSimilarProfiles",
+      "ListAccountIntegrations",
+      "ListCalculatedAttributeDefinitions",
+      "ListCalculatedAttributesForProfile",
+      "ListDomains",
+      "ListEventStreams",
+      "ListIdentityResolutionJobs",
+      "ListIntegrations",
+      "ListProfileObjectTypeTemplates",
+      "ListProfileObjectTypes",
+      "ListProfileObjects",
+      "ListRuleBasedMatches",
+      "ListWorkflows"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

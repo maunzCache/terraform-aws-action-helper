@@ -59,25 +59,25 @@ locals {
   prefix = "health"
 
   access_level = {
-    write                  = []
+    write = []
     permissions_management = [
-    "DisableHealthServiceAccessForOrganization",
-    "EnableHealthServiceAccessForOrganization"
-]
-    read                   = [
-    "DescribeAffectedAccountsForOrganization",
-    "DescribeAffectedEntities",
-    "DescribeAffectedEntitiesForOrganization",
-    "DescribeEntityAggregates",
-    "DescribeEventAggregates",
-    "DescribeEventDetails",
-    "DescribeEventDetailsForOrganization",
-    "DescribeEventTypes",
-    "DescribeEvents",
-    "DescribeEventsForOrganization",
-    "DescribeHealthServiceStatusForOrganization"
-]
-    list                   = []
-    tagging                = []
+      "DisableHealthServiceAccessForOrganization",
+      "EnableHealthServiceAccessForOrganization"
+    ]
+    read = [
+      "DescribeAffectedAccountsForOrganization",
+      "DescribeAffectedEntities",
+      "DescribeAffectedEntitiesForOrganization",
+      "DescribeEntityAggregates",
+      "DescribeEventAggregates",
+      "DescribeEventDetails",
+      "DescribeEventDetailsForOrganization",
+      "DescribeEventTypes",
+      "DescribeEvents",
+      "DescribeEventsForOrganization",
+      "DescribeHealthServiceStatusForOrganization"
+    ]
+    list    = []
+    tagging = []
   }
 }

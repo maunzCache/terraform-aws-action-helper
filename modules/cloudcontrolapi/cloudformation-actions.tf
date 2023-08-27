@@ -59,20 +59,20 @@ locals {
   prefix = "cloudformation"
 
   access_level = {
-    write                  = [
-    "CancelResourceRequest",
-    "CreateResource",
-    "DeleteResource",
-    "UpdateResource"
-]
+    write = [
+      "CancelResourceRequest",
+      "CreateResource",
+      "DeleteResource",
+      "UpdateResource"
+    ]
     permissions_management = []
-    read                   = [
-    "GetResource",
-    "GetResourceRequestStatus",
-    "ListResourceRequests",
-    "ListResources"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetResource",
+      "GetResourceRequestStatus",
+      "ListResourceRequests",
+      "ListResources"
+    ]
+    list    = []
+    tagging = []
   }
 }

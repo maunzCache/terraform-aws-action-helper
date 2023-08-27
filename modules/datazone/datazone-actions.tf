@@ -61,15 +61,15 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "GetProject",
-    "GetProjectConfiguration",
-    "GetProjectCredentials"
-]
-    list                   = [
-    "ListProjects",
-    "ListUserProjects"
-]
-    tagging                = []
+    read = [
+      "GetProject",
+      "GetProjectConfiguration",
+      "GetProjectCredentials"
+    ]
+    list = [
+      "ListProjects",
+      "ListUserProjects"
+    ]
+    tagging = []
   }
 }

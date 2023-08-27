@@ -59,47 +59,47 @@ locals {
   prefix = "tnb"
 
   access_level = {
-    write                  = [
-    "CancelSolNetworkOperation",
-    "CreateSolFunctionPackage",
-    "CreateSolNetworkInstance",
-    "CreateSolNetworkPackage",
-    "DeleteSolFunctionPackage",
-    "DeleteSolNetworkInstance",
-    "DeleteSolNetworkPackage",
-    "InstantiateSolNetworkInstance",
-    "PutSolFunctionPackageContent",
-    "PutSolNetworkPackageContent",
-    "TerminateSolNetworkInstance",
-    "UpdateSolFunctionPackage",
-    "UpdateSolNetworkInstance",
-    "UpdateSolNetworkPackage",
-    "ValidateSolFunctionPackageContent",
-    "ValidateSolNetworkPackageContent"
-]
+    write = [
+      "CancelSolNetworkOperation",
+      "CreateSolFunctionPackage",
+      "CreateSolNetworkInstance",
+      "CreateSolNetworkPackage",
+      "DeleteSolFunctionPackage",
+      "DeleteSolNetworkInstance",
+      "DeleteSolNetworkPackage",
+      "InstantiateSolNetworkInstance",
+      "PutSolFunctionPackageContent",
+      "PutSolNetworkPackageContent",
+      "TerminateSolNetworkInstance",
+      "UpdateSolFunctionPackage",
+      "UpdateSolNetworkInstance",
+      "UpdateSolNetworkPackage",
+      "ValidateSolFunctionPackageContent",
+      "ValidateSolNetworkPackageContent"
+    ]
     permissions_management = []
-    read                   = [
-    "GetSolFunctionInstance",
-    "GetSolFunctionPackage",
-    "GetSolFunctionPackageContent",
-    "GetSolFunctionPackageDescriptor",
-    "GetSolNetworkInstance",
-    "GetSolNetworkOperation",
-    "GetSolNetworkPackage",
-    "GetSolNetworkPackageContent",
-    "GetSolNetworkPackageDescriptor"
-]
-    list                   = [
-    "ListSolFunctionInstances",
-    "ListSolFunctionPackages",
-    "ListSolNetworkInstances",
-    "ListSolNetworkOperations",
-    "ListSolNetworkPackages",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetSolFunctionInstance",
+      "GetSolFunctionPackage",
+      "GetSolFunctionPackageContent",
+      "GetSolFunctionPackageDescriptor",
+      "GetSolNetworkInstance",
+      "GetSolNetworkOperation",
+      "GetSolNetworkPackage",
+      "GetSolNetworkPackageContent",
+      "GetSolNetworkPackageDescriptor"
+    ]
+    list = [
+      "ListSolFunctionInstances",
+      "ListSolFunctionPackages",
+      "ListSolNetworkInstances",
+      "ListSolNetworkOperations",
+      "ListSolNetworkPackages",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

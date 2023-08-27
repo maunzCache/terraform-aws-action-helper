@@ -59,61 +59,61 @@ locals {
   prefix = "kafka"
 
   access_level = {
-    write                  = [
-    "BatchAssociateScramSecret",
-    "BatchDisassociateScramSecret",
-    "CreateCluster",
-    "CreateClusterV2",
-    "CreateConfiguration",
-    "CreateVpcConnection",
-    "DeleteCluster",
-    "DeleteClusterPolicy",
-    "DeleteConfiguration",
-    "DeleteVpcConnection",
-    "PutClusterPolicy",
-    "RebootBroker",
-    "RejectClientVpcConnection",
-    "UpdateBrokerCount",
-    "UpdateBrokerStorage",
-    "UpdateBrokerType",
-    "UpdateClusterConfiguration",
-    "UpdateClusterKafkaVersion",
-    "UpdateConfiguration",
-    "UpdateConnectivity",
-    "UpdateMonitoring",
-    "UpdateSecurity",
-    "UpdateStorage"
-]
+    write = [
+      "BatchAssociateScramSecret",
+      "BatchDisassociateScramSecret",
+      "CreateCluster",
+      "CreateClusterV2",
+      "CreateConfiguration",
+      "CreateVpcConnection",
+      "DeleteCluster",
+      "DeleteClusterPolicy",
+      "DeleteConfiguration",
+      "DeleteVpcConnection",
+      "PutClusterPolicy",
+      "RebootBroker",
+      "RejectClientVpcConnection",
+      "UpdateBrokerCount",
+      "UpdateBrokerStorage",
+      "UpdateBrokerType",
+      "UpdateClusterConfiguration",
+      "UpdateClusterKafkaVersion",
+      "UpdateConfiguration",
+      "UpdateConnectivity",
+      "UpdateMonitoring",
+      "UpdateSecurity",
+      "UpdateStorage"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeCluster",
-    "DescribeClusterOperation",
-    "DescribeClusterOperationV2",
-    "DescribeClusterV2",
-    "DescribeConfiguration",
-    "DescribeConfigurationRevision",
-    "DescribeVpcConnection",
-    "GetBootstrapBrokers",
-    "GetClusterPolicy",
-    "ListTagsForResource"
-]
-    list                   = [
-    "GetCompatibleKafkaVersions",
-    "ListClientVpcConnections",
-    "ListClusterOperations",
-    "ListClusterOperationsV2",
-    "ListClusters",
-    "ListClustersV2",
-    "ListConfigurationRevisions",
-    "ListConfigurations",
-    "ListKafkaVersions",
-    "ListNodes",
-    "ListScramSecrets",
-    "ListVpcConnections"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeCluster",
+      "DescribeClusterOperation",
+      "DescribeClusterOperationV2",
+      "DescribeClusterV2",
+      "DescribeConfiguration",
+      "DescribeConfigurationRevision",
+      "DescribeVpcConnection",
+      "GetBootstrapBrokers",
+      "GetClusterPolicy",
+      "ListTagsForResource"
+    ]
+    list = [
+      "GetCompatibleKafkaVersions",
+      "ListClientVpcConnections",
+      "ListClusterOperations",
+      "ListClusterOperationsV2",
+      "ListClusters",
+      "ListClustersV2",
+      "ListConfigurationRevisions",
+      "ListConfigurations",
+      "ListKafkaVersions",
+      "ListNodes",
+      "ListScramSecrets",
+      "ListVpcConnections"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

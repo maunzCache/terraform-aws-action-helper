@@ -59,33 +59,33 @@ locals {
   prefix = "app-integrations"
 
   access_level = {
-    write                  = [
-    "CreateDataIntegration",
-    "CreateDataIntegrationAssociation",
-    "CreateEventIntegration",
-    "CreateEventIntegrationAssociation",
-    "DeleteDataIntegration",
-    "DeleteDataIntegrationAssociation",
-    "DeleteEventIntegration",
-    "DeleteEventIntegrationAssociation",
-    "UpdateDataIntegration",
-    "UpdateEventIntegration"
-]
+    write = [
+      "CreateDataIntegration",
+      "CreateDataIntegrationAssociation",
+      "CreateEventIntegration",
+      "CreateEventIntegrationAssociation",
+      "DeleteDataIntegration",
+      "DeleteDataIntegrationAssociation",
+      "DeleteEventIntegration",
+      "DeleteEventIntegrationAssociation",
+      "UpdateDataIntegration",
+      "UpdateEventIntegration"
+    ]
     permissions_management = []
-    read                   = [
-    "GetDataIntegration",
-    "GetEventIntegration",
-    "ListEventIntegrationAssociations",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListDataIntegrationAssociations",
-    "ListDataIntegrations",
-    "ListEventIntegrations"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetDataIntegration",
+      "GetEventIntegration",
+      "ListEventIntegrationAssociations",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListDataIntegrationAssociations",
+      "ListDataIntegrations",
+      "ListEventIntegrations"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

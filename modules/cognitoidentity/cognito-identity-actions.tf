@@ -59,37 +59,37 @@ locals {
   prefix = "cognito-identity"
 
   access_level = {
-    write                  = [
-    "CreateIdentityPool",
-    "DeleteIdentities",
-    "DeleteIdentityPool",
-    "GetId",
-    "MergeDeveloperIdentities",
-    "SetIdentityPoolRoles",
-    "SetPrincipalTagAttributeMap",
-    "UnlinkDeveloperIdentity",
-    "UnlinkIdentity",
-    "UpdateIdentityPool"
-]
+    write = [
+      "CreateIdentityPool",
+      "DeleteIdentities",
+      "DeleteIdentityPool",
+      "GetId",
+      "MergeDeveloperIdentities",
+      "SetIdentityPoolRoles",
+      "SetPrincipalTagAttributeMap",
+      "UnlinkDeveloperIdentity",
+      "UnlinkIdentity",
+      "UpdateIdentityPool"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeIdentity",
-    "DescribeIdentityPool",
-    "GetCredentialsForIdentity",
-    "GetIdentityPoolRoles",
-    "GetOpenIdToken",
-    "GetOpenIdTokenForDeveloperIdentity",
-    "GetPrincipalTagAttributeMap",
-    "ListTagsForResource",
-    "LookupDeveloperIdentity"
-]
-    list                   = [
-    "ListIdentities",
-    "ListIdentityPools"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeIdentity",
+      "DescribeIdentityPool",
+      "GetCredentialsForIdentity",
+      "GetIdentityPoolRoles",
+      "GetOpenIdToken",
+      "GetOpenIdTokenForDeveloperIdentity",
+      "GetPrincipalTagAttributeMap",
+      "ListTagsForResource",
+      "LookupDeveloperIdentity"
+    ]
+    list = [
+      "ListIdentities",
+      "ListIdentityPools"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

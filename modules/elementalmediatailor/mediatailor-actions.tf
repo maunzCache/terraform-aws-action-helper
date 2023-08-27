@@ -59,59 +59,59 @@ locals {
   prefix = "mediatailor"
 
   access_level = {
-    write                  = [
-    "ConfigureLogsForChannel",
-    "ConfigureLogsForPlaybackConfiguration",
-    "CreateChannel",
-    "CreateLiveSource",
-    "CreatePrefetchSchedule",
-    "CreateProgram",
-    "CreateSourceLocation",
-    "CreateVodSource",
-    "DeleteChannel",
-    "DeleteLiveSource",
-    "DeletePlaybackConfiguration",
-    "DeletePrefetchSchedule",
-    "DeleteProgram",
-    "DeleteSourceLocation",
-    "DeleteVodSource",
-    "PutPlaybackConfiguration",
-    "StartChannel",
-    "StopChannel",
-    "UpdateChannel",
-    "UpdateLiveSource",
-    "UpdateProgram",
-    "UpdateSourceLocation",
-    "UpdateVodSource"
-]
+    write = [
+      "ConfigureLogsForChannel",
+      "ConfigureLogsForPlaybackConfiguration",
+      "CreateChannel",
+      "CreateLiveSource",
+      "CreatePrefetchSchedule",
+      "CreateProgram",
+      "CreateSourceLocation",
+      "CreateVodSource",
+      "DeleteChannel",
+      "DeleteLiveSource",
+      "DeletePlaybackConfiguration",
+      "DeletePrefetchSchedule",
+      "DeleteProgram",
+      "DeleteSourceLocation",
+      "DeleteVodSource",
+      "PutPlaybackConfiguration",
+      "StartChannel",
+      "StopChannel",
+      "UpdateChannel",
+      "UpdateLiveSource",
+      "UpdateProgram",
+      "UpdateSourceLocation",
+      "UpdateVodSource"
+    ]
     permissions_management = [
-    "DeleteChannelPolicy",
-    "PutChannelPolicy"
-]
-    read                   = [
-    "DescribeChannel",
-    "DescribeLiveSource",
-    "DescribeProgram",
-    "DescribeSourceLocation",
-    "DescribeVodSource",
-    "GetChannelPolicy",
-    "GetChannelSchedule",
-    "GetPlaybackConfiguration",
-    "GetPrefetchSchedule",
-    "ListAlerts",
-    "ListChannels",
-    "ListLiveSources",
-    "ListSourceLocations",
-    "ListTagsForResource",
-    "ListVodSources"
-]
-    list                   = [
-    "ListPlaybackConfigurations",
-    "ListPrefetchSchedules"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "DeleteChannelPolicy",
+      "PutChannelPolicy"
+    ]
+    read = [
+      "DescribeChannel",
+      "DescribeLiveSource",
+      "DescribeProgram",
+      "DescribeSourceLocation",
+      "DescribeVodSource",
+      "GetChannelPolicy",
+      "GetChannelSchedule",
+      "GetPlaybackConfiguration",
+      "GetPrefetchSchedule",
+      "ListAlerts",
+      "ListChannels",
+      "ListLiveSources",
+      "ListSourceLocations",
+      "ListTagsForResource",
+      "ListVodSources"
+    ]
+    list = [
+      "ListPlaybackConfigurations",
+      "ListPrefetchSchedules"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

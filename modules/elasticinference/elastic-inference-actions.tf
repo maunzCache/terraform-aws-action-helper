@@ -59,21 +59,21 @@ locals {
   prefix = "elastic-inference"
 
   access_level = {
-    write                  = [
-    "Connect"
-]
+    write = [
+      "Connect"
+    ]
     permissions_management = []
-    read                   = [
-    "ListTagsForResource"
-]
-    list                   = [
-    "DescribeAcceleratorOfferings",
-    "DescribeAcceleratorTypes",
-    "DescribeAccelerators"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "ListTagsForResource"
+    ]
+    list = [
+      "DescribeAcceleratorOfferings",
+      "DescribeAcceleratorTypes",
+      "DescribeAccelerators"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

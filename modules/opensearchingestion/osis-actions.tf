@@ -59,29 +59,29 @@ locals {
   prefix = "osis"
 
   access_level = {
-    write                  = [
-    "CreatePipeline",
-    "DeletePipeline",
-    "Ingest",
-    "StartPipeline",
-    "StopPipeline",
-    "UpdatePipeline"
-]
+    write = [
+      "CreatePipeline",
+      "DeletePipeline",
+      "Ingest",
+      "StartPipeline",
+      "StopPipeline",
+      "UpdatePipeline"
+    ]
     permissions_management = []
-    read                   = [
-    "GetPipeline",
-    "GetPipelineBlueprint",
-    "GetPipelineChangeProgress",
-    "ListTagsForResource",
-    "ValidatePipeline"
-]
-    list                   = [
-    "ListPipelineBlueprints",
-    "ListPipelines"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetPipeline",
+      "GetPipelineBlueprint",
+      "GetPipelineChangeProgress",
+      "ListTagsForResource",
+      "ValidatePipeline"
+    ]
+    list = [
+      "ListPipelineBlueprints",
+      "ListPipelines"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

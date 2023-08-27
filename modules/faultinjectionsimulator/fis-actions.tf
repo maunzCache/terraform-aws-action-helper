@@ -59,33 +59,33 @@ locals {
   prefix = "fis"
 
   access_level = {
-    write                  = [
-    "CreateExperimentTemplate",
-    "DeleteExperimentTemplate",
-    "InjectApiInternalError",
-    "InjectApiThrottleError",
-    "InjectApiUnavailableError",
-    "StartExperiment",
-    "StopExperiment",
-    "UpdateExperimentTemplate"
-]
+    write = [
+      "CreateExperimentTemplate",
+      "DeleteExperimentTemplate",
+      "InjectApiInternalError",
+      "InjectApiThrottleError",
+      "InjectApiUnavailableError",
+      "StartExperiment",
+      "StopExperiment",
+      "UpdateExperimentTemplate"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAction",
-    "GetExperiment",
-    "GetExperimentTemplate",
-    "GetTargetResourceType",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListActions",
-    "ListExperimentTemplates",
-    "ListExperiments",
-    "ListTargetResourceTypes"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetAction",
+      "GetExperiment",
+      "GetExperimentTemplate",
+      "GetTargetResourceType",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListActions",
+      "ListExperimentTemplates",
+      "ListExperiments",
+      "ListTargetResourceTypes"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

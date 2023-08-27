@@ -59,30 +59,30 @@ locals {
   prefix = "entityresolution"
 
   access_level = {
-    write                  = [
-    "CreateMatchingWorkflow",
-    "CreateSchemaMapping",
-    "DeleteMatchingWorkflow",
-    "DeleteSchemaMapping",
-    "StartMatchingJob",
-    "UpdateMatchingWorkflow"
-]
+    write = [
+      "CreateMatchingWorkflow",
+      "CreateSchemaMapping",
+      "DeleteMatchingWorkflow",
+      "DeleteSchemaMapping",
+      "StartMatchingJob",
+      "UpdateMatchingWorkflow"
+    ]
     permissions_management = []
-    read                   = [
-    "GetMatchId",
-    "GetMatchingJob",
-    "GetMatchingWorkflow",
-    "GetSchemaMapping",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListMatchingJobs",
-    "ListMatchingWorkflows",
-    "ListSchemaMappings"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetMatchId",
+      "GetMatchingJob",
+      "GetMatchingWorkflow",
+      "GetSchemaMapping",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListMatchingJobs",
+      "ListMatchingWorkflows",
+      "ListSchemaMappings"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

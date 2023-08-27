@@ -59,40 +59,40 @@ locals {
   prefix = "servicediscovery"
 
   access_level = {
-    write                  = [
-    "CreateHttpNamespace",
-    "CreatePrivateDnsNamespace",
-    "CreatePublicDnsNamespace",
-    "CreateService",
-    "DeleteNamespace",
-    "DeleteService",
-    "DeregisterInstance",
-    "RegisterInstance",
-    "UpdateHttpNamespace",
-    "UpdateInstanceCustomHealthStatus",
-    "UpdatePrivateDnsNamespace",
-    "UpdatePublicDnsNamespace",
-    "UpdateService"
-]
+    write = [
+      "CreateHttpNamespace",
+      "CreatePrivateDnsNamespace",
+      "CreatePublicDnsNamespace",
+      "CreateService",
+      "DeleteNamespace",
+      "DeleteService",
+      "DeregisterInstance",
+      "RegisterInstance",
+      "UpdateHttpNamespace",
+      "UpdateInstanceCustomHealthStatus",
+      "UpdatePrivateDnsNamespace",
+      "UpdatePublicDnsNamespace",
+      "UpdateService"
+    ]
     permissions_management = []
-    read                   = [
-    "DiscoverInstances",
-    "GetInstance",
-    "GetInstancesHealthStatus",
-    "GetNamespace",
-    "GetOperation",
-    "GetService",
-    "ListInstances",
-    "ListNamespaces",
-    "ListServices",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListOperations"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DiscoverInstances",
+      "GetInstance",
+      "GetInstancesHealthStatus",
+      "GetNamespace",
+      "GetOperation",
+      "GetService",
+      "ListInstances",
+      "ListNamespaces",
+      "ListServices",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListOperations"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

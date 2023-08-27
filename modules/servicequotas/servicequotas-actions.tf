@@ -59,32 +59,32 @@ locals {
   prefix = "servicequotas"
 
   access_level = {
-    write                  = [
-    "AssociateServiceQuotaTemplate",
-    "DeleteServiceQuotaIncreaseRequestFromTemplate",
-    "DisassociateServiceQuotaTemplate",
-    "PutServiceQuotaIncreaseRequestIntoTemplate",
-    "RequestServiceQuotaIncrease"
-]
+    write = [
+      "AssociateServiceQuotaTemplate",
+      "DeleteServiceQuotaIncreaseRequestFromTemplate",
+      "DisassociateServiceQuotaTemplate",
+      "PutServiceQuotaIncreaseRequestIntoTemplate",
+      "RequestServiceQuotaIncrease"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAWSDefaultServiceQuota",
-    "GetAssociationForServiceQuotaTemplate",
-    "GetRequestedServiceQuotaChange",
-    "GetServiceQuota",
-    "GetServiceQuotaIncreaseRequestFromTemplate",
-    "ListAWSDefaultServiceQuotas",
-    "ListRequestedServiceQuotaChangeHistory",
-    "ListRequestedServiceQuotaChangeHistoryByQuota",
-    "ListServiceQuotaIncreaseRequestsInTemplate",
-    "ListServiceQuotas",
-    "ListServices",
-    "ListTagsForResource"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetAWSDefaultServiceQuota",
+      "GetAssociationForServiceQuotaTemplate",
+      "GetRequestedServiceQuotaChange",
+      "GetServiceQuota",
+      "GetServiceQuotaIncreaseRequestFromTemplate",
+      "ListAWSDefaultServiceQuotas",
+      "ListRequestedServiceQuotaChangeHistory",
+      "ListRequestedServiceQuotaChangeHistoryByQuota",
+      "ListServiceQuotaIncreaseRequestsInTemplate",
+      "ListServiceQuotas",
+      "ListServices",
+      "ListTagsForResource"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

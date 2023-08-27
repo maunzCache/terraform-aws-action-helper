@@ -59,45 +59,45 @@ locals {
   prefix = "dataexchange"
 
   access_level = {
-    write                  = [
-    "CancelJob",
-    "CreateAsset",
-    "CreateDataSet",
-    "CreateEventAction",
-    "CreateJob",
-    "CreateRevision",
-    "DeleteAsset",
-    "DeleteDataSet",
-    "DeleteEventAction",
-    "DeleteRevision",
-    "PublishDataSet",
-    "RevokeRevision",
-    "SendApiAsset",
-    "StartJob",
-    "UpdateAsset",
-    "UpdateDataSet",
-    "UpdateEventAction",
-    "UpdateRevision"
-]
+    write = [
+      "CancelJob",
+      "CreateAsset",
+      "CreateDataSet",
+      "CreateEventAction",
+      "CreateJob",
+      "CreateRevision",
+      "DeleteAsset",
+      "DeleteDataSet",
+      "DeleteEventAction",
+      "DeleteRevision",
+      "PublishDataSet",
+      "RevokeRevision",
+      "SendApiAsset",
+      "StartJob",
+      "UpdateAsset",
+      "UpdateDataSet",
+      "UpdateEventAction",
+      "UpdateRevision"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAsset",
-    "GetDataSet",
-    "GetEventAction",
-    "GetJob",
-    "GetRevision"
-]
-    list                   = [
-    "ListDataSetRevisions",
-    "ListDataSets",
-    "ListEventActions",
-    "ListJobs",
-    "ListRevisionAssets",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetAsset",
+      "GetDataSet",
+      "GetEventAction",
+      "GetJob",
+      "GetRevision"
+    ]
+    list = [
+      "ListDataSetRevisions",
+      "ListDataSets",
+      "ListEventActions",
+      "ListJobs",
+      "ListRevisionAssets",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

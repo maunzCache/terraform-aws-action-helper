@@ -59,12 +59,12 @@ locals {
   prefix = "aws-marketplace"
 
   access_level = {
-    write                  = [
-    "BatchMeterUsage",
-    "MeterUsage",
-    "RegisterUsage",
-    "ResolveCustomer"
-]
+    write = [
+      "BatchMeterUsage",
+      "MeterUsage",
+      "RegisterUsage",
+      "ResolveCustomer"
+    ]
     permissions_management = []
     read                   = []
     list                   = []

@@ -59,27 +59,27 @@ locals {
   prefix = "codestar-notifications"
 
   access_level = {
-    write                  = [
-    "CreateNotificationRule",
-    "DeleteNotificationRule",
-    "DeleteTarget",
-    "Subscribe",
-    "Unsubscribe",
-    "UpdateNotificationRule"
-]
+    write = [
+      "CreateNotificationRule",
+      "DeleteNotificationRule",
+      "DeleteTarget",
+      "Subscribe",
+      "Unsubscribe",
+      "UpdateNotificationRule"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeNotificationRule"
-]
-    list                   = [
-    "ListEventTypes",
-    "ListNotificationRules",
-    "ListTagsForResource",
-    "ListTargets"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeNotificationRule"
+    ]
+    list = [
+      "ListEventTypes",
+      "ListNotificationRules",
+      "ListTagsForResource",
+      "ListTargets"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

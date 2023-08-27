@@ -59,45 +59,45 @@ locals {
   prefix = "route53-recovery-readiness"
 
   access_level = {
-    write                  = [
-    "CreateCell",
-    "CreateCrossAccountAuthorization",
-    "CreateReadinessCheck",
-    "CreateRecoveryGroup",
-    "CreateResourceSet",
-    "DeleteCell",
-    "DeleteCrossAccountAuthorization",
-    "DeleteReadinessCheck",
-    "DeleteRecoveryGroup",
-    "DeleteResourceSet",
-    "UpdateCell",
-    "UpdateReadinessCheck",
-    "UpdateRecoveryGroup",
-    "UpdateResourceSet"
-]
+    write = [
+      "CreateCell",
+      "CreateCrossAccountAuthorization",
+      "CreateReadinessCheck",
+      "CreateRecoveryGroup",
+      "CreateResourceSet",
+      "DeleteCell",
+      "DeleteCrossAccountAuthorization",
+      "DeleteReadinessCheck",
+      "DeleteRecoveryGroup",
+      "DeleteResourceSet",
+      "UpdateCell",
+      "UpdateReadinessCheck",
+      "UpdateRecoveryGroup",
+      "UpdateResourceSet"
+    ]
     permissions_management = []
-    read                   = [
-    "GetArchitectureRecommendations",
-    "GetCell",
-    "GetCellReadinessSummary",
-    "GetReadinessCheck",
-    "GetReadinessCheckResourceStatus",
-    "GetReadinessCheckStatus",
-    "GetRecoveryGroup",
-    "GetRecoveryGroupReadinessSummary",
-    "GetResourceSet",
-    "ListCells",
-    "ListCrossAccountAuthorizations",
-    "ListReadinessChecks",
-    "ListRecoveryGroups",
-    "ListResourceSets",
-    "ListRules",
-    "ListTagsForResources"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetArchitectureRecommendations",
+      "GetCell",
+      "GetCellReadinessSummary",
+      "GetReadinessCheck",
+      "GetReadinessCheckResourceStatus",
+      "GetReadinessCheckStatus",
+      "GetRecoveryGroup",
+      "GetRecoveryGroupReadinessSummary",
+      "GetResourceSet",
+      "ListCells",
+      "ListCrossAccountAuthorizations",
+      "ListReadinessChecks",
+      "ListRecoveryGroups",
+      "ListResourceSets",
+      "ListRules",
+      "ListTagsForResources"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

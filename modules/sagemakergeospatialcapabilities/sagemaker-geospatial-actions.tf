@@ -59,33 +59,33 @@ locals {
   prefix = "sagemaker-geospatial"
 
   access_level = {
-    write                  = [
-    "DeleteEarthObservationJob",
-    "DeleteVectorEnrichmentJob",
-    "ExportEarthObservationJob",
-    "ExportVectorEnrichmentJob",
-    "StartEarthObservationJob",
-    "StartVectorEnrichmentJob",
-    "StopEarthObservationJob",
-    "StopVectorEnrichmentJob"
-]
+    write = [
+      "DeleteEarthObservationJob",
+      "DeleteVectorEnrichmentJob",
+      "ExportEarthObservationJob",
+      "ExportVectorEnrichmentJob",
+      "StartEarthObservationJob",
+      "StartVectorEnrichmentJob",
+      "StopEarthObservationJob",
+      "StopVectorEnrichmentJob"
+    ]
     permissions_management = []
-    read                   = [
-    "GetEarthObservationJob",
-    "GetRasterDataCollection",
-    "GetTile",
-    "GetVectorEnrichmentJob",
-    "SearchRasterDataCollection"
-]
-    list                   = [
-    "ListEarthObservationJobs",
-    "ListRasterDataCollections",
-    "ListTagsForResource",
-    "ListVectorEnrichmentJobs"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetEarthObservationJob",
+      "GetRasterDataCollection",
+      "GetTile",
+      "GetVectorEnrichmentJob",
+      "SearchRasterDataCollection"
+    ]
+    list = [
+      "ListEarthObservationJobs",
+      "ListRasterDataCollections",
+      "ListTagsForResource",
+      "ListVectorEnrichmentJobs"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

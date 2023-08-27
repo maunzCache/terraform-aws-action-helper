@@ -59,68 +59,68 @@ locals {
   prefix = "resiliencehub"
 
   access_level = {
-    write                  = [
-    "AddDraftAppVersionResourceMappings",
-    "BatchUpdateRecommendationStatus",
-    "CreateApp",
-    "CreateAppVersionAppComponent",
-    "CreateAppVersionResource",
-    "CreateRecommendationTemplate",
-    "CreateResiliencyPolicy",
-    "DeleteApp",
-    "DeleteAppAssessment",
-    "DeleteAppInputSource",
-    "DeleteAppVersionAppComponent",
-    "DeleteAppVersionResource",
-    "DeleteRecommendationTemplate",
-    "DeleteResiliencyPolicy",
-    "ImportResourcesToDraftAppVersion",
-    "PublishAppVersion",
-    "PutDraftAppVersionTemplate",
-    "RemoveDraftAppVersionResourceMappings",
-    "ResolveAppVersionResources",
-    "StartAppAssessment",
-    "UpdateApp",
-    "UpdateAppVersion",
-    "UpdateAppVersionAppComponent",
-    "UpdateAppVersionResource",
-    "UpdateResiliencyPolicy"
-]
+    write = [
+      "AddDraftAppVersionResourceMappings",
+      "BatchUpdateRecommendationStatus",
+      "CreateApp",
+      "CreateAppVersionAppComponent",
+      "CreateAppVersionResource",
+      "CreateRecommendationTemplate",
+      "CreateResiliencyPolicy",
+      "DeleteApp",
+      "DeleteAppAssessment",
+      "DeleteAppInputSource",
+      "DeleteAppVersionAppComponent",
+      "DeleteAppVersionResource",
+      "DeleteRecommendationTemplate",
+      "DeleteResiliencyPolicy",
+      "ImportResourcesToDraftAppVersion",
+      "PublishAppVersion",
+      "PutDraftAppVersionTemplate",
+      "RemoveDraftAppVersionResourceMappings",
+      "ResolveAppVersionResources",
+      "StartAppAssessment",
+      "UpdateApp",
+      "UpdateAppVersion",
+      "UpdateAppVersionAppComponent",
+      "UpdateAppVersionResource",
+      "UpdateResiliencyPolicy"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeApp",
-    "DescribeAppAssessment",
-    "DescribeAppVersion",
-    "DescribeAppVersionAppComponent",
-    "DescribeAppVersionResource",
-    "DescribeAppVersionResourcesResolutionStatus",
-    "DescribeAppVersionTemplate",
-    "DescribeDraftAppVersionResourcesImportStatus",
-    "DescribeResiliencyPolicy",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAlarmRecommendations",
-    "ListAppAssessmentComplianceDrifts",
-    "ListAppAssessments",
-    "ListAppComponentCompliances",
-    "ListAppComponentRecommendations",
-    "ListAppInputSources",
-    "ListAppVersionAppComponents",
-    "ListAppVersionResourceMappings",
-    "ListAppVersionResources",
-    "ListAppVersions",
-    "ListApps",
-    "ListRecommendationTemplates",
-    "ListResiliencyPolicies",
-    "ListSopRecommendations",
-    "ListSuggestedResiliencyPolicies",
-    "ListTestRecommendations",
-    "ListUnsupportedAppVersionResources"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeApp",
+      "DescribeAppAssessment",
+      "DescribeAppVersion",
+      "DescribeAppVersionAppComponent",
+      "DescribeAppVersionResource",
+      "DescribeAppVersionResourcesResolutionStatus",
+      "DescribeAppVersionTemplate",
+      "DescribeDraftAppVersionResourcesImportStatus",
+      "DescribeResiliencyPolicy",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAlarmRecommendations",
+      "ListAppAssessmentComplianceDrifts",
+      "ListAppAssessments",
+      "ListAppComponentCompliances",
+      "ListAppComponentRecommendations",
+      "ListAppInputSources",
+      "ListAppVersionAppComponents",
+      "ListAppVersionResourceMappings",
+      "ListAppVersionResources",
+      "ListAppVersions",
+      "ListApps",
+      "ListRecommendationTemplates",
+      "ListResiliencyPolicies",
+      "ListSopRecommendations",
+      "ListSuggestedResiliencyPolicies",
+      "ListTestRecommendations",
+      "ListUnsupportedAppVersionResources"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

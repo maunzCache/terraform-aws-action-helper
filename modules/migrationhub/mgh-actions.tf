@@ -59,33 +59,33 @@ locals {
   prefix = "mgh"
 
   access_level = {
-    write                  = [
-    "AssociateCreatedArtifact",
-    "AssociateDiscoveredResource",
-    "CreateHomeRegionControl",
-    "CreateProgressUpdateStream",
-    "DeleteProgressUpdateStream",
-    "DisassociateCreatedArtifact",
-    "DisassociateDiscoveredResource",
-    "ImportMigrationTask",
-    "NotifyApplicationState",
-    "NotifyMigrationTaskState",
-    "PutResourceAttributes"
-]
+    write = [
+      "AssociateCreatedArtifact",
+      "AssociateDiscoveredResource",
+      "CreateHomeRegionControl",
+      "CreateProgressUpdateStream",
+      "DeleteProgressUpdateStream",
+      "DisassociateCreatedArtifact",
+      "DisassociateDiscoveredResource",
+      "ImportMigrationTask",
+      "NotifyApplicationState",
+      "NotifyMigrationTaskState",
+      "PutResourceAttributes"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeApplicationState",
-    "DescribeMigrationTask",
-    "GetHomeRegion"
-]
-    list                   = [
-    "DescribeHomeRegionControls",
-    "ListApplicationStates",
-    "ListCreatedArtifacts",
-    "ListDiscoveredResources",
-    "ListMigrationTasks",
-    "ListProgressUpdateStreams"
-]
-    tagging                = []
+    read = [
+      "DescribeApplicationState",
+      "DescribeMigrationTask",
+      "GetHomeRegion"
+    ]
+    list = [
+      "DescribeHomeRegionControls",
+      "ListApplicationStates",
+      "ListCreatedArtifacts",
+      "ListDiscoveredResources",
+      "ListMigrationTasks",
+      "ListProgressUpdateStreams"
+    ]
+    tagging = []
   }
 }

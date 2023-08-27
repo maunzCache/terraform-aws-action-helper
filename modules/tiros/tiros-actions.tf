@@ -59,17 +59,17 @@ locals {
   prefix = "tiros"
 
   access_level = {
-    write                  = [
-    "CreateQuery",
-    "ExtendQuery"
-]
+    write = [
+      "CreateQuery",
+      "ExtendQuery"
+    ]
     permissions_management = []
-    read                   = [
-    "GetQueryAnswer",
-    "GetQueryExplanation",
-    "GetQueryExtensionAccounts"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetQueryAnswer",
+      "GetQueryExplanation",
+      "GetQueryExtensionAccounts"
+    ]
+    list    = []
+    tagging = []
   }
 }

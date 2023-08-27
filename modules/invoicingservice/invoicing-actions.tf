@@ -59,16 +59,16 @@ locals {
   prefix = "invoicing"
 
   access_level = {
-    write                  = [
-    "PutInvoiceEmailDeliveryPreferences"
-]
+    write = [
+      "PutInvoiceEmailDeliveryPreferences"
+    ]
     permissions_management = []
-    read                   = [
-    "GetInvoiceEmailDeliveryPreferences",
-    "GetInvoicePDF",
-    "ListInvoiceSummaries"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetInvoiceEmailDeliveryPreferences",
+      "GetInvoicePDF",
+      "ListInvoiceSummaries"
+    ]
+    list    = []
+    tagging = []
   }
 }

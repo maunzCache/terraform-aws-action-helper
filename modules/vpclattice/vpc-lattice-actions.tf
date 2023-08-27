@@ -59,66 +59,66 @@ locals {
   prefix = "vpc-lattice"
 
   access_level = {
-    write                  = [
-    "CreateAccessLogSubscription",
-    "CreateListener",
-    "CreateRule",
-    "CreateService",
-    "CreateServiceNetwork",
-    "CreateServiceNetworkServiceAssociation",
-    "CreateServiceNetworkVpcAssociation",
-    "CreateTargetGroup",
-    "DeleteAccessLogSubscription",
-    "DeleteListener",
-    "DeleteResourcePolicy",
-    "DeleteRule",
-    "DeleteService",
-    "DeleteServiceNetwork",
-    "DeleteServiceNetworkServiceAssociation",
-    "DeleteServiceNetworkVpcAssociation",
-    "DeleteTargetGroup",
-    "DeregisterTargets",
-    "PutResourcePolicy",
-    "RegisterTargets",
-    "UpdateAccessLogSubscription",
-    "UpdateListener",
-    "UpdateRule",
-    "UpdateService",
-    "UpdateServiceNetwork",
-    "UpdateServiceNetworkVpcAssociation",
-    "UpdateTargetGroup"
-]
+    write = [
+      "CreateAccessLogSubscription",
+      "CreateListener",
+      "CreateRule",
+      "CreateService",
+      "CreateServiceNetwork",
+      "CreateServiceNetworkServiceAssociation",
+      "CreateServiceNetworkVpcAssociation",
+      "CreateTargetGroup",
+      "DeleteAccessLogSubscription",
+      "DeleteListener",
+      "DeleteResourcePolicy",
+      "DeleteRule",
+      "DeleteService",
+      "DeleteServiceNetwork",
+      "DeleteServiceNetworkServiceAssociation",
+      "DeleteServiceNetworkVpcAssociation",
+      "DeleteTargetGroup",
+      "DeregisterTargets",
+      "PutResourcePolicy",
+      "RegisterTargets",
+      "UpdateAccessLogSubscription",
+      "UpdateListener",
+      "UpdateRule",
+      "UpdateService",
+      "UpdateServiceNetwork",
+      "UpdateServiceNetworkVpcAssociation",
+      "UpdateTargetGroup"
+    ]
     permissions_management = [
-    "DeleteAuthPolicy",
-    "PutAuthPolicy"
-]
-    read                   = [
-    "GetAccessLogSubscription",
-    "GetAuthPolicy",
-    "GetListener",
-    "GetResourcePolicy",
-    "GetRule",
-    "GetService",
-    "GetServiceNetwork",
-    "GetServiceNetworkServiceAssociation",
-    "GetServiceNetworkVpcAssociation",
-    "GetTargetGroup",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAccessLogSubscriptions",
-    "ListListeners",
-    "ListRules",
-    "ListServiceNetworkServiceAssociations",
-    "ListServiceNetworkVpcAssociations",
-    "ListServiceNetworks",
-    "ListServices",
-    "ListTargetGroups",
-    "ListTargets"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "DeleteAuthPolicy",
+      "PutAuthPolicy"
+    ]
+    read = [
+      "GetAccessLogSubscription",
+      "GetAuthPolicy",
+      "GetListener",
+      "GetResourcePolicy",
+      "GetRule",
+      "GetService",
+      "GetServiceNetwork",
+      "GetServiceNetworkServiceAssociation",
+      "GetServiceNetworkVpcAssociation",
+      "GetTargetGroup",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAccessLogSubscriptions",
+      "ListListeners",
+      "ListRules",
+      "ListServiceNetworkServiceAssociations",
+      "ListServiceNetworkVpcAssociations",
+      "ListServiceNetworks",
+      "ListServices",
+      "ListTargetGroups",
+      "ListTargets"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

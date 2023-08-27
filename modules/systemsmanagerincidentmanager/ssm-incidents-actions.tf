@@ -59,44 +59,44 @@ locals {
   prefix = "ssm-incidents"
 
   access_level = {
-    write                  = [
-    "CreateReplicationSet",
-    "CreateResponsePlan",
-    "CreateTimelineEvent",
-    "DeleteIncidentRecord",
-    "DeleteReplicationSet",
-    "DeleteResponsePlan",
-    "DeleteTimelineEvent",
-    "StartIncident",
-    "UpdateDeletionProtection",
-    "UpdateIncidentRecord",
-    "UpdateRelatedItems",
-    "UpdateReplicationSet",
-    "UpdateResponsePlan",
-    "UpdateTimelineEvent"
-]
+    write = [
+      "CreateReplicationSet",
+      "CreateResponsePlan",
+      "CreateTimelineEvent",
+      "DeleteIncidentRecord",
+      "DeleteReplicationSet",
+      "DeleteResponsePlan",
+      "DeleteTimelineEvent",
+      "StartIncident",
+      "UpdateDeletionProtection",
+      "UpdateIncidentRecord",
+      "UpdateRelatedItems",
+      "UpdateReplicationSet",
+      "UpdateResponsePlan",
+      "UpdateTimelineEvent"
+    ]
     permissions_management = [
-    "DeleteResourcePolicy",
-    "PutResourcePolicy"
-]
-    read                   = [
-    "GetIncidentRecord",
-    "GetReplicationSet",
-    "GetResourcePolicies",
-    "GetResponsePlan",
-    "GetTimelineEvent",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListIncidentRecords",
-    "ListRelatedItems",
-    "ListReplicationSets",
-    "ListResponsePlans",
-    "ListTimelineEvents"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "DeleteResourcePolicy",
+      "PutResourcePolicy"
+    ]
+    read = [
+      "GetIncidentRecord",
+      "GetReplicationSet",
+      "GetResourcePolicies",
+      "GetResponsePlan",
+      "GetTimelineEvent",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListIncidentRecords",
+      "ListRelatedItems",
+      "ListReplicationSets",
+      "ListResponsePlans",
+      "ListTimelineEvents"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,50 +59,50 @@ locals {
   prefix = "elasticfilesystem"
 
   access_level = {
-    write                  = [
-    "Backup",
-    "ClientRootAccess",
-    "ClientWrite",
-    "CreateAccessPoint",
-    "CreateFileSystem",
-    "CreateMountTarget",
-    "CreateReplicationConfiguration",
-    "DeleteAccessPoint",
-    "DeleteFileSystem",
-    "DeleteMountTarget",
-    "DeleteReplicationConfiguration",
-    "ModifyMountTargetSecurityGroups",
-    "PutAccountPreferences",
-    "PutBackupPolicy",
-    "PutLifecycleConfiguration",
-    "Restore",
-    "UpdateFileSystem"
-]
+    write = [
+      "Backup",
+      "ClientRootAccess",
+      "ClientWrite",
+      "CreateAccessPoint",
+      "CreateFileSystem",
+      "CreateMountTarget",
+      "CreateReplicationConfiguration",
+      "DeleteAccessPoint",
+      "DeleteFileSystem",
+      "DeleteMountTarget",
+      "DeleteReplicationConfiguration",
+      "ModifyMountTargetSecurityGroups",
+      "PutAccountPreferences",
+      "PutBackupPolicy",
+      "PutLifecycleConfiguration",
+      "Restore",
+      "UpdateFileSystem"
+    ]
     permissions_management = [
-    "DeleteFileSystemPolicy",
-    "PutFileSystemPolicy"
-]
-    read                   = [
-    "ClientMount",
-    "DescribeBackupPolicy",
-    "DescribeFileSystemPolicy",
-    "DescribeLifecycleConfiguration",
-    "DescribeMountTargetSecurityGroups",
-    "DescribeMountTargets",
-    "DescribeTags",
-    "ListTagsForResource"
-]
-    list                   = [
-    "DescribeAccessPoints",
-    "DescribeAccountPreferences",
-    "DescribeFileSystems",
-    "DescribeReplicationConfigurations"
-]
-    tagging                = [
-    "CreateTags",
-    "DeleteTags",
-    "TagResource",
-    "UntagResource"
-]
+      "DeleteFileSystemPolicy",
+      "PutFileSystemPolicy"
+    ]
+    read = [
+      "ClientMount",
+      "DescribeBackupPolicy",
+      "DescribeFileSystemPolicy",
+      "DescribeLifecycleConfiguration",
+      "DescribeMountTargetSecurityGroups",
+      "DescribeMountTargets",
+      "DescribeTags",
+      "ListTagsForResource"
+    ]
+    list = [
+      "DescribeAccessPoints",
+      "DescribeAccountPreferences",
+      "DescribeFileSystems",
+      "DescribeReplicationConfigurations"
+    ]
+    tagging = [
+      "CreateTags",
+      "DeleteTags",
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

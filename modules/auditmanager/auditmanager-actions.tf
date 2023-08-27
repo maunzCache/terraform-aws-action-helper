@@ -59,76 +59,76 @@ locals {
   prefix = "auditmanager"
 
   access_level = {
-    write                  = [
-    "AssociateAssessmentReportEvidenceFolder",
-    "BatchAssociateAssessmentReportEvidence",
-    "BatchCreateDelegationByAssessment",
-    "BatchDeleteDelegationByAssessment",
-    "BatchDisassociateAssessmentReportEvidence",
-    "BatchImportEvidenceToAssessmentControl",
-    "CreateAssessment",
-    "CreateAssessmentFramework",
-    "CreateAssessmentReport",
-    "CreateControl",
-    "DeleteAssessment",
-    "DeleteAssessmentFramework",
-    "DeleteAssessmentFrameworkShare",
-    "DeleteAssessmentReport",
-    "DeleteControl",
-    "DeregisterAccount",
-    "DeregisterOrganizationAdminAccount",
-    "DisassociateAssessmentReportEvidenceFolder",
-    "RegisterAccount",
-    "RegisterOrganizationAdminAccount",
-    "StartAssessmentFrameworkShare",
-    "UpdateAssessment",
-    "UpdateAssessmentControl",
-    "UpdateAssessmentControlSetStatus",
-    "UpdateAssessmentFramework",
-    "UpdateAssessmentFrameworkShare",
-    "UpdateAssessmentStatus",
-    "UpdateControl",
-    "UpdateSettings"
-]
+    write = [
+      "AssociateAssessmentReportEvidenceFolder",
+      "BatchAssociateAssessmentReportEvidence",
+      "BatchCreateDelegationByAssessment",
+      "BatchDeleteDelegationByAssessment",
+      "BatchDisassociateAssessmentReportEvidence",
+      "BatchImportEvidenceToAssessmentControl",
+      "CreateAssessment",
+      "CreateAssessmentFramework",
+      "CreateAssessmentReport",
+      "CreateControl",
+      "DeleteAssessment",
+      "DeleteAssessmentFramework",
+      "DeleteAssessmentFrameworkShare",
+      "DeleteAssessmentReport",
+      "DeleteControl",
+      "DeregisterAccount",
+      "DeregisterOrganizationAdminAccount",
+      "DisassociateAssessmentReportEvidenceFolder",
+      "RegisterAccount",
+      "RegisterOrganizationAdminAccount",
+      "StartAssessmentFrameworkShare",
+      "UpdateAssessment",
+      "UpdateAssessmentControl",
+      "UpdateAssessmentControlSetStatus",
+      "UpdateAssessmentFramework",
+      "UpdateAssessmentFrameworkShare",
+      "UpdateAssessmentStatus",
+      "UpdateControl",
+      "UpdateSettings"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAccountStatus",
-    "GetAssessment",
-    "GetAssessmentFramework",
-    "GetAssessmentReportUrl",
-    "GetChangeLogs",
-    "GetControl",
-    "GetEvidence",
-    "GetEvidenceByEvidenceFolder",
-    "GetEvidenceFileUploadUrl",
-    "GetEvidenceFolder",
-    "GetEvidenceFoldersByAssessment",
-    "GetEvidenceFoldersByAssessmentControl",
-    "GetInsights",
-    "GetInsightsByAssessment",
-    "GetOrganizationAdminAccount",
-    "GetServicesInScope",
-    "GetSettings",
-    "ListTagsForResource",
-    "ValidateAssessmentReportIntegrity"
-]
-    list                   = [
-    "GetDelegations",
-    "ListAssessmentControlInsightsByControlDomain",
-    "ListAssessmentFrameworkShareRequests",
-    "ListAssessmentFrameworks",
-    "ListAssessmentReports",
-    "ListAssessments",
-    "ListControlDomainInsights",
-    "ListControlDomainInsightsByAssessment",
-    "ListControlInsightsByControlDomain",
-    "ListControls",
-    "ListKeywordsForDataSource",
-    "ListNotifications"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetAccountStatus",
+      "GetAssessment",
+      "GetAssessmentFramework",
+      "GetAssessmentReportUrl",
+      "GetChangeLogs",
+      "GetControl",
+      "GetEvidence",
+      "GetEvidenceByEvidenceFolder",
+      "GetEvidenceFileUploadUrl",
+      "GetEvidenceFolder",
+      "GetEvidenceFoldersByAssessment",
+      "GetEvidenceFoldersByAssessmentControl",
+      "GetInsights",
+      "GetInsightsByAssessment",
+      "GetOrganizationAdminAccount",
+      "GetServicesInScope",
+      "GetSettings",
+      "ListTagsForResource",
+      "ValidateAssessmentReportIntegrity"
+    ]
+    list = [
+      "GetDelegations",
+      "ListAssessmentControlInsightsByControlDomain",
+      "ListAssessmentFrameworkShareRequests",
+      "ListAssessmentFrameworks",
+      "ListAssessmentReports",
+      "ListAssessments",
+      "ListControlDomainInsights",
+      "ListControlDomainInsightsByAssessment",
+      "ListControlInsightsByControlDomain",
+      "ListControls",
+      "ListKeywordsForDataSource",
+      "ListNotifications"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

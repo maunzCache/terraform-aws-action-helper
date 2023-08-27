@@ -59,81 +59,81 @@ locals {
   prefix = "elasticache"
 
   access_level = {
-    write                  = [
-    "AuthorizeCacheSecurityGroupIngress",
-    "BatchApplyUpdateAction",
-    "BatchStopUpdateAction",
-    "CompleteMigration",
-    "Connect",
-    "CopySnapshot",
-    "CreateCacheCluster",
-    "CreateCacheParameterGroup",
-    "CreateCacheSecurityGroup",
-    "CreateCacheSubnetGroup",
-    "CreateGlobalReplicationGroup",
-    "CreateReplicationGroup",
-    "CreateSnapshot",
-    "CreateUser",
-    "CreateUserGroup",
-    "DecreaseNodeGroupsInGlobalReplicationGroup",
-    "DecreaseReplicaCount",
-    "DeleteCacheCluster",
-    "DeleteCacheParameterGroup",
-    "DeleteCacheSecurityGroup",
-    "DeleteCacheSubnetGroup",
-    "DeleteGlobalReplicationGroup",
-    "DeleteReplicationGroup",
-    "DeleteSnapshot",
-    "DeleteUser",
-    "DeleteUserGroup",
-    "DisassociateGlobalReplicationGroup",
-    "FailoverGlobalReplicationGroup",
-    "IncreaseNodeGroupsInGlobalReplicationGroup",
-    "IncreaseReplicaCount",
-    "ModifyCacheCluster",
-    "ModifyCacheParameterGroup",
-    "ModifyCacheSubnetGroup",
-    "ModifyGlobalReplicationGroup",
-    "ModifyReplicationGroup",
-    "ModifyReplicationGroupShardConfiguration",
-    "ModifyUser",
-    "ModifyUserGroup",
-    "PurchaseReservedCacheNodesOffering",
-    "RebalanceSlotsInGlobalReplicationGroup",
-    "RebootCacheCluster",
-    "ResetCacheParameterGroup",
-    "RevokeCacheSecurityGroupIngress",
-    "StartMigration",
-    "TestFailover",
-    "TestMigration"
-]
+    write = [
+      "AuthorizeCacheSecurityGroupIngress",
+      "BatchApplyUpdateAction",
+      "BatchStopUpdateAction",
+      "CompleteMigration",
+      "Connect",
+      "CopySnapshot",
+      "CreateCacheCluster",
+      "CreateCacheParameterGroup",
+      "CreateCacheSecurityGroup",
+      "CreateCacheSubnetGroup",
+      "CreateGlobalReplicationGroup",
+      "CreateReplicationGroup",
+      "CreateSnapshot",
+      "CreateUser",
+      "CreateUserGroup",
+      "DecreaseNodeGroupsInGlobalReplicationGroup",
+      "DecreaseReplicaCount",
+      "DeleteCacheCluster",
+      "DeleteCacheParameterGroup",
+      "DeleteCacheSecurityGroup",
+      "DeleteCacheSubnetGroup",
+      "DeleteGlobalReplicationGroup",
+      "DeleteReplicationGroup",
+      "DeleteSnapshot",
+      "DeleteUser",
+      "DeleteUserGroup",
+      "DisassociateGlobalReplicationGroup",
+      "FailoverGlobalReplicationGroup",
+      "IncreaseNodeGroupsInGlobalReplicationGroup",
+      "IncreaseReplicaCount",
+      "ModifyCacheCluster",
+      "ModifyCacheParameterGroup",
+      "ModifyCacheSubnetGroup",
+      "ModifyGlobalReplicationGroup",
+      "ModifyReplicationGroup",
+      "ModifyReplicationGroupShardConfiguration",
+      "ModifyUser",
+      "ModifyUserGroup",
+      "PurchaseReservedCacheNodesOffering",
+      "RebalanceSlotsInGlobalReplicationGroup",
+      "RebootCacheCluster",
+      "ResetCacheParameterGroup",
+      "RevokeCacheSecurityGroupIngress",
+      "StartMigration",
+      "TestFailover",
+      "TestMigration"
+    ]
     permissions_management = []
-    read                   = [
-    "ListTagsForResource"
-]
-    list                   = [
-    "DescribeCacheClusters",
-    "DescribeCacheEngineVersions",
-    "DescribeCacheParameterGroups",
-    "DescribeCacheParameters",
-    "DescribeCacheSecurityGroups",
-    "DescribeCacheSubnetGroups",
-    "DescribeEngineDefaultParameters",
-    "DescribeEvents",
-    "DescribeGlobalReplicationGroups",
-    "DescribeReplicationGroups",
-    "DescribeReservedCacheNodes",
-    "DescribeReservedCacheNodesOfferings",
-    "DescribeServiceUpdates",
-    "DescribeSnapshots",
-    "DescribeUpdateActions",
-    "DescribeUserGroups",
-    "DescribeUsers",
-    "ListAllowedNodeTypeModifications"
-]
-    tagging                = [
-    "AddTagsToResource",
-    "RemoveTagsFromResource"
-]
+    read = [
+      "ListTagsForResource"
+    ]
+    list = [
+      "DescribeCacheClusters",
+      "DescribeCacheEngineVersions",
+      "DescribeCacheParameterGroups",
+      "DescribeCacheParameters",
+      "DescribeCacheSecurityGroups",
+      "DescribeCacheSubnetGroups",
+      "DescribeEngineDefaultParameters",
+      "DescribeEvents",
+      "DescribeGlobalReplicationGroups",
+      "DescribeReplicationGroups",
+      "DescribeReservedCacheNodes",
+      "DescribeReservedCacheNodesOfferings",
+      "DescribeServiceUpdates",
+      "DescribeSnapshots",
+      "DescribeUpdateActions",
+      "DescribeUserGroups",
+      "DescribeUsers",
+      "ListAllowedNodeTypeModifications"
+    ]
+    tagging = [
+      "AddTagsToResource",
+      "RemoveTagsFromResource"
+    ]
   }
 }

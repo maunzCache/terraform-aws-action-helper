@@ -59,25 +59,25 @@ locals {
   prefix = "textract"
 
   access_level = {
-    write                  = [
-    "StartDocumentAnalysis",
-    "StartDocumentTextDetection",
-    "StartExpenseAnalysis",
-    "StartLendingAnalysis"
-]
+    write = [
+      "StartDocumentAnalysis",
+      "StartDocumentTextDetection",
+      "StartExpenseAnalysis",
+      "StartLendingAnalysis"
+    ]
     permissions_management = []
-    read                   = [
-    "AnalyzeDocument",
-    "AnalyzeExpense",
-    "AnalyzeID",
-    "DetectDocumentText",
-    "GetDocumentAnalysis",
-    "GetDocumentTextDetection",
-    "GetExpenseAnalysis",
-    "GetLendingAnalysis",
-    "GetLendingAnalysisSummary"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "AnalyzeDocument",
+      "AnalyzeExpense",
+      "AnalyzeID",
+      "DetectDocumentText",
+      "GetDocumentAnalysis",
+      "GetDocumentTextDetection",
+      "GetExpenseAnalysis",
+      "GetLendingAnalysis",
+      "GetLendingAnalysisSummary"
+    ]
+    list    = []
+    tagging = []
   }
 }

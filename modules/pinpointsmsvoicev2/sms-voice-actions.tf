@@ -59,56 +59,56 @@ locals {
   prefix = "sms-voice"
 
   access_level = {
-    write                  = [
-    "AssociateOriginationIdentity",
-    "CreateConfigurationSet",
-    "CreateEventDestination",
-    "CreateOptOutList",
-    "CreatePool",
-    "DeleteConfigurationSet",
-    "DeleteDefaultMessageType",
-    "DeleteDefaultSenderId",
-    "DeleteEventDestination",
-    "DeleteKeyword",
-    "DeleteOptOutList",
-    "DeleteOptedOutNumber",
-    "DeletePool",
-    "DeleteTextMessageSpendLimitOverride",
-    "DeleteVoiceMessageSpendLimitOverride",
-    "DisassociateOriginationIdentity",
-    "PutKeyword",
-    "PutOptedOutNumber",
-    "ReleasePhoneNumber",
-    "RequestPhoneNumber",
-    "SendTextMessage",
-    "SendVoiceMessage",
-    "SetDefaultMessageType",
-    "SetDefaultSenderId",
-    "SetTextMessageSpendLimitOverride",
-    "SetVoiceMessageSpendLimitOverride",
-    "UpdateEventDestination",
-    "UpdatePhoneNumber",
-    "UpdatePool"
-]
+    write = [
+      "AssociateOriginationIdentity",
+      "CreateConfigurationSet",
+      "CreateEventDestination",
+      "CreateOptOutList",
+      "CreatePool",
+      "DeleteConfigurationSet",
+      "DeleteDefaultMessageType",
+      "DeleteDefaultSenderId",
+      "DeleteEventDestination",
+      "DeleteKeyword",
+      "DeleteOptOutList",
+      "DeleteOptedOutNumber",
+      "DeletePool",
+      "DeleteTextMessageSpendLimitOverride",
+      "DeleteVoiceMessageSpendLimitOverride",
+      "DisassociateOriginationIdentity",
+      "PutKeyword",
+      "PutOptedOutNumber",
+      "ReleasePhoneNumber",
+      "RequestPhoneNumber",
+      "SendTextMessage",
+      "SendVoiceMessage",
+      "SetDefaultMessageType",
+      "SetDefaultSenderId",
+      "SetTextMessageSpendLimitOverride",
+      "SetVoiceMessageSpendLimitOverride",
+      "UpdateEventDestination",
+      "UpdatePhoneNumber",
+      "UpdatePool"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAccountAttributes",
-    "DescribeAccountLimits",
-    "DescribeConfigurationSets",
-    "DescribeKeywords",
-    "DescribeOptOutLists",
-    "DescribeOptedOutNumbers",
-    "DescribePhoneNumbers",
-    "DescribePools",
-    "DescribeSenderIds",
-    "DescribeSpendLimits",
-    "ListPoolOriginationIdentities",
-    "ListTagsForResource"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeAccountAttributes",
+      "DescribeAccountLimits",
+      "DescribeConfigurationSets",
+      "DescribeKeywords",
+      "DescribeOptOutLists",
+      "DescribeOptedOutNumbers",
+      "DescribePhoneNumbers",
+      "DescribePools",
+      "DescribeSenderIds",
+      "DescribeSpendLimits",
+      "ListPoolOriginationIdentities",
+      "ListTagsForResource"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

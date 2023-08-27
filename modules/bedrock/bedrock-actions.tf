@@ -59,47 +59,47 @@ locals {
   prefix = "bedrock"
 
   access_level = {
-    write                  = [
-    "CreateAgent",
-    "CreateAgentActionGroup",
-    "CreateAgentAlias",
-    "CreateAgentDraftSnapshot",
-    "CreateModelCustomizationJob",
-    "DeleteCustomModel",
-    "DeletePrompt",
-    "InvokeAgent",
-    "InvokeModel",
-    "InvokeModelWithResponseStream",
-    "StopModelCustomizationJob",
-    "UpdateAgent",
-    "UpdateAgentActionGroup",
-    "UpdateAgentAlias",
-    "UpdatePrompt"
-]
+    write = [
+      "CreateAgent",
+      "CreateAgentActionGroup",
+      "CreateAgentAlias",
+      "CreateAgentDraftSnapshot",
+      "CreateModelCustomizationJob",
+      "DeleteCustomModel",
+      "DeletePrompt",
+      "InvokeAgent",
+      "InvokeModel",
+      "InvokeModelWithResponseStream",
+      "StopModelCustomizationJob",
+      "UpdateAgent",
+      "UpdateAgentActionGroup",
+      "UpdateAgentAlias",
+      "UpdatePrompt"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAgent",
-    "GetAgentActionGroup",
-    "GetAgentAlias",
-    "GetAgentVersion",
-    "GetCustomModel",
-    "GetModelCustomizationJob",
-    "GetPrompt"
-]
-    list                   = [
-    "ListAgentActionGroups",
-    "ListAgentAliases",
-    "ListAgentVersions",
-    "ListAgents",
-    "ListCustomModels",
-    "ListFoundationModels",
-    "ListModelCustomizationJobs",
-    "ListPrompts",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetAgent",
+      "GetAgentActionGroup",
+      "GetAgentAlias",
+      "GetAgentVersion",
+      "GetCustomModel",
+      "GetModelCustomizationJob",
+      "GetPrompt"
+    ]
+    list = [
+      "ListAgentActionGroups",
+      "ListAgentAliases",
+      "ListAgentVersions",
+      "ListAgents",
+      "ListCustomModels",
+      "ListFoundationModels",
+      "ListModelCustomizationJobs",
+      "ListPrompts",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

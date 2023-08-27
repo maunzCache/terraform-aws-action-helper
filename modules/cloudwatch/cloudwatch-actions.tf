@@ -59,53 +59,53 @@ locals {
   prefix = "cloudwatch"
 
   access_level = {
-    write                  = [
-    "DeleteAlarms",
-    "DeleteAnomalyDetector",
-    "DeleteDashboards",
-    "DeleteInsightRules",
-    "DeleteMetricStream",
-    "DisableAlarmActions",
-    "DisableInsightRules",
-    "EnableAlarmActions",
-    "EnableInsightRules",
-    "Link",
-    "PutAnomalyDetector",
-    "PutCompositeAlarm",
-    "PutDashboard",
-    "PutInsightRule",
-    "PutManagedInsightRules",
-    "PutMetricAlarm",
-    "PutMetricData",
-    "PutMetricStream",
-    "SetAlarmState",
-    "StartMetricStreams",
-    "StopMetricStreams"
-]
+    write = [
+      "DeleteAlarms",
+      "DeleteAnomalyDetector",
+      "DeleteDashboards",
+      "DeleteInsightRules",
+      "DeleteMetricStream",
+      "DisableAlarmActions",
+      "DisableInsightRules",
+      "EnableAlarmActions",
+      "EnableInsightRules",
+      "Link",
+      "PutAnomalyDetector",
+      "PutCompositeAlarm",
+      "PutDashboard",
+      "PutInsightRule",
+      "PutManagedInsightRules",
+      "PutMetricAlarm",
+      "PutMetricData",
+      "PutMetricStream",
+      "SetAlarmState",
+      "StartMetricStreams",
+      "StopMetricStreams"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAlarmHistory",
-    "DescribeAlarms",
-    "DescribeAlarmsForMetric",
-    "DescribeAnomalyDetectors",
-    "DescribeInsightRules",
-    "GetDashboard",
-    "GetInsightRuleReport",
-    "GetMetricData",
-    "GetMetricStatistics",
-    "GetMetricStream",
-    "GetMetricWidgetImage",
-    "ListManagedInsightRules"
-]
-    list                   = [
-    "ListDashboards",
-    "ListMetricStreams",
-    "ListMetrics",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeAlarmHistory",
+      "DescribeAlarms",
+      "DescribeAlarmsForMetric",
+      "DescribeAnomalyDetectors",
+      "DescribeInsightRules",
+      "GetDashboard",
+      "GetInsightRuleReport",
+      "GetMetricData",
+      "GetMetricStatistics",
+      "GetMetricStream",
+      "GetMetricWidgetImage",
+      "ListManagedInsightRules"
+    ]
+    list = [
+      "ListDashboards",
+      "ListMetricStreams",
+      "ListMetrics",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

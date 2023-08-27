@@ -59,25 +59,25 @@ locals {
   prefix = "sagemaker-groundtruth-synthetic"
 
   access_level = {
-    write                  = [
-    "CreateProject",
-    "DeleteProject",
-    "StartBatchDataTransfer",
-    "StartProjectDataTransfer",
-    "UpdateBatch"
-]
+    write = [
+      "CreateProject",
+      "DeleteProject",
+      "StartBatchDataTransfer",
+      "StartProjectDataTransfer",
+      "UpdateBatch"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAccountDetails",
-    "GetBatch",
-    "GetProject"
-]
-    list                   = [
-    "ListBatchDataTransfers",
-    "ListBatchSummaries",
-    "ListProjectDataTransfers",
-    "ListProjectSummaries"
-]
-    tagging                = []
+    read = [
+      "GetAccountDetails",
+      "GetBatch",
+      "GetProject"
+    ]
+    list = [
+      "ListBatchDataTransfers",
+      "ListBatchSummaries",
+      "ListProjectDataTransfers",
+      "ListProjectSummaries"
+    ]
+    tagging = []
   }
 }

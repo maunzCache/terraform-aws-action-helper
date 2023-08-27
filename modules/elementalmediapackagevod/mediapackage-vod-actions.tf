@@ -59,31 +59,31 @@ locals {
   prefix = "mediapackage-vod"
 
   access_level = {
-    write                  = [
-    "ConfigureLogs",
-    "CreateAsset",
-    "CreatePackagingConfiguration",
-    "CreatePackagingGroup",
-    "DeleteAsset",
-    "DeletePackagingConfiguration",
-    "DeletePackagingGroup",
-    "UpdatePackagingGroup"
-]
+    write = [
+      "ConfigureLogs",
+      "CreateAsset",
+      "CreatePackagingConfiguration",
+      "CreatePackagingGroup",
+      "DeleteAsset",
+      "DeletePackagingConfiguration",
+      "DeletePackagingGroup",
+      "UpdatePackagingGroup"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAsset",
-    "DescribePackagingConfiguration",
-    "DescribePackagingGroup",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAssets",
-    "ListPackagingConfigurations",
-    "ListPackagingGroups"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeAsset",
+      "DescribePackagingConfiguration",
+      "DescribePackagingGroup",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAssets",
+      "ListPackagingConfigurations",
+      "ListPackagingGroups"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

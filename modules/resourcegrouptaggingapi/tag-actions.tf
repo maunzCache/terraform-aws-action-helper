@@ -59,21 +59,21 @@ locals {
   prefix = "tag"
 
   access_level = {
-    write                  = [
-    "StartReportCreation"
-]
+    write = [
+      "StartReportCreation"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeReportCreation",
-    "GetComplianceSummary",
-    "GetResources",
-    "GetTagKeys",
-    "GetTagValues"
-]
-    list                   = []
-    tagging                = [
-    "TagResources",
-    "UntagResources"
-]
+    read = [
+      "DescribeReportCreation",
+      "GetComplianceSummary",
+      "GetResources",
+      "GetTagKeys",
+      "GetTagValues"
+    ]
+    list = []
+    tagging = [
+      "TagResources",
+      "UntagResources"
+    ]
   }
 }

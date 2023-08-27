@@ -59,33 +59,33 @@ locals {
   prefix = "resource-groups"
 
   access_level = {
-    write                  = [
-    "CreateGroup",
-    "DeleteGroup",
-    "GroupResources",
-    "PutGroupConfiguration",
-    "PutGroupPolicy",
-    "UngroupResources",
-    "UpdateAccountSettings",
-    "UpdateGroup",
-    "UpdateGroupQuery"
-]
+    write = [
+      "CreateGroup",
+      "DeleteGroup",
+      "GroupResources",
+      "PutGroupConfiguration",
+      "PutGroupPolicy",
+      "UngroupResources",
+      "UpdateAccountSettings",
+      "UpdateGroup",
+      "UpdateGroupQuery"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAccountSettings",
-    "GetGroup",
-    "GetGroupConfiguration",
-    "GetGroupQuery",
-    "GetTags"
-]
-    list                   = [
-    "ListGroupResources",
-    "ListGroups",
-    "SearchResources"
-]
-    tagging                = [
-    "Tag",
-    "Untag"
-]
+    read = [
+      "GetAccountSettings",
+      "GetGroup",
+      "GetGroupConfiguration",
+      "GetGroupQuery",
+      "GetTags"
+    ]
+    list = [
+      "ListGroupResources",
+      "ListGroups",
+      "SearchResources"
+    ]
+    tagging = [
+      "Tag",
+      "Untag"
+    ]
   }
 }

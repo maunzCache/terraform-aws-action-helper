@@ -59,60 +59,60 @@ locals {
   prefix = "inspector2"
 
   access_level = {
-    write                  = [
-    "AssociateMember",
-    "BatchUpdateMemberEc2DeepInspectionStatus",
-    "CancelFindingsReport",
-    "CancelSbomExport",
-    "CreateFilter",
-    "CreateFindingsReport",
-    "CreateSbomExport",
-    "DeleteFilter",
-    "Disable",
-    "DisableDelegatedAdminAccount",
-    "DisassociateMember",
-    "Enable",
-    "EnableDelegatedAdminAccount",
-    "ResetEncryptionKey",
-    "UpdateConfiguration",
-    "UpdateEc2DeepInspectionConfiguration",
-    "UpdateEncryptionKey",
-    "UpdateFilter",
-    "UpdateOrgEc2DeepInspectionConfiguration",
-    "UpdateOrganizationConfiguration"
-]
+    write = [
+      "AssociateMember",
+      "BatchUpdateMemberEc2DeepInspectionStatus",
+      "CancelFindingsReport",
+      "CancelSbomExport",
+      "CreateFilter",
+      "CreateFindingsReport",
+      "CreateSbomExport",
+      "DeleteFilter",
+      "Disable",
+      "DisableDelegatedAdminAccount",
+      "DisassociateMember",
+      "Enable",
+      "EnableDelegatedAdminAccount",
+      "ResetEncryptionKey",
+      "UpdateConfiguration",
+      "UpdateEc2DeepInspectionConfiguration",
+      "UpdateEncryptionKey",
+      "UpdateFilter",
+      "UpdateOrgEc2DeepInspectionConfiguration",
+      "UpdateOrganizationConfiguration"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetAccountStatus",
-    "BatchGetCodeSnippet",
-    "BatchGetFindingDetails",
-    "BatchGetFreeTrialInfo",
-    "BatchGetMemberEc2DeepInspectionStatus",
-    "DescribeOrganizationConfiguration",
-    "GetConfiguration",
-    "GetDelegatedAdminAccount",
-    "GetEc2DeepInspectionConfiguration",
-    "GetEncryptionKey",
-    "GetFindingsReportStatus",
-    "GetMember",
-    "GetSbomExport",
-    "ListTagsForResource",
-    "SearchVulnerabilities"
-]
-    list                   = [
-    "ListAccountPermissions",
-    "ListCoverage",
-    "ListCoverageStatistics",
-    "ListDelegatedAdminAccounts",
-    "ListFilters",
-    "ListFindingAggregations",
-    "ListFindings",
-    "ListMembers",
-    "ListUsageTotals"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchGetAccountStatus",
+      "BatchGetCodeSnippet",
+      "BatchGetFindingDetails",
+      "BatchGetFreeTrialInfo",
+      "BatchGetMemberEc2DeepInspectionStatus",
+      "DescribeOrganizationConfiguration",
+      "GetConfiguration",
+      "GetDelegatedAdminAccount",
+      "GetEc2DeepInspectionConfiguration",
+      "GetEncryptionKey",
+      "GetFindingsReportStatus",
+      "GetMember",
+      "GetSbomExport",
+      "ListTagsForResource",
+      "SearchVulnerabilities"
+    ]
+    list = [
+      "ListAccountPermissions",
+      "ListCoverage",
+      "ListCoverageStatistics",
+      "ListDelegatedAdminAccounts",
+      "ListFilters",
+      "ListFindingAggregations",
+      "ListFindings",
+      "ListMembers",
+      "ListUsageTotals"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

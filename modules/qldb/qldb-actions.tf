@@ -59,49 +59,49 @@ locals {
   prefix = "qldb"
 
   access_level = {
-    write                  = [
-    "CancelJournalKinesisStream",
-    "CreateLedger",
-    "DeleteLedger",
-    "ExecuteStatement",
-    "ExportJournalToS3",
-    "InsertSampleData",
-    "PartiQLCreateIndex",
-    "PartiQLCreateTable",
-    "PartiQLDelete",
-    "PartiQLDropIndex",
-    "PartiQLDropTable",
-    "PartiQLInsert",
-    "PartiQLRedact",
-    "PartiQLUndropTable",
-    "PartiQLUpdate",
-    "SendCommand",
-    "ShowCatalog",
-    "StreamJournalToKinesis",
-    "UpdateLedger",
-    "UpdateLedgerPermissionsMode"
-]
+    write = [
+      "CancelJournalKinesisStream",
+      "CreateLedger",
+      "DeleteLedger",
+      "ExecuteStatement",
+      "ExportJournalToS3",
+      "InsertSampleData",
+      "PartiQLCreateIndex",
+      "PartiQLCreateTable",
+      "PartiQLDelete",
+      "PartiQLDropIndex",
+      "PartiQLDropTable",
+      "PartiQLInsert",
+      "PartiQLRedact",
+      "PartiQLUndropTable",
+      "PartiQLUpdate",
+      "SendCommand",
+      "ShowCatalog",
+      "StreamJournalToKinesis",
+      "UpdateLedger",
+      "UpdateLedgerPermissionsMode"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeJournalKinesisStream",
-    "DescribeJournalS3Export",
-    "DescribeLedger",
-    "GetBlock",
-    "GetDigest",
-    "GetRevision",
-    "ListTagsForResource",
-    "PartiQLHistoryFunction",
-    "PartiQLSelect"
-]
-    list                   = [
-    "ListJournalKinesisStreamsForLedger",
-    "ListJournalS3Exports",
-    "ListJournalS3ExportsForLedger",
-    "ListLedgers"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeJournalKinesisStream",
+      "DescribeJournalS3Export",
+      "DescribeLedger",
+      "GetBlock",
+      "GetDigest",
+      "GetRevision",
+      "ListTagsForResource",
+      "PartiQLHistoryFunction",
+      "PartiQLSelect"
+    ]
+    list = [
+      "ListJournalKinesisStreamsForLedger",
+      "ListJournalS3Exports",
+      "ListJournalS3ExportsForLedger",
+      "ListLedgers"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

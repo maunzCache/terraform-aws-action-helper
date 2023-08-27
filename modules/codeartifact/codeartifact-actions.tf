@@ -59,56 +59,56 @@ locals {
   prefix = "codeartifact"
 
   access_level = {
-    write                  = [
-    "AssociateExternalConnection",
-    "AssociateWithDownstreamRepository",
-    "CopyPackageVersions",
-    "CreateDomain",
-    "CreateRepository",
-    "DeleteDomain",
-    "DeletePackage",
-    "DeletePackageVersions",
-    "DeleteRepository",
-    "DisassociateExternalConnection",
-    "DisposePackageVersions",
-    "PublishPackageVersion",
-    "PutDomainPermissionsPolicy",
-    "PutPackageMetadata",
-    "PutPackageOriginConfiguration",
-    "PutRepositoryPermissionsPolicy",
-    "UpdatePackageVersionsStatus",
-    "UpdateRepository"
-]
+    write = [
+      "AssociateExternalConnection",
+      "AssociateWithDownstreamRepository",
+      "CopyPackageVersions",
+      "CreateDomain",
+      "CreateRepository",
+      "DeleteDomain",
+      "DeletePackage",
+      "DeletePackageVersions",
+      "DeleteRepository",
+      "DisassociateExternalConnection",
+      "DisposePackageVersions",
+      "PublishPackageVersion",
+      "PutDomainPermissionsPolicy",
+      "PutPackageMetadata",
+      "PutPackageOriginConfiguration",
+      "PutRepositoryPermissionsPolicy",
+      "UpdatePackageVersionsStatus",
+      "UpdateRepository"
+    ]
     permissions_management = [
-    "DeleteDomainPermissionsPolicy",
-    "DeleteRepositoryPermissionsPolicy"
-]
-    read                   = [
-    "DescribeDomain",
-    "DescribePackage",
-    "DescribePackageVersion",
-    "DescribeRepository",
-    "GetAuthorizationToken",
-    "GetDomainPermissionsPolicy",
-    "GetPackageVersionAsset",
-    "GetPackageVersionReadme",
-    "GetRepositoryEndpoint",
-    "GetRepositoryPermissionsPolicy",
-    "ReadFromRepository"
-]
-    list                   = [
-    "ListDomains",
-    "ListPackageVersionAssets",
-    "ListPackageVersionDependencies",
-    "ListPackageVersions",
-    "ListPackages",
-    "ListRepositories",
-    "ListRepositoriesInDomain",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "DeleteDomainPermissionsPolicy",
+      "DeleteRepositoryPermissionsPolicy"
+    ]
+    read = [
+      "DescribeDomain",
+      "DescribePackage",
+      "DescribePackageVersion",
+      "DescribeRepository",
+      "GetAuthorizationToken",
+      "GetDomainPermissionsPolicy",
+      "GetPackageVersionAsset",
+      "GetPackageVersionReadme",
+      "GetRepositoryEndpoint",
+      "GetRepositoryPermissionsPolicy",
+      "ReadFromRepository"
+    ]
+    list = [
+      "ListDomains",
+      "ListPackageVersionAssets",
+      "ListPackageVersionDependencies",
+      "ListPackageVersions",
+      "ListPackages",
+      "ListRepositories",
+      "ListRepositoriesInDomain",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,30 +59,30 @@ locals {
   prefix = "cassandra"
 
   access_level = {
-    write                  = [
-    "Alter",
-    "AlterMultiRegionResource",
-    "Create",
-    "CreateMultiRegionResource",
-    "Drop",
-    "DropMultiRegionResource",
-    "Modify",
-    "ModifyMultiRegionResource",
-    "Restore",
-    "RestoreMultiRegionTable",
-    "UpdatePartitioner"
-]
+    write = [
+      "Alter",
+      "AlterMultiRegionResource",
+      "Create",
+      "CreateMultiRegionResource",
+      "Drop",
+      "DropMultiRegionResource",
+      "Modify",
+      "ModifyMultiRegionResource",
+      "Restore",
+      "RestoreMultiRegionTable",
+      "UpdatePartitioner"
+    ]
     permissions_management = []
-    read                   = [
-    "Select",
-    "SelectMultiRegionResource"
-]
-    list                   = []
-    tagging                = [
-    "TagMultiRegionResource",
-    "TagResource",
-    "UnTagMultiRegionResource",
-    "UntagResource"
-]
+    read = [
+      "Select",
+      "SelectMultiRegionResource"
+    ]
+    list = []
+    tagging = [
+      "TagMultiRegionResource",
+      "TagResource",
+      "UnTagMultiRegionResource",
+      "UntagResource"
+    ]
   }
 }

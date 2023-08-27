@@ -59,44 +59,44 @@ locals {
   prefix = "greengrass"
 
   access_level = {
-    write                  = [
-    "BatchAssociateClientDeviceWithCoreDevice",
-    "BatchDisassociateClientDeviceFromCoreDevice",
-    "CancelDeployment",
-    "CreateComponentVersion",
-    "CreateDeployment",
-    "DeleteComponent",
-    "DeleteCoreDevice",
-    "DeleteDeployment",
-    "DisassociateServiceRoleFromAccount",
-    "UpdateConnectivityInfo"
-]
+    write = [
+      "BatchAssociateClientDeviceWithCoreDevice",
+      "BatchDisassociateClientDeviceFromCoreDevice",
+      "CancelDeployment",
+      "CreateComponentVersion",
+      "CreateDeployment",
+      "DeleteComponent",
+      "DeleteCoreDevice",
+      "DeleteDeployment",
+      "DisassociateServiceRoleFromAccount",
+      "UpdateConnectivityInfo"
+    ]
     permissions_management = [
-    "AssociateServiceRoleToAccount"
-]
-    read                   = [
-    "DescribeComponent",
-    "GetComponent",
-    "GetComponentVersionArtifact",
-    "GetConnectivityInfo",
-    "GetCoreDevice",
-    "GetDeployment",
-    "GetServiceRoleForAccount",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListClientDevicesAssociatedWithCoreDevice",
-    "ListComponentVersions",
-    "ListComponents",
-    "ListCoreDevices",
-    "ListDeployments",
-    "ListEffectiveDeployments",
-    "ListInstalledComponents",
-    "ResolveComponentCandidates"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "AssociateServiceRoleToAccount"
+    ]
+    read = [
+      "DescribeComponent",
+      "GetComponent",
+      "GetComponentVersionArtifact",
+      "GetConnectivityInfo",
+      "GetCoreDevice",
+      "GetDeployment",
+      "GetServiceRoleForAccount",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListClientDevicesAssociatedWithCoreDevice",
+      "ListComponentVersions",
+      "ListComponents",
+      "ListCoreDevices",
+      "ListDeployments",
+      "ListEffectiveDeployments",
+      "ListInstalledComponents",
+      "ResolveComponentCandidates"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

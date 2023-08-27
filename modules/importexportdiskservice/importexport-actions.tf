@@ -59,19 +59,19 @@ locals {
   prefix = "importexport"
 
   access_level = {
-    write                  = [
-    "CancelJob",
-    "CreateJob",
-    "UpdateJob"
-]
+    write = [
+      "CancelJob",
+      "CreateJob",
+      "UpdateJob"
+    ]
     permissions_management = []
-    read                   = [
-    "GetShippingLabel",
-    "GetStatus"
-]
-    list                   = [
-    "ListJobs"
-]
-    tagging                = []
+    read = [
+      "GetShippingLabel",
+      "GetStatus"
+    ]
+    list = [
+      "ListJobs"
+    ]
+    tagging = []
   }
 }

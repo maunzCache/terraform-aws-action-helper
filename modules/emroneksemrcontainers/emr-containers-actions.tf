@@ -59,34 +59,34 @@ locals {
   prefix = "emr-containers"
 
   access_level = {
-    write                  = [
-    "CancelJobRun",
-    "CreateJobTemplate",
-    "CreateManagedEndpoint",
-    "CreateVirtualCluster",
-    "DeleteJobTemplate",
-    "DeleteManagedEndpoint",
-    "DeleteVirtualCluster",
-    "GetManagedEndpointSessionCredentials",
-    "StartJobRun"
-]
+    write = [
+      "CancelJobRun",
+      "CreateJobTemplate",
+      "CreateManagedEndpoint",
+      "CreateVirtualCluster",
+      "DeleteJobTemplate",
+      "DeleteManagedEndpoint",
+      "DeleteVirtualCluster",
+      "GetManagedEndpointSessionCredentials",
+      "StartJobRun"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeJobRun",
-    "DescribeJobTemplate",
-    "DescribeManagedEndpoint",
-    "DescribeVirtualCluster"
-]
-    list                   = [
-    "ListJobRuns",
-    "ListJobTemplates",
-    "ListManagedEndpoints",
-    "ListTagsForResource",
-    "ListVirtualClusters"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeJobRun",
+      "DescribeJobTemplate",
+      "DescribeManagedEndpoint",
+      "DescribeVirtualCluster"
+    ]
+    list = [
+      "ListJobRuns",
+      "ListJobTemplates",
+      "ListManagedEndpoints",
+      "ListTagsForResource",
+      "ListVirtualClusters"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,27 +59,27 @@ locals {
   prefix = "snow-device-management"
 
   access_level = {
-    write                  = [
-    "CancelTask",
-    "CreateTask"
-]
+    write = [
+      "CancelTask",
+      "CreateTask"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeDevice",
-    "DescribeDeviceEc2Instances",
-    "DescribeExecution",
-    "DescribeTask",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListDeviceResources",
-    "ListDevices",
-    "ListExecutions",
-    "ListTasks"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeDevice",
+      "DescribeDeviceEc2Instances",
+      "DescribeExecution",
+      "DescribeTask",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListDeviceResources",
+      "ListDevices",
+      "ListExecutions",
+      "ListTasks"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

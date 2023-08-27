@@ -59,72 +59,72 @@ locals {
   prefix = "ecs"
 
   access_level = {
-    write                  = [
-    "CreateCapacityProvider",
-    "CreateCluster",
-    "CreateService",
-    "CreateTaskSet",
-    "DeleteAccountSetting",
-    "DeleteAttributes",
-    "DeleteCapacityProvider",
-    "DeleteCluster",
-    "DeleteService",
-    "DeleteTaskDefinitions",
-    "DeleteTaskSet",
-    "DeregisterContainerInstance",
-    "DeregisterTaskDefinition",
-    "DiscoverPollEndpoint",
-    "ExecuteCommand",
-    "Poll",
-    "PutAccountSetting",
-    "PutAccountSettingDefault",
-    "PutAttributes",
-    "PutClusterCapacityProviders",
-    "RegisterContainerInstance",
-    "RegisterTaskDefinition",
-    "RunTask",
-    "StartTask",
-    "StartTelemetrySession",
-    "StopTask",
-    "SubmitAttachmentStateChanges",
-    "SubmitContainerStateChange",
-    "SubmitTaskStateChange",
-    "UpdateCapacityProvider",
-    "UpdateCluster",
-    "UpdateClusterSettings",
-    "UpdateContainerAgent",
-    "UpdateContainerInstancesState",
-    "UpdateService",
-    "UpdateServicePrimaryTaskSet",
-    "UpdateTaskProtection",
-    "UpdateTaskSet"
-]
+    write = [
+      "CreateCapacityProvider",
+      "CreateCluster",
+      "CreateService",
+      "CreateTaskSet",
+      "DeleteAccountSetting",
+      "DeleteAttributes",
+      "DeleteCapacityProvider",
+      "DeleteCluster",
+      "DeleteService",
+      "DeleteTaskDefinitions",
+      "DeleteTaskSet",
+      "DeregisterContainerInstance",
+      "DeregisterTaskDefinition",
+      "DiscoverPollEndpoint",
+      "ExecuteCommand",
+      "Poll",
+      "PutAccountSetting",
+      "PutAccountSettingDefault",
+      "PutAttributes",
+      "PutClusterCapacityProviders",
+      "RegisterContainerInstance",
+      "RegisterTaskDefinition",
+      "RunTask",
+      "StartTask",
+      "StartTelemetrySession",
+      "StopTask",
+      "SubmitAttachmentStateChanges",
+      "SubmitContainerStateChange",
+      "SubmitTaskStateChange",
+      "UpdateCapacityProvider",
+      "UpdateCluster",
+      "UpdateClusterSettings",
+      "UpdateContainerAgent",
+      "UpdateContainerInstancesState",
+      "UpdateService",
+      "UpdateServicePrimaryTaskSet",
+      "UpdateTaskProtection",
+      "UpdateTaskSet"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeCapacityProviders",
-    "DescribeClusters",
-    "DescribeContainerInstances",
-    "DescribeServices",
-    "DescribeTaskDefinition",
-    "DescribeTaskSets",
-    "DescribeTasks",
-    "GetTaskProtection",
-    "ListAccountSettings",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAttributes",
-    "ListClusters",
-    "ListContainerInstances",
-    "ListServices",
-    "ListServicesByNamespace",
-    "ListTaskDefinitionFamilies",
-    "ListTaskDefinitions",
-    "ListTasks"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeCapacityProviders",
+      "DescribeClusters",
+      "DescribeContainerInstances",
+      "DescribeServices",
+      "DescribeTaskDefinition",
+      "DescribeTaskSets",
+      "DescribeTasks",
+      "GetTaskProtection",
+      "ListAccountSettings",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAttributes",
+      "ListClusters",
+      "ListContainerInstances",
+      "ListServices",
+      "ListServicesByNamespace",
+      "ListTaskDefinitionFamilies",
+      "ListTaskDefinitions",
+      "ListTasks"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

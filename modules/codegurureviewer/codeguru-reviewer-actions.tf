@@ -59,31 +59,31 @@ locals {
   prefix = "codeguru-reviewer"
 
   access_level = {
-    write                  = [
-    "AssociateRepository",
-    "CreateCodeReview",
-    "DisassociateRepository",
-    "PutRecommendationFeedback"
-]
+    write = [
+      "AssociateRepository",
+      "CreateCodeReview",
+      "DisassociateRepository",
+      "PutRecommendationFeedback"
+    ]
     permissions_management = []
-    read                   = [
-    "CreateConnectionToken",
-    "DescribeCodeReview",
-    "DescribeRecommendationFeedback",
-    "DescribeRepositoryAssociation",
-    "GetMetricsData",
-    "ListThirdPartyRepositories"
-]
-    list                   = [
-    "ListCodeReviews",
-    "ListRecommendationFeedback",
-    "ListRecommendations",
-    "ListRepositoryAssociations",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UnTagResource"
-]
+    read = [
+      "CreateConnectionToken",
+      "DescribeCodeReview",
+      "DescribeRecommendationFeedback",
+      "DescribeRepositoryAssociation",
+      "GetMetricsData",
+      "ListThirdPartyRepositories"
+    ]
+    list = [
+      "ListCodeReviews",
+      "ListRecommendationFeedback",
+      "ListRecommendations",
+      "ListRepositoryAssociations",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UnTagResource"
+    ]
   }
 }

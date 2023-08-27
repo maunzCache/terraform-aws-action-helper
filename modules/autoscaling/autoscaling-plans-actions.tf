@@ -59,18 +59,18 @@ locals {
   prefix = "autoscaling-plans"
 
   access_level = {
-    write                  = [
-    "CreateScalingPlan",
-    "DeleteScalingPlan",
-    "UpdateScalingPlan"
-]
+    write = [
+      "CreateScalingPlan",
+      "DeleteScalingPlan",
+      "UpdateScalingPlan"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeScalingPlanResources",
-    "DescribeScalingPlans",
-    "GetScalingPlanResourceForecastData"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "DescribeScalingPlanResources",
+      "DescribeScalingPlans",
+      "GetScalingPlanResourceForecastData"
+    ]
+    list    = []
+    tagging = []
   }
 }

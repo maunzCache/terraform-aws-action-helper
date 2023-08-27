@@ -59,41 +59,41 @@ locals {
   prefix = "mediastore"
 
   access_level = {
-    write                  = [
-    "CreateContainer",
-    "DeleteContainer",
-    "DeleteCorsPolicy",
-    "DeleteLifecyclePolicy",
-    "DeleteMetricPolicy",
-    "DeleteObject",
-    "PutCorsPolicy",
-    "PutLifecyclePolicy",
-    "PutMetricPolicy",
-    "PutObject",
-    "StartAccessLogging",
-    "StopAccessLogging"
-]
+    write = [
+      "CreateContainer",
+      "DeleteContainer",
+      "DeleteCorsPolicy",
+      "DeleteLifecyclePolicy",
+      "DeleteMetricPolicy",
+      "DeleteObject",
+      "PutCorsPolicy",
+      "PutLifecyclePolicy",
+      "PutMetricPolicy",
+      "PutObject",
+      "StartAccessLogging",
+      "StopAccessLogging"
+    ]
     permissions_management = [
-    "DeleteContainerPolicy",
-    "PutContainerPolicy"
-]
-    read                   = [
-    "GetContainerPolicy",
-    "GetCorsPolicy",
-    "GetLifecyclePolicy",
-    "GetMetricPolicy",
-    "GetObject",
-    "ListTagsForResource"
-]
-    list                   = [
-    "DescribeContainer",
-    "DescribeObject",
-    "ListContainers",
-    "ListItems"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "DeleteContainerPolicy",
+      "PutContainerPolicy"
+    ]
+    read = [
+      "GetContainerPolicy",
+      "GetCorsPolicy",
+      "GetLifecyclePolicy",
+      "GetMetricPolicy",
+      "GetObject",
+      "ListTagsForResource"
+    ]
+    list = [
+      "DescribeContainer",
+      "DescribeObject",
+      "ListContainers",
+      "ListItems"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

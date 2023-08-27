@@ -59,40 +59,40 @@ locals {
   prefix = "private-networks"
 
   access_level = {
-    write                  = [
-    "AcknowledgeOrderReceipt",
-    "ActivateDeviceIdentifier",
-    "ActivateNetworkSite",
-    "ConfigureAccessPoint",
-    "CreateNetwork",
-    "CreateNetworkSite",
-    "DeactivateDeviceIdentifier",
-    "DeleteNetwork",
-    "DeleteNetworkSite",
-    "StartNetworkResourceUpdate",
-    "UpdateNetworkSite",
-    "UpdateNetworkSitePlan"
-]
+    write = [
+      "AcknowledgeOrderReceipt",
+      "ActivateDeviceIdentifier",
+      "ActivateNetworkSite",
+      "ConfigureAccessPoint",
+      "CreateNetwork",
+      "CreateNetworkSite",
+      "DeactivateDeviceIdentifier",
+      "DeleteNetwork",
+      "DeleteNetworkSite",
+      "StartNetworkResourceUpdate",
+      "UpdateNetworkSite",
+      "UpdateNetworkSitePlan"
+    ]
     permissions_management = []
-    read                   = [
-    "GetDeviceIdentifier",
-    "GetNetwork",
-    "GetNetworkResource",
-    "GetNetworkSite",
-    "GetOrder",
-    "Ping"
-]
-    list                   = [
-    "ListDeviceIdentifiers",
-    "ListNetworkResources",
-    "ListNetworkSites",
-    "ListNetworks",
-    "ListOrders",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetDeviceIdentifier",
+      "GetNetwork",
+      "GetNetworkResource",
+      "GetNetworkSite",
+      "GetOrder",
+      "Ping"
+    ]
+    list = [
+      "ListDeviceIdentifiers",
+      "ListNetworkResources",
+      "ListNetworkSites",
+      "ListNetworks",
+      "ListOrders",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

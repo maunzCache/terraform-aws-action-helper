@@ -59,34 +59,34 @@ locals {
   prefix = "healthlake"
 
   access_level = {
-    write                  = [
-    "CreateFHIRDatastore",
-    "CreateResource",
-    "DeleteFHIRDatastore",
-    "DeleteResource",
-    "StartFHIRExportJob",
-    "StartFHIRImportJob",
-    "UpdateResource"
-]
+    write = [
+      "CreateFHIRDatastore",
+      "CreateResource",
+      "DeleteFHIRDatastore",
+      "DeleteResource",
+      "StartFHIRExportJob",
+      "StartFHIRImportJob",
+      "UpdateResource"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeFHIRDatastore",
-    "DescribeFHIRExportJob",
-    "DescribeFHIRImportJob",
-    "GetCapabilities",
-    "ListTagsForResource",
-    "ReadResource",
-    "SearchWithGet",
-    "SearchWithPost"
-]
-    list                   = [
-    "ListFHIRDatastores",
-    "ListFHIRExportJobs",
-    "ListFHIRImportJobs"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeFHIRDatastore",
+      "DescribeFHIRExportJob",
+      "DescribeFHIRImportJob",
+      "GetCapabilities",
+      "ListTagsForResource",
+      "ReadResource",
+      "SearchWithGet",
+      "SearchWithPost"
+    ]
+    list = [
+      "ListFHIRDatastores",
+      "ListFHIRExportJobs",
+      "ListFHIRImportJobs"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

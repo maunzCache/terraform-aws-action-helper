@@ -59,55 +59,55 @@ locals {
   prefix = "lookoutequipment"
 
   access_level = {
-    write                  = [
-    "CreateDataset",
-    "CreateInferenceScheduler",
-    "CreateLabel",
-    "CreateLabelGroup",
-    "CreateModel",
-    "DeleteDataset",
-    "DeleteInferenceScheduler",
-    "DeleteLabel",
-    "DeleteLabelGroup",
-    "DeleteModel",
-    "DeleteResourcePolicy",
-    "ImportDataset",
-    "ImportModelVersion",
-    "PutResourcePolicy",
-    "StartDataIngestionJob",
-    "StartInferenceScheduler",
-    "StopInferenceScheduler",
-    "UpdateActiveModelVersion",
-    "UpdateInferenceScheduler",
-    "UpdateLabelGroup"
-]
+    write = [
+      "CreateDataset",
+      "CreateInferenceScheduler",
+      "CreateLabel",
+      "CreateLabelGroup",
+      "CreateModel",
+      "DeleteDataset",
+      "DeleteInferenceScheduler",
+      "DeleteLabel",
+      "DeleteLabelGroup",
+      "DeleteModel",
+      "DeleteResourcePolicy",
+      "ImportDataset",
+      "ImportModelVersion",
+      "PutResourcePolicy",
+      "StartDataIngestionJob",
+      "StartInferenceScheduler",
+      "StopInferenceScheduler",
+      "UpdateActiveModelVersion",
+      "UpdateInferenceScheduler",
+      "UpdateLabelGroup"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeDataIngestionJob",
-    "DescribeDataset",
-    "DescribeInferenceScheduler",
-    "DescribeLabelGroup",
-    "DescribeModel",
-    "DescribeModelVersion",
-    "DescribeResourcePolicy",
-    "Describelabel",
-    "ListInferenceEvents",
-    "ListInferenceExecutions",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListDataIngestionJobs",
-    "ListDatasets",
-    "ListInferenceSchedulers",
-    "ListLabelGroups",
-    "ListLabels",
-    "ListModelVersions",
-    "ListModels",
-    "ListSensorStatistics"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeDataIngestionJob",
+      "DescribeDataset",
+      "DescribeInferenceScheduler",
+      "DescribeLabelGroup",
+      "DescribeModel",
+      "DescribeModelVersion",
+      "DescribeResourcePolicy",
+      "Describelabel",
+      "ListInferenceEvents",
+      "ListInferenceExecutions",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListDataIngestionJobs",
+      "ListDatasets",
+      "ListInferenceSchedulers",
+      "ListLabelGroups",
+      "ListLabels",
+      "ListModelVersions",
+      "ListModels",
+      "ListSensorStatistics"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

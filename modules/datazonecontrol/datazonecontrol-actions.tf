@@ -59,43 +59,43 @@ locals {
   prefix = "datazonecontrol"
 
   access_level = {
-    write                  = [
-    "CreateAccountAssociationInvitation",
-    "CreateDataSource",
-    "CreateEnvironment",
-    "DeleteDataSource",
-    "DeleteEnvironment",
-    "DissociateAccount",
-    "ReviewAccountAssociationInvitation",
-    "UpdateAccountAssociationDescription",
-    "UpdateDataSource",
-    "UpdateEnvironment"
-]
+    write = [
+      "CreateAccountAssociationInvitation",
+      "CreateDataSource",
+      "CreateEnvironment",
+      "DeleteDataSource",
+      "DeleteEnvironment",
+      "DissociateAccount",
+      "ReviewAccountAssociationInvitation",
+      "UpdateAccountAssociationDescription",
+      "UpdateDataSource",
+      "UpdateEnvironment"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAssociatedDomain",
-    "GetDataSourceByEnvironment",
-    "GetDomain",
-    "GetEnvironment",
-    "GetMetadataCollector",
-    "GetUserPortalLoginAuthCode",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAccountAssociationInvitations",
-    "ListAllAssociatedAccountsForEnvironment",
-    "ListAssociatedEnvironments",
-    "ListDataSources",
-    "ListDataSourcesByEnvironment",
-    "ListDomains",
-    "ListEnvironment",
-    "ListMetadataCollectorRuns",
-    "ListMetadataCollectors",
-    "ListProjects"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetAssociatedDomain",
+      "GetDataSourceByEnvironment",
+      "GetDomain",
+      "GetEnvironment",
+      "GetMetadataCollector",
+      "GetUserPortalLoginAuthCode",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAccountAssociationInvitations",
+      "ListAllAssociatedAccountsForEnvironment",
+      "ListAssociatedEnvironments",
+      "ListDataSources",
+      "ListDataSourcesByEnvironment",
+      "ListDomains",
+      "ListEnvironment",
+      "ListMetadataCollectorRuns",
+      "ListMetadataCollectors",
+      "ListProjects"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

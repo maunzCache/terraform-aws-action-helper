@@ -59,24 +59,24 @@ locals {
   prefix = "internetmonitor"
 
   access_level = {
-    write                  = [
-    "CreateMonitor",
-    "DeleteMonitor",
-    "UpdateMonitor"
-]
+    write = [
+      "CreateMonitor",
+      "DeleteMonitor",
+      "UpdateMonitor"
+    ]
     permissions_management = []
-    read                   = [
-    "GetHealthEvent",
-    "GetMonitor",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListHealthEvents",
-    "ListMonitors"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetHealthEvent",
+      "GetMonitor",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListHealthEvents",
+      "ListMonitors"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,36 +59,36 @@ locals {
   prefix = "support"
 
   access_level = {
-    write                  = [
-    "AddAttachmentsToSet",
-    "AddCommunicationToCase",
-    "CreateCase",
-    "InitiateCallForCase",
-    "InitiateChatForCase",
-    "PutCaseAttributes",
-    "RateCaseCommunication",
-    "RefreshTrustedAdvisorCheck",
-    "ResolveCase"
-]
+    write = [
+      "AddAttachmentsToSet",
+      "AddCommunicationToCase",
+      "CreateCase",
+      "InitiateCallForCase",
+      "InitiateChatForCase",
+      "PutCaseAttributes",
+      "RateCaseCommunication",
+      "RefreshTrustedAdvisorCheck",
+      "ResolveCase"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAttachment",
-    "DescribeCaseAttributes",
-    "DescribeCases",
-    "DescribeCommunications",
-    "DescribeCreateCaseOptions",
-    "DescribeIssueTypes",
-    "DescribeServices",
-    "DescribeSeverityLevels",
-    "DescribeSupportLevel",
-    "DescribeSupportedLanguages",
-    "DescribeTrustedAdvisorCheckRefreshStatuses",
-    "DescribeTrustedAdvisorCheckResult",
-    "DescribeTrustedAdvisorCheckSummaries",
-    "DescribeTrustedAdvisorChecks",
-    "SearchForCases"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "DescribeAttachment",
+      "DescribeCaseAttributes",
+      "DescribeCases",
+      "DescribeCommunications",
+      "DescribeCreateCaseOptions",
+      "DescribeIssueTypes",
+      "DescribeServices",
+      "DescribeSeverityLevels",
+      "DescribeSupportLevel",
+      "DescribeSupportedLanguages",
+      "DescribeTrustedAdvisorCheckRefreshStatuses",
+      "DescribeTrustedAdvisorCheckResult",
+      "DescribeTrustedAdvisorCheckSummaries",
+      "DescribeTrustedAdvisorChecks",
+      "SearchForCases"
+    ]
+    list    = []
+    tagging = []
   }
 }

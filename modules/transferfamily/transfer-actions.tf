@@ -59,73 +59,73 @@ locals {
   prefix = "transfer"
 
   access_level = {
-    write                  = [
-    "CreateAccess",
-    "CreateAgreement",
-    "CreateConnector",
-    "CreateProfile",
-    "CreateServer",
-    "CreateUser",
-    "CreateWorkflow",
-    "DeleteAccess",
-    "DeleteAgreement",
-    "DeleteCertificate",
-    "DeleteConnector",
-    "DeleteHostKey",
-    "DeleteProfile",
-    "DeleteServer",
-    "DeleteSshPublicKey",
-    "DeleteUser",
-    "DeleteWorkflow",
-    "ImportCertificate",
-    "ImportHostKey",
-    "ImportSshPublicKey",
-    "SendWorkflowStepState",
-    "StartFileTransfer",
-    "StartServer",
-    "StopServer",
-    "TestConnection",
-    "UpdateAccess",
-    "UpdateAgreement",
-    "UpdateCertificate",
-    "UpdateConnector",
-    "UpdateHostKey",
-    "UpdateProfile",
-    "UpdateServer",
-    "UpdateUser"
-]
+    write = [
+      "CreateAccess",
+      "CreateAgreement",
+      "CreateConnector",
+      "CreateProfile",
+      "CreateServer",
+      "CreateUser",
+      "CreateWorkflow",
+      "DeleteAccess",
+      "DeleteAgreement",
+      "DeleteCertificate",
+      "DeleteConnector",
+      "DeleteHostKey",
+      "DeleteProfile",
+      "DeleteServer",
+      "DeleteSshPublicKey",
+      "DeleteUser",
+      "DeleteWorkflow",
+      "ImportCertificate",
+      "ImportHostKey",
+      "ImportSshPublicKey",
+      "SendWorkflowStepState",
+      "StartFileTransfer",
+      "StartServer",
+      "StopServer",
+      "TestConnection",
+      "UpdateAccess",
+      "UpdateAgreement",
+      "UpdateCertificate",
+      "UpdateConnector",
+      "UpdateHostKey",
+      "UpdateProfile",
+      "UpdateServer",
+      "UpdateUser"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAccess",
-    "DescribeAgreement",
-    "DescribeCertificate",
-    "DescribeConnector",
-    "DescribeExecution",
-    "DescribeHostKey",
-    "DescribeProfile",
-    "DescribeSecurityPolicy",
-    "DescribeServer",
-    "DescribeUser",
-    "DescribeWorkflow",
-    "ListAccesses",
-    "ListAgreements",
-    "ListCertificates",
-    "ListConnectors",
-    "ListExecutions",
-    "ListHostKeys",
-    "ListProfiles",
-    "ListTagsForResource",
-    "TestIdentityProvider"
-]
-    list                   = [
-    "ListSecurityPolicies",
-    "ListServers",
-    "ListUsers",
-    "ListWorkflows"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeAccess",
+      "DescribeAgreement",
+      "DescribeCertificate",
+      "DescribeConnector",
+      "DescribeExecution",
+      "DescribeHostKey",
+      "DescribeProfile",
+      "DescribeSecurityPolicy",
+      "DescribeServer",
+      "DescribeUser",
+      "DescribeWorkflow",
+      "ListAccesses",
+      "ListAgreements",
+      "ListCertificates",
+      "ListConnectors",
+      "ListExecutions",
+      "ListHostKeys",
+      "ListProfiles",
+      "ListTagsForResource",
+      "TestIdentityProvider"
+    ]
+    list = [
+      "ListSecurityPolicies",
+      "ListServers",
+      "ListUsers",
+      "ListWorkflows"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

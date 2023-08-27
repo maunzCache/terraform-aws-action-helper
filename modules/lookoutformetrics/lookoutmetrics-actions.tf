@@ -59,44 +59,44 @@ locals {
   prefix = "lookoutmetrics"
 
   access_level = {
-    write                  = [
-    "ActivateAnomalyDetector",
-    "BackTestAnomalyDetector",
-    "CreateAlert",
-    "CreateAnomalyDetector",
-    "CreateMetricSet",
-    "DeactivateAnomalyDetector",
-    "DeleteAlert",
-    "DeleteAnomalyDetector",
-    "DetectMetricSetConfig",
-    "PutFeedback",
-    "UpdateAlert",
-    "UpdateAnomalyDetector",
-    "UpdateMetricSet"
-]
+    write = [
+      "ActivateAnomalyDetector",
+      "BackTestAnomalyDetector",
+      "CreateAlert",
+      "CreateAnomalyDetector",
+      "CreateMetricSet",
+      "DeactivateAnomalyDetector",
+      "DeleteAlert",
+      "DeleteAnomalyDetector",
+      "DetectMetricSetConfig",
+      "PutFeedback",
+      "UpdateAlert",
+      "UpdateAnomalyDetector",
+      "UpdateMetricSet"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAlert",
-    "DescribeAnomalyDetectionExecutions",
-    "DescribeAnomalyDetector",
-    "DescribeMetricSet",
-    "GetAnomalyGroup",
-    "GetDataQualityMetrics",
-    "GetFeedback",
-    "GetSampleData",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAlerts",
-    "ListAnomalyDetectors",
-    "ListAnomalyGroupRelatedMetrics",
-    "ListAnomalyGroupSummaries",
-    "ListAnomalyGroupTimeSeries",
-    "ListMetricSets"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeAlert",
+      "DescribeAnomalyDetectionExecutions",
+      "DescribeAnomalyDetector",
+      "DescribeMetricSet",
+      "GetAnomalyGroup",
+      "GetDataQualityMetrics",
+      "GetFeedback",
+      "GetSampleData",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAlerts",
+      "ListAnomalyDetectors",
+      "ListAnomalyGroupRelatedMetrics",
+      "ListAnomalyGroupSummaries",
+      "ListAnomalyGroupTimeSeries",
+      "ListMetricSets"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

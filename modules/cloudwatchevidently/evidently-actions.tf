@@ -59,51 +59,51 @@ locals {
   prefix = "evidently"
 
   access_level = {
-    write                  = [
-    "BatchEvaluateFeature",
-    "CreateExperiment",
-    "CreateFeature",
-    "CreateLaunch",
-    "CreateProject",
-    "CreateSegment",
-    "DeleteExperiment",
-    "DeleteFeature",
-    "DeleteLaunch",
-    "DeleteProject",
-    "DeleteSegment",
-    "EvaluateFeature",
-    "PutProjectEvents",
-    "StartExperiment",
-    "StartLaunch",
-    "StopExperiment",
-    "StopLaunch",
-    "UpdateExperiment",
-    "UpdateFeature",
-    "UpdateLaunch",
-    "UpdateProject",
-    "UpdateProjectDataDelivery"
-]
+    write = [
+      "BatchEvaluateFeature",
+      "CreateExperiment",
+      "CreateFeature",
+      "CreateLaunch",
+      "CreateProject",
+      "CreateSegment",
+      "DeleteExperiment",
+      "DeleteFeature",
+      "DeleteLaunch",
+      "DeleteProject",
+      "DeleteSegment",
+      "EvaluateFeature",
+      "PutProjectEvents",
+      "StartExperiment",
+      "StartLaunch",
+      "StopExperiment",
+      "StopLaunch",
+      "UpdateExperiment",
+      "UpdateFeature",
+      "UpdateLaunch",
+      "UpdateProject",
+      "UpdateProjectDataDelivery"
+    ]
     permissions_management = []
-    read                   = [
-    "GetExperiment",
-    "GetExperimentResults",
-    "GetFeature",
-    "GetLaunch",
-    "GetProject",
-    "GetSegment",
-    "ListExperiments",
-    "ListFeatures",
-    "ListLaunches",
-    "ListProjects",
-    "ListSegmentReferences",
-    "ListSegments",
-    "ListTagsForResource",
-    "TestSegmentPattern"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetExperiment",
+      "GetExperimentResults",
+      "GetFeature",
+      "GetLaunch",
+      "GetProject",
+      "GetSegment",
+      "ListExperiments",
+      "ListFeatures",
+      "ListLaunches",
+      "ListProjects",
+      "ListSegmentReferences",
+      "ListSegments",
+      "ListTagsForResource",
+      "TestSegmentPattern"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

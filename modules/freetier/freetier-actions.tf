@@ -59,15 +59,15 @@ locals {
   prefix = "freetier"
 
   access_level = {
-    write                  = [
-    "PutFreeTierAlertPreference"
-]
+    write = [
+      "PutFreeTierAlertPreference"
+    ]
     permissions_management = []
-    read                   = [
-    "GetFreeTierAlertPreference",
-    "GetFreeTierUsage"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetFreeTierAlertPreference",
+      "GetFreeTierUsage"
+    ]
+    list    = []
+    tagging = []
   }
 }

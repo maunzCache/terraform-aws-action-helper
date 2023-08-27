@@ -59,49 +59,49 @@ locals {
   prefix = "appmesh-preview"
 
   access_level = {
-    write                  = [
-    "CreateGatewayRoute",
-    "CreateMesh",
-    "CreateRoute",
-    "CreateVirtualGateway",
-    "CreateVirtualNode",
-    "CreateVirtualRouter",
-    "CreateVirtualService",
-    "DeleteGatewayRoute",
-    "DeleteMesh",
-    "DeleteRoute",
-    "DeleteVirtualGateway",
-    "DeleteVirtualNode",
-    "DeleteVirtualRouter",
-    "DeleteVirtualService",
-    "UpdateGatewayRoute",
-    "UpdateMesh",
-    "UpdateRoute",
-    "UpdateVirtualGateway",
-    "UpdateVirtualNode",
-    "UpdateVirtualRouter",
-    "UpdateVirtualService"
-]
+    write = [
+      "CreateGatewayRoute",
+      "CreateMesh",
+      "CreateRoute",
+      "CreateVirtualGateway",
+      "CreateVirtualNode",
+      "CreateVirtualRouter",
+      "CreateVirtualService",
+      "DeleteGatewayRoute",
+      "DeleteMesh",
+      "DeleteRoute",
+      "DeleteVirtualGateway",
+      "DeleteVirtualNode",
+      "DeleteVirtualRouter",
+      "DeleteVirtualService",
+      "UpdateGatewayRoute",
+      "UpdateMesh",
+      "UpdateRoute",
+      "UpdateVirtualGateway",
+      "UpdateVirtualNode",
+      "UpdateVirtualRouter",
+      "UpdateVirtualService"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeGatewayRoute",
-    "DescribeMesh",
-    "DescribeRoute",
-    "DescribeVirtualGateway",
-    "DescribeVirtualNode",
-    "DescribeVirtualRouter",
-    "DescribeVirtualService",
-    "StreamAggregatedResources"
-]
-    list                   = [
-    "ListGatewayRoutes",
-    "ListMeshes",
-    "ListRoutes",
-    "ListVirtualGateways",
-    "ListVirtualNodes",
-    "ListVirtualRouters",
-    "ListVirtualServices"
-]
-    tagging                = []
+    read = [
+      "DescribeGatewayRoute",
+      "DescribeMesh",
+      "DescribeRoute",
+      "DescribeVirtualGateway",
+      "DescribeVirtualNode",
+      "DescribeVirtualRouter",
+      "DescribeVirtualService",
+      "StreamAggregatedResources"
+    ]
+    list = [
+      "ListGatewayRoutes",
+      "ListMeshes",
+      "ListRoutes",
+      "ListVirtualGateways",
+      "ListVirtualNodes",
+      "ListVirtualRouters",
+      "ListVirtualServices"
+    ]
+    tagging = []
   }
 }

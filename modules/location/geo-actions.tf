@@ -59,72 +59,72 @@ locals {
   prefix = "geo"
 
   access_level = {
-    write                  = [
-    "AssociateTrackerConsumer",
-    "BatchDeleteDevicePositionHistory",
-    "BatchDeleteGeofence",
-    "BatchEvaluateGeofences",
-    "BatchPutGeofence",
-    "BatchUpdateDevicePosition",
-    "CreateGeofenceCollection",
-    "CreateKey",
-    "CreateMap",
-    "CreatePlaceIndex",
-    "CreateRouteCalculator",
-    "CreateTracker",
-    "DeleteGeofenceCollection",
-    "DeleteKey",
-    "DeleteMap",
-    "DeletePlaceIndex",
-    "DeleteRouteCalculator",
-    "DeleteTracker",
-    "DisassociateTrackerConsumer",
-    "PutGeofence",
-    "UpdateGeofenceCollection",
-    "UpdateKey",
-    "UpdateMap",
-    "UpdatePlaceIndex",
-    "UpdateRouteCalculator",
-    "UpdateTracker"
-]
+    write = [
+      "AssociateTrackerConsumer",
+      "BatchDeleteDevicePositionHistory",
+      "BatchDeleteGeofence",
+      "BatchEvaluateGeofences",
+      "BatchPutGeofence",
+      "BatchUpdateDevicePosition",
+      "CreateGeofenceCollection",
+      "CreateKey",
+      "CreateMap",
+      "CreatePlaceIndex",
+      "CreateRouteCalculator",
+      "CreateTracker",
+      "DeleteGeofenceCollection",
+      "DeleteKey",
+      "DeleteMap",
+      "DeletePlaceIndex",
+      "DeleteRouteCalculator",
+      "DeleteTracker",
+      "DisassociateTrackerConsumer",
+      "PutGeofence",
+      "UpdateGeofenceCollection",
+      "UpdateKey",
+      "UpdateMap",
+      "UpdatePlaceIndex",
+      "UpdateRouteCalculator",
+      "UpdateTracker"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetDevicePosition",
-    "CalculateRoute",
-    "CalculateRouteMatrix",
-    "DescribeGeofenceCollection",
-    "DescribeKey",
-    "DescribeMap",
-    "DescribePlaceIndex",
-    "DescribeRouteCalculator",
-    "DescribeTracker",
-    "GetDevicePosition",
-    "GetDevicePositionHistory",
-    "GetGeofence",
-    "GetMapGlyphs",
-    "GetMapSprites",
-    "GetMapStyleDescriptor",
-    "GetMapTile",
-    "GetPlace",
-    "ListDevicePositions",
-    "ListGeofences",
-    "ListTagsForResource",
-    "ListTrackerConsumers",
-    "SearchPlaceIndexForPosition",
-    "SearchPlaceIndexForSuggestions",
-    "SearchPlaceIndexForText"
-]
-    list                   = [
-    "ListGeofenceCollections",
-    "ListKeys",
-    "ListMaps",
-    "ListPlaceIndexes",
-    "ListRouteCalculators",
-    "ListTrackers"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchGetDevicePosition",
+      "CalculateRoute",
+      "CalculateRouteMatrix",
+      "DescribeGeofenceCollection",
+      "DescribeKey",
+      "DescribeMap",
+      "DescribePlaceIndex",
+      "DescribeRouteCalculator",
+      "DescribeTracker",
+      "GetDevicePosition",
+      "GetDevicePositionHistory",
+      "GetGeofence",
+      "GetMapGlyphs",
+      "GetMapSprites",
+      "GetMapStyleDescriptor",
+      "GetMapTile",
+      "GetPlace",
+      "ListDevicePositions",
+      "ListGeofences",
+      "ListTagsForResource",
+      "ListTrackerConsumers",
+      "SearchPlaceIndexForPosition",
+      "SearchPlaceIndexForSuggestions",
+      "SearchPlaceIndexForText"
+    ]
+    list = [
+      "ListGeofenceCollections",
+      "ListKeys",
+      "ListMaps",
+      "ListPlaceIndexes",
+      "ListRouteCalculators",
+      "ListTrackers"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

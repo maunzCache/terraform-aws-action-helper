@@ -59,70 +59,70 @@ locals {
   prefix = "wafv2"
 
   access_level = {
-    write                  = [
-    "AssociateWebACL",
-    "CreateAPIKey",
-    "CreateIPSet",
-    "CreateRegexPatternSet",
-    "CreateRuleGroup",
-    "CreateWebACL",
-    "DeleteFirewallManagerRuleGroups",
-    "DeleteIPSet",
-    "DeleteLoggingConfiguration",
-    "DeleteRegexPatternSet",
-    "DeleteRuleGroup",
-    "DeleteWebACL",
-    "DisassociateFirewallManager",
-    "DisassociateWebACL",
-    "PutFirewallManagerRuleGroups",
-    "PutLoggingConfiguration",
-    "PutManagedRuleSetVersions",
-    "UpdateIPSet",
-    "UpdateManagedRuleSetVersionExpiryDate",
-    "UpdateRegexPatternSet",
-    "UpdateRuleGroup",
-    "UpdateWebACL"
-]
+    write = [
+      "AssociateWebACL",
+      "CreateAPIKey",
+      "CreateIPSet",
+      "CreateRegexPatternSet",
+      "CreateRuleGroup",
+      "CreateWebACL",
+      "DeleteFirewallManagerRuleGroups",
+      "DeleteIPSet",
+      "DeleteLoggingConfiguration",
+      "DeleteRegexPatternSet",
+      "DeleteRuleGroup",
+      "DeleteWebACL",
+      "DisassociateFirewallManager",
+      "DisassociateWebACL",
+      "PutFirewallManagerRuleGroups",
+      "PutLoggingConfiguration",
+      "PutManagedRuleSetVersions",
+      "UpdateIPSet",
+      "UpdateManagedRuleSetVersionExpiryDate",
+      "UpdateRegexPatternSet",
+      "UpdateRuleGroup",
+      "UpdateWebACL"
+    ]
     permissions_management = [
-    "DeletePermissionPolicy",
-    "PutPermissionPolicy"
-]
-    read                   = [
-    "CheckCapacity",
-    "DescribeAllManagedProducts",
-    "DescribeManagedProductsByVendor",
-    "DescribeManagedRuleGroup",
-    "GenerateMobileSdkReleaseUrl",
-    "GetDecryptedAPIKey",
-    "GetIPSet",
-    "GetLoggingConfiguration",
-    "GetManagedRuleSet",
-    "GetMobileSdkRelease",
-    "GetPermissionPolicy",
-    "GetRateBasedStatementManagedKeys",
-    "GetRegexPatternSet",
-    "GetRuleGroup",
-    "GetSampledRequests",
-    "GetWebACL",
-    "GetWebACLForResource",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAPIKeys",
-    "ListAvailableManagedRuleGroupVersions",
-    "ListAvailableManagedRuleGroups",
-    "ListIPSets",
-    "ListLoggingConfigurations",
-    "ListManagedRuleSets",
-    "ListMobileSdkReleases",
-    "ListRegexPatternSets",
-    "ListResourcesForWebACL",
-    "ListRuleGroups",
-    "ListWebACLs"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "DeletePermissionPolicy",
+      "PutPermissionPolicy"
+    ]
+    read = [
+      "CheckCapacity",
+      "DescribeAllManagedProducts",
+      "DescribeManagedProductsByVendor",
+      "DescribeManagedRuleGroup",
+      "GenerateMobileSdkReleaseUrl",
+      "GetDecryptedAPIKey",
+      "GetIPSet",
+      "GetLoggingConfiguration",
+      "GetManagedRuleSet",
+      "GetMobileSdkRelease",
+      "GetPermissionPolicy",
+      "GetRateBasedStatementManagedKeys",
+      "GetRegexPatternSet",
+      "GetRuleGroup",
+      "GetSampledRequests",
+      "GetWebACL",
+      "GetWebACLForResource",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAPIKeys",
+      "ListAvailableManagedRuleGroupVersions",
+      "ListAvailableManagedRuleGroups",
+      "ListIPSets",
+      "ListLoggingConfigurations",
+      "ListManagedRuleSets",
+      "ListMobileSdkReleases",
+      "ListRegexPatternSets",
+      "ListResourcesForWebACL",
+      "ListRuleGroups",
+      "ListWebACLs"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,42 +59,42 @@ locals {
   prefix = "outposts"
 
   access_level = {
-    write                  = [
-    "CancelOrder",
-    "CreateOrder",
-    "CreateOutpost",
-    "CreatePrivateConnectivityConfig",
-    "CreateSite",
-    "DeleteOutpost",
-    "DeleteSite",
-    "StartConnection",
-    "UpdateOutpost",
-    "UpdateSite",
-    "UpdateSiteAddress",
-    "UpdateSiteRackPhysicalProperties"
-]
+    write = [
+      "CancelOrder",
+      "CreateOrder",
+      "CreateOutpost",
+      "CreatePrivateConnectivityConfig",
+      "CreateSite",
+      "DeleteOutpost",
+      "DeleteSite",
+      "StartConnection",
+      "UpdateOutpost",
+      "UpdateSite",
+      "UpdateSiteAddress",
+      "UpdateSiteRackPhysicalProperties"
+    ]
     permissions_management = []
-    read                   = [
-    "GetCatalogItem",
-    "GetConnection",
-    "GetOrder",
-    "GetOutpost",
-    "GetOutpostInstanceTypes",
-    "GetPrivateConnectivityConfig",
-    "GetSite",
-    "GetSiteAddress",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAssets",
-    "ListCatalogItems",
-    "ListOrders",
-    "ListOutposts",
-    "ListSites"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetCatalogItem",
+      "GetConnection",
+      "GetOrder",
+      "GetOutpost",
+      "GetOutpostInstanceTypes",
+      "GetPrivateConnectivityConfig",
+      "GetSite",
+      "GetSiteAddress",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAssets",
+      "ListCatalogItems",
+      "ListOrders",
+      "ListOutposts",
+      "ListSites"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

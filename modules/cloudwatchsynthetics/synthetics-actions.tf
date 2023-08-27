@@ -59,35 +59,35 @@ locals {
   prefix = "synthetics"
 
   access_level = {
-    write                  = [
-    "AssociateResource",
-    "CreateCanary",
-    "CreateGroup",
-    "DeleteCanary",
-    "DeleteGroup",
-    "DisassociateResource",
-    "StartCanary",
-    "StopCanary",
-    "UpdateCanary"
-]
+    write = [
+      "AssociateResource",
+      "CreateCanary",
+      "CreateGroup",
+      "DeleteCanary",
+      "DeleteGroup",
+      "DisassociateResource",
+      "StartCanary",
+      "StopCanary",
+      "UpdateCanary"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeCanaries",
-    "DescribeCanariesLastRun",
-    "DescribeRuntimeVersions",
-    "GetCanary",
-    "GetCanaryRuns",
-    "GetGroup",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAssociatedGroups",
-    "ListGroupResources",
-    "ListGroups"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeCanaries",
+      "DescribeCanariesLastRun",
+      "DescribeRuntimeVersions",
+      "GetCanary",
+      "GetCanaryRuns",
+      "GetGroup",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAssociatedGroups",
+      "ListGroupResources",
+      "ListGroups"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

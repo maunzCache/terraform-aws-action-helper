@@ -59,80 +59,80 @@ locals {
   prefix = "appsync"
 
   access_level = {
-    write                  = [
-    "AssociateApi",
-    "AssociateMergedGraphqlApi",
-    "AssociateSourceGraphqlApi",
-    "CreateApiCache",
-    "CreateApiKey",
-    "CreateDataSource",
-    "CreateDomainName",
-    "CreateFunction",
-    "CreateGraphqlApi",
-    "CreateResolver",
-    "CreateType",
-    "DeleteApiCache",
-    "DeleteApiKey",
-    "DeleteDataSource",
-    "DeleteDomainName",
-    "DeleteFunction",
-    "DeleteGraphqlApi",
-    "DeleteResolver",
-    "DeleteResourcePolicy",
-    "DeleteType",
-    "DisassociateApi",
-    "DisassociateMergedGraphqlApi",
-    "DisassociateSourceGraphqlApi",
-    "FlushApiCache",
-    "GraphQL",
-    "PutResourcePolicy",
-    "SetWebACL",
-    "SourceGraphQL",
-    "StartSchemaCreation",
-    "StartSchemaMerge",
-    "UpdateApiCache",
-    "UpdateApiKey",
-    "UpdateDataSource",
-    "UpdateDomainName",
-    "UpdateFunction",
-    "UpdateGraphqlApi",
-    "UpdateResolver",
-    "UpdateSourceApiAssociation",
-    "UpdateType"
-]
+    write = [
+      "AssociateApi",
+      "AssociateMergedGraphqlApi",
+      "AssociateSourceGraphqlApi",
+      "CreateApiCache",
+      "CreateApiKey",
+      "CreateDataSource",
+      "CreateDomainName",
+      "CreateFunction",
+      "CreateGraphqlApi",
+      "CreateResolver",
+      "CreateType",
+      "DeleteApiCache",
+      "DeleteApiKey",
+      "DeleteDataSource",
+      "DeleteDomainName",
+      "DeleteFunction",
+      "DeleteGraphqlApi",
+      "DeleteResolver",
+      "DeleteResourcePolicy",
+      "DeleteType",
+      "DisassociateApi",
+      "DisassociateMergedGraphqlApi",
+      "DisassociateSourceGraphqlApi",
+      "FlushApiCache",
+      "GraphQL",
+      "PutResourcePolicy",
+      "SetWebACL",
+      "SourceGraphQL",
+      "StartSchemaCreation",
+      "StartSchemaMerge",
+      "UpdateApiCache",
+      "UpdateApiKey",
+      "UpdateDataSource",
+      "UpdateDomainName",
+      "UpdateFunction",
+      "UpdateGraphqlApi",
+      "UpdateResolver",
+      "UpdateSourceApiAssociation",
+      "UpdateType"
+    ]
     permissions_management = []
-    read                   = [
-    "EvaluateCode",
-    "EvaluateMappingTemplate",
-    "GetApiAssociation",
-    "GetApiCache",
-    "GetDataSource",
-    "GetDomainName",
-    "GetFunction",
-    "GetGraphqlApi",
-    "GetIntrospectionSchema",
-    "GetResolver",
-    "GetResourcePolicy",
-    "GetSchemaCreationStatus",
-    "GetSourceApiAssociation",
-    "GetType",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListApiKeys",
-    "ListDataSources",
-    "ListDomainNames",
-    "ListFunctions",
-    "ListGraphqlApis",
-    "ListResolvers",
-    "ListResolversByFunction",
-    "ListSourceApiAssociations",
-    "ListTypes",
-    "ListTypesByAssociation"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "EvaluateCode",
+      "EvaluateMappingTemplate",
+      "GetApiAssociation",
+      "GetApiCache",
+      "GetDataSource",
+      "GetDomainName",
+      "GetFunction",
+      "GetGraphqlApi",
+      "GetIntrospectionSchema",
+      "GetResolver",
+      "GetResourcePolicy",
+      "GetSchemaCreationStatus",
+      "GetSourceApiAssociation",
+      "GetType",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListApiKeys",
+      "ListDataSources",
+      "ListDomainNames",
+      "ListFunctions",
+      "ListGraphqlApis",
+      "ListResolvers",
+      "ListResolversByFunction",
+      "ListSourceApiAssociations",
+      "ListTypes",
+      "ListTypesByAssociation"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

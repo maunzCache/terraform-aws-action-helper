@@ -59,56 +59,56 @@ locals {
   prefix = "sns"
 
   access_level = {
-    write                  = [
-    "ConfirmSubscription",
-    "CreatePlatformApplication",
-    "CreatePlatformEndpoint",
-    "CreateSMSSandboxPhoneNumber",
-    "CreateTopic",
-    "DeleteEndpoint",
-    "DeletePlatformApplication",
-    "DeleteSMSSandboxPhoneNumber",
-    "DeleteTopic",
-    "OptInPhoneNumber",
-    "Publish",
-    "PutDataProtectionPolicy",
-    "SetEndpointAttributes",
-    "SetPlatformApplicationAttributes",
-    "SetSMSAttributes",
-    "SetSubscriptionAttributes",
-    "Subscribe",
-    "Unsubscribe",
-    "VerifySMSSandboxPhoneNumber"
-]
+    write = [
+      "ConfirmSubscription",
+      "CreatePlatformApplication",
+      "CreatePlatformEndpoint",
+      "CreateSMSSandboxPhoneNumber",
+      "CreateTopic",
+      "DeleteEndpoint",
+      "DeletePlatformApplication",
+      "DeleteSMSSandboxPhoneNumber",
+      "DeleteTopic",
+      "OptInPhoneNumber",
+      "Publish",
+      "PutDataProtectionPolicy",
+      "SetEndpointAttributes",
+      "SetPlatformApplicationAttributes",
+      "SetSMSAttributes",
+      "SetSubscriptionAttributes",
+      "Subscribe",
+      "Unsubscribe",
+      "VerifySMSSandboxPhoneNumber"
+    ]
     permissions_management = [
-    "AddPermission",
-    "RemovePermission",
-    "SetTopicAttributes"
-]
-    read                   = [
-    "CheckIfPhoneNumberIsOptedOut",
-    "GetDataProtectionPolicy",
-    "GetEndpointAttributes",
-    "GetPlatformApplicationAttributes",
-    "GetSMSAttributes",
-    "GetSMSSandboxAccountStatus",
-    "GetSubscriptionAttributes",
-    "GetTopicAttributes",
-    "ListPhoneNumbersOptedOut",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListEndpointsByPlatformApplication",
-    "ListOriginationNumbers",
-    "ListPlatformApplications",
-    "ListSMSSandboxPhoneNumbers",
-    "ListSubscriptions",
-    "ListSubscriptionsByTopic",
-    "ListTopics"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "AddPermission",
+      "RemovePermission",
+      "SetTopicAttributes"
+    ]
+    read = [
+      "CheckIfPhoneNumberIsOptedOut",
+      "GetDataProtectionPolicy",
+      "GetEndpointAttributes",
+      "GetPlatformApplicationAttributes",
+      "GetSMSAttributes",
+      "GetSMSSandboxAccountStatus",
+      "GetSubscriptionAttributes",
+      "GetTopicAttributes",
+      "ListPhoneNumbersOptedOut",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListEndpointsByPlatformApplication",
+      "ListOriginationNumbers",
+      "ListPlatformApplications",
+      "ListSMSSandboxPhoneNumbers",
+      "ListSubscriptions",
+      "ListSubscriptionsByTopic",
+      "ListTopics"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

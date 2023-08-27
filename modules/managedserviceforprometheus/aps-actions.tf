@@ -59,51 +59,51 @@ locals {
   prefix = "aps"
 
   access_level = {
-    write                  = [
-    "CreateAlertManagerAlerts",
-    "CreateAlertManagerDefinition",
-    "CreateLoggingConfiguration",
-    "CreateRuleGroupsNamespace",
-    "CreateWorkspace",
-    "DeleteAlertManagerDefinition",
-    "DeleteAlertManagerSilence",
-    "DeleteLoggingConfiguration",
-    "DeleteRuleGroupsNamespace",
-    "DeleteWorkspace",
-    "PutAlertManagerDefinition",
-    "PutAlertManagerSilences",
-    "PutRuleGroupsNamespace",
-    "RemoteWrite",
-    "UpdateLoggingConfiguration",
-    "UpdateWorkspaceAlias"
-]
+    write = [
+      "CreateAlertManagerAlerts",
+      "CreateAlertManagerDefinition",
+      "CreateLoggingConfiguration",
+      "CreateRuleGroupsNamespace",
+      "CreateWorkspace",
+      "DeleteAlertManagerDefinition",
+      "DeleteAlertManagerSilence",
+      "DeleteLoggingConfiguration",
+      "DeleteRuleGroupsNamespace",
+      "DeleteWorkspace",
+      "PutAlertManagerDefinition",
+      "PutAlertManagerSilences",
+      "PutRuleGroupsNamespace",
+      "RemoteWrite",
+      "UpdateLoggingConfiguration",
+      "UpdateWorkspaceAlias"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAlertManagerDefinition",
-    "DescribeLoggingConfiguration",
-    "DescribeRuleGroupsNamespace",
-    "DescribeWorkspace",
-    "GetAlertManagerSilence",
-    "GetAlertManagerStatus",
-    "GetLabels",
-    "GetMetricMetadata",
-    "GetSeries",
-    "ListAlertManagerAlertGroups",
-    "ListAlertManagerAlerts",
-    "ListAlertManagerReceivers",
-    "ListAlertManagerSilences",
-    "ListAlerts",
-    "ListRules",
-    "ListTagsForResource",
-    "QueryMetrics"
-]
-    list                   = [
-    "ListRuleGroupsNamespaces",
-    "ListWorkspaces"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeAlertManagerDefinition",
+      "DescribeLoggingConfiguration",
+      "DescribeRuleGroupsNamespace",
+      "DescribeWorkspace",
+      "GetAlertManagerSilence",
+      "GetAlertManagerStatus",
+      "GetLabels",
+      "GetMetricMetadata",
+      "GetSeries",
+      "ListAlertManagerAlertGroups",
+      "ListAlertManagerAlerts",
+      "ListAlertManagerReceivers",
+      "ListAlertManagerSilences",
+      "ListAlerts",
+      "ListRules",
+      "ListTagsForResource",
+      "QueryMetrics"
+    ]
+    list = [
+      "ListRuleGroupsNamespaces",
+      "ListWorkspaces"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,19 +59,19 @@ locals {
   prefix = "arc-zonal-shift"
 
   access_level = {
-    write                  = [
-    "CancelZonalShift",
-    "StartZonalShift",
-    "UpdateZonalShift"
-]
+    write = [
+      "CancelZonalShift",
+      "StartZonalShift",
+      "UpdateZonalShift"
+    ]
     permissions_management = []
-    read                   = [
-    "GetManagedResource"
-]
-    list                   = [
-    "ListManagedResources",
-    "ListZonalShifts"
-]
-    tagging                = []
+    read = [
+      "GetManagedResource"
+    ]
+    list = [
+      "ListManagedResources",
+      "ListZonalShifts"
+    ]
+    tagging = []
   }
 }

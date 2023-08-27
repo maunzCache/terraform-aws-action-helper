@@ -59,53 +59,53 @@ locals {
   prefix = "appmesh"
 
   access_level = {
-    write                  = [
-    "CreateGatewayRoute",
-    "CreateMesh",
-    "CreateRoute",
-    "CreateVirtualGateway",
-    "CreateVirtualNode",
-    "CreateVirtualRouter",
-    "CreateVirtualService",
-    "DeleteGatewayRoute",
-    "DeleteMesh",
-    "DeleteRoute",
-    "DeleteVirtualGateway",
-    "DeleteVirtualNode",
-    "DeleteVirtualRouter",
-    "DeleteVirtualService",
-    "UpdateGatewayRoute",
-    "UpdateMesh",
-    "UpdateRoute",
-    "UpdateVirtualGateway",
-    "UpdateVirtualNode",
-    "UpdateVirtualRouter",
-    "UpdateVirtualService"
-]
+    write = [
+      "CreateGatewayRoute",
+      "CreateMesh",
+      "CreateRoute",
+      "CreateVirtualGateway",
+      "CreateVirtualNode",
+      "CreateVirtualRouter",
+      "CreateVirtualService",
+      "DeleteGatewayRoute",
+      "DeleteMesh",
+      "DeleteRoute",
+      "DeleteVirtualGateway",
+      "DeleteVirtualNode",
+      "DeleteVirtualRouter",
+      "DeleteVirtualService",
+      "UpdateGatewayRoute",
+      "UpdateMesh",
+      "UpdateRoute",
+      "UpdateVirtualGateway",
+      "UpdateVirtualNode",
+      "UpdateVirtualRouter",
+      "UpdateVirtualService"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeGatewayRoute",
-    "DescribeMesh",
-    "DescribeRoute",
-    "DescribeVirtualGateway",
-    "DescribeVirtualNode",
-    "DescribeVirtualRouter",
-    "DescribeVirtualService",
-    "StreamAggregatedResources"
-]
-    list                   = [
-    "ListGatewayRoutes",
-    "ListMeshes",
-    "ListRoutes",
-    "ListTagsForResource",
-    "ListVirtualGateways",
-    "ListVirtualNodes",
-    "ListVirtualRouters",
-    "ListVirtualServices"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeGatewayRoute",
+      "DescribeMesh",
+      "DescribeRoute",
+      "DescribeVirtualGateway",
+      "DescribeVirtualNode",
+      "DescribeVirtualRouter",
+      "DescribeVirtualService",
+      "StreamAggregatedResources"
+    ]
+    list = [
+      "ListGatewayRoutes",
+      "ListMeshes",
+      "ListRoutes",
+      "ListTagsForResource",
+      "ListVirtualGateways",
+      "ListVirtualNodes",
+      "ListVirtualRouters",
+      "ListVirtualServices"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,45 +59,45 @@ locals {
   prefix = "schemas"
 
   access_level = {
-    write                  = [
-    "CreateDiscoverer",
-    "CreateRegistry",
-    "CreateSchema",
-    "DeleteDiscoverer",
-    "DeleteRegistry",
-    "DeleteResourcePolicy",
-    "DeleteSchema",
-    "DeleteSchemaVersion",
-    "PutCodeBinding",
-    "PutResourcePolicy",
-    "StartDiscoverer",
-    "StopDiscoverer",
-    "UpdateDiscoverer",
-    "UpdateRegistry",
-    "UpdateSchema"
-]
+    write = [
+      "CreateDiscoverer",
+      "CreateRegistry",
+      "CreateSchema",
+      "DeleteDiscoverer",
+      "DeleteRegistry",
+      "DeleteResourcePolicy",
+      "DeleteSchema",
+      "DeleteSchemaVersion",
+      "PutCodeBinding",
+      "PutResourcePolicy",
+      "StartDiscoverer",
+      "StopDiscoverer",
+      "UpdateDiscoverer",
+      "UpdateRegistry",
+      "UpdateSchema"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeCodeBinding",
-    "DescribeDiscoverer",
-    "DescribeRegistry",
-    "DescribeSchema",
-    "ExportSchema",
-    "GetCodeBindingSource",
-    "GetDiscoveredSchema",
-    "GetResourcePolicy",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListDiscoverers",
-    "ListRegistries",
-    "ListSchemaVersions",
-    "ListSchemas",
-    "SearchSchemas"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeCodeBinding",
+      "DescribeDiscoverer",
+      "DescribeRegistry",
+      "DescribeSchema",
+      "ExportSchema",
+      "GetCodeBindingSource",
+      "GetDiscoveredSchema",
+      "GetResourcePolicy",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListDiscoverers",
+      "ListRegistries",
+      "ListSchemaVersions",
+      "ListSchemas",
+      "SearchSchemas"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -23,7 +23,7 @@ module "dynamodb" {
   use_prefix = var.use_prefix
 
   filter_actions = var.filter_actions
-  filtering = var.filtering
+  filtering      = var.filtering
 
   minify_strings     = var.minify_strings
   minify_regex       = var.minify_regex

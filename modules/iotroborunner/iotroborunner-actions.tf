@@ -59,32 +59,32 @@ locals {
   prefix = "iotroborunner"
 
   access_level = {
-    write                  = [
-    "CreateDestination",
-    "CreateSite",
-    "CreateWorker",
-    "CreateWorkerFleet",
-    "DeleteDestination",
-    "DeleteSite",
-    "DeleteWorker",
-    "DeleteWorkerFleet",
-    "UpdateDestination",
-    "UpdateSite",
-    "UpdateWorker",
-    "UpdateWorkerFleet"
-]
+    write = [
+      "CreateDestination",
+      "CreateSite",
+      "CreateWorker",
+      "CreateWorkerFleet",
+      "DeleteDestination",
+      "DeleteSite",
+      "DeleteWorker",
+      "DeleteWorkerFleet",
+      "UpdateDestination",
+      "UpdateSite",
+      "UpdateWorker",
+      "UpdateWorkerFleet"
+    ]
     permissions_management = []
-    read                   = [
-    "GetDestination",
-    "GetSite",
-    "GetWorker",
-    "GetWorkerFleet",
-    "ListDestinations",
-    "ListSites",
-    "ListWorkerFleets",
-    "ListWorkers"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetDestination",
+      "GetSite",
+      "GetWorker",
+      "GetWorkerFleet",
+      "ListDestinations",
+      "ListSites",
+      "ListWorkerFleets",
+      "ListWorkers"
+    ]
+    list    = []
+    tagging = []
   }
 }

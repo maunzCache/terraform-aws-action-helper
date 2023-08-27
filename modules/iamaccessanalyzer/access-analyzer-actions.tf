@@ -59,42 +59,42 @@ locals {
   prefix = "access-analyzer"
 
   access_level = {
-    write                  = [
-    "ApplyArchiveRule",
-    "CancelPolicyGeneration",
-    "CreateAccessPreview",
-    "CreateAnalyzer",
-    "CreateArchiveRule",
-    "DeleteAnalyzer",
-    "DeleteArchiveRule",
-    "StartPolicyGeneration",
-    "StartResourceScan",
-    "UpdateArchiveRule",
-    "UpdateFindings"
-]
+    write = [
+      "ApplyArchiveRule",
+      "CancelPolicyGeneration",
+      "CreateAccessPreview",
+      "CreateAnalyzer",
+      "CreateArchiveRule",
+      "DeleteAnalyzer",
+      "DeleteArchiveRule",
+      "StartPolicyGeneration",
+      "StartResourceScan",
+      "UpdateArchiveRule",
+      "UpdateFindings"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAccessPreview",
-    "GetAnalyzedResource",
-    "GetAnalyzer",
-    "GetArchiveRule",
-    "GetFinding",
-    "GetGeneratedPolicy",
-    "ListAccessPreviewFindings",
-    "ListAnalyzedResources",
-    "ListFindings",
-    "ListPolicyGenerations",
-    "ListTagsForResource",
-    "ValidatePolicy"
-]
-    list                   = [
-    "ListAccessPreviews",
-    "ListAnalyzers",
-    "ListArchiveRules"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetAccessPreview",
+      "GetAnalyzedResource",
+      "GetAnalyzer",
+      "GetArchiveRule",
+      "GetFinding",
+      "GetGeneratedPolicy",
+      "ListAccessPreviewFindings",
+      "ListAnalyzedResources",
+      "ListFindings",
+      "ListPolicyGenerations",
+      "ListTagsForResource",
+      "ValidatePolicy"
+    ]
+    list = [
+      "ListAccessPreviews",
+      "ListAnalyzers",
+      "ListArchiveRules"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

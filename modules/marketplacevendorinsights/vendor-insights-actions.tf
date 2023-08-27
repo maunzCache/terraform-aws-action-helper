@@ -59,38 +59,38 @@ locals {
   prefix = "vendor-insights"
 
   access_level = {
-    write                  = [
-    "ActivateSecurityProfile",
-    "AssociateDataSource",
-    "CreateDataSource",
-    "CreateSecurityProfile",
-    "DeactivateSecurityProfile",
-    "DeleteDataSource",
-    "DisassociateDataSource",
-    "UpdateDataSource",
-    "UpdateSecurityProfile",
-    "UpdateSecurityProfileSnapshotCreationConfiguration",
-    "UpdateSecurityProfileSnapshotReleaseConfiguration"
-]
+    write = [
+      "ActivateSecurityProfile",
+      "AssociateDataSource",
+      "CreateDataSource",
+      "CreateSecurityProfile",
+      "DeactivateSecurityProfile",
+      "DeleteDataSource",
+      "DisassociateDataSource",
+      "UpdateDataSource",
+      "UpdateSecurityProfile",
+      "UpdateSecurityProfileSnapshotCreationConfiguration",
+      "UpdateSecurityProfileSnapshotReleaseConfiguration"
+    ]
     permissions_management = []
-    read                   = [
-    "GetDataSource",
-    "GetEntitledSecurityProfileSnapshot",
-    "GetProfileAccessTerms",
-    "GetSecurityProfile",
-    "GetSecurityProfileSnapshot",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListDataSources",
-    "ListEntitledSecurityProfileSnapshots",
-    "ListEntitledSecurityProfiles",
-    "ListSecurityProfileSnapshots",
-    "ListSecurityProfiles"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetDataSource",
+      "GetEntitledSecurityProfileSnapshot",
+      "GetProfileAccessTerms",
+      "GetSecurityProfile",
+      "GetSecurityProfileSnapshot",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListDataSources",
+      "ListEntitledSecurityProfileSnapshots",
+      "ListEntitledSecurityProfiles",
+      "ListSecurityProfileSnapshots",
+      "ListSecurityProfiles"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,37 +59,37 @@ locals {
   prefix = "refactor-spaces"
 
   access_level = {
-    write                  = [
-    "CreateApplication",
-    "CreateEnvironment",
-    "CreateRoute",
-    "CreateService",
-    "DeleteApplication",
-    "DeleteEnvironment",
-    "DeleteResourcePolicy",
-    "DeleteRoute",
-    "DeleteService",
-    "PutResourcePolicy",
-    "UpdateRoute"
-]
+    write = [
+      "CreateApplication",
+      "CreateEnvironment",
+      "CreateRoute",
+      "CreateService",
+      "DeleteApplication",
+      "DeleteEnvironment",
+      "DeleteResourcePolicy",
+      "DeleteRoute",
+      "DeleteService",
+      "PutResourcePolicy",
+      "UpdateRoute"
+    ]
     permissions_management = []
-    read                   = [
-    "GetApplication",
-    "GetEnvironment",
-    "GetResourcePolicy",
-    "GetRoute",
-    "GetService",
-    "ListApplications",
-    "ListEnvironmentVpcs",
-    "ListEnvironments",
-    "ListRoutes",
-    "ListServices",
-    "ListTagsForResource"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetApplication",
+      "GetEnvironment",
+      "GetResourcePolicy",
+      "GetRoute",
+      "GetService",
+      "ListApplications",
+      "ListEnvironmentVpcs",
+      "ListEnvironments",
+      "ListRoutes",
+      "ListServices",
+      "ListTagsForResource"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

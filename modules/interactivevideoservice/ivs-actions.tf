@@ -59,56 +59,56 @@ locals {
   prefix = "ivs"
 
   access_level = {
-    write                  = [
-    "BatchStartViewerSessionRevocation",
-    "CreateChannel",
-    "CreateParticipantToken",
-    "CreateRecordingConfiguration",
-    "CreateStage",
-    "CreateStreamKey",
-    "DeleteChannel",
-    "DeletePlaybackKeyPair",
-    "DeleteRecordingConfiguration",
-    "DeleteStage",
-    "DeleteStreamKey",
-    "DisconnectParticipant",
-    "ImportPlaybackKeyPair",
-    "PutMetadata",
-    "StartViewerSessionRevocation",
-    "StopStream",
-    "UpdateChannel",
-    "UpdateStage"
-]
+    write = [
+      "BatchStartViewerSessionRevocation",
+      "CreateChannel",
+      "CreateParticipantToken",
+      "CreateRecordingConfiguration",
+      "CreateStage",
+      "CreateStreamKey",
+      "DeleteChannel",
+      "DeletePlaybackKeyPair",
+      "DeleteRecordingConfiguration",
+      "DeleteStage",
+      "DeleteStreamKey",
+      "DisconnectParticipant",
+      "ImportPlaybackKeyPair",
+      "PutMetadata",
+      "StartViewerSessionRevocation",
+      "StopStream",
+      "UpdateChannel",
+      "UpdateStage"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetChannel",
-    "BatchGetStreamKey",
-    "GetChannel",
-    "GetParticipant",
-    "GetPlaybackKeyPair",
-    "GetRecordingConfiguration",
-    "GetStage",
-    "GetStageSession",
-    "GetStream",
-    "GetStreamKey",
-    "GetStreamSession",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListChannels",
-    "ListParticipantEvents",
-    "ListParticipants",
-    "ListPlaybackKeyPairs",
-    "ListRecordingConfigurations",
-    "ListStageSessions",
-    "ListStages",
-    "ListStreamKeys",
-    "ListStreamSessions",
-    "ListStreams"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchGetChannel",
+      "BatchGetStreamKey",
+      "GetChannel",
+      "GetParticipant",
+      "GetPlaybackKeyPair",
+      "GetRecordingConfiguration",
+      "GetStage",
+      "GetStageSession",
+      "GetStream",
+      "GetStreamKey",
+      "GetStreamSession",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListChannels",
+      "ListParticipantEvents",
+      "ListParticipants",
+      "ListPlaybackKeyPairs",
+      "ListRecordingConfigurations",
+      "ListStageSessions",
+      "ListStages",
+      "ListStreamKeys",
+      "ListStreamSessions",
+      "ListStreams"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,22 +59,22 @@ locals {
   prefix = "polly"
 
   access_level = {
-    write                  = [
-    "DeleteLexicon",
-    "PutLexicon",
-    "StartSpeechSynthesisTask"
-]
+    write = [
+      "DeleteLexicon",
+      "PutLexicon",
+      "StartSpeechSynthesisTask"
+    ]
     permissions_management = []
-    read                   = [
-    "GetLexicon",
-    "GetSpeechSynthesisTask",
-    "SynthesizeSpeech"
-]
-    list                   = [
-    "DescribeVoices",
-    "ListLexicons",
-    "ListSpeechSynthesisTasks"
-]
-    tagging                = []
+    read = [
+      "GetLexicon",
+      "GetSpeechSynthesisTask",
+      "SynthesizeSpeech"
+    ]
+    list = [
+      "DescribeVoices",
+      "ListLexicons",
+      "ListSpeechSynthesisTasks"
+    ]
+    tagging = []
   }
 }

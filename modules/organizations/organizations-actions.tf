@@ -59,69 +59,69 @@ locals {
   prefix = "organizations"
 
   access_level = {
-    write                  = [
-    "AcceptHandshake",
-    "AttachPolicy",
-    "CancelHandshake",
-    "CloseAccount",
-    "CreateAccount",
-    "CreateGovCloudAccount",
-    "CreateOrganization",
-    "CreateOrganizationalUnit",
-    "CreatePolicy",
-    "DeclineHandshake",
-    "DeleteOrganization",
-    "DeleteOrganizationalUnit",
-    "DeletePolicy",
-    "DeleteResourcePolicy",
-    "DeregisterDelegatedAdministrator",
-    "DetachPolicy",
-    "DisableAWSServiceAccess",
-    "DisablePolicyType",
-    "EnableAWSServiceAccess",
-    "EnableAllFeatures",
-    "EnablePolicyType",
-    "InviteAccountToOrganization",
-    "LeaveOrganization",
-    "MoveAccount",
-    "PutResourcePolicy",
-    "RegisterDelegatedAdministrator",
-    "RemoveAccountFromOrganization",
-    "UpdateOrganizationalUnit",
-    "UpdatePolicy"
-]
+    write = [
+      "AcceptHandshake",
+      "AttachPolicy",
+      "CancelHandshake",
+      "CloseAccount",
+      "CreateAccount",
+      "CreateGovCloudAccount",
+      "CreateOrganization",
+      "CreateOrganizationalUnit",
+      "CreatePolicy",
+      "DeclineHandshake",
+      "DeleteOrganization",
+      "DeleteOrganizationalUnit",
+      "DeletePolicy",
+      "DeleteResourcePolicy",
+      "DeregisterDelegatedAdministrator",
+      "DetachPolicy",
+      "DisableAWSServiceAccess",
+      "DisablePolicyType",
+      "EnableAWSServiceAccess",
+      "EnableAllFeatures",
+      "EnablePolicyType",
+      "InviteAccountToOrganization",
+      "LeaveOrganization",
+      "MoveAccount",
+      "PutResourcePolicy",
+      "RegisterDelegatedAdministrator",
+      "RemoveAccountFromOrganization",
+      "UpdateOrganizationalUnit",
+      "UpdatePolicy"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAccount",
-    "DescribeCreateAccountStatus",
-    "DescribeEffectivePolicy",
-    "DescribeHandshake",
-    "DescribeOrganization",
-    "DescribeOrganizationalUnit",
-    "DescribePolicy",
-    "DescribeResourcePolicy"
-]
-    list                   = [
-    "ListAWSServiceAccessForOrganization",
-    "ListAccounts",
-    "ListAccountsForParent",
-    "ListChildren",
-    "ListCreateAccountStatus",
-    "ListDelegatedAdministrators",
-    "ListDelegatedServicesForAccount",
-    "ListHandshakesForAccount",
-    "ListHandshakesForOrganization",
-    "ListOrganizationalUnitsForParent",
-    "ListParents",
-    "ListPolicies",
-    "ListPoliciesForTarget",
-    "ListRoots",
-    "ListTagsForResource",
-    "ListTargetsForPolicy"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeAccount",
+      "DescribeCreateAccountStatus",
+      "DescribeEffectivePolicy",
+      "DescribeHandshake",
+      "DescribeOrganization",
+      "DescribeOrganizationalUnit",
+      "DescribePolicy",
+      "DescribeResourcePolicy"
+    ]
+    list = [
+      "ListAWSServiceAccessForOrganization",
+      "ListAccounts",
+      "ListAccountsForParent",
+      "ListChildren",
+      "ListCreateAccountStatus",
+      "ListDelegatedAdministrators",
+      "ListDelegatedServicesForAccount",
+      "ListHandshakesForAccount",
+      "ListHandshakesForOrganization",
+      "ListOrganizationalUnitsForParent",
+      "ListParents",
+      "ListPolicies",
+      "ListPoliciesForTarget",
+      "ListRoots",
+      "ListTagsForResource",
+      "ListTargetsForPolicy"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

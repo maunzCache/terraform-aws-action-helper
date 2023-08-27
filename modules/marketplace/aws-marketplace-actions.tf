@@ -59,31 +59,31 @@ locals {
   prefix = "aws-marketplace"
 
   access_level = {
-    write                  = [
-    "AcceptAgreementApprovalRequest",
-    "AcceptAgreementRequest",
-    "CancelAgreement",
-    "CancelAgreementRequest",
-    "CreateAgreementRequest",
-    "RejectAgreementApprovalRequest",
-    "Subscribe",
-    "Unsubscribe",
-    "UpdateAgreementApprovalRequest"
-]
+    write = [
+      "AcceptAgreementApprovalRequest",
+      "AcceptAgreementRequest",
+      "CancelAgreement",
+      "CancelAgreementRequest",
+      "CreateAgreementRequest",
+      "RejectAgreementApprovalRequest",
+      "Subscribe",
+      "Unsubscribe",
+      "UpdateAgreementApprovalRequest"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAgreement",
-    "GetAgreementApprovalRequest",
-    "GetAgreementRequest",
-    "ListEntitlementDetails"
-]
-    list                   = [
-    "GetAgreementTerms",
-    "ListAgreementApprovalRequests",
-    "ListAgreementRequests",
-    "SearchAgreements",
-    "ViewSubscriptions"
-]
-    tagging                = []
+    read = [
+      "DescribeAgreement",
+      "GetAgreementApprovalRequest",
+      "GetAgreementRequest",
+      "ListEntitlementDetails"
+    ]
+    list = [
+      "GetAgreementTerms",
+      "ListAgreementApprovalRequests",
+      "ListAgreementRequests",
+      "SearchAgreements",
+      "ViewSubscriptions"
+    ]
+    tagging = []
   }
 }

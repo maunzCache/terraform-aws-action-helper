@@ -59,12 +59,12 @@ locals {
   prefix = "license-manager-linux-subscriptions"
 
   access_level = {
-    write                  = [
-    "GetServiceSettings",
-    "ListLinuxSubscriptionInstances",
-    "ListLinuxSubscriptions",
-    "UpdateServiceSettings"
-]
+    write = [
+      "GetServiceSettings",
+      "ListLinuxSubscriptionInstances",
+      "ListLinuxSubscriptions",
+      "UpdateServiceSettings"
+    ]
     permissions_management = []
     read                   = []
     list                   = []

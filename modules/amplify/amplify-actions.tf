@@ -59,51 +59,51 @@ locals {
   prefix = "amplify"
 
   access_level = {
-    write                  = [
-    "CreateApp",
-    "CreateBackendEnvironment",
-    "CreateBranch",
-    "CreateDeployment",
-    "CreateDomainAssociation",
-    "CreateWebHook",
-    "DeleteApp",
-    "DeleteBackendEnvironment",
-    "DeleteBranch",
-    "DeleteDomainAssociation",
-    "DeleteJob",
-    "DeleteWebHook",
-    "GenerateAccessLogs",
-    "StartDeployment",
-    "StartJob",
-    "StopJob",
-    "UpdateApp",
-    "UpdateBranch",
-    "UpdateDomainAssociation",
-    "UpdateWebHook"
-]
+    write = [
+      "CreateApp",
+      "CreateBackendEnvironment",
+      "CreateBranch",
+      "CreateDeployment",
+      "CreateDomainAssociation",
+      "CreateWebHook",
+      "DeleteApp",
+      "DeleteBackendEnvironment",
+      "DeleteBranch",
+      "DeleteDomainAssociation",
+      "DeleteJob",
+      "DeleteWebHook",
+      "GenerateAccessLogs",
+      "StartDeployment",
+      "StartJob",
+      "StopJob",
+      "UpdateApp",
+      "UpdateBranch",
+      "UpdateDomainAssociation",
+      "UpdateWebHook"
+    ]
     permissions_management = []
-    read                   = [
-    "GetApp",
-    "GetArtifactUrl",
-    "GetBackendEnvironment",
-    "GetBranch",
-    "GetDomainAssociation",
-    "GetJob",
-    "GetWebHook",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListApps",
-    "ListArtifacts",
-    "ListBackendEnvironments",
-    "ListBranches",
-    "ListDomainAssociations",
-    "ListJobs",
-    "ListWebHooks"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetApp",
+      "GetArtifactUrl",
+      "GetBackendEnvironment",
+      "GetBranch",
+      "GetDomainAssociation",
+      "GetJob",
+      "GetWebHook",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListApps",
+      "ListArtifacts",
+      "ListBackendEnvironments",
+      "ListBranches",
+      "ListDomainAssociations",
+      "ListJobs",
+      "ListWebHooks"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

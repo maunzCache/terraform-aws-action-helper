@@ -59,36 +59,36 @@ locals {
   prefix = "mobilehub"
 
   access_level = {
-    write                  = [
-    "CreateProject",
-    "CreateServiceRole",
-    "DeleteProject",
-    "DeleteProjectSnapshot",
-    "DeployToStage",
-    "ImportProject",
-    "InstallBundle",
-    "SynchronizeProject",
-    "UpdateProject"
-]
+    write = [
+      "CreateProject",
+      "CreateServiceRole",
+      "DeleteProject",
+      "DeleteProjectSnapshot",
+      "DeployToStage",
+      "ImportProject",
+      "InstallBundle",
+      "SynchronizeProject",
+      "UpdateProject"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeBundle",
-    "ExportBundle",
-    "ExportProject",
-    "GenerateProjectParameters",
-    "GetProject",
-    "GetProjectSnapshot",
-    "ValidateProject",
-    "VerifyServiceRole"
-]
-    list                   = [
-    "ListAvailableConnectors",
-    "ListAvailableFeatures",
-    "ListAvailableRegions",
-    "ListBundles",
-    "ListProjectSnapshots",
-    "ListProjects"
-]
-    tagging                = []
+    read = [
+      "DescribeBundle",
+      "ExportBundle",
+      "ExportProject",
+      "GenerateProjectParameters",
+      "GetProject",
+      "GetProjectSnapshot",
+      "ValidateProject",
+      "VerifyServiceRole"
+    ]
+    list = [
+      "ListAvailableConnectors",
+      "ListAvailableFeatures",
+      "ListAvailableRegions",
+      "ListBundles",
+      "ListProjectSnapshots",
+      "ListProjects"
+    ]
+    tagging = []
   }
 }

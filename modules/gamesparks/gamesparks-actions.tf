@@ -59,48 +59,48 @@ locals {
   prefix = "gamesparks"
 
   access_level = {
-    write                  = [
-    "CreateGame",
-    "CreateSnapshot",
-    "CreateStage",
-    "DeleteGame",
-    "DeleteStage",
-    "DisconnectPlayer",
-    "ExportSnapshot",
-    "ImportGameConfiguration",
-    "InvokeBackend",
-    "StartGeneratedCodeJob",
-    "StartStageDeployment",
-    "UpdateGame",
-    "UpdateGameConfiguration",
-    "UpdateSnapshot",
-    "UpdateStage"
-]
+    write = [
+      "CreateGame",
+      "CreateSnapshot",
+      "CreateStage",
+      "DeleteGame",
+      "DeleteStage",
+      "DisconnectPlayer",
+      "ExportSnapshot",
+      "ImportGameConfiguration",
+      "InvokeBackend",
+      "StartGeneratedCodeJob",
+      "StartStageDeployment",
+      "UpdateGame",
+      "UpdateGameConfiguration",
+      "UpdateSnapshot",
+      "UpdateStage"
+    ]
     permissions_management = []
-    read                   = [
-    "GetExtension",
-    "GetExtensionVersion",
-    "GetGame",
-    "GetGameConfiguration",
-    "GetGeneratedCodeJob",
-    "GetPlayerConnectionStatus",
-    "GetSnapshot",
-    "GetStage",
-    "GetStageDeployment",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListExtensionVersions",
-    "ListExtensions",
-    "ListGames",
-    "ListGeneratedCodeJobs",
-    "ListSnapshots",
-    "ListStageDeployments",
-    "ListStages"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetExtension",
+      "GetExtensionVersion",
+      "GetGame",
+      "GetGameConfiguration",
+      "GetGeneratedCodeJob",
+      "GetPlayerConnectionStatus",
+      "GetSnapshot",
+      "GetStage",
+      "GetStageDeployment",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListExtensionVersions",
+      "ListExtensions",
+      "ListGames",
+      "ListGeneratedCodeJobs",
+      "ListSnapshots",
+      "ListStageDeployments",
+      "ListStages"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

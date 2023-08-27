@@ -59,57 +59,57 @@ locals {
   prefix = "kinesisvideo"
 
   access_level = {
-    write                  = [
-    "ConnectAsMaster",
-    "ConnectAsViewer",
-    "CreateSignalingChannel",
-    "CreateStream",
-    "DeleteEdgeConfiguration",
-    "DeleteSignalingChannel",
-    "DeleteStream",
-    "JoinStorageSession",
-    "PutMedia",
-    "SendAlexaOfferToMaster",
-    "StartEdgeConfigurationUpdate",
-    "UpdateDataRetention",
-    "UpdateImageGenerationConfiguration",
-    "UpdateMediaStorageConfiguration",
-    "UpdateNotificationConfiguration",
-    "UpdateSignalingChannel",
-    "UpdateStream"
-]
+    write = [
+      "ConnectAsMaster",
+      "ConnectAsViewer",
+      "CreateSignalingChannel",
+      "CreateStream",
+      "DeleteEdgeConfiguration",
+      "DeleteSignalingChannel",
+      "DeleteStream",
+      "JoinStorageSession",
+      "PutMedia",
+      "SendAlexaOfferToMaster",
+      "StartEdgeConfigurationUpdate",
+      "UpdateDataRetention",
+      "UpdateImageGenerationConfiguration",
+      "UpdateMediaStorageConfiguration",
+      "UpdateNotificationConfiguration",
+      "UpdateSignalingChannel",
+      "UpdateStream"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeEdgeConfiguration",
-    "DescribeImageGenerationConfiguration",
-    "DescribeMediaStorageConfiguration",
-    "DescribeNotificationConfiguration",
-    "GetClip",
-    "GetDASHStreamingSessionURL",
-    "GetDataEndpoint",
-    "GetHLSStreamingSessionURL",
-    "GetIceServerConfig",
-    "GetImages",
-    "GetMedia",
-    "GetMediaForFragmentList",
-    "GetSignalingChannelEndpoint",
-    "ListTagsForResource",
-    "ListTagsForStream"
-]
-    list                   = [
-    "DescribeMappedResourceConfiguration",
-    "DescribeSignalingChannel",
-    "DescribeStream",
-    "ListEdgeAgentConfigurations",
-    "ListFragments",
-    "ListSignalingChannels",
-    "ListStreams"
-]
-    tagging                = [
-    "TagResource",
-    "TagStream",
-    "UntagResource",
-    "UntagStream"
-]
+    read = [
+      "DescribeEdgeConfiguration",
+      "DescribeImageGenerationConfiguration",
+      "DescribeMediaStorageConfiguration",
+      "DescribeNotificationConfiguration",
+      "GetClip",
+      "GetDASHStreamingSessionURL",
+      "GetDataEndpoint",
+      "GetHLSStreamingSessionURL",
+      "GetIceServerConfig",
+      "GetImages",
+      "GetMedia",
+      "GetMediaForFragmentList",
+      "GetSignalingChannelEndpoint",
+      "ListTagsForResource",
+      "ListTagsForStream"
+    ]
+    list = [
+      "DescribeMappedResourceConfiguration",
+      "DescribeSignalingChannel",
+      "DescribeStream",
+      "ListEdgeAgentConfigurations",
+      "ListFragments",
+      "ListSignalingChannels",
+      "ListStreams"
+    ]
+    tagging = [
+      "TagResource",
+      "TagStream",
+      "UntagResource",
+      "UntagStream"
+    ]
   }
 }

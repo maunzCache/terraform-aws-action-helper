@@ -59,20 +59,20 @@ locals {
   prefix = "activate"
 
   access_level = {
-    write                  = [
-    "CreateForm",
-    "PutMemberInfo"
-]
+    write = [
+      "CreateForm",
+      "PutMemberInfo"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAccountContact",
-    "GetContentInfo",
-    "GetCosts",
-    "GetCredits",
-    "GetMemberInfo",
-    "GetProgram"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetAccountContact",
+      "GetContentInfo",
+      "GetCosts",
+      "GetCredits",
+      "GetMemberInfo",
+      "GetProgram"
+    ]
+    list    = []
+    tagging = []
   }
 }

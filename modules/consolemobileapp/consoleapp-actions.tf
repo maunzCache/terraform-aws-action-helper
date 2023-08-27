@@ -61,12 +61,12 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "GetDeviceIdentity"
-]
-    list                   = [
-    "ListDeviceIdentities"
-]
-    tagging                = []
+    read = [
+      "GetDeviceIdentity"
+    ]
+    list = [
+      "ListDeviceIdentities"
+    ]
+    tagging = []
   }
 }

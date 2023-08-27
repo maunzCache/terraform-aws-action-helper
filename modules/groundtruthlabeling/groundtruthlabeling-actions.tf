@@ -59,17 +59,17 @@ locals {
   prefix = "groundtruthlabeling"
 
   access_level = {
-    write                  = [
-    "AssociatePatchToManifestJob",
-    "RunFilterOrSampleDatasetJob",
-    "RunGenerateManifestByCrawlingJob"
-]
+    write = [
+      "AssociatePatchToManifestJob",
+      "RunFilterOrSampleDatasetJob",
+      "RunGenerateManifestByCrawlingJob"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeConsoleJob",
-    "ListDatasetObjects"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "DescribeConsoleJob",
+      "ListDatasetObjects"
+    ]
+    list    = []
+    tagging = []
   }
 }

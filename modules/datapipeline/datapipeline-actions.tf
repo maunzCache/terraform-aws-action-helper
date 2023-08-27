@@ -59,35 +59,35 @@ locals {
   prefix = "datapipeline"
 
   access_level = {
-    write                  = [
-    "ActivatePipeline",
-    "CreatePipeline",
-    "DeactivatePipeline",
-    "DeletePipeline",
-    "PollForTask",
-    "PutAccountLimits",
-    "PutPipelineDefinition",
-    "ReportTaskProgress",
-    "ReportTaskRunnerHeartbeat",
-    "SetStatus",
-    "SetTaskStatus"
-]
+    write = [
+      "ActivatePipeline",
+      "CreatePipeline",
+      "DeactivatePipeline",
+      "DeletePipeline",
+      "PollForTask",
+      "PutAccountLimits",
+      "PutPipelineDefinition",
+      "ReportTaskProgress",
+      "ReportTaskRunnerHeartbeat",
+      "SetStatus",
+      "SetTaskStatus"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeObjects",
-    "DescribePipelines",
-    "EvaluateExpression",
-    "GetPipelineDefinition",
-    "QueryObjects",
-    "ValidatePipelineDefinition"
-]
-    list                   = [
-    "GetAccountLimits",
-    "ListPipelines"
-]
-    tagging                = [
-    "AddTags",
-    "RemoveTags"
-]
+    read = [
+      "DescribeObjects",
+      "DescribePipelines",
+      "EvaluateExpression",
+      "GetPipelineDefinition",
+      "QueryObjects",
+      "ValidatePipelineDefinition"
+    ]
+    list = [
+      "GetAccountLimits",
+      "ListPipelines"
+    ]
+    tagging = [
+      "AddTags",
+      "RemoveTags"
+    ]
   }
 }

@@ -59,70 +59,70 @@ locals {
   prefix = "wellarchitected"
 
   access_level = {
-    write                  = [
-    "AssociateLenses",
-    "AssociateProfiles",
-    "CreateLensShare",
-    "CreateLensVersion",
-    "CreateMilestone",
-    "CreateProfile",
-    "CreateProfileShare",
-    "CreateWorkload",
-    "CreateWorkloadShare",
-    "DeleteLens",
-    "DeleteLensShare",
-    "DeleteProfile",
-    "DeleteProfileShare",
-    "DeleteWorkload",
-    "DeleteWorkloadShare",
-    "DisassociateLenses",
-    "DisassociateProfiles",
-    "ImportLens",
-    "UpdateAnswer",
-    "UpdateGlobalSettings",
-    "UpdateLensReview",
-    "UpdateProfile",
-    "UpdateShareInvitation",
-    "UpdateWorkload",
-    "UpdateWorkloadShare",
-    "UpgradeLensReview",
-    "UpgradeProfileVersion"
-]
+    write = [
+      "AssociateLenses",
+      "AssociateProfiles",
+      "CreateLensShare",
+      "CreateLensVersion",
+      "CreateMilestone",
+      "CreateProfile",
+      "CreateProfileShare",
+      "CreateWorkload",
+      "CreateWorkloadShare",
+      "DeleteLens",
+      "DeleteLensShare",
+      "DeleteProfile",
+      "DeleteProfileShare",
+      "DeleteWorkload",
+      "DeleteWorkloadShare",
+      "DisassociateLenses",
+      "DisassociateProfiles",
+      "ImportLens",
+      "UpdateAnswer",
+      "UpdateGlobalSettings",
+      "UpdateLensReview",
+      "UpdateProfile",
+      "UpdateShareInvitation",
+      "UpdateWorkload",
+      "UpdateWorkloadShare",
+      "UpgradeLensReview",
+      "UpgradeProfileVersion"
+    ]
     permissions_management = []
-    read                   = [
-    "ExportLens",
-    "GetAnswer",
-    "GetConsolidatedReport",
-    "GetLens",
-    "GetLensReview",
-    "GetLensReviewReport",
-    "GetLensVersionDifference",
-    "GetMilestone",
-    "GetProfile",
-    "GetProfileTemplate",
-    "GetWorkload",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAnswers",
-    "ListCheckDetails",
-    "ListCheckSummaries",
-    "ListLensReviewImprovements",
-    "ListLensReviews",
-    "ListLensShares",
-    "ListLenses",
-    "ListMilestones",
-    "ListNotifications",
-    "ListProfileNotifications",
-    "ListProfileShares",
-    "ListProfiles",
-    "ListShareInvitations",
-    "ListWorkloadShares",
-    "ListWorkloads"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "ExportLens",
+      "GetAnswer",
+      "GetConsolidatedReport",
+      "GetLens",
+      "GetLensReview",
+      "GetLensReviewReport",
+      "GetLensVersionDifference",
+      "GetMilestone",
+      "GetProfile",
+      "GetProfileTemplate",
+      "GetWorkload",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAnswers",
+      "ListCheckDetails",
+      "ListCheckSummaries",
+      "ListLensReviewImprovements",
+      "ListLensReviews",
+      "ListLensShares",
+      "ListLenses",
+      "ListMilestones",
+      "ListNotifications",
+      "ListProfileNotifications",
+      "ListProfileShares",
+      "ListProfiles",
+      "ListShareInvitations",
+      "ListWorkloadShares",
+      "ListWorkloads"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

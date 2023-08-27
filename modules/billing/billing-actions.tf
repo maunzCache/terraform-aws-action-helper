@@ -59,25 +59,25 @@ locals {
   prefix = "billing"
 
   access_level = {
-    write                  = [
-    "PutContractInformation",
-    "RedeemCredits",
-    "UpdateBillingPreferences",
-    "UpdateIAMAccessPreference"
-]
+    write = [
+      "PutContractInformation",
+      "RedeemCredits",
+      "UpdateBillingPreferences",
+      "UpdateIAMAccessPreference"
+    ]
     permissions_management = []
-    read                   = [
-    "GetBillingData",
-    "GetBillingDetails",
-    "GetBillingNotifications",
-    "GetBillingPreferences",
-    "GetContractInformation",
-    "GetCredits",
-    "GetIAMAccessPreference",
-    "GetSellerOfRecord",
-    "ListBillingViews"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetBillingData",
+      "GetBillingDetails",
+      "GetBillingNotifications",
+      "GetBillingPreferences",
+      "GetContractInformation",
+      "GetCredits",
+      "GetIAMAccessPreference",
+      "GetSellerOfRecord",
+      "ListBillingViews"
+    ]
+    list    = []
+    tagging = []
   }
 }

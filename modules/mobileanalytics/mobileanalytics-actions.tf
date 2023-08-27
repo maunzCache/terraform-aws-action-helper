@@ -59,15 +59,15 @@ locals {
   prefix = "mobileanalytics"
 
   access_level = {
-    write                  = [
-    "PutEvents"
-]
+    write = [
+      "PutEvents"
+    ]
     permissions_management = []
-    read                   = [
-    "GetFinancialReports",
-    "GetReports"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetFinancialReports",
+      "GetReports"
+    ]
+    list    = []
+    tagging = []
   }
 }

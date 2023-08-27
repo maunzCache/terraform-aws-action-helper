@@ -59,72 +59,72 @@ locals {
   prefix = "workdocs"
 
   access_level = {
-    write                  = [
-    "AbortDocumentVersionUpload",
-    "ActivateUser",
-    "AddNotificationPermissions",
-    "AddResourcePermissions",
-    "AddUserToGroup",
-    "CreateComment",
-    "CreateCustomMetadata",
-    "CreateFolder",
-    "CreateInstance",
-    "CreateLabels",
-    "CreateNotificationSubscription",
-    "CreateUser",
-    "DeactivateUser",
-    "DeleteComment",
-    "DeleteCustomMetadata",
-    "DeleteDocument",
-    "DeleteDocumentVersion",
-    "DeleteFolder",
-    "DeleteFolderContents",
-    "DeleteInstance",
-    "DeleteLabels",
-    "DeleteNotificationPermissions",
-    "DeleteNotificationSubscription",
-    "DeleteUser",
-    "DeregisterDirectory",
-    "InitiateDocumentVersionUpload",
-    "RegisterDirectory",
-    "RemoveAllResourcePermissions",
-    "RemoveResourcePermission",
-    "RestoreDocumentVersions",
-    "UpdateDocument",
-    "UpdateDocumentVersion",
-    "UpdateFolder",
-    "UpdateInstanceAlias",
-    "UpdateUser",
-    "UpdateUserAdministrativeSettings"
-]
+    write = [
+      "AbortDocumentVersionUpload",
+      "ActivateUser",
+      "AddNotificationPermissions",
+      "AddResourcePermissions",
+      "AddUserToGroup",
+      "CreateComment",
+      "CreateCustomMetadata",
+      "CreateFolder",
+      "CreateInstance",
+      "CreateLabels",
+      "CreateNotificationSubscription",
+      "CreateUser",
+      "DeactivateUser",
+      "DeleteComment",
+      "DeleteCustomMetadata",
+      "DeleteDocument",
+      "DeleteDocumentVersion",
+      "DeleteFolder",
+      "DeleteFolderContents",
+      "DeleteInstance",
+      "DeleteLabels",
+      "DeleteNotificationPermissions",
+      "DeleteNotificationSubscription",
+      "DeleteUser",
+      "DeregisterDirectory",
+      "InitiateDocumentVersionUpload",
+      "RegisterDirectory",
+      "RemoveAllResourcePermissions",
+      "RemoveResourcePermission",
+      "RestoreDocumentVersions",
+      "UpdateDocument",
+      "UpdateDocumentVersion",
+      "UpdateFolder",
+      "UpdateInstanceAlias",
+      "UpdateUser",
+      "UpdateUserAdministrativeSettings"
+    ]
     permissions_management = []
-    read                   = [
-    "CheckAlias",
-    "DownloadDocumentVersion",
-    "GetCurrentUser",
-    "GetDocument",
-    "GetDocumentPath",
-    "GetDocumentVersion",
-    "GetFolder",
-    "GetFolderPath",
-    "GetGroup",
-    "GetResources"
-]
-    list                   = [
-    "DescribeActivities",
-    "DescribeAvailableDirectories",
-    "DescribeComments",
-    "DescribeDocumentVersions",
-    "DescribeFolderContents",
-    "DescribeGroups",
-    "DescribeInstances",
-    "DescribeNotificationPermissions",
-    "DescribeNotificationSubscriptions",
-    "DescribeResourcePermissions",
-    "DescribeRootFolders",
-    "DescribeUsers",
-    "SearchResources"
-]
-    tagging                = []
+    read = [
+      "CheckAlias",
+      "DownloadDocumentVersion",
+      "GetCurrentUser",
+      "GetDocument",
+      "GetDocumentPath",
+      "GetDocumentVersion",
+      "GetFolder",
+      "GetFolderPath",
+      "GetGroup",
+      "GetResources"
+    ]
+    list = [
+      "DescribeActivities",
+      "DescribeAvailableDirectories",
+      "DescribeComments",
+      "DescribeDocumentVersions",
+      "DescribeFolderContents",
+      "DescribeGroups",
+      "DescribeInstances",
+      "DescribeNotificationPermissions",
+      "DescribeNotificationSubscriptions",
+      "DescribeResourcePermissions",
+      "DescribeRootFolders",
+      "DescribeUsers",
+      "SearchResources"
+    ]
+    tagging = []
   }
 }

@@ -59,48 +59,48 @@ locals {
   prefix = "elasticloadbalancing"
 
   access_level = {
-    write                  = [
-    "AddListenerCertificates",
-    "CreateListener",
-    "CreateLoadBalancer",
-    "CreateRule",
-    "CreateTargetGroup",
-    "DeleteListener",
-    "DeleteLoadBalancer",
-    "DeleteRule",
-    "DeleteTargetGroup",
-    "DeregisterTargets",
-    "ModifyListener",
-    "ModifyLoadBalancerAttributes",
-    "ModifyRule",
-    "ModifyTargetGroup",
-    "ModifyTargetGroupAttributes",
-    "RegisterTargets",
-    "RemoveListenerCertificates",
-    "SetIpAddressType",
-    "SetRulePriorities",
-    "SetSecurityGroups",
-    "SetSubnets",
-    "SetWebAcl"
-]
+    write = [
+      "AddListenerCertificates",
+      "CreateListener",
+      "CreateLoadBalancer",
+      "CreateRule",
+      "CreateTargetGroup",
+      "DeleteListener",
+      "DeleteLoadBalancer",
+      "DeleteRule",
+      "DeleteTargetGroup",
+      "DeregisterTargets",
+      "ModifyListener",
+      "ModifyLoadBalancerAttributes",
+      "ModifyRule",
+      "ModifyTargetGroup",
+      "ModifyTargetGroupAttributes",
+      "RegisterTargets",
+      "RemoveListenerCertificates",
+      "SetIpAddressType",
+      "SetRulePriorities",
+      "SetSecurityGroups",
+      "SetSubnets",
+      "SetWebAcl"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAccountLimits",
-    "DescribeListenerCertificates",
-    "DescribeListeners",
-    "DescribeLoadBalancerAttributes",
-    "DescribeLoadBalancers",
-    "DescribeRules",
-    "DescribeSSLPolicies",
-    "DescribeTags",
-    "DescribeTargetGroupAttributes",
-    "DescribeTargetGroups",
-    "DescribeTargetHealth"
-]
-    list                   = []
-    tagging                = [
-    "AddTags",
-    "RemoveTags"
-]
+    read = [
+      "DescribeAccountLimits",
+      "DescribeListenerCertificates",
+      "DescribeListeners",
+      "DescribeLoadBalancerAttributes",
+      "DescribeLoadBalancers",
+      "DescribeRules",
+      "DescribeSSLPolicies",
+      "DescribeTags",
+      "DescribeTargetGroupAttributes",
+      "DescribeTargetGroups",
+      "DescribeTargetHealth"
+    ]
+    list = []
+    tagging = [
+      "AddTags",
+      "RemoveTags"
+    ]
   }
 }

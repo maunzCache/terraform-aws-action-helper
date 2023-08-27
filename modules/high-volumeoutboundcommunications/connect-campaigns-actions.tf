@@ -59,36 +59,36 @@ locals {
   prefix = "connect-campaigns"
 
   access_level = {
-    write                  = [
-    "CreateCampaign",
-    "DeleteCampaign",
-    "DeleteConnectInstanceConfig",
-    "DeleteInstanceOnboardingJob",
-    "PauseCampaign",
-    "PutDialRequestBatch",
-    "ResumeCampaign",
-    "StartCampaign",
-    "StartInstanceOnboardingJob",
-    "StopCampaign",
-    "UpdateCampaignDialerConfig",
-    "UpdateCampaignName",
-    "UpdateCampaignOutboundCallConfig"
-]
+    write = [
+      "CreateCampaign",
+      "DeleteCampaign",
+      "DeleteConnectInstanceConfig",
+      "DeleteInstanceOnboardingJob",
+      "PauseCampaign",
+      "PutDialRequestBatch",
+      "ResumeCampaign",
+      "StartCampaign",
+      "StartInstanceOnboardingJob",
+      "StopCampaign",
+      "UpdateCampaignDialerConfig",
+      "UpdateCampaignName",
+      "UpdateCampaignOutboundCallConfig"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeCampaign",
-    "GetCampaignState",
-    "GetCampaignStateBatch",
-    "GetConnectInstanceConfig",
-    "GetInstanceOnboardingJobStatus",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListCampaigns"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeCampaign",
+      "GetCampaignState",
+      "GetCampaignStateBatch",
+      "GetConnectInstanceConfig",
+      "GetInstanceOnboardingJobStatus",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListCampaigns"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

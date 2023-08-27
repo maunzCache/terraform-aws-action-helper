@@ -59,23 +59,23 @@ locals {
   prefix = "redshift-data"
 
   access_level = {
-    write                  = [
-    "BatchExecuteStatement",
-    "CancelStatement",
-    "ExecuteStatement"
-]
+    write = [
+      "BatchExecuteStatement",
+      "CancelStatement",
+      "ExecuteStatement"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeStatement",
-    "DescribeTable",
-    "GetStatementResult",
-    "ListDatabases",
-    "ListSchemas"
-]
-    list                   = [
-    "ListStatements",
-    "ListTables"
-]
-    tagging                = []
+    read = [
+      "DescribeStatement",
+      "DescribeTable",
+      "GetStatementResult",
+      "ListDatabases",
+      "ListSchemas"
+    ]
+    list = [
+      "ListStatements",
+      "ListTables"
+    ]
+    tagging = []
   }
 }

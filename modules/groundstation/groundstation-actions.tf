@@ -59,47 +59,47 @@ locals {
   prefix = "groundstation"
 
   access_level = {
-    write                  = [
-    "CancelContact",
-    "CreateConfig",
-    "CreateDataflowEndpointGroup",
-    "CreateEphemeris",
-    "CreateMissionProfile",
-    "DeleteConfig",
-    "DeleteDataflowEndpointGroup",
-    "DeleteEphemeris",
-    "DeleteMissionProfile",
-    "RegisterAgent",
-    "ReserveContact",
-    "UpdateAgentStatus",
-    "UpdateConfig",
-    "UpdateEphemeris",
-    "UpdateMissionProfile"
-]
+    write = [
+      "CancelContact",
+      "CreateConfig",
+      "CreateDataflowEndpointGroup",
+      "CreateEphemeris",
+      "CreateMissionProfile",
+      "DeleteConfig",
+      "DeleteDataflowEndpointGroup",
+      "DeleteEphemeris",
+      "DeleteMissionProfile",
+      "RegisterAgent",
+      "ReserveContact",
+      "UpdateAgentStatus",
+      "UpdateConfig",
+      "UpdateEphemeris",
+      "UpdateMissionProfile"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeContact",
-    "DescribeEphemeris",
-    "GetAgentConfiguration",
-    "GetConfig",
-    "GetDataflowEndpointGroup",
-    "GetMinuteUsage",
-    "GetMissionProfile",
-    "GetSatellite",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListConfigs",
-    "ListContacts",
-    "ListDataflowEndpointGroups",
-    "ListEphemerides",
-    "ListGroundStations",
-    "ListMissionProfiles",
-    "ListSatellites"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeContact",
+      "DescribeEphemeris",
+      "GetAgentConfiguration",
+      "GetConfig",
+      "GetDataflowEndpointGroup",
+      "GetMinuteUsage",
+      "GetMissionProfile",
+      "GetSatellite",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListConfigs",
+      "ListContacts",
+      "ListDataflowEndpointGroups",
+      "ListEphemerides",
+      "ListGroundStations",
+      "ListMissionProfiles",
+      "ListSatellites"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

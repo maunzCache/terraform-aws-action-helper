@@ -61,14 +61,14 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "DescribeServices",
-    "GetAttributeValues",
-    "GetPriceListFileUrl",
-    "GetProducts",
-    "ListPriceLists"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "DescribeServices",
+      "GetAttributeValues",
+      "GetPriceListFileUrl",
+      "GetProducts",
+      "ListPriceLists"
+    ]
+    list    = []
+    tagging = []
   }
 }

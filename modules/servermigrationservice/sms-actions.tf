@@ -59,50 +59,50 @@ locals {
   prefix = "sms"
 
   access_level = {
-    write                  = [
-    "CreateApp",
-    "CreateReplicationJob",
-    "DeleteApp",
-    "DeleteAppLaunchConfiguration",
-    "DeleteAppReplicationConfiguration",
-    "DeleteAppValidationConfiguration",
-    "DeleteReplicationJob",
-    "DeleteServerCatalog",
-    "DisassociateConnector",
-    "GenerateChangeSet",
-    "GenerateTemplate",
-    "ImportAppCatalog",
-    "ImportServerCatalog",
-    "LaunchApp",
-    "NotifyAppValidationOutput",
-    "PutAppLaunchConfiguration",
-    "PutAppReplicationConfiguration",
-    "PutAppValidationConfiguration",
-    "SendMessage",
-    "StartAppReplication",
-    "StartOnDemandAppReplication",
-    "StartOnDemandReplicationRun",
-    "StopAppReplication",
-    "TerminateApp",
-    "UpdateApp",
-    "UpdateReplicationJob"
-]
+    write = [
+      "CreateApp",
+      "CreateReplicationJob",
+      "DeleteApp",
+      "DeleteAppLaunchConfiguration",
+      "DeleteAppReplicationConfiguration",
+      "DeleteAppValidationConfiguration",
+      "DeleteReplicationJob",
+      "DeleteServerCatalog",
+      "DisassociateConnector",
+      "GenerateChangeSet",
+      "GenerateTemplate",
+      "ImportAppCatalog",
+      "ImportServerCatalog",
+      "LaunchApp",
+      "NotifyAppValidationOutput",
+      "PutAppLaunchConfiguration",
+      "PutAppReplicationConfiguration",
+      "PutAppValidationConfiguration",
+      "SendMessage",
+      "StartAppReplication",
+      "StartOnDemandAppReplication",
+      "StartOnDemandReplicationRun",
+      "StopAppReplication",
+      "TerminateApp",
+      "UpdateApp",
+      "UpdateReplicationJob"
+    ]
     permissions_management = []
-    read                   = [
-    "GetApp",
-    "GetAppLaunchConfiguration",
-    "GetAppReplicationConfiguration",
-    "GetAppValidationConfiguration",
-    "GetAppValidationOutput",
-    "GetConnectors",
-    "GetMessages",
-    "GetReplicationJobs",
-    "GetReplicationRuns",
-    "GetServers"
-]
-    list                   = [
-    "ListApps"
-]
-    tagging                = []
+    read = [
+      "GetApp",
+      "GetAppLaunchConfiguration",
+      "GetAppReplicationConfiguration",
+      "GetAppValidationConfiguration",
+      "GetAppValidationOutput",
+      "GetConnectors",
+      "GetMessages",
+      "GetReplicationJobs",
+      "GetReplicationRuns",
+      "GetServers"
+    ]
+    list = [
+      "ListApps"
+    ]
+    tagging = []
   }
 }

@@ -59,20 +59,20 @@ locals {
   prefix = "payments"
 
   access_level = {
-    write                  = [
-    "CreatePaymentInstrument",
-    "DeletePaymentInstrument",
-    "MakePayment",
-    "UpdatePaymentPreferences"
-]
+    write = [
+      "CreatePaymentInstrument",
+      "DeletePaymentInstrument",
+      "MakePayment",
+      "UpdatePaymentPreferences"
+    ]
     permissions_management = []
-    read                   = [
-    "GetPaymentStatus"
-]
-    list                   = [
-    "GetPaymentInstrument",
-    "ListPaymentPreferences"
-]
-    tagging                = []
+    read = [
+      "GetPaymentStatus"
+    ]
+    list = [
+      "GetPaymentInstrument",
+      "ListPaymentPreferences"
+    ]
+    tagging = []
   }
 }

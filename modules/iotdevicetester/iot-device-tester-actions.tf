@@ -59,17 +59,17 @@ locals {
   prefix = "iot-device-tester"
 
   access_level = {
-    write                  = [
-    "SendMetrics"
-]
+    write = [
+      "SendMetrics"
+    ]
     permissions_management = []
-    read                   = [
-    "CheckVersion",
-    "DownloadTestSuite",
-    "LatestIdt",
-    "SupportedVersion"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "CheckVersion",
+      "DownloadTestSuite",
+      "LatestIdt",
+      "SupportedVersion"
+    ]
+    list    = []
+    tagging = []
   }
 }

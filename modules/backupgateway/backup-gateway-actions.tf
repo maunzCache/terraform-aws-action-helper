@@ -59,40 +59,40 @@ locals {
   prefix = "backup-gateway"
 
   access_level = {
-    write                  = [
-    "AssociateGatewayToServer",
-    "Backup",
-    "CreateGateway",
-    "DeleteGateway",
-    "DeleteHypervisor",
-    "DisassociateGatewayFromServer",
-    "ImportHypervisorConfiguration",
-    "PutBandwidthRateLimitSchedule",
-    "PutHypervisorPropertyMappings",
-    "PutMaintenanceStartTime",
-    "Restore",
-    "StartVirtualMachinesMetadataSync",
-    "TestHypervisorConfiguration",
-    "UpdateGatewayInformation",
-    "UpdateGatewaySoftwareNow",
-    "UpdateHypervisor"
-]
+    write = [
+      "AssociateGatewayToServer",
+      "Backup",
+      "CreateGateway",
+      "DeleteGateway",
+      "DeleteHypervisor",
+      "DisassociateGatewayFromServer",
+      "ImportHypervisorConfiguration",
+      "PutBandwidthRateLimitSchedule",
+      "PutHypervisorPropertyMappings",
+      "PutMaintenanceStartTime",
+      "Restore",
+      "StartVirtualMachinesMetadataSync",
+      "TestHypervisorConfiguration",
+      "UpdateGatewayInformation",
+      "UpdateGatewaySoftwareNow",
+      "UpdateHypervisor"
+    ]
     permissions_management = []
-    read                   = [
-    "GetBandwidthRateLimitSchedule",
-    "GetGateway",
-    "GetHypervisor",
-    "GetHypervisorPropertyMappings",
-    "GetVirtualMachine",
-    "ListGateways",
-    "ListHypervisors",
-    "ListTagsForResource",
-    "ListVirtualMachines"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetBandwidthRateLimitSchedule",
+      "GetGateway",
+      "GetHypervisor",
+      "GetHypervisorPropertyMappings",
+      "GetVirtualMachine",
+      "ListGateways",
+      "ListHypervisors",
+      "ListTagsForResource",
+      "ListVirtualMachines"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

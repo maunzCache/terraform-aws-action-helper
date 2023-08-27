@@ -59,60 +59,60 @@ locals {
   prefix = "lakeformation"
 
   access_level = {
-    write                  = [
-    "CancelTransaction",
-    "CommitTransaction",
-    "CreateDataCellsFilter",
-    "CreateLFTag",
-    "DeleteDataCellsFilter",
-    "DeleteLFTag",
-    "DeleteObjectsOnCancel",
-    "DeregisterResource",
-    "ExtendTransaction",
-    "GetDataAccess",
-    "RegisterResource",
-    "StartQueryPlanning",
-    "StartTransaction",
-    "UpdateDataCellsFilter",
-    "UpdateLFTag",
-    "UpdateResource",
-    "UpdateTableObjects",
-    "UpdateTableStorageOptimizer"
-]
+    write = [
+      "CancelTransaction",
+      "CommitTransaction",
+      "CreateDataCellsFilter",
+      "CreateLFTag",
+      "DeleteDataCellsFilter",
+      "DeleteLFTag",
+      "DeleteObjectsOnCancel",
+      "DeregisterResource",
+      "ExtendTransaction",
+      "GetDataAccess",
+      "RegisterResource",
+      "StartQueryPlanning",
+      "StartTransaction",
+      "UpdateDataCellsFilter",
+      "UpdateLFTag",
+      "UpdateResource",
+      "UpdateTableObjects",
+      "UpdateTableStorageOptimizer"
+    ]
     permissions_management = [
-    "BatchGrantPermissions",
-    "BatchRevokePermissions",
-    "GrantPermissions",
-    "PutDataLakeSettings",
-    "RevokePermissions"
-]
-    read                   = [
-    "DescribeResource",
-    "DescribeTransaction",
-    "GetDataCellsFilter",
-    "GetDataLakeSettings",
-    "GetEffectivePermissionsForPath",
-    "GetLFTag",
-    "GetQueryState",
-    "GetQueryStatistics",
-    "GetResourceLFTags",
-    "GetTableObjects",
-    "GetWorkUnitResults",
-    "GetWorkUnits",
-    "ListLFTags",
-    "SearchDatabasesByLFTags",
-    "SearchTablesByLFTags"
-]
-    list                   = [
-    "ListDataCellsFilter",
-    "ListPermissions",
-    "ListResources",
-    "ListTableStorageOptimizers",
-    "ListTransactions"
-]
-    tagging                = [
-    "AddLFTagsToResource",
-    "RemoveLFTagsFromResource"
-]
+      "BatchGrantPermissions",
+      "BatchRevokePermissions",
+      "GrantPermissions",
+      "PutDataLakeSettings",
+      "RevokePermissions"
+    ]
+    read = [
+      "DescribeResource",
+      "DescribeTransaction",
+      "GetDataCellsFilter",
+      "GetDataLakeSettings",
+      "GetEffectivePermissionsForPath",
+      "GetLFTag",
+      "GetQueryState",
+      "GetQueryStatistics",
+      "GetResourceLFTags",
+      "GetTableObjects",
+      "GetWorkUnitResults",
+      "GetWorkUnits",
+      "ListLFTags",
+      "SearchDatabasesByLFTags",
+      "SearchTablesByLFTags"
+    ]
+    list = [
+      "ListDataCellsFilter",
+      "ListPermissions",
+      "ListResources",
+      "ListTableStorageOptimizers",
+      "ListTransactions"
+    ]
+    tagging = [
+      "AddLFTagsToResource",
+      "RemoveLFTagsFromResource"
+    ]
   }
 }

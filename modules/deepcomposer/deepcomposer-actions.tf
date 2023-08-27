@@ -59,32 +59,32 @@ locals {
   prefix = "deepcomposer"
 
   access_level = {
-    write                  = [
-    "AssociateCoupon",
-    "CreateAudio",
-    "CreateComposition",
-    "CreateModel",
-    "DeleteComposition",
-    "DeleteModel",
-    "UpdateComposition",
-    "UpdateModel"
-]
+    write = [
+      "AssociateCoupon",
+      "CreateAudio",
+      "CreateComposition",
+      "CreateModel",
+      "DeleteComposition",
+      "DeleteModel",
+      "UpdateComposition",
+      "UpdateModel"
+    ]
     permissions_management = []
-    read                   = [
-    "GetComposition",
-    "GetModel",
-    "GetSampleModel"
-]
-    list                   = [
-    "ListCompositions",
-    "ListModels",
-    "ListSampleModels",
-    "ListTagsForResource",
-    "ListTrainingTopics"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetComposition",
+      "GetModel",
+      "GetSampleModel"
+    ]
+    list = [
+      "ListCompositions",
+      "ListModels",
+      "ListSampleModels",
+      "ListTagsForResource",
+      "ListTrainingTopics"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

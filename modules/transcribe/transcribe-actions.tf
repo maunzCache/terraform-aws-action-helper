@@ -59,59 +59,59 @@ locals {
   prefix = "transcribe"
 
   access_level = {
-    write                  = [
-    "CreateCallAnalyticsCategory",
-    "CreateLanguageModel",
-    "CreateMedicalVocabulary",
-    "CreateVocabulary",
-    "CreateVocabularyFilter",
-    "DeleteCallAnalyticsCategory",
-    "DeleteCallAnalyticsJob",
-    "DeleteLanguageModel",
-    "DeleteMedicalTranscriptionJob",
-    "DeleteMedicalVocabulary",
-    "DeleteTranscriptionJob",
-    "DeleteVocabulary",
-    "DeleteVocabularyFilter",
-    "StartCallAnalyticsJob",
-    "StartCallAnalyticsStreamTranscription",
-    "StartCallAnalyticsStreamTranscriptionWebSocket",
-    "StartMedicalStreamTranscription",
-    "StartMedicalStreamTranscriptionWebSocket",
-    "StartMedicalTranscriptionJob",
-    "StartStreamTranscription",
-    "StartStreamTranscriptionWebSocket",
-    "StartTranscriptionJob",
-    "UpdateCallAnalyticsCategory",
-    "UpdateMedicalVocabulary",
-    "UpdateVocabulary",
-    "UpdateVocabularyFilter"
-]
+    write = [
+      "CreateCallAnalyticsCategory",
+      "CreateLanguageModel",
+      "CreateMedicalVocabulary",
+      "CreateVocabulary",
+      "CreateVocabularyFilter",
+      "DeleteCallAnalyticsCategory",
+      "DeleteCallAnalyticsJob",
+      "DeleteLanguageModel",
+      "DeleteMedicalTranscriptionJob",
+      "DeleteMedicalVocabulary",
+      "DeleteTranscriptionJob",
+      "DeleteVocabulary",
+      "DeleteVocabularyFilter",
+      "StartCallAnalyticsJob",
+      "StartCallAnalyticsStreamTranscription",
+      "StartCallAnalyticsStreamTranscriptionWebSocket",
+      "StartMedicalStreamTranscription",
+      "StartMedicalStreamTranscriptionWebSocket",
+      "StartMedicalTranscriptionJob",
+      "StartStreamTranscription",
+      "StartStreamTranscriptionWebSocket",
+      "StartTranscriptionJob",
+      "UpdateCallAnalyticsCategory",
+      "UpdateMedicalVocabulary",
+      "UpdateVocabulary",
+      "UpdateVocabularyFilter"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeLanguageModel",
-    "GetCallAnalyticsCategory",
-    "GetCallAnalyticsJob",
-    "GetMedicalTranscriptionJob",
-    "GetMedicalVocabulary",
-    "GetTranscriptionJob",
-    "GetVocabulary",
-    "GetVocabularyFilter",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListCallAnalyticsCategories",
-    "ListCallAnalyticsJobs",
-    "ListLanguageModels",
-    "ListMedicalTranscriptionJobs",
-    "ListMedicalVocabularies",
-    "ListTranscriptionJobs",
-    "ListVocabularies",
-    "ListVocabularyFilters"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeLanguageModel",
+      "GetCallAnalyticsCategory",
+      "GetCallAnalyticsJob",
+      "GetMedicalTranscriptionJob",
+      "GetMedicalVocabulary",
+      "GetTranscriptionJob",
+      "GetVocabulary",
+      "GetVocabularyFilter",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListCallAnalyticsCategories",
+      "ListCallAnalyticsJobs",
+      "ListLanguageModels",
+      "ListMedicalTranscriptionJobs",
+      "ListMedicalVocabularies",
+      "ListTranscriptionJobs",
+      "ListVocabularies",
+      "ListVocabularyFilters"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

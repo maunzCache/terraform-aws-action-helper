@@ -59,31 +59,31 @@ locals {
   prefix = "rum"
 
   access_level = {
-    write                  = [
-    "BatchCreateRumMetricDefinitions",
-    "BatchDeleteRumMetricDefinitions",
-    "CreateAppMonitor",
-    "DeleteAppMonitor",
-    "DeleteRumMetricsDestination",
-    "PutRumEvents",
-    "PutRumMetricsDestination",
-    "UpdateAppMonitor",
-    "UpdateRumMetricDefinition"
-]
+    write = [
+      "BatchCreateRumMetricDefinitions",
+      "BatchDeleteRumMetricDefinitions",
+      "CreateAppMonitor",
+      "DeleteAppMonitor",
+      "DeleteRumMetricsDestination",
+      "PutRumEvents",
+      "PutRumMetricsDestination",
+      "UpdateAppMonitor",
+      "UpdateRumMetricDefinition"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetRumMetricDefinitions",
-    "GetAppMonitor",
-    "GetAppMonitorData",
-    "ListRumMetricsDestinations",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAppMonitors"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchGetRumMetricDefinitions",
+      "GetAppMonitor",
+      "GetAppMonitorData",
+      "ListRumMetricsDestinations",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAppMonitors"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

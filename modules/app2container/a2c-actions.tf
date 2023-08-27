@@ -59,16 +59,16 @@ locals {
   prefix = "a2c"
 
   access_level = {
-    write                  = [
-    "StartContainerizationJob",
-    "StartDeploymentJob"
-]
+    write = [
+      "StartContainerizationJob",
+      "StartDeploymentJob"
+    ]
     permissions_management = []
-    read                   = [
-    "GetContainerizationJobDetails",
-    "GetDeploymentJobDetails"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetContainerizationJobDetails",
+      "GetDeploymentJobDetails"
+    ]
+    list    = []
+    tagging = []
   }
 }

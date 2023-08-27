@@ -59,9 +59,9 @@ locals {
   prefix = "arsenal"
 
   access_level = {
-    write                  = [
-    "RegisterOnPremisesAgent"
-]
+    write = [
+      "RegisterOnPremisesAgent"
+    ]
     permissions_management = []
     read                   = []
     list                   = []

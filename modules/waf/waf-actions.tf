@@ -59,92 +59,92 @@ locals {
   prefix = "waf"
 
   access_level = {
-    write                  = [
-    "CreateByteMatchSet",
-    "CreateGeoMatchSet",
-    "CreateIPSet",
-    "CreateRateBasedRule",
-    "CreateRegexMatchSet",
-    "CreateRegexPatternSet",
-    "CreateRule",
-    "CreateRuleGroup",
-    "CreateSizeConstraintSet",
-    "CreateSqlInjectionMatchSet",
-    "CreateWebACLMigrationStack",
-    "CreateXssMatchSet",
-    "DeleteByteMatchSet",
-    "DeleteGeoMatchSet",
-    "DeleteIPSet",
-    "DeleteLoggingConfiguration",
-    "DeleteRateBasedRule",
-    "DeleteRegexMatchSet",
-    "DeleteRegexPatternSet",
-    "DeleteRule",
-    "DeleteRuleGroup",
-    "DeleteSizeConstraintSet",
-    "DeleteSqlInjectionMatchSet",
-    "DeleteXssMatchSet",
-    "PutLoggingConfiguration",
-    "UpdateByteMatchSet",
-    "UpdateGeoMatchSet",
-    "UpdateIPSet",
-    "UpdateRateBasedRule",
-    "UpdateRegexMatchSet",
-    "UpdateRegexPatternSet",
-    "UpdateRule",
-    "UpdateRuleGroup",
-    "UpdateSizeConstraintSet",
-    "UpdateSqlInjectionMatchSet",
-    "UpdateXssMatchSet"
-]
+    write = [
+      "CreateByteMatchSet",
+      "CreateGeoMatchSet",
+      "CreateIPSet",
+      "CreateRateBasedRule",
+      "CreateRegexMatchSet",
+      "CreateRegexPatternSet",
+      "CreateRule",
+      "CreateRuleGroup",
+      "CreateSizeConstraintSet",
+      "CreateSqlInjectionMatchSet",
+      "CreateWebACLMigrationStack",
+      "CreateXssMatchSet",
+      "DeleteByteMatchSet",
+      "DeleteGeoMatchSet",
+      "DeleteIPSet",
+      "DeleteLoggingConfiguration",
+      "DeleteRateBasedRule",
+      "DeleteRegexMatchSet",
+      "DeleteRegexPatternSet",
+      "DeleteRule",
+      "DeleteRuleGroup",
+      "DeleteSizeConstraintSet",
+      "DeleteSqlInjectionMatchSet",
+      "DeleteXssMatchSet",
+      "PutLoggingConfiguration",
+      "UpdateByteMatchSet",
+      "UpdateGeoMatchSet",
+      "UpdateIPSet",
+      "UpdateRateBasedRule",
+      "UpdateRegexMatchSet",
+      "UpdateRegexPatternSet",
+      "UpdateRule",
+      "UpdateRuleGroup",
+      "UpdateSizeConstraintSet",
+      "UpdateSqlInjectionMatchSet",
+      "UpdateXssMatchSet"
+    ]
     permissions_management = [
-    "CreateWebACL",
-    "DeletePermissionPolicy",
-    "DeleteWebACL",
-    "PutPermissionPolicy",
-    "UpdateWebACL"
-]
-    read                   = [
-    "GetByteMatchSet",
-    "GetChangeToken",
-    "GetChangeTokenStatus",
-    "GetGeoMatchSet",
-    "GetIPSet",
-    "GetLoggingConfiguration",
-    "GetPermissionPolicy",
-    "GetRateBasedRule",
-    "GetRateBasedRuleManagedKeys",
-    "GetRegexMatchSet",
-    "GetRegexPatternSet",
-    "GetRule",
-    "GetRuleGroup",
-    "GetSampledRequests",
-    "GetSizeConstraintSet",
-    "GetSqlInjectionMatchSet",
-    "GetWebACL",
-    "GetXssMatchSet",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListActivatedRulesInRuleGroup",
-    "ListByteMatchSets",
-    "ListGeoMatchSets",
-    "ListIPSets",
-    "ListLoggingConfigurations",
-    "ListRateBasedRules",
-    "ListRegexMatchSets",
-    "ListRegexPatternSets",
-    "ListRuleGroups",
-    "ListRules",
-    "ListSizeConstraintSets",
-    "ListSqlInjectionMatchSets",
-    "ListSubscribedRuleGroups",
-    "ListWebACLs",
-    "ListXssMatchSets"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "CreateWebACL",
+      "DeletePermissionPolicy",
+      "DeleteWebACL",
+      "PutPermissionPolicy",
+      "UpdateWebACL"
+    ]
+    read = [
+      "GetByteMatchSet",
+      "GetChangeToken",
+      "GetChangeTokenStatus",
+      "GetGeoMatchSet",
+      "GetIPSet",
+      "GetLoggingConfiguration",
+      "GetPermissionPolicy",
+      "GetRateBasedRule",
+      "GetRateBasedRuleManagedKeys",
+      "GetRegexMatchSet",
+      "GetRegexPatternSet",
+      "GetRule",
+      "GetRuleGroup",
+      "GetSampledRequests",
+      "GetSizeConstraintSet",
+      "GetSqlInjectionMatchSet",
+      "GetWebACL",
+      "GetXssMatchSet",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListActivatedRulesInRuleGroup",
+      "ListByteMatchSets",
+      "ListGeoMatchSets",
+      "ListIPSets",
+      "ListLoggingConfigurations",
+      "ListRateBasedRules",
+      "ListRegexMatchSets",
+      "ListRegexPatternSets",
+      "ListRuleGroups",
+      "ListRules",
+      "ListSizeConstraintSets",
+      "ListSqlInjectionMatchSets",
+      "ListSubscribedRuleGroups",
+      "ListWebACLs",
+      "ListXssMatchSets"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

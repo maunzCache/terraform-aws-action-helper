@@ -59,45 +59,45 @@ locals {
   prefix = "migrationhub-orchestrator"
 
   access_level = {
-    write                  = [
-    "CreateWorkflow",
-    "CreateWorkflowStep",
-    "CreateWorkflowStepGroup",
-    "DeleteWorkflow",
-    "DeleteWorkflowStep",
-    "DeleteWorkflowStepGroup",
-    "RegisterPlugin",
-    "RetryWorkflowStep",
-    "SendMessage",
-    "StartWorkflow",
-    "StopWorkflow",
-    "UpdateWorkflow",
-    "UpdateWorkflowStep",
-    "UpdateWorkflowStepGroup"
-]
+    write = [
+      "CreateWorkflow",
+      "CreateWorkflowStep",
+      "CreateWorkflowStepGroup",
+      "DeleteWorkflow",
+      "DeleteWorkflowStep",
+      "DeleteWorkflowStepGroup",
+      "RegisterPlugin",
+      "RetryWorkflowStep",
+      "SendMessage",
+      "StartWorkflow",
+      "StopWorkflow",
+      "UpdateWorkflow",
+      "UpdateWorkflowStep",
+      "UpdateWorkflowStepGroup"
+    ]
     permissions_management = []
-    read                   = [
-    "GetMessage",
-    "GetTemplate",
-    "GetTemplateStep",
-    "GetTemplateStepGroup",
-    "GetWorkflow",
-    "GetWorkflowStep",
-    "GetWorkflowStepGroup",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListPlugins",
-    "ListTemplateStepGroups",
-    "ListTemplateSteps",
-    "ListTemplates",
-    "ListWorkflowStepGroups",
-    "ListWorkflowSteps",
-    "ListWorkflows"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetMessage",
+      "GetTemplate",
+      "GetTemplateStep",
+      "GetTemplateStepGroup",
+      "GetWorkflow",
+      "GetWorkflowStep",
+      "GetWorkflowStepGroup",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListPlugins",
+      "ListTemplateStepGroups",
+      "ListTemplateSteps",
+      "ListTemplates",
+      "ListWorkflowStepGroups",
+      "ListWorkflowSteps",
+      "ListWorkflows"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

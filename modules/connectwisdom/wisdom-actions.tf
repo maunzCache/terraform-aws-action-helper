@@ -59,45 +59,45 @@ locals {
   prefix = "wisdom"
 
   access_level = {
-    write                  = [
-    "CreateAssistant",
-    "CreateAssistantAssociation",
-    "CreateContent",
-    "CreateKnowledgeBase",
-    "CreateSession",
-    "DeleteAssistant",
-    "DeleteAssistantAssociation",
-    "DeleteContent",
-    "DeleteKnowledgeBase",
-    "NotifyRecommendationsReceived",
-    "RemoveKnowledgeBaseTemplateUri",
-    "StartContentUpload",
-    "UpdateContent",
-    "UpdateKnowledgeBaseTemplateUri"
-]
+    write = [
+      "CreateAssistant",
+      "CreateAssistantAssociation",
+      "CreateContent",
+      "CreateKnowledgeBase",
+      "CreateSession",
+      "DeleteAssistant",
+      "DeleteAssistantAssociation",
+      "DeleteContent",
+      "DeleteKnowledgeBase",
+      "NotifyRecommendationsReceived",
+      "RemoveKnowledgeBaseTemplateUri",
+      "StartContentUpload",
+      "UpdateContent",
+      "UpdateKnowledgeBaseTemplateUri"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAssistant",
-    "GetAssistantAssociation",
-    "GetContent",
-    "GetContentSummary",
-    "GetKnowledgeBase",
-    "GetRecommendations",
-    "GetSession",
-    "ListTagsForResource",
-    "QueryAssistant",
-    "SearchContent",
-    "SearchSessions"
-]
-    list                   = [
-    "ListAssistantAssociations",
-    "ListAssistants",
-    "ListContents",
-    "ListKnowledgeBases"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetAssistant",
+      "GetAssistantAssociation",
+      "GetContent",
+      "GetContentSummary",
+      "GetKnowledgeBase",
+      "GetRecommendations",
+      "GetSession",
+      "ListTagsForResource",
+      "QueryAssistant",
+      "SearchContent",
+      "SearchSessions"
+    ]
+    list = [
+      "ListAssistantAssociations",
+      "ListAssistants",
+      "ListContents",
+      "ListKnowledgeBases"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

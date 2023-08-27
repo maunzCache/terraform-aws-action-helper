@@ -59,71 +59,71 @@ locals {
   prefix = "workspaces-web"
 
   access_level = {
-    write                  = [
-    "AssociateBrowserSettings",
-    "AssociateIpAccessSettings",
-    "AssociateNetworkSettings",
-    "AssociateTrustStore",
-    "AssociateUserAccessLoggingSettings",
-    "AssociateUserSettings",
-    "CreateBrowserSettings",
-    "CreateIdentityProvider",
-    "CreateIpAccessSettings",
-    "CreateNetworkSettings",
-    "CreatePortal",
-    "CreateTrustStore",
-    "CreateUserAccessLoggingSettings",
-    "CreateUserSettings",
-    "DeleteBrowserSettings",
-    "DeleteIdentityProvider",
-    "DeleteIpAccessSettings",
-    "DeleteNetworkSettings",
-    "DeletePortal",
-    "DeleteTrustStore",
-    "DeleteUserAccessLoggingSettings",
-    "DeleteUserSettings",
-    "DisassociateBrowserSettings",
-    "DisassociateIpAccessSettings",
-    "DisassociateNetworkSettings",
-    "DisassociateTrustStore",
-    "DisassociateUserAccessLoggingSettings",
-    "DisassociateUserSettings",
-    "UpdateBrowserSettings",
-    "UpdateIdentityProvider",
-    "UpdateIpAccessSettings",
-    "UpdateNetworkSettings",
-    "UpdatePortal",
-    "UpdateTrustStore",
-    "UpdateUserAccessLoggingSettings",
-    "UpdateUserSettings"
-]
+    write = [
+      "AssociateBrowserSettings",
+      "AssociateIpAccessSettings",
+      "AssociateNetworkSettings",
+      "AssociateTrustStore",
+      "AssociateUserAccessLoggingSettings",
+      "AssociateUserSettings",
+      "CreateBrowserSettings",
+      "CreateIdentityProvider",
+      "CreateIpAccessSettings",
+      "CreateNetworkSettings",
+      "CreatePortal",
+      "CreateTrustStore",
+      "CreateUserAccessLoggingSettings",
+      "CreateUserSettings",
+      "DeleteBrowserSettings",
+      "DeleteIdentityProvider",
+      "DeleteIpAccessSettings",
+      "DeleteNetworkSettings",
+      "DeletePortal",
+      "DeleteTrustStore",
+      "DeleteUserAccessLoggingSettings",
+      "DeleteUserSettings",
+      "DisassociateBrowserSettings",
+      "DisassociateIpAccessSettings",
+      "DisassociateNetworkSettings",
+      "DisassociateTrustStore",
+      "DisassociateUserAccessLoggingSettings",
+      "DisassociateUserSettings",
+      "UpdateBrowserSettings",
+      "UpdateIdentityProvider",
+      "UpdateIpAccessSettings",
+      "UpdateNetworkSettings",
+      "UpdatePortal",
+      "UpdateTrustStore",
+      "UpdateUserAccessLoggingSettings",
+      "UpdateUserSettings"
+    ]
     permissions_management = []
-    read                   = [
-    "GetBrowserSettings",
-    "GetIdentityProvider",
-    "GetIpAccessSettings",
-    "GetNetworkSettings",
-    "GetPortal",
-    "GetPortalServiceProviderMetadata",
-    "GetTrustStore",
-    "GetTrustStoreCertificate",
-    "GetUserAccessLoggingSettings",
-    "GetUserSettings",
-    "ListBrowserSettings",
-    "ListIdentityProviders",
-    "ListIpAccessSettings",
-    "ListNetworkSettings",
-    "ListPortals",
-    "ListTagsForResource",
-    "ListTrustStoreCertificates",
-    "ListTrustStores",
-    "ListUserAccessLoggingSettings",
-    "ListUserSettings"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetBrowserSettings",
+      "GetIdentityProvider",
+      "GetIpAccessSettings",
+      "GetNetworkSettings",
+      "GetPortal",
+      "GetPortalServiceProviderMetadata",
+      "GetTrustStore",
+      "GetTrustStoreCertificate",
+      "GetUserAccessLoggingSettings",
+      "GetUserSettings",
+      "ListBrowserSettings",
+      "ListIdentityProviders",
+      "ListIpAccessSettings",
+      "ListNetworkSettings",
+      "ListPortals",
+      "ListTagsForResource",
+      "ListTrustStoreCertificates",
+      "ListTrustStores",
+      "ListUserAccessLoggingSettings",
+      "ListUserSettings"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

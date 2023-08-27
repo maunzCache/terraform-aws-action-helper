@@ -59,11 +59,11 @@ locals {
   prefix = "execute-api"
 
   access_level = {
-    write                  = [
-    "InvalidateCache",
-    "Invoke",
-    "ManageConnections"
-]
+    write = [
+      "InvalidateCache",
+      "Invoke",
+      "ManageConnections"
+    ]
     permissions_management = []
     read                   = []
     list                   = []

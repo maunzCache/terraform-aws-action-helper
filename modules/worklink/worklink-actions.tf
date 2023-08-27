@@ -59,48 +59,48 @@ locals {
   prefix = "worklink"
 
   access_level = {
-    write                  = [
-    "AssociateDomain",
-    "AssociateWebsiteAuthorizationProvider",
-    "AssociateWebsiteCertificateAuthority",
-    "CreateFleet",
-    "DeleteFleet",
-    "DisassociateDomain",
-    "DisassociateWebsiteAuthorizationProvider",
-    "DisassociateWebsiteCertificateAuthority",
-    "RestoreDomainAccess",
-    "RevokeDomainAccess",
-    "SignOutUser",
-    "UpdateAuditStreamConfiguration",
-    "UpdateCompanyNetworkConfiguration",
-    "UpdateDevicePolicyConfiguration",
-    "UpdateDomainMetadata",
-    "UpdateFleetMetadata",
-    "UpdateIdentityProviderConfiguration"
-]
+    write = [
+      "AssociateDomain",
+      "AssociateWebsiteAuthorizationProvider",
+      "AssociateWebsiteCertificateAuthority",
+      "CreateFleet",
+      "DeleteFleet",
+      "DisassociateDomain",
+      "DisassociateWebsiteAuthorizationProvider",
+      "DisassociateWebsiteCertificateAuthority",
+      "RestoreDomainAccess",
+      "RevokeDomainAccess",
+      "SignOutUser",
+      "UpdateAuditStreamConfiguration",
+      "UpdateCompanyNetworkConfiguration",
+      "UpdateDevicePolicyConfiguration",
+      "UpdateDomainMetadata",
+      "UpdateFleetMetadata",
+      "UpdateIdentityProviderConfiguration"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAuditStreamConfiguration",
-    "DescribeCompanyNetworkConfiguration",
-    "DescribeDevice",
-    "DescribeDevicePolicyConfiguration",
-    "DescribeDomain",
-    "DescribeFleetMetadata",
-    "DescribeIdentityProviderConfiguration",
-    "DescribeWebsiteCertificateAuthority",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListDevices",
-    "ListDomains",
-    "ListFleets",
-    "ListWebsiteAuthorizationProviders",
-    "ListWebsiteCertificateAuthorities",
-    "SearchEntity"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeAuditStreamConfiguration",
+      "DescribeCompanyNetworkConfiguration",
+      "DescribeDevice",
+      "DescribeDevicePolicyConfiguration",
+      "DescribeDomain",
+      "DescribeFleetMetadata",
+      "DescribeIdentityProviderConfiguration",
+      "DescribeWebsiteCertificateAuthority",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListDevices",
+      "ListDomains",
+      "ListFleets",
+      "ListWebsiteAuthorizationProviders",
+      "ListWebsiteCertificateAuthorities",
+      "SearchEntity"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

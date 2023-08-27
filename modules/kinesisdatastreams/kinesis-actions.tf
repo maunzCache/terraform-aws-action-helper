@@ -59,43 +59,43 @@ locals {
   prefix = "kinesis"
 
   access_level = {
-    write                  = [
-    "CreateStream",
-    "DecreaseStreamRetentionPeriod",
-    "DeleteStream",
-    "DeregisterStreamConsumer",
-    "DisableEnhancedMonitoring",
-    "EnableEnhancedMonitoring",
-    "IncreaseStreamRetentionPeriod",
-    "MergeShards",
-    "PutRecord",
-    "PutRecords",
-    "RegisterStreamConsumer",
-    "SplitShard",
-    "StartStreamEncryption",
-    "StopStreamEncryption",
-    "UpdateShardCount",
-    "UpdateStreamMode"
-]
+    write = [
+      "CreateStream",
+      "DecreaseStreamRetentionPeriod",
+      "DeleteStream",
+      "DeregisterStreamConsumer",
+      "DisableEnhancedMonitoring",
+      "EnableEnhancedMonitoring",
+      "IncreaseStreamRetentionPeriod",
+      "MergeShards",
+      "PutRecord",
+      "PutRecords",
+      "RegisterStreamConsumer",
+      "SplitShard",
+      "StartStreamEncryption",
+      "StopStreamEncryption",
+      "UpdateShardCount",
+      "UpdateStreamMode"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeLimits",
-    "DescribeStream",
-    "DescribeStreamConsumer",
-    "DescribeStreamSummary",
-    "GetRecords",
-    "GetShardIterator",
-    "ListTagsForStream",
-    "SubscribeToShard"
-]
-    list                   = [
-    "ListShards",
-    "ListStreamConsumers",
-    "ListStreams"
-]
-    tagging                = [
-    "AddTagsToStream",
-    "RemoveTagsFromStream"
-]
+    read = [
+      "DescribeLimits",
+      "DescribeStream",
+      "DescribeStreamConsumer",
+      "DescribeStreamSummary",
+      "GetRecords",
+      "GetShardIterator",
+      "ListTagsForStream",
+      "SubscribeToShard"
+    ]
+    list = [
+      "ListShards",
+      "ListStreamConsumers",
+      "ListStreams"
+    ]
+    tagging = [
+      "AddTagsToStream",
+      "RemoveTagsFromStream"
+    ]
   }
 }

@@ -59,50 +59,50 @@ locals {
   prefix = "network-firewall"
 
   access_level = {
-    write                  = [
-    "AssociateFirewallPolicy",
-    "AssociateSubnets",
-    "CreateFirewall",
-    "CreateFirewallPolicy",
-    "CreateRuleGroup",
-    "CreateTLSInspectionConfiguration",
-    "DeleteFirewall",
-    "DeleteFirewallPolicy",
-    "DeleteResourcePolicy",
-    "DeleteRuleGroup",
-    "DeleteTLSInspectionConfiguration",
-    "DisassociateSubnets",
-    "PutResourcePolicy",
-    "UpdateFirewallDeleteProtection",
-    "UpdateFirewallDescription",
-    "UpdateFirewallEncryptionConfiguration",
-    "UpdateFirewallPolicy",
-    "UpdateFirewallPolicyChangeProtection",
-    "UpdateLoggingConfiguration",
-    "UpdateRuleGroup",
-    "UpdateSubnetChangeProtection",
-    "UpdateTLSInspectionConfiguration"
-]
+    write = [
+      "AssociateFirewallPolicy",
+      "AssociateSubnets",
+      "CreateFirewall",
+      "CreateFirewallPolicy",
+      "CreateRuleGroup",
+      "CreateTLSInspectionConfiguration",
+      "DeleteFirewall",
+      "DeleteFirewallPolicy",
+      "DeleteResourcePolicy",
+      "DeleteRuleGroup",
+      "DeleteTLSInspectionConfiguration",
+      "DisassociateSubnets",
+      "PutResourcePolicy",
+      "UpdateFirewallDeleteProtection",
+      "UpdateFirewallDescription",
+      "UpdateFirewallEncryptionConfiguration",
+      "UpdateFirewallPolicy",
+      "UpdateFirewallPolicyChangeProtection",
+      "UpdateLoggingConfiguration",
+      "UpdateRuleGroup",
+      "UpdateSubnetChangeProtection",
+      "UpdateTLSInspectionConfiguration"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeFirewall",
-    "DescribeFirewallPolicy",
-    "DescribeLoggingConfiguration",
-    "DescribeResourcePolicy",
-    "DescribeRuleGroup",
-    "DescribeRuleGroupMetadata",
-    "DescribeTLSInspectionConfiguration"
-]
-    list                   = [
-    "ListFirewallPolicies",
-    "ListFirewalls",
-    "ListRuleGroups",
-    "ListTLSInspectionConfigurations",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeFirewall",
+      "DescribeFirewallPolicy",
+      "DescribeLoggingConfiguration",
+      "DescribeResourcePolicy",
+      "DescribeRuleGroup",
+      "DescribeRuleGroupMetadata",
+      "DescribeTLSInspectionConfiguration"
+    ]
+    list = [
+      "ListFirewallPolicies",
+      "ListFirewalls",
+      "ListRuleGroups",
+      "ListTLSInspectionConfigurations",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

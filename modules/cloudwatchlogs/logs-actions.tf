@@ -59,75 +59,75 @@ locals {
   prefix = "logs"
 
   access_level = {
-    write                  = [
-    "AssociateKmsKey",
-    "CancelExportTask",
-    "CreateExportTask",
-    "CreateLogDelivery",
-    "CreateLogGroup",
-    "CreateLogStream",
-    "DeleteAccountPolicy",
-    "DeleteDataProtectionPolicy",
-    "DeleteDestination",
-    "DeleteLogDelivery",
-    "DeleteLogGroup",
-    "DeleteLogStream",
-    "DeleteMetricFilter",
-    "DeleteQueryDefinition",
-    "DeleteRetentionPolicy",
-    "DeleteSubscriptionFilter",
-    "DisassociateKmsKey",
-    "Link",
-    "PutAccountPolicy",
-    "PutDataProtectionPolicy",
-    "PutDestination",
-    "PutDestinationPolicy",
-    "PutLogEvents",
-    "PutMetricFilter",
-    "PutQueryDefinition",
-    "PutRetentionPolicy",
-    "PutSubscriptionFilter",
-    "UpdateLogDelivery"
-]
+    write = [
+      "AssociateKmsKey",
+      "CancelExportTask",
+      "CreateExportTask",
+      "CreateLogDelivery",
+      "CreateLogGroup",
+      "CreateLogStream",
+      "DeleteAccountPolicy",
+      "DeleteDataProtectionPolicy",
+      "DeleteDestination",
+      "DeleteLogDelivery",
+      "DeleteLogGroup",
+      "DeleteLogStream",
+      "DeleteMetricFilter",
+      "DeleteQueryDefinition",
+      "DeleteRetentionPolicy",
+      "DeleteSubscriptionFilter",
+      "DisassociateKmsKey",
+      "Link",
+      "PutAccountPolicy",
+      "PutDataProtectionPolicy",
+      "PutDestination",
+      "PutDestinationPolicy",
+      "PutLogEvents",
+      "PutMetricFilter",
+      "PutQueryDefinition",
+      "PutRetentionPolicy",
+      "PutSubscriptionFilter",
+      "UpdateLogDelivery"
+    ]
     permissions_management = [
-    "DeleteResourcePolicy",
-    "PutResourcePolicy"
-]
-    read                   = [
-    "FilterLogEvents",
-    "GetDataProtectionPolicy",
-    "GetLogDelivery",
-    "GetLogEvents",
-    "GetLogGroupFields",
-    "GetLogRecord",
-    "GetQueryResults",
-    "StartLiveTail",
-    "StartQuery",
-    "StopLiveTail",
-    "StopQuery",
-    "TestMetricFilter",
-    "Unmask"
-]
-    list                   = [
-    "DescribeAccountPolicies",
-    "DescribeDestinations",
-    "DescribeExportTasks",
-    "DescribeLogGroups",
-    "DescribeLogStreams",
-    "DescribeMetricFilters",
-    "DescribeQueries",
-    "DescribeQueryDefinitions",
-    "DescribeResourcePolicies",
-    "DescribeSubscriptionFilters",
-    "ListLogDeliveries",
-    "ListTagsForResource",
-    "ListTagsLogGroup"
-]
-    tagging                = [
-    "TagLogGroup",
-    "TagResource",
-    "UntagLogGroup",
-    "UntagResource"
-]
+      "DeleteResourcePolicy",
+      "PutResourcePolicy"
+    ]
+    read = [
+      "FilterLogEvents",
+      "GetDataProtectionPolicy",
+      "GetLogDelivery",
+      "GetLogEvents",
+      "GetLogGroupFields",
+      "GetLogRecord",
+      "GetQueryResults",
+      "StartLiveTail",
+      "StartQuery",
+      "StopLiveTail",
+      "StopQuery",
+      "TestMetricFilter",
+      "Unmask"
+    ]
+    list = [
+      "DescribeAccountPolicies",
+      "DescribeDestinations",
+      "DescribeExportTasks",
+      "DescribeLogGroups",
+      "DescribeLogStreams",
+      "DescribeMetricFilters",
+      "DescribeQueries",
+      "DescribeQueryDefinitions",
+      "DescribeResourcePolicies",
+      "DescribeSubscriptionFilters",
+      "ListLogDeliveries",
+      "ListTagsForResource",
+      "ListTagsLogGroup"
+    ]
+    tagging = [
+      "TagLogGroup",
+      "TagResource",
+      "UntagLogGroup",
+      "UntagResource"
+    ]
   }
 }

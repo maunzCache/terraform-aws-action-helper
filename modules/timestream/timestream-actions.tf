@@ -59,49 +59,49 @@ locals {
   prefix = "timestream"
 
   access_level = {
-    write                  = [
-    "CancelQuery",
-    "CreateBatchLoadTask",
-    "CreateDatabase",
-    "CreateScheduledQuery",
-    "CreateTable",
-    "DeleteDatabase",
-    "DeleteScheduledQuery",
-    "DeleteTable",
-    "ExecuteScheduledQuery",
-    "ResumeBatchLoadTask",
-    "StartAwsBackupJob",
-    "StartAwsRestoreJob",
-    "Unload",
-    "UpdateDatabase",
-    "UpdateScheduledQuery",
-    "UpdateTable",
-    "WriteRecords"
-]
+    write = [
+      "CancelQuery",
+      "CreateBatchLoadTask",
+      "CreateDatabase",
+      "CreateScheduledQuery",
+      "CreateTable",
+      "DeleteDatabase",
+      "DeleteScheduledQuery",
+      "DeleteTable",
+      "ExecuteScheduledQuery",
+      "ResumeBatchLoadTask",
+      "StartAwsBackupJob",
+      "StartAwsRestoreJob",
+      "Unload",
+      "UpdateDatabase",
+      "UpdateScheduledQuery",
+      "UpdateTable",
+      "WriteRecords"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeBatchLoadTask",
-    "DescribeDatabase",
-    "DescribeScheduledQuery",
-    "DescribeTable",
-    "GetAwsBackupStatus",
-    "GetAwsRestoreStatus",
-    "ListTagsForResource",
-    "PrepareQuery",
-    "Select",
-    "SelectValues"
-]
-    list                   = [
-    "DescribeEndpoints",
-    "ListBatchLoadTasks",
-    "ListDatabases",
-    "ListMeasures",
-    "ListScheduledQueries",
-    "ListTables"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeBatchLoadTask",
+      "DescribeDatabase",
+      "DescribeScheduledQuery",
+      "DescribeTable",
+      "GetAwsBackupStatus",
+      "GetAwsRestoreStatus",
+      "ListTagsForResource",
+      "PrepareQuery",
+      "Select",
+      "SelectValues"
+    ]
+    list = [
+      "DescribeEndpoints",
+      "ListBatchLoadTasks",
+      "ListDatabases",
+      "ListMeasures",
+      "ListScheduledQueries",
+      "ListTables"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

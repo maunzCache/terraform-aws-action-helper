@@ -59,45 +59,45 @@ locals {
   prefix = "securitylake"
 
   access_level = {
-    write                  = [
-    "CreateAwsLogSource",
-    "CreateCustomLogSource",
-    "CreateDataLake",
-    "CreateDataLakeExceptionSubscription",
-    "CreateDataLakeOrganizationConfiguration",
-    "CreateSubscriber",
-    "CreateSubscriberNotification",
-    "DeleteAwsLogSource",
-    "DeleteCustomLogSource",
-    "DeleteDataLake",
-    "DeleteDataLakeExceptionSubscription",
-    "DeleteDataLakeOrganizationConfiguration",
-    "DeleteSubscriber",
-    "DeleteSubscriberNotification",
-    "DeregisterDataLakeDelegatedAdministrator",
-    "RegisterDataLakeDelegatedAdministrator",
-    "UpdateDataLake",
-    "UpdateDataLakeExceptionSubscription",
-    "UpdateSubscriber",
-    "UpdateSubscriberNotification"
-]
+    write = [
+      "CreateAwsLogSource",
+      "CreateCustomLogSource",
+      "CreateDataLake",
+      "CreateDataLakeExceptionSubscription",
+      "CreateDataLakeOrganizationConfiguration",
+      "CreateSubscriber",
+      "CreateSubscriberNotification",
+      "DeleteAwsLogSource",
+      "DeleteCustomLogSource",
+      "DeleteDataLake",
+      "DeleteDataLakeExceptionSubscription",
+      "DeleteDataLakeOrganizationConfiguration",
+      "DeleteSubscriber",
+      "DeleteSubscriberNotification",
+      "DeregisterDataLakeDelegatedAdministrator",
+      "RegisterDataLakeDelegatedAdministrator",
+      "UpdateDataLake",
+      "UpdateDataLakeExceptionSubscription",
+      "UpdateSubscriber",
+      "UpdateSubscriberNotification"
+    ]
     permissions_management = []
-    read                   = [
-    "GetDataLakeExceptionSubscription",
-    "GetDataLakeOrganizationConfiguration",
-    "GetDataLakeSources",
-    "GetSubscriber"
-]
-    list                   = [
-    "ListDataLakeExceptions",
-    "ListDataLakes",
-    "ListLogSources",
-    "ListSubscribers",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetDataLakeExceptionSubscription",
+      "GetDataLakeOrganizationConfiguration",
+      "GetDataLakeSources",
+      "GetSubscriber"
+    ]
+    list = [
+      "ListDataLakeExceptions",
+      "ListDataLakes",
+      "ListLogSources",
+      "ListSubscribers",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

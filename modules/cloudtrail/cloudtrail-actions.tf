@@ -59,65 +59,65 @@ locals {
   prefix = "cloudtrail"
 
   access_level = {
-    write                  = [
-    "CancelQuery",
-    "CreateChannel",
-    "CreateEventDataStore",
-    "CreateServiceLinkedChannel",
-    "CreateTrail",
-    "DeleteChannel",
-    "DeleteEventDataStore",
-    "DeleteResourcePolicy",
-    "DeleteServiceLinkedChannel",
-    "DeleteTrail",
-    "DeregisterOrganizationDelegatedAdmin",
-    "PutEventSelectors",
-    "PutInsightSelectors",
-    "PutResourcePolicy",
-    "RegisterOrganizationDelegatedAdmin",
-    "RestoreEventDataStore",
-    "StartEventDataStoreIngestion",
-    "StartImport",
-    "StartLogging",
-    "StartQuery",
-    "StopEventDataStoreIngestion",
-    "StopImport",
-    "StopLogging",
-    "UpdateChannel",
-    "UpdateEventDataStore",
-    "UpdateServiceLinkedChannel",
-    "UpdateTrail"
-]
+    write = [
+      "CancelQuery",
+      "CreateChannel",
+      "CreateEventDataStore",
+      "CreateServiceLinkedChannel",
+      "CreateTrail",
+      "DeleteChannel",
+      "DeleteEventDataStore",
+      "DeleteResourcePolicy",
+      "DeleteServiceLinkedChannel",
+      "DeleteTrail",
+      "DeregisterOrganizationDelegatedAdmin",
+      "PutEventSelectors",
+      "PutInsightSelectors",
+      "PutResourcePolicy",
+      "RegisterOrganizationDelegatedAdmin",
+      "RestoreEventDataStore",
+      "StartEventDataStoreIngestion",
+      "StartImport",
+      "StartLogging",
+      "StartQuery",
+      "StopEventDataStoreIngestion",
+      "StopImport",
+      "StopLogging",
+      "UpdateChannel",
+      "UpdateEventDataStore",
+      "UpdateServiceLinkedChannel",
+      "UpdateTrail"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeQuery",
-    "DescribeTrails",
-    "GetChannel",
-    "GetEventDataStore",
-    "GetEventSelectors",
-    "GetImport",
-    "GetInsightSelectors",
-    "GetQueryResults",
-    "GetResourcePolicy",
-    "GetServiceLinkedChannel",
-    "GetTrail",
-    "GetTrailStatus",
-    "ListImportFailures",
-    "ListPublicKeys",
-    "ListTags",
-    "LookupEvents"
-]
-    list                   = [
-    "ListChannels",
-    "ListEventDataStores",
-    "ListImports",
-    "ListQueries",
-    "ListServiceLinkedChannels",
-    "ListTrails"
-]
-    tagging                = [
-    "AddTags",
-    "RemoveTags"
-]
+    read = [
+      "DescribeQuery",
+      "DescribeTrails",
+      "GetChannel",
+      "GetEventDataStore",
+      "GetEventSelectors",
+      "GetImport",
+      "GetInsightSelectors",
+      "GetQueryResults",
+      "GetResourcePolicy",
+      "GetServiceLinkedChannel",
+      "GetTrail",
+      "GetTrailStatus",
+      "ListImportFailures",
+      "ListPublicKeys",
+      "ListTags",
+      "LookupEvents"
+    ]
+    list = [
+      "ListChannels",
+      "ListEventDataStores",
+      "ListImports",
+      "ListQueries",
+      "ListServiceLinkedChannels",
+      "ListTrails"
+    ]
+    tagging = [
+      "AddTags",
+      "RemoveTags"
+    ]
   }
 }

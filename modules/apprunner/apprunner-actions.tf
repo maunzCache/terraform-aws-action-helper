@@ -59,54 +59,54 @@ locals {
   prefix = "apprunner"
 
   access_level = {
-    write                  = [
-    "AssociateCustomDomain",
-    "AssociateWebAcl",
-    "CreateAutoScalingConfiguration",
-    "CreateConnection",
-    "CreateObservabilityConfiguration",
-    "CreateService",
-    "CreateVpcConnector",
-    "CreateVpcIngressConnection",
-    "DeleteAutoScalingConfiguration",
-    "DeleteConnection",
-    "DeleteObservabilityConfiguration",
-    "DeleteService",
-    "DeleteVpcConnector",
-    "DeleteVpcIngressConnection",
-    "DisassociateCustomDomain",
-    "DisassociateWebAcl",
-    "PauseService",
-    "ResumeService",
-    "StartDeployment",
-    "UpdateService",
-    "UpdateVpcIngressConnection"
-]
+    write = [
+      "AssociateCustomDomain",
+      "AssociateWebAcl",
+      "CreateAutoScalingConfiguration",
+      "CreateConnection",
+      "CreateObservabilityConfiguration",
+      "CreateService",
+      "CreateVpcConnector",
+      "CreateVpcIngressConnection",
+      "DeleteAutoScalingConfiguration",
+      "DeleteConnection",
+      "DeleteObservabilityConfiguration",
+      "DeleteService",
+      "DeleteVpcConnector",
+      "DeleteVpcIngressConnection",
+      "DisassociateCustomDomain",
+      "DisassociateWebAcl",
+      "PauseService",
+      "ResumeService",
+      "StartDeployment",
+      "UpdateService",
+      "UpdateVpcIngressConnection"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAutoScalingConfiguration",
-    "DescribeCustomDomains",
-    "DescribeObservabilityConfiguration",
-    "DescribeOperation",
-    "DescribeService",
-    "DescribeVpcConnector",
-    "DescribeVpcIngressConnection",
-    "DescribeWebAclForService",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAssociatedServicesForWebAcl",
-    "ListAutoScalingConfigurations",
-    "ListConnections",
-    "ListObservabilityConfigurations",
-    "ListOperations",
-    "ListServices",
-    "ListVpcConnectors",
-    "ListVpcIngressConnections"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeAutoScalingConfiguration",
+      "DescribeCustomDomains",
+      "DescribeObservabilityConfiguration",
+      "DescribeOperation",
+      "DescribeService",
+      "DescribeVpcConnector",
+      "DescribeVpcIngressConnection",
+      "DescribeWebAclForService",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAssociatedServicesForWebAcl",
+      "ListAutoScalingConfigurations",
+      "ListConnections",
+      "ListObservabilityConfigurations",
+      "ListOperations",
+      "ListServices",
+      "ListVpcConnectors",
+      "ListVpcIngressConnections"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

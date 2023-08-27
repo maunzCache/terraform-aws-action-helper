@@ -59,16 +59,16 @@ locals {
   prefix = "identitystore-auth"
 
   access_level = {
-    write                  = [
-    "BatchDeleteSession"
-]
+    write = [
+      "BatchDeleteSession"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetSession"
-]
-    list                   = [
-    "ListSessions"
-]
-    tagging                = []
+    read = [
+      "BatchGetSession"
+    ]
+    list = [
+      "ListSessions"
+    ]
+    tagging = []
   }
 }

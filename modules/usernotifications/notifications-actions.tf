@@ -59,35 +59,35 @@ locals {
   prefix = "notifications"
 
   access_level = {
-    write                  = [
-    "AssociateChannel",
-    "CreateEventRule",
-    "CreateNotificationConfiguration",
-    "DeleteEventRule",
-    "DeleteNotificationConfiguration",
-    "DeregisterNotificationHub",
-    "DisassociateChannel",
-    "RegisterNotificationHub",
-    "UpdateEventRule",
-    "UpdateNotificationConfiguration"
-]
+    write = [
+      "AssociateChannel",
+      "CreateEventRule",
+      "CreateNotificationConfiguration",
+      "DeleteEventRule",
+      "DeleteNotificationConfiguration",
+      "DeregisterNotificationHub",
+      "DisassociateChannel",
+      "RegisterNotificationHub",
+      "UpdateEventRule",
+      "UpdateNotificationConfiguration"
+    ]
     permissions_management = []
-    read                   = [
-    "GetEventRule",
-    "GetNotificationConfiguration",
-    "GetNotificationEvent",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListChannels",
-    "ListEventRules",
-    "ListNotificationConfigurations",
-    "ListNotificationEvents",
-    "ListNotificationHubs"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetEventRule",
+      "GetNotificationConfiguration",
+      "GetNotificationEvent",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListChannels",
+      "ListEventRules",
+      "ListNotificationConfigurations",
+      "ListNotificationEvents",
+      "ListNotificationHubs"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

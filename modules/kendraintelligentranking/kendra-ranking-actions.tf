@@ -59,23 +59,23 @@ locals {
   prefix = "kendra-ranking"
 
   access_level = {
-    write                  = [
-    "CreateRescoreExecutionPlan",
-    "DeleteRescoreExecutionPlan",
-    "UpdateRescoreExecutionPlan"
-]
+    write = [
+      "CreateRescoreExecutionPlan",
+      "DeleteRescoreExecutionPlan",
+      "UpdateRescoreExecutionPlan"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeRescoreExecutionPlan",
-    "ListTagsForResource",
-    "Rescore"
-]
-    list                   = [
-    "ListRescoreExecutionPlans"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeRescoreExecutionPlan",
+      "ListTagsForResource",
+      "Rescore"
+    ]
+    list = [
+      "ListRescoreExecutionPlans"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

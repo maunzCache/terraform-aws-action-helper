@@ -59,15 +59,15 @@ locals {
   prefix = "ssm-guiconnect"
 
   access_level = {
-    write                  = [
-    "CancelConnection",
-    "StartConnection"
-]
+    write = [
+      "CancelConnection",
+      "StartConnection"
+    ]
     permissions_management = []
-    read                   = [
-    "GetConnection"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetConnection"
+    ]
+    list    = []
+    tagging = []
   }
 }

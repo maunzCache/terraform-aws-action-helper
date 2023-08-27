@@ -59,44 +59,44 @@ locals {
   prefix = "devops-guru"
 
   access_level = {
-    write                  = [
-    "AddNotificationChannel",
-    "DeleteInsight",
-    "PutFeedback",
-    "RemoveNotificationChannel",
-    "UpdateEventSourcesConfig",
-    "UpdateResourceCollection",
-    "UpdateServiceIntegration"
-]
+    write = [
+      "AddNotificationChannel",
+      "DeleteInsight",
+      "PutFeedback",
+      "RemoveNotificationChannel",
+      "UpdateEventSourcesConfig",
+      "UpdateResourceCollection",
+      "UpdateServiceIntegration"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAccountHealth",
-    "DescribeAccountOverview",
-    "DescribeAnomaly",
-    "DescribeEventSourcesConfig",
-    "DescribeFeedback",
-    "DescribeInsight",
-    "DescribeOrganizationHealth",
-    "DescribeOrganizationOverview",
-    "DescribeOrganizationResourceCollectionHealth",
-    "DescribeResourceCollectionHealth",
-    "DescribeServiceIntegration",
-    "GetCostEstimation",
-    "GetResourceCollection",
-    "StartCostEstimation"
-]
-    list                   = [
-    "ListAnomaliesForInsight",
-    "ListAnomalousLogGroups",
-    "ListEvents",
-    "ListInsights",
-    "ListMonitoredResources",
-    "ListNotificationChannels",
-    "ListOrganizationInsights",
-    "ListRecommendations",
-    "SearchInsights",
-    "SearchOrganizationInsights"
-]
-    tagging                = []
+    read = [
+      "DescribeAccountHealth",
+      "DescribeAccountOverview",
+      "DescribeAnomaly",
+      "DescribeEventSourcesConfig",
+      "DescribeFeedback",
+      "DescribeInsight",
+      "DescribeOrganizationHealth",
+      "DescribeOrganizationOverview",
+      "DescribeOrganizationResourceCollectionHealth",
+      "DescribeResourceCollectionHealth",
+      "DescribeServiceIntegration",
+      "GetCostEstimation",
+      "GetResourceCollection",
+      "StartCostEstimation"
+    ]
+    list = [
+      "ListAnomaliesForInsight",
+      "ListAnomalousLogGroups",
+      "ListEvents",
+      "ListInsights",
+      "ListMonitoredResources",
+      "ListNotificationChannels",
+      "ListOrganizationInsights",
+      "ListRecommendations",
+      "SearchInsights",
+      "SearchOrganizationInsights"
+    ]
+    tagging = []
   }
 }

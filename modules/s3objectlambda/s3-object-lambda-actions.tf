@@ -59,41 +59,41 @@ locals {
   prefix = "s3-object-lambda"
 
   access_level = {
-    write                  = [
-    "AbortMultipartUpload",
-    "DeleteObject",
-    "DeleteObjectVersion",
-    "PutObject",
-    "PutObjectLegalHold",
-    "PutObjectRetention",
-    "RestoreObject",
-    "WriteGetObjectResponse"
-]
+    write = [
+      "AbortMultipartUpload",
+      "DeleteObject",
+      "DeleteObjectVersion",
+      "PutObject",
+      "PutObjectLegalHold",
+      "PutObjectRetention",
+      "RestoreObject",
+      "WriteGetObjectResponse"
+    ]
     permissions_management = [
-    "PutObjectAcl",
-    "PutObjectVersionAcl"
-]
-    read                   = [
-    "GetObject",
-    "GetObjectAcl",
-    "GetObjectLegalHold",
-    "GetObjectRetention",
-    "GetObjectTagging",
-    "GetObjectVersion",
-    "GetObjectVersionAcl",
-    "GetObjectVersionTagging"
-]
-    list                   = [
-    "ListBucket",
-    "ListBucketMultipartUploads",
-    "ListBucketVersions",
-    "ListMultipartUploadParts"
-]
-    tagging                = [
-    "DeleteObjectTagging",
-    "DeleteObjectVersionTagging",
-    "PutObjectTagging",
-    "PutObjectVersionTagging"
-]
+      "PutObjectAcl",
+      "PutObjectVersionAcl"
+    ]
+    read = [
+      "GetObject",
+      "GetObjectAcl",
+      "GetObjectLegalHold",
+      "GetObjectRetention",
+      "GetObjectTagging",
+      "GetObjectVersion",
+      "GetObjectVersionAcl",
+      "GetObjectVersionTagging"
+    ]
+    list = [
+      "ListBucket",
+      "ListBucketMultipartUploads",
+      "ListBucketVersions",
+      "ListMultipartUploadParts"
+    ]
+    tagging = [
+      "DeleteObjectTagging",
+      "DeleteObjectVersionTagging",
+      "PutObjectTagging",
+      "PutObjectVersionTagging"
+    ]
   }
 }

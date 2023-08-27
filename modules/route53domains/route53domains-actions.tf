@@ -59,48 +59,48 @@ locals {
   prefix = "route53domains"
 
   access_level = {
-    write                  = [
-    "AcceptDomainTransferFromAnotherAwsAccount",
-    "AssociateDelegationSignerToDomain",
-    "CancelDomainTransferToAnotherAwsAccount",
-    "DeleteDomain",
-    "DisableDomainAutoRenew",
-    "DisableDomainTransferLock",
-    "DisassociateDelegationSignerFromDomain",
-    "EnableDomainAutoRenew",
-    "EnableDomainTransferLock",
-    "PushDomain",
-    "RegisterDomain",
-    "RejectDomainTransferFromAnotherAwsAccount",
-    "RenewDomain",
-    "ResendContactReachabilityEmail",
-    "ResendOperationAuthorization",
-    "RetrieveDomainAuthCode",
-    "TransferDomain",
-    "TransferDomainToAnotherAwsAccount",
-    "UpdateDomainContact",
-    "UpdateDomainContactPrivacy",
-    "UpdateDomainNameservers"
-]
+    write = [
+      "AcceptDomainTransferFromAnotherAwsAccount",
+      "AssociateDelegationSignerToDomain",
+      "CancelDomainTransferToAnotherAwsAccount",
+      "DeleteDomain",
+      "DisableDomainAutoRenew",
+      "DisableDomainTransferLock",
+      "DisassociateDelegationSignerFromDomain",
+      "EnableDomainAutoRenew",
+      "EnableDomainTransferLock",
+      "PushDomain",
+      "RegisterDomain",
+      "RejectDomainTransferFromAnotherAwsAccount",
+      "RenewDomain",
+      "ResendContactReachabilityEmail",
+      "ResendOperationAuthorization",
+      "RetrieveDomainAuthCode",
+      "TransferDomain",
+      "TransferDomainToAnotherAwsAccount",
+      "UpdateDomainContact",
+      "UpdateDomainContactPrivacy",
+      "UpdateDomainNameservers"
+    ]
     permissions_management = []
-    read                   = [
-    "CheckDomainAvailability",
-    "CheckDomainTransferability",
-    "GetContactReachabilityStatus",
-    "GetDomainDetail",
-    "GetDomainSuggestions",
-    "GetOperationDetail",
-    "ListTagsForDomain",
-    "ViewBilling"
-]
-    list                   = [
-    "ListDomains",
-    "ListOperations",
-    "ListPrices"
-]
-    tagging                = [
-    "DeleteTagsForDomain",
-    "UpdateTagsForDomain"
-]
+    read = [
+      "CheckDomainAvailability",
+      "CheckDomainTransferability",
+      "GetContactReachabilityStatus",
+      "GetDomainDetail",
+      "GetDomainSuggestions",
+      "GetOperationDetail",
+      "ListTagsForDomain",
+      "ViewBilling"
+    ]
+    list = [
+      "ListDomains",
+      "ListOperations",
+      "ListPrices"
+    ]
+    tagging = [
+      "DeleteTagsForDomain",
+      "UpdateTagsForDomain"
+    ]
   }
 }

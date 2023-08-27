@@ -59,54 +59,54 @@ locals {
   prefix = "redshift-serverless"
 
   access_level = {
-    write                  = [
-    "ConvertRecoveryPointToSnapshot",
-    "CreateEndpointAccess",
-    "CreateNamespace",
-    "CreateSnapshot",
-    "CreateUsageLimit",
-    "CreateWorkgroup",
-    "DeleteEndpointAccess",
-    "DeleteNamespace",
-    "DeleteResourcePolicy",
-    "DeleteSnapshot",
-    "DeleteUsageLimit",
-    "DeleteWorkgroup",
-    "GetCredentials",
-    "PutResourcePolicy",
-    "RestoreFromRecoveryPoint",
-    "RestoreFromSnapshot",
-    "RestoreTableFromSnapshot",
-    "UpdateEndpointAccess",
-    "UpdateNamespace",
-    "UpdateSnapshot",
-    "UpdateUsageLimit",
-    "UpdateWorkgroup"
-]
+    write = [
+      "ConvertRecoveryPointToSnapshot",
+      "CreateEndpointAccess",
+      "CreateNamespace",
+      "CreateSnapshot",
+      "CreateUsageLimit",
+      "CreateWorkgroup",
+      "DeleteEndpointAccess",
+      "DeleteNamespace",
+      "DeleteResourcePolicy",
+      "DeleteSnapshot",
+      "DeleteUsageLimit",
+      "DeleteWorkgroup",
+      "GetCredentials",
+      "PutResourcePolicy",
+      "RestoreFromRecoveryPoint",
+      "RestoreFromSnapshot",
+      "RestoreTableFromSnapshot",
+      "UpdateEndpointAccess",
+      "UpdateNamespace",
+      "UpdateSnapshot",
+      "UpdateUsageLimit",
+      "UpdateWorkgroup"
+    ]
     permissions_management = []
-    read                   = [
-    "GetEndpointAccess",
-    "GetNamespace",
-    "GetRecoveryPoint",
-    "GetResourcePolicy",
-    "GetSnapshot",
-    "GetTableRestoreStatus",
-    "GetUsageLimit",
-    "GetWorkgroup"
-]
-    list                   = [
-    "ListEndpointAccess",
-    "ListNamespaces",
-    "ListRecoveryPoints",
-    "ListSnapshots",
-    "ListTableRestoreStatus",
-    "ListTagsForResource",
-    "ListUsageLimits",
-    "ListWorkgroups"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetEndpointAccess",
+      "GetNamespace",
+      "GetRecoveryPoint",
+      "GetResourcePolicy",
+      "GetSnapshot",
+      "GetTableRestoreStatus",
+      "GetUsageLimit",
+      "GetWorkgroup"
+    ]
+    list = [
+      "ListEndpointAccess",
+      "ListNamespaces",
+      "ListRecoveryPoints",
+      "ListSnapshots",
+      "ListTableRestoreStatus",
+      "ListTagsForResource",
+      "ListUsageLimits",
+      "ListWorkgroups"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

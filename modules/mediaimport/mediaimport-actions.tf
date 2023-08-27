@@ -59,9 +59,9 @@ locals {
   prefix = "mediaimport"
 
   access_level = {
-    write                  = [
-    "CreateDatabaseBinarySnapshot"
-]
+    write = [
+      "CreateDatabaseBinarySnapshot"
+    ]
     permissions_management = []
     read                   = []
     list                   = []

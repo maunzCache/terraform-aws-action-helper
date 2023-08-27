@@ -59,67 +59,67 @@ locals {
   prefix = "mediaconnect"
 
   access_level = {
-    write                  = [
-    "AddBridgeOutputs",
-    "AddBridgeSources",
-    "AddFlowMediaStreams",
-    "AddFlowOutputs",
-    "AddFlowSources",
-    "AddFlowVpcInterfaces",
-    "CreateBridge",
-    "CreateFlow",
-    "CreateGateway",
-    "DeleteBridge",
-    "DeleteFlow",
-    "DeleteGateway",
-    "DeregisterGatewayInstance",
-    "DiscoverGatewayPollEndpoint",
-    "GrantFlowEntitlements",
-    "PollGateway",
-    "PurchaseOffering",
-    "RemoveBridgeOutput",
-    "RemoveBridgeSource",
-    "RemoveFlowMediaStream",
-    "RemoveFlowOutput",
-    "RemoveFlowSource",
-    "RemoveFlowVpcInterface",
-    "RevokeFlowEntitlement",
-    "StartFlow",
-    "StopFlow",
-    "SubmitGatewayStateChange",
-    "UpdateBridge",
-    "UpdateBridgeOutput",
-    "UpdateBridgeSource",
-    "UpdateBridgeState",
-    "UpdateFlow",
-    "UpdateFlowEntitlement",
-    "UpdateFlowMediaStream",
-    "UpdateFlowOutput",
-    "UpdateFlowSource",
-    "UpdateGatewayInstance"
-]
+    write = [
+      "AddBridgeOutputs",
+      "AddBridgeSources",
+      "AddFlowMediaStreams",
+      "AddFlowOutputs",
+      "AddFlowSources",
+      "AddFlowVpcInterfaces",
+      "CreateBridge",
+      "CreateFlow",
+      "CreateGateway",
+      "DeleteBridge",
+      "DeleteFlow",
+      "DeleteGateway",
+      "DeregisterGatewayInstance",
+      "DiscoverGatewayPollEndpoint",
+      "GrantFlowEntitlements",
+      "PollGateway",
+      "PurchaseOffering",
+      "RemoveBridgeOutput",
+      "RemoveBridgeSource",
+      "RemoveFlowMediaStream",
+      "RemoveFlowOutput",
+      "RemoveFlowSource",
+      "RemoveFlowVpcInterface",
+      "RevokeFlowEntitlement",
+      "StartFlow",
+      "StopFlow",
+      "SubmitGatewayStateChange",
+      "UpdateBridge",
+      "UpdateBridgeOutput",
+      "UpdateBridgeSource",
+      "UpdateBridgeState",
+      "UpdateFlow",
+      "UpdateFlowEntitlement",
+      "UpdateFlowMediaStream",
+      "UpdateFlowOutput",
+      "UpdateFlowSource",
+      "UpdateGatewayInstance"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeBridge",
-    "DescribeFlow",
-    "DescribeGateway",
-    "DescribeGatewayInstance",
-    "DescribeOffering",
-    "DescribeReservation",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListBridges",
-    "ListEntitlements",
-    "ListFlows",
-    "ListGatewayInstances",
-    "ListGateways",
-    "ListOfferings",
-    "ListReservations"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeBridge",
+      "DescribeFlow",
+      "DescribeGateway",
+      "DescribeGatewayInstance",
+      "DescribeOffering",
+      "DescribeReservation",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListBridges",
+      "ListEntitlements",
+      "ListFlows",
+      "ListGatewayInstances",
+      "ListGateways",
+      "ListOfferings",
+      "ListReservations"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

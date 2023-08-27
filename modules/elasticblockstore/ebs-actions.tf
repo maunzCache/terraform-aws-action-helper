@@ -59,18 +59,18 @@ locals {
   prefix = "ebs"
 
   access_level = {
-    write                  = [
-    "CompleteSnapshot",
-    "PutSnapshotBlock",
-    "StartSnapshot"
-]
+    write = [
+      "CompleteSnapshot",
+      "PutSnapshotBlock",
+      "StartSnapshot"
+    ]
     permissions_management = []
-    read                   = [
-    "GetSnapshotBlock",
-    "ListChangedBlocks",
-    "ListSnapshotBlocks"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetSnapshotBlock",
+      "ListChangedBlocks",
+      "ListSnapshotBlocks"
+    ]
+    list    = []
+    tagging = []
   }
 }

@@ -61,20 +61,20 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "CompleteAccountRegistration",
-    "CompleteFileUpload",
-    "DownloadSoftware",
-    "GenerateLicenses",
-    "GetActivation",
-    "ListTagsForResource",
-    "StartAccountRegistration",
-    "StartFileUpload"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "CompleteAccountRegistration",
+      "CompleteFileUpload",
+      "DownloadSoftware",
+      "GenerateLicenses",
+      "GetActivation",
+      "ListTagsForResource",
+      "StartAccountRegistration",
+      "StartFileUpload"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

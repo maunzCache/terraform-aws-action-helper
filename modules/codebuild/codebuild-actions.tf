@@ -59,67 +59,67 @@ locals {
   prefix = "codebuild"
 
   access_level = {
-    write                  = [
-    "BatchDeleteBuilds",
-    "BatchPutCodeCoverages",
-    "BatchPutTestCases",
-    "CreateProject",
-    "CreateReport",
-    "CreateReportGroup",
-    "CreateWebhook",
-    "DeleteBuildBatch",
-    "DeleteOAuthToken",
-    "DeleteProject",
-    "DeleteReport",
-    "DeleteReportGroup",
-    "DeleteSourceCredentials",
-    "DeleteWebhook",
-    "ImportSourceCredentials",
-    "InvalidateProjectCache",
-    "PersistOAuthToken",
-    "RetryBuild",
-    "RetryBuildBatch",
-    "StartBuild",
-    "StartBuildBatch",
-    "StopBuild",
-    "StopBuildBatch",
-    "UpdateProject",
-    "UpdateProjectVisibility",
-    "UpdateReport",
-    "UpdateReportGroup",
-    "UpdateWebhook"
-]
+    write = [
+      "BatchDeleteBuilds",
+      "BatchPutCodeCoverages",
+      "BatchPutTestCases",
+      "CreateProject",
+      "CreateReport",
+      "CreateReportGroup",
+      "CreateWebhook",
+      "DeleteBuildBatch",
+      "DeleteOAuthToken",
+      "DeleteProject",
+      "DeleteReport",
+      "DeleteReportGroup",
+      "DeleteSourceCredentials",
+      "DeleteWebhook",
+      "ImportSourceCredentials",
+      "InvalidateProjectCache",
+      "PersistOAuthToken",
+      "RetryBuild",
+      "RetryBuildBatch",
+      "StartBuild",
+      "StartBuildBatch",
+      "StopBuild",
+      "StopBuildBatch",
+      "UpdateProject",
+      "UpdateProjectVisibility",
+      "UpdateReport",
+      "UpdateReportGroup",
+      "UpdateWebhook"
+    ]
     permissions_management = [
-    "DeleteResourcePolicy",
-    "PutResourcePolicy"
-]
-    read                   = [
-    "BatchGetBuildBatches",
-    "BatchGetBuilds",
-    "BatchGetProjects",
-    "BatchGetReportGroups",
-    "BatchGetReports",
-    "DescribeCodeCoverages",
-    "DescribeTestCases",
-    "GetReportGroupTrend",
-    "GetResourcePolicy"
-]
-    list                   = [
-    "ListBuildBatches",
-    "ListBuildBatchesForProject",
-    "ListBuilds",
-    "ListBuildsForProject",
-    "ListConnectedOAuthAccounts",
-    "ListCuratedEnvironmentImages",
-    "ListProjects",
-    "ListReportGroups",
-    "ListReports",
-    "ListReportsForReportGroup",
-    "ListRepositories",
-    "ListSharedProjects",
-    "ListSharedReportGroups",
-    "ListSourceCredentials"
-]
-    tagging                = []
+      "DeleteResourcePolicy",
+      "PutResourcePolicy"
+    ]
+    read = [
+      "BatchGetBuildBatches",
+      "BatchGetBuilds",
+      "BatchGetProjects",
+      "BatchGetReportGroups",
+      "BatchGetReports",
+      "DescribeCodeCoverages",
+      "DescribeTestCases",
+      "GetReportGroupTrend",
+      "GetResourcePolicy"
+    ]
+    list = [
+      "ListBuildBatches",
+      "ListBuildBatchesForProject",
+      "ListBuilds",
+      "ListBuildsForProject",
+      "ListConnectedOAuthAccounts",
+      "ListCuratedEnvironmentImages",
+      "ListProjects",
+      "ListReportGroups",
+      "ListReports",
+      "ListReportsForReportGroup",
+      "ListRepositories",
+      "ListSharedProjects",
+      "ListSharedReportGroups",
+      "ListSourceCredentials"
+    ]
+    tagging = []
   }
 }

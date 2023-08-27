@@ -59,38 +59,38 @@ locals {
   prefix = "deeplens"
 
   access_level = {
-    write                  = [
-    "CreateDeviceCertificates",
-    "CreateModel",
-    "CreateProject",
-    "DeleteModel",
-    "DeleteProject",
-    "DeployProject",
-    "DeregisterDevice",
-    "ImportProjectFromTemplate",
-    "RegisterDevice",
-    "RemoveProject",
-    "UpdateProject"
-]
+    write = [
+      "CreateDeviceCertificates",
+      "CreateModel",
+      "CreateProject",
+      "DeleteModel",
+      "DeleteProject",
+      "DeployProject",
+      "DeregisterDevice",
+      "ImportProjectFromTemplate",
+      "RegisterDevice",
+      "RemoveProject",
+      "UpdateProject"
+    ]
     permissions_management = [
-    "AssociateServiceRoleToAccount"
-]
-    read                   = [
-    "BatchGetDevice",
-    "BatchGetModel",
-    "BatchGetProject",
-    "GetAssociatedResources",
-    "GetDeploymentStatus",
-    "GetDevice",
-    "GetModel",
-    "GetProject"
-]
-    list                   = [
-    "ListDeployments",
-    "ListDevices",
-    "ListModels",
-    "ListProjects"
-]
-    tagging                = []
+      "AssociateServiceRoleToAccount"
+    ]
+    read = [
+      "BatchGetDevice",
+      "BatchGetModel",
+      "BatchGetProject",
+      "GetAssociatedResources",
+      "GetDeploymentStatus",
+      "GetDevice",
+      "GetModel",
+      "GetProject"
+    ]
+    list = [
+      "ListDeployments",
+      "ListDevices",
+      "ListModels",
+      "ListProjects"
+    ]
+    tagging = []
   }
 }

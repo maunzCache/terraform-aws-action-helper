@@ -59,40 +59,40 @@ locals {
   prefix = "iot1click"
 
   access_level = {
-    write                  = [
-    "AssociateDeviceWithPlacement",
-    "CreatePlacement",
-    "CreateProject",
-    "DeletePlacement",
-    "DeleteProject",
-    "DisassociateDeviceFromPlacement",
-    "InvokeDeviceMethod",
-    "UpdateDeviceState",
-    "UpdatePlacement",
-    "UpdateProject"
-]
+    write = [
+      "AssociateDeviceWithPlacement",
+      "CreatePlacement",
+      "CreateProject",
+      "DeletePlacement",
+      "DeleteProject",
+      "DisassociateDeviceFromPlacement",
+      "InvokeDeviceMethod",
+      "UpdateDeviceState",
+      "UpdatePlacement",
+      "UpdateProject"
+    ]
     permissions_management = []
-    read                   = [
-    "ClaimDevicesByClaimCode",
-    "DescribeDevice",
-    "DescribePlacement",
-    "DescribeProject",
-    "FinalizeDeviceClaim",
-    "GetDeviceMethods",
-    "GetDevicesInPlacement",
-    "InitiateDeviceClaim",
-    "ListDeviceEvents",
-    "ListPlacements",
-    "ListTagsForResource",
-    "UnclaimDevice"
-]
-    list                   = [
-    "ListDevices",
-    "ListProjects"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "ClaimDevicesByClaimCode",
+      "DescribeDevice",
+      "DescribePlacement",
+      "DescribeProject",
+      "FinalizeDeviceClaim",
+      "GetDeviceMethods",
+      "GetDevicesInPlacement",
+      "InitiateDeviceClaim",
+      "ListDeviceEvents",
+      "ListPlacements",
+      "ListTagsForResource",
+      "UnclaimDevice"
+    ]
+    list = [
+      "ListDevices",
+      "ListProjects"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

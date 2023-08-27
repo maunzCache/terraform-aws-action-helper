@@ -59,28 +59,28 @@ locals {
   prefix = "codecatalyst"
 
   access_level = {
-    write                  = [
-    "AcceptConnection",
-    "AssociateIamRoleToConnection",
-    "DeleteConnection",
-    "DisassociateIamRoleFromConnection",
-    "PutBillingAuthorization",
-    "RejectConnection"
-]
+    write = [
+      "AcceptConnection",
+      "AssociateIamRoleToConnection",
+      "DeleteConnection",
+      "DisassociateIamRoleFromConnection",
+      "PutBillingAuthorization",
+      "RejectConnection"
+    ]
     permissions_management = []
-    read                   = [
-    "GetBillingAuthorization",
-    "GetConnection",
-    "GetPendingConnection",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListConnections",
-    "ListIamRolesForConnection"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetBillingAuthorization",
+      "GetConnection",
+      "GetPendingConnection",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListConnections",
+      "ListIamRolesForConnection"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

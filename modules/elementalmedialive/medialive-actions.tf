@@ -59,76 +59,76 @@ locals {
   prefix = "medialive"
 
   access_level = {
-    write                  = [
-    "AcceptInputDeviceTransfer",
-    "BatchDelete",
-    "BatchStart",
-    "BatchStop",
-    "BatchUpdateSchedule",
-    "CancelInputDeviceTransfer",
-    "ClaimDevice",
-    "CreateChannel",
-    "CreateInput",
-    "CreateInputSecurityGroup",
-    "CreateMultiplex",
-    "CreateMultiplexProgram",
-    "CreatePartnerInput",
-    "DeleteChannel",
-    "DeleteInput",
-    "DeleteInputSecurityGroup",
-    "DeleteMultiplex",
-    "DeleteMultiplexProgram",
-    "DeleteReservation",
-    "DeleteSchedule",
-    "PurchaseOffering",
-    "RebootInputDevice",
-    "RejectInputDeviceTransfer",
-    "StartChannel",
-    "StartInputDeviceMaintenanceWindow",
-    "StartMultiplex",
-    "StopChannel",
-    "StopMultiplex",
-    "TransferInputDevice",
-    "UpdateAccountConfiguration",
-    "UpdateChannel",
-    "UpdateChannelClass",
-    "UpdateInput",
-    "UpdateInputDevice",
-    "UpdateInputSecurityGroup",
-    "UpdateMultiplex",
-    "UpdateMultiplexProgram",
-    "UpdateReservation"
-]
+    write = [
+      "AcceptInputDeviceTransfer",
+      "BatchDelete",
+      "BatchStart",
+      "BatchStop",
+      "BatchUpdateSchedule",
+      "CancelInputDeviceTransfer",
+      "ClaimDevice",
+      "CreateChannel",
+      "CreateInput",
+      "CreateInputSecurityGroup",
+      "CreateMultiplex",
+      "CreateMultiplexProgram",
+      "CreatePartnerInput",
+      "DeleteChannel",
+      "DeleteInput",
+      "DeleteInputSecurityGroup",
+      "DeleteMultiplex",
+      "DeleteMultiplexProgram",
+      "DeleteReservation",
+      "DeleteSchedule",
+      "PurchaseOffering",
+      "RebootInputDevice",
+      "RejectInputDeviceTransfer",
+      "StartChannel",
+      "StartInputDeviceMaintenanceWindow",
+      "StartMultiplex",
+      "StopChannel",
+      "StopMultiplex",
+      "TransferInputDevice",
+      "UpdateAccountConfiguration",
+      "UpdateChannel",
+      "UpdateChannelClass",
+      "UpdateInput",
+      "UpdateInputDevice",
+      "UpdateInputSecurityGroup",
+      "UpdateMultiplex",
+      "UpdateMultiplexProgram",
+      "UpdateReservation"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAccountConfiguration",
-    "DescribeChannel",
-    "DescribeInput",
-    "DescribeInputDevice",
-    "DescribeInputDeviceThumbnail",
-    "DescribeInputSecurityGroup",
-    "DescribeMultiplex",
-    "DescribeMultiplexProgram",
-    "DescribeOffering",
-    "DescribeReservation",
-    "DescribeSchedule",
-    "DescribeThumbnails"
-]
-    list                   = [
-    "ListChannels",
-    "ListInputDeviceTransfers",
-    "ListInputDevices",
-    "ListInputSecurityGroups",
-    "ListInputs",
-    "ListMultiplexPrograms",
-    "ListMultiplexes",
-    "ListOfferings",
-    "ListReservations",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "CreateTags",
-    "DeleteTags"
-]
+    read = [
+      "DescribeAccountConfiguration",
+      "DescribeChannel",
+      "DescribeInput",
+      "DescribeInputDevice",
+      "DescribeInputDeviceThumbnail",
+      "DescribeInputSecurityGroup",
+      "DescribeMultiplex",
+      "DescribeMultiplexProgram",
+      "DescribeOffering",
+      "DescribeReservation",
+      "DescribeSchedule",
+      "DescribeThumbnails"
+    ]
+    list = [
+      "ListChannels",
+      "ListInputDeviceTransfers",
+      "ListInputDevices",
+      "ListInputSecurityGroups",
+      "ListInputs",
+      "ListMultiplexPrograms",
+      "ListMultiplexes",
+      "ListOfferings",
+      "ListReservations",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "CreateTags",
+      "DeleteTags"
+    ]
   }
 }

@@ -59,47 +59,47 @@ locals {
   prefix = "m2"
 
   access_level = {
-    write                  = [
-    "CancelBatchJobExecution",
-    "CreateApplication",
-    "CreateDataSetImportTask",
-    "CreateDeployment",
-    "CreateEnvironment",
-    "DeleteApplication",
-    "DeleteApplicationFromEnvironment",
-    "DeleteEnvironment",
-    "StartApplication",
-    "StartBatchJob",
-    "StopApplication",
-    "UpdateApplication",
-    "UpdateEnvironment"
-]
+    write = [
+      "CancelBatchJobExecution",
+      "CreateApplication",
+      "CreateDataSetImportTask",
+      "CreateDeployment",
+      "CreateEnvironment",
+      "DeleteApplication",
+      "DeleteApplicationFromEnvironment",
+      "DeleteEnvironment",
+      "StartApplication",
+      "StartBatchJob",
+      "StopApplication",
+      "UpdateApplication",
+      "UpdateEnvironment"
+    ]
     permissions_management = []
-    read                   = [
-    "GetApplication",
-    "GetApplicationVersion",
-    "GetBatchJobExecution",
-    "GetDataSetDetails",
-    "GetDataSetImportTask",
-    "GetDeployment",
-    "GetEnvironment",
-    "GetSignedBluinsightsUrl",
-    "ListApplicationVersions",
-    "ListBatchJobDefinitions",
-    "ListBatchJobExecutions",
-    "ListDataSetImportHistory",
-    "ListDataSets",
-    "ListDeployments",
-    "ListEngineVersions",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListApplications",
-    "ListEnvironments"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetApplication",
+      "GetApplicationVersion",
+      "GetBatchJobExecution",
+      "GetDataSetDetails",
+      "GetDataSetImportTask",
+      "GetDeployment",
+      "GetEnvironment",
+      "GetSignedBluinsightsUrl",
+      "ListApplicationVersions",
+      "ListBatchJobDefinitions",
+      "ListBatchJobExecutions",
+      "ListDataSetImportHistory",
+      "ListDataSets",
+      "ListDeployments",
+      "ListEngineVersions",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListApplications",
+      "ListEnvironments"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

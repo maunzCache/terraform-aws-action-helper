@@ -59,38 +59,38 @@ locals {
   prefix = "batch"
 
   access_level = {
-    write                  = [
-    "CancelJob",
-    "CreateComputeEnvironment",
-    "CreateJobQueue",
-    "CreateSchedulingPolicy",
-    "DeleteComputeEnvironment",
-    "DeleteJobQueue",
-    "DeleteSchedulingPolicy",
-    "DeregisterJobDefinition",
-    "RegisterJobDefinition",
-    "SubmitJob",
-    "TerminateJob",
-    "UpdateComputeEnvironment",
-    "UpdateJobQueue",
-    "UpdateSchedulingPolicy"
-]
+    write = [
+      "CancelJob",
+      "CreateComputeEnvironment",
+      "CreateJobQueue",
+      "CreateSchedulingPolicy",
+      "DeleteComputeEnvironment",
+      "DeleteJobQueue",
+      "DeleteSchedulingPolicy",
+      "DeregisterJobDefinition",
+      "RegisterJobDefinition",
+      "SubmitJob",
+      "TerminateJob",
+      "UpdateComputeEnvironment",
+      "UpdateJobQueue",
+      "UpdateSchedulingPolicy"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeComputeEnvironments",
-    "DescribeJobDefinitions",
-    "DescribeJobQueues",
-    "DescribeJobs",
-    "DescribeSchedulingPolicies",
-    "ListSchedulingPolicies",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListJobs"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeComputeEnvironments",
+      "DescribeJobDefinitions",
+      "DescribeJobQueues",
+      "DescribeJobs",
+      "DescribeSchedulingPolicies",
+      "ListSchedulingPolicies",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListJobs"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

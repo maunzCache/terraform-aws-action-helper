@@ -59,22 +59,22 @@ locals {
   prefix = "budgets"
 
   access_level = {
-    write                  = [
-    "CreateBudgetAction",
-    "DeleteBudgetAction",
-    "ExecuteBudgetAction",
-    "ModifyBudget",
-    "UpdateBudgetAction"
-]
+    write = [
+      "CreateBudgetAction",
+      "DeleteBudgetAction",
+      "ExecuteBudgetAction",
+      "ModifyBudget",
+      "UpdateBudgetAction"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeBudgetAction",
-    "DescribeBudgetActionHistories",
-    "DescribeBudgetActionsForAccount",
-    "DescribeBudgetActionsForBudget",
-    "ViewBudget"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "DescribeBudgetAction",
+      "DescribeBudgetActionHistories",
+      "DescribeBudgetActionsForAccount",
+      "DescribeBudgetActionsForBudget",
+      "ViewBudget"
+    ]
+    list    = []
+    tagging = []
   }
 }

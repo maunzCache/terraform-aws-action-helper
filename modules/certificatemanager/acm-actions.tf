@@ -59,29 +59,29 @@ locals {
   prefix = "acm"
 
   access_level = {
-    write                  = [
-    "DeleteCertificate",
-    "ImportCertificate",
-    "PutAccountConfiguration",
-    "RenewCertificate",
-    "RequestCertificate",
-    "ResendValidationEmail",
-    "UpdateCertificateOptions"
-]
+    write = [
+      "DeleteCertificate",
+      "ImportCertificate",
+      "PutAccountConfiguration",
+      "RenewCertificate",
+      "RequestCertificate",
+      "ResendValidationEmail",
+      "UpdateCertificateOptions"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeCertificate",
-    "ExportCertificate",
-    "GetAccountConfiguration",
-    "GetCertificate",
-    "ListTagsForCertificate"
-]
-    list                   = [
-    "ListCertificates"
-]
-    tagging                = [
-    "AddTagsToCertificate",
-    "RemoveTagsFromCertificate"
-]
+    read = [
+      "DescribeCertificate",
+      "ExportCertificate",
+      "GetAccountConfiguration",
+      "GetCertificate",
+      "ListTagsForCertificate"
+    ]
+    list = [
+      "ListCertificates"
+    ]
+    tagging = [
+      "AddTagsToCertificate",
+      "RemoveTagsFromCertificate"
+    ]
   }
 }

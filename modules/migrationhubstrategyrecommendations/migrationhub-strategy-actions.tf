@@ -59,41 +59,41 @@ locals {
   prefix = "migrationhub-strategy"
 
   access_level = {
-    write                  = [
-    "PutPortfolioPreferences",
-    "RegisterCollector",
-    "SendMessage",
-    "StartAssessment",
-    "StartImportFileTask",
-    "StartRecommendationReportGeneration",
-    "StopAssessment",
-    "UpdateApplicationComponentConfig",
-    "UpdateCollectorConfiguration",
-    "UpdateServerConfig"
-]
+    write = [
+      "PutPortfolioPreferences",
+      "RegisterCollector",
+      "SendMessage",
+      "StartAssessment",
+      "StartImportFileTask",
+      "StartRecommendationReportGeneration",
+      "StopAssessment",
+      "UpdateApplicationComponentConfig",
+      "UpdateCollectorConfiguration",
+      "UpdateServerConfig"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAntiPattern",
-    "GetApplicationComponentDetails",
-    "GetApplicationComponentStrategies",
-    "GetAssessment",
-    "GetImportFileTask",
-    "GetLatestAssessmentId",
-    "GetMessage",
-    "GetPortfolioPreferences",
-    "GetPortfolioSummary",
-    "GetRecommendationReportDetails",
-    "GetServerDetails",
-    "GetServerStrategies"
-]
-    list                   = [
-    "ListAntiPatterns",
-    "ListApplicationComponents",
-    "ListCollectors",
-    "ListImportFileTask",
-    "ListJarArtifacts",
-    "ListServers"
-]
-    tagging                = []
+    read = [
+      "GetAntiPattern",
+      "GetApplicationComponentDetails",
+      "GetApplicationComponentStrategies",
+      "GetAssessment",
+      "GetImportFileTask",
+      "GetLatestAssessmentId",
+      "GetMessage",
+      "GetPortfolioPreferences",
+      "GetPortfolioSummary",
+      "GetRecommendationReportDetails",
+      "GetServerDetails",
+      "GetServerStrategies"
+    ]
+    list = [
+      "ListAntiPatterns",
+      "ListApplicationComponents",
+      "ListCollectors",
+      "ListImportFileTask",
+      "ListJarArtifacts",
+      "ListServers"
+    ]
+    tagging = []
   }
 }

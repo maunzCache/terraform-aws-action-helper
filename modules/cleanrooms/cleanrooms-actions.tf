@@ -59,59 +59,59 @@ locals {
   prefix = "cleanrooms"
 
   access_level = {
-    write                  = [
-    "CreateAnalysisTemplate",
-    "CreateCollaboration",
-    "CreateConfiguredTable",
-    "CreateConfiguredTableAnalysisRule",
-    "CreateConfiguredTableAssociation",
-    "CreateMembership",
-    "DeleteAnalysisTemplate",
-    "DeleteCollaboration",
-    "DeleteConfiguredTable",
-    "DeleteConfiguredTableAnalysisRule",
-    "DeleteConfiguredTableAssociation",
-    "DeleteMember",
-    "DeleteMembership",
-    "StartProtectedQuery",
-    "UpdateAnalysisTemplate",
-    "UpdateCollaboration",
-    "UpdateConfiguredTable",
-    "UpdateConfiguredTableAnalysisRule",
-    "UpdateConfiguredTableAssociation",
-    "UpdateMembership",
-    "UpdateProtectedQuery"
-]
+    write = [
+      "CreateAnalysisTemplate",
+      "CreateCollaboration",
+      "CreateConfiguredTable",
+      "CreateConfiguredTableAnalysisRule",
+      "CreateConfiguredTableAssociation",
+      "CreateMembership",
+      "DeleteAnalysisTemplate",
+      "DeleteCollaboration",
+      "DeleteConfiguredTable",
+      "DeleteConfiguredTableAnalysisRule",
+      "DeleteConfiguredTableAssociation",
+      "DeleteMember",
+      "DeleteMembership",
+      "StartProtectedQuery",
+      "UpdateAnalysisTemplate",
+      "UpdateCollaboration",
+      "UpdateConfiguredTable",
+      "UpdateConfiguredTableAnalysisRule",
+      "UpdateConfiguredTableAssociation",
+      "UpdateMembership",
+      "UpdateProtectedQuery"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetCollaborationAnalysisTemplate",
-    "BatchGetSchema",
-    "GetAnalysisTemplate",
-    "GetCollaboration",
-    "GetCollaborationAnalysisTemplate",
-    "GetConfiguredTable",
-    "GetConfiguredTableAnalysisRule",
-    "GetConfiguredTableAssociation",
-    "GetMembership",
-    "GetProtectedQuery",
-    "GetSchema",
-    "GetSchemaAnalysisRule"
-]
-    list                   = [
-    "ListAnalysisTemplates",
-    "ListCollaborationAnalysisTemplates",
-    "ListCollaborations",
-    "ListConfiguredTableAssociations",
-    "ListConfiguredTables",
-    "ListMembers",
-    "ListMemberships",
-    "ListProtectedQueries",
-    "ListSchemas",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchGetCollaborationAnalysisTemplate",
+      "BatchGetSchema",
+      "GetAnalysisTemplate",
+      "GetCollaboration",
+      "GetCollaborationAnalysisTemplate",
+      "GetConfiguredTable",
+      "GetConfiguredTableAnalysisRule",
+      "GetConfiguredTableAssociation",
+      "GetMembership",
+      "GetProtectedQuery",
+      "GetSchema",
+      "GetSchemaAnalysisRule"
+    ]
+    list = [
+      "ListAnalysisTemplates",
+      "ListCollaborationAnalysisTemplates",
+      "ListCollaborations",
+      "ListConfiguredTableAssociations",
+      "ListConfiguredTables",
+      "ListMembers",
+      "ListMemberships",
+      "ListProtectedQueries",
+      "ListSchemas",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

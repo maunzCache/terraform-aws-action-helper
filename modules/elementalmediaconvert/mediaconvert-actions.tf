@@ -59,42 +59,42 @@ locals {
   prefix = "mediaconvert"
 
   access_level = {
-    write                  = [
-    "AssociateCertificate",
-    "CancelJob",
-    "CreateJob",
-    "CreateJobTemplate",
-    "CreatePreset",
-    "CreateQueue",
-    "DeleteJobTemplate",
-    "DeletePolicy",
-    "DeletePreset",
-    "DeleteQueue",
-    "DisassociateCertificate",
-    "PutPolicy",
-    "UpdateJobTemplate",
-    "UpdatePreset",
-    "UpdateQueue"
-]
+    write = [
+      "AssociateCertificate",
+      "CancelJob",
+      "CreateJob",
+      "CreateJobTemplate",
+      "CreatePreset",
+      "CreateQueue",
+      "DeleteJobTemplate",
+      "DeletePolicy",
+      "DeletePreset",
+      "DeleteQueue",
+      "DisassociateCertificate",
+      "PutPolicy",
+      "UpdateJobTemplate",
+      "UpdatePreset",
+      "UpdateQueue"
+    ]
     permissions_management = []
-    read                   = [
-    "GetJob",
-    "GetJobTemplate",
-    "GetPolicy",
-    "GetPreset",
-    "GetQueue",
-    "ListTagsForResource"
-]
-    list                   = [
-    "DescribeEndpoints",
-    "ListJobTemplates",
-    "ListJobs",
-    "ListPresets",
-    "ListQueues"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetJob",
+      "GetJobTemplate",
+      "GetPolicy",
+      "GetPreset",
+      "GetQueue",
+      "ListTagsForResource"
+    ]
+    list = [
+      "DescribeEndpoints",
+      "ListJobTemplates",
+      "ListJobs",
+      "ListPresets",
+      "ListQueues"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

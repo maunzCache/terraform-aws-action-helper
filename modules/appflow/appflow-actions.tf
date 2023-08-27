@@ -59,45 +59,45 @@ locals {
   prefix = "appflow"
 
   access_level = {
-    write                  = [
-    "CancelFlowExecutions",
-    "CreateConnectorProfile",
-    "CreateFlow",
-    "DeleteConnectorProfile",
-    "DeleteFlow",
-    "RegisterConnector",
-    "ResetConnectorMetadataCache",
-    "RunFlow",
-    "StartFlow",
-    "StopFlow",
-    "UnRegisterConnector",
-    "UpdateConnectorProfile",
-    "UpdateConnectorRegistration",
-    "UpdateFlow",
-    "UseConnectorProfile"
-]
+    write = [
+      "CancelFlowExecutions",
+      "CreateConnectorProfile",
+      "CreateFlow",
+      "DeleteConnectorProfile",
+      "DeleteFlow",
+      "RegisterConnector",
+      "ResetConnectorMetadataCache",
+      "RunFlow",
+      "StartFlow",
+      "StopFlow",
+      "UnRegisterConnector",
+      "UpdateConnectorProfile",
+      "UpdateConnectorRegistration",
+      "UpdateFlow",
+      "UseConnectorProfile"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeConnector",
-    "DescribeConnectorEntity",
-    "DescribeConnectorFields",
-    "DescribeConnectorProfiles",
-    "DescribeConnectors",
-    "DescribeFlow",
-    "DescribeFlowExecution",
-    "DescribeFlowExecutionRecords",
-    "DescribeFlows",
-    "ListConnectorFields",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListConnectorEntities",
-    "ListConnectors",
-    "ListFlows"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeConnector",
+      "DescribeConnectorEntity",
+      "DescribeConnectorFields",
+      "DescribeConnectorProfiles",
+      "DescribeConnectors",
+      "DescribeFlow",
+      "DescribeFlowExecution",
+      "DescribeFlowExecutionRecords",
+      "DescribeFlows",
+      "ListConnectorFields",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListConnectorEntities",
+      "ListConnectors",
+      "ListFlows"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

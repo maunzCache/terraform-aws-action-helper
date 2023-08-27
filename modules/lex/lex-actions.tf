@@ -59,61 +59,61 @@ locals {
   prefix = "lex"
 
   access_level = {
-    write                  = [
-    "CreateBotVersion",
-    "CreateIntentVersion",
-    "CreateSlotTypeVersion",
-    "DeleteBot",
-    "DeleteBotAlias",
-    "DeleteBotChannelAssociation",
-    "DeleteBotVersion",
-    "DeleteIntent",
-    "DeleteIntentVersion",
-    "DeleteSession",
-    "DeleteSlotType",
-    "DeleteSlotTypeVersion",
-    "DeleteUtterances",
-    "PostContent",
-    "PostText",
-    "PutBot",
-    "PutBotAlias",
-    "PutIntent",
-    "PutSession",
-    "PutSlotType",
-    "StartImport",
-    "StartMigration"
-]
+    write = [
+      "CreateBotVersion",
+      "CreateIntentVersion",
+      "CreateSlotTypeVersion",
+      "DeleteBot",
+      "DeleteBotAlias",
+      "DeleteBotChannelAssociation",
+      "DeleteBotVersion",
+      "DeleteIntent",
+      "DeleteIntentVersion",
+      "DeleteSession",
+      "DeleteSlotType",
+      "DeleteSlotTypeVersion",
+      "DeleteUtterances",
+      "PostContent",
+      "PostText",
+      "PutBot",
+      "PutBotAlias",
+      "PutIntent",
+      "PutSession",
+      "PutSlotType",
+      "StartImport",
+      "StartMigration"
+    ]
     permissions_management = []
-    read                   = [
-    "GetBot",
-    "GetBotAlias",
-    "GetBotChannelAssociation",
-    "GetBuiltinIntent",
-    "GetBuiltinIntents",
-    "GetBuiltinSlotTypes",
-    "GetExport",
-    "GetImport",
-    "GetIntent",
-    "GetMigration",
-    "GetSession",
-    "GetSlotType",
-    "ListTagsForResource"
-]
-    list                   = [
-    "GetBotAliases",
-    "GetBotChannelAssociations",
-    "GetBotVersions",
-    "GetBots",
-    "GetIntentVersions",
-    "GetIntents",
-    "GetMigrations",
-    "GetSlotTypeVersions",
-    "GetSlotTypes",
-    "GetUtterancesView"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetBot",
+      "GetBotAlias",
+      "GetBotChannelAssociation",
+      "GetBuiltinIntent",
+      "GetBuiltinIntents",
+      "GetBuiltinSlotTypes",
+      "GetExport",
+      "GetImport",
+      "GetIntent",
+      "GetMigration",
+      "GetSession",
+      "GetSlotType",
+      "ListTagsForResource"
+    ]
+    list = [
+      "GetBotAliases",
+      "GetBotChannelAssociations",
+      "GetBotVersions",
+      "GetBots",
+      "GetIntentVersions",
+      "GetIntents",
+      "GetMigrations",
+      "GetSlotTypeVersions",
+      "GetSlotTypes",
+      "GetUtterancesView"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

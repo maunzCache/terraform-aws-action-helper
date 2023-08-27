@@ -59,40 +59,40 @@ locals {
   prefix = "chatbot"
 
   access_level = {
-    write                  = [
-    "CreateChimeWebhookConfiguration",
-    "CreateMicrosoftTeamsChannelConfiguration",
-    "CreateSlackChannelConfiguration",
-    "DeleteChimeWebhookConfiguration",
-    "DeleteMicrosoftTeamsChannelConfiguration",
-    "DeleteMicrosoftTeamsConfiguredTeam",
-    "DeleteMicrosoftTeamsUserIdentity",
-    "DeleteSlackChannelConfiguration",
-    "DeleteSlackUserIdentity",
-    "DeleteSlackWorkspaceAuthorization",
-    "RedeemMicrosoftTeamsOauthCode",
-    "RedeemSlackOauthCode",
-    "UpdateAccountPreferences",
-    "UpdateChimeWebhookConfiguration",
-    "UpdateMicrosoftTeamsChannelConfiguration",
-    "UpdateSlackChannelConfiguration"
-]
+    write = [
+      "CreateChimeWebhookConfiguration",
+      "CreateMicrosoftTeamsChannelConfiguration",
+      "CreateSlackChannelConfiguration",
+      "DeleteChimeWebhookConfiguration",
+      "DeleteMicrosoftTeamsChannelConfiguration",
+      "DeleteMicrosoftTeamsConfiguredTeam",
+      "DeleteMicrosoftTeamsUserIdentity",
+      "DeleteSlackChannelConfiguration",
+      "DeleteSlackUserIdentity",
+      "DeleteSlackWorkspaceAuthorization",
+      "RedeemMicrosoftTeamsOauthCode",
+      "RedeemSlackOauthCode",
+      "UpdateAccountPreferences",
+      "UpdateChimeWebhookConfiguration",
+      "UpdateMicrosoftTeamsChannelConfiguration",
+      "UpdateSlackChannelConfiguration"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeChimeWebhookConfigurations",
-    "DescribeSlackChannelConfigurations",
-    "DescribeSlackChannels",
-    "DescribeSlackUserIdentities",
-    "DescribeSlackWorkspaces",
-    "GetAccountPreferences",
-    "GetMicrosoftTeamsChannelConfiguration",
-    "GetMicrosoftTeamsOauthParameters",
-    "GetSlackOauthParameters",
-    "ListMicrosoftTeamsChannelConfigurations",
-    "ListMicrosoftTeamsConfiguredTeams",
-    "ListMicrosoftTeamsUserIdentities"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "DescribeChimeWebhookConfigurations",
+      "DescribeSlackChannelConfigurations",
+      "DescribeSlackChannels",
+      "DescribeSlackUserIdentities",
+      "DescribeSlackWorkspaces",
+      "GetAccountPreferences",
+      "GetMicrosoftTeamsChannelConfiguration",
+      "GetMicrosoftTeamsOauthParameters",
+      "GetSlackOauthParameters",
+      "ListMicrosoftTeamsChannelConfigurations",
+      "ListMicrosoftTeamsConfiguredTeams",
+      "ListMicrosoftTeamsUserIdentities"
+    ]
+    list    = []
+    tagging = []
   }
 }

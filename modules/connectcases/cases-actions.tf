@@ -59,44 +59,44 @@ locals {
   prefix = "cases"
 
   access_level = {
-    write                  = [
-    "BatchPutFieldOptions",
-    "CreateCase",
-    "CreateDomain",
-    "CreateField",
-    "CreateLayout",
-    "CreateRelatedItem",
-    "CreateTemplate",
-    "DeleteDomain",
-    "PutCaseEventConfiguration",
-    "UpdateCase",
-    "UpdateField",
-    "UpdateLayout",
-    "UpdateTemplate"
-]
+    write = [
+      "BatchPutFieldOptions",
+      "CreateCase",
+      "CreateDomain",
+      "CreateField",
+      "CreateLayout",
+      "CreateRelatedItem",
+      "CreateTemplate",
+      "DeleteDomain",
+      "PutCaseEventConfiguration",
+      "UpdateCase",
+      "UpdateField",
+      "UpdateLayout",
+      "UpdateTemplate"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetField",
-    "GetCase",
-    "GetCaseEventConfiguration",
-    "GetDomain",
-    "GetLayout",
-    "GetTemplate",
-    "ListTagsForResource",
-    "SearchCases",
-    "SearchRelatedItems"
-]
-    list                   = [
-    "ListCasesForContact",
-    "ListDomains",
-    "ListFieldOptions",
-    "ListFields",
-    "ListLayouts",
-    "ListTemplates"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchGetField",
+      "GetCase",
+      "GetCaseEventConfiguration",
+      "GetDomain",
+      "GetLayout",
+      "GetTemplate",
+      "ListTagsForResource",
+      "SearchCases",
+      "SearchRelatedItems"
+    ]
+    list = [
+      "ListCasesForContact",
+      "ListDomains",
+      "ListFieldOptions",
+      "ListFields",
+      "ListLayouts",
+      "ListTemplates"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

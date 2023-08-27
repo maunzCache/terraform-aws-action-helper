@@ -59,35 +59,35 @@ locals {
   prefix = "codestar-connections"
 
   access_level = {
-    write                  = [
-    "CreateConnection",
-    "CreateHost",
-    "DeleteConnection",
-    "DeleteHost",
-    "UpdateConnectionInstallation",
-    "UpdateHost"
-]
+    write = [
+      "CreateConnection",
+      "CreateHost",
+      "DeleteConnection",
+      "DeleteHost",
+      "UpdateConnectionInstallation",
+      "UpdateHost"
+    ]
     permissions_management = []
-    read                   = [
-    "GetConnection",
-    "GetHost",
-    "GetIndividualAccessToken",
-    "GetInstallationUrl",
-    "PassConnection",
-    "RegisterAppCode",
-    "StartAppRegistrationHandshake",
-    "StartOAuthHandshake",
-    "UseConnection"
-]
-    list                   = [
-    "ListConnections",
-    "ListHosts",
-    "ListInstallationTargets",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetConnection",
+      "GetHost",
+      "GetIndividualAccessToken",
+      "GetInstallationUrl",
+      "PassConnection",
+      "RegisterAppCode",
+      "StartAppRegistrationHandshake",
+      "StartOAuthHandshake",
+      "UseConnection"
+    ]
+    list = [
+      "ListConnections",
+      "ListHosts",
+      "ListInstallationTargets",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,32 +59,32 @@ locals {
   prefix = "medical-imaging"
 
   access_level = {
-    write                  = [
-    "CopyImageSet",
-    "CreateDatastore",
-    "DeleteDatastore",
-    "DeleteImageSet",
-    "StartDICOMImportJob",
-    "UpdateImageSetMetadata"
-]
+    write = [
+      "CopyImageSet",
+      "CreateDatastore",
+      "DeleteDatastore",
+      "DeleteImageSet",
+      "StartDICOMImportJob",
+      "UpdateImageSetMetadata"
+    ]
     permissions_management = []
-    read                   = [
-    "GetDICOMImportJob",
-    "GetDatastore",
-    "GetImageFrame",
-    "GetImageSet",
-    "GetImageSetMetadata",
-    "SearchImageSets"
-]
-    list                   = [
-    "ListDICOMImportJobs",
-    "ListDatastores",
-    "ListImageSetVersions",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetDICOMImportJob",
+      "GetDatastore",
+      "GetImageFrame",
+      "GetImageSet",
+      "GetImageSetMetadata",
+      "SearchImageSets"
+    ]
+    list = [
+      "ListDICOMImportJobs",
+      "ListDatastores",
+      "ListImageSetVersions",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

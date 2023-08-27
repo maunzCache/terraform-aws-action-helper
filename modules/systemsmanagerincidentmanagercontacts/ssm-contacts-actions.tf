@@ -59,55 +59,55 @@ locals {
   prefix = "ssm-contacts"
 
   access_level = {
-    write                  = [
-    "AcceptPage",
-    "ActivateContactChannel",
-    "CreateContact",
-    "CreateContactChannel",
-    "CreateRotation",
-    "CreateRotationOverride",
-    "DeactivateContactChannel",
-    "DeleteContact",
-    "DeleteContactChannel",
-    "DeleteRotation",
-    "DeleteRotationOverride",
-    "PutContactPolicy",
-    "SendActivationCode",
-    "StartEngagement",
-    "StopEngagement",
-    "UpdateContact",
-    "UpdateContactChannel",
-    "UpdateRotation"
-]
+    write = [
+      "AcceptPage",
+      "ActivateContactChannel",
+      "CreateContact",
+      "CreateContactChannel",
+      "CreateRotation",
+      "CreateRotationOverride",
+      "DeactivateContactChannel",
+      "DeleteContact",
+      "DeleteContactChannel",
+      "DeleteRotation",
+      "DeleteRotationOverride",
+      "PutContactPolicy",
+      "SendActivationCode",
+      "StartEngagement",
+      "StopEngagement",
+      "UpdateContact",
+      "UpdateContactChannel",
+      "UpdateRotation"
+    ]
     permissions_management = [
-    "AssociateContact"
-]
-    read                   = [
-    "DescribeEngagement",
-    "DescribePage",
-    "GetContact",
-    "GetContactChannel",
-    "GetContactPolicy",
-    "GetRotation",
-    "GetRotationOverride",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListContactChannels",
-    "ListContacts",
-    "ListEngagements",
-    "ListPageReceipts",
-    "ListPageResolutions",
-    "ListPagesByContact",
-    "ListPagesByEngagement",
-    "ListPreviewRotationShifts",
-    "ListRotationOverrides",
-    "ListRotationShifts",
-    "ListRotations"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "AssociateContact"
+    ]
+    read = [
+      "DescribeEngagement",
+      "DescribePage",
+      "GetContact",
+      "GetContactChannel",
+      "GetContactPolicy",
+      "GetRotation",
+      "GetRotationOverride",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListContactChannels",
+      "ListContacts",
+      "ListEngagements",
+      "ListPageReceipts",
+      "ListPageResolutions",
+      "ListPagesByContact",
+      "ListPagesByEngagement",
+      "ListPreviewRotationShifts",
+      "ListRotationOverrides",
+      "ListRotationShifts",
+      "ListRotations"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

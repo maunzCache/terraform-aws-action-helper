@@ -59,72 +59,72 @@ locals {
   prefix = "events"
 
   access_level = {
-    write                  = [
-    "ActivateEventSource",
-    "CancelReplay",
-    "CreateApiDestination",
-    "CreateArchive",
-    "CreateConnection",
-    "CreateEndpoint",
-    "CreateEventBus",
-    "CreatePartnerEventSource",
-    "DeactivateEventSource",
-    "DeauthorizeConnection",
-    "DeleteApiDestination",
-    "DeleteArchive",
-    "DeleteConnection",
-    "DeleteEndpoint",
-    "DeleteEventBus",
-    "DeletePartnerEventSource",
-    "DeleteRule",
-    "DisableRule",
-    "EnableRule",
-    "InvokeApiDestination",
-    "PutEvents",
-    "PutPartnerEvents",
-    "PutRule",
-    "PutTargets",
-    "RemoveTargets",
-    "StartReplay",
-    "UpdateApiDestination",
-    "UpdateArchive",
-    "UpdateConnection",
-    "UpdateEndpoint"
-]
+    write = [
+      "ActivateEventSource",
+      "CancelReplay",
+      "CreateApiDestination",
+      "CreateArchive",
+      "CreateConnection",
+      "CreateEndpoint",
+      "CreateEventBus",
+      "CreatePartnerEventSource",
+      "DeactivateEventSource",
+      "DeauthorizeConnection",
+      "DeleteApiDestination",
+      "DeleteArchive",
+      "DeleteConnection",
+      "DeleteEndpoint",
+      "DeleteEventBus",
+      "DeletePartnerEventSource",
+      "DeleteRule",
+      "DisableRule",
+      "EnableRule",
+      "InvokeApiDestination",
+      "PutEvents",
+      "PutPartnerEvents",
+      "PutRule",
+      "PutTargets",
+      "RemoveTargets",
+      "StartReplay",
+      "UpdateApiDestination",
+      "UpdateArchive",
+      "UpdateConnection",
+      "UpdateEndpoint"
+    ]
     permissions_management = [
-    "PutPermission",
-    "RemovePermission"
-]
-    read                   = [
-    "DescribeApiDestination",
-    "DescribeArchive",
-    "DescribeConnection",
-    "DescribeEndpoint",
-    "DescribeEventBus",
-    "DescribeEventSource",
-    "DescribePartnerEventSource",
-    "DescribeReplay",
-    "DescribeRule",
-    "TestEventPattern"
-]
-    list                   = [
-    "ListApiDestinations",
-    "ListArchives",
-    "ListConnections",
-    "ListEndpoints",
-    "ListEventBuses",
-    "ListEventSources",
-    "ListPartnerEventSourceAccounts",
-    "ListPartnerEventSources",
-    "ListReplays",
-    "ListRuleNamesByTarget",
-    "ListRules",
-    "ListTagsForResource",
-    "ListTargetsByRule"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "PutPermission",
+      "RemovePermission"
+    ]
+    read = [
+      "DescribeApiDestination",
+      "DescribeArchive",
+      "DescribeConnection",
+      "DescribeEndpoint",
+      "DescribeEventBus",
+      "DescribeEventSource",
+      "DescribePartnerEventSource",
+      "DescribeReplay",
+      "DescribeRule",
+      "TestEventPattern"
+    ]
+    list = [
+      "ListApiDestinations",
+      "ListArchives",
+      "ListConnections",
+      "ListEndpoints",
+      "ListEventBuses",
+      "ListEventSources",
+      "ListPartnerEventSourceAccounts",
+      "ListPartnerEventSources",
+      "ListReplays",
+      "ListRuleNamesByTarget",
+      "ListRules",
+      "ListTagsForResource",
+      "ListTargetsByRule"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

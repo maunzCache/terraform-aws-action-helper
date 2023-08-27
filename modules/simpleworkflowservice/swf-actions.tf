@@ -59,63 +59,63 @@ locals {
   prefix = "swf"
 
   access_level = {
-    write                  = [
-    "CancelTimer",
-    "CancelWorkflowExecution",
-    "CompleteWorkflowExecution",
-    "ContinueAsNewWorkflowExecution",
-    "DeprecateActivityType",
-    "DeprecateDomain",
-    "DeprecateWorkflowType",
-    "FailWorkflowExecution",
-    "PollForActivityTask",
-    "PollForDecisionTask",
-    "RecordActivityTaskHeartbeat",
-    "RecordMarker",
-    "RegisterActivityType",
-    "RegisterDomain",
-    "RegisterWorkflowType",
-    "RequestCancelActivityTask",
-    "RequestCancelExternalWorkflowExecution",
-    "RequestCancelWorkflowExecution",
-    "RespondActivityTaskCanceled",
-    "RespondActivityTaskCompleted",
-    "RespondActivityTaskFailed",
-    "RespondDecisionTaskCompleted",
-    "ScheduleActivityTask",
-    "SignalExternalWorkflowExecution",
-    "SignalWorkflowExecution",
-    "StartChildWorkflowExecution",
-    "StartTimer",
-    "StartWorkflowExecution",
-    "TerminateWorkflowExecution",
-    "UndeprecateActivityType",
-    "UndeprecateDomain",
-    "UndeprecateWorkflowType"
-]
+    write = [
+      "CancelTimer",
+      "CancelWorkflowExecution",
+      "CompleteWorkflowExecution",
+      "ContinueAsNewWorkflowExecution",
+      "DeprecateActivityType",
+      "DeprecateDomain",
+      "DeprecateWorkflowType",
+      "FailWorkflowExecution",
+      "PollForActivityTask",
+      "PollForDecisionTask",
+      "RecordActivityTaskHeartbeat",
+      "RecordMarker",
+      "RegisterActivityType",
+      "RegisterDomain",
+      "RegisterWorkflowType",
+      "RequestCancelActivityTask",
+      "RequestCancelExternalWorkflowExecution",
+      "RequestCancelWorkflowExecution",
+      "RespondActivityTaskCanceled",
+      "RespondActivityTaskCompleted",
+      "RespondActivityTaskFailed",
+      "RespondDecisionTaskCompleted",
+      "ScheduleActivityTask",
+      "SignalExternalWorkflowExecution",
+      "SignalWorkflowExecution",
+      "StartChildWorkflowExecution",
+      "StartTimer",
+      "StartWorkflowExecution",
+      "TerminateWorkflowExecution",
+      "UndeprecateActivityType",
+      "UndeprecateDomain",
+      "UndeprecateWorkflowType"
+    ]
     permissions_management = []
-    read                   = [
-    "CountClosedWorkflowExecutions",
-    "CountOpenWorkflowExecutions",
-    "CountPendingActivityTasks",
-    "CountPendingDecisionTasks",
-    "DescribeActivityType",
-    "DescribeDomain",
-    "DescribeWorkflowExecution",
-    "DescribeWorkflowType",
-    "GetWorkflowExecutionHistory"
-]
-    list                   = [
-    "ListActivityTypes",
-    "ListClosedWorkflowExecutions",
-    "ListDomains",
-    "ListOpenWorkflowExecutions",
-    "ListTagsForResource",
-    "ListWorkflowTypes"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "CountClosedWorkflowExecutions",
+      "CountOpenWorkflowExecutions",
+      "CountPendingActivityTasks",
+      "CountPendingDecisionTasks",
+      "DescribeActivityType",
+      "DescribeDomain",
+      "DescribeWorkflowExecution",
+      "DescribeWorkflowType",
+      "GetWorkflowExecutionHistory"
+    ]
+    list = [
+      "ListActivityTypes",
+      "ListClosedWorkflowExecutions",
+      "ListDomains",
+      "ListOpenWorkflowExecutions",
+      "ListTagsForResource",
+      "ListWorkflowTypes"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

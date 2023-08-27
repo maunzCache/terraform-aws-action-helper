@@ -59,23 +59,23 @@ locals {
   prefix = "license-manager-user-subscriptions"
 
   access_level = {
-    write                  = [
-    "AssociateUser",
-    "DeregisterIdentityProvider",
-    "DisassociateUser",
-    "RegisterIdentityProvider",
-    "StartProductSubscription",
-    "StopProductSubscription",
-    "UpdateIdentityProviderSettings"
-]
+    write = [
+      "AssociateUser",
+      "DeregisterIdentityProvider",
+      "DisassociateUser",
+      "RegisterIdentityProvider",
+      "StartProductSubscription",
+      "StopProductSubscription",
+      "UpdateIdentityProviderSettings"
+    ]
     permissions_management = []
     read                   = []
-    list                   = [
-    "ListIdentityProviders",
-    "ListInstances",
-    "ListProductSubscriptions",
-    "ListUserAssociations"
-]
-    tagging                = []
+    list = [
+      "ListIdentityProviders",
+      "ListInstances",
+      "ListProductSubscriptions",
+      "ListUserAssociations"
+    ]
+    tagging = []
   }
 }

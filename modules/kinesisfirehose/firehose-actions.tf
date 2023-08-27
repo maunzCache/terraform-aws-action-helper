@@ -59,26 +59,26 @@ locals {
   prefix = "firehose"
 
   access_level = {
-    write                  = [
-    "CreateDeliveryStream",
-    "DeleteDeliveryStream",
-    "PutRecord",
-    "PutRecordBatch",
-    "StartDeliveryStreamEncryption",
-    "StopDeliveryStreamEncryption",
-    "UpdateDestination"
-]
+    write = [
+      "CreateDeliveryStream",
+      "DeleteDeliveryStream",
+      "PutRecord",
+      "PutRecordBatch",
+      "StartDeliveryStreamEncryption",
+      "StopDeliveryStreamEncryption",
+      "UpdateDestination"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeDeliveryStream"
-]
-    list                   = [
-    "ListDeliveryStreams",
-    "ListTagsForDeliveryStream"
-]
-    tagging                = [
-    "TagDeliveryStream",
-    "UntagDeliveryStream"
-]
+    read = [
+      "DescribeDeliveryStream"
+    ]
+    list = [
+      "ListDeliveryStreams",
+      "ListTagsForDeliveryStream"
+    ]
+    tagging = [
+      "TagDeliveryStream",
+      "UntagDeliveryStream"
+    ]
   }
 }

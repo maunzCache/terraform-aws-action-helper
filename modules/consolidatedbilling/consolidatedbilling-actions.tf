@@ -61,12 +61,12 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "GetAccountBillingRole"
-]
-    list                   = [
-    "ListLinkedAccounts"
-]
-    tagging                = []
+    read = [
+      "GetAccountBillingRole"
+    ]
+    list = [
+      "ListLinkedAccounts"
+    ]
+    tagging = []
   }
 }

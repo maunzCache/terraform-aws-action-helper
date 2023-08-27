@@ -59,24 +59,24 @@ locals {
   prefix = "tax"
 
   access_level = {
-    write                  = [
-    "BatchPutTaxRegistration",
-    "DeleteTaxRegistration",
-    "PutTaxInheritance",
-    "PutTaxInterview",
-    "PutTaxRegistration",
-    "UpdateExemptions"
-]
+    write = [
+      "BatchPutTaxRegistration",
+      "DeleteTaxRegistration",
+      "PutTaxInheritance",
+      "PutTaxInterview",
+      "PutTaxRegistration",
+      "UpdateExemptions"
+    ]
     permissions_management = []
-    read                   = [
-    "GetExemptions",
-    "GetTaxInheritance",
-    "GetTaxInterview",
-    "GetTaxRegistration",
-    "GetTaxRegistrationDocument",
-    "ListTaxRegistrations"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetExemptions",
+      "GetTaxInheritance",
+      "GetTaxInterview",
+      "GetTaxRegistration",
+      "GetTaxRegistrationDocument",
+      "ListTaxRegistrations"
+    ]
+    list    = []
+    tagging = []
   }
 }

@@ -59,81 +59,81 @@ locals {
   prefix = "workspaces"
 
   access_level = {
-    write                  = [
-    "AssociateConnectionAlias",
-    "AssociateIpGroups",
-    "AuthorizeIpRules",
-    "CopyWorkspaceImage",
-    "CreateConnectClientAddIn",
-    "CreateConnectionAlias",
-    "CreateIpGroup",
-    "CreateStandbyWorkspaces",
-    "CreateUpdatedWorkspaceImage",
-    "CreateWorkspaceBundle",
-    "CreateWorkspaceImage",
-    "CreateWorkspaces",
-    "DeleteClientBranding",
-    "DeleteConnectClientAddIn",
-    "DeleteConnectionAlias",
-    "DeleteIpGroup",
-    "DeleteWorkspaceBundle",
-    "DeleteWorkspaceImage",
-    "DeregisterWorkspaceDirectory",
-    "DisassociateConnectionAlias",
-    "DisassociateIpGroups",
-    "ImportClientBranding",
-    "ImportWorkspaceImage",
-    "MigrateWorkspace",
-    "ModifyAccount",
-    "ModifyCertificateBasedAuthProperties",
-    "ModifyClientProperties",
-    "ModifySamlProperties",
-    "ModifyWorkspaceAccessProperties",
-    "ModifyWorkspaceCreationProperties",
-    "ModifyWorkspaceProperties",
-    "ModifyWorkspaceState",
-    "RebootWorkspaces",
-    "RebuildWorkspaces",
-    "RegisterWorkspaceDirectory",
-    "RestoreWorkspace",
-    "RevokeIpRules",
-    "StartWorkspaces",
-    "StopWorkspaces",
-    "Stream",
-    "TerminateWorkspaces",
-    "UpdateConnectClientAddIn",
-    "UpdateRulesOfIpGroup",
-    "UpdateWorkspaceBundle"
-]
+    write = [
+      "AssociateConnectionAlias",
+      "AssociateIpGroups",
+      "AuthorizeIpRules",
+      "CopyWorkspaceImage",
+      "CreateConnectClientAddIn",
+      "CreateConnectionAlias",
+      "CreateIpGroup",
+      "CreateStandbyWorkspaces",
+      "CreateUpdatedWorkspaceImage",
+      "CreateWorkspaceBundle",
+      "CreateWorkspaceImage",
+      "CreateWorkspaces",
+      "DeleteClientBranding",
+      "DeleteConnectClientAddIn",
+      "DeleteConnectionAlias",
+      "DeleteIpGroup",
+      "DeleteWorkspaceBundle",
+      "DeleteWorkspaceImage",
+      "DeregisterWorkspaceDirectory",
+      "DisassociateConnectionAlias",
+      "DisassociateIpGroups",
+      "ImportClientBranding",
+      "ImportWorkspaceImage",
+      "MigrateWorkspace",
+      "ModifyAccount",
+      "ModifyCertificateBasedAuthProperties",
+      "ModifyClientProperties",
+      "ModifySamlProperties",
+      "ModifyWorkspaceAccessProperties",
+      "ModifyWorkspaceCreationProperties",
+      "ModifyWorkspaceProperties",
+      "ModifyWorkspaceState",
+      "RebootWorkspaces",
+      "RebuildWorkspaces",
+      "RegisterWorkspaceDirectory",
+      "RestoreWorkspace",
+      "RevokeIpRules",
+      "StartWorkspaces",
+      "StopWorkspaces",
+      "Stream",
+      "TerminateWorkspaces",
+      "UpdateConnectClientAddIn",
+      "UpdateRulesOfIpGroup",
+      "UpdateWorkspaceBundle"
+    ]
     permissions_management = [
-    "ModifySelfservicePermissions",
-    "UpdateConnectionAliasPermission",
-    "UpdateWorkspaceImagePermission"
-]
-    read                   = [
-    "DescribeAccount",
-    "DescribeAccountModifications",
-    "DescribeClientBranding",
-    "DescribeConnectionAliasPermissions",
-    "DescribeConnectionAliases",
-    "DescribeIpGroups",
-    "DescribeTags",
-    "DescribeWorkspaceDirectories",
-    "DescribeWorkspaceImagePermissions",
-    "DescribeWorkspacesConnectionStatus"
-]
-    list                   = [
-    "DescribeClientProperties",
-    "DescribeConnectClientAddIns",
-    "DescribeWorkspaceBundles",
-    "DescribeWorkspaceImages",
-    "DescribeWorkspaceSnapshots",
-    "DescribeWorkspaces",
-    "ListAvailableManagementCidrRanges"
-]
-    tagging                = [
-    "CreateTags",
-    "DeleteTags"
-]
+      "ModifySelfservicePermissions",
+      "UpdateConnectionAliasPermission",
+      "UpdateWorkspaceImagePermission"
+    ]
+    read = [
+      "DescribeAccount",
+      "DescribeAccountModifications",
+      "DescribeClientBranding",
+      "DescribeConnectionAliasPermissions",
+      "DescribeConnectionAliases",
+      "DescribeIpGroups",
+      "DescribeTags",
+      "DescribeWorkspaceDirectories",
+      "DescribeWorkspaceImagePermissions",
+      "DescribeWorkspacesConnectionStatus"
+    ]
+    list = [
+      "DescribeClientProperties",
+      "DescribeConnectClientAddIns",
+      "DescribeWorkspaceBundles",
+      "DescribeWorkspaceImages",
+      "DescribeWorkspaceSnapshots",
+      "DescribeWorkspaces",
+      "ListAvailableManagementCidrRanges"
+    ]
+    tagging = [
+      "CreateTags",
+      "DeleteTags"
+    ]
   }
 }

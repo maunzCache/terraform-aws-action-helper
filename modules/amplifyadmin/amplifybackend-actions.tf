@@ -59,44 +59,44 @@ locals {
   prefix = "amplifybackend"
 
   access_level = {
-    write                  = [
-    "CloneBackend",
-    "CreateBackend",
-    "CreateBackendAPI",
-    "CreateBackendAuth",
-    "CreateBackendConfig",
-    "CreateBackendStorage",
-    "CreateToken",
-    "DeleteBackend",
-    "DeleteBackendAPI",
-    "DeleteBackendAuth",
-    "DeleteBackendStorage",
-    "DeleteToken",
-    "GenerateBackendAPIModels",
-    "ImportBackendAuth",
-    "ImportBackendStorage",
-    "RemoveAllBackends",
-    "RemoveBackendConfig",
-    "UpdateBackendAPI",
-    "UpdateBackendAuth",
-    "UpdateBackendConfig",
-    "UpdateBackendJob",
-    "UpdateBackendStorage"
-]
+    write = [
+      "CloneBackend",
+      "CreateBackend",
+      "CreateBackendAPI",
+      "CreateBackendAuth",
+      "CreateBackendConfig",
+      "CreateBackendStorage",
+      "CreateToken",
+      "DeleteBackend",
+      "DeleteBackendAPI",
+      "DeleteBackendAuth",
+      "DeleteBackendStorage",
+      "DeleteToken",
+      "GenerateBackendAPIModels",
+      "ImportBackendAuth",
+      "ImportBackendStorage",
+      "RemoveAllBackends",
+      "RemoveBackendConfig",
+      "UpdateBackendAPI",
+      "UpdateBackendAuth",
+      "UpdateBackendConfig",
+      "UpdateBackendJob",
+      "UpdateBackendStorage"
+    ]
     permissions_management = []
-    read                   = [
-    "GetBackend",
-    "GetBackendAPI",
-    "GetBackendAPIModels",
-    "GetBackendAuth",
-    "GetBackendJob",
-    "GetBackendStorage",
-    "GetToken"
-]
-    list                   = [
-    "ListBackendJobs",
-    "ListS3Buckets"
-]
-    tagging                = []
+    read = [
+      "GetBackend",
+      "GetBackendAPI",
+      "GetBackendAPIModels",
+      "GetBackendAuth",
+      "GetBackendJob",
+      "GetBackendStorage",
+      "GetToken"
+    ]
+    list = [
+      "ListBackendJobs",
+      "ListS3Buckets"
+    ]
+    tagging = []
   }
 }

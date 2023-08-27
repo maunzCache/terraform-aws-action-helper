@@ -61,16 +61,16 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "BatchGetTokenBalance",
-    "GetTokenBalance",
-    "GetTransaction"
-]
-    list                   = [
-    "ListTokenBalances",
-    "ListTransactionEvents",
-    "ListTransactions"
-]
-    tagging                = []
+    read = [
+      "BatchGetTokenBalance",
+      "GetTokenBalance",
+      "GetTransaction"
+    ]
+    list = [
+      "ListTokenBalances",
+      "ListTransactionEvents",
+      "ListTransactions"
+    ]
+    tagging = []
   }
 }

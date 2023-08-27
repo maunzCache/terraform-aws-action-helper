@@ -59,53 +59,53 @@ locals {
   prefix = "trustedadvisor"
 
   access_level = {
-    write                  = [
-    "CreateEngagement",
-    "CreateEngagementAttachment",
-    "CreateEngagementCommunication",
-    "DeleteNotificationConfigurationForDelegatedAdmin",
-    "ExcludeCheckItems",
-    "GenerateReport",
-    "IncludeCheckItems",
-    "RefreshCheck",
-    "SetAccountAccess",
-    "SetOrganizationAccess",
-    "UpdateEngagement",
-    "UpdateEngagementStatus",
-    "UpdateNotificationConfigurations",
-    "UpdateNotificationPreferences",
-    "UpdateRiskStatus"
-]
+    write = [
+      "CreateEngagement",
+      "CreateEngagementAttachment",
+      "CreateEngagementCommunication",
+      "DeleteNotificationConfigurationForDelegatedAdmin",
+      "ExcludeCheckItems",
+      "GenerateReport",
+      "IncludeCheckItems",
+      "RefreshCheck",
+      "SetAccountAccess",
+      "SetOrganizationAccess",
+      "UpdateEngagement",
+      "UpdateEngagementStatus",
+      "UpdateNotificationConfigurations",
+      "UpdateNotificationPreferences",
+      "UpdateRiskStatus"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAccount",
-    "DescribeAccountAccess",
-    "DescribeCheckItems",
-    "DescribeCheckRefreshStatuses",
-    "DescribeCheckStatusHistoryChanges",
-    "DescribeCheckSummaries",
-    "DescribeChecks",
-    "DescribeNotificationConfigurations",
-    "DescribeNotificationPreferences",
-    "DescribeOrganization",
-    "DescribeOrganizationAccounts",
-    "DescribeReports",
-    "DescribeRisk",
-    "DescribeRiskResources",
-    "DescribeRisks",
-    "DescribeServiceMetadata",
-    "DownloadRisk",
-    "GetEngagement",
-    "GetEngagementAttachment",
-    "GetEngagementType",
-    "ListAccountsForParent",
-    "ListEngagementCommunications",
-    "ListEngagementTypes",
-    "ListEngagements",
-    "ListOrganizationalUnitsForParent",
-    "ListRoots"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "DescribeAccount",
+      "DescribeAccountAccess",
+      "DescribeCheckItems",
+      "DescribeCheckRefreshStatuses",
+      "DescribeCheckStatusHistoryChanges",
+      "DescribeCheckSummaries",
+      "DescribeChecks",
+      "DescribeNotificationConfigurations",
+      "DescribeNotificationPreferences",
+      "DescribeOrganization",
+      "DescribeOrganizationAccounts",
+      "DescribeReports",
+      "DescribeRisk",
+      "DescribeRiskResources",
+      "DescribeRisks",
+      "DescribeServiceMetadata",
+      "DownloadRisk",
+      "GetEngagement",
+      "GetEngagementAttachment",
+      "GetEngagementType",
+      "ListAccountsForParent",
+      "ListEngagementCommunications",
+      "ListEngagementTypes",
+      "ListEngagements",
+      "ListOrganizationalUnitsForParent",
+      "ListRoots"
+    ]
+    list    = []
+    tagging = []
   }
 }

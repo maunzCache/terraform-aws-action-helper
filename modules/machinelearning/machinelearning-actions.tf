@@ -59,42 +59,42 @@ locals {
   prefix = "machinelearning"
 
   access_level = {
-    write                  = [
-    "CreateBatchPrediction",
-    "CreateDataSourceFromRDS",
-    "CreateDataSourceFromRedshift",
-    "CreateDataSourceFromS3",
-    "CreateEvaluation",
-    "CreateMLModel",
-    "CreateRealtimeEndpoint",
-    "DeleteBatchPrediction",
-    "DeleteDataSource",
-    "DeleteEvaluation",
-    "DeleteMLModel",
-    "DeleteRealtimeEndpoint",
-    "Predict",
-    "UpdateBatchPrediction",
-    "UpdateDataSource",
-    "UpdateEvaluation",
-    "UpdateMLModel"
-]
+    write = [
+      "CreateBatchPrediction",
+      "CreateDataSourceFromRDS",
+      "CreateDataSourceFromRedshift",
+      "CreateDataSourceFromS3",
+      "CreateEvaluation",
+      "CreateMLModel",
+      "CreateRealtimeEndpoint",
+      "DeleteBatchPrediction",
+      "DeleteDataSource",
+      "DeleteEvaluation",
+      "DeleteMLModel",
+      "DeleteRealtimeEndpoint",
+      "Predict",
+      "UpdateBatchPrediction",
+      "UpdateDataSource",
+      "UpdateEvaluation",
+      "UpdateMLModel"
+    ]
     permissions_management = []
-    read                   = [
-    "GetBatchPrediction",
-    "GetDataSource",
-    "GetEvaluation",
-    "GetMLModel"
-]
-    list                   = [
-    "DescribeBatchPredictions",
-    "DescribeDataSources",
-    "DescribeEvaluations",
-    "DescribeMLModels",
-    "DescribeTags"
-]
-    tagging                = [
-    "AddTags",
-    "DeleteTags"
-]
+    read = [
+      "GetBatchPrediction",
+      "GetDataSource",
+      "GetEvaluation",
+      "GetMLModel"
+    ]
+    list = [
+      "DescribeBatchPredictions",
+      "DescribeDataSources",
+      "DescribeEvaluations",
+      "DescribeMLModels",
+      "DescribeTags"
+    ]
+    tagging = [
+      "AddTags",
+      "DeleteTags"
+    ]
   }
 }

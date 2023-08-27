@@ -59,28 +59,28 @@ locals {
   prefix = "serverlessrepo"
 
   access_level = {
-    write                  = [
-    "CreateApplication",
-    "CreateApplicationVersion",
-    "CreateCloudFormationChangeSet",
-    "CreateCloudFormationTemplate",
-    "DeleteApplication",
-    "PutApplicationPolicy",
-    "UnshareApplication",
-    "UpdateApplication"
-]
+    write = [
+      "CreateApplication",
+      "CreateApplicationVersion",
+      "CreateCloudFormationChangeSet",
+      "CreateCloudFormationTemplate",
+      "DeleteApplication",
+      "PutApplicationPolicy",
+      "UnshareApplication",
+      "UpdateApplication"
+    ]
     permissions_management = []
-    read                   = [
-    "GetApplication",
-    "GetApplicationPolicy",
-    "GetCloudFormationTemplate",
-    "SearchApplications"
-]
-    list                   = [
-    "ListApplicationDependencies",
-    "ListApplicationVersions",
-    "ListApplications"
-]
-    tagging                = []
+    read = [
+      "GetApplication",
+      "GetApplicationPolicy",
+      "GetCloudFormationTemplate",
+      "SearchApplications"
+    ]
+    list = [
+      "ListApplicationDependencies",
+      "ListApplicationVersions",
+      "ListApplications"
+    ]
+    tagging = []
   }
 }

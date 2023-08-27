@@ -59,48 +59,48 @@ locals {
   prefix = "xray"
 
   access_level = {
-    write                  = [
-    "CreateGroup",
-    "CreateSamplingRule",
-    "DeleteGroup",
-    "DeleteResourcePolicy",
-    "DeleteSamplingRule",
-    "Link",
-    "PutResourcePolicy",
-    "PutTelemetryRecords",
-    "PutTraceSegments",
-    "UpdateGroup",
-    "UpdateSamplingRule"
-]
+    write = [
+      "CreateGroup",
+      "CreateSamplingRule",
+      "DeleteGroup",
+      "DeleteResourcePolicy",
+      "DeleteSamplingRule",
+      "Link",
+      "PutResourcePolicy",
+      "PutTelemetryRecords",
+      "PutTraceSegments",
+      "UpdateGroup",
+      "UpdateSamplingRule"
+    ]
     permissions_management = [
-    "PutEncryptionConfig"
-]
-    read                   = [
-    "BatchGetTraceSummaryById",
-    "GetDistinctTraceGraphs",
-    "GetEncryptionConfig",
-    "GetGroup",
-    "GetGroups",
-    "GetInsight",
-    "GetInsightEvents",
-    "GetInsightImpactGraph",
-    "GetInsightSummaries",
-    "GetSamplingRules",
-    "GetSamplingStatisticSummaries",
-    "GetSamplingTargets",
-    "GetServiceGraph",
-    "GetTimeSeriesServiceStatistics",
-    "GetTraceGraph",
-    "GetTraceSummaries"
-]
-    list                   = [
-    "BatchGetTraces",
-    "ListResourcePolicies",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "PutEncryptionConfig"
+    ]
+    read = [
+      "BatchGetTraceSummaryById",
+      "GetDistinctTraceGraphs",
+      "GetEncryptionConfig",
+      "GetGroup",
+      "GetGroups",
+      "GetInsight",
+      "GetInsightEvents",
+      "GetInsightImpactGraph",
+      "GetInsightSummaries",
+      "GetSamplingRules",
+      "GetSamplingStatisticSummaries",
+      "GetSamplingTargets",
+      "GetServiceGraph",
+      "GetTimeSeriesServiceStatistics",
+      "GetTraceGraph",
+      "GetTraceSummaries"
+    ]
+    list = [
+      "BatchGetTraces",
+      "ListResourcePolicies",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

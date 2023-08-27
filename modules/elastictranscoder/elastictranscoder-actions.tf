@@ -59,30 +59,30 @@ locals {
   prefix = "elastictranscoder"
 
   access_level = {
-    write                  = [
-    "CancelJob",
-    "CreateJob",
-    "CreatePipeline",
-    "CreatePreset",
-    "DeletePipeline",
-    "DeletePreset",
-    "TestRole",
-    "UpdatePipeline",
-    "UpdatePipelineNotifications",
-    "UpdatePipelineStatus"
-]
+    write = [
+      "CancelJob",
+      "CreateJob",
+      "CreatePipeline",
+      "CreatePreset",
+      "DeletePipeline",
+      "DeletePreset",
+      "TestRole",
+      "UpdatePipeline",
+      "UpdatePipelineNotifications",
+      "UpdatePipelineStatus"
+    ]
     permissions_management = []
-    read                   = [
-    "ReadJob",
-    "ReadPipeline",
-    "ReadPreset"
-]
-    list                   = [
-    "ListJobsByPipeline",
-    "ListJobsByStatus",
-    "ListPipelines",
-    "ListPresets"
-]
-    tagging                = []
+    read = [
+      "ReadJob",
+      "ReadPipeline",
+      "ReadPreset"
+    ]
+    list = [
+      "ListJobsByPipeline",
+      "ListJobsByStatus",
+      "ListPipelines",
+      "ListPresets"
+    ]
+    tagging = []
   }
 }

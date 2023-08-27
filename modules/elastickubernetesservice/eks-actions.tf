@@ -59,50 +59,50 @@ locals {
   prefix = "eks"
 
   access_level = {
-    write                  = [
-    "AssociateEncryptionConfig",
-    "AssociateIdentityProviderConfig",
-    "CreateAddon",
-    "CreateCluster",
-    "CreateFargateProfile",
-    "CreateNodegroup",
-    "DeleteAddon",
-    "DeleteCluster",
-    "DeleteFargateProfile",
-    "DeleteNodegroup",
-    "DeregisterCluster",
-    "DisassociateIdentityProviderConfig",
-    "RegisterCluster",
-    "UpdateAddon",
-    "UpdateClusterConfig",
-    "UpdateClusterVersion",
-    "UpdateNodegroupConfig",
-    "UpdateNodegroupVersion"
-]
+    write = [
+      "AssociateEncryptionConfig",
+      "AssociateIdentityProviderConfig",
+      "CreateAddon",
+      "CreateCluster",
+      "CreateFargateProfile",
+      "CreateNodegroup",
+      "DeleteAddon",
+      "DeleteCluster",
+      "DeleteFargateProfile",
+      "DeleteNodegroup",
+      "DeregisterCluster",
+      "DisassociateIdentityProviderConfig",
+      "RegisterCluster",
+      "UpdateAddon",
+      "UpdateClusterConfig",
+      "UpdateClusterVersion",
+      "UpdateNodegroupConfig",
+      "UpdateNodegroupVersion"
+    ]
     permissions_management = []
-    read                   = [
-    "AccessKubernetesApi",
-    "DescribeAddon",
-    "DescribeAddonConfiguration",
-    "DescribeAddonVersions",
-    "DescribeCluster",
-    "DescribeFargateProfile",
-    "DescribeIdentityProviderConfig",
-    "DescribeNodegroup",
-    "DescribeUpdate",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAddons",
-    "ListClusters",
-    "ListFargateProfiles",
-    "ListIdentityProviderConfigs",
-    "ListNodegroups",
-    "ListUpdates"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "AccessKubernetesApi",
+      "DescribeAddon",
+      "DescribeAddonConfiguration",
+      "DescribeAddonVersions",
+      "DescribeCluster",
+      "DescribeFargateProfile",
+      "DescribeIdentityProviderConfig",
+      "DescribeNodegroup",
+      "DescribeUpdate",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAddons",
+      "ListClusters",
+      "ListFargateProfiles",
+      "ListIdentityProviderConfigs",
+      "ListNodegroups",
+      "ListUpdates"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }
