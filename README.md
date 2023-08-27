@@ -10,7 +10,7 @@ During a project of mine I was frustated that there was no good way to manage th
 
 The benefit of this module is that you can now manage all actions yourself. Thus, you may never add new actions accidentally and restrict permissions managed by Terraform to what is inside your source code.
 
-A slightly downside is, however, that using this in a bigger project will result in a lot of additional stub code to be able to access the required outputs.
+The main focus of this module is to bundle and compact a list of permission types such as all write actions for a given service. If you need to pick single actions you are better off without this module. In a bigger project this would result in a lot of additional stub code to be able to access the required outputs.
 
 ## Preparing your terraform setup
 
@@ -28,50 +28,11 @@ It can also be said that this solution might not be the best but it is a working
 
 As for the requirement of the Terraform version, I decided to set it to `>= 1.3, <= 1.5.5` as this is the last known open source version of Terraform using the [MPL license](https://www.mozilla.org/en-US/MPL/). It is still possible that this module works with newer or older versions of Terraform.
 
-## Example: minimal-on-off-services module usage
-
-To use the module simply reference it from github. Access to the output it granted via the variable `services`. The next level is the AWS service name abbreviation, which matches the service prefix value e.g. `ec2`, `identityandaccessmanagementiam`, ... . The service map separates actions into one of five categories:
-
-1. list
-2. permissions_management
-3. read
-4. tagging
-5. write
-
-Each category yields a list with the action names.
-
-Example:
-
-```hcl
-module "aws_action_helper" {
-  source = "https://github.com/maunzCache/terraform-aws-action-helper"
-
-  use_prefix = var.use_prefix
-
-  filter_actions = var.filter_actions
-  filtering      = var.filtering
-
-  minify_strings     = var.minify_strings
-  minify_regex       = var.minify_regex
-  minify_replacement = var.minify_replacement
-}
-
-data "aws_iam_policy_document" "example" {
-  statement {
-    sid = "AllowAllS3WriteActions"
-
-    actions = module.aws_action_helper.services.s3.write
-
-    resources = [
-      "arn:aws:s3:::*",
-    ]
-  }
-}
-```
-
 ## Module examples
 
-Below you can find a few use cases for built-in features.
+For usage examples reference the [/examples](./examples) directory.
+
+Below you can find detailed information for some built-in features.
 
 ## Minification
 
@@ -83,7 +44,7 @@ Example:
 
 ```hcl
 module "aws_action_helper" {
-  source = "https://github.com/maunzCache/terraform-aws-action-helper"
+  source = "../../modules/ec2"
 
   use_prefix = var.use_prefix
 
@@ -103,20 +64,18 @@ module "aws_action_helper" {
 Returns:
 
 ```hcl
-services = {
-  ec2 = {
-    "list"                   = []
-    "permissions_management" = [
-      "ec2:Create*",
-    ]
-    "read"                   = []
-    "tagging"                = [
-      "ec2:Create*",
-    ]
-    "write"                  = [
-      "ec2:Create*",
-    ]
-  }
+actions = {
+  "list"                   = []
+  "permissions_management" = [
+    "ec2:Create*",
+  ]
+  "read"                   = []
+  "tagging"                = [
+    "ec2:Create*",
+  ]
+  "write"                  = [
+    "ec2:Create*",
+  ]
 }
 ```
 
@@ -138,7 +97,7 @@ Example:
 
 ```hcl
 module "aws_action_helper" {
-  source = "https://github.com/maunzCache/terraform-aws-action-helper"
+  source = "../../modules/ec2"
 
   use_prefix = var.use_prefix
 
@@ -158,18 +117,16 @@ module "aws_action_helper" {
 Returns:
 
 ```hcl
-services = {
-  ec2 = {
-    "list"                   = [
-      "ec2:Get*",
-    ]
-    "permissions_management" = []
-    "read"                   = [
-      "ec2:Get*",
-    ]
-    "tagging"                = []
-    "write"                  = []
-  }
+actions = {
+  "list"                   = [
+    "ec2:Get*",
+  ]
+  "permissions_management" = []
+  "read"                   = [
+    "ec2:Get*",
+  ]
+  "tagging"                = []
+  "write"                  = []
 }
 ```
 
@@ -179,7 +136,7 @@ Example:
 
 ```hcl
 module "aws_action_helper" {
-  source = "https://github.com/maunzCache/terraform-aws-action-helper"
+  source = "../../modules/ec2"
 
   use_prefix = var.use_prefix
 
@@ -200,79 +157,77 @@ module "aws_action_helper" {
 Returns:
 
 ```hcl
-services = {
-  ec2 = {
-    "list"                   = [
-      "ec2:DescribeClassicLinkInstances",
-      "ec2:DescribeFleetInstances",
-      "ec2:DescribeIamInstanceProfileAssociations",
-      "ec2:DescribeInstanceAttribute",
-      "ec2:DescribeInstanceCreditSpecifications",
-      "ec2:DescribeInstanceEventNotificationAttributes",
-      "ec2:DescribeInstanceEventWindows",
-      "ec2:DescribeInstanceStatus",
-      "ec2:DescribeInstanceTypeOfferings",
-      "ec2:DescribeInstanceTypes",
-      "ec2:DescribeInstances",
-      "ec2:DescribeReservedInstances",
-      "ec2:DescribeReservedInstancesListings",
-      "ec2:DescribeReservedInstancesModifications",
-      "ec2:DescribeReservedInstancesOfferings",
-      "ec2:DescribeSpotFleetInstances",
-      "ec2:DescribeSpotInstanceRequests",
-    ]
-    "permissions_management" = []
-    "read"                   = [
-      "ec2:DescribeScheduledInstanceAvailability",
-      "ec2:DescribeScheduledInstances",
-      "ec2:GetInstanceTypesFromInstanceRequirements",
-      "ec2:GetReservedInstancesExchangeQuote",
-    ]
-    "tagging"                = []
-    "write"                  = [
-      "ec2:AcceptReservedInstancesExchangeQuote",
-      "ec2:AssociateIamInstanceProfile",
-      "ec2:AssociateInstanceEventWindow",
-      "ec2:BundleInstance",
-      "ec2:CancelReservedInstancesListing",
-      "ec2:CancelSpotInstanceRequests",
-      "ec2:ConfirmProductInstance",
-      "ec2:CreateInstanceEventWindow",
-      "ec2:CreateInstanceExportTask",
-      "ec2:CreateReservedInstancesListing",
-      "ec2:DeleteInstanceEventWindow",
-      "ec2:DeleteQueuedReservedInstances",
-      "ec2:DeregisterInstanceEventNotificationAttributes",
-      "ec2:DisassociateIamInstanceProfile",
-      "ec2:DisassociateInstanceEventWindow",
-      "ec2:ImportInstance",
-      "ec2:ModifyInstanceAttribute",
-      "ec2:ModifyInstanceCapacityReservationAttributes",
-      "ec2:ModifyInstanceCreditSpecification",
-      "ec2:ModifyInstanceEventStartTime",
-      "ec2:ModifyInstanceEventWindow",
-      "ec2:ModifyInstanceMaintenanceOptions",
-      "ec2:ModifyInstanceMetadataOptions",
-      "ec2:ModifyInstancePlacement",
-      "ec2:ModifyReservedInstances",
-      "ec2:MonitorInstances",
-      "ec2:PurchaseReservedInstancesOffering",
-      "ec2:PurchaseScheduledInstances",
-      "ec2:RebootInstances",
-      "ec2:RegisterInstanceEventNotificationAttributes",
-      "ec2:ReplaceIamInstanceProfileAssociation",
-      "ec2:ReportInstanceStatus",
-      "ec2:RequestSpotInstances",
-      "ec2:ResetInstanceAttribute",
-      "ec2:RunInstances",
-      "ec2:RunScheduledInstances",
-      "ec2:SendSpotInstanceInterruptions",
-      "ec2:StartInstances",
-      "ec2:StopInstances",
-      "ec2:TerminateInstances",
-      "ec2:UnmonitorInstances",
-    ]
-  }
+actions = {
+  "list"                   = [
+    "ec2:DescribeClassicLinkInstances",
+    "ec2:DescribeFleetInstances",
+    "ec2:DescribeIamInstanceProfileAssociations",
+    "ec2:DescribeInstanceAttribute",
+    "ec2:DescribeInstanceCreditSpecifications",
+    "ec2:DescribeInstanceEventNotificationAttributes",
+    "ec2:DescribeInstanceEventWindows",
+    "ec2:DescribeInstanceStatus",
+    "ec2:DescribeInstanceTypeOfferings",
+    "ec2:DescribeInstanceTypes",
+    "ec2:DescribeInstances",
+    "ec2:DescribeReservedInstances",
+    "ec2:DescribeReservedInstancesListings",
+    "ec2:DescribeReservedInstancesModifications",
+    "ec2:DescribeReservedInstancesOfferings",
+    "ec2:DescribeSpotFleetInstances",
+    "ec2:DescribeSpotInstanceRequests",
+  ]
+  "permissions_management" = []
+  "read"                   = [
+    "ec2:DescribeScheduledInstanceAvailability",
+    "ec2:DescribeScheduledInstances",
+    "ec2:GetInstanceTypesFromInstanceRequirements",
+    "ec2:GetReservedInstancesExchangeQuote",
+  ]
+  "tagging"                = []
+  "write"                  = [
+    "ec2:AcceptReservedInstancesExchangeQuote",
+    "ec2:AssociateIamInstanceProfile",
+    "ec2:AssociateInstanceEventWindow",
+    "ec2:BundleInstance",
+    "ec2:CancelReservedInstancesListing",
+    "ec2:CancelSpotInstanceRequests",
+    "ec2:ConfirmProductInstance",
+    "ec2:CreateInstanceEventWindow",
+    "ec2:CreateInstanceExportTask",
+    "ec2:CreateReservedInstancesListing",
+    "ec2:DeleteInstanceEventWindow",
+    "ec2:DeleteQueuedReservedInstances",
+    "ec2:DeregisterInstanceEventNotificationAttributes",
+    "ec2:DisassociateIamInstanceProfile",
+    "ec2:DisassociateInstanceEventWindow",
+    "ec2:ImportInstance",
+    "ec2:ModifyInstanceAttribute",
+    "ec2:ModifyInstanceCapacityReservationAttributes",
+    "ec2:ModifyInstanceCreditSpecification",
+    "ec2:ModifyInstanceEventStartTime",
+    "ec2:ModifyInstanceEventWindow",
+    "ec2:ModifyInstanceMaintenanceOptions",
+    "ec2:ModifyInstanceMetadataOptions",
+    "ec2:ModifyInstancePlacement",
+    "ec2:ModifyReservedInstances",
+    "ec2:MonitorInstances",
+    "ec2:PurchaseReservedInstancesOffering",
+    "ec2:PurchaseScheduledInstances",
+    "ec2:RebootInstances",
+    "ec2:RegisterInstanceEventNotificationAttributes",
+    "ec2:ReplaceIamInstanceProfileAssociation",
+    "ec2:ReportInstanceStatus",
+    "ec2:RequestSpotInstances",
+    "ec2:ResetInstanceAttribute",
+    "ec2:RunInstances",
+    "ec2:RunScheduledInstances",
+    "ec2:SendSpotInstanceInterruptions",
+    "ec2:StartInstances",
+    "ec2:StopInstances",
+    "ec2:TerminateInstances",
+    "ec2:UnmonitorInstances",
+  ]
 }
 ```
 
@@ -282,7 +237,7 @@ Example:
 
 ```hcl
 module "aws_action_helper" {
-  source = "https://github.com/maunzCache/terraform-aws-action-helper"
+  source = "../../modules/ec2"
 
   use_prefix = var.use_prefix
 
@@ -303,35 +258,33 @@ module "aws_action_helper" {
 Returns:
 
 ```hcl
-services = {
-  ec2 = {
-    "list"                   = [
-      "ec2:DescribeClassicLinkInstances",
-      "ec2:DescribeFleetInstances",
-      "ec2:DescribeInstances",
-      "ec2:DescribeReservedInstances",
-      "ec2:DescribeSpotFleetInstances",
-    ]
-    "permissions_management" = []
-    "read"                   = [
-      "ec2:DescribeScheduledInstances",
-    ]
-    "tagging"                = []
-    "write"                  = [
-      "ec2:DeleteQueuedReservedInstances",
-      "ec2:ModifyReservedInstances",
-      "ec2:MonitorInstances",
-      "ec2:PurchaseScheduledInstances",
-      "ec2:RebootInstances",
-      "ec2:RequestSpotInstances",
-      "ec2:RunInstances",
-      "ec2:RunScheduledInstances",
-      "ec2:StartInstances",
-      "ec2:StopInstances",
-      "ec2:TerminateInstances",
-      "ec2:UnmonitorInstances",
-    ]
-  }
+actions = {
+  "list"                   = [
+    "ec2:DescribeClassicLinkInstances",
+    "ec2:DescribeFleetInstances",
+    "ec2:DescribeInstances",
+    "ec2:DescribeReservedInstances",
+    "ec2:DescribeSpotFleetInstances",
+  ]
+  "permissions_management" = []
+  "read"                   = [
+    "ec2:DescribeScheduledInstances",
+  ]
+  "tagging"                = []
+  "write"                  = [
+    "ec2:DeleteQueuedReservedInstances",
+    "ec2:ModifyReservedInstances",
+    "ec2:MonitorInstances",
+    "ec2:PurchaseScheduledInstances",
+    "ec2:RebootInstances",
+    "ec2:RequestSpotInstances",
+    "ec2:RunInstances",
+    "ec2:RunScheduledInstances",
+    "ec2:StartInstances",
+    "ec2:StopInstances",
+    "ec2:TerminateInstances",
+    "ec2:UnmonitorInstances",
+  ]
 }
 ```
 
