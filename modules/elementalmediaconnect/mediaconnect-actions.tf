@@ -102,6 +102,8 @@ locals {
     read = [
       "DescribeBridge",
       "DescribeFlow",
+      "DescribeFlowSourceMetadata",
+      "DescribeFlowSourceThumbnail",
       "DescribeGateway",
       "DescribeGatewayInstance",
       "DescribeOffering",

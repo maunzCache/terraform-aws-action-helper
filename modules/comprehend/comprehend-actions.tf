@@ -127,6 +127,7 @@ locals {
       "DetectSentiment",
       "DetectSyntax",
       "DetectTargetedSentiment",
+      "DetectToxicContent",
       "ListDatasets",
       "ListDocumentClassificationJobs",
       "ListDocumentClassifierSummaries",

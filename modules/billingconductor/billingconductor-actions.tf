@@ -81,6 +81,7 @@ locals {
     ]
     permissions_management = []
     read = [
+      "GetBillingGroupCostReport",
       "ListBillingGroupCostReports",
       "ListBillingGroups",
       "ListCustomLineItemVersions",

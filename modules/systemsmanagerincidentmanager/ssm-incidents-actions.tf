@@ -80,6 +80,7 @@ locals {
       "PutResourcePolicy"
     ]
     read = [
+      "BatchGetIncidentFindings",
       "GetIncidentRecord",
       "GetReplicationSet",
       "GetResourcePolicies",
@@ -88,6 +89,7 @@ locals {
       "ListTagsForResource"
     ]
     list = [
+      "ListIncidentFindings",
       "ListIncidentRecords",
       "ListRelatedItems",
       "ListReplicationSets",

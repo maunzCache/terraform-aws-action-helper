@@ -61,25 +61,23 @@ locals {
   access_level = {
     write = [
       "CancelChangeSet",
-      "CompleteTask",
-      "StartChangeSet",
-      "UpdateTask"
+      "StartChangeSet"
     ]
     permissions_management = [
       "DeleteResourcePolicy",
       "PutResourcePolicy"
     ]
     read = [
+      "DescribeAssessment",
       "DescribeChangeSet",
       "DescribeEntity",
-      "DescribeTask",
       "GetResourcePolicy",
       "ListTagsForResource"
     ]
     list = [
+      "ListAssessments",
       "ListChangeSets",
-      "ListEntities",
-      "ListTasks"
+      "ListEntities"
     ]
     tagging = [
       "TagResource",

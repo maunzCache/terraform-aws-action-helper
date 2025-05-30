@@ -60,11 +60,16 @@ locals {
 
   access_level = {
     write = [
+      "AssociateResource",
+      "CancelTagSyncTask",
       "CreateGroup",
       "DeleteGroup",
+      "DeleteGroupPolicy",
+      "DisassociateResource",
       "GroupResources",
       "PutGroupConfiguration",
       "PutGroupPolicy",
+      "StartTagSyncTask",
       "UngroupResources",
       "UpdateAccountSettings",
       "UpdateGroup",
@@ -75,12 +80,17 @@ locals {
       "GetAccountSettings",
       "GetGroup",
       "GetGroupConfiguration",
+      "GetGroupPolicy",
       "GetGroupQuery",
+      "GetTagSyncTask",
       "GetTags"
     ]
     list = [
       "ListGroupResources",
+      "ListGroupingStatuses",
       "ListGroups",
+      "ListResourceTypes",
+      "ListTagSyncTasks",
       "SearchResources"
     ]
     tagging = [

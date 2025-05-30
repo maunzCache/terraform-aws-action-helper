@@ -62,6 +62,7 @@ locals {
     write = [
       "CreateStream",
       "DecreaseStreamRetentionPeriod",
+      "DeleteResourcePolicy",
       "DeleteStream",
       "DeregisterStreamConsumer",
       "DisableEnhancedMonitoring",
@@ -70,6 +71,7 @@ locals {
       "MergeShards",
       "PutRecord",
       "PutRecords",
+      "PutResourcePolicy",
       "RegisterStreamConsumer",
       "SplitShard",
       "StartStreamEncryption",
@@ -84,7 +86,9 @@ locals {
       "DescribeStreamConsumer",
       "DescribeStreamSummary",
       "GetRecords",
+      "GetResourcePolicy",
       "GetShardIterator",
+      "ListTagsForResource",
       "ListTagsForStream",
       "SubscribeToShard"
     ]
@@ -95,7 +99,9 @@ locals {
     ]
     tagging = [
       "AddTagsToStream",
-      "RemoveTagsFromStream"
+      "RemoveTagsFromStream",
+      "TagResource",
+      "UntagResource"
     ]
   }
 }

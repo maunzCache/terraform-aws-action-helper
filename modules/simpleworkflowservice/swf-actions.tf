@@ -64,6 +64,8 @@ locals {
       "CancelWorkflowExecution",
       "CompleteWorkflowExecution",
       "ContinueAsNewWorkflowExecution",
+      "DeleteActivityType",
+      "DeleteWorkflowType",
       "DeprecateActivityType",
       "DeprecateDomain",
       "DeprecateWorkflowType",

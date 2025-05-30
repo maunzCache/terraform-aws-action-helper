@@ -65,7 +65,10 @@ locals {
       "ExportEBSVolumeRecommendations",
       "ExportEC2InstanceRecommendations",
       "ExportECSServiceRecommendations",
+      "ExportIdleRecommendations",
       "ExportLambdaFunctionRecommendations",
+      "ExportLicenseRecommendations",
+      "ExportRDSDatabaseRecommendations",
       "PutRecommendationPreferences",
       "UpdateEnrollmentStatus"
     ]
@@ -84,7 +87,11 @@ locals {
       "GetECSServiceRecommendations",
       "GetEnrollmentStatus",
       "GetEnrollmentStatusesForOrganization",
+      "GetIdleRecommendations",
       "GetLambdaFunctionRecommendations",
+      "GetLicenseRecommendations",
+      "GetRDSDatabaseRecommendationProjectedMetrics",
+      "GetRDSDatabaseRecommendations",
       "GetRecommendationSummaries"
     ]
     tagging = []

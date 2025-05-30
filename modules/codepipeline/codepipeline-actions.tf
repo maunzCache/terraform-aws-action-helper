@@ -70,6 +70,7 @@ locals {
       "DeregisterWebhookWithThirdParty",
       "DisableStageTransition",
       "EnableStageTransition",
+      "OverrideStageCondition",
       "PollForJobs",
       "PollForThirdPartyJobs",
       "PutActionRevision",
@@ -81,6 +82,7 @@ locals {
       "PutWebhook",
       "RegisterWebhookWithThirdParty",
       "RetryStageExecution",
+      "RollbackStage",
       "StartPipelineExecution",
       "StopPipelineExecution",
       "UpdateActionType",
@@ -96,6 +98,9 @@ locals {
       "GetThirdPartyJobDetails",
       "ListActionExecutions",
       "ListActionTypes",
+      "ListDeployActionExecutionTargets",
+      "ListRuleExecutions",
+      "ListRuleTypes",
       "ListTagsForResource"
     ]
     list = [

@@ -69,11 +69,13 @@ locals {
       "CreateVirtualService",
       "DeleteGatewayRoute",
       "DeleteMesh",
+      "DeleteMeshPolicy",
       "DeleteRoute",
       "DeleteVirtualGateway",
       "DeleteVirtualNode",
       "DeleteVirtualRouter",
       "DeleteVirtualService",
+      "PutMeshPolicy",
       "UpdateGatewayRoute",
       "UpdateMesh",
       "UpdateRoute",
@@ -91,6 +93,7 @@ locals {
       "DescribeVirtualNode",
       "DescribeVirtualRouter",
       "DescribeVirtualService",
+      "GetMeshPolicy",
       "StreamAggregatedResources"
     ]
     list = [

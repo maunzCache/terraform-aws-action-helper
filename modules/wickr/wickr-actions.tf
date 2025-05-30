@@ -62,6 +62,7 @@ locals {
     write = [
       "CreateAdminSession",
       "CreateNetwork",
+      "DeleteNetwork",
       "ListNetworks",
       "UpdateNetworkDetails"
     ]

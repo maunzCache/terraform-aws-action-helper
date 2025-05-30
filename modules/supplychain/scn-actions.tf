@@ -61,19 +61,42 @@ locals {
   access_level = {
     write = [
       "AssignAdminPermissionsToUser",
+      "CreateBillOfMaterialsImportJob",
+      "CreateDataIntegrationFlow",
+      "CreateDataLakeDataset",
+      "CreateDataLakeNamespace",
       "CreateInstance",
       "CreateSSOApplication",
+      "DeleteDataIntegrationFlow",
+      "DeleteDataLakeDataset",
+      "DeleteDataLakeNamespace",
       "DeleteInstance",
       "DeleteSSOApplication",
       "RemoveAdminPermissionsForUser",
+      "SendDataIntegrationEvent",
+      "UpdateDataIntegrationFlow",
+      "UpdateDataLakeDataset",
+      "UpdateDataLakeNamespace",
       "UpdateInstance"
     ]
     permissions_management = []
     read = [
-      "DescribeInstance"
+      "DescribeInstance",
+      "GetBillOfMaterialsImportJob",
+      "GetDataIntegrationEvent",
+      "GetDataIntegrationFlow",
+      "GetDataIntegrationFlowExecution",
+      "GetDataLakeDataset",
+      "GetDataLakeNamespace",
+      "GetInstance"
     ]
     list = [
       "ListAdminUsers",
+      "ListDataIntegrationEvents",
+      "ListDataIntegrationFlowExecutions",
+      "ListDataIntegrationFlows",
+      "ListDataLakeDatasets",
+      "ListDataLakeNamespaces",
       "ListInstances",
       "ListTagsForResource"
     ]

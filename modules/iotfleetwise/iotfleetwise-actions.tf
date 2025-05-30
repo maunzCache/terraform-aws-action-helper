@@ -61,23 +61,24 @@ locals {
   access_level = {
     write = [
       "AssociateVehicleFleet",
-      "BatchCreateVehicle",
-      "BatchUpdateVehicle",
       "CreateCampaign",
       "CreateDecoderManifest",
       "CreateFleet",
       "CreateModelManifest",
       "CreateSignalCatalog",
+      "CreateStateTemplate",
       "CreateVehicle",
       "DeleteCampaign",
       "DeleteDecoderManifest",
       "DeleteFleet",
       "DeleteModelManifest",
       "DeleteSignalCatalog",
+      "DeleteStateTemplate",
       "DeleteVehicle",
       "DisassociateVehicleFleet",
       "ImportDecoderManifest",
       "ImportSignalCatalog",
+      "PutEncryptionConfiguration",
       "PutLoggingOptions",
       "RegisterAccount",
       "UpdateCampaign",
@@ -85,17 +86,22 @@ locals {
       "UpdateFleet",
       "UpdateModelManifest",
       "UpdateSignalCatalog",
+      "UpdateStateTemplate",
       "UpdateVehicle"
     ]
-    permissions_management = []
+    permissions_management = [
+      "GenerateCommandPayload"
+    ]
     read = [
       "GetCampaign",
       "GetDecoderManifest",
+      "GetEncryptionConfiguration",
       "GetFleet",
       "GetLoggingOptions",
       "GetModelManifest",
       "GetRegisterAccountStatus",
       "GetSignalCatalog",
+      "GetStateTemplate",
       "GetVehicle",
       "GetVehicleStatus",
       "ListCampaigns",
@@ -105,6 +111,7 @@ locals {
       "ListModelManifests",
       "ListSignalCatalogNodes",
       "ListSignalCatalogs",
+      "ListStateTemplates",
       "ListTagsForResource",
       "ListVehicles",
       "ListVehiclesInFleet"

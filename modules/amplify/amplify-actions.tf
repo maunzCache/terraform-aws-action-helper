@@ -60,6 +60,7 @@ locals {
 
   access_level = {
     write = [
+      "AssociateWebACL",
       "CreateApp",
       "CreateBackendEnvironment",
       "CreateBranch",
@@ -72,6 +73,7 @@ locals {
       "DeleteDomainAssociation",
       "DeleteJob",
       "DeleteWebHook",
+      "DisassociateWebACL",
       "GenerateAccessLogs",
       "StartDeployment",
       "StartJob",
@@ -89,6 +91,7 @@ locals {
       "GetBranch",
       "GetDomainAssociation",
       "GetJob",
+      "GetWebACLForResource",
       "GetWebHook",
       "ListTagsForResource"
     ]
@@ -99,6 +102,7 @@ locals {
       "ListBranches",
       "ListDomainAssociations",
       "ListJobs",
+      "ListResourcesForWebACL",
       "ListWebHooks"
     ]
     tagging = [

@@ -60,32 +60,59 @@ locals {
 
   access_level = {
     write = [
+      "AcceptConnection",
+      "AssociateAutomationUnitRole",
       "AssociateCreatedArtifact",
       "AssociateDiscoveredResource",
+      "AssociateSourceResource",
+      "BatchAssociateIamRoleWithConnection",
+      "BatchDisassociateIamRoleFromConnection",
+      "CreateAutomationRun",
+      "CreateAutomationUnit",
       "CreateHomeRegionControl",
       "CreateProgressUpdateStream",
+      "DeleteAutomationRun",
+      "DeleteAutomationUnit",
+      "DeleteConnection",
+      "DeleteHomeRegionControl",
       "DeleteProgressUpdateStream",
+      "DisassociateAutomationUnitRole",
       "DisassociateCreatedArtifact",
       "DisassociateDiscoveredResource",
+      "DisassociateSourceResource",
       "ImportMigrationTask",
       "NotifyApplicationState",
       "NotifyMigrationTaskState",
-      "PutResourceAttributes"
+      "PutResourceAttributes",
+      "RejectConnection"
     ]
     permissions_management = []
     read = [
       "DescribeApplicationState",
+      "DescribeAutomationRun",
+      "DescribeAutomationUnit",
       "DescribeMigrationTask",
+      "GetConnection",
       "GetHomeRegion"
     ]
     list = [
       "DescribeHomeRegionControls",
       "ListApplicationStates",
+      "ListAutomationRuns",
+      "ListAutomationUnits",
+      "ListConnectionRoles",
+      "ListConnections",
       "ListCreatedArtifacts",
       "ListDiscoveredResources",
+      "ListMigrationTaskUpdates",
       "ListMigrationTasks",
-      "ListProgressUpdateStreams"
+      "ListProgressUpdateStreams",
+      "ListSourceResources",
+      "ListTagsForResource"
     ]
-    tagging = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

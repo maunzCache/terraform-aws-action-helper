@@ -60,20 +60,25 @@ locals {
 
   access_level = {
     write = [
+      "AssociateToConfiguration",
       "CreateChimeWebhookConfiguration",
+      "CreateCustomAction",
       "CreateMicrosoftTeamsChannelConfiguration",
       "CreateSlackChannelConfiguration",
       "DeleteChimeWebhookConfiguration",
+      "DeleteCustomAction",
       "DeleteMicrosoftTeamsChannelConfiguration",
       "DeleteMicrosoftTeamsConfiguredTeam",
       "DeleteMicrosoftTeamsUserIdentity",
       "DeleteSlackChannelConfiguration",
       "DeleteSlackUserIdentity",
       "DeleteSlackWorkspaceAuthorization",
+      "DisassociateFromConfiguration",
       "RedeemMicrosoftTeamsOauthCode",
       "RedeemSlackOauthCode",
       "UpdateAccountPreferences",
       "UpdateChimeWebhookConfiguration",
+      "UpdateCustomAction",
       "UpdateMicrosoftTeamsChannelConfiguration",
       "UpdateSlackChannelConfiguration"
     ]
@@ -85,14 +90,22 @@ locals {
       "DescribeSlackUserIdentities",
       "DescribeSlackWorkspaces",
       "GetAccountPreferences",
+      "GetCustomAction",
       "GetMicrosoftTeamsChannelConfiguration",
       "GetMicrosoftTeamsOauthParameters",
       "GetSlackOauthParameters",
+      "ListAssociations",
       "ListMicrosoftTeamsChannelConfigurations",
       "ListMicrosoftTeamsConfiguredTeams",
-      "ListMicrosoftTeamsUserIdentities"
+      "ListMicrosoftTeamsUserIdentities",
+      "ListTagsForResource"
     ]
-    list    = []
-    tagging = []
+    list = [
+      "ListCustomActions"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

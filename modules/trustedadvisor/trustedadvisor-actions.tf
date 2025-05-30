@@ -60,6 +60,7 @@ locals {
 
   access_level = {
     write = [
+      "BatchUpdateRecommendationResourceExclusion",
       "CreateEngagement",
       "CreateEngagementAttachment",
       "CreateEngagementCommunication",
@@ -74,6 +75,8 @@ locals {
       "UpdateEngagementStatus",
       "UpdateNotificationConfigurations",
       "UpdateNotificationPreferences",
+      "UpdateOrganizationRecommendationLifecycle",
+      "UpdateRecommendationLifecycle",
       "UpdateRiskStatus"
     ]
     permissions_management = []
@@ -98,6 +101,8 @@ locals {
       "GetEngagement",
       "GetEngagementAttachment",
       "GetEngagementType",
+      "GetOrganizationRecommendation",
+      "GetRecommendation",
       "ListAccountsForParent",
       "ListEngagementCommunications",
       "ListEngagementTypes",
@@ -105,7 +110,14 @@ locals {
       "ListOrganizationalUnitsForParent",
       "ListRoots"
     ]
-    list    = []
+    list = [
+      "ListChecks",
+      "ListOrganizationRecommendationAccounts",
+      "ListOrganizationRecommendationResources",
+      "ListOrganizationRecommendations",
+      "ListRecommendationResources",
+      "ListRecommendations"
+    ]
     tagging = []
   }
 }

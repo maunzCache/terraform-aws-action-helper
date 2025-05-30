@@ -60,6 +60,7 @@ locals {
 
   access_level = {
     write = [
+      "AcceptResourceGroupingRecommendations",
       "AddDraftAppVersionResourceMappings",
       "BatchUpdateRecommendationStatus",
       "CreateApp",
@@ -77,9 +78,12 @@ locals {
       "ImportResourcesToDraftAppVersion",
       "PublishAppVersion",
       "PutDraftAppVersionTemplate",
+      "RejectResourceGroupingRecommendations",
       "RemoveDraftAppVersionResourceMappings",
       "ResolveAppVersionResources",
       "StartAppAssessment",
+      "StartMetricsExport",
+      "StartResourceGroupingRecommendationTask",
       "UpdateApp",
       "UpdateAppVersion",
       "UpdateAppVersionAppComponent",
@@ -96,12 +100,15 @@ locals {
       "DescribeAppVersionResourcesResolutionStatus",
       "DescribeAppVersionTemplate",
       "DescribeDraftAppVersionResourcesImportStatus",
+      "DescribeMetricsExport",
       "DescribeResiliencyPolicy",
+      "DescribeResourceGroupingRecommendationTask",
       "ListTagsForResource"
     ]
     list = [
       "ListAlarmRecommendations",
       "ListAppAssessmentComplianceDrifts",
+      "ListAppAssessmentResourceDrifts",
       "ListAppAssessments",
       "ListAppComponentCompliances",
       "ListAppComponentRecommendations",
@@ -111,8 +118,10 @@ locals {
       "ListAppVersionResources",
       "ListAppVersions",
       "ListApps",
+      "ListMetrics",
       "ListRecommendationTemplates",
       "ListResiliencyPolicies",
+      "ListResourceGroupingRecommendations",
       "ListSopRecommendations",
       "ListSuggestedResiliencyPolicies",
       "ListTestRecommendations",

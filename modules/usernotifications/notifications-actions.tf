@@ -61,12 +61,19 @@ locals {
   access_level = {
     write = [
       "AssociateChannel",
+      "AssociateManagedNotificationAccountContact",
+      "AssociateManagedNotificationAdditionalChannel",
       "CreateEventRule",
       "CreateNotificationConfiguration",
       "DeleteEventRule",
       "DeleteNotificationConfiguration",
       "DeregisterNotificationHub",
+      "DisableNotificationsAccessForOrganization",
       "DisassociateChannel",
+      "DisassociateManagedNotificationAccountContact",
+      "DisassociateManagedNotificationAdditionalChannel",
+      "EnableNotificationsAccessForOrganization",
+      "PutFeatureOptInStatus",
       "RegisterNotificationHub",
       "UpdateEventRule",
       "UpdateNotificationConfiguration"
@@ -74,16 +81,25 @@ locals {
     permissions_management = []
     read = [
       "GetEventRule",
+      "GetFeatureOptInStatus",
+      "GetManagedNotificationChildEvent",
+      "GetManagedNotificationConfiguration",
+      "GetManagedNotificationEvent",
       "GetNotificationConfiguration",
       "GetNotificationEvent",
-      "ListTagsForResource"
+      "GetNotificationsAccessForOrganization"
     ]
     list = [
       "ListChannels",
       "ListEventRules",
+      "ListManagedNotificationChannelAssociations",
+      "ListManagedNotificationChildEvents",
+      "ListManagedNotificationConfigurations",
+      "ListManagedNotificationEvents",
       "ListNotificationConfigurations",
       "ListNotificationEvents",
-      "ListNotificationHubs"
+      "ListNotificationHubs",
+      "ListTagsForResource"
     ]
     tagging = [
       "TagResource",

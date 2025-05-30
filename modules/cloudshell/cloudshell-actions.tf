@@ -71,9 +71,12 @@ locals {
     ]
     permissions_management = []
     read = [
+      "ApproveCommand",
       "GetEnvironmentStatus"
     ]
-    list    = []
+    list = [
+      "DescribeEnvironments"
+    ]
     tagging = []
   }
 }

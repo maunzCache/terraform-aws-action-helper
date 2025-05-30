@@ -60,20 +60,22 @@ locals {
 
   access_level = {
     write = [
+      "AcceptPrimaryEmailUpdate",
       "CloseAccount",
       "DeleteAlternateContact",
       "DisableRegion",
       "EnableRegion",
+      "PutAccountName",
       "PutAlternateContact",
-      "PutChallengeQuestions",
-      "PutContactInformation"
+      "PutContactInformation",
+      "StartPrimaryEmailUpdate"
     ]
     permissions_management = []
     read = [
       "GetAccountInformation",
       "GetAlternateContact",
-      "GetChallengeQuestions",
       "GetContactInformation",
+      "GetPrimaryEmail",
       "GetRegionOptStatus"
     ]
     list = [

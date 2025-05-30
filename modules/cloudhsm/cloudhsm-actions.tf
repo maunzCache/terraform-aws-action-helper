@@ -62,42 +62,26 @@ locals {
     write = [
       "CopyBackupToRegion",
       "CreateCluster",
-      "CreateHapg",
       "CreateHsm",
-      "CreateLunaClient",
       "DeleteBackup",
       "DeleteCluster",
-      "DeleteHapg",
       "DeleteHsm",
-      "DeleteLunaClient",
+      "DeleteResourcePolicy",
       "InitializeCluster",
       "ModifyBackupAttributes",
       "ModifyCluster",
-      "ModifyHapg",
-      "ModifyHsm",
-      "ModifyLunaClient",
+      "PutResourcePolicy",
       "RestoreBackup"
     ]
     permissions_management = []
     read = [
       "DescribeBackups",
       "DescribeClusters",
-      "DescribeHapg",
-      "DescribeHsm",
-      "DescribeLunaClient",
-      "GetConfig",
-      "ListTags",
-      "ListTagsForResource"
+      "GetResourcePolicy",
+      "ListTags"
     ]
-    list = [
-      "ListAvailableZones",
-      "ListHapgs",
-      "ListHsms",
-      "ListLunaClients"
-    ]
+    list = []
     tagging = [
-      "AddTagsToResource",
-      "RemoveTagsFromResource",
       "TagResource",
       "UntagResource"
     ]

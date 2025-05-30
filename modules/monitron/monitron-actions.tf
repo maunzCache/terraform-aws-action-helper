@@ -66,6 +66,10 @@ locals {
     ]
     permissions_management = [
       "AssociateProjectAdminUser",
+      "CreateProjectUserAssociation",
+      "CreateUserAccessRoleAssociation",
+      "DeleteProjectUserAssociation",
+      "DeleteUserAccessRoleAssociation",
       "DisassociateProjectAdminUser",
       "ListProjectAdminUsers"
     ]
@@ -75,7 +79,9 @@ locals {
       "ListTagsForResource"
     ]
     list = [
-      "ListProjects"
+      "ListProjectUserAssociations",
+      "ListProjects",
+      "ListUserAccessRoleAssociations"
     ]
     tagging = [
       "TagResource",

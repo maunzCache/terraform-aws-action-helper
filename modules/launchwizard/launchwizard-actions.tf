@@ -61,10 +61,13 @@ locals {
   access_level = {
     write = [
       "CreateAdditionalNode",
+      "CreateDeployment",
       "CreateSettingsSet",
       "DeleteAdditionalNode",
       "DeleteApp",
+      "DeleteDeployment",
       "DeleteSettingsSet",
+      "PutSettingsSet",
       "StartProvisioning",
       "UpdateSettingsSet"
     ]
@@ -74,18 +77,33 @@ locals {
       "DescribeProvisionedApp",
       "DescribeProvisioningEvents",
       "DescribeSettingsSet",
+      "GetDeployment",
       "GetInfrastructureSuggestion",
       "GetIpAddress",
       "GetResourceCostEstimate",
-      "GetWorkloadAssets"
+      "GetResourceRecommendation",
+      "GetSettingsSet",
+      "GetWorkload",
+      "GetWorkloadAsset",
+      "GetWorkloadAssets",
+      "GetWorkloadDeploymentPattern",
+      "ListTagsForResource"
     ]
     list = [
       "ListAdditionalNodes",
+      "ListAllowedResources",
+      "ListDeploymentEvents",
+      "ListDeployments",
       "ListProvisionedApps",
+      "ListResourceCostEstimates",
       "ListSettingsSets",
       "ListWorkloadDeploymentOptions",
+      "ListWorkloadDeploymentPatterns",
       "ListWorkloads"
     ]
-    tagging = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

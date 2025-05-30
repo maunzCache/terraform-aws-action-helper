@@ -66,13 +66,19 @@ locals {
       "CreateFirewallPolicy",
       "CreateRuleGroup",
       "CreateTLSInspectionConfiguration",
+      "CreateVpcEndpointAssociation",
       "DeleteFirewall",
       "DeleteFirewallPolicy",
       "DeleteResourcePolicy",
       "DeleteRuleGroup",
       "DeleteTLSInspectionConfiguration",
+      "DeleteVpcEndpointAssociation",
       "DisassociateSubnets",
       "PutResourcePolicy",
+      "StartAnalysisReport",
+      "StartFlowCapture",
+      "StartFlowFlush",
+      "UpdateFirewallAnalysisSettings",
       "UpdateFirewallDeleteProtection",
       "UpdateFirewallDescription",
       "UpdateFirewallEncryptionConfiguration",
@@ -86,19 +92,27 @@ locals {
     permissions_management = []
     read = [
       "DescribeFirewall",
+      "DescribeFirewallMetadata",
       "DescribeFirewallPolicy",
+      "DescribeFlowOperation",
       "DescribeLoggingConfiguration",
       "DescribeResourcePolicy",
       "DescribeRuleGroup",
       "DescribeRuleGroupMetadata",
-      "DescribeTLSInspectionConfiguration"
+      "DescribeTLSInspectionConfiguration",
+      "DescribeVpcEndpointAssociation",
+      "GetAnalysisReportResults",
+      "ListFlowOperationResults"
     ]
     list = [
+      "ListAnalysisReports",
       "ListFirewallPolicies",
       "ListFirewalls",
+      "ListFlowOperations",
       "ListRuleGroups",
       "ListTLSInspectionConfigurations",
-      "ListTagsForResource"
+      "ListTagsForResource",
+      "ListVpcEndpointAssociations"
     ]
     tagging = [
       "TagResource",

@@ -85,9 +85,11 @@ locals {
     read = [
       "CreateApplicationPresignedUrl",
       "DescribeApplication",
+      "DescribeApplicationOperation",
       "DescribeApplicationSnapshot",
       "DescribeApplicationVersion",
       "DiscoverInputSchema",
+      "ListApplicationOperations",
       "ListApplicationSnapshots",
       "ListApplicationVersions",
       "ListTagsForResource"

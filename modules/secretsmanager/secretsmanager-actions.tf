@@ -85,6 +85,7 @@ locals {
       "ListSecretVersionIds"
     ]
     list = [
+      "BatchGetSecretValue",
       "ListSecrets"
     ]
     tagging = [

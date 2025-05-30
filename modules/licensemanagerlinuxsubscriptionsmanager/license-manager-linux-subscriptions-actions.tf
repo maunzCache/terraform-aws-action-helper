@@ -60,14 +60,23 @@ locals {
 
   access_level = {
     write = [
-      "GetServiceSettings",
-      "ListLinuxSubscriptionInstances",
-      "ListLinuxSubscriptions",
+      "DeregisterSubscriptionProvider",
+      "RegisterSubscriptionProvider",
       "UpdateServiceSettings"
     ]
     permissions_management = []
-    read                   = []
-    list                   = []
-    tagging                = []
+    read = [
+      "GetRegisteredSubscriptionProvider",
+      "GetServiceSettings",
+      "ListLinuxSubscriptionInstances",
+      "ListLinuxSubscriptions",
+      "ListRegisteredSubscriptionProviders",
+      "ListTagsForResource"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -77,6 +77,7 @@ locals {
       "DeleteDocument",
       "DeleteInventory",
       "DeleteMaintenanceWindow",
+      "DeleteOpsItem",
       "DeleteOpsMetadata",
       "DeleteParameter",
       "DeleteParameters",
@@ -101,6 +102,7 @@ locals {
       "ResumeSession",
       "SendAutomationSignal",
       "SendCommand",
+      "StartAccessRequest",
       "StartAssociationsOnce",
       "StartAutomationExecution",
       "StartChangeRequestExecution",
@@ -151,6 +153,8 @@ locals {
       "DescribeInstanceProperties",
       "DescribeInventoryDeletions",
       "DescribeOpsItems",
+      "ExecuteAPI",
+      "GetAccessToken",
       "GetAutomationExecution",
       "GetCalendar",
       "GetCalendarState",
@@ -159,6 +163,7 @@ locals {
       "GetDefaultPatchBaseline",
       "GetDeployablePatchSnapshotForInstance",
       "GetDocument",
+      "GetExecutionPreview",
       "GetInventory",
       "GetInventorySchema",
       "GetMaintenanceWindow",
@@ -177,7 +182,8 @@ locals {
       "GetPatchBaseline",
       "GetPatchBaselineForPatchGroup",
       "GetServiceSetting",
-      "PutConfigurePackageResult"
+      "PutConfigurePackageResult",
+      "StartExecutionPreview"
     ]
     list = [
       "DescribeMaintenanceWindowExecutionTaskInvocations",
@@ -206,6 +212,8 @@ locals {
       "ListDocuments",
       "ListInstanceAssociations",
       "ListInventoryEntries",
+      "ListNodes",
+      "ListNodesSummary",
       "ListOpsItemEvents",
       "ListOpsItemRelatedItems",
       "ListOpsMetadata",

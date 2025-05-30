@@ -77,6 +77,7 @@ locals {
       "StartConfigurationSession",
       "StartDeployment",
       "StopDeployment",
+      "UpdateAccountSettings",
       "UpdateApplication",
       "UpdateConfigurationProfile",
       "UpdateDeploymentStrategy",
@@ -87,6 +88,7 @@ locals {
     ]
     permissions_management = []
     read = [
+      "GetAccountSettings",
       "GetApplication",
       "GetConfiguration",
       "GetConfigurationProfile",

@@ -103,6 +103,7 @@ locals {
       "UpdatePullRequestStatus",
       "UpdatePullRequestTitle",
       "UpdateRepositoryDescription",
+      "UpdateRepositoryEncryptionKey",
       "UpdateRepositoryName",
       "UploadArchive"
     ]
@@ -147,6 +148,7 @@ locals {
       "ListApprovalRuleTemplates",
       "ListAssociatedApprovalRuleTemplatesForRepository",
       "ListBranches",
+      "ListFileCommitHistory",
       "ListPullRequests",
       "ListRepositories",
       "ListRepositoriesForApprovalRuleTemplate",

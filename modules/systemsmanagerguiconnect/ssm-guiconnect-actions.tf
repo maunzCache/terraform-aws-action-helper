@@ -61,13 +61,18 @@ locals {
   access_level = {
     write = [
       "CancelConnection",
-      "StartConnection"
+      "DeleteConnectionRecordingPreferences",
+      "StartConnection",
+      "UpdateConnectionRecordingPreferences"
     ]
     permissions_management = []
     read = [
-      "GetConnection"
+      "GetConnection",
+      "GetConnectionRecordingPreferences"
     ]
-    list    = []
+    list = [
+      "ListConnections"
+    ]
     tagging = []
   }
 }

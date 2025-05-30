@@ -66,6 +66,7 @@ locals {
       "CreateRegexPatternSet",
       "CreateRuleGroup",
       "CreateWebACL",
+      "DeleteAPIKey",
       "DeleteFirewallManagerRuleGroups",
       "DeleteIPSet",
       "DeleteLoggingConfiguration",

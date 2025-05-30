@@ -60,6 +60,7 @@ locals {
 
   access_level = {
     write = [
+      "Connect",
       "Invoke"
     ]
     permissions_management = []

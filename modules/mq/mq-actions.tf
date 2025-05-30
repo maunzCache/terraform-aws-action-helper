@@ -65,6 +65,7 @@ locals {
       "CreateReplicaBroker",
       "CreateUser",
       "DeleteBroker",
+      "DeleteConfiguration",
       "DeleteUser",
       "Promote",
       "RebootBroker",

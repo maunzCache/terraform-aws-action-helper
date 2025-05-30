@@ -60,11 +60,15 @@ locals {
 
   access_level = {
     write = [
+      "CancelFHIRExportJobWithDelete",
       "CreateFHIRDatastore",
       "CreateResource",
       "DeleteFHIRDatastore",
       "DeleteResource",
+      "ProcessBundle",
       "StartFHIRExportJob",
+      "StartFHIRExportJobWithGet",
+      "StartFHIRExportJobWithPost",
       "StartFHIRImportJob",
       "UpdateResource"
     ]
@@ -72,17 +76,22 @@ locals {
     read = [
       "DescribeFHIRDatastore",
       "DescribeFHIRExportJob",
+      "DescribeFHIRExportJobWithGet",
       "DescribeFHIRImportJob",
       "GetCapabilities",
-      "ListTagsForResource",
+      "GetExportedFile",
+      "GetHistoryByResourceId",
       "ReadResource",
+      "SearchEverything",
       "SearchWithGet",
-      "SearchWithPost"
+      "SearchWithPost",
+      "VersionReadResource"
     ]
     list = [
       "ListFHIRDatastores",
       "ListFHIRExportJobs",
-      "ListFHIRImportJobs"
+      "ListFHIRImportJobs",
+      "ListTagsForResource"
     ]
     tagging = [
       "TagResource",

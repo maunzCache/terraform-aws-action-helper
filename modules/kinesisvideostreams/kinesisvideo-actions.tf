@@ -68,6 +68,7 @@ locals {
       "DeleteSignalingChannel",
       "DeleteStream",
       "JoinStorageSession",
+      "JoinStorageSessionAsViewer",
       "PutMedia",
       "SendAlexaOfferToMaster",
       "StartEdgeConfigurationUpdate",

@@ -68,6 +68,7 @@ locals {
     read = [
       "DescribeStatement",
       "DescribeTable",
+      "GetStagingBucketLocation",
       "GetStatementResult",
       "ListDatabases",
       "ListSchemas"

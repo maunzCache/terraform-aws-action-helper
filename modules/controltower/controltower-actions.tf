@@ -60,17 +60,26 @@ locals {
 
   access_level = {
     write = [
+      "CreateLandingZone",
       "CreateManagedAccount",
       "DeleteLandingZone",
       "DeregisterManagedAccount",
       "DeregisterOrganizationalUnit",
+      "DisableBaseline",
       "DisableControl",
       "DisableGuardrail",
+      "EnableBaseline",
       "EnableControl",
       "EnableGuardrail",
       "ManageOrganizationalUnit",
+      "ResetEnabledBaseline",
+      "ResetEnabledControl",
+      "ResetLandingZone",
       "SetupLandingZone",
-      "UpdateAccountFactoryConfig"
+      "UpdateAccountFactoryConfig",
+      "UpdateEnabledBaseline",
+      "UpdateEnabledControl",
+      "UpdateLandingZone"
     ]
     permissions_management = []
     read = [
@@ -85,29 +94,44 @@ locals {
       "DescribeSingleSignOn",
       "GetAccountInfo",
       "GetAvailableUpdates",
+      "GetBaseline",
+      "GetBaselineOperation",
       "GetControlOperation",
+      "GetEnabledBaseline",
+      "GetEnabledControl",
       "GetGuardrailComplianceStatus",
       "GetHomeRegion",
+      "GetLandingZone",
       "GetLandingZoneDriftStatus",
+      "GetLandingZoneOperation",
       "GetLandingZoneStatus",
       "ListDriftDetails",
       "ListExternalConfigRuleCompliance",
+      "ListTagsForResource",
       "PerformPreLaunchChecks"
     ]
     list = [
+      "ListBaselines",
+      "ListControlOperations",
       "ListDirectoryGroups",
+      "ListEnabledBaselines",
       "ListEnabledControls",
       "ListEnabledGuardrails",
       "ListExtendGovernancePrecheckDetails",
       "ListGuardrailViolations",
       "ListGuardrails",
       "ListGuardrailsForTarget",
+      "ListLandingZoneOperations",
+      "ListLandingZones",
       "ListManagedAccounts",
       "ListManagedAccountsForGuardrail",
       "ListManagedAccountsForParent",
       "ListManagedOrganizationalUnits",
       "ListManagedOrganizationalUnitsForGuardrail"
     ]
-    tagging = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

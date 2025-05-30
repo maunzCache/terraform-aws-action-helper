@@ -72,11 +72,13 @@ locals {
       "DescribeScalableTargets",
       "DescribeScalingActivities",
       "DescribeScalingPolicies",
-      "DescribeScheduledActions"
+      "DescribeScheduledActions",
+      "ListTagsForResource"
     ]
-    list = []
+    list = [
+      "GetPredictiveScalingForecast"
+    ]
     tagging = [
-      "ListTagsForResource",
       "TagResource",
       "UntagResource"
     ]

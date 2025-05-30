@@ -98,6 +98,7 @@ locals {
       "DescribePlaceIndex",
       "DescribeRouteCalculator",
       "DescribeTracker",
+      "ForecastGeofenceEvents",
       "GetDevicePosition",
       "GetDevicePositionHistory",
       "GetGeofence",
@@ -112,7 +113,8 @@ locals {
       "ListTrackerConsumers",
       "SearchPlaceIndexForPosition",
       "SearchPlaceIndexForSuggestions",
-      "SearchPlaceIndexForText"
+      "SearchPlaceIndexForText",
+      "VerifyDevicePosition"
     ]
     list = [
       "ListGeofenceCollections",

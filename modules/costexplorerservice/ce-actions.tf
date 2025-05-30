@@ -71,6 +71,8 @@ locals {
       "DeleteNotificationSubscription",
       "DeleteReport",
       "ProvideAnomalyFeedback",
+      "StartCommitmentPurchaseAnalysis",
+      "StartCostAllocationTagBackfill",
       "StartSavingsPlansPurchaseRecommendationGeneration",
       "UpdateAnomalyMonitor",
       "UpdateAnomalySubscription",
@@ -89,10 +91,14 @@ locals {
       "GetAnomalies",
       "GetAnomalyMonitors",
       "GetAnomalySubscriptions",
+      "GetApproximateUsageRecords",
+      "GetCommitmentPurchaseAnalysis",
       "GetConsoleActionSetEnforced",
       "GetCostAndUsage",
+      "GetCostAndUsageComparisons",
       "GetCostAndUsageWithResources",
       "GetCostCategories",
+      "GetCostComparisonDrivers",
       "GetCostForecast",
       "GetDimensionValues",
       "GetPreferences",
@@ -110,6 +116,8 @@ locals {
       "ListTagsForResource"
     ]
     list = [
+      "ListCommitmentPurchaseAnalyses",
+      "ListCostAllocationTagBackfillHistory",
       "ListCostAllocationTags",
       "ListCostCategoryDefinitions",
       "ListSavingsPlansPurchaseRecommendationGeneration"

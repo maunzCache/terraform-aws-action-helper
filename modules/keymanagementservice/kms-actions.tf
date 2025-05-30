@@ -69,6 +69,7 @@ locals {
       "DeleteAlias",
       "DeleteCustomKeyStore",
       "DeleteImportedKeyMaterial",
+      "DeriveSharedSecret",
       "DisableKey",
       "DisableKeyRotation",
       "DisconnectCustomKeyStore",
@@ -85,6 +86,7 @@ locals {
       "ReEncryptFrom",
       "ReEncryptTo",
       "ReplicateKey",
+      "RotateKeyOnDemand",
       "ScheduleKeyDeletion",
       "Sign",
       "SynchronizeMultiRegionKey",
@@ -113,6 +115,7 @@ locals {
       "ListAliases",
       "ListGrants",
       "ListKeyPolicies",
+      "ListKeyRotations",
       "ListKeys",
       "ListResourceTags",
       "ListRetirableGrants"

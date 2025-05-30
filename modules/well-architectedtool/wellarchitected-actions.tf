@@ -62,17 +62,22 @@ locals {
     write = [
       "AssociateLenses",
       "AssociateProfiles",
+      "ConfigureIntegration",
       "CreateLensShare",
       "CreateLensVersion",
       "CreateMilestone",
       "CreateProfile",
       "CreateProfileShare",
+      "CreateReviewTemplate",
+      "CreateTemplateShare",
       "CreateWorkload",
       "CreateWorkloadShare",
       "DeleteLens",
       "DeleteLensShare",
       "DeleteProfile",
       "DeleteProfileShare",
+      "DeleteReviewTemplate",
+      "DeleteTemplateShare",
       "DeleteWorkload",
       "DeleteWorkloadShare",
       "DisassociateLenses",
@@ -80,19 +85,25 @@ locals {
       "ImportLens",
       "UpdateAnswer",
       "UpdateGlobalSettings",
+      "UpdateIntegration",
       "UpdateLensReview",
       "UpdateProfile",
+      "UpdateReviewTemplate",
+      "UpdateReviewTemplateAnswer",
+      "UpdateReviewTemplateLensReview",
       "UpdateShareInvitation",
       "UpdateWorkload",
       "UpdateWorkloadShare",
       "UpgradeLensReview",
-      "UpgradeProfileVersion"
+      "UpgradeProfileVersion",
+      "UpgradeReviewTemplateLensReview"
     ]
     permissions_management = []
     read = [
       "ExportLens",
       "GetAnswer",
       "GetConsolidatedReport",
+      "GetGlobalSettings",
       "GetLens",
       "GetLensReview",
       "GetLensReviewReport",
@@ -100,6 +111,9 @@ locals {
       "GetMilestone",
       "GetProfile",
       "GetProfileTemplate",
+      "GetReviewTemplate",
+      "GetReviewTemplateAnswer",
+      "GetReviewTemplateLensReview",
       "GetWorkload",
       "ListTagsForResource"
     ]
@@ -116,7 +130,10 @@ locals {
       "ListProfileNotifications",
       "ListProfileShares",
       "ListProfiles",
+      "ListReviewTemplateAnswers",
+      "ListReviewTemplates",
       "ListShareInvitations",
+      "ListTemplateShares",
       "ListWorkloadShares",
       "ListWorkloads"
     ]

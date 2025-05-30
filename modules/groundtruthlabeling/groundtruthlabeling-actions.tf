@@ -61,13 +61,24 @@ locals {
   access_level = {
     write = [
       "AssociatePatchToManifestJob",
+      "CreateBatch",
+      "CreateIntakeForm",
+      "CreateProject",
+      "CreateWorkflowDefinition",
+      "GenerateLIDARPreviewTaskConfigJob",
       "RunFilterOrSampleDatasetJob",
-      "RunGenerateManifestByCrawlingJob"
+      "RunGenerateManifestByCrawlingJob",
+      "RunGenerateManifestMetricsJob",
+      "UpdateBatch"
     ]
     permissions_management = []
     read = [
       "DescribeConsoleJob",
-      "ListDatasetObjects"
+      "GetBatch",
+      "GetIntakeFormStatus",
+      "ListBatches",
+      "ListDatasetObjects",
+      "ListProjects"
     ]
     list    = []
     tagging = []

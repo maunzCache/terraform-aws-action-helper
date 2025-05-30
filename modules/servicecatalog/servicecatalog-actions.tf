@@ -87,6 +87,7 @@ locals {
       "DeleteProduct",
       "DeleteProvisionedProductPlan",
       "DeleteProvisioningArtifact",
+      "DeleteResourcePolicy",
       "DeleteServiceAction",
       "DeleteTagOption",
       "DisableAWSOrganizationsAccess",
@@ -106,6 +107,7 @@ locals {
       "NotifyUpdateProvisionedProductEngineWorkflowResult",
       "ProvisionProduct",
       "PutConfiguration",
+      "PutResourcePolicy",
       "RejectPortfolioShare",
       "SyncResource",
       "TerminateProvisionedProduct",
@@ -147,6 +149,7 @@ locals {
       "GetAttributeGroup",
       "GetConfiguration",
       "GetProvisionedProductOutputs",
+      "GetResourcePolicy",
       "ListTagsForResource"
     ]
     list = [

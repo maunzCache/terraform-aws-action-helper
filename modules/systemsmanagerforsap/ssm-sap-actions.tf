@@ -66,7 +66,9 @@ locals {
       "PutResourcePermission",
       "RegisterApplication",
       "RestoreDatabase",
+      "StartApplication",
       "StartApplicationRefresh",
+      "StopApplication",
       "UpdateApplicationSettings",
       "UpdateHANABackupSettings"
     ]
@@ -83,6 +85,7 @@ locals {
       "ListApplications",
       "ListComponents",
       "ListDatabases",
+      "ListOperationEvents",
       "ListOperations"
     ]
     tagging = [

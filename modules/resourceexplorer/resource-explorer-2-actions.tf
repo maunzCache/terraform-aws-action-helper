@@ -62,24 +62,32 @@ locals {
     write = [
       "AssociateDefaultView",
       "CreateIndex",
+      "CreateManagedView",
       "CreateView",
       "DeleteIndex",
+      "DeleteResourcePolicy",
       "DeleteView",
       "DisassociateDefaultView",
+      "PutResourcePolicy",
       "UpdateIndexType",
       "UpdateView"
     ]
     permissions_management = []
     read = [
       "BatchGetView",
+      "GetAccountLevelServiceConfiguration",
       "GetDefaultView",
       "GetIndex",
+      "GetManagedView",
+      "GetResourcePolicy",
       "GetView",
       "ListTagsForResource",
       "Search"
     ]
     list = [
       "ListIndexes",
+      "ListIndexesForMembers",
+      "ListManagedViews",
       "ListSupportedResourceTypes",
       "ListViews"
     ]

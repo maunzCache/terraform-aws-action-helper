@@ -75,8 +75,10 @@ locals {
       "PutAccountPreferences",
       "PutBackupPolicy",
       "PutLifecycleConfiguration",
+      "ReplicationWrite",
       "Restore",
-      "UpdateFileSystem"
+      "UpdateFileSystem",
+      "UpdateFileSystemProtection"
     ]
     permissions_management = [
       "DeleteFileSystemPolicy",
@@ -90,7 +92,8 @@ locals {
       "DescribeMountTargetSecurityGroups",
       "DescribeMountTargets",
       "DescribeTags",
-      "ListTagsForResource"
+      "ListTagsForResource",
+      "ReplicationRead"
     ]
     list = [
       "DescribeAccessPoints",

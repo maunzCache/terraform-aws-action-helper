@@ -21,6 +21,7 @@ dev = [
     "autopep8",
     "isort",
     "mypy",
+    "pre-commit",
     "pycodestyle",
     "pydocstyle",
     "pytest >= 7.4",

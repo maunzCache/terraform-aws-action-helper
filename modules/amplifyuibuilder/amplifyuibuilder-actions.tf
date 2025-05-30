@@ -66,7 +66,9 @@ locals {
       "DeleteComponent",
       "DeleteForm",
       "DeleteTheme",
+      "ExchangeCodeForToken",
       "PutMetadataFlag",
+      "RefreshToken",
       "ResetMetadataFlag",
       "StartCodegenJob",
       "UpdateComponent",
@@ -88,8 +90,12 @@ locals {
       "ListCodegenJobs",
       "ListComponents",
       "ListForms",
+      "ListTagsForResource",
       "ListThemes"
     ]
-    tagging = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

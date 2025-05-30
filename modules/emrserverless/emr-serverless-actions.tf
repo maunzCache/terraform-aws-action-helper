@@ -60,6 +60,8 @@ locals {
 
   access_level = {
     write = [
+      "AccessInteractiveEndpoints",
+      "AccessLivyEndpoints",
       "CancelJobRun",
       "CreateApplication",
       "DeleteApplication",
@@ -77,6 +79,7 @@ locals {
     ]
     list = [
       "ListApplications",
+      "ListJobRunAttempts",
       "ListJobRuns"
     ]
     tagging = [

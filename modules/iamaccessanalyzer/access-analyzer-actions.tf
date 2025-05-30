@@ -67,18 +67,25 @@ locals {
       "CreateArchiveRule",
       "DeleteAnalyzer",
       "DeleteArchiveRule",
+      "GenerateFindingRecommendation",
       "StartPolicyGeneration",
       "StartResourceScan",
+      "UpdateAnalyzer",
       "UpdateArchiveRule",
       "UpdateFindings"
     ]
     permissions_management = []
     read = [
+      "CheckAccessNotGranted",
+      "CheckNoNewAccess",
+      "CheckNoPublicAccess",
       "GetAccessPreview",
       "GetAnalyzedResource",
       "GetAnalyzer",
       "GetArchiveRule",
       "GetFinding",
+      "GetFindingRecommendation",
+      "GetFindingsStatistics",
       "GetGeneratedPolicy",
       "ListAccessPreviewFindings",
       "ListAnalyzedResources",

@@ -60,9 +60,11 @@ locals {
 
   access_level = {
     write = [
+      "CreateTemplate",
       "CreateWorkflow",
       "CreateWorkflowStep",
       "CreateWorkflowStepGroup",
+      "DeleteTemplate",
       "DeleteWorkflow",
       "DeleteWorkflowStep",
       "DeleteWorkflowStepGroup",
@@ -71,6 +73,7 @@ locals {
       "SendMessage",
       "StartWorkflow",
       "StopWorkflow",
+      "UpdateTemplate",
       "UpdateWorkflow",
       "UpdateWorkflowStep",
       "UpdateWorkflowStepGroup"

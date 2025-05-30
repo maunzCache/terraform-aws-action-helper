@@ -65,10 +65,12 @@ locals {
       "CreateCluster",
       "CreateClusterV2",
       "CreateConfiguration",
+      "CreateReplicator",
       "CreateVpcConnection",
       "DeleteCluster",
       "DeleteClusterPolicy",
       "DeleteConfiguration",
+      "DeleteReplicator",
       "DeleteVpcConnection",
       "PutClusterPolicy",
       "RebootBroker",
@@ -81,6 +83,7 @@ locals {
       "UpdateConfiguration",
       "UpdateConnectivity",
       "UpdateMonitoring",
+      "UpdateReplicationInfo",
       "UpdateSecurity",
       "UpdateStorage"
     ]
@@ -92,6 +95,7 @@ locals {
       "DescribeClusterV2",
       "DescribeConfiguration",
       "DescribeConfigurationRevision",
+      "DescribeReplicator",
       "DescribeVpcConnection",
       "GetBootstrapBrokers",
       "GetClusterPolicy",
@@ -108,6 +112,7 @@ locals {
       "ListConfigurations",
       "ListKafkaVersions",
       "ListNodes",
+      "ListReplicators",
       "ListScramSecrets",
       "ListVpcConnections"
     ]

@@ -60,6 +60,7 @@ locals {
 
   access_level = {
     write = [
+      "CancelCapacityTask",
       "CancelOrder",
       "CreateOrder",
       "CreateOutpost",
@@ -67,6 +68,7 @@ locals {
       "CreateSite",
       "DeleteOutpost",
       "DeleteSite",
+      "StartCapacityTask",
       "StartConnection",
       "UpdateOutpost",
       "UpdateSite",
@@ -75,18 +77,23 @@ locals {
     ]
     permissions_management = []
     read = [
+      "GetCapacityTask",
       "GetCatalogItem",
       "GetConnection",
       "GetOrder",
       "GetOutpost",
       "GetOutpostInstanceTypes",
+      "GetOutpostSupportedInstanceTypes",
       "GetPrivateConnectivityConfig",
       "GetSite",
       "GetSiteAddress",
       "ListTagsForResource"
     ]
     list = [
+      "ListAssetInstances",
       "ListAssets",
+      "ListBlockingInstancesForCapacityTask",
+      "ListCapacityTasks",
       "ListCatalogItems",
       "ListOrders",
       "ListOutposts",

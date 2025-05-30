@@ -78,6 +78,7 @@ locals {
       "CreateImageBuilderStreamingURL",
       "CreateStack",
       "CreateStreamingURL",
+      "CreateThemeForStack",
       "CreateUpdatedImage",
       "CreateUsageReportSubscription",
       "CreateUser",
@@ -91,6 +92,7 @@ locals {
       "DeleteImageBuilder",
       "DeleteImagePermissions",
       "DeleteStack",
+      "DeleteThemeForStack",
       "DeleteUsageReportSubscription",
       "DeleteUser",
       "DisableUser",
@@ -113,7 +115,8 @@ locals {
       "UpdateEntitlement",
       "UpdateFleet",
       "UpdateImagePermissions",
-      "UpdateStack"
+      "UpdateStack",
+      "UpdateThemeForStack"
     ]
     permissions_management = []
     read = [
@@ -130,6 +133,7 @@ locals {
       "DescribeImages",
       "DescribeSessions",
       "DescribeStacks",
+      "DescribeThemeForStack",
       "DescribeUsageReportSubscriptions",
       "DescribeUserStackAssociations",
       "DescribeUsers",

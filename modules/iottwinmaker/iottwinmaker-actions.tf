@@ -61,8 +61,10 @@ locals {
   access_level = {
     write = [
       "BatchPutPropertyValues",
+      "CancelMetadataTransferJob",
       "CreateComponentType",
       "CreateEntity",
+      "CreateMetadataTransferJob",
       "CreateScene",
       "CreateSyncJob",
       "CreateWorkspace",
@@ -82,6 +84,7 @@ locals {
       "ExecuteQuery",
       "GetComponentType",
       "GetEntity",
+      "GetMetadataTransferJob",
       "GetPricingPlan",
       "GetPropertyValue",
       "GetPropertyValueHistory",
@@ -91,7 +94,10 @@ locals {
     ]
     list = [
       "ListComponentTypes",
+      "ListComponents",
       "ListEntities",
+      "ListMetadataTransferJobs",
+      "ListProperties",
       "ListScenes",
       "ListSyncJobs",
       "ListSyncResources",

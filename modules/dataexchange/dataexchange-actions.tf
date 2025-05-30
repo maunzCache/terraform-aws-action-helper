@@ -60,19 +60,24 @@ locals {
 
   access_level = {
     write = [
+      "AcceptDataGrant",
       "CancelJob",
       "CreateAsset",
+      "CreateDataGrant",
       "CreateDataSet",
       "CreateEventAction",
       "CreateJob",
       "CreateRevision",
       "DeleteAsset",
+      "DeleteDataGrant",
       "DeleteDataSet",
       "DeleteEventAction",
       "DeleteRevision",
       "PublishDataSet",
+      "PublishToDataGrant",
       "RevokeRevision",
       "SendApiAsset",
+      "SendDataSetNotification",
       "StartJob",
       "UpdateAsset",
       "UpdateDataSet",
@@ -82,16 +87,20 @@ locals {
     permissions_management = []
     read = [
       "GetAsset",
+      "GetDataGrant",
       "GetDataSet",
       "GetEventAction",
       "GetJob",
+      "GetReceivedDataGrant",
       "GetRevision"
     ]
     list = [
+      "ListDataGrants",
       "ListDataSetRevisions",
       "ListDataSets",
       "ListEventActions",
       "ListJobs",
+      "ListReceivedDataGrants",
       "ListRevisionAssets",
       "ListTagsForResource"
     ]

@@ -83,12 +83,16 @@ locals {
       "DeregisterCertificate",
       "DeregisterEventTopic",
       "DisableClientAuthentication",
+      "DisableDirectoryDataAccess",
       "DisableLDAPS",
       "DisableRadius",
+      "DisableRoleAccess",
       "DisableSso",
       "EnableClientAuthentication",
+      "EnableDirectoryDataAccess",
       "EnableLDAPS",
       "EnableRadius",
+      "EnableRoleAccess",
       "EnableSso",
       "RegisterCertificate",
       "RegisterEventTopic",
@@ -103,18 +107,22 @@ locals {
       "UnshareDirectory",
       "UpdateAuthorizedApplication",
       "UpdateConditionalForwarder",
+      "UpdateDirectory",
       "UpdateDirectorySetup",
       "UpdateNumberOfDomainControllers",
       "UpdateRadius",
       "UpdateSettings",
       "UpdateTrust"
     ]
-    permissions_management = []
+    permissions_management = [
+      "AccessDSData"
+    ]
     read = [
       "CheckAlias",
       "DescribeCertificate",
       "DescribeClientAuthenticationSettings",
       "DescribeConditionalForwarders",
+      "DescribeDirectoryDataAccess",
       "DescribeDomainControllers",
       "DescribeEventTopics",
       "DescribeLDAPSSettings",

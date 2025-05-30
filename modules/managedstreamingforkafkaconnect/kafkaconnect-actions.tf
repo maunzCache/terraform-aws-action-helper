@@ -65,18 +65,25 @@ locals {
       "CreateWorkerConfiguration",
       "DeleteConnector",
       "DeleteCustomPlugin",
+      "DeleteWorkerConfiguration",
       "UpdateConnector"
     ]
     permissions_management = []
     read = [
       "DescribeConnector",
+      "DescribeConnectorOperation",
       "DescribeCustomPlugin",
       "DescribeWorkerConfiguration",
+      "ListConnectorOperations",
       "ListConnectors",
       "ListCustomPlugins",
+      "ListTagsForResource",
       "ListWorkerConfigurations"
     ]
-    list    = []
-    tagging = []
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

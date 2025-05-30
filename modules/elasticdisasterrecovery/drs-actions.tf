@@ -72,6 +72,7 @@ locals {
       "CreateSourceNetwork",
       "CreateSourceServerForDrs",
       "DeleteJob",
+      "DeleteLaunchAction",
       "DeleteLaunchConfigurationTemplate",
       "DeleteRecoveryInstance",
       "DeleteReplicationConfigurationTemplate",
@@ -89,6 +90,7 @@ locals {
       "NotifyConsistencyAttainedForDrs",
       "NotifyReplicationServerAuthenticationForDrs",
       "NotifyVolumeEventForDrs",
+      "PutLaunchAction",
       "RetryDataReplication",
       "ReverseReplication",
       "SendAgentLogsForDrs",
@@ -146,6 +148,7 @@ locals {
       "GetReplicationConfiguration",
       "GetSuggestedFailbackClientDeviceMappingForDrs",
       "ListExtensibleSourceServers",
+      "ListLaunchActions",
       "ListStagingAccounts",
       "ListTagsForResource"
     ]

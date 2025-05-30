@@ -64,17 +64,22 @@ locals {
       "CreateAccessPoint",
       "CreateAccessPointForObjectLambda",
       "CreateBucket",
+      "CreateBucketMetadataTableConfiguration",
       "CreateJob",
       "CreateMultiRegionAccessPoint",
+      "CreateStorageLensGroup",
       "DeleteAccessPoint",
       "DeleteAccessPointForObjectLambda",
       "DeleteBucket",
+      "DeleteBucketMetadataTableConfiguration",
       "DeleteBucketWebsite",
       "DeleteMultiRegionAccessPoint",
       "DeleteObject",
       "DeleteObjectVersion",
       "DeleteStorageLensConfiguration",
+      "DeleteStorageLensGroup",
       "InitiateReplication",
+      "PauseReplication",
       "PutAccelerateConfiguration",
       "PutAccessPointConfigurationForObjectLambda",
       "PutAnalyticsConfiguration",
@@ -82,7 +87,6 @@ locals {
       "PutBucketLogging",
       "PutBucketNotification",
       "PutBucketObjectLockConfiguration",
-      "PutBucketOwnershipControls",
       "PutBucketRequestPayment",
       "PutBucketVersioning",
       "PutBucketWebsite",
@@ -101,29 +105,47 @@ locals {
       "RestoreObject",
       "SubmitMultiRegionAccessPointRoutes",
       "UpdateJobPriority",
-      "UpdateJobStatus"
+      "UpdateJobStatus",
+      "UpdateStorageLensGroup"
     ]
     permissions_management = [
+      "AssociateAccessGrantsIdentityCenter",
       "BypassGovernanceRetention",
+      "CreateAccessGrant",
+      "CreateAccessGrantsInstance",
+      "CreateAccessGrantsLocation",
+      "DeleteAccessGrant",
+      "DeleteAccessGrantsInstance",
+      "DeleteAccessGrantsInstanceResourcePolicy",
+      "DeleteAccessGrantsLocation",
       "DeleteAccessPointPolicy",
       "DeleteAccessPointPolicyForObjectLambda",
       "DeleteBucketPolicy",
+      "DissociateAccessGrantsIdentityCenter",
       "ObjectOwnerOverrideToBucketOwner",
+      "PutAccessGrantsInstanceResourcePolicy",
       "PutAccessPointPolicy",
       "PutAccessPointPolicyForObjectLambda",
       "PutAccessPointPublicAccessBlock",
       "PutAccountPublicAccessBlock",
       "PutBucketAcl",
+      "PutBucketOwnershipControls",
       "PutBucketPolicy",
       "PutBucketPublicAccessBlock",
       "PutMultiRegionAccessPointPolicy",
       "PutObjectAcl",
-      "PutObjectVersionAcl"
+      "PutObjectVersionAcl",
+      "UpdateAccessGrantsLocation"
     ]
     read = [
       "DescribeJob",
       "DescribeMultiRegionAccessPointOperation",
       "GetAccelerateConfiguration",
+      "GetAccessGrant",
+      "GetAccessGrantsInstance",
+      "GetAccessGrantsInstanceForPrefix",
+      "GetAccessGrantsInstanceResourcePolicy",
+      "GetAccessGrantsLocation",
       "GetAccessPoint",
       "GetAccessPointConfigurationForObjectLambda",
       "GetAccessPointForObjectLambda",
@@ -137,6 +159,7 @@ locals {
       "GetBucketCORS",
       "GetBucketLocation",
       "GetBucketLogging",
+      "GetBucketMetadataTableConfiguration",
       "GetBucketNotification",
       "GetBucketObjectLockConfiguration",
       "GetBucketOwnershipControls",
@@ -147,6 +170,7 @@ locals {
       "GetBucketTagging",
       "GetBucketVersioning",
       "GetBucketWebsite",
+      "GetDataAccess",
       "GetEncryptionConfiguration",
       "GetIntelligentTieringConfiguration",
       "GetInventoryConfiguration",
@@ -173,19 +197,26 @@ locals {
       "GetReplicationConfiguration",
       "GetStorageLensConfiguration",
       "GetStorageLensConfigurationTagging",
-      "GetStorageLensDashboard"
+      "GetStorageLensDashboard",
+      "GetStorageLensGroup"
     ]
     list = [
+      "ListAccessGrants",
+      "ListAccessGrantsInstances",
+      "ListAccessGrantsLocations",
       "ListAccessPoints",
       "ListAccessPointsForObjectLambda",
       "ListAllMyBuckets",
       "ListBucket",
       "ListBucketMultipartUploads",
       "ListBucketVersions",
+      "ListCallerAccessGrants",
       "ListJobs",
       "ListMultiRegionAccessPoints",
       "ListMultipartUploadParts",
-      "ListStorageLensConfigurations"
+      "ListStorageLensConfigurations",
+      "ListStorageLensGroups",
+      "ListTagsForResource"
     ]
     tagging = [
       "DeleteJobTagging",
@@ -197,7 +228,9 @@ locals {
       "PutObjectTagging",
       "PutObjectVersionTagging",
       "PutStorageLensConfigurationTagging",
-      "ReplicateTags"
+      "ReplicateTags",
+      "TagResource",
+      "UntagResource"
     ]
   }
 }

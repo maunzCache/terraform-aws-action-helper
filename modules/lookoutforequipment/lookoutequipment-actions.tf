@@ -65,21 +65,27 @@ locals {
       "CreateLabel",
       "CreateLabelGroup",
       "CreateModel",
+      "CreateRetrainingScheduler",
       "DeleteDataset",
       "DeleteInferenceScheduler",
       "DeleteLabel",
       "DeleteLabelGroup",
       "DeleteModel",
       "DeleteResourcePolicy",
+      "DeleteRetrainingScheduler",
       "ImportDataset",
       "ImportModelVersion",
       "PutResourcePolicy",
       "StartDataIngestionJob",
       "StartInferenceScheduler",
+      "StartRetrainingScheduler",
       "StopInferenceScheduler",
+      "StopRetrainingScheduler",
       "UpdateActiveModelVersion",
       "UpdateInferenceScheduler",
-      "UpdateLabelGroup"
+      "UpdateLabelGroup",
+      "UpdateModel",
+      "UpdateRetrainingScheduler"
     ]
     permissions_management = []
     read = [
@@ -90,6 +96,7 @@ locals {
       "DescribeModel",
       "DescribeModelVersion",
       "DescribeResourcePolicy",
+      "DescribeRetrainingScheduler",
       "Describelabel",
       "ListInferenceEvents",
       "ListInferenceExecutions",
@@ -103,6 +110,7 @@ locals {
       "ListLabels",
       "ListModelVersions",
       "ListModels",
+      "ListRetrainingSchedulers",
       "ListSensorStatistics"
     ]
     tagging = [

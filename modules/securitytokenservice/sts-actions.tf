@@ -63,7 +63,9 @@ locals {
       "AssumeRole",
       "AssumeRoleWithSAML",
       "AssumeRoleWithWebIdentity",
+      "AssumeRoot",
       "DecodeAuthorizationMessage",
+      "SetContext",
       "SetSourceIdentity"
     ]
     permissions_management = []

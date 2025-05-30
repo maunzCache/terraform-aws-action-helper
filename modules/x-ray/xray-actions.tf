@@ -67,35 +67,45 @@ locals {
       "DeleteSamplingRule",
       "Link",
       "PutResourcePolicy",
+      "PutSpans",
+      "PutSpansForIndexing",
       "PutTelemetryRecords",
       "PutTraceSegments",
       "UpdateGroup",
-      "UpdateSamplingRule"
+      "UpdateIndexingRule",
+      "UpdateSamplingRule",
+      "UpdateTraceSegmentDestination"
     ]
     permissions_management = [
       "PutEncryptionConfig"
     ]
     read = [
       "BatchGetTraceSummaryById",
+      "CancelTraceRetrieval",
       "GetDistinctTraceGraphs",
       "GetEncryptionConfig",
       "GetGroup",
       "GetGroups",
+      "GetIndexingRules",
       "GetInsight",
       "GetInsightEvents",
       "GetInsightImpactGraph",
       "GetInsightSummaries",
+      "GetRetrievedTracesGraph",
       "GetSamplingRules",
       "GetSamplingStatisticSummaries",
       "GetSamplingTargets",
       "GetServiceGraph",
       "GetTimeSeriesServiceStatistics",
       "GetTraceGraph",
-      "GetTraceSummaries"
+      "GetTraceSegmentDestination",
+      "GetTraceSummaries",
+      "StartTraceRetrieval"
     ]
     list = [
       "BatchGetTraces",
       "ListResourcePolicies",
+      "ListRetrievedTraces",
       "ListTagsForResource"
     ]
     tagging = [

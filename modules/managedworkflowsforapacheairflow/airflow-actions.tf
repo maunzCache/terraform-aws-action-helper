@@ -64,6 +64,7 @@ locals {
       "CreateEnvironment",
       "CreateWebLoginToken",
       "DeleteEnvironment",
+      "InvokeRestApi",
       "PublishMetrics",
       "UpdateEnvironment"
     ]

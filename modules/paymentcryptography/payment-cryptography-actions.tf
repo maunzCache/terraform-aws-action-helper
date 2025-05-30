@@ -69,6 +69,7 @@ locals {
       "ExportKey",
       "GenerateCardValidationData",
       "GenerateMac",
+      "GenerateMacEmvPinChange",
       "GeneratePinData",
       "ImportKey",
       "ReEncryptData",

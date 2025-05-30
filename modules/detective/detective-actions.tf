@@ -69,8 +69,10 @@ locals {
       "DisassociateMembership",
       "EnableOrganizationAdminAccount",
       "RejectInvitation",
+      "StartInvestigation",
       "StartMonitoringMember",
       "UpdateDatasourcePackages",
+      "UpdateInvestigationState",
       "UpdateOrganizationConfiguration"
     ]
     permissions_management = []
@@ -80,15 +82,19 @@ locals {
       "DescribeOrganizationConfiguration",
       "GetFreeTrialEligibility",
       "GetGraphIngestState",
+      "GetInvestigation",
       "GetMembers",
       "GetPricingInformation",
       "GetUsageInformation",
+      "InvokeAssistant",
       "SearchGraph"
     ]
     list = [
       "ListDatasourcePackages",
       "ListGraphs",
       "ListHighDegreeEntities",
+      "ListIndicators",
+      "ListInvestigations",
       "ListInvitations",
       "ListMembers",
       "ListOrganizationAdminAccount",

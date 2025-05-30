@@ -69,6 +69,7 @@ locals {
       "DescribeAffectedEntities",
       "DescribeAffectedEntitiesForOrganization",
       "DescribeEntityAggregates",
+      "DescribeEntityAggregatesForOrganization",
       "DescribeEventAggregates",
       "DescribeEventDetails",
       "DescribeEventDetailsForOrganization",

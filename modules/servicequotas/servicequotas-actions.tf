@@ -61,6 +61,7 @@ locals {
   access_level = {
     write = [
       "AssociateServiceQuotaTemplate",
+      "CreateSupportCase",
       "DeleteServiceQuotaIncreaseRequestFromTemplate",
       "DisassociateServiceQuotaTemplate",
       "PutServiceQuotaIncreaseRequestIntoTemplate",

@@ -61,6 +61,8 @@ locals {
   access_level = {
     write = [
       "AssociateUser",
+      "CreateLicenseServerEndpoint",
+      "DeleteLicenseServerEndpoint",
       "DeregisterIdentityProvider",
       "DisassociateUser",
       "RegisterIdentityProvider",
@@ -69,13 +71,19 @@ locals {
       "UpdateIdentityProviderSettings"
     ]
     permissions_management = []
-    read                   = []
+    read = [
+      "ListTagsForResource"
+    ]
     list = [
       "ListIdentityProviders",
       "ListInstances",
+      "ListLicenseServerEndpoints",
       "ListProductSubscriptions",
       "ListUserAssociations"
     ]
-    tagging = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -62,21 +62,37 @@ locals {
     write = [
       "AcceptConnection",
       "AssociateIamRoleToConnection",
+      "AssociateIdentityCenterApplicationToSpace",
+      "AssociateIdentityToIdentityCenterApplication",
+      "BatchAssociateIdentitiesToIdentityCenterApplication",
+      "BatchDisassociateIdentitiesFromIdentityCenterApplication",
+      "CreateIdentityCenterApplication",
+      "CreateSpace",
+      "CreateSpaceAdminRoleAssignment",
       "DeleteConnection",
+      "DeleteIdentityCenterApplication",
       "DisassociateIamRoleFromConnection",
+      "DisassociateIdentityCenterApplicationFromSpace",
+      "DisassociateIdentityFromIdentityCenterApplication",
       "PutBillingAuthorization",
-      "RejectConnection"
+      "RejectConnection",
+      "SynchronizeIdentityCenterApplication",
+      "UpdateIdentityCenterApplication"
     ]
     permissions_management = []
     read = [
       "GetBillingAuthorization",
       "GetConnection",
+      "GetIdentityCenterApplication",
       "GetPendingConnection",
       "ListTagsForResource"
     ]
     list = [
       "ListConnections",
-      "ListIamRolesForConnection"
+      "ListIamRolesForConnection",
+      "ListIdentityCenterApplications",
+      "ListIdentityCenterApplicationsForSpace",
+      "ListSpacesForIdentityCenterApplication"
     ]
     tagging = [
       "TagResource",

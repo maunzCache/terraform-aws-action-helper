@@ -60,15 +60,26 @@ locals {
 
   access_level = {
     write = [
+      "AssociateCustomizationPermission",
+      "CreateCustomization",
       "CreateProfile",
+      "DeleteCustomization",
       "DeleteProfile",
+      "DisassociateCustomizationPermission",
+      "UpdateCustomization",
       "UpdateProfile"
     ]
-    permissions_management = []
+    permissions_management = [
+      "AllowVendedLogDeliveryForResource"
+    ]
     read = [
-      "GenerateRecommendations"
+      "GenerateRecommendations",
+      "GetCustomization"
     ]
     list = [
+      "ListCustomizationPermissions",
+      "ListCustomizationVersions",
+      "ListCustomizations",
       "ListProfiles",
       "ListTagsForResource"
     ]

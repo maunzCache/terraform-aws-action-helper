@@ -62,18 +62,32 @@ locals {
     write = [
       "CreateConnection",
       "CreateHost",
+      "CreateRepositoryLink",
+      "CreateSyncConfiguration",
       "DeleteConnection",
       "DeleteHost",
+      "DeleteRepositoryLink",
+      "DeleteSyncConfiguration",
       "UpdateConnectionInstallation",
-      "UpdateHost"
+      "UpdateHost",
+      "UpdateRepositoryLink",
+      "UpdateSyncBlocker",
+      "UpdateSyncConfiguration"
     ]
     permissions_management = []
     read = [
       "GetConnection",
+      "GetConnectionToken",
       "GetHost",
       "GetIndividualAccessToken",
       "GetInstallationUrl",
+      "GetRepositoryLink",
+      "GetRepositorySyncStatus",
+      "GetResourceSyncStatus",
+      "GetSyncBlockerSummary",
+      "GetSyncConfiguration",
       "PassConnection",
+      "PassRepository",
       "RegisterAppCode",
       "StartAppRegistrationHandshake",
       "StartOAuthHandshake",
@@ -83,6 +97,9 @@ locals {
       "ListConnections",
       "ListHosts",
       "ListInstallationTargets",
+      "ListRepositoryLinks",
+      "ListRepositorySyncDefinitions",
+      "ListSyncConfigurations",
       "ListTagsForResource"
     ]
     tagging = [

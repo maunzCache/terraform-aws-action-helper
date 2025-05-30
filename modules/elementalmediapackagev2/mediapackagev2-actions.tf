@@ -60,8 +60,10 @@ locals {
 
   access_level = {
     write = [
+      "CancelHarvestJob",
       "CreateChannel",
       "CreateChannelGroup",
+      "CreateHarvestJob",
       "CreateOriginEndpoint",
       "DeleteChannel",
       "DeleteChannelGroup",
@@ -71,6 +73,8 @@ locals {
       "PutChannelPolicy",
       "PutObject",
       "PutOriginEndpointPolicy",
+      "ResetChannelState",
+      "ResetOriginEndpointState",
       "UpdateChannel",
       "UpdateChannelGroup",
       "UpdateOriginEndpoint"
@@ -80,15 +84,18 @@ locals {
       "GetChannel",
       "GetChannelGroup",
       "GetChannelPolicy",
+      "GetHarvestJob",
       "GetHeadObject",
       "GetObject",
       "GetOriginEndpoint",
       "GetOriginEndpointPolicy",
+      "HarvestObject",
       "ListTagsForResource"
     ]
     list = [
       "ListChannelGroups",
       "ListChannels",
+      "ListHarvestJobs",
       "ListOriginEndpoints"
     ]
     tagging = [

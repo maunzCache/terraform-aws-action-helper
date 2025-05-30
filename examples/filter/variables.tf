@@ -47,4 +47,3 @@ variable "minify_replacement" {
   default     = "$1*"
   description = "Expression which represents the replacement value for the match of the minify_regex."
 }
-

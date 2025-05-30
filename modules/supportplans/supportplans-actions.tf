@@ -68,7 +68,9 @@ locals {
       "GetSupportPlan",
       "GetSupportPlanUpdateStatus"
     ]
-    list    = []
+    list = [
+      "ListSupportPlanModifiers"
+    ]
     tagging = []
   }
 }

@@ -60,19 +60,37 @@ locals {
 
   access_level = {
     write = [
+      "AcceptFinancingApplicationTerms",
+      "CreateFinancingApplication",
       "CreatePaymentInstrument",
       "DeletePaymentInstrument",
       "MakePayment",
+      "UpdateFinancingApplication",
+      "UpdatePaymentInstrument",
       "UpdatePaymentPreferences"
     ]
     permissions_management = []
     read = [
+      "GetFinancingApplication",
+      "GetFinancingLine",
+      "GetFinancingLineWithdrawal",
+      "GetFinancingOption",
       "GetPaymentStatus"
     ]
     list = [
       "GetPaymentInstrument",
-      "ListPaymentPreferences"
+      "ListFinancingApplications",
+      "ListFinancingLineWithdrawals",
+      "ListFinancingLines",
+      "ListPaymentInstruments",
+      "ListPaymentPreferences",
+      "ListPaymentProgramOptions",
+      "ListPaymentProgramStatus",
+      "ListTagsForResource"
     ]
-    tagging = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

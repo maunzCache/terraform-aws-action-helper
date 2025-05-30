@@ -70,6 +70,8 @@ locals {
       "CreateLegalHold",
       "CreateLogicallyAirGappedBackupVault",
       "CreateReportPlan",
+      "CreateRestoreTestingPlan",
+      "CreateRestoreTestingSelection",
       "DeleteBackupPlan",
       "DeleteBackupSelection",
       "DeleteBackupVault",
@@ -78,10 +80,13 @@ locals {
       "DeleteFramework",
       "DeleteRecoveryPoint",
       "DeleteReportPlan",
+      "DeleteRestoreTestingPlan",
+      "DeleteRestoreTestingSelection",
       "DisassociateRecoveryPoint",
       "DisassociateRecoveryPointFromParent",
       "PutBackupVaultLockConfiguration",
       "PutBackupVaultNotifications",
+      "PutRestoreValidationResult",
       "StartBackupJob",
       "StartCopyJob",
       "StartReportJob",
@@ -90,15 +95,20 @@ locals {
       "UpdateBackupPlan",
       "UpdateFramework",
       "UpdateGlobalSettings",
+      "UpdateRecoveryPointIndexSettings",
       "UpdateRecoveryPointLifecycle",
       "UpdateRegionSettings",
-      "UpdateReportPlan"
+      "UpdateReportPlan",
+      "UpdateRestoreTestingPlan",
+      "UpdateRestoreTestingSelection"
     ]
     permissions_management = [
       "DeleteBackupVaultAccessPolicy",
       "DeleteBackupVaultSharingPolicy",
+      "ListIndexedRecoveryPointsForSearch",
       "PutBackupVaultAccessPolicy",
-      "PutBackupVaultSharingPolicy"
+      "PutBackupVaultSharingPolicy",
+      "SearchRecoveryPoint"
     ]
     read = [
       "DescribeBackupJob",
@@ -121,19 +131,27 @@ locals {
       "GetBackupVaultNotifications",
       "GetBackupVaultSharingPolicy",
       "GetLegalHold",
+      "GetRecoveryPointIndexDetails",
       "GetRecoveryPointRestoreMetadata",
+      "GetRestoreJobMetadata",
+      "GetRestoreTestingInferredMetadata",
+      "GetRestoreTestingPlan",
+      "GetRestoreTestingSelection",
       "GetSupportedResourceTypes",
       "ListTags"
     ]
     list = [
+      "ListBackupJobSummaries",
       "ListBackupJobs",
       "ListBackupPlanTemplates",
       "ListBackupPlanVersions",
       "ListBackupPlans",
       "ListBackupSelections",
       "ListBackupVaults",
+      "ListCopyJobSummaries",
       "ListCopyJobs",
       "ListFrameworks",
+      "ListIndexedRecoveryPoints",
       "ListLegalHolds",
       "ListProtectedResources",
       "ListProtectedResourcesByBackupVault",
@@ -142,7 +160,11 @@ locals {
       "ListRecoveryPointsByResource",
       "ListReportJobs",
       "ListReportPlans",
-      "ListRestoreJobs"
+      "ListRestoreJobSummaries",
+      "ListRestoreJobs",
+      "ListRestoreJobsByProtectedResource",
+      "ListRestoreTestingPlans",
+      "ListRestoreTestingSelections"
     ]
     tagging = [
       "TagResource",

@@ -60,44 +60,68 @@ locals {
 
   access_level = {
     write = [
+      "AssociateAccessPolicy",
       "AssociateEncryptionConfig",
       "AssociateIdentityProviderConfig",
+      "CreateAccessEntry",
       "CreateAddon",
       "CreateCluster",
+      "CreateEksAnywhereSubscription",
       "CreateFargateProfile",
       "CreateNodegroup",
+      "CreatePodIdentityAssociation",
+      "DeleteAccessEntry",
       "DeleteAddon",
       "DeleteCluster",
+      "DeleteEksAnywhereSubscription",
       "DeleteFargateProfile",
       "DeleteNodegroup",
+      "DeletePodIdentityAssociation",
       "DeregisterCluster",
+      "DisassociateAccessPolicy",
       "DisassociateIdentityProviderConfig",
       "RegisterCluster",
+      "UpdateAccessEntry",
       "UpdateAddon",
       "UpdateClusterConfig",
       "UpdateClusterVersion",
+      "UpdateEksAnywhereSubscription",
       "UpdateNodegroupConfig",
-      "UpdateNodegroupVersion"
+      "UpdateNodegroupVersion",
+      "UpdatePodIdentityAssociation"
     ]
     permissions_management = []
     read = [
       "AccessKubernetesApi",
+      "DescribeAccessEntry",
       "DescribeAddon",
       "DescribeAddonConfiguration",
       "DescribeAddonVersions",
       "DescribeCluster",
+      "DescribeClusterVersions",
+      "DescribeEksAnywhereSubscription",
       "DescribeFargateProfile",
       "DescribeIdentityProviderConfig",
+      "DescribeInsight",
       "DescribeNodegroup",
+      "DescribePodIdentityAssociation",
       "DescribeUpdate",
+      "ListDashboardData",
+      "ListDashboardResources",
       "ListTagsForResource"
     ]
     list = [
+      "ListAccessEntries",
+      "ListAccessPolicies",
       "ListAddons",
+      "ListAssociatedAccessPolicies",
       "ListClusters",
+      "ListEksAnywhereSubscriptions",
       "ListFargateProfiles",
       "ListIdentityProviderConfigs",
+      "ListInsights",
       "ListNodegroups",
+      "ListPodIdentityAssociations",
       "ListUpdates"
     ]
     tagging = [

@@ -61,8 +61,10 @@ locals {
   access_level = {
     write = [
       "CancelJobRun",
+      "CreateCertificate",
       "CreateJobTemplate",
       "CreateManagedEndpoint",
+      "CreateSecurityConfiguration",
       "CreateVirtualCluster",
       "DeleteJobTemplate",
       "DeleteManagedEndpoint",
@@ -75,12 +77,14 @@ locals {
       "DescribeJobRun",
       "DescribeJobTemplate",
       "DescribeManagedEndpoint",
+      "DescribeSecurityConfiguration",
       "DescribeVirtualCluster"
     ]
     list = [
       "ListJobRuns",
       "ListJobTemplates",
       "ListManagedEndpoints",
+      "ListSecurityConfigurations",
       "ListTagsForResource",
       "ListVirtualClusters"
     ]

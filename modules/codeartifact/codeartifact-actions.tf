@@ -64,9 +64,11 @@ locals {
       "AssociateWithDownstreamRepository",
       "CopyPackageVersions",
       "CreateDomain",
+      "CreatePackageGroup",
       "CreateRepository",
       "DeleteDomain",
       "DeletePackage",
+      "DeletePackageGroup",
       "DeletePackageVersions",
       "DeleteRepository",
       "DisassociateExternalConnection",
@@ -76,6 +78,8 @@ locals {
       "PutPackageMetadata",
       "PutPackageOriginConfiguration",
       "PutRepositoryPermissionsPolicy",
+      "UpdatePackageGroup",
+      "UpdatePackageGroupOriginConfiguration",
       "UpdatePackageVersionsStatus",
       "UpdateRepository"
     ]
@@ -86,8 +90,10 @@ locals {
     read = [
       "DescribeDomain",
       "DescribePackage",
+      "DescribePackageGroup",
       "DescribePackageVersion",
       "DescribeRepository",
+      "GetAssociatedPackageGroup",
       "GetAuthorizationToken",
       "GetDomainPermissionsPolicy",
       "GetPackageVersionAsset",
@@ -97,13 +103,17 @@ locals {
       "ReadFromRepository"
     ]
     list = [
+      "ListAllowedRepositoriesForGroup",
+      "ListAssociatedPackages",
       "ListDomains",
+      "ListPackageGroups",
       "ListPackageVersionAssets",
       "ListPackageVersionDependencies",
       "ListPackageVersions",
       "ListPackages",
       "ListRepositories",
       "ListRepositoriesInDomain",
+      "ListSubPackageGroups",
       "ListTagsForResource"
     ]
     tagging = [

@@ -68,18 +68,21 @@ locals {
       "RejectAgreementApprovalRequest",
       "Subscribe",
       "Unsubscribe",
-      "UpdateAgreementApprovalRequest"
+      "UpdateAgreementApprovalRequest",
+      "UpdatePurchaseOrders"
     ]
     permissions_management = []
     read = [
       "DescribeAgreement",
       "GetAgreementApprovalRequest",
+      "GetAgreementEntitlements",
       "GetAgreementRequest",
       "ListEntitlementDetails"
     ]
     list = [
       "GetAgreementTerms",
       "ListAgreementApprovalRequests",
+      "ListAgreementCharges",
       "ListAgreementRequests",
       "SearchAgreements",
       "ViewSubscriptions"

@@ -70,7 +70,9 @@ locals {
       "StopSync",
       "UpdateSyncTarget"
     ]
-    permissions_management = []
+    permissions_management = [
+      "AllowVendedLogDeliveryForResource"
+    ]
     read = [
       "GetSyncProfile",
       "GetSyncTarget"

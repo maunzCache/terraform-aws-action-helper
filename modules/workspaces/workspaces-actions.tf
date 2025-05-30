@@ -60,10 +60,13 @@ locals {
 
   access_level = {
     write = [
+      "AcceptAccountLinkInvitation",
       "AssociateConnectionAlias",
       "AssociateIpGroups",
+      "AssociateWorkspaceApplication",
       "AuthorizeIpRules",
       "CopyWorkspaceImage",
+      "CreateAccountLinkInvitation",
       "CreateConnectClientAddIn",
       "CreateConnectionAlias",
       "CreateIpGroup",
@@ -72,22 +75,28 @@ locals {
       "CreateWorkspaceBundle",
       "CreateWorkspaceImage",
       "CreateWorkspaces",
+      "CreateWorkspacesPool",
+      "DeleteAccountLinkInvitation",
       "DeleteClientBranding",
       "DeleteConnectClientAddIn",
       "DeleteConnectionAlias",
       "DeleteIpGroup",
       "DeleteWorkspaceBundle",
       "DeleteWorkspaceImage",
+      "DeployWorkspaceApplications",
       "DeregisterWorkspaceDirectory",
       "DisassociateConnectionAlias",
       "DisassociateIpGroups",
+      "DisassociateWorkspaceApplication",
       "ImportClientBranding",
       "ImportWorkspaceImage",
       "MigrateWorkspace",
       "ModifyAccount",
       "ModifyCertificateBasedAuthProperties",
       "ModifyClientProperties",
+      "ModifyEndpointEncryptionMode",
       "ModifySamlProperties",
+      "ModifyStreamingProperties",
       "ModifyWorkspaceAccessProperties",
       "ModifyWorkspaceCreationProperties",
       "ModifyWorkspaceProperties",
@@ -95,15 +104,21 @@ locals {
       "RebootWorkspaces",
       "RebuildWorkspaces",
       "RegisterWorkspaceDirectory",
+      "RejectAccountLinkInvitation",
       "RestoreWorkspace",
       "RevokeIpRules",
       "StartWorkspaces",
+      "StartWorkspacesPool",
       "StopWorkspaces",
+      "StopWorkspacesPool",
       "Stream",
       "TerminateWorkspaces",
+      "TerminateWorkspacesPool",
+      "TerminateWorkspacesPoolSession",
       "UpdateConnectClientAddIn",
       "UpdateRulesOfIpGroup",
-      "UpdateWorkspaceBundle"
+      "UpdateWorkspaceBundle",
+      "UpdateWorkspacesPool"
     ]
     permissions_management = [
       "ModifySelfservicePermissions",
@@ -120,15 +135,24 @@ locals {
       "DescribeTags",
       "DescribeWorkspaceDirectories",
       "DescribeWorkspaceImagePermissions",
-      "DescribeWorkspacesConnectionStatus"
+      "DescribeWorkspacesConnectionStatus",
+      "GetAccountLink"
     ]
     list = [
+      "DescribeApplicationAssociations",
+      "DescribeApplications",
+      "DescribeBundleAssociations",
       "DescribeClientProperties",
       "DescribeConnectClientAddIns",
+      "DescribeImageAssociations",
+      "DescribeWorkspaceAssociations",
       "DescribeWorkspaceBundles",
       "DescribeWorkspaceImages",
       "DescribeWorkspaceSnapshots",
       "DescribeWorkspaces",
+      "DescribeWorkspacesPoolSessions",
+      "DescribeWorkspacesPools",
+      "ListAccountLinks",
       "ListAvailableManagementCidrRanges"
     ]
     tagging = [

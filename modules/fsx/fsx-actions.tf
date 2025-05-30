@@ -64,6 +64,7 @@ locals {
       "AssociateFileSystemAliases",
       "CancelDataRepositoryTask",
       "CopyBackup",
+      "CopySnapshotAndUpdateVolume",
       "CreateBackup",
       "CreateDataRepositoryAssociation",
       "CreateDataRepositoryTask",
@@ -85,16 +86,21 @@ locals {
       "DisassociateFileSystemAliases",
       "ReleaseFileSystemNfsV3Locks",
       "RestoreVolumeFromSnapshot",
+      "StartMisconfiguredStateRecovery",
       "UpdateDataRepositoryAssociation",
       "UpdateFileCache",
       "UpdateFileSystem",
+      "UpdateSharedVpcConfiguration",
       "UpdateSnapshot",
       "UpdateStorageVirtualMachine",
       "UpdateVolume"
     ]
     permissions_management = [
       "BypassSnaplockEnterpriseRetention",
-      "ManageBackupPrincipalAssociations"
+      "DeleteResourcePolicy",
+      "GetResourcePolicy",
+      "ManageBackupPrincipalAssociations",
+      "PutResourcePolicy"
     ]
     read = [
       "DescribeAssociatedFileGateways",
@@ -104,6 +110,7 @@ locals {
       "DescribeFileCaches",
       "DescribeFileSystemAliases",
       "DescribeFileSystems",
+      "DescribeSharedVpcConfiguration",
       "DescribeSnapshots",
       "DescribeStorageVirtualMachines",
       "DescribeVolumes",

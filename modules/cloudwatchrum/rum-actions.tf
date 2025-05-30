@@ -64,7 +64,9 @@ locals {
       "BatchDeleteRumMetricDefinitions",
       "CreateAppMonitor",
       "DeleteAppMonitor",
+      "DeleteResourcePolicy",
       "DeleteRumMetricsDestination",
+      "PutResourcePolicy",
       "PutRumEvents",
       "PutRumMetricsDestination",
       "UpdateAppMonitor",
@@ -75,6 +77,7 @@ locals {
       "BatchGetRumMetricDefinitions",
       "GetAppMonitor",
       "GetAppMonitorData",
+      "GetResourcePolicy",
       "ListRumMetricsDestinations",
       "ListTagsForResource"
     ]

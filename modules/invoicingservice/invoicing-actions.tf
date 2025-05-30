@@ -60,15 +60,26 @@ locals {
 
   access_level = {
     write = [
-      "PutInvoiceEmailDeliveryPreferences"
+      "CreateInvoiceUnit",
+      "DeleteInvoiceUnit",
+      "PutInvoiceEmailDeliveryPreferences",
+      "UpdateInvoiceUnit"
     ]
     permissions_management = []
     read = [
+      "BatchGetInvoiceProfile",
       "GetInvoiceEmailDeliveryPreferences",
       "GetInvoicePDF",
-      "ListInvoiceSummaries"
+      "GetInvoiceUnit",
+      "ListInvoiceSummaries",
+      "ListTagsForResource"
     ]
-    list    = []
-    tagging = []
+    list = [
+      "ListInvoiceUnits"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

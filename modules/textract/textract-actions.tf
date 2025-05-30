@@ -60,10 +60,15 @@ locals {
 
   access_level = {
     write = [
+      "CreateAdapter",
+      "CreateAdapterVersion",
+      "DeleteAdapter",
+      "DeleteAdapterVersion",
       "StartDocumentAnalysis",
       "StartDocumentTextDetection",
       "StartExpenseAnalysis",
-      "StartLendingAnalysis"
+      "StartLendingAnalysis",
+      "UpdateAdapter"
     ]
     permissions_management = []
     read = [
@@ -71,13 +76,21 @@ locals {
       "AnalyzeExpense",
       "AnalyzeID",
       "DetectDocumentText",
+      "GetAdapter",
+      "GetAdapterVersion",
       "GetDocumentAnalysis",
       "GetDocumentTextDetection",
       "GetExpenseAnalysis",
       "GetLendingAnalysis",
-      "GetLendingAnalysisSummary"
+      "GetLendingAnalysisSummary",
+      "ListAdapterVersions",
+      "ListAdapters",
+      "ListTagsForResource"
     ]
-    list    = []
-    tagging = []
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

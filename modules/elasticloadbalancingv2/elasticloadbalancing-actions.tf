@@ -61,22 +61,31 @@ locals {
   access_level = {
     write = [
       "AddListenerCertificates",
+      "AddTrustStoreRevocations",
       "CreateListener",
       "CreateLoadBalancer",
       "CreateRule",
       "CreateTargetGroup",
+      "CreateTrustStore",
       "DeleteListener",
       "DeleteLoadBalancer",
       "DeleteRule",
+      "DeleteSharedTrustStoreAssociation",
       "DeleteTargetGroup",
+      "DeleteTrustStore",
       "DeregisterTargets",
+      "ModifyCapacityReservation",
+      "ModifyIpPools",
       "ModifyListener",
+      "ModifyListenerAttributes",
       "ModifyLoadBalancerAttributes",
       "ModifyRule",
       "ModifyTargetGroup",
       "ModifyTargetGroupAttributes",
+      "ModifyTrustStore",
       "RegisterTargets",
       "RemoveListenerCertificates",
+      "RemoveTrustStoreRevocations",
       "SetIpAddressType",
       "SetRulePriorities",
       "SetSecurityGroups",
@@ -86,6 +95,8 @@ locals {
     permissions_management = []
     read = [
       "DescribeAccountLimits",
+      "DescribeCapacityReservation",
+      "DescribeListenerAttributes",
       "DescribeListenerCertificates",
       "DescribeListeners",
       "DescribeLoadBalancerAttributes",
@@ -95,7 +106,13 @@ locals {
       "DescribeTags",
       "DescribeTargetGroupAttributes",
       "DescribeTargetGroups",
-      "DescribeTargetHealth"
+      "DescribeTargetHealth",
+      "DescribeTrustStoreAssociations",
+      "DescribeTrustStoreRevocations",
+      "DescribeTrustStores",
+      "GetResourcePolicy",
+      "GetTrustStoreCaCertificatesBundle",
+      "GetTrustStoreRevocationContent"
     ]
     list = []
     tagging = [

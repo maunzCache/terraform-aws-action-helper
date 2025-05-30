@@ -82,7 +82,8 @@ locals {
       "GetPolicyTemplate",
       "GetSchema",
       "IsAuthorized",
-      "IsAuthorizedWithToken"
+      "IsAuthorizedWithToken",
+      "ListTagsForResource"
     ]
     list = [
       "ListIdentitySources",
@@ -90,6 +91,9 @@ locals {
       "ListPolicyStores",
       "ListPolicyTemplates"
     ]
-    tagging = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

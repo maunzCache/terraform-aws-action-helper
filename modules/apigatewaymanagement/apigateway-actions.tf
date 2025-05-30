@@ -67,8 +67,12 @@ locals {
     ]
     permissions_management = [
       "AddCertificateToDomain",
+      "CreateAccessAssociation",
+      "RejectAccessAssociation",
       "RemoveCertificateFromDomain",
       "SetWebACL",
+      "UpdateDomainNameManagementPolicy",
+      "UpdateDomainNamePolicy",
       "UpdateRestApiPolicy"
     ]
     read = [

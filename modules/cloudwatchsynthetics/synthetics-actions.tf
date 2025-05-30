@@ -67,6 +67,7 @@ locals {
       "DeleteGroup",
       "DisassociateResource",
       "StartCanary",
+      "StartCanaryDryRun",
       "StopCanary",
       "UpdateCanary"
     ]

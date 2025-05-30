@@ -61,6 +61,7 @@ locals {
   access_level = {
     write = [
       "AcceptInvitation",
+      "BatchUpdateAutomatedDiscoveryAccounts",
       "CreateAllowList",
       "CreateClassificationJob",
       "CreateCustomDataIdentifier",
@@ -130,6 +131,7 @@ locals {
     ]
     list = [
       "ListAllowLists",
+      "ListAutomatedDiscoveryAccounts",
       "ListClassificationJobs",
       "ListClassificationScopes",
       "ListCustomDataIdentifiers",

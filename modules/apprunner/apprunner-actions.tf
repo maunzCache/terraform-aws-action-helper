@@ -79,6 +79,7 @@ locals {
       "PauseService",
       "ResumeService",
       "StartDeployment",
+      "UpdateDefaultAutoScalingConfiguration",
       "UpdateService",
       "UpdateVpcIngressConnection"
     ]
@@ -101,6 +102,7 @@ locals {
       "ListObservabilityConfigurations",
       "ListOperations",
       "ListServices",
+      "ListServicesForAutoScalingConfiguration",
       "ListVpcConnectors",
       "ListVpcIngressConnections"
     ]

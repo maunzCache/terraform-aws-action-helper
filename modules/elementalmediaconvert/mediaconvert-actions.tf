@@ -83,14 +83,17 @@ locals {
       "GetPolicy",
       "GetPreset",
       "GetQueue",
-      "ListTagsForResource"
+      "ListTagsForResource",
+      "Probe"
     ]
     list = [
       "DescribeEndpoints",
       "ListJobTemplates",
       "ListJobs",
       "ListPresets",
-      "ListQueues"
+      "ListQueues",
+      "ListVersions",
+      "SearchJobs"
     ]
     tagging = [
       "TagResource",

@@ -136,6 +136,7 @@ locals {
       "SendContactMethodVerification",
       "SetIpAddressType",
       "SetResourceAccessForBucket",
+      "SetupInstanceHttps",
       "StartGUISession",
       "StartInstance",
       "StartRelationalDatabase",
@@ -217,6 +218,7 @@ locals {
       "GetRelationalDatabaseSnapshot",
       "GetRelationalDatabaseSnapshots",
       "GetRelationalDatabases",
+      "GetSetupHistory",
       "GetStaticIp",
       "GetStaticIps",
       "IsVpcPeered"

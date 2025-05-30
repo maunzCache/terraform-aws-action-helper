@@ -62,22 +62,31 @@ locals {
     write = [
       "BatchPutFieldOptions",
       "CreateCase",
+      "CreateCaseRule",
       "CreateDomain",
       "CreateField",
       "CreateLayout",
       "CreateRelatedItem",
       "CreateTemplate",
+      "DeleteCaseRule",
       "DeleteDomain",
+      "DeleteField",
+      "DeleteLayout",
+      "DeleteRelatedItem",
+      "DeleteTemplate",
       "PutCaseEventConfiguration",
       "UpdateCase",
+      "UpdateCaseRule",
       "UpdateField",
       "UpdateLayout",
       "UpdateTemplate"
     ]
     permissions_management = []
     read = [
+      "BatchGetCaseRule",
       "BatchGetField",
       "GetCase",
+      "GetCaseAuditEvents",
       "GetCaseEventConfiguration",
       "GetDomain",
       "GetLayout",
@@ -87,6 +96,7 @@ locals {
       "SearchRelatedItems"
     ]
     list = [
+      "ListCaseRules",
       "ListCasesForContact",
       "ListDomains",
       "ListFieldOptions",

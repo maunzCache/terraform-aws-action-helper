@@ -62,6 +62,7 @@ locals {
     write = [
       "CreateProfile",
       "CreateTrustAnchor",
+      "DeleteAttributeMapping",
       "DeleteCrl",
       "DeleteProfile",
       "DeleteTrustAnchor",
@@ -72,6 +73,7 @@ locals {
       "EnableProfile",
       "EnableTrustAnchor",
       "ImportCrl",
+      "PutAttributeMapping",
       "PutNotificationSettings",
       "ResetNotificationSettings",
       "UpdateCrl",

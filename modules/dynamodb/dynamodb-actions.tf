@@ -88,11 +88,16 @@ locals {
       "UpdateGlobalTableSettings",
       "UpdateGlobalTableVersion",
       "UpdateItem",
+      "UpdateKinesisStreamingDestination",
       "UpdateTable",
       "UpdateTableReplicaAutoScaling",
       "UpdateTimeToLive"
     ]
-    permissions_management = []
+    permissions_management = [
+      "DeleteResourcePolicy",
+      "PutResourcePolicy",
+      "UpdateAbacStatus"
+    ]
     read = [
       "BatchGetItem",
       "ConditionCheckItem",
@@ -112,8 +117,10 @@ locals {
       "DescribeTable",
       "DescribeTableReplicaAutoScaling",
       "DescribeTimeToLive",
+      "GetAbacStatus",
       "GetItem",
       "GetRecords",
+      "GetResourcePolicy",
       "GetShardIterator",
       "ListStreams",
       "ListTagsOfResource",

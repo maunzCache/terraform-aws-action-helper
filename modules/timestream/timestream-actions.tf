@@ -73,6 +73,7 @@ locals {
       "StartAwsBackupJob",
       "StartAwsRestoreJob",
       "Unload",
+      "UpdateAccountSettings",
       "UpdateDatabase",
       "UpdateScheduledQuery",
       "UpdateTable",
@@ -80,6 +81,7 @@ locals {
     ]
     permissions_management = []
     read = [
+      "DescribeAccountSettings",
       "DescribeBatchLoadTask",
       "DescribeDatabase",
       "DescribeScheduledQuery",

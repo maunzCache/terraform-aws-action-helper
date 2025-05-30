@@ -71,9 +71,13 @@ locals {
       "GetClassicReport",
       "GetClassicReportPreferences",
       "GetUsageReport",
+      "ListTagsForResource",
       "ValidateReportDestination"
     ]
-    list    = []
-    tagging = []
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

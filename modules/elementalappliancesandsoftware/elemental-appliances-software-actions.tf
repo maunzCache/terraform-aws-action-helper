@@ -62,6 +62,7 @@ locals {
     write = [
       "CompleteUpload",
       "CreateOrderV1",
+      "CreateQuote",
       "StartUpload",
       "SubmitOrderV1",
       "UpdateQuote"
@@ -74,16 +75,11 @@ locals {
       "GetOrder",
       "GetOrdersV2",
       "GetQuote",
-      "GetTaxes",
-      "ListTagsForResource"
+      "GetTaxes"
     ]
     list = [
       "ListQuotes"
     ]
-    tagging = [
-      "CreateQuote",
-      "TagResource",
-      "UntagResource"
-    ]
+    tagging = []
   }
 }

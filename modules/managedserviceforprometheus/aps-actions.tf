@@ -63,28 +63,39 @@ locals {
       "CreateAlertManagerAlerts",
       "CreateAlertManagerDefinition",
       "CreateLoggingConfiguration",
+      "CreateQueryLoggingConfiguration",
       "CreateRuleGroupsNamespace",
+      "CreateScraper",
       "CreateWorkspace",
       "DeleteAlertManagerDefinition",
       "DeleteAlertManagerSilence",
       "DeleteLoggingConfiguration",
+      "DeleteQueryLoggingConfiguration",
       "DeleteRuleGroupsNamespace",
+      "DeleteScraper",
       "DeleteWorkspace",
       "PutAlertManagerDefinition",
       "PutAlertManagerSilences",
       "PutRuleGroupsNamespace",
       "RemoteWrite",
       "UpdateLoggingConfiguration",
-      "UpdateWorkspaceAlias"
+      "UpdateQueryLoggingConfiguration",
+      "UpdateScraper",
+      "UpdateWorkspaceAlias",
+      "UpdateWorkspaceConfiguration"
     ]
     permissions_management = []
     read = [
       "DescribeAlertManagerDefinition",
       "DescribeLoggingConfiguration",
+      "DescribeQueryLoggingConfiguration",
       "DescribeRuleGroupsNamespace",
+      "DescribeScraper",
       "DescribeWorkspace",
+      "DescribeWorkspaceConfiguration",
       "GetAlertManagerSilence",
       "GetAlertManagerStatus",
+      "GetDefaultScraperConfiguration",
       "GetLabels",
       "GetMetricMetadata",
       "GetSeries",
@@ -99,6 +110,7 @@ locals {
     ]
     list = [
       "ListRuleGroupsNamespaces",
+      "ListScrapers",
       "ListWorkspaces"
     ]
     tagging = [

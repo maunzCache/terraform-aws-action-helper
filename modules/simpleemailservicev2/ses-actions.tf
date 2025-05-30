@@ -60,6 +60,7 @@ locals {
 
   access_level = {
     write = [
+      "CancelExportJob",
       "CreateConfigurationSet",
       "CreateConfigurationSetEventDestination",
       "CreateContact",
@@ -69,7 +70,9 @@ locals {
       "CreateDeliverabilityTestReport",
       "CreateEmailIdentity",
       "CreateEmailTemplate",
+      "CreateExportJob",
       "CreateImportJob",
+      "CreateMultiRegionEndpoint",
       "DeleteConfigurationSet",
       "DeleteConfigurationSetEventDestination",
       "DeleteContact",
@@ -78,12 +81,14 @@ locals {
       "DeleteDedicatedIpPool",
       "DeleteEmailIdentity",
       "DeleteEmailTemplate",
+      "DeleteMultiRegionEndpoint",
       "DeleteSuppressedDestination",
       "PutAccountDedicatedIpWarmupAttributes",
       "PutAccountDetails",
       "PutAccountSendingAttributes",
       "PutAccountSuppressionAttributes",
       "PutAccountVdmAttributes",
+      "PutConfigurationSetArchivingOptions",
       "PutConfigurationSetDeliveryOptions",
       "PutConfigurationSetReputationOptions",
       "PutConfigurationSetSendingOptions",
@@ -113,6 +118,7 @@ locals {
     permissions_management = [
       "CreateEmailIdentityPolicy",
       "DeleteEmailIdentityPolicy",
+      "ReplicateEmailIdentityDkimSigningKey",
       "UpdateEmailIdentityPolicy"
     ]
     read = [
@@ -134,7 +140,10 @@ locals {
       "GetEmailIdentity",
       "GetEmailIdentityPolicies",
       "GetEmailTemplate",
+      "GetExportJob",
       "GetImportJob",
+      "GetMessageInsights",
+      "GetMultiRegionEndpoint",
       "GetSuppressedDestination",
       "ListDomainDeliverabilityCampaigns",
       "ListRecommendations",
@@ -150,7 +159,9 @@ locals {
       "ListDeliverabilityTestReports",
       "ListEmailIdentities",
       "ListEmailTemplates",
-      "ListImportJobs"
+      "ListExportJobs",
+      "ListImportJobs",
+      "ListMultiRegionEndpoints"
     ]
     tagging = [
       "TagResource",

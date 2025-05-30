@@ -63,6 +63,7 @@ locals {
       "CreateBatchInferenceJob",
       "CreateBatchSegmentJob",
       "CreateCampaign",
+      "CreateDataDeletionJob",
       "CreateDataInsightsJob",
       "CreateDataset",
       "CreateDatasetExportJob",
@@ -84,6 +85,8 @@ locals {
       "DeleteRecommender",
       "DeleteSchema",
       "DeleteSolution",
+      "PutActionInteractions",
+      "PutActions",
       "PutEvents",
       "PutItems",
       "PutUsers",
@@ -93,7 +96,8 @@ locals {
       "UpdateCampaign",
       "UpdateDataset",
       "UpdateMetricAttribution",
-      "UpdateRecommender"
+      "UpdateRecommender",
+      "UpdateSolution"
     ]
     permissions_management = []
     read = [
@@ -101,6 +105,7 @@ locals {
       "DescribeBatchInferenceJob",
       "DescribeBatchSegmentJob",
       "DescribeCampaign",
+      "DescribeDataDeletionJob",
       "DescribeDataInsightsJob",
       "DescribeDataset",
       "DescribeDatasetExportJob",
@@ -115,6 +120,7 @@ locals {
       "DescribeSchema",
       "DescribeSolution",
       "DescribeSolutionVersion",
+      "GetActionRecommendations",
       "GetDataInsights",
       "GetPersonalizedRanking",
       "GetRecommendations",
@@ -124,6 +130,7 @@ locals {
       "ListBatchInferenceJobs",
       "ListBatchSegmentJobs",
       "ListCampaigns",
+      "ListDataDeletionJobs",
       "ListDataInsightsJobs",
       "ListDatasetExportJobs",
       "ListDatasetGroups",

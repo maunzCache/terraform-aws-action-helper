@@ -63,6 +63,7 @@ locals {
       "AddLeaderboardAccessPermission",
       "AdminManageUser",
       "AdminSetAccountConfig",
+      "AdminUpdateAccountKey",
       "CloneReinforcementLearningModel",
       "CreateCar",
       "CreateLeaderboard",
@@ -85,6 +86,7 @@ locals {
     ]
     permissions_management = []
     read = [
+      "AdminDescribeAccountKey",
       "AdminGetAccountConfig",
       "AdminListAssociatedResources",
       "AdminListAssociatedUsers",
@@ -102,6 +104,7 @@ locals {
       "GetTrack",
       "GetTrainingJob",
       "ListEvaluations",
+      "ListLeaderboardEvaluations",
       "ListLeaderboardSubmissions",
       "ListLeaderboards",
       "ListModels",

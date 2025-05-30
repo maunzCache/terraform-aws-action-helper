@@ -61,7 +61,8 @@ locals {
   access_level = {
     write = [
       "CreateSavingsPlan",
-      "DeleteQueuedSavingsPlan"
+      "DeleteQueuedSavingsPlan",
+      "ReturnSavingsPlan"
     ]
     permissions_management = []
     read = [

@@ -63,12 +63,14 @@ locals {
       "APIAccessAll",
       "CreateAccessPolicy",
       "CreateCollection",
+      "CreateLifecyclePolicy",
       "CreateSecurityConfig",
       "CreateSecurityPolicy",
       "CreateVpcEndpoint",
       "DashboardsAccessAll",
       "DeleteAccessPolicy",
       "DeleteCollection",
+      "DeleteLifecyclePolicy",
       "DeleteSecurityConfig",
       "DeleteSecurityPolicy",
       "DeleteVpcEndpoint",
@@ -77,6 +79,7 @@ locals {
       "UpdateAccessPolicy",
       "UpdateAccountSettings",
       "UpdateCollection",
+      "UpdateLifecyclePolicy",
       "UpdateSecurityConfig",
       "UpdateSecurityPolicy",
       "UpdateVpcEndpoint"
@@ -84,6 +87,8 @@ locals {
     permissions_management = []
     read = [
       "BatchGetCollection",
+      "BatchGetEffectiveLifecyclePolicy",
+      "BatchGetLifecyclePolicy",
       "BatchGetVpcEndpoint",
       "GetAccessPolicy",
       "GetAccountSettings",
@@ -94,6 +99,7 @@ locals {
     list = [
       "ListAccessPolicies",
       "ListCollections",
+      "ListLifecyclePolicies",
       "ListSecurityConfigs",
       "ListSecurityPolicies",
       "ListTagsForResource",

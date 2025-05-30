@@ -60,6 +60,8 @@ locals {
 
   access_level = {
     write = [
+      "PutLogData",
+      "PutMetricData",
       "PutPortfolioPreferences",
       "RegisterCollector",
       "SendMessage",
@@ -87,6 +89,7 @@ locals {
       "GetServerStrategies"
     ]
     list = [
+      "ListAnalyzableServers",
       "ListAntiPatterns",
       "ListApplicationComponents",
       "ListCollectors",

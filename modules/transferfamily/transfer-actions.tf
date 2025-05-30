@@ -66,6 +66,7 @@ locals {
       "CreateProfile",
       "CreateServer",
       "CreateUser",
+      "CreateWebApp",
       "CreateWorkflow",
       "DeleteAccess",
       "DeleteAgreement",
@@ -76,12 +77,17 @@ locals {
       "DeleteServer",
       "DeleteSshPublicKey",
       "DeleteUser",
+      "DeleteWebApp",
+      "DeleteWebAppCustomization",
       "DeleteWorkflow",
       "ImportCertificate",
       "ImportHostKey",
       "ImportSshPublicKey",
       "SendWorkflowStepState",
+      "StartDirectoryListing",
       "StartFileTransfer",
+      "StartRemoteDelete",
+      "StartRemoteMove",
       "StartServer",
       "StopServer",
       "TestConnection",
@@ -92,7 +98,9 @@ locals {
       "UpdateHostKey",
       "UpdateProfile",
       "UpdateServer",
-      "UpdateUser"
+      "UpdateUser",
+      "UpdateWebApp",
+      "UpdateWebAppCustomization"
     ]
     permissions_management = []
     read = [
@@ -106,12 +114,15 @@ locals {
       "DescribeSecurityPolicy",
       "DescribeServer",
       "DescribeUser",
+      "DescribeWebApp",
+      "DescribeWebAppCustomization",
       "DescribeWorkflow",
       "ListAccesses",
       "ListAgreements",
       "ListCertificates",
       "ListConnectors",
       "ListExecutions",
+      "ListFileTransferResults",
       "ListHostKeys",
       "ListProfiles",
       "ListTagsForResource",
@@ -121,6 +132,7 @@ locals {
       "ListSecurityPolicies",
       "ListServers",
       "ListUsers",
+      "ListWebApps",
       "ListWorkflows"
     ]
     tagging = [

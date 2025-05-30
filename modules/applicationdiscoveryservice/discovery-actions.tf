@@ -61,11 +61,13 @@ locals {
   access_level = {
     write = [
       "AssociateConfigurationItemsToApplication",
+      "BatchDeleteAgents",
       "BatchDeleteImportData",
       "CreateApplication",
       "DeleteApplications",
       "DisassociateConfigurationItemsFromApplication",
       "ExportConfigurations",
+      "StartBatchDeleteConfigurationTask",
       "StartContinuousExport",
       "StartDataCollectionByAgentIds",
       "StartExportTask",
@@ -77,6 +79,7 @@ locals {
     permissions_management = []
     read = [
       "DescribeAgents",
+      "DescribeBatchDeleteConfigurationTask",
       "DescribeConfigurations",
       "DescribeContinuousExports",
       "DescribeExportConfigurations",

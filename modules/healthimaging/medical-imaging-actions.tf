@@ -70,10 +70,17 @@ locals {
     permissions_management = []
     read = [
       "GetDICOMImportJob",
+      "GetDICOMInstance",
+      "GetDICOMInstanceFrames",
+      "GetDICOMInstanceMetadata",
+      "GetDICOMSeriesMetadata",
       "GetDatastore",
       "GetImageFrame",
       "GetImageSet",
       "GetImageSetMetadata",
+      "SearchDICOMInstances",
+      "SearchDICOMSeries",
+      "SearchDICOMStudies",
       "SearchImageSets"
     ]
     list = [

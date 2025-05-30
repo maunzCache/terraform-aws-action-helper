@@ -69,6 +69,7 @@ locals {
       "AssociatePhoneNumbersWithVoiceConnector",
       "AssociatePhoneNumbersWithVoiceConnectorGroup",
       "AssociateSigninDelegateGroupsWithAccount",
+      "AssociateVoiceConnectorConnect",
       "AuthorizeDirectory",
       "BatchCreateAttendee",
       "BatchCreateChannelMembership",
@@ -96,11 +97,15 @@ locals {
       "CreateChannelFlow",
       "CreateChannelMembership",
       "CreateChannelModerator",
+      "CreateConnectAnalyticsConnector",
+      "CreateConnectCallTransferConnector",
       "CreateMediaCapturePipeline",
       "CreateMediaConcatenationPipeline",
       "CreateMediaInsightsPipeline",
       "CreateMediaInsightsPipelineConfiguration",
       "CreateMediaLiveConnectorPipeline",
+      "CreateMediaPipelineKinesisVideoStreamPool",
+      "CreateMediaStreamPipeline",
       "CreateMeeting",
       "CreateMeetingDialOut",
       "CreateMeetingWithAttendees",
@@ -139,6 +144,7 @@ locals {
       "DeleteMediaCapturePipeline",
       "DeleteMediaInsightsPipelineConfiguration",
       "DeleteMediaPipeline",
+      "DeleteMediaPipelineKinesisVideoStreamPool",
       "DeleteMeeting",
       "DeleteMessagingStreamingConfigurations",
       "DeletePhoneNumber",
@@ -149,6 +155,7 @@ locals {
       "DeleteSipRule",
       "DeleteVoiceConnector",
       "DeleteVoiceConnectorEmergencyCallingConfiguration",
+      "DeleteVoiceConnectorExternalSystemsConfiguration",
       "DeleteVoiceConnectorGroup",
       "DeleteVoiceConnectorOrigination",
       "DeleteVoiceConnectorProxy",
@@ -163,6 +170,7 @@ locals {
       "DisassociatePhoneNumbersFromVoiceConnector",
       "DisassociatePhoneNumbersFromVoiceConnectorGroup",
       "DisassociateSigninDelegateGroupsFromAccount",
+      "DisassociateVoiceConnectorConnect",
       "DisconnectDirectory",
       "InviteDelegate",
       "InviteUsers",
@@ -179,6 +187,7 @@ locals {
       "PutSipMediaApplicationAlexaSkillConfiguration",
       "PutSipMediaApplicationLoggingConfiguration",
       "PutVoiceConnectorEmergencyCallingConfiguration",
+      "PutVoiceConnectorExternalSystemsConfiguration",
       "PutVoiceConnectorLoggingConfiguration",
       "PutVoiceConnectorOrigination",
       "PutVoiceConnectorProxy",
@@ -224,6 +233,7 @@ locals {
       "UpdateGlobalSettings",
       "UpdateMediaInsightsPipelineConfiguration",
       "UpdateMediaInsightsPipelineStatus",
+      "UpdateMediaPipelineKinesisVideoStreamPool",
       "UpdatePhoneNumber",
       "UpdatePhoneNumberSettings",
       "UpdateProxySession",
@@ -239,8 +249,7 @@ locals {
       "UpdateVoiceConnector",
       "UpdateVoiceConnectorGroup",
       "UpdateVoiceProfile",
-      "UpdateVoiceProfileDomain",
-      "ValidateE911Address"
+      "UpdateVoiceProfileDomain"
     ]
     permissions_management = []
     read = [
@@ -274,6 +283,7 @@ locals {
       "GetMediaCapturePipeline",
       "GetMediaInsightsPipelineConfiguration",
       "GetMediaPipeline",
+      "GetMediaPipelineKinesisVideoStreamPool",
       "GetMeeting",
       "GetMeetingDetail",
       "GetMessagingSessionEndpoint",
@@ -296,6 +306,7 @@ locals {
       "GetUserSettings",
       "GetVoiceConnector",
       "GetVoiceConnectorEmergencyCallingConfiguration",
+      "GetVoiceConnectorExternalSystemsConfiguration",
       "GetVoiceConnectorGroup",
       "GetVoiceConnectorLoggingConfiguration",
       "GetVoiceConnectorOrigination",
@@ -310,7 +321,8 @@ locals {
       "ListTagsForResource",
       "RetrieveDataExports",
       "SearchAvailablePhoneNumbers",
-      "ValidateAccountResource"
+      "ValidateAccountResource",
+      "ValidateE911Address"
     ]
     list = [
       "ListAccountUsageReportData",
@@ -341,6 +353,7 @@ locals {
       "ListGroups",
       "ListMediaCapturePipelines",
       "ListMediaInsightsPipelineConfigurations",
+      "ListMediaPipelineKinesisVideoStreamPools",
       "ListMediaPipelines",
       "ListMeetingEvents",
       "ListMeetingTags",

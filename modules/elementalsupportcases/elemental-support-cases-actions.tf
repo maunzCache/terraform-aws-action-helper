@@ -60,16 +60,29 @@ locals {
 
   access_level = {
     write = [
+      "AddCaseComment",
       "CheckCasePermission",
+      "CompleteMultipartUpload",
       "CreateCase",
-      "UpdateCase"
+      "CreateS3CLIUploadCommand",
+      "CreateS3DownloadUrl",
+      "StartMultipartUpload",
+      "UpdateCase",
+      "UpdateCaseStatus",
+      "UpdateMultipartUpload"
     ]
     permissions_management = []
     read = [
       "GetCase",
-      "GetCases"
+      "GetCasePermission",
+      "GetCases",
+      "GetUICache",
+      "ListTagsForCase"
     ]
-    list    = []
-    tagging = []
+    list = []
+    tagging = [
+      "TagCase",
+      "UntagCase"
+    ]
   }
 }

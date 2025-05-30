@@ -61,6 +61,7 @@ locals {
   access_level = {
     write = [
       "CreateCustomerVerificationDetails",
+      "CreateUploadUrls",
       "UpdateCustomerVerificationDetails"
     ]
     permissions_management = []

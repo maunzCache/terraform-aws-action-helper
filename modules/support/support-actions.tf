@@ -68,13 +68,17 @@ locals {
       "PutCaseAttributes",
       "RateCaseCommunication",
       "RefreshTrustedAdvisorCheck",
-      "ResolveCase"
+      "ResolveCase",
+      "StartInteraction",
+      "UpdateCaseSeverity"
     ]
     permissions_management = []
     read = [
       "DescribeAttachment",
       "DescribeCaseAttributes",
+      "DescribeCaseOptions",
       "DescribeCases",
+      "DescribeCommunication",
       "DescribeCommunications",
       "DescribeCreateCaseOptions",
       "DescribeIssueTypes",
@@ -86,6 +90,7 @@ locals {
       "DescribeTrustedAdvisorCheckResult",
       "DescribeTrustedAdvisorCheckSummaries",
       "DescribeTrustedAdvisorChecks",
+      "GetInteraction",
       "SearchForCases"
     ]
     list    = []

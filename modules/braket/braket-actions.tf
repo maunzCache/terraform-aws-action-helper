@@ -60,6 +60,7 @@ locals {
 
   access_level = {
     write = [
+      "AcceptUserAgreement",
       "CancelJob",
       "CancelQuantumTask",
       "CreateJob",
@@ -67,9 +68,12 @@ locals {
     ]
     permissions_management = []
     read = [
+      "AccessBraketFeature",
       "GetDevice",
       "GetJob",
       "GetQuantumTask",
+      "GetServiceLinkedRoleStatus",
+      "GetUserAgreementStatus",
       "ListTagsForResource",
       "SearchDevices",
       "SearchJobs",

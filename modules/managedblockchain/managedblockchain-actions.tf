@@ -86,6 +86,8 @@ locals {
       "GetProposal",
       "InvokeRpcBitcoinMainnet",
       "InvokeRpcBitcoinTestnet",
+      "InvokeRpcPolygonMainnet",
+      "InvokeRpcPolygonMumbaiTestnet",
       "ListProposalVotes",
       "ListTagsForResource"
     ]

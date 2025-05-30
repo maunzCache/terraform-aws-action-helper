@@ -61,6 +61,7 @@ locals {
   access_level = {
     write = [
       "AcceptAgreement",
+      "AcceptNdaForAgreement",
       "PutAccountSettings",
       "TerminateAgreement"
     ]
@@ -69,11 +70,16 @@ locals {
       "DownloadAgreement",
       "Get",
       "GetAccountSettings",
+      "GetAgreement",
+      "GetCustomerAgreement",
+      "GetNdaForAgreement",
       "GetReport",
       "GetReportMetadata",
       "GetTermForReport"
     ]
     list = [
+      "ListAgreements",
+      "ListCustomerAgreements",
       "ListReports"
     ]
     tagging = []

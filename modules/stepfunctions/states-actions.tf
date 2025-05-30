@@ -68,13 +68,16 @@ locals {
       "DeleteStateMachineAlias",
       "DeleteStateMachineVersion",
       "GetActivityTask",
+      "InvokeHTTPEndpoint",
       "PublishStateMachineVersion",
+      "RedriveExecution",
       "SendTaskFailure",
       "SendTaskHeartbeat",
       "SendTaskSuccess",
       "StartExecution",
       "StartSyncExecution",
       "StopExecution",
+      "TestState",
       "UpdateMapRun",
       "UpdateStateMachine",
       "UpdateStateMachineAlias"
@@ -87,7 +90,9 @@ locals {
       "DescribeStateMachine",
       "DescribeStateMachineAlias",
       "DescribeStateMachineForExecution",
-      "GetExecutionHistory"
+      "GetExecutionHistory",
+      "RevealSecrets",
+      "ValidateStateMachineDefinition"
     ]
     list = [
       "ListActivities",

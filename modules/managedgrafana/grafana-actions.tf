@@ -63,8 +63,12 @@ locals {
       "AssociateLicense",
       "CreateWorkspace",
       "CreateWorkspaceApiKey",
+      "CreateWorkspaceServiceAccount",
+      "CreateWorkspaceServiceAccountToken",
       "DeleteWorkspace",
       "DeleteWorkspaceApiKey",
+      "DeleteWorkspaceServiceAccount",
+      "DeleteWorkspaceServiceAccountToken",
       "DisassociateLicense",
       "UpdateWorkspace",
       "UpdateWorkspaceAuthentication",
@@ -78,6 +82,8 @@ locals {
       "DescribeWorkspaceAuthentication",
       "DescribeWorkspaceConfiguration",
       "ListTagsForResource",
+      "ListWorkspaceServiceAccountTokens",
+      "ListWorkspaceServiceAccounts",
       "ListWorkspaces"
     ]
     list = [

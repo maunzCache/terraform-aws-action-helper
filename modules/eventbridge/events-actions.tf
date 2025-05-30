@@ -85,11 +85,13 @@ locals {
       "PutRule",
       "PutTargets",
       "RemoveTargets",
+      "RetrieveConnectionCredentials",
       "StartReplay",
       "UpdateApiDestination",
       "UpdateArchive",
       "UpdateConnection",
-      "UpdateEndpoint"
+      "UpdateEndpoint",
+      "UpdateEventBus"
     ]
     permissions_management = [
       "PutPermission",

@@ -72,9 +72,13 @@ locals {
       "DescribeBudgetActionHistories",
       "DescribeBudgetActionsForAccount",
       "DescribeBudgetActionsForBudget",
+      "ListTagsForResource",
       "ViewBudget"
     ]
-    list    = []
-    tagging = []
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

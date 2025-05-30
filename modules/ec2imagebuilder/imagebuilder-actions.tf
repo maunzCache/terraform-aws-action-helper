@@ -61,6 +61,7 @@ locals {
   access_level = {
     write = [
       "CancelImageCreation",
+      "CancelLifecycleExecution",
       "CreateComponent",
       "CreateContainerRecipe",
       "CreateDistributionConfiguration",
@@ -68,6 +69,8 @@ locals {
       "CreateImagePipeline",
       "CreateImageRecipe",
       "CreateInfrastructureConfiguration",
+      "CreateLifecyclePolicy",
+      "CreateWorkflow",
       "DeleteComponent",
       "DeleteContainerRecipe",
       "DeleteDistributionConfiguration",
@@ -75,12 +78,18 @@ locals {
       "DeleteImagePipeline",
       "DeleteImageRecipe",
       "DeleteInfrastructureConfiguration",
+      "DeleteLifecyclePolicy",
+      "DeleteWorkflow",
       "ImportComponent",
+      "ImportDiskImage",
       "ImportVmImage",
+      "SendWorkflowStepAction",
       "StartImagePipelineExecution",
+      "StartResourceStateUpdate",
       "UpdateDistributionConfiguration",
       "UpdateImagePipeline",
-      "UpdateInfrastructureConfiguration"
+      "UpdateInfrastructureConfiguration",
+      "UpdateLifecyclePolicy"
     ]
     permissions_management = [
       "PutComponentPolicy",
@@ -100,6 +109,10 @@ locals {
       "GetImageRecipe",
       "GetImageRecipePolicy",
       "GetInfrastructureConfiguration",
+      "GetLifecycleExecution",
+      "GetLifecyclePolicy",
+      "GetMarketplaceResource",
+      "GetWorkflow",
       "GetWorkflowExecution",
       "GetWorkflowStepExecution",
       "ListTagsForResource"
@@ -118,8 +131,14 @@ locals {
       "ListImageScanFindings",
       "ListImages",
       "ListInfrastructureConfigurations",
+      "ListLifecycleExecutionResources",
+      "ListLifecycleExecutions",
+      "ListLifecyclePolicies",
+      "ListWaitingWorkflowSteps",
+      "ListWorkflowBuildVersions",
       "ListWorkflowExecutions",
-      "ListWorkflowStepExecutions"
+      "ListWorkflowStepExecutions",
+      "ListWorkflows"
     ]
     tagging = [
       "TagResource",

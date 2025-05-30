@@ -65,10 +65,13 @@ locals {
       "CompleteLayerUpload",
       "CreatePullThroughCacheRule",
       "CreateRepository",
+      "CreateRepositoryCreationTemplate",
       "DeleteLifecyclePolicy",
       "DeletePullThroughCacheRule",
       "DeleteRepository",
+      "DeleteRepositoryCreationTemplate",
       "InitiateLayerUpload",
+      "PutAccountSetting",
       "PutImage",
       "PutImageScanningConfiguration",
       "PutImageTagMutability",
@@ -78,6 +81,8 @@ locals {
       "ReplicateImage",
       "StartImageScan",
       "StartLifecyclePolicyPreview",
+      "UpdatePullThroughCacheRule",
+      "UpdateRepositoryCreationTemplate",
       "UploadLayerPart"
     ]
     permissions_management = [
@@ -94,14 +99,18 @@ locals {
       "DescribeImageScanFindings",
       "DescribeRegistry",
       "DescribeRepositories",
+      "DescribeRepositoryCreationTemplates",
+      "GetAccountSetting",
       "GetAuthorizationToken",
       "GetDownloadUrlForLayer",
+      "GetImageCopyStatus",
       "GetLifecyclePolicy",
       "GetLifecyclePolicyPreview",
       "GetRegistryPolicy",
       "GetRegistryScanningConfiguration",
       "GetRepositoryPolicy",
-      "ListTagsForResource"
+      "ListTagsForResource",
+      "ValidatePullThroughCacheRule"
     ]
     list = [
       "DescribeImages",

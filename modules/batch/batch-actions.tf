@@ -62,9 +62,11 @@ locals {
     write = [
       "CancelJob",
       "CreateComputeEnvironment",
+      "CreateConsumableResource",
       "CreateJobQueue",
       "CreateSchedulingPolicy",
       "DeleteComputeEnvironment",
+      "DeleteConsumableResource",
       "DeleteJobQueue",
       "DeleteSchedulingPolicy",
       "DeregisterJobDefinition",
@@ -72,21 +74,26 @@ locals {
       "SubmitJob",
       "TerminateJob",
       "UpdateComputeEnvironment",
+      "UpdateConsumableResource",
       "UpdateJobQueue",
       "UpdateSchedulingPolicy"
     ]
     permissions_management = []
     read = [
       "DescribeComputeEnvironments",
+      "DescribeConsumableResource",
       "DescribeJobDefinitions",
       "DescribeJobQueues",
       "DescribeJobs",
       "DescribeSchedulingPolicies",
+      "GetJobQueueSnapshot",
       "ListSchedulingPolicies",
       "ListTagsForResource"
     ]
     list = [
-      "ListJobs"
+      "ListConsumableResources",
+      "ListJobs",
+      "ListJobsByConsumableResource"
     ]
     tagging = [
       "TagResource",

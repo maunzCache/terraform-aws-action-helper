@@ -71,21 +71,27 @@ locals {
       "CreateAnnotationStoreVersion",
       "CreateMultipartReadSetUpload",
       "CreateReferenceStore",
+      "CreateRunCache",
       "CreateRunGroup",
       "CreateSequenceStore",
       "CreateShare",
       "CreateVariantStore",
       "CreateWorkflow",
+      "CreateWorkflowVersion",
       "DeleteAnnotationStore",
       "DeleteAnnotationStoreVersions",
       "DeleteReference",
       "DeleteReferenceStore",
       "DeleteRun",
+      "DeleteRunCache",
       "DeleteRunGroup",
+      "DeleteS3AccessPolicy",
       "DeleteSequenceStore",
       "DeleteShare",
       "DeleteVariantStore",
       "DeleteWorkflow",
+      "DeleteWorkflowVersion",
+      "PutS3AccessPolicy",
       "StartAnnotationImportJob",
       "StartReadSetActivationJob",
       "StartReadSetExportJob",
@@ -95,9 +101,12 @@ locals {
       "StartVariantImportJob",
       "UpdateAnnotationStore",
       "UpdateAnnotationStoreVersion",
+      "UpdateRunCache",
       "UpdateRunGroup",
+      "UpdateSequenceStore",
       "UpdateVariantStore",
       "UpdateWorkflow",
+      "UpdateWorkflowVersion",
       "UploadReadSetPart"
     ]
     permissions_management = []
@@ -115,13 +124,16 @@ locals {
       "GetReferenceMetadata",
       "GetReferenceStore",
       "GetRun",
+      "GetRunCache",
       "GetRunGroup",
       "GetRunTask",
+      "GetS3AccessPolicy",
       "GetSequenceStore",
       "GetShare",
       "GetVariantImportJob",
       "GetVariantStore",
-      "GetWorkflow"
+      "GetWorkflow",
+      "GetWorkflowVersion"
     ]
     list = [
       "ListAnnotationImportJobs",
@@ -136,6 +148,7 @@ locals {
       "ListReferenceImportJobs",
       "ListReferenceStores",
       "ListReferences",
+      "ListRunCaches",
       "ListRunGroups",
       "ListRunTasks",
       "ListRuns",
@@ -144,6 +157,7 @@ locals {
       "ListTagsForResource",
       "ListVariantImportJobs",
       "ListVariantStores",
+      "ListWorkflowVersions",
       "ListWorkflows"
     ]
     tagging = [

@@ -63,10 +63,13 @@ locals {
     permissions_management = []
     read = [
       "BatchGetTokenBalance",
+      "GetAssetContract",
       "GetTokenBalance",
       "GetTransaction"
     ]
     list = [
+      "ListAssetContracts",
+      "ListFilteredTransactionEvents",
       "ListTokenBalances",
       "ListTransactionEvents",
       "ListTransactions"

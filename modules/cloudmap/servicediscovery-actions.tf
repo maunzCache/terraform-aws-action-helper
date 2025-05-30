@@ -66,22 +66,26 @@ locals {
       "CreateService",
       "DeleteNamespace",
       "DeleteService",
+      "DeleteServiceAttributes",
       "DeregisterInstance",
       "RegisterInstance",
       "UpdateHttpNamespace",
       "UpdateInstanceCustomHealthStatus",
       "UpdatePrivateDnsNamespace",
       "UpdatePublicDnsNamespace",
-      "UpdateService"
+      "UpdateService",
+      "UpdateServiceAttributes"
     ]
     permissions_management = []
     read = [
       "DiscoverInstances",
+      "DiscoverInstancesRevision",
       "GetInstance",
       "GetInstancesHealthStatus",
       "GetNamespace",
       "GetOperation",
       "GetService",
+      "GetServiceAttributes",
       "ListInstances",
       "ListNamespaces",
       "ListServices",

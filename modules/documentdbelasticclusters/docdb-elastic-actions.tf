@@ -60,21 +60,27 @@ locals {
 
   access_level = {
     write = [
+      "ApplyPendingMaintenanceAction",
+      "CopyClusterSnapshot",
       "CreateCluster",
       "CreateClusterSnapshot",
       "DeleteCluster",
       "DeleteClusterSnapshot",
       "RestoreClusterFromSnapshot",
+      "StartCluster",
+      "StopCluster",
       "UpdateCluster"
     ]
     permissions_management = []
     read = [
       "GetCluster",
-      "GetClusterSnapshot"
+      "GetClusterSnapshot",
+      "GetPendingMaintenanceAction"
     ]
     list = [
       "ListClusterSnapshots",
       "ListClusters",
+      "ListPendingMaintenanceActions",
       "ListTagsForResource"
     ]
     tagging = [

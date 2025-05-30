@@ -62,16 +62,23 @@ locals {
     write = [
       "CreateMonitor",
       "DeleteMonitor",
+      "Link",
       "UpdateMonitor"
     ]
     permissions_management = []
     read = [
       "GetHealthEvent",
+      "GetInternetEvent",
       "GetMonitor",
-      "ListTagsForResource"
+      "GetQueryResults",
+      "GetQueryStatus",
+      "ListTagsForResource",
+      "StartQuery",
+      "StopQuery"
     ]
     list = [
       "ListHealthEvents",
+      "ListInternetEvents",
       "ListMonitors"
     ]
     tagging = [
