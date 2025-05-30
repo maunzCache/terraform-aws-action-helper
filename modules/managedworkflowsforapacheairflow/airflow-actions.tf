@@ -59,26 +59,26 @@ locals {
   prefix = "airflow"
 
   access_level = {
-    write                  = [
-    "CreateCliToken",
-    "CreateEnvironment",
-    "CreateWebLoginToken",
-    "DeleteEnvironment",
-    "InvokeRestApi",
-    "PublishMetrics",
-    "UpdateEnvironment"
-]
+    write = [
+      "CreateCliToken",
+      "CreateEnvironment",
+      "CreateWebLoginToken",
+      "DeleteEnvironment",
+      "InvokeRestApi",
+      "PublishMetrics",
+      "UpdateEnvironment"
+    ]
     permissions_management = []
-    read                   = [
-    "GetEnvironment",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListEnvironments"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetEnvironment",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListEnvironments"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

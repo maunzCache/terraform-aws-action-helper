@@ -59,22 +59,22 @@ locals {
   prefix = "iotfleethub"
 
   access_level = {
-    write                  = [
-    "CreateApplication",
-    "DeleteApplication",
-    "UpdateApplication"
-]
+    write = [
+      "CreateApplication",
+      "DeleteApplication",
+      "UpdateApplication"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeApplication",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListApplications"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeApplication",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListApplications"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

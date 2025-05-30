@@ -59,52 +59,52 @@ locals {
   prefix = "aoss"
 
   access_level = {
-    write                  = [
-    "APIAccessAll",
-    "CreateAccessPolicy",
-    "CreateCollection",
-    "CreateLifecyclePolicy",
-    "CreateSecurityConfig",
-    "CreateSecurityPolicy",
-    "CreateVpcEndpoint",
-    "DashboardsAccessAll",
-    "DeleteAccessPolicy",
-    "DeleteCollection",
-    "DeleteLifecyclePolicy",
-    "DeleteSecurityConfig",
-    "DeleteSecurityPolicy",
-    "DeleteVpcEndpoint",
-    "TagResource",
-    "UntagResource",
-    "UpdateAccessPolicy",
-    "UpdateAccountSettings",
-    "UpdateCollection",
-    "UpdateLifecyclePolicy",
-    "UpdateSecurityConfig",
-    "UpdateSecurityPolicy",
-    "UpdateVpcEndpoint"
-]
+    write = [
+      "APIAccessAll",
+      "CreateAccessPolicy",
+      "CreateCollection",
+      "CreateLifecyclePolicy",
+      "CreateSecurityConfig",
+      "CreateSecurityPolicy",
+      "CreateVpcEndpoint",
+      "DashboardsAccessAll",
+      "DeleteAccessPolicy",
+      "DeleteCollection",
+      "DeleteLifecyclePolicy",
+      "DeleteSecurityConfig",
+      "DeleteSecurityPolicy",
+      "DeleteVpcEndpoint",
+      "TagResource",
+      "UntagResource",
+      "UpdateAccessPolicy",
+      "UpdateAccountSettings",
+      "UpdateCollection",
+      "UpdateLifecyclePolicy",
+      "UpdateSecurityConfig",
+      "UpdateSecurityPolicy",
+      "UpdateVpcEndpoint"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetCollection",
-    "BatchGetEffectiveLifecyclePolicy",
-    "BatchGetLifecyclePolicy",
-    "BatchGetVpcEndpoint",
-    "GetAccessPolicy",
-    "GetAccountSettings",
-    "GetPoliciesStats",
-    "GetSecurityConfig",
-    "GetSecurityPolicy"
-]
-    list                   = [
-    "ListAccessPolicies",
-    "ListCollections",
-    "ListLifecyclePolicies",
-    "ListSecurityConfigs",
-    "ListSecurityPolicies",
-    "ListTagsForResource",
-    "ListVpcEndpoints"
-]
-    tagging                = []
+    read = [
+      "BatchGetCollection",
+      "BatchGetEffectiveLifecyclePolicy",
+      "BatchGetLifecyclePolicy",
+      "BatchGetVpcEndpoint",
+      "GetAccessPolicy",
+      "GetAccountSettings",
+      "GetPoliciesStats",
+      "GetSecurityConfig",
+      "GetSecurityPolicy"
+    ]
+    list = [
+      "ListAccessPolicies",
+      "ListCollections",
+      "ListLifecyclePolicies",
+      "ListSecurityConfigs",
+      "ListSecurityPolicies",
+      "ListTagsForResource",
+      "ListVpcEndpoints"
+    ]
+    tagging = []
   }
 }

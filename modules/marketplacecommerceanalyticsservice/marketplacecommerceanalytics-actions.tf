@@ -59,10 +59,10 @@ locals {
   prefix = "marketplacecommerceanalytics"
 
   access_level = {
-    write                  = [
-    "GenerateDataSet",
-    "StartSupportDataExport"
-]
+    write = [
+      "GenerateDataSet",
+      "StartSupportDataExport"
+    ]
     permissions_management = []
     read                   = []
     list                   = []

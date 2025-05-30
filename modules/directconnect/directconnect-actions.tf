@@ -59,77 +59,77 @@ locals {
   prefix = "directconnect"
 
   access_level = {
-    write                  = [
-    "AcceptDirectConnectGatewayAssociationProposal",
-    "AllocateConnectionOnInterconnect",
-    "AllocateHostedConnection",
-    "AllocatePrivateVirtualInterface",
-    "AllocatePublicVirtualInterface",
-    "AllocateTransitVirtualInterface",
-    "AssociateConnectionWithLag",
-    "AssociateHostedConnection",
-    "AssociateMacSecKey",
-    "AssociateVirtualInterface",
-    "ConfirmConnection",
-    "ConfirmCustomerAgreement",
-    "ConfirmPrivateVirtualInterface",
-    "ConfirmPublicVirtualInterface",
-    "ConfirmTransitVirtualInterface",
-    "CreateBGPPeer",
-    "CreateConnection",
-    "CreateDirectConnectGateway",
-    "CreateDirectConnectGatewayAssociation",
-    "CreateDirectConnectGatewayAssociationProposal",
-    "CreateInterconnect",
-    "CreateLag",
-    "CreatePrivateVirtualInterface",
-    "CreatePublicVirtualInterface",
-    "CreateTransitVirtualInterface",
-    "DeleteBGPPeer",
-    "DeleteConnection",
-    "DeleteDirectConnectGateway",
-    "DeleteDirectConnectGatewayAssociation",
-    "DeleteDirectConnectGatewayAssociationProposal",
-    "DeleteInterconnect",
-    "DeleteLag",
-    "DeleteVirtualInterface",
-    "DisassociateConnectionFromLag",
-    "DisassociateMacSecKey",
-    "StartBgpFailoverTest",
-    "StopBgpFailoverTest",
-    "UpdateConnection",
-    "UpdateDirectConnectGateway",
-    "UpdateDirectConnectGatewayAssociation",
-    "UpdateLag",
-    "UpdateVirtualInterfaceAttributes"
-]
+    write = [
+      "AcceptDirectConnectGatewayAssociationProposal",
+      "AllocateConnectionOnInterconnect",
+      "AllocateHostedConnection",
+      "AllocatePrivateVirtualInterface",
+      "AllocatePublicVirtualInterface",
+      "AllocateTransitVirtualInterface",
+      "AssociateConnectionWithLag",
+      "AssociateHostedConnection",
+      "AssociateMacSecKey",
+      "AssociateVirtualInterface",
+      "ConfirmConnection",
+      "ConfirmCustomerAgreement",
+      "ConfirmPrivateVirtualInterface",
+      "ConfirmPublicVirtualInterface",
+      "ConfirmTransitVirtualInterface",
+      "CreateBGPPeer",
+      "CreateConnection",
+      "CreateDirectConnectGateway",
+      "CreateDirectConnectGatewayAssociation",
+      "CreateDirectConnectGatewayAssociationProposal",
+      "CreateInterconnect",
+      "CreateLag",
+      "CreatePrivateVirtualInterface",
+      "CreatePublicVirtualInterface",
+      "CreateTransitVirtualInterface",
+      "DeleteBGPPeer",
+      "DeleteConnection",
+      "DeleteDirectConnectGateway",
+      "DeleteDirectConnectGatewayAssociation",
+      "DeleteDirectConnectGatewayAssociationProposal",
+      "DeleteInterconnect",
+      "DeleteLag",
+      "DeleteVirtualInterface",
+      "DisassociateConnectionFromLag",
+      "DisassociateMacSecKey",
+      "StartBgpFailoverTest",
+      "StopBgpFailoverTest",
+      "UpdateConnection",
+      "UpdateDirectConnectGateway",
+      "UpdateDirectConnectGatewayAssociation",
+      "UpdateLag",
+      "UpdateVirtualInterfaceAttributes"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeConnectionLoa",
-    "DescribeConnections",
-    "DescribeConnectionsOnInterconnect",
-    "DescribeCustomerMetadata",
-    "DescribeDirectConnectGatewayAssociationProposals",
-    "DescribeDirectConnectGatewayAssociations",
-    "DescribeDirectConnectGatewayAttachments",
-    "DescribeDirectConnectGateways",
-    "DescribeHostedConnections",
-    "DescribeInterconnectLoa",
-    "DescribeInterconnects",
-    "DescribeLags",
-    "DescribeLoa",
-    "DescribeLocations",
-    "DescribeRouterConfiguration",
-    "DescribeTags",
-    "DescribeVirtualGateways",
-    "DescribeVirtualInterfaces"
-]
-    list                   = [
-    "ListVirtualInterfaceTestHistory"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeConnectionLoa",
+      "DescribeConnections",
+      "DescribeConnectionsOnInterconnect",
+      "DescribeCustomerMetadata",
+      "DescribeDirectConnectGatewayAssociationProposals",
+      "DescribeDirectConnectGatewayAssociations",
+      "DescribeDirectConnectGatewayAttachments",
+      "DescribeDirectConnectGateways",
+      "DescribeHostedConnections",
+      "DescribeInterconnectLoa",
+      "DescribeInterconnects",
+      "DescribeLags",
+      "DescribeLoa",
+      "DescribeLocations",
+      "DescribeRouterConfiguration",
+      "DescribeTags",
+      "DescribeVirtualGateways",
+      "DescribeVirtualInterfaces"
+    ]
+    list = [
+      "ListVirtualInterfaceTestHistory"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

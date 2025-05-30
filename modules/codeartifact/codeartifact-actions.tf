@@ -59,66 +59,66 @@ locals {
   prefix = "codeartifact"
 
   access_level = {
-    write                  = [
-    "AssociateExternalConnection",
-    "AssociateWithDownstreamRepository",
-    "CopyPackageVersions",
-    "CreateDomain",
-    "CreatePackageGroup",
-    "CreateRepository",
-    "DeleteDomain",
-    "DeletePackage",
-    "DeletePackageGroup",
-    "DeletePackageVersions",
-    "DeleteRepository",
-    "DisassociateExternalConnection",
-    "DisposePackageVersions",
-    "PublishPackageVersion",
-    "PutDomainPermissionsPolicy",
-    "PutPackageMetadata",
-    "PutPackageOriginConfiguration",
-    "PutRepositoryPermissionsPolicy",
-    "UpdatePackageGroup",
-    "UpdatePackageGroupOriginConfiguration",
-    "UpdatePackageVersionsStatus",
-    "UpdateRepository"
-]
+    write = [
+      "AssociateExternalConnection",
+      "AssociateWithDownstreamRepository",
+      "CopyPackageVersions",
+      "CreateDomain",
+      "CreatePackageGroup",
+      "CreateRepository",
+      "DeleteDomain",
+      "DeletePackage",
+      "DeletePackageGroup",
+      "DeletePackageVersions",
+      "DeleteRepository",
+      "DisassociateExternalConnection",
+      "DisposePackageVersions",
+      "PublishPackageVersion",
+      "PutDomainPermissionsPolicy",
+      "PutPackageMetadata",
+      "PutPackageOriginConfiguration",
+      "PutRepositoryPermissionsPolicy",
+      "UpdatePackageGroup",
+      "UpdatePackageGroupOriginConfiguration",
+      "UpdatePackageVersionsStatus",
+      "UpdateRepository"
+    ]
     permissions_management = [
-    "DeleteDomainPermissionsPolicy",
-    "DeleteRepositoryPermissionsPolicy"
-]
-    read                   = [
-    "DescribeDomain",
-    "DescribePackage",
-    "DescribePackageGroup",
-    "DescribePackageVersion",
-    "DescribeRepository",
-    "GetAssociatedPackageGroup",
-    "GetAuthorizationToken",
-    "GetDomainPermissionsPolicy",
-    "GetPackageVersionAsset",
-    "GetPackageVersionReadme",
-    "GetRepositoryEndpoint",
-    "GetRepositoryPermissionsPolicy",
-    "ReadFromRepository"
-]
-    list                   = [
-    "ListAllowedRepositoriesForGroup",
-    "ListAssociatedPackages",
-    "ListDomains",
-    "ListPackageGroups",
-    "ListPackageVersionAssets",
-    "ListPackageVersionDependencies",
-    "ListPackageVersions",
-    "ListPackages",
-    "ListRepositories",
-    "ListRepositoriesInDomain",
-    "ListSubPackageGroups",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "DeleteDomainPermissionsPolicy",
+      "DeleteRepositoryPermissionsPolicy"
+    ]
+    read = [
+      "DescribeDomain",
+      "DescribePackage",
+      "DescribePackageGroup",
+      "DescribePackageVersion",
+      "DescribeRepository",
+      "GetAssociatedPackageGroup",
+      "GetAuthorizationToken",
+      "GetDomainPermissionsPolicy",
+      "GetPackageVersionAsset",
+      "GetPackageVersionReadme",
+      "GetRepositoryEndpoint",
+      "GetRepositoryPermissionsPolicy",
+      "ReadFromRepository"
+    ]
+    list = [
+      "ListAllowedRepositoriesForGroup",
+      "ListAssociatedPackages",
+      "ListDomains",
+      "ListPackageGroups",
+      "ListPackageVersionAssets",
+      "ListPackageVersionDependencies",
+      "ListPackageVersions",
+      "ListPackages",
+      "ListRepositories",
+      "ListRepositoriesInDomain",
+      "ListSubPackageGroups",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

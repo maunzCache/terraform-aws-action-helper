@@ -59,26 +59,26 @@ locals {
   prefix = "backup-search"
 
   access_level = {
-    write                  = [
-    "StartSearchJob",
-    "StartSearchResultExportJob",
-    "StopSearchJob"
-]
+    write = [
+      "StartSearchJob",
+      "StartSearchResultExportJob",
+      "StopSearchJob"
+    ]
     permissions_management = []
-    read                   = [
-    "GetSearchJob",
-    "GetSearchResultExportJob",
-    "ListSearchJobBackups",
-    "ListSearchJobResults",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListSearchJobs",
-    "ListSearchResultExportJobs"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetSearchJob",
+      "GetSearchResultExportJob",
+      "ListSearchJobBackups",
+      "ListSearchJobResults",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListSearchJobs",
+      "ListSearchResultExportJobs"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

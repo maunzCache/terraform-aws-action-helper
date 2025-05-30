@@ -59,16 +59,16 @@ locals {
   prefix = "route53-recovery-cluster"
 
   access_level = {
-    write                  = [
-    "UpdateRoutingControlState",
-    "UpdateRoutingControlStates"
-]
+    write = [
+      "UpdateRoutingControlState",
+      "UpdateRoutingControlStates"
+    ]
     permissions_management = []
-    read                   = [
-    "GetRoutingControlState",
-    "ListRoutingControls"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetRoutingControlState",
+      "ListRoutingControls"
+    ]
+    list    = []
+    tagging = []
   }
 }

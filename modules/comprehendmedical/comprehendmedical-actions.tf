@@ -59,37 +59,37 @@ locals {
   prefix = "comprehendmedical"
 
   access_level = {
-    write                  = [
-    "StartEntitiesDetectionV2Job",
-    "StartICD10CMInferenceJob",
-    "StartPHIDetectionJob",
-    "StartRxNormInferenceJob",
-    "StartSNOMEDCTInferenceJob",
-    "StopEntitiesDetectionV2Job",
-    "StopICD10CMInferenceJob",
-    "StopPHIDetectionJob",
-    "StopRxNormInferenceJob",
-    "StopSNOMEDCTInferenceJob"
-]
+    write = [
+      "StartEntitiesDetectionV2Job",
+      "StartICD10CMInferenceJob",
+      "StartPHIDetectionJob",
+      "StartRxNormInferenceJob",
+      "StartSNOMEDCTInferenceJob",
+      "StopEntitiesDetectionV2Job",
+      "StopICD10CMInferenceJob",
+      "StopPHIDetectionJob",
+      "StopRxNormInferenceJob",
+      "StopSNOMEDCTInferenceJob"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeEntitiesDetectionV2Job",
-    "DescribeICD10CMInferenceJob",
-    "DescribePHIDetectionJob",
-    "DescribeRxNormInferenceJob",
-    "DescribeSNOMEDCTInferenceJob",
-    "DetectEntitiesV2",
-    "DetectPHI",
-    "InferICD10CM",
-    "InferRxNorm",
-    "InferSNOMEDCT",
-    "ListEntitiesDetectionV2Jobs",
-    "ListICD10CMInferenceJobs",
-    "ListPHIDetectionJobs",
-    "ListRxNormInferenceJobs",
-    "ListSNOMEDCTInferenceJobs"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "DescribeEntitiesDetectionV2Job",
+      "DescribeICD10CMInferenceJob",
+      "DescribePHIDetectionJob",
+      "DescribeRxNormInferenceJob",
+      "DescribeSNOMEDCTInferenceJob",
+      "DetectEntitiesV2",
+      "DetectPHI",
+      "InferICD10CM",
+      "InferRxNorm",
+      "InferSNOMEDCT",
+      "ListEntitiesDetectionV2Jobs",
+      "ListICD10CMInferenceJobs",
+      "ListPHIDetectionJobs",
+      "ListRxNormInferenceJobs",
+      "ListSNOMEDCTInferenceJobs"
+    ]
+    list    = []
+    tagging = []
   }
 }

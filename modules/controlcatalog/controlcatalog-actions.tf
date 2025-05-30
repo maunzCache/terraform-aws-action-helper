@@ -61,15 +61,15 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "GetControl"
-]
-    list                   = [
-    "ListCommonControls",
-    "ListControls",
-    "ListDomains",
-    "ListObjectives"
-]
-    tagging                = []
+    read = [
+      "GetControl"
+    ]
+    list = [
+      "ListCommonControls",
+      "ListControls",
+      "ListDomains",
+      "ListObjectives"
+    ]
+    tagging = []
   }
 }

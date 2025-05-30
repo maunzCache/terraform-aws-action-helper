@@ -59,32 +59,32 @@ locals {
   prefix = "kafka-cluster"
 
   access_level = {
-    write                  = [
-    "AlterCluster",
-    "AlterClusterDynamicConfiguration",
-    "AlterGroup",
-    "AlterTopic",
-    "AlterTopicDynamicConfiguration",
-    "AlterTransactionalId",
-    "Connect",
-    "CreateTopic",
-    "DeleteGroup",
-    "DeleteTopic",
-    "WriteData",
-    "WriteDataIdempotently"
-]
+    write = [
+      "AlterCluster",
+      "AlterClusterDynamicConfiguration",
+      "AlterGroup",
+      "AlterTopic",
+      "AlterTopicDynamicConfiguration",
+      "AlterTransactionalId",
+      "Connect",
+      "CreateTopic",
+      "DeleteGroup",
+      "DeleteTopic",
+      "WriteData",
+      "WriteDataIdempotently"
+    ]
     permissions_management = []
-    read                   = [
-    "ReadData"
-]
-    list                   = [
-    "DescribeCluster",
-    "DescribeClusterDynamicConfiguration",
-    "DescribeGroup",
-    "DescribeTopic",
-    "DescribeTopicDynamicConfiguration",
-    "DescribeTransactionalId"
-]
-    tagging                = []
+    read = [
+      "ReadData"
+    ]
+    list = [
+      "DescribeCluster",
+      "DescribeClusterDynamicConfiguration",
+      "DescribeGroup",
+      "DescribeTopic",
+      "DescribeTopicDynamicConfiguration",
+      "DescribeTransactionalId"
+    ]
+    tagging = []
   }
 }

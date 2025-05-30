@@ -59,17 +59,17 @@ locals {
   prefix = "aws-marketplace"
 
   access_level = {
-    write                  = [
-    "AssociateProductsWithPrivateMarketplace",
-    "CreatePrivateMarketplaceRequests",
-    "DisassociateProductsFromPrivateMarketplace"
-]
+    write = [
+      "AssociateProductsWithPrivateMarketplace",
+      "CreatePrivateMarketplaceRequests",
+      "DisassociateProductsFromPrivateMarketplace"
+    ]
     permissions_management = []
     read                   = []
-    list                   = [
-    "DescribePrivateMarketplaceRequests",
-    "ListPrivateMarketplaceRequests"
-]
-    tagging                = []
+    list = [
+      "DescribePrivateMarketplaceRequests",
+      "ListPrivateMarketplaceRequests"
+    ]
+    tagging = []
   }
 }

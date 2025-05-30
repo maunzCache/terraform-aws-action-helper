@@ -59,30 +59,30 @@ locals {
   prefix = "elemental-support-cases"
 
   access_level = {
-    write                  = [
-    "AddCaseComment",
-    "CheckCasePermission",
-    "CompleteMultipartUpload",
-    "CreateCase",
-    "CreateS3CLIUploadCommand",
-    "CreateS3DownloadUrl",
-    "StartMultipartUpload",
-    "UpdateCase",
-    "UpdateCaseStatus",
-    "UpdateMultipartUpload"
-]
+    write = [
+      "AddCaseComment",
+      "CheckCasePermission",
+      "CompleteMultipartUpload",
+      "CreateCase",
+      "CreateS3CLIUploadCommand",
+      "CreateS3DownloadUrl",
+      "StartMultipartUpload",
+      "UpdateCase",
+      "UpdateCaseStatus",
+      "UpdateMultipartUpload"
+    ]
     permissions_management = []
-    read                   = [
-    "GetCase",
-    "GetCasePermission",
-    "GetCases",
-    "GetUICache",
-    "ListTagsForCase"
-]
-    list                   = []
-    tagging                = [
-    "TagCase",
-    "UntagCase"
-]
+    read = [
+      "GetCase",
+      "GetCasePermission",
+      "GetCases",
+      "GetUICache",
+      "ListTagsForCase"
+    ]
+    list = []
+    tagging = [
+      "TagCase",
+      "UntagCase"
+    ]
   }
 }

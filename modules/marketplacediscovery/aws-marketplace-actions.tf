@@ -62,9 +62,9 @@ locals {
     write                  = []
     permissions_management = []
     read                   = []
-    list                   = [
-    "ListPrivateListings"
-]
-    tagging                = []
+    list = [
+      "ListPrivateListings"
+    ]
+    tagging = []
   }
 }

@@ -59,51 +59,51 @@ locals {
   prefix = "notifications"
 
   access_level = {
-    write                  = [
-    "AssociateChannel",
-    "AssociateManagedNotificationAccountContact",
-    "AssociateManagedNotificationAdditionalChannel",
-    "CreateEventRule",
-    "CreateNotificationConfiguration",
-    "DeleteEventRule",
-    "DeleteNotificationConfiguration",
-    "DeregisterNotificationHub",
-    "DisableNotificationsAccessForOrganization",
-    "DisassociateChannel",
-    "DisassociateManagedNotificationAccountContact",
-    "DisassociateManagedNotificationAdditionalChannel",
-    "EnableNotificationsAccessForOrganization",
-    "PutFeatureOptInStatus",
-    "RegisterNotificationHub",
-    "UpdateEventRule",
-    "UpdateNotificationConfiguration"
-]
+    write = [
+      "AssociateChannel",
+      "AssociateManagedNotificationAccountContact",
+      "AssociateManagedNotificationAdditionalChannel",
+      "CreateEventRule",
+      "CreateNotificationConfiguration",
+      "DeleteEventRule",
+      "DeleteNotificationConfiguration",
+      "DeregisterNotificationHub",
+      "DisableNotificationsAccessForOrganization",
+      "DisassociateChannel",
+      "DisassociateManagedNotificationAccountContact",
+      "DisassociateManagedNotificationAdditionalChannel",
+      "EnableNotificationsAccessForOrganization",
+      "PutFeatureOptInStatus",
+      "RegisterNotificationHub",
+      "UpdateEventRule",
+      "UpdateNotificationConfiguration"
+    ]
     permissions_management = []
-    read                   = [
-    "GetEventRule",
-    "GetFeatureOptInStatus",
-    "GetManagedNotificationChildEvent",
-    "GetManagedNotificationConfiguration",
-    "GetManagedNotificationEvent",
-    "GetNotificationConfiguration",
-    "GetNotificationEvent",
-    "GetNotificationsAccessForOrganization"
-]
-    list                   = [
-    "ListChannels",
-    "ListEventRules",
-    "ListManagedNotificationChannelAssociations",
-    "ListManagedNotificationChildEvents",
-    "ListManagedNotificationConfigurations",
-    "ListManagedNotificationEvents",
-    "ListNotificationConfigurations",
-    "ListNotificationEvents",
-    "ListNotificationHubs",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetEventRule",
+      "GetFeatureOptInStatus",
+      "GetManagedNotificationChildEvent",
+      "GetManagedNotificationConfiguration",
+      "GetManagedNotificationEvent",
+      "GetNotificationConfiguration",
+      "GetNotificationEvent",
+      "GetNotificationsAccessForOrganization"
+    ]
+    list = [
+      "ListChannels",
+      "ListEventRules",
+      "ListManagedNotificationChannelAssociations",
+      "ListManagedNotificationChildEvents",
+      "ListManagedNotificationConfigurations",
+      "ListManagedNotificationEvents",
+      "ListNotificationConfigurations",
+      "ListNotificationEvents",
+      "ListNotificationHubs",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,31 +59,31 @@ locals {
   prefix = "bugbust"
 
   access_level = {
-    write                  = [
-    "CreateEvent",
-    "EvaluateProfilingGroups",
-    "JoinEvent",
-    "UpdateEvent",
-    "UpdateWorkItem",
-    "UpdateWorkItemAdmin"
-]
+    write = [
+      "CreateEvent",
+      "EvaluateProfilingGroups",
+      "JoinEvent",
+      "UpdateEvent",
+      "UpdateWorkItem",
+      "UpdateWorkItemAdmin"
+    ]
     permissions_management = []
-    read                   = [
-    "GetEvent",
-    "GetJoinEventStatus",
-    "ListBugs",
-    "ListEventParticipants",
-    "ListEventScores",
-    "ListProfilingGroups",
-    "ListPullRequests",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListEvents"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetEvent",
+      "GetJoinEventStatus",
+      "ListBugs",
+      "ListEventParticipants",
+      "ListEventScores",
+      "ListProfilingGroups",
+      "ListPullRequests",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListEvents"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

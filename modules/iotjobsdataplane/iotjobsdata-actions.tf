@@ -59,16 +59,16 @@ locals {
   prefix = "iotjobsdata"
 
   access_level = {
-    write                  = [
-    "StartNextPendingJobExecution",
-    "UpdateJobExecution"
-]
+    write = [
+      "StartNextPendingJobExecution",
+      "UpdateJobExecution"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeJobExecution",
-    "GetPendingJobExecutions"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "DescribeJobExecution",
+      "GetPendingJobExecutions"
+    ]
+    list    = []
+    tagging = []
   }
 }

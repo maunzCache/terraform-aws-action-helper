@@ -59,36 +59,36 @@ locals {
   prefix = "aiops"
 
   access_level = {
-    write                  = [
-    "CreateInvestigation",
-    "CreateInvestigationEvent",
-    "CreateInvestigationGroup",
-    "CreateInvestigationResource",
-    "DeleteInvestigation",
-    "DeleteInvestigationGroup",
-    "DeleteInvestigationGroupPolicy",
-    "PutInvestigationGroupPolicy",
-    "UpdateInvestigation",
-    "UpdateInvestigationEvent",
-    "UpdateInvestigationGroup"
-]
+    write = [
+      "CreateInvestigation",
+      "CreateInvestigationEvent",
+      "CreateInvestigationGroup",
+      "CreateInvestigationResource",
+      "DeleteInvestigation",
+      "DeleteInvestigationGroup",
+      "DeleteInvestigationGroupPolicy",
+      "PutInvestigationGroupPolicy",
+      "UpdateInvestigation",
+      "UpdateInvestigationEvent",
+      "UpdateInvestigationGroup"
+    ]
     permissions_management = []
-    read                   = [
-    "GetInvestigation",
-    "GetInvestigationEvent",
-    "GetInvestigationGroup",
-    "GetInvestigationGroupPolicy",
-    "GetInvestigationResource"
-]
-    list                   = [
-    "ListInvestigationEvents",
-    "ListInvestigationGroups",
-    "ListInvestigations",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetInvestigation",
+      "GetInvestigationEvent",
+      "GetInvestigationGroup",
+      "GetInvestigationGroupPolicy",
+      "GetInvestigationResource"
+    ]
+    list = [
+      "ListInvestigationEvents",
+      "ListInvestigationGroups",
+      "ListInvestigations",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

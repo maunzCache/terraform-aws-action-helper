@@ -59,14 +59,14 @@ locals {
   prefix = "aws-marketplace"
 
   access_level = {
-    write                  = [
-    "PutProcurementSystemConfiguration"
-]
+    write = [
+      "PutProcurementSystemConfiguration"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeProcurementSystemConfiguration"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "DescribeProcurementSystemConfiguration"
+    ]
+    list    = []
+    tagging = []
   }
 }

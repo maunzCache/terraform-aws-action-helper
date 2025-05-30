@@ -59,44 +59,44 @@ locals {
   prefix = "migrationhub-strategy"
 
   access_level = {
-    write                  = [
-    "PutLogData",
-    "PutMetricData",
-    "PutPortfolioPreferences",
-    "RegisterCollector",
-    "SendMessage",
-    "StartAssessment",
-    "StartImportFileTask",
-    "StartRecommendationReportGeneration",
-    "StopAssessment",
-    "UpdateApplicationComponentConfig",
-    "UpdateCollectorConfiguration",
-    "UpdateServerConfig"
-]
+    write = [
+      "PutLogData",
+      "PutMetricData",
+      "PutPortfolioPreferences",
+      "RegisterCollector",
+      "SendMessage",
+      "StartAssessment",
+      "StartImportFileTask",
+      "StartRecommendationReportGeneration",
+      "StopAssessment",
+      "UpdateApplicationComponentConfig",
+      "UpdateCollectorConfiguration",
+      "UpdateServerConfig"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAntiPattern",
-    "GetApplicationComponentDetails",
-    "GetApplicationComponentStrategies",
-    "GetAssessment",
-    "GetImportFileTask",
-    "GetLatestAssessmentId",
-    "GetMessage",
-    "GetPortfolioPreferences",
-    "GetPortfolioSummary",
-    "GetRecommendationReportDetails",
-    "GetServerDetails",
-    "GetServerStrategies"
-]
-    list                   = [
-    "ListAnalyzableServers",
-    "ListAntiPatterns",
-    "ListApplicationComponents",
-    "ListCollectors",
-    "ListImportFileTask",
-    "ListJarArtifacts",
-    "ListServers"
-]
-    tagging                = []
+    read = [
+      "GetAntiPattern",
+      "GetApplicationComponentDetails",
+      "GetApplicationComponentStrategies",
+      "GetAssessment",
+      "GetImportFileTask",
+      "GetLatestAssessmentId",
+      "GetMessage",
+      "GetPortfolioPreferences",
+      "GetPortfolioSummary",
+      "GetRecommendationReportDetails",
+      "GetServerDetails",
+      "GetServerStrategies"
+    ]
+    list = [
+      "ListAnalyzableServers",
+      "ListAntiPatterns",
+      "ListApplicationComponents",
+      "ListCollectors",
+      "ListImportFileTask",
+      "ListJarArtifacts",
+      "ListServers"
+    ]
+    tagging = []
   }
 }

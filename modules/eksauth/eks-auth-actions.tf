@@ -61,10 +61,10 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "AssumeRoleForPodIdentity"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "AssumeRoleForPodIdentity"
+    ]
+    list    = []
+    tagging = []
   }
 }

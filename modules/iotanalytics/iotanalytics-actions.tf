@@ -59,48 +59,48 @@ locals {
   prefix = "iotanalytics"
 
   access_level = {
-    write                  = [
-    "BatchPutMessage",
-    "CancelPipelineReprocessing",
-    "CreateChannel",
-    "CreateDataset",
-    "CreateDatasetContent",
-    "CreateDatastore",
-    "CreatePipeline",
-    "DeleteChannel",
-    "DeleteDataset",
-    "DeleteDatasetContent",
-    "DeleteDatastore",
-    "DeletePipeline",
-    "PutLoggingOptions",
-    "StartPipelineReprocessing",
-    "UpdateChannel",
-    "UpdateDataset",
-    "UpdateDatastore",
-    "UpdatePipeline"
-]
+    write = [
+      "BatchPutMessage",
+      "CancelPipelineReprocessing",
+      "CreateChannel",
+      "CreateDataset",
+      "CreateDatasetContent",
+      "CreateDatastore",
+      "CreatePipeline",
+      "DeleteChannel",
+      "DeleteDataset",
+      "DeleteDatasetContent",
+      "DeleteDatastore",
+      "DeletePipeline",
+      "PutLoggingOptions",
+      "StartPipelineReprocessing",
+      "UpdateChannel",
+      "UpdateDataset",
+      "UpdateDatastore",
+      "UpdatePipeline"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeChannel",
-    "DescribeDataset",
-    "DescribeDatastore",
-    "DescribeLoggingOptions",
-    "DescribePipeline",
-    "GetDatasetContent",
-    "ListTagsForResource",
-    "RunPipelineActivity",
-    "SampleChannelData"
-]
-    list                   = [
-    "ListChannels",
-    "ListDatasetContents",
-    "ListDatasets",
-    "ListDatastores",
-    "ListPipelines"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeChannel",
+      "DescribeDataset",
+      "DescribeDatastore",
+      "DescribeLoggingOptions",
+      "DescribePipeline",
+      "GetDatasetContent",
+      "ListTagsForResource",
+      "RunPipelineActivity",
+      "SampleChannelData"
+    ]
+    list = [
+      "ListChannels",
+      "ListDatasetContents",
+      "ListDatasets",
+      "ListDatastores",
+      "ListPipelines"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

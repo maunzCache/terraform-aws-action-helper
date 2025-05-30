@@ -59,47 +59,47 @@ locals {
   prefix = "kinesisanalytics"
 
   access_level = {
-    write                  = [
-    "AddApplicationCloudWatchLoggingOption",
-    "AddApplicationInput",
-    "AddApplicationInputProcessingConfiguration",
-    "AddApplicationOutput",
-    "AddApplicationReferenceDataSource",
-    "AddApplicationVpcConfiguration",
-    "CreateApplication",
-    "CreateApplicationSnapshot",
-    "DeleteApplication",
-    "DeleteApplicationCloudWatchLoggingOption",
-    "DeleteApplicationInputProcessingConfiguration",
-    "DeleteApplicationOutput",
-    "DeleteApplicationReferenceDataSource",
-    "DeleteApplicationSnapshot",
-    "DeleteApplicationVpcConfiguration",
-    "RollbackApplication",
-    "StartApplication",
-    "StopApplication",
-    "UpdateApplication",
-    "UpdateApplicationMaintenanceConfiguration"
-]
+    write = [
+      "AddApplicationCloudWatchLoggingOption",
+      "AddApplicationInput",
+      "AddApplicationInputProcessingConfiguration",
+      "AddApplicationOutput",
+      "AddApplicationReferenceDataSource",
+      "AddApplicationVpcConfiguration",
+      "CreateApplication",
+      "CreateApplicationSnapshot",
+      "DeleteApplication",
+      "DeleteApplicationCloudWatchLoggingOption",
+      "DeleteApplicationInputProcessingConfiguration",
+      "DeleteApplicationOutput",
+      "DeleteApplicationReferenceDataSource",
+      "DeleteApplicationSnapshot",
+      "DeleteApplicationVpcConfiguration",
+      "RollbackApplication",
+      "StartApplication",
+      "StopApplication",
+      "UpdateApplication",
+      "UpdateApplicationMaintenanceConfiguration"
+    ]
     permissions_management = []
-    read                   = [
-    "CreateApplicationPresignedUrl",
-    "DescribeApplication",
-    "DescribeApplicationOperation",
-    "DescribeApplicationSnapshot",
-    "DescribeApplicationVersion",
-    "DiscoverInputSchema",
-    "ListApplicationOperations",
-    "ListApplicationSnapshots",
-    "ListApplicationVersions",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListApplications"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "CreateApplicationPresignedUrl",
+      "DescribeApplication",
+      "DescribeApplicationOperation",
+      "DescribeApplicationSnapshot",
+      "DescribeApplicationVersion",
+      "DiscoverInputSchema",
+      "ListApplicationOperations",
+      "ListApplicationSnapshots",
+      "ListApplicationVersions",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListApplications"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

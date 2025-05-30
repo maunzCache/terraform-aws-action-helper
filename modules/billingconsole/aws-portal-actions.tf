@@ -59,21 +59,21 @@ locals {
   prefix = "aws-portal"
 
   access_level = {
-    write                  = [
-    "ModifyAccount",
-    "ModifyBilling",
-    "ModifyPaymentMethods",
-    "UpdateConsoleActionSetEnforced"
-]
+    write = [
+      "ModifyAccount",
+      "ModifyBilling",
+      "ModifyPaymentMethods",
+      "UpdateConsoleActionSetEnforced"
+    ]
     permissions_management = []
-    read                   = [
-    "GetConsoleActionSetEnforced",
-    "ViewAccount",
-    "ViewBilling",
-    "ViewPaymentMethods",
-    "ViewUsage"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetConsoleActionSetEnforced",
+      "ViewAccount",
+      "ViewBilling",
+      "ViewPaymentMethods",
+      "ViewUsage"
+    ]
+    list    = []
+    tagging = []
   }
 }

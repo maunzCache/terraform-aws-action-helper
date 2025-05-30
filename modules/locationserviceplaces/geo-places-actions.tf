@@ -61,16 +61,16 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "Autocomplete",
-    "Geocode",
-    "GetPlace",
-    "ReverseGeocode",
-    "SearchNearby",
-    "SearchText",
-    "Suggest"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "Autocomplete",
+      "Geocode",
+      "GetPlace",
+      "ReverseGeocode",
+      "SearchNearby",
+      "SearchText",
+      "Suggest"
+    ]
+    list    = []
+    tagging = []
   }
 }

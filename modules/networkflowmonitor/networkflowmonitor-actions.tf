@@ -59,40 +59,40 @@ locals {
   prefix = "networkflowmonitor"
 
   access_level = {
-    write                  = [
-    "CreateMonitor",
-    "CreateScope",
-    "DeleteMonitor",
-    "DeleteScope",
-    "Publish",
-    "StartQueryMonitorTopContributors",
-    "StartQueryWorkloadInsightsTopContributors",
-    "StartQueryWorkloadInsightsTopContributorsData",
-    "StopQueryMonitorTopContributors",
-    "StopQueryWorkloadInsightsTopContributors",
-    "StopQueryWorkloadInsightsTopContributorsData",
-    "UpdateMonitor",
-    "UpdateScope"
-]
+    write = [
+      "CreateMonitor",
+      "CreateScope",
+      "DeleteMonitor",
+      "DeleteScope",
+      "Publish",
+      "StartQueryMonitorTopContributors",
+      "StartQueryWorkloadInsightsTopContributors",
+      "StartQueryWorkloadInsightsTopContributorsData",
+      "StopQueryMonitorTopContributors",
+      "StopQueryWorkloadInsightsTopContributors",
+      "StopQueryWorkloadInsightsTopContributorsData",
+      "UpdateMonitor",
+      "UpdateScope"
+    ]
     permissions_management = []
-    read                   = [
-    "GetMonitor",
-    "GetQueryResultsMonitorTopContributors",
-    "GetQueryResultsWorkloadInsightsTopContributors",
-    "GetQueryResultsWorkloadInsightsTopContributorsData",
-    "GetQueryStatusMonitorTopContributors",
-    "GetQueryStatusWorkloadInsightsTopContributors",
-    "GetQueryStatusWorkloadInsightsTopContributorsData",
-    "GetScope",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListMonitors",
-    "ListScopes"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetMonitor",
+      "GetQueryResultsMonitorTopContributors",
+      "GetQueryResultsWorkloadInsightsTopContributors",
+      "GetQueryResultsWorkloadInsightsTopContributorsData",
+      "GetQueryStatusMonitorTopContributors",
+      "GetQueryStatusWorkloadInsightsTopContributors",
+      "GetQueryStatusWorkloadInsightsTopContributorsData",
+      "GetScope",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListMonitors",
+      "ListScopes"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

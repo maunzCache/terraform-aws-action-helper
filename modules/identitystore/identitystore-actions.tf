@@ -59,32 +59,32 @@ locals {
   prefix = "identitystore"
 
   access_level = {
-    write                  = [
-    "CreateGroup",
-    "CreateGroupMembership",
-    "CreateUser",
-    "DeleteGroup",
-    "DeleteGroupMembership",
-    "DeleteUser",
-    "UpdateGroup",
-    "UpdateUser"
-]
+    write = [
+      "CreateGroup",
+      "CreateGroupMembership",
+      "CreateUser",
+      "DeleteGroup",
+      "DeleteGroupMembership",
+      "DeleteUser",
+      "UpdateGroup",
+      "UpdateUser"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeGroup",
-    "DescribeGroupMembership",
-    "DescribeUser",
-    "GetGroupId",
-    "GetGroupMembershipId",
-    "GetUserId",
-    "IsMemberInGroups"
-]
-    list                   = [
-    "ListGroupMemberships",
-    "ListGroupMembershipsForMember",
-    "ListGroups",
-    "ListUsers"
-]
-    tagging                = []
+    read = [
+      "DescribeGroup",
+      "DescribeGroupMembership",
+      "DescribeUser",
+      "GetGroupId",
+      "GetGroupMembershipId",
+      "GetUserId",
+      "IsMemberInGroups"
+    ]
+    list = [
+      "ListGroupMemberships",
+      "ListGroupMembershipsForMember",
+      "ListGroups",
+      "ListUsers"
+    ]
+    tagging = []
   }
 }

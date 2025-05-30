@@ -59,26 +59,26 @@ locals {
   prefix = "dbqms"
 
   access_level = {
-    write                  = [
-    "CreateFavoriteQuery",
-    "CreateQueryHistory",
-    "CreateTab",
-    "DeleteFavoriteQueries",
-    "DeleteQueryHistory",
-    "DeleteTab",
-    "UpdateFavoriteQuery",
-    "UpdateQueryHistory",
-    "UpdateTab"
-]
+    write = [
+      "CreateFavoriteQuery",
+      "CreateQueryHistory",
+      "CreateTab",
+      "DeleteFavoriteQueries",
+      "DeleteQueryHistory",
+      "DeleteTab",
+      "UpdateFavoriteQuery",
+      "UpdateQueryHistory",
+      "UpdateTab"
+    ]
     permissions_management = []
-    read                   = [
-    "GetQueryString"
-]
-    list                   = [
-    "DescribeFavoriteQueries",
-    "DescribeQueryHistory",
-    "DescribeTabs"
-]
-    tagging                = []
+    read = [
+      "GetQueryString"
+    ]
+    list = [
+      "DescribeFavoriteQueries",
+      "DescribeQueryHistory",
+      "DescribeTabs"
+    ]
+    tagging = []
   }
 }

@@ -59,56 +59,56 @@ locals {
   prefix = "ses"
 
   access_level = {
-    write                  = [
-    "CreateConfigurationSet",
-    "CreateConfigurationSetEventDestination",
-    "CreateDedicatedIpPool",
-    "CreateDeliverabilityTestReport",
-    "CreateEmailIdentity",
-    "DeleteConfigurationSet",
-    "DeleteConfigurationSetEventDestination",
-    "DeleteDedicatedIpPool",
-    "DeleteEmailIdentity",
-    "PutAccountDedicatedIpWarmupAttributes",
-    "PutAccountSendingAttributes",
-    "PutConfigurationSetDeliveryOptions",
-    "PutConfigurationSetReputationOptions",
-    "PutConfigurationSetSendingOptions",
-    "PutConfigurationSetTrackingOptions",
-    "PutDedicatedIpInPool",
-    "PutDedicatedIpWarmupAttributes",
-    "PutDeliverabilityDashboardOption",
-    "PutEmailIdentityDkimAttributes",
-    "PutEmailIdentityFeedbackAttributes",
-    "PutEmailIdentityMailFromAttributes",
-    "SendEmail",
-    "UpdateConfigurationSetEventDestination"
-]
+    write = [
+      "CreateConfigurationSet",
+      "CreateConfigurationSetEventDestination",
+      "CreateDedicatedIpPool",
+      "CreateDeliverabilityTestReport",
+      "CreateEmailIdentity",
+      "DeleteConfigurationSet",
+      "DeleteConfigurationSetEventDestination",
+      "DeleteDedicatedIpPool",
+      "DeleteEmailIdentity",
+      "PutAccountDedicatedIpWarmupAttributes",
+      "PutAccountSendingAttributes",
+      "PutConfigurationSetDeliveryOptions",
+      "PutConfigurationSetReputationOptions",
+      "PutConfigurationSetSendingOptions",
+      "PutConfigurationSetTrackingOptions",
+      "PutDedicatedIpInPool",
+      "PutDedicatedIpWarmupAttributes",
+      "PutDeliverabilityDashboardOption",
+      "PutEmailIdentityDkimAttributes",
+      "PutEmailIdentityFeedbackAttributes",
+      "PutEmailIdentityMailFromAttributes",
+      "SendEmail",
+      "UpdateConfigurationSetEventDestination"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAccount",
-    "GetBlacklistReports",
-    "GetConfigurationSet",
-    "GetConfigurationSetEventDestinations",
-    "GetDedicatedIp",
-    "GetDedicatedIps",
-    "GetDeliverabilityDashboardOptions",
-    "GetDeliverabilityTestReport",
-    "GetDomainDeliverabilityCampaign",
-    "GetDomainStatisticsReport",
-    "GetEmailIdentity",
-    "ListDomainDeliverabilityCampaigns",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListConfigurationSets",
-    "ListDedicatedIpPools",
-    "ListDeliverabilityTestReports",
-    "ListEmailIdentities"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetAccount",
+      "GetBlacklistReports",
+      "GetConfigurationSet",
+      "GetConfigurationSetEventDestinations",
+      "GetDedicatedIp",
+      "GetDedicatedIps",
+      "GetDeliverabilityDashboardOptions",
+      "GetDeliverabilityTestReport",
+      "GetDomainDeliverabilityCampaign",
+      "GetDomainStatisticsReport",
+      "GetEmailIdentity",
+      "ListDomainDeliverabilityCampaigns",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListConfigurationSets",
+      "ListDedicatedIpPools",
+      "ListDeliverabilityTestReports",
+      "ListEmailIdentities"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,14 +59,14 @@ locals {
   prefix = "signin"
 
   access_level = {
-    write                  = [
-    "CreateTrustedIdentityPropagationApplicationForConsole"
-]
+    write = [
+      "CreateTrustedIdentityPropagationApplicationForConsole"
+    ]
     permissions_management = []
     read                   = []
-    list                   = [
-    "ListTrustedIdentityPropagationApplicationsForConsole"
-]
-    tagging                = []
+    list = [
+      "ListTrustedIdentityPropagationApplicationsForConsole"
+    ]
+    tagging = []
   }
 }

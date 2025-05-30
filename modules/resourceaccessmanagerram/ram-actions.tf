@@ -59,49 +59,49 @@ locals {
   prefix = "ram"
 
   access_level = {
-    write                  = [
-    "AcceptResourceShareInvitation",
-    "AssociateResourceShare",
-    "AssociateResourceSharePermission",
-    "CreatePermission",
-    "CreatePermissionVersion",
-    "CreateResourceShare",
-    "DeletePermission",
-    "DeletePermissionVersion",
-    "DeleteResourceShare",
-    "DisassociateResourceShare",
-    "DisassociateResourceSharePermission",
-    "PromotePermissionCreatedFromPolicy",
-    "PromoteResourceShareCreatedFromPolicy",
-    "RejectResourceShareInvitation",
-    "ReplacePermissionAssociations",
-    "SetDefaultPermissionVersion",
-    "UpdateResourceShare"
-]
+    write = [
+      "AcceptResourceShareInvitation",
+      "AssociateResourceShare",
+      "AssociateResourceSharePermission",
+      "CreatePermission",
+      "CreatePermissionVersion",
+      "CreateResourceShare",
+      "DeletePermission",
+      "DeletePermissionVersion",
+      "DeleteResourceShare",
+      "DisassociateResourceShare",
+      "DisassociateResourceSharePermission",
+      "PromotePermissionCreatedFromPolicy",
+      "PromoteResourceShareCreatedFromPolicy",
+      "RejectResourceShareInvitation",
+      "ReplacePermissionAssociations",
+      "SetDefaultPermissionVersion",
+      "UpdateResourceShare"
+    ]
     permissions_management = [
-    "EnableSharingWithAwsOrganization"
-]
-    read                   = [
-    "GetPermission",
-    "GetResourcePolicies",
-    "GetResourceShareAssociations",
-    "GetResourceShareInvitations",
-    "GetResourceShares",
-    "ListPendingInvitationResources"
-]
-    list                   = [
-    "ListPermissionAssociations",
-    "ListPermissionVersions",
-    "ListPermissions",
-    "ListPrincipals",
-    "ListReplacePermissionAssociationsWork",
-    "ListResourceSharePermissions",
-    "ListResourceTypes",
-    "ListResources"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "EnableSharingWithAwsOrganization"
+    ]
+    read = [
+      "GetPermission",
+      "GetResourcePolicies",
+      "GetResourceShareAssociations",
+      "GetResourceShareInvitations",
+      "GetResourceShares",
+      "ListPendingInvitationResources"
+    ]
+    list = [
+      "ListPermissionAssociations",
+      "ListPermissionVersions",
+      "ListPermissions",
+      "ListPrincipals",
+      "ListReplacePermissionAssociationsWork",
+      "ListResourceSharePermissions",
+      "ListResourceTypes",
+      "ListResources"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

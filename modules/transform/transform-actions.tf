@@ -59,20 +59,20 @@ locals {
   prefix = "transform"
 
   access_level = {
-    write                  = [
-    "AssociateConnectorResource",
-    "CreateProfile",
-    "DeleteProfile",
-    "RejectConnector",
-    "UpdateProfile"
-]
+    write = [
+      "AssociateConnectorResource",
+      "CreateProfile",
+      "DeleteProfile",
+      "RejectConnector",
+      "UpdateProfile"
+    ]
     permissions_management = []
-    read                   = [
-    "GetConnector"
-]
-    list                   = [
-    "ListProfiles"
-]
-    tagging                = []
+    read = [
+      "GetConnector"
+    ]
+    list = [
+      "ListProfiles"
+    ]
+    tagging = []
   }
 }

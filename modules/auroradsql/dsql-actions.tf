@@ -59,35 +59,35 @@ locals {
   prefix = "dsql"
 
   access_level = {
-    write                  = [
-    "AddPeerCluster",
-    "CreateCluster",
-    "DbConnect",
-    "DbConnectAdmin",
-    "DeleteCluster",
-    "PutMultiRegionProperties",
-    "PutWitnessRegion",
-    "RemovePeerCluster",
-    "StartBackupJob",
-    "StartRestoreJob",
-    "StopBackupJob",
-    "StopRestoreJob",
-    "UpdateCluster"
-]
+    write = [
+      "AddPeerCluster",
+      "CreateCluster",
+      "DbConnect",
+      "DbConnectAdmin",
+      "DeleteCluster",
+      "PutMultiRegionProperties",
+      "PutWitnessRegion",
+      "RemovePeerCluster",
+      "StartBackupJob",
+      "StartRestoreJob",
+      "StopBackupJob",
+      "StopRestoreJob",
+      "UpdateCluster"
+    ]
     permissions_management = []
-    read                   = [
-    "GetBackupJob",
-    "GetCluster",
-    "GetRestoreJob",
-    "GetVpcEndpointServiceName",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListClusters"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetBackupJob",
+      "GetCluster",
+      "GetRestoreJob",
+      "GetVpcEndpointServiceName",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListClusters"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,22 +59,22 @@ locals {
   prefix = "dlm"
 
   access_level = {
-    write                  = [
-    "CreateLifecyclePolicy",
-    "DeleteLifecyclePolicy",
-    "UpdateLifecyclePolicy"
-]
+    write = [
+      "CreateLifecyclePolicy",
+      "DeleteLifecyclePolicy",
+      "UpdateLifecyclePolicy"
+    ]
     permissions_management = []
-    read                   = [
-    "GetLifecyclePolicy",
-    "ListTagsForResource"
-]
-    list                   = [
-    "GetLifecyclePolicies"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetLifecyclePolicy",
+      "ListTagsForResource"
+    ]
+    list = [
+      "GetLifecyclePolicies"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,57 +59,57 @@ locals {
   prefix = "databrew"
 
   access_level = {
-    write                  = [
-    "BatchDeleteRecipeVersion",
-    "CreateDataset",
-    "CreateProfileJob",
-    "CreateProject",
-    "CreateRecipe",
-    "CreateRecipeJob",
-    "CreateRuleset",
-    "CreateSchedule",
-    "DeleteDataset",
-    "DeleteJob",
-    "DeleteProject",
-    "DeleteRecipeVersion",
-    "DeleteRuleset",
-    "DeleteSchedule",
-    "PublishRecipe",
-    "SendProjectSessionAction",
-    "StartJobRun",
-    "StartProjectSession",
-    "StopJobRun",
-    "UpdateDataset",
-    "UpdateProfileJob",
-    "UpdateProject",
-    "UpdateRecipe",
-    "UpdateRecipeJob",
-    "UpdateRuleset",
-    "UpdateSchedule"
-]
+    write = [
+      "BatchDeleteRecipeVersion",
+      "CreateDataset",
+      "CreateProfileJob",
+      "CreateProject",
+      "CreateRecipe",
+      "CreateRecipeJob",
+      "CreateRuleset",
+      "CreateSchedule",
+      "DeleteDataset",
+      "DeleteJob",
+      "DeleteProject",
+      "DeleteRecipeVersion",
+      "DeleteRuleset",
+      "DeleteSchedule",
+      "PublishRecipe",
+      "SendProjectSessionAction",
+      "StartJobRun",
+      "StartProjectSession",
+      "StopJobRun",
+      "UpdateDataset",
+      "UpdateProfileJob",
+      "UpdateProject",
+      "UpdateRecipe",
+      "UpdateRecipeJob",
+      "UpdateRuleset",
+      "UpdateSchedule"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeDataset",
-    "DescribeJob",
-    "DescribeJobRun",
-    "DescribeProject",
-    "DescribeRecipe",
-    "DescribeRuleset",
-    "DescribeSchedule",
-    "ListDatasets",
-    "ListJobRuns",
-    "ListJobs",
-    "ListProjects",
-    "ListRecipeVersions",
-    "ListRecipes",
-    "ListRulesets",
-    "ListSchedules",
-    "ListTagsForResource"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeDataset",
+      "DescribeJob",
+      "DescribeJobRun",
+      "DescribeProject",
+      "DescribeRecipe",
+      "DescribeRuleset",
+      "DescribeSchedule",
+      "ListDatasets",
+      "ListJobRuns",
+      "ListJobs",
+      "ListProjects",
+      "ListRecipeVersions",
+      "ListRecipes",
+      "ListRulesets",
+      "ListSchedules",
+      "ListTagsForResource"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

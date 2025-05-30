@@ -59,20 +59,20 @@ locals {
   prefix = "cost-optimization-hub"
 
   access_level = {
-    write                  = [
-    "UpdateEnrollmentStatus",
-    "UpdatePreferences"
-]
+    write = [
+      "UpdateEnrollmentStatus",
+      "UpdatePreferences"
+    ]
     permissions_management = []
-    read                   = [
-    "GetPreferences",
-    "GetRecommendation"
-]
-    list                   = [
-    "ListEnrollmentStatuses",
-    "ListRecommendationSummaries",
-    "ListRecommendations"
-]
-    tagging                = []
+    read = [
+      "GetPreferences",
+      "GetRecommendation"
+    ]
+    list = [
+      "ListEnrollmentStatuses",
+      "ListRecommendationSummaries",
+      "ListRecommendations"
+    ]
+    tagging = []
   }
 }

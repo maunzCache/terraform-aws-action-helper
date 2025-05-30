@@ -59,54 +59,54 @@ locals {
   prefix = "iottwinmaker"
 
   access_level = {
-    write                  = [
-    "BatchPutPropertyValues",
-    "CancelMetadataTransferJob",
-    "CreateComponentType",
-    "CreateEntity",
-    "CreateMetadataTransferJob",
-    "CreateScene",
-    "CreateSyncJob",
-    "CreateWorkspace",
-    "DeleteComponentType",
-    "DeleteEntity",
-    "DeleteScene",
-    "DeleteSyncJob",
-    "DeleteWorkspace",
-    "UpdateComponentType",
-    "UpdateEntity",
-    "UpdatePricingPlan",
-    "UpdateScene",
-    "UpdateWorkspace"
-]
+    write = [
+      "BatchPutPropertyValues",
+      "CancelMetadataTransferJob",
+      "CreateComponentType",
+      "CreateEntity",
+      "CreateMetadataTransferJob",
+      "CreateScene",
+      "CreateSyncJob",
+      "CreateWorkspace",
+      "DeleteComponentType",
+      "DeleteEntity",
+      "DeleteScene",
+      "DeleteSyncJob",
+      "DeleteWorkspace",
+      "UpdateComponentType",
+      "UpdateEntity",
+      "UpdatePricingPlan",
+      "UpdateScene",
+      "UpdateWorkspace"
+    ]
     permissions_management = []
-    read                   = [
-    "ExecuteQuery",
-    "GetComponentType",
-    "GetEntity",
-    "GetMetadataTransferJob",
-    "GetPricingPlan",
-    "GetPropertyValue",
-    "GetPropertyValueHistory",
-    "GetScene",
-    "GetSyncJob",
-    "GetWorkspace"
-]
-    list                   = [
-    "ListComponentTypes",
-    "ListComponents",
-    "ListEntities",
-    "ListMetadataTransferJobs",
-    "ListProperties",
-    "ListScenes",
-    "ListSyncJobs",
-    "ListSyncResources",
-    "ListTagsForResource",
-    "ListWorkspaces"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "ExecuteQuery",
+      "GetComponentType",
+      "GetEntity",
+      "GetMetadataTransferJob",
+      "GetPricingPlan",
+      "GetPropertyValue",
+      "GetPropertyValueHistory",
+      "GetScene",
+      "GetSyncJob",
+      "GetWorkspace"
+    ]
+    list = [
+      "ListComponentTypes",
+      "ListComponents",
+      "ListEntities",
+      "ListMetadataTransferJobs",
+      "ListProperties",
+      "ListScenes",
+      "ListSyncJobs",
+      "ListSyncResources",
+      "ListTagsForResource",
+      "ListWorkspaces"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

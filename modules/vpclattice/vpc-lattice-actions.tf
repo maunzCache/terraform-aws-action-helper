@@ -59,85 +59,85 @@ locals {
   prefix = "vpc-lattice"
 
   access_level = {
-    write                  = [
-    "CreateAccessLogSubscription",
-    "CreateListener",
-    "CreateResourceConfiguration",
-    "CreateResourceGateway",
-    "CreateRule",
-    "CreateService",
-    "CreateServiceNetwork",
-    "CreateServiceNetworkResourceAssociation",
-    "CreateServiceNetworkServiceAssociation",
-    "CreateServiceNetworkVpcAssociation",
-    "CreateTargetGroup",
-    "DeleteAccessLogSubscription",
-    "DeleteListener",
-    "DeleteResourceConfiguration",
-    "DeleteResourceEndpointAssociation",
-    "DeleteResourceGateway",
-    "DeleteResourcePolicy",
-    "DeleteRule",
-    "DeleteService",
-    "DeleteServiceNetwork",
-    "DeleteServiceNetworkResourceAssociation",
-    "DeleteServiceNetworkServiceAssociation",
-    "DeleteServiceNetworkVpcAssociation",
-    "DeleteTargetGroup",
-    "DeregisterTargets",
-    "PutResourcePolicy",
-    "RegisterTargets",
-    "UpdateAccessLogSubscription",
-    "UpdateListener",
-    "UpdateResourceConfiguration",
-    "UpdateResourceGateway",
-    "UpdateRule",
-    "UpdateService",
-    "UpdateServiceNetwork",
-    "UpdateServiceNetworkVpcAssociation",
-    "UpdateTargetGroup"
-]
+    write = [
+      "CreateAccessLogSubscription",
+      "CreateListener",
+      "CreateResourceConfiguration",
+      "CreateResourceGateway",
+      "CreateRule",
+      "CreateService",
+      "CreateServiceNetwork",
+      "CreateServiceNetworkResourceAssociation",
+      "CreateServiceNetworkServiceAssociation",
+      "CreateServiceNetworkVpcAssociation",
+      "CreateTargetGroup",
+      "DeleteAccessLogSubscription",
+      "DeleteListener",
+      "DeleteResourceConfiguration",
+      "DeleteResourceEndpointAssociation",
+      "DeleteResourceGateway",
+      "DeleteResourcePolicy",
+      "DeleteRule",
+      "DeleteService",
+      "DeleteServiceNetwork",
+      "DeleteServiceNetworkResourceAssociation",
+      "DeleteServiceNetworkServiceAssociation",
+      "DeleteServiceNetworkVpcAssociation",
+      "DeleteTargetGroup",
+      "DeregisterTargets",
+      "PutResourcePolicy",
+      "RegisterTargets",
+      "UpdateAccessLogSubscription",
+      "UpdateListener",
+      "UpdateResourceConfiguration",
+      "UpdateResourceGateway",
+      "UpdateRule",
+      "UpdateService",
+      "UpdateServiceNetwork",
+      "UpdateServiceNetworkVpcAssociation",
+      "UpdateTargetGroup"
+    ]
     permissions_management = [
-    "AssociateViaAWSService-EventsAndStates",
-    "CreateServiceNetworkVpcEndpointAssociation",
-    "DeleteAuthPolicy",
-    "PutAuthPolicy"
-]
-    read                   = [
-    "GetAccessLogSubscription",
-    "GetAuthPolicy",
-    "GetListener",
-    "GetResourceConfiguration",
-    "GetResourceGateway",
-    "GetResourcePolicy",
-    "GetRule",
-    "GetService",
-    "GetServiceNetwork",
-    "GetServiceNetworkResourceAssociation",
-    "GetServiceNetworkServiceAssociation",
-    "GetServiceNetworkVpcAssociation",
-    "GetTargetGroup",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAccessLogSubscriptions",
-    "ListListeners",
-    "ListResourceConfigurations",
-    "ListResourceEndpointAssociations",
-    "ListResourceGateways",
-    "ListRules",
-    "ListServiceNetworkResourceAssociations",
-    "ListServiceNetworkServiceAssociations",
-    "ListServiceNetworkVpcAssociations",
-    "ListServiceNetworkVpcEndpointAssociations",
-    "ListServiceNetworks",
-    "ListServices",
-    "ListTargetGroups",
-    "ListTargets"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "AssociateViaAWSService-EventsAndStates",
+      "CreateServiceNetworkVpcEndpointAssociation",
+      "DeleteAuthPolicy",
+      "PutAuthPolicy"
+    ]
+    read = [
+      "GetAccessLogSubscription",
+      "GetAuthPolicy",
+      "GetListener",
+      "GetResourceConfiguration",
+      "GetResourceGateway",
+      "GetResourcePolicy",
+      "GetRule",
+      "GetService",
+      "GetServiceNetwork",
+      "GetServiceNetworkResourceAssociation",
+      "GetServiceNetworkServiceAssociation",
+      "GetServiceNetworkVpcAssociation",
+      "GetTargetGroup",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAccessLogSubscriptions",
+      "ListListeners",
+      "ListResourceConfigurations",
+      "ListResourceEndpointAssociations",
+      "ListResourceGateways",
+      "ListRules",
+      "ListServiceNetworkResourceAssociations",
+      "ListServiceNetworkServiceAssociations",
+      "ListServiceNetworkVpcAssociations",
+      "ListServiceNetworkVpcEndpointAssociations",
+      "ListServiceNetworks",
+      "ListServices",
+      "ListTargetGroups",
+      "ListTargets"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

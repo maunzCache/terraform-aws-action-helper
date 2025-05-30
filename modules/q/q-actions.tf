@@ -59,51 +59,51 @@ locals {
   prefix = "q"
 
   access_level = {
-    write                  = [
-    "AssociateConnectorResource",
-    "CreateAssignment",
-    "CreateAuthGrant",
-    "CreateOAuthAppConnection",
-    "CreatePlugin",
-    "DeleteAssignment",
-    "DeleteConversation",
-    "DeleteOAuthAppConnection",
-    "DeletePlugin",
-    "PassRequest",
-    "RejectConnector",
-    "SendEvent",
-    "SendMessage",
-    "StartConversation",
-    "StartTroubleshootingAnalysis",
-    "StartTroubleshootingResolutionExplanation",
-    "UpdateAuthGrant",
-    "UpdateConversation",
-    "UpdateOAuthAppConnection",
-    "UpdatePlugin",
-    "UpdateTroubleshootingCommandResult",
-    "UsePlugin",
-    "VerifyOAuthAppConnection"
-]
+    write = [
+      "AssociateConnectorResource",
+      "CreateAssignment",
+      "CreateAuthGrant",
+      "CreateOAuthAppConnection",
+      "CreatePlugin",
+      "DeleteAssignment",
+      "DeleteConversation",
+      "DeleteOAuthAppConnection",
+      "DeletePlugin",
+      "PassRequest",
+      "RejectConnector",
+      "SendEvent",
+      "SendMessage",
+      "StartConversation",
+      "StartTroubleshootingAnalysis",
+      "StartTroubleshootingResolutionExplanation",
+      "UpdateAuthGrant",
+      "UpdateConversation",
+      "UpdateOAuthAppConnection",
+      "UpdatePlugin",
+      "UpdateTroubleshootingCommandResult",
+      "UsePlugin",
+      "VerifyOAuthAppConnection"
+    ]
     permissions_management = []
-    read                   = [
-    "GenerateCodeFromCommands",
-    "GenerateCodeRecommendations",
-    "GetConnector",
-    "GetConversation",
-    "GetIdentityMetadata",
-    "GetPlugin",
-    "GetTroubleshootingResults",
-    "ListConversations"
-]
-    list                   = [
-    "ListDashboardMetrics",
-    "ListPluginProviders",
-    "ListPlugins",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GenerateCodeFromCommands",
+      "GenerateCodeRecommendations",
+      "GetConnector",
+      "GetConversation",
+      "GetIdentityMetadata",
+      "GetPlugin",
+      "GetTroubleshootingResults",
+      "ListConversations"
+    ]
+    list = [
+      "ListDashboardMetrics",
+      "ListPluginProviders",
+      "ListPlugins",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

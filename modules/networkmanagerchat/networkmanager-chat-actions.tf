@@ -59,19 +59,19 @@ locals {
   prefix = "networkmanager-chat"
 
   access_level = {
-    write                  = [
-    "CancelMessageResponse",
-    "CreateConversation",
-    "DeleteConversation",
-    "NotifyConversationIsActive",
-    "SendConversationMessage"
-]
+    write = [
+      "CancelMessageResponse",
+      "CreateConversation",
+      "DeleteConversation",
+      "NotifyConversationIsActive",
+      "SendConversationMessage"
+    ]
     permissions_management = []
     read                   = []
-    list                   = [
-    "ListConversationMessages",
-    "ListConversations"
-]
-    tagging                = []
+    list = [
+      "ListConversationMessages",
+      "ListConversations"
+    ]
+    tagging = []
   }
 }

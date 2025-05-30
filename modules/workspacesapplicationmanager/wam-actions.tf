@@ -59,9 +59,9 @@ locals {
   prefix = "wam"
 
   access_level = {
-    write                  = [
-    "AuthenticatePackager"
-]
+    write = [
+      "AuthenticatePackager"
+    ]
     permissions_management = []
     read                   = []
     list                   = []

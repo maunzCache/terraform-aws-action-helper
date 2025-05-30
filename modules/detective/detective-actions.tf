@@ -59,50 +59,50 @@ locals {
   prefix = "detective"
 
   access_level = {
-    write                  = [
-    "AcceptInvitation",
-    "CreateGraph",
-    "CreateMembers",
-    "DeleteGraph",
-    "DeleteMembers",
-    "DisableOrganizationAdminAccount",
-    "DisassociateMembership",
-    "EnableOrganizationAdminAccount",
-    "RejectInvitation",
-    "StartInvestigation",
-    "StartMonitoringMember",
-    "UpdateDatasourcePackages",
-    "UpdateInvestigationState",
-    "UpdateOrganizationConfiguration"
-]
+    write = [
+      "AcceptInvitation",
+      "CreateGraph",
+      "CreateMembers",
+      "DeleteGraph",
+      "DeleteMembers",
+      "DisableOrganizationAdminAccount",
+      "DisassociateMembership",
+      "EnableOrganizationAdminAccount",
+      "RejectInvitation",
+      "StartInvestigation",
+      "StartMonitoringMember",
+      "UpdateDatasourcePackages",
+      "UpdateInvestigationState",
+      "UpdateOrganizationConfiguration"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetGraphMemberDatasources",
-    "BatchGetMembershipDatasources",
-    "DescribeOrganizationConfiguration",
-    "GetFreeTrialEligibility",
-    "GetGraphIngestState",
-    "GetInvestigation",
-    "GetMembers",
-    "GetPricingInformation",
-    "GetUsageInformation",
-    "InvokeAssistant",
-    "SearchGraph"
-]
-    list                   = [
-    "ListDatasourcePackages",
-    "ListGraphs",
-    "ListHighDegreeEntities",
-    "ListIndicators",
-    "ListInvestigations",
-    "ListInvitations",
-    "ListMembers",
-    "ListOrganizationAdminAccount",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchGetGraphMemberDatasources",
+      "BatchGetMembershipDatasources",
+      "DescribeOrganizationConfiguration",
+      "GetFreeTrialEligibility",
+      "GetGraphIngestState",
+      "GetInvestigation",
+      "GetMembers",
+      "GetPricingInformation",
+      "GetUsageInformation",
+      "InvokeAssistant",
+      "SearchGraph"
+    ]
+    list = [
+      "ListDatasourcePackages",
+      "ListGraphs",
+      "ListHighDegreeEntities",
+      "ListIndicators",
+      "ListInvestigations",
+      "ListInvitations",
+      "ListMembers",
+      "ListOrganizationAdminAccount",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

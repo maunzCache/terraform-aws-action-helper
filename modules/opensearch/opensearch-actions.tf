@@ -59,18 +59,18 @@ locals {
   prefix = "opensearch"
 
   access_level = {
-    write                  = [
-    "CancelDirectQuery",
-    "StartDirectQuery"
-]
+    write = [
+      "CancelDirectQuery",
+      "StartDirectQuery"
+    ]
     permissions_management = [
-    "ApplicationAccessAll"
-]
-    read                   = [
-    "GetDirectQuery",
-    "GetDirectQueryResult"
-]
-    list                   = []
-    tagging                = []
+      "ApplicationAccessAll"
+    ]
+    read = [
+      "GetDirectQuery",
+      "GetDirectQueryResult"
+    ]
+    list    = []
+    tagging = []
   }
 }

@@ -59,23 +59,23 @@ locals {
   prefix = "sdb"
 
   access_level = {
-    write                  = [
-    "BatchDeleteAttributes",
-    "BatchPutAttributes",
-    "CreateDomain",
-    "DeleteAttributes",
-    "DeleteDomain",
-    "PutAttributes"
-]
+    write = [
+      "BatchDeleteAttributes",
+      "BatchPutAttributes",
+      "CreateDomain",
+      "DeleteAttributes",
+      "DeleteDomain",
+      "PutAttributes"
+    ]
     permissions_management = []
-    read                   = [
-    "DomainMetadata",
-    "GetAttributes",
-    "Select"
-]
-    list                   = [
-    "ListDomains"
-]
-    tagging                = []
+    read = [
+      "DomainMetadata",
+      "GetAttributes",
+      "Select"
+    ]
+    list = [
+      "ListDomains"
+    ]
+    tagging = []
   }
 }

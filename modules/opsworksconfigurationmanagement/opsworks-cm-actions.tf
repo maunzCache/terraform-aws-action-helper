@@ -59,33 +59,33 @@ locals {
   prefix = "opsworks-cm"
 
   access_level = {
-    write                  = [
-    "AssociateNode",
-    "CreateBackup",
-    "CreateServer",
-    "DeleteBackup",
-    "DeleteServer",
-    "DisassociateNode",
-    "RestoreServer",
-    "StartMaintenance",
-    "UpdateServer",
-    "UpdateServerEngineAttributes"
-]
+    write = [
+      "AssociateNode",
+      "CreateBackup",
+      "CreateServer",
+      "DeleteBackup",
+      "DeleteServer",
+      "DisassociateNode",
+      "RestoreServer",
+      "StartMaintenance",
+      "UpdateServer",
+      "UpdateServerEngineAttributes"
+    ]
     permissions_management = []
-    read                   = [
-    "ExportServerEngineAttribute",
-    "ListTagsForResource"
-]
-    list                   = [
-    "DescribeAccountAttributes",
-    "DescribeBackups",
-    "DescribeEvents",
-    "DescribeNodeAssociationStatus",
-    "DescribeServers"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "ExportServerEngineAttribute",
+      "ListTagsForResource"
+    ]
+    list = [
+      "DescribeAccountAttributes",
+      "DescribeBackups",
+      "DescribeEvents",
+      "DescribeNodeAssociationStatus",
+      "DescribeServers"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

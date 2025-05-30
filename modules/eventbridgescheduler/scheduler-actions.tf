@@ -59,26 +59,26 @@ locals {
   prefix = "scheduler"
 
   access_level = {
-    write                  = [
-    "CreateSchedule",
-    "CreateScheduleGroup",
-    "DeleteSchedule",
-    "DeleteScheduleGroup",
-    "UpdateSchedule"
-]
+    write = [
+      "CreateSchedule",
+      "CreateScheduleGroup",
+      "DeleteSchedule",
+      "DeleteScheduleGroup",
+      "UpdateSchedule"
+    ]
     permissions_management = []
-    read                   = [
-    "GetSchedule",
-    "GetScheduleGroup",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListScheduleGroups",
-    "ListSchedules"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetSchedule",
+      "GetScheduleGroup",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListScheduleGroups",
+      "ListSchedules"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

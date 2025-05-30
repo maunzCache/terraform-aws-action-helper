@@ -59,44 +59,44 @@ locals {
   prefix = "dax"
 
   access_level = {
-    write                  = [
-    "BatchWriteItem",
-    "CreateCluster",
-    "CreateParameterGroup",
-    "CreateSubnetGroup",
-    "DecreaseReplicationFactor",
-    "DeleteCluster",
-    "DeleteItem",
-    "DeleteParameterGroup",
-    "DeleteSubnetGroup",
-    "IncreaseReplicationFactor",
-    "PutItem",
-    "RebootNode",
-    "UpdateCluster",
-    "UpdateItem",
-    "UpdateParameterGroup",
-    "UpdateSubnetGroup"
-]
+    write = [
+      "BatchWriteItem",
+      "CreateCluster",
+      "CreateParameterGroup",
+      "CreateSubnetGroup",
+      "DecreaseReplicationFactor",
+      "DeleteCluster",
+      "DeleteItem",
+      "DeleteParameterGroup",
+      "DeleteSubnetGroup",
+      "IncreaseReplicationFactor",
+      "PutItem",
+      "RebootNode",
+      "UpdateCluster",
+      "UpdateItem",
+      "UpdateParameterGroup",
+      "UpdateSubnetGroup"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetItem",
-    "ConditionCheckItem",
-    "DescribeParameters",
-    "GetItem",
-    "ListTags",
-    "Query",
-    "Scan"
-]
-    list                   = [
-    "DescribeClusters",
-    "DescribeDefaultParameters",
-    "DescribeEvents",
-    "DescribeParameterGroups",
-    "DescribeSubnetGroups"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchGetItem",
+      "ConditionCheckItem",
+      "DescribeParameters",
+      "GetItem",
+      "ListTags",
+      "Query",
+      "Scan"
+    ]
+    list = [
+      "DescribeClusters",
+      "DescribeDefaultParameters",
+      "DescribeEvents",
+      "DescribeParameterGroups",
+      "DescribeSubnetGroups"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

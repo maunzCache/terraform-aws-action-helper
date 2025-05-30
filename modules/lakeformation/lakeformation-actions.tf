@@ -59,74 +59,74 @@ locals {
   prefix = "lakeformation"
 
   access_level = {
-    write                  = [
-    "CancelTransaction",
-    "CommitTransaction",
-    "CreateDataCellsFilter",
-    "CreateLFTag",
-    "CreateLFTagExpression",
-    "CreateLakeFormationIdentityCenterConfiguration",
-    "CreateLakeFormationOptIn",
-    "DeleteDataCellsFilter",
-    "DeleteLFTag",
-    "DeleteLFTagExpression",
-    "DeleteLakeFormationIdentityCenterConfiguration",
-    "DeleteLakeFormationOptIn",
-    "DeleteObjectsOnCancel",
-    "DeregisterResource",
-    "ExtendTransaction",
-    "GetDataAccess",
-    "RegisterResource",
-    "RegisterResourceWithPrivilegedAccess",
-    "StartQueryPlanning",
-    "StartTransaction",
-    "UpdateDataCellsFilter",
-    "UpdateLFTag",
-    "UpdateLFTagExpression",
-    "UpdateLakeFormationIdentityCenterConfiguration",
-    "UpdateResource",
-    "UpdateTableObjects",
-    "UpdateTableStorageOptimizer"
-]
+    write = [
+      "CancelTransaction",
+      "CommitTransaction",
+      "CreateDataCellsFilter",
+      "CreateLFTag",
+      "CreateLFTagExpression",
+      "CreateLakeFormationIdentityCenterConfiguration",
+      "CreateLakeFormationOptIn",
+      "DeleteDataCellsFilter",
+      "DeleteLFTag",
+      "DeleteLFTagExpression",
+      "DeleteLakeFormationIdentityCenterConfiguration",
+      "DeleteLakeFormationOptIn",
+      "DeleteObjectsOnCancel",
+      "DeregisterResource",
+      "ExtendTransaction",
+      "GetDataAccess",
+      "RegisterResource",
+      "RegisterResourceWithPrivilegedAccess",
+      "StartQueryPlanning",
+      "StartTransaction",
+      "UpdateDataCellsFilter",
+      "UpdateLFTag",
+      "UpdateLFTagExpression",
+      "UpdateLakeFormationIdentityCenterConfiguration",
+      "UpdateResource",
+      "UpdateTableObjects",
+      "UpdateTableStorageOptimizer"
+    ]
     permissions_management = [
-    "BatchGrantPermissions",
-    "BatchRevokePermissions",
-    "GrantPermissions",
-    "PutDataLakeSettings",
-    "RevokePermissions"
-]
-    read                   = [
-    "DescribeLakeFormationIdentityCenterConfiguration",
-    "DescribeResource",
-    "DescribeTransaction",
-    "GetDataCellsFilter",
-    "GetDataLakePrincipal",
-    "GetDataLakeSettings",
-    "GetEffectivePermissionsForPath",
-    "GetLFTag",
-    "GetLFTagExpression",
-    "GetQueryState",
-    "GetQueryStatistics",
-    "GetResourceLFTags",
-    "GetTableObjects",
-    "GetWorkUnitResults",
-    "GetWorkUnits",
-    "ListLFTagExpressions",
-    "ListLFTags",
-    "SearchDatabasesByLFTags",
-    "SearchTablesByLFTags"
-]
-    list                   = [
-    "ListDataCellsFilter",
-    "ListLakeFormationOptIns",
-    "ListPermissions",
-    "ListResources",
-    "ListTableStorageOptimizers",
-    "ListTransactions"
-]
-    tagging                = [
-    "AddLFTagsToResource",
-    "RemoveLFTagsFromResource"
-]
+      "BatchGrantPermissions",
+      "BatchRevokePermissions",
+      "GrantPermissions",
+      "PutDataLakeSettings",
+      "RevokePermissions"
+    ]
+    read = [
+      "DescribeLakeFormationIdentityCenterConfiguration",
+      "DescribeResource",
+      "DescribeTransaction",
+      "GetDataCellsFilter",
+      "GetDataLakePrincipal",
+      "GetDataLakeSettings",
+      "GetEffectivePermissionsForPath",
+      "GetLFTag",
+      "GetLFTagExpression",
+      "GetQueryState",
+      "GetQueryStatistics",
+      "GetResourceLFTags",
+      "GetTableObjects",
+      "GetWorkUnitResults",
+      "GetWorkUnits",
+      "ListLFTagExpressions",
+      "ListLFTags",
+      "SearchDatabasesByLFTags",
+      "SearchTablesByLFTags"
+    ]
+    list = [
+      "ListDataCellsFilter",
+      "ListLakeFormationOptIns",
+      "ListPermissions",
+      "ListResources",
+      "ListTableStorageOptimizers",
+      "ListTransactions"
+    ]
+    tagging = [
+      "AddLFTagsToResource",
+      "RemoveLFTagsFromResource"
+    ]
   }
 }

@@ -59,53 +59,53 @@ locals {
   prefix = "qapps"
 
   access_level = {
-    write                  = [
-    "AssociateLibraryItemReview",
-    "AssociateQAppWithUser",
-    "BatchCreateCategory",
-    "BatchDeleteCategory",
-    "BatchUpdateCategory",
-    "CopyQApp",
-    "CreateLibraryItem",
-    "CreateLibraryItemReview",
-    "CreateQApp",
-    "CreateSubscriptionToken",
-    "DeleteLibraryItem",
-    "DeleteQApp",
-    "DisassociateLibraryItemReview",
-    "DisassociateQAppFromUser",
-    "ExportQAppSessionData",
-    "ImportDocument",
-    "PredictProblemStatementFromConversation",
-    "PredictQApp",
-    "PredictQAppFromProblemStatement",
-    "StartQAppSession",
-    "StopQAppSession",
-    "UpdateLibraryItem",
-    "UpdateLibraryItemMetadata",
-    "UpdateQApp",
-    "UpdateQAppPermissions",
-    "UpdateQAppSession",
-    "UpdateQAppSessionMetadata"
-]
+    write = [
+      "AssociateLibraryItemReview",
+      "AssociateQAppWithUser",
+      "BatchCreateCategory",
+      "BatchDeleteCategory",
+      "BatchUpdateCategory",
+      "CopyQApp",
+      "CreateLibraryItem",
+      "CreateLibraryItemReview",
+      "CreateQApp",
+      "CreateSubscriptionToken",
+      "DeleteLibraryItem",
+      "DeleteQApp",
+      "DisassociateLibraryItemReview",
+      "DisassociateQAppFromUser",
+      "ExportQAppSessionData",
+      "ImportDocument",
+      "PredictProblemStatementFromConversation",
+      "PredictQApp",
+      "PredictQAppFromProblemStatement",
+      "StartQAppSession",
+      "StopQAppSession",
+      "UpdateLibraryItem",
+      "UpdateLibraryItemMetadata",
+      "UpdateQApp",
+      "UpdateQAppPermissions",
+      "UpdateQAppSession",
+      "UpdateQAppSessionMetadata"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeQAppPermissions",
-    "GetLibraryItem",
-    "GetQApp",
-    "GetQAppSession",
-    "GetQAppSessionMetadata",
-    "ListQAppSessionData",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListCategories",
-    "ListLibraryItems",
-    "ListQApps"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeQAppPermissions",
+      "GetLibraryItem",
+      "GetQApp",
+      "GetQAppSession",
+      "GetQAppSessionMetadata",
+      "ListQAppSessionData",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListCategories",
+      "ListLibraryItems",
+      "ListQApps"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

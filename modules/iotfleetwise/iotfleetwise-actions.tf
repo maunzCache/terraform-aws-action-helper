@@ -59,71 +59,71 @@ locals {
   prefix = "iotfleetwise"
 
   access_level = {
-    write                  = [
-    "AssociateVehicleFleet",
-    "CreateCampaign",
-    "CreateDecoderManifest",
-    "CreateFleet",
-    "CreateModelManifest",
-    "CreateSignalCatalog",
-    "CreateStateTemplate",
-    "CreateVehicle",
-    "DeleteCampaign",
-    "DeleteDecoderManifest",
-    "DeleteFleet",
-    "DeleteModelManifest",
-    "DeleteSignalCatalog",
-    "DeleteStateTemplate",
-    "DeleteVehicle",
-    "DisassociateVehicleFleet",
-    "ImportDecoderManifest",
-    "ImportSignalCatalog",
-    "PutEncryptionConfiguration",
-    "PutLoggingOptions",
-    "RegisterAccount",
-    "UpdateCampaign",
-    "UpdateDecoderManifest",
-    "UpdateFleet",
-    "UpdateModelManifest",
-    "UpdateSignalCatalog",
-    "UpdateStateTemplate",
-    "UpdateVehicle"
-]
+    write = [
+      "AssociateVehicleFleet",
+      "CreateCampaign",
+      "CreateDecoderManifest",
+      "CreateFleet",
+      "CreateModelManifest",
+      "CreateSignalCatalog",
+      "CreateStateTemplate",
+      "CreateVehicle",
+      "DeleteCampaign",
+      "DeleteDecoderManifest",
+      "DeleteFleet",
+      "DeleteModelManifest",
+      "DeleteSignalCatalog",
+      "DeleteStateTemplate",
+      "DeleteVehicle",
+      "DisassociateVehicleFleet",
+      "ImportDecoderManifest",
+      "ImportSignalCatalog",
+      "PutEncryptionConfiguration",
+      "PutLoggingOptions",
+      "RegisterAccount",
+      "UpdateCampaign",
+      "UpdateDecoderManifest",
+      "UpdateFleet",
+      "UpdateModelManifest",
+      "UpdateSignalCatalog",
+      "UpdateStateTemplate",
+      "UpdateVehicle"
+    ]
     permissions_management = [
-    "GenerateCommandPayload"
-]
-    read                   = [
-    "GetCampaign",
-    "GetDecoderManifest",
-    "GetEncryptionConfiguration",
-    "GetFleet",
-    "GetLoggingOptions",
-    "GetModelManifest",
-    "GetRegisterAccountStatus",
-    "GetSignalCatalog",
-    "GetStateTemplate",
-    "GetVehicle",
-    "GetVehicleStatus",
-    "ListCampaigns",
-    "ListDecoderManifests",
-    "ListFleets",
-    "ListFleetsForVehicle",
-    "ListModelManifests",
-    "ListSignalCatalogNodes",
-    "ListSignalCatalogs",
-    "ListStateTemplates",
-    "ListTagsForResource",
-    "ListVehicles",
-    "ListVehiclesInFleet"
-]
-    list                   = [
-    "ListDecoderManifestNetworkInterfaces",
-    "ListDecoderManifestSignals",
-    "ListModelManifestNodes"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "GenerateCommandPayload"
+    ]
+    read = [
+      "GetCampaign",
+      "GetDecoderManifest",
+      "GetEncryptionConfiguration",
+      "GetFleet",
+      "GetLoggingOptions",
+      "GetModelManifest",
+      "GetRegisterAccountStatus",
+      "GetSignalCatalog",
+      "GetStateTemplate",
+      "GetVehicle",
+      "GetVehicleStatus",
+      "ListCampaigns",
+      "ListDecoderManifests",
+      "ListFleets",
+      "ListFleetsForVehicle",
+      "ListModelManifests",
+      "ListSignalCatalogNodes",
+      "ListSignalCatalogs",
+      "ListStateTemplates",
+      "ListTagsForResource",
+      "ListVehicles",
+      "ListVehiclesInFleet"
+    ]
+    list = [
+      "ListDecoderManifestNetworkInterfaces",
+      "ListDecoderManifestSignals",
+      "ListModelManifestNodes"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

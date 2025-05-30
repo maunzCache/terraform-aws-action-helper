@@ -59,64 +59,64 @@ locals {
   prefix = "nimble"
 
   access_level = {
-    write                  = [
-    "AcceptEulas",
-    "CreateLaunchProfile",
-    "CreateStreamingImage",
-    "CreateStreamingSession",
-    "CreateStreamingSessionStream",
-    "CreateStudio",
-    "CreateStudioComponent",
-    "DeleteLaunchProfile",
-    "DeleteLaunchProfileMember",
-    "DeleteStreamingImage",
-    "DeleteStreamingSession",
-    "DeleteStudio",
-    "DeleteStudioComponent",
-    "DeleteStudioMember",
-    "PutLaunchProfileMembers",
-    "PutStudioLogEvents",
-    "PutStudioMembers",
-    "StartStreamingSession",
-    "StartStudioSSOConfigurationRepair",
-    "StopStreamingSession",
-    "UpdateLaunchProfile",
-    "UpdateLaunchProfileMember",
-    "UpdateStreamingImage",
-    "UpdateStudio",
-    "UpdateStudioComponent"
-]
+    write = [
+      "AcceptEulas",
+      "CreateLaunchProfile",
+      "CreateStreamingImage",
+      "CreateStreamingSession",
+      "CreateStreamingSessionStream",
+      "CreateStudio",
+      "CreateStudioComponent",
+      "DeleteLaunchProfile",
+      "DeleteLaunchProfileMember",
+      "DeleteStreamingImage",
+      "DeleteStreamingSession",
+      "DeleteStudio",
+      "DeleteStudioComponent",
+      "DeleteStudioMember",
+      "PutLaunchProfileMembers",
+      "PutStudioLogEvents",
+      "PutStudioMembers",
+      "StartStreamingSession",
+      "StartStudioSSOConfigurationRepair",
+      "StopStreamingSession",
+      "UpdateLaunchProfile",
+      "UpdateLaunchProfileMember",
+      "UpdateStreamingImage",
+      "UpdateStudio",
+      "UpdateStudioComponent"
+    ]
     permissions_management = []
-    read                   = [
-    "GetEula",
-    "GetFeatureMap",
-    "GetLaunchProfile",
-    "GetLaunchProfileDetails",
-    "GetLaunchProfileInitialization",
-    "GetLaunchProfileMember",
-    "GetStreamingImage",
-    "GetStreamingSession",
-    "GetStreamingSessionBackup",
-    "GetStreamingSessionStream",
-    "GetStudio",
-    "GetStudioComponent",
-    "GetStudioMember",
-    "ListEulaAcceptances",
-    "ListEulas",
-    "ListLaunchProfileMembers",
-    "ListLaunchProfiles",
-    "ListStreamingImages",
-    "ListStreamingSessionBackups",
-    "ListStreamingSessions",
-    "ListStudioComponents",
-    "ListStudioMembers",
-    "ListStudios",
-    "ListTagsForResource"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetEula",
+      "GetFeatureMap",
+      "GetLaunchProfile",
+      "GetLaunchProfileDetails",
+      "GetLaunchProfileInitialization",
+      "GetLaunchProfileMember",
+      "GetStreamingImage",
+      "GetStreamingSession",
+      "GetStreamingSessionBackup",
+      "GetStreamingSessionStream",
+      "GetStudio",
+      "GetStudioComponent",
+      "GetStudioMember",
+      "ListEulaAcceptances",
+      "ListEulas",
+      "ListLaunchProfileMembers",
+      "ListLaunchProfiles",
+      "ListStreamingImages",
+      "ListStreamingSessionBackups",
+      "ListStreamingSessions",
+      "ListStudioComponents",
+      "ListStudioMembers",
+      "ListStudios",
+      "ListTagsForResource"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

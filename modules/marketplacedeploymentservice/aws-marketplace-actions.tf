@@ -59,17 +59,17 @@ locals {
   prefix = "aws-marketplace"
 
   access_level = {
-    write                  = [
-    "PutDeploymentParameter"
-]
+    write = [
+      "PutDeploymentParameter"
+    ]
     permissions_management = []
-    read                   = [
-    "ListTagsForResource"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "ListTagsForResource"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

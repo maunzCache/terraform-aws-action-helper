@@ -59,65 +59,65 @@ locals {
   prefix = "sagemaker-mlflow"
 
   access_level = {
-    write                  = [
-    "CreateExperiment",
-    "CreateModelVersion",
-    "CreateRegisteredModel",
-    "CreateRun",
-    "DeleteExperiment",
-    "DeleteModelVersion",
-    "DeleteModelVersionTag",
-    "DeleteRegisteredModel",
-    "DeleteRegisteredModelAlias",
-    "DeleteRegisteredModelTag",
-    "DeleteRun",
-    "DeleteTag",
-    "DeleteTraceTag",
-    "DeleteTraces",
-    "EndTrace",
-    "LogBatch",
-    "LogInputs",
-    "LogMetric",
-    "LogModel",
-    "LogParam",
-    "RenameRegisteredModel",
-    "RestoreExperiment",
-    "RestoreRun",
-    "SetExperimentTag",
-    "SetModelVersionTag",
-    "SetRegisteredModelAlias",
-    "SetRegisteredModelTag",
-    "SetTag",
-    "SetTraceTag",
-    "StartTrace",
-    "TransitionModelVersionStage",
-    "UpdateExperiment",
-    "UpdateModelVersion",
-    "UpdateRegisteredModel",
-    "UpdateRun"
-]
+    write = [
+      "CreateExperiment",
+      "CreateModelVersion",
+      "CreateRegisteredModel",
+      "CreateRun",
+      "DeleteExperiment",
+      "DeleteModelVersion",
+      "DeleteModelVersionTag",
+      "DeleteRegisteredModel",
+      "DeleteRegisteredModelAlias",
+      "DeleteRegisteredModelTag",
+      "DeleteRun",
+      "DeleteTag",
+      "DeleteTraceTag",
+      "DeleteTraces",
+      "EndTrace",
+      "LogBatch",
+      "LogInputs",
+      "LogMetric",
+      "LogModel",
+      "LogParam",
+      "RenameRegisteredModel",
+      "RestoreExperiment",
+      "RestoreRun",
+      "SetExperimentTag",
+      "SetModelVersionTag",
+      "SetRegisteredModelAlias",
+      "SetRegisteredModelTag",
+      "SetTag",
+      "SetTraceTag",
+      "StartTrace",
+      "TransitionModelVersionStage",
+      "UpdateExperiment",
+      "UpdateModelVersion",
+      "UpdateRegisteredModel",
+      "UpdateRun"
+    ]
     permissions_management = []
-    read                   = [
-    "AccessUI",
-    "GetDownloadURIForModelVersionArtifacts",
-    "GetExperiment",
-    "GetExperimentByName",
-    "GetMetricHistory",
-    "GetModelVersion",
-    "GetModelVersionByAlias",
-    "GetRegisteredModel",
-    "GetRun",
-    "GetTraceInfo",
-    "SearchExperiments",
-    "SearchModelVersions",
-    "SearchRegisteredModels",
-    "SearchRuns",
-    "SearchTraces"
-]
-    list                   = [
-    "GetLatestModelVersions",
-    "ListArtifacts"
-]
-    tagging                = []
+    read = [
+      "AccessUI",
+      "GetDownloadURIForModelVersionArtifacts",
+      "GetExperiment",
+      "GetExperimentByName",
+      "GetMetricHistory",
+      "GetModelVersion",
+      "GetModelVersionByAlias",
+      "GetRegisteredModel",
+      "GetRun",
+      "GetTraceInfo",
+      "SearchExperiments",
+      "SearchModelVersions",
+      "SearchRegisteredModels",
+      "SearchRuns",
+      "SearchTraces"
+    ]
+    list = [
+      "GetLatestModelVersions",
+      "ListArtifacts"
+    ]
+    tagging = []
   }
 }

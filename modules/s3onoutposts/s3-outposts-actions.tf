@@ -59,63 +59,63 @@ locals {
   prefix = "s3-outposts"
 
   access_level = {
-    write                  = [
-    "AbortMultipartUpload",
-    "CreateAccessPoint",
-    "CreateBucket",
-    "CreateEndpoint",
-    "DeleteAccessPoint",
-    "DeleteBucket",
-    "DeleteEndpoint",
-    "DeleteObject",
-    "DeleteObjectVersion",
-    "PutBucketVersioning",
-    "PutLifecycleConfiguration",
-    "PutObject",
-    "PutReplicationConfiguration",
-    "ReplicateDelete",
-    "ReplicateObject"
-]
+    write = [
+      "AbortMultipartUpload",
+      "CreateAccessPoint",
+      "CreateBucket",
+      "CreateEndpoint",
+      "DeleteAccessPoint",
+      "DeleteBucket",
+      "DeleteEndpoint",
+      "DeleteObject",
+      "DeleteObjectVersion",
+      "PutBucketVersioning",
+      "PutLifecycleConfiguration",
+      "PutObject",
+      "PutReplicationConfiguration",
+      "ReplicateDelete",
+      "ReplicateObject"
+    ]
     permissions_management = [
-    "DeleteAccessPointPolicy",
-    "DeleteBucketPolicy",
-    "PutAccessPointPolicy",
-    "PutBucketPolicy",
-    "PutObjectAcl"
-]
-    read                   = [
-    "GetAccessPoint",
-    "GetAccessPointPolicy",
-    "GetBucket",
-    "GetBucketPolicy",
-    "GetBucketTagging",
-    "GetBucketVersioning",
-    "GetLifecycleConfiguration",
-    "GetObject",
-    "GetObjectTagging",
-    "GetObjectVersion",
-    "GetObjectVersionForReplication",
-    "GetObjectVersionTagging",
-    "GetReplicationConfiguration"
-]
-    list                   = [
-    "ListAccessPoints",
-    "ListBucket",
-    "ListBucketMultipartUploads",
-    "ListBucketVersions",
-    "ListEndpoints",
-    "ListMultipartUploadParts",
-    "ListOutpostsWithS3",
-    "ListRegionalBuckets",
-    "ListSharedEndpoints"
-]
-    tagging                = [
-    "DeleteObjectTagging",
-    "DeleteObjectVersionTagging",
-    "PutBucketTagging",
-    "PutObjectTagging",
-    "PutObjectVersionTagging",
-    "ReplicateTags"
-]
+      "DeleteAccessPointPolicy",
+      "DeleteBucketPolicy",
+      "PutAccessPointPolicy",
+      "PutBucketPolicy",
+      "PutObjectAcl"
+    ]
+    read = [
+      "GetAccessPoint",
+      "GetAccessPointPolicy",
+      "GetBucket",
+      "GetBucketPolicy",
+      "GetBucketTagging",
+      "GetBucketVersioning",
+      "GetLifecycleConfiguration",
+      "GetObject",
+      "GetObjectTagging",
+      "GetObjectVersion",
+      "GetObjectVersionForReplication",
+      "GetObjectVersionTagging",
+      "GetReplicationConfiguration"
+    ]
+    list = [
+      "ListAccessPoints",
+      "ListBucket",
+      "ListBucketMultipartUploads",
+      "ListBucketVersions",
+      "ListEndpoints",
+      "ListMultipartUploadParts",
+      "ListOutpostsWithS3",
+      "ListRegionalBuckets",
+      "ListSharedEndpoints"
+    ]
+    tagging = [
+      "DeleteObjectTagging",
+      "DeleteObjectVersionTagging",
+      "PutBucketTagging",
+      "PutObjectTagging",
+      "PutObjectVersionTagging",
+      "ReplicateTags"
+    ]
   }
 }

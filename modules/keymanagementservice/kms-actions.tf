@@ -59,70 +59,70 @@ locals {
   prefix = "kms"
 
   access_level = {
-    write                  = [
-    "CancelKeyDeletion",
-    "ConnectCustomKeyStore",
-    "CreateAlias",
-    "CreateCustomKeyStore",
-    "CreateKey",
-    "Decrypt",
-    "DeleteAlias",
-    "DeleteCustomKeyStore",
-    "DeleteImportedKeyMaterial",
-    "DeriveSharedSecret",
-    "DisableKey",
-    "DisableKeyRotation",
-    "DisconnectCustomKeyStore",
-    "EnableKey",
-    "EnableKeyRotation",
-    "Encrypt",
-    "GenerateDataKey",
-    "GenerateDataKeyPair",
-    "GenerateDataKeyPairWithoutPlaintext",
-    "GenerateDataKeyWithoutPlaintext",
-    "GenerateMac",
-    "GenerateRandom",
-    "ImportKeyMaterial",
-    "ReEncryptFrom",
-    "ReEncryptTo",
-    "ReplicateKey",
-    "RotateKeyOnDemand",
-    "ScheduleKeyDeletion",
-    "Sign",
-    "SynchronizeMultiRegionKey",
-    "UpdateAlias",
-    "UpdateCustomKeyStore",
-    "UpdateKeyDescription",
-    "UpdatePrimaryRegion",
-    "Verify",
-    "VerifyMac"
-]
+    write = [
+      "CancelKeyDeletion",
+      "ConnectCustomKeyStore",
+      "CreateAlias",
+      "CreateCustomKeyStore",
+      "CreateKey",
+      "Decrypt",
+      "DeleteAlias",
+      "DeleteCustomKeyStore",
+      "DeleteImportedKeyMaterial",
+      "DeriveSharedSecret",
+      "DisableKey",
+      "DisableKeyRotation",
+      "DisconnectCustomKeyStore",
+      "EnableKey",
+      "EnableKeyRotation",
+      "Encrypt",
+      "GenerateDataKey",
+      "GenerateDataKeyPair",
+      "GenerateDataKeyPairWithoutPlaintext",
+      "GenerateDataKeyWithoutPlaintext",
+      "GenerateMac",
+      "GenerateRandom",
+      "ImportKeyMaterial",
+      "ReEncryptFrom",
+      "ReEncryptTo",
+      "ReplicateKey",
+      "RotateKeyOnDemand",
+      "ScheduleKeyDeletion",
+      "Sign",
+      "SynchronizeMultiRegionKey",
+      "UpdateAlias",
+      "UpdateCustomKeyStore",
+      "UpdateKeyDescription",
+      "UpdatePrimaryRegion",
+      "Verify",
+      "VerifyMac"
+    ]
     permissions_management = [
-    "CreateGrant",
-    "PutKeyPolicy",
-    "RetireGrant",
-    "RevokeGrant"
-]
-    read                   = [
-    "DescribeCustomKeyStores",
-    "DescribeKey",
-    "GetKeyPolicy",
-    "GetKeyRotationStatus",
-    "GetParametersForImport",
-    "GetPublicKey"
-]
-    list                   = [
-    "ListAliases",
-    "ListGrants",
-    "ListKeyPolicies",
-    "ListKeyRotations",
-    "ListKeys",
-    "ListResourceTags",
-    "ListRetirableGrants"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "CreateGrant",
+      "PutKeyPolicy",
+      "RetireGrant",
+      "RevokeGrant"
+    ]
+    read = [
+      "DescribeCustomKeyStores",
+      "DescribeKey",
+      "GetKeyPolicy",
+      "GetKeyRotationStatus",
+      "GetParametersForImport",
+      "GetPublicKey"
+    ]
+    list = [
+      "ListAliases",
+      "ListGrants",
+      "ListKeyPolicies",
+      "ListKeyRotations",
+      "ListKeys",
+      "ListResourceTags",
+      "ListRetirableGrants"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

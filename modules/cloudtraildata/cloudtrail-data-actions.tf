@@ -59,9 +59,9 @@ locals {
   prefix = "cloudtrail-data"
 
   access_level = {
-    write                  = [
-    "PutAuditEvents"
-]
+    write = [
+      "PutAuditEvents"
+    ]
     permissions_management = []
     read                   = []
     list                   = []

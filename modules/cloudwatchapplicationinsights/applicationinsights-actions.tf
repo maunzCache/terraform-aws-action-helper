@@ -59,48 +59,48 @@ locals {
   prefix = "applicationinsights"
 
   access_level = {
-    write                  = [
-    "AddWorkload",
-    "CreateApplication",
-    "CreateComponent",
-    "CreateLogPattern",
-    "DeleteApplication",
-    "DeleteComponent",
-    "DeleteLogPattern",
-    "Link",
-    "RemoveWorkload",
-    "UpdateApplication",
-    "UpdateComponent",
-    "UpdateComponentConfiguration",
-    "UpdateLogPattern",
-    "UpdateProblem",
-    "UpdateWorkload"
-]
+    write = [
+      "AddWorkload",
+      "CreateApplication",
+      "CreateComponent",
+      "CreateLogPattern",
+      "DeleteApplication",
+      "DeleteComponent",
+      "DeleteLogPattern",
+      "Link",
+      "RemoveWorkload",
+      "UpdateApplication",
+      "UpdateComponent",
+      "UpdateComponentConfiguration",
+      "UpdateLogPattern",
+      "UpdateProblem",
+      "UpdateWorkload"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeApplication",
-    "DescribeComponent",
-    "DescribeComponentConfiguration",
-    "DescribeComponentConfigurationRecommendation",
-    "DescribeLogPattern",
-    "DescribeObservation",
-    "DescribeProblem",
-    "DescribeProblemObservations",
-    "DescribeWorkload",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListApplications",
-    "ListComponents",
-    "ListConfigurationHistory",
-    "ListLogPatternSets",
-    "ListLogPatterns",
-    "ListProblems",
-    "ListWorkloads"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeApplication",
+      "DescribeComponent",
+      "DescribeComponentConfiguration",
+      "DescribeComponentConfigurationRecommendation",
+      "DescribeLogPattern",
+      "DescribeObservation",
+      "DescribeProblem",
+      "DescribeProblemObservations",
+      "DescribeWorkload",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListApplications",
+      "ListComponents",
+      "ListConfigurationHistory",
+      "ListLogPatternSets",
+      "ListLogPatterns",
+      "ListProblems",
+      "ListWorkloads"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

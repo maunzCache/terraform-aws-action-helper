@@ -61,10 +61,10 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "GetProgrammaticAccessCredentials"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetProgrammaticAccessCredentials"
+    ]
+    list    = []
+    tagging = []
   }
 }

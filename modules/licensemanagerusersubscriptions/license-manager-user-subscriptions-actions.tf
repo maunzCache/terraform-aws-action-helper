@@ -59,31 +59,31 @@ locals {
   prefix = "license-manager-user-subscriptions"
 
   access_level = {
-    write                  = [
-    "AssociateUser",
-    "CreateLicenseServerEndpoint",
-    "DeleteLicenseServerEndpoint",
-    "DeregisterIdentityProvider",
-    "DisassociateUser",
-    "RegisterIdentityProvider",
-    "StartProductSubscription",
-    "StopProductSubscription",
-    "UpdateIdentityProviderSettings"
-]
+    write = [
+      "AssociateUser",
+      "CreateLicenseServerEndpoint",
+      "DeleteLicenseServerEndpoint",
+      "DeregisterIdentityProvider",
+      "DisassociateUser",
+      "RegisterIdentityProvider",
+      "StartProductSubscription",
+      "StopProductSubscription",
+      "UpdateIdentityProviderSettings"
+    ]
     permissions_management = []
-    read                   = [
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListIdentityProviders",
-    "ListInstances",
-    "ListLicenseServerEndpoints",
-    "ListProductSubscriptions",
-    "ListUserAssociations"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListIdentityProviders",
+      "ListInstances",
+      "ListLicenseServerEndpoints",
+      "ListProductSubscriptions",
+      "ListUserAssociations"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

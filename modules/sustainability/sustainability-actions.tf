@@ -61,10 +61,10 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "GetCarbonFootprintSummary"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetCarbonFootprintSummary"
+    ]
+    list    = []
+    tagging = []
   }
 }

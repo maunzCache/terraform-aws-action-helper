@@ -59,38 +59,38 @@ locals {
   prefix = "codeguru-profiler"
 
   access_level = {
-    write                  = [
-    "AddNotificationChannels",
-    "ConfigureAgent",
-    "CreateProfilingGroup",
-    "DeleteProfilingGroup",
-    "PostAgentProfile",
-    "RemoveNotificationChannel",
-    "SubmitFeedback",
-    "UpdateProfilingGroup"
-]
+    write = [
+      "AddNotificationChannels",
+      "ConfigureAgent",
+      "CreateProfilingGroup",
+      "DeleteProfilingGroup",
+      "PostAgentProfile",
+      "RemoveNotificationChannel",
+      "SubmitFeedback",
+      "UpdateProfilingGroup"
+    ]
     permissions_management = [
-    "PutPermission",
-    "RemovePermission"
-]
-    read                   = [
-    "DescribeProfilingGroup",
-    "GetFindingsReportAccountSummary",
-    "GetNotificationConfiguration",
-    "GetPolicy",
-    "GetProfile",
-    "GetRecommendations"
-]
-    list                   = [
-    "BatchGetFrameMetricData",
-    "ListFindingsReports",
-    "ListProfileTimes",
-    "ListProfilingGroups",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "PutPermission",
+      "RemovePermission"
+    ]
+    read = [
+      "DescribeProfilingGroup",
+      "GetFindingsReportAccountSummary",
+      "GetNotificationConfiguration",
+      "GetPolicy",
+      "GetProfile",
+      "GetRecommendations"
+    ]
+    list = [
+      "BatchGetFrameMetricData",
+      "ListFindingsReports",
+      "ListProfileTimes",
+      "ListProfilingGroups",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,33 +59,33 @@ locals {
   prefix = "freertos"
 
   access_level = {
-    write                  = [
-    "CreateSoftwareConfiguration",
-    "CreateSubscription",
-    "DeleteSoftwareConfiguration",
-    "UpdateEmailRecipients",
-    "UpdateSoftwareConfiguration",
-    "VerifyEmail"
-]
+    write = [
+      "CreateSoftwareConfiguration",
+      "CreateSubscription",
+      "DeleteSoftwareConfiguration",
+      "UpdateEmailRecipients",
+      "UpdateSoftwareConfiguration",
+      "VerifyEmail"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeHardwarePlatform",
-    "DescribeSoftwareConfiguration",
-    "DescribeSubscription",
-    "GetEmpPatchUrl",
-    "GetSoftwareURL",
-    "GetSoftwareURLForConfiguration",
-    "GetSubscriptionBillingAmount"
-]
-    list                   = [
-    "ListFreeRTOSVersions",
-    "ListHardwarePlatforms",
-    "ListHardwareVendors",
-    "ListSoftwareConfigurations",
-    "ListSoftwarePatches",
-    "ListSubscriptionEmails",
-    "ListSubscriptions"
-]
-    tagging                = []
+    read = [
+      "DescribeHardwarePlatform",
+      "DescribeSoftwareConfiguration",
+      "DescribeSubscription",
+      "GetEmpPatchUrl",
+      "GetSoftwareURL",
+      "GetSoftwareURLForConfiguration",
+      "GetSubscriptionBillingAmount"
+    ]
+    list = [
+      "ListFreeRTOSVersions",
+      "ListHardwarePlatforms",
+      "ListHardwareVendors",
+      "ListSoftwareConfigurations",
+      "ListSoftwarePatches",
+      "ListSubscriptionEmails",
+      "ListSubscriptions"
+    ]
+    tagging = []
   }
 }

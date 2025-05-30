@@ -59,40 +59,40 @@ locals {
   prefix = "appfabric"
 
   access_level = {
-    write                  = [
-    "BatchGetUserAccessTasks",
-    "ConnectAppAuthorization",
-    "CreateAppAuthorization",
-    "CreateAppBundle",
-    "CreateIngestion",
-    "CreateIngestionDestination",
-    "DeleteAppAuthorization",
-    "DeleteAppBundle",
-    "DeleteIngestion",
-    "DeleteIngestionDestination",
-    "StartIngestion",
-    "StartUserAccessTasks",
-    "StopIngestion",
-    "UpdateAppAuthorization",
-    "UpdateIngestionDestination"
-]
+    write = [
+      "BatchGetUserAccessTasks",
+      "ConnectAppAuthorization",
+      "CreateAppAuthorization",
+      "CreateAppBundle",
+      "CreateIngestion",
+      "CreateIngestionDestination",
+      "DeleteAppAuthorization",
+      "DeleteAppBundle",
+      "DeleteIngestion",
+      "DeleteIngestionDestination",
+      "StartIngestion",
+      "StartUserAccessTasks",
+      "StopIngestion",
+      "UpdateAppAuthorization",
+      "UpdateIngestionDestination"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAppAuthorization",
-    "GetAppBundle",
-    "GetIngestion",
-    "GetIngestionDestination",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAppAuthorizations",
-    "ListAppBundles",
-    "ListIngestionDestinations",
-    "ListIngestions"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetAppAuthorization",
+      "GetAppBundle",
+      "GetIngestion",
+      "GetIngestionDestination",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAppAuthorizations",
+      "ListAppBundles",
+      "ListIngestionDestinations",
+      "ListIngestions"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,32 +59,32 @@ locals {
   prefix = "cognito-sync"
 
   access_level = {
-    write                  = [
-    "BulkPublish",
-    "DeleteDataset",
-    "RegisterDevice",
-    "SetCognitoEvents",
-    "SetDatasetConfiguration",
-    "SetIdentityPoolConfiguration",
-    "SubscribeToDataset",
-    "UnsubscribeFromDataset",
-    "UpdateRecords"
-]
+    write = [
+      "BulkPublish",
+      "DeleteDataset",
+      "RegisterDevice",
+      "SetCognitoEvents",
+      "SetDatasetConfiguration",
+      "SetIdentityPoolConfiguration",
+      "SubscribeToDataset",
+      "UnsubscribeFromDataset",
+      "UpdateRecords"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeDataset",
-    "DescribeIdentityPoolUsage",
-    "DescribeIdentityUsage",
-    "GetBulkPublishDetails",
-    "GetCognitoEvents",
-    "GetIdentityPoolConfiguration",
-    "ListIdentityPoolUsage",
-    "ListRecords",
-    "QueryRecords"
-]
-    list                   = [
-    "ListDatasets"
-]
-    tagging                = []
+    read = [
+      "DescribeDataset",
+      "DescribeIdentityPoolUsage",
+      "DescribeIdentityUsage",
+      "GetBulkPublishDetails",
+      "GetCognitoEvents",
+      "GetIdentityPoolConfiguration",
+      "ListIdentityPoolUsage",
+      "ListRecords",
+      "QueryRecords"
+    ]
+    list = [
+      "ListDatasets"
+    ]
+    tagging = []
   }
 }

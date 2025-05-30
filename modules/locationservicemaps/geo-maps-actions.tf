@@ -61,11 +61,11 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "GetStaticMap",
-    "GetTile"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetStaticMap",
+      "GetTile"
+    ]
+    list    = []
+    tagging = []
   }
 }

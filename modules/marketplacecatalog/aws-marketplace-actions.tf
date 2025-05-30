@@ -59,29 +59,29 @@ locals {
   prefix = "aws-marketplace"
 
   access_level = {
-    write                  = [
-    "CancelChangeSet",
-    "StartChangeSet"
-]
+    write = [
+      "CancelChangeSet",
+      "StartChangeSet"
+    ]
     permissions_management = [
-    "DeleteResourcePolicy",
-    "PutResourcePolicy"
-]
-    read                   = [
-    "DescribeAssessment",
-    "DescribeChangeSet",
-    "DescribeEntity",
-    "GetResourcePolicy",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAssessments",
-    "ListChangeSets",
-    "ListEntities"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "DeleteResourcePolicy",
+      "PutResourcePolicy"
+    ]
+    read = [
+      "DescribeAssessment",
+      "DescribeChangeSet",
+      "DescribeEntity",
+      "GetResourcePolicy",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAssessments",
+      "ListChangeSets",
+      "ListEntities"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

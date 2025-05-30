@@ -59,23 +59,23 @@ locals {
   prefix = "ts"
 
   access_level = {
-    write                  = [
-    "StartExecution"
-]
+    write = [
+      "StartExecution"
+    ]
     permissions_management = []
-    read                   = [
-    "GetExecution",
-    "GetExecutionOutput",
-    "GetTool",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListExecutions",
-    "ListTools"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetExecution",
+      "GetExecutionOutput",
+      "GetTool",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListExecutions",
+      "ListTools"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

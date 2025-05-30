@@ -59,20 +59,20 @@ locals {
   prefix = "sms-voice"
 
   access_level = {
-    write                  = [
-    "CreateConfigurationSet",
-    "CreateConfigurationSetEventDestination",
-    "DeleteConfigurationSet",
-    "DeleteConfigurationSetEventDestination",
-    "SendVoiceMessage",
-    "UpdateConfigurationSetEventDestination"
-]
+    write = [
+      "CreateConfigurationSet",
+      "CreateConfigurationSetEventDestination",
+      "DeleteConfigurationSet",
+      "DeleteConfigurationSetEventDestination",
+      "SendVoiceMessage",
+      "UpdateConfigurationSetEventDestination"
+    ]
     permissions_management = []
-    read                   = [
-    "GetConfigurationSetEventDestinations",
-    "ListConfigurationSets"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetConfigurationSetEventDestinations",
+      "ListConfigurationSets"
+    ]
+    list    = []
+    tagging = []
   }
 }

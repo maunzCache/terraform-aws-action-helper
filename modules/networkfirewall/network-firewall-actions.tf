@@ -59,64 +59,64 @@ locals {
   prefix = "network-firewall"
 
   access_level = {
-    write                  = [
-    "AssociateFirewallPolicy",
-    "AssociateSubnets",
-    "CreateFirewall",
-    "CreateFirewallPolicy",
-    "CreateRuleGroup",
-    "CreateTLSInspectionConfiguration",
-    "CreateVpcEndpointAssociation",
-    "DeleteFirewall",
-    "DeleteFirewallPolicy",
-    "DeleteResourcePolicy",
-    "DeleteRuleGroup",
-    "DeleteTLSInspectionConfiguration",
-    "DeleteVpcEndpointAssociation",
-    "DisassociateSubnets",
-    "PutResourcePolicy",
-    "StartAnalysisReport",
-    "StartFlowCapture",
-    "StartFlowFlush",
-    "UpdateFirewallAnalysisSettings",
-    "UpdateFirewallDeleteProtection",
-    "UpdateFirewallDescription",
-    "UpdateFirewallEncryptionConfiguration",
-    "UpdateFirewallPolicy",
-    "UpdateFirewallPolicyChangeProtection",
-    "UpdateLoggingConfiguration",
-    "UpdateRuleGroup",
-    "UpdateSubnetChangeProtection",
-    "UpdateTLSInspectionConfiguration"
-]
+    write = [
+      "AssociateFirewallPolicy",
+      "AssociateSubnets",
+      "CreateFirewall",
+      "CreateFirewallPolicy",
+      "CreateRuleGroup",
+      "CreateTLSInspectionConfiguration",
+      "CreateVpcEndpointAssociation",
+      "DeleteFirewall",
+      "DeleteFirewallPolicy",
+      "DeleteResourcePolicy",
+      "DeleteRuleGroup",
+      "DeleteTLSInspectionConfiguration",
+      "DeleteVpcEndpointAssociation",
+      "DisassociateSubnets",
+      "PutResourcePolicy",
+      "StartAnalysisReport",
+      "StartFlowCapture",
+      "StartFlowFlush",
+      "UpdateFirewallAnalysisSettings",
+      "UpdateFirewallDeleteProtection",
+      "UpdateFirewallDescription",
+      "UpdateFirewallEncryptionConfiguration",
+      "UpdateFirewallPolicy",
+      "UpdateFirewallPolicyChangeProtection",
+      "UpdateLoggingConfiguration",
+      "UpdateRuleGroup",
+      "UpdateSubnetChangeProtection",
+      "UpdateTLSInspectionConfiguration"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeFirewall",
-    "DescribeFirewallMetadata",
-    "DescribeFirewallPolicy",
-    "DescribeFlowOperation",
-    "DescribeLoggingConfiguration",
-    "DescribeResourcePolicy",
-    "DescribeRuleGroup",
-    "DescribeRuleGroupMetadata",
-    "DescribeTLSInspectionConfiguration",
-    "DescribeVpcEndpointAssociation",
-    "GetAnalysisReportResults",
-    "ListFlowOperationResults"
-]
-    list                   = [
-    "ListAnalysisReports",
-    "ListFirewallPolicies",
-    "ListFirewalls",
-    "ListFlowOperations",
-    "ListRuleGroups",
-    "ListTLSInspectionConfigurations",
-    "ListTagsForResource",
-    "ListVpcEndpointAssociations"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeFirewall",
+      "DescribeFirewallMetadata",
+      "DescribeFirewallPolicy",
+      "DescribeFlowOperation",
+      "DescribeLoggingConfiguration",
+      "DescribeResourcePolicy",
+      "DescribeRuleGroup",
+      "DescribeRuleGroupMetadata",
+      "DescribeTLSInspectionConfiguration",
+      "DescribeVpcEndpointAssociation",
+      "GetAnalysisReportResults",
+      "ListFlowOperationResults"
+    ]
+    list = [
+      "ListAnalysisReports",
+      "ListFirewallPolicies",
+      "ListFirewalls",
+      "ListFlowOperations",
+      "ListRuleGroups",
+      "ListTLSInspectionConfigurations",
+      "ListTagsForResource",
+      "ListVpcEndpointAssociations"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

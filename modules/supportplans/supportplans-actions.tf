@@ -59,18 +59,18 @@ locals {
   prefix = "supportplans"
 
   access_level = {
-    write                  = [
-    "CreateSupportPlanSchedule",
-    "StartSupportPlanUpdate"
-]
+    write = [
+      "CreateSupportPlanSchedule",
+      "StartSupportPlanUpdate"
+    ]
     permissions_management = []
-    read                   = [
-    "GetSupportPlan",
-    "GetSupportPlanUpdateStatus"
-]
-    list                   = [
-    "ListSupportPlanModifiers"
-]
-    tagging                = []
+    read = [
+      "GetSupportPlan",
+      "GetSupportPlanUpdateStatus"
+    ]
+    list = [
+      "ListSupportPlanModifiers"
+    ]
+    tagging = []
   }
 }

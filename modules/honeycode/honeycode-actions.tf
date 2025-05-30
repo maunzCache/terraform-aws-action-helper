@@ -59,44 +59,44 @@ locals {
   prefix = "honeycode"
 
   access_level = {
-    write                  = [
-    "ApproveTeamAssociation",
-    "BatchCreateTableRows",
-    "BatchDeleteTableRows",
-    "BatchUpdateTableRows",
-    "BatchUpsertTableRows",
-    "CreateTeam",
-    "CreateTenant",
-    "DeleteDomains",
-    "DeregisterGroups",
-    "InvokeScreenAutomation",
-    "RegisterDomainForVerification",
-    "RegisterGroups",
-    "RejectTeamAssociation",
-    "RestartDomainVerification",
-    "StartTableDataImportJob",
-    "UpdateTeam"
-]
+    write = [
+      "ApproveTeamAssociation",
+      "BatchCreateTableRows",
+      "BatchDeleteTableRows",
+      "BatchUpdateTableRows",
+      "BatchUpsertTableRows",
+      "CreateTeam",
+      "CreateTenant",
+      "DeleteDomains",
+      "DeregisterGroups",
+      "InvokeScreenAutomation",
+      "RegisterDomainForVerification",
+      "RegisterGroups",
+      "RejectTeamAssociation",
+      "RestartDomainVerification",
+      "StartTableDataImportJob",
+      "UpdateTeam"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeTableDataImportJob",
-    "DescribeTeam",
-    "GetScreenData",
-    "QueryTableRows"
-]
-    list                   = [
-    "ListDomains",
-    "ListGroups",
-    "ListTableColumns",
-    "ListTableRows",
-    "ListTables",
-    "ListTeamAssociations",
-    "ListTenants"
-]
-    tagging                = [
-    "ListTagsForResource",
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeTableDataImportJob",
+      "DescribeTeam",
+      "GetScreenData",
+      "QueryTableRows"
+    ]
+    list = [
+      "ListDomains",
+      "ListGroups",
+      "ListTableColumns",
+      "ListTableRows",
+      "ListTables",
+      "ListTeamAssociations",
+      "ListTenants"
+    ]
+    tagging = [
+      "ListTagsForResource",
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

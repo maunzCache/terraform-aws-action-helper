@@ -59,48 +59,48 @@ locals {
   prefix = "mediapackagev2"
 
   access_level = {
-    write                  = [
-    "CancelHarvestJob",
-    "CreateChannel",
-    "CreateChannelGroup",
-    "CreateHarvestJob",
-    "CreateOriginEndpoint",
-    "DeleteChannel",
-    "DeleteChannelGroup",
-    "DeleteChannelPolicy",
-    "DeleteOriginEndpoint",
-    "DeleteOriginEndpointPolicy",
-    "PutChannelPolicy",
-    "PutObject",
-    "PutOriginEndpointPolicy",
-    "ResetChannelState",
-    "ResetOriginEndpointState",
-    "UpdateChannel",
-    "UpdateChannelGroup",
-    "UpdateOriginEndpoint"
-]
+    write = [
+      "CancelHarvestJob",
+      "CreateChannel",
+      "CreateChannelGroup",
+      "CreateHarvestJob",
+      "CreateOriginEndpoint",
+      "DeleteChannel",
+      "DeleteChannelGroup",
+      "DeleteChannelPolicy",
+      "DeleteOriginEndpoint",
+      "DeleteOriginEndpointPolicy",
+      "PutChannelPolicy",
+      "PutObject",
+      "PutOriginEndpointPolicy",
+      "ResetChannelState",
+      "ResetOriginEndpointState",
+      "UpdateChannel",
+      "UpdateChannelGroup",
+      "UpdateOriginEndpoint"
+    ]
     permissions_management = []
-    read                   = [
-    "GetChannel",
-    "GetChannelGroup",
-    "GetChannelPolicy",
-    "GetHarvestJob",
-    "GetHeadObject",
-    "GetObject",
-    "GetOriginEndpoint",
-    "GetOriginEndpointPolicy",
-    "HarvestObject",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListChannelGroups",
-    "ListChannels",
-    "ListHarvestJobs",
-    "ListOriginEndpoints"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetChannel",
+      "GetChannelGroup",
+      "GetChannelPolicy",
+      "GetHarvestJob",
+      "GetHeadObject",
+      "GetObject",
+      "GetOriginEndpoint",
+      "GetOriginEndpointPolicy",
+      "HarvestObject",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListChannelGroups",
+      "ListChannels",
+      "ListHarvestJobs",
+      "ListOriginEndpoints"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

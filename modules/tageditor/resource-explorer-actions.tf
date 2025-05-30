@@ -61,13 +61,13 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "ListTags"
-]
-    list                   = [
-    "ListResourceTypes",
-    "ListResources"
-]
-    tagging                = []
+    read = [
+      "ListTags"
+    ]
+    list = [
+      "ListResourceTypes",
+      "ListResources"
+    ]
+    tagging = []
   }
 }

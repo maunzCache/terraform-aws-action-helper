@@ -59,54 +59,54 @@ locals {
   prefix = "entityresolution"
 
   access_level = {
-    write                  = [
-    "BatchDeleteUniqueId",
-    "CreateIdMappingWorkflow",
-    "CreateIdNamespace",
-    "CreateMatchingWorkflow",
-    "CreateSchemaMapping",
-    "DeleteIdMappingWorkflow",
-    "DeleteIdNamespace",
-    "DeleteMatchingWorkflow",
-    "DeleteSchemaMapping",
-    "StartIdMappingJob",
-    "StartMatchingJob",
-    "UpdateIdMappingWorkflow",
-    "UpdateIdNamespace",
-    "UpdateMatchingWorkflow",
-    "UpdateSchemaMapping"
-]
+    write = [
+      "BatchDeleteUniqueId",
+      "CreateIdMappingWorkflow",
+      "CreateIdNamespace",
+      "CreateMatchingWorkflow",
+      "CreateSchemaMapping",
+      "DeleteIdMappingWorkflow",
+      "DeleteIdNamespace",
+      "DeleteMatchingWorkflow",
+      "DeleteSchemaMapping",
+      "StartIdMappingJob",
+      "StartMatchingJob",
+      "UpdateIdMappingWorkflow",
+      "UpdateIdNamespace",
+      "UpdateMatchingWorkflow",
+      "UpdateSchemaMapping"
+    ]
     permissions_management = [
-    "AddPolicyStatement",
-    "DeletePolicyStatement",
-    "PutPolicy",
-    "UseIdNamespace",
-    "UseWorkflow"
-]
-    read                   = [
-    "GetIdMappingJob",
-    "GetIdMappingWorkflow",
-    "GetIdNamespace",
-    "GetMatchId",
-    "GetMatchingJob",
-    "GetMatchingWorkflow",
-    "GetPolicy",
-    "GetProviderService",
-    "GetSchemaMapping",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListIdMappingJobs",
-    "ListIdMappingWorkflows",
-    "ListIdNamespaces",
-    "ListMatchingJobs",
-    "ListMatchingWorkflows",
-    "ListProviderServices",
-    "ListSchemaMappings"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "AddPolicyStatement",
+      "DeletePolicyStatement",
+      "PutPolicy",
+      "UseIdNamespace",
+      "UseWorkflow"
+    ]
+    read = [
+      "GetIdMappingJob",
+      "GetIdMappingWorkflow",
+      "GetIdNamespace",
+      "GetMatchId",
+      "GetMatchingJob",
+      "GetMatchingWorkflow",
+      "GetPolicy",
+      "GetProviderService",
+      "GetSchemaMapping",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListIdMappingJobs",
+      "ListIdMappingWorkflows",
+      "ListIdNamespaces",
+      "ListMatchingJobs",
+      "ListMatchingWorkflows",
+      "ListProviderServices",
+      "ListSchemaMappings"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

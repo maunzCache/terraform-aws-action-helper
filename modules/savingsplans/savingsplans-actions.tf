@@ -59,24 +59,24 @@ locals {
   prefix = "savingsplans"
 
   access_level = {
-    write                  = [
-    "CreateSavingsPlan",
-    "DeleteQueuedSavingsPlan",
-    "ReturnSavingsPlan"
-]
+    write = [
+      "CreateSavingsPlan",
+      "DeleteQueuedSavingsPlan",
+      "ReturnSavingsPlan"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeSavingsPlanRates",
-    "DescribeSavingsPlans",
-    "DescribeSavingsPlansOfferingRates",
-    "DescribeSavingsPlansOfferings"
-]
-    list                   = [
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeSavingsPlanRates",
+      "DescribeSavingsPlans",
+      "DescribeSavingsPlansOfferingRates",
+      "DescribeSavingsPlansOfferings"
+    ]
+    list = [
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

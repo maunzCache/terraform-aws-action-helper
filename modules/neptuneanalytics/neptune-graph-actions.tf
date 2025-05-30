@@ -59,49 +59,49 @@ locals {
   prefix = "neptune-graph"
 
   access_level = {
-    write                  = [
-    "CancelExportTask",
-    "CancelImportTask",
-    "CancelQuery",
-    "CreateGraph",
-    "CreateGraphSnapshot",
-    "CreateGraphUsingImportTask",
-    "CreatePrivateGraphEndpoint",
-    "DeleteDataViaQuery",
-    "DeleteGraph",
-    "DeleteGraphSnapshot",
-    "DeletePrivateGraphEndpoint",
-    "ResetGraph",
-    "RestoreGraphFromSnapshot",
-    "StartExportTask",
-    "StartImportTask",
-    "UpdateGraph",
-    "WriteDataViaQuery"
-]
+    write = [
+      "CancelExportTask",
+      "CancelImportTask",
+      "CancelQuery",
+      "CreateGraph",
+      "CreateGraphSnapshot",
+      "CreateGraphUsingImportTask",
+      "CreatePrivateGraphEndpoint",
+      "DeleteDataViaQuery",
+      "DeleteGraph",
+      "DeleteGraphSnapshot",
+      "DeletePrivateGraphEndpoint",
+      "ResetGraph",
+      "RestoreGraphFromSnapshot",
+      "StartExportTask",
+      "StartImportTask",
+      "UpdateGraph",
+      "WriteDataViaQuery"
+    ]
     permissions_management = []
-    read                   = [
-    "GetEngineStatus",
-    "GetExportTask",
-    "GetGraph",
-    "GetGraphSnapshot",
-    "GetGraphSummary",
-    "GetImportTask",
-    "GetPrivateGraphEndpoint",
-    "GetQueryStatus",
-    "GetStatisticsStatus",
-    "ListExportTasks",
-    "ListGraphSnapshots",
-    "ListGraphs",
-    "ListImportTasks",
-    "ListPrivateGraphEndpoints",
-    "ListQueries",
-    "ListTagsForResource",
-    "ReadDataViaQuery"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetEngineStatus",
+      "GetExportTask",
+      "GetGraph",
+      "GetGraphSnapshot",
+      "GetGraphSummary",
+      "GetImportTask",
+      "GetPrivateGraphEndpoint",
+      "GetQueryStatus",
+      "GetStatisticsStatus",
+      "ListExportTasks",
+      "ListGraphSnapshots",
+      "ListGraphs",
+      "ListImportTasks",
+      "ListPrivateGraphEndpoints",
+      "ListQueries",
+      "ListTagsForResource",
+      "ReadDataViaQuery"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

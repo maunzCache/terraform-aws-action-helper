@@ -59,23 +59,23 @@ locals {
   prefix = "backup-storage"
 
   access_level = {
-    write                  = [
-    "CommitBackupJob",
-    "DeleteObjects",
-    "DescribeBackupJob",
-    "GetBaseBackup",
-    "GetChunk",
-    "GetIncrementalBaseBackup",
-    "GetObjectMetadata",
-    "ListChunks",
-    "ListObjects",
-    "MountCapsule",
-    "NotifyObjectComplete",
-    "PutChunk",
-    "PutObject",
-    "StartObject",
-    "UpdateObjectComplete"
-]
+    write = [
+      "CommitBackupJob",
+      "DeleteObjects",
+      "DescribeBackupJob",
+      "GetBaseBackup",
+      "GetChunk",
+      "GetIncrementalBaseBackup",
+      "GetObjectMetadata",
+      "ListChunks",
+      "ListObjects",
+      "MountCapsule",
+      "NotifyObjectComplete",
+      "PutChunk",
+      "PutObject",
+      "StartObject",
+      "UpdateObjectComplete"
+    ]
     permissions_management = []
     read                   = []
     list                   = []

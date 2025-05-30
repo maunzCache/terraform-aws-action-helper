@@ -59,51 +59,51 @@ locals {
   prefix = "launchwizard"
 
   access_level = {
-    write                  = [
-    "CreateAdditionalNode",
-    "CreateDeployment",
-    "CreateSettingsSet",
-    "DeleteAdditionalNode",
-    "DeleteApp",
-    "DeleteDeployment",
-    "DeleteSettingsSet",
-    "PutSettingsSet",
-    "StartProvisioning",
-    "UpdateSettingsSet"
-]
+    write = [
+      "CreateAdditionalNode",
+      "CreateDeployment",
+      "CreateSettingsSet",
+      "DeleteAdditionalNode",
+      "DeleteApp",
+      "DeleteDeployment",
+      "DeleteSettingsSet",
+      "PutSettingsSet",
+      "StartProvisioning",
+      "UpdateSettingsSet"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAdditionalNode",
-    "DescribeProvisionedApp",
-    "DescribeProvisioningEvents",
-    "DescribeSettingsSet",
-    "GetDeployment",
-    "GetInfrastructureSuggestion",
-    "GetIpAddress",
-    "GetResourceCostEstimate",
-    "GetResourceRecommendation",
-    "GetSettingsSet",
-    "GetWorkload",
-    "GetWorkloadAsset",
-    "GetWorkloadAssets",
-    "GetWorkloadDeploymentPattern",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAdditionalNodes",
-    "ListAllowedResources",
-    "ListDeploymentEvents",
-    "ListDeployments",
-    "ListProvisionedApps",
-    "ListResourceCostEstimates",
-    "ListSettingsSets",
-    "ListWorkloadDeploymentOptions",
-    "ListWorkloadDeploymentPatterns",
-    "ListWorkloads"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeAdditionalNode",
+      "DescribeProvisionedApp",
+      "DescribeProvisioningEvents",
+      "DescribeSettingsSet",
+      "GetDeployment",
+      "GetInfrastructureSuggestion",
+      "GetIpAddress",
+      "GetResourceCostEstimate",
+      "GetResourceRecommendation",
+      "GetSettingsSet",
+      "GetWorkload",
+      "GetWorkloadAsset",
+      "GetWorkloadAssets",
+      "GetWorkloadDeploymentPattern",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAdditionalNodes",
+      "ListAllowedResources",
+      "ListDeploymentEvents",
+      "ListDeployments",
+      "ListProvisionedApps",
+      "ListResourceCostEstimates",
+      "ListSettingsSets",
+      "ListWorkloadDeploymentOptions",
+      "ListWorkloadDeploymentPatterns",
+      "ListWorkloads"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

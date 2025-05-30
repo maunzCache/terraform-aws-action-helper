@@ -59,26 +59,26 @@ locals {
   prefix = "repostspace"
 
   access_level = {
-    write                  = [
-    "BatchAddRole",
-    "BatchRemoveRole",
-    "CreateSpace",
-    "DeleteSpace",
-    "DeregisterAdmin",
-    "RegisterAdmin",
-    "SendInvites",
-    "UpdateSpace"
-]
+    write = [
+      "BatchAddRole",
+      "BatchRemoveRole",
+      "CreateSpace",
+      "DeleteSpace",
+      "DeregisterAdmin",
+      "RegisterAdmin",
+      "SendInvites",
+      "UpdateSpace"
+    ]
     permissions_management = []
-    read                   = [
-    "GetSpace",
-    "ListSpaces",
-    "ListTagsForResource"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetSpace",
+      "ListSpaces",
+      "ListTagsForResource"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

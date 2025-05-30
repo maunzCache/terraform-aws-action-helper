@@ -59,37 +59,37 @@ locals {
   prefix = "codestar"
 
   access_level = {
-    write                  = [
-    "CreateUserProfile",
-    "DeleteExtendedAccess",
-    "DeleteUserProfile",
-    "PutExtendedAccess",
-    "UpdateProject",
-    "UpdateUserProfile"
-]
+    write = [
+      "CreateUserProfile",
+      "DeleteExtendedAccess",
+      "DeleteUserProfile",
+      "PutExtendedAccess",
+      "UpdateProject",
+      "UpdateUserProfile"
+    ]
     permissions_management = [
-    "AssociateTeamMember",
-    "CreateProject",
-    "DeleteProject",
-    "DisassociateTeamMember",
-    "UpdateTeamMember"
-]
-    read                   = [
-    "DescribeProject",
-    "DescribeUserProfile",
-    "GetExtendedAccess"
-]
-    list                   = [
-    "ListProjects",
-    "ListResources",
-    "ListTagsForProject",
-    "ListTeamMembers",
-    "ListUserProfiles",
-    "VerifyServiceRole"
-]
-    tagging                = [
-    "TagProject",
-    "UntagProject"
-]
+      "AssociateTeamMember",
+      "CreateProject",
+      "DeleteProject",
+      "DisassociateTeamMember",
+      "UpdateTeamMember"
+    ]
+    read = [
+      "DescribeProject",
+      "DescribeUserProfile",
+      "GetExtendedAccess"
+    ]
+    list = [
+      "ListProjects",
+      "ListResources",
+      "ListTagsForProject",
+      "ListTeamMembers",
+      "ListUserProfiles",
+      "VerifyServiceRole"
+    ]
+    tagging = [
+      "TagProject",
+      "UntagProject"
+    ]
   }
 }

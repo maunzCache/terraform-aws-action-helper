@@ -59,44 +59,44 @@ locals {
   prefix = "b2bi"
 
   access_level = {
-    write                  = [
-    "CreateCapability",
-    "CreatePartnership",
-    "CreateProfile",
-    "CreateStarterMappingTemplate",
-    "CreateTransformer",
-    "DeleteCapability",
-    "DeletePartnership",
-    "DeleteProfile",
-    "DeleteTransformer",
-    "GenerateMapping",
-    "StartTransformerJob",
-    "TestConversion",
-    "TestMapping",
-    "TestParsing",
-    "UpdateCapability",
-    "UpdatePartnership",
-    "UpdateProfile",
-    "UpdateTransformer"
-]
+    write = [
+      "CreateCapability",
+      "CreatePartnership",
+      "CreateProfile",
+      "CreateStarterMappingTemplate",
+      "CreateTransformer",
+      "DeleteCapability",
+      "DeletePartnership",
+      "DeleteProfile",
+      "DeleteTransformer",
+      "GenerateMapping",
+      "StartTransformerJob",
+      "TestConversion",
+      "TestMapping",
+      "TestParsing",
+      "UpdateCapability",
+      "UpdatePartnership",
+      "UpdateProfile",
+      "UpdateTransformer"
+    ]
     permissions_management = []
-    read                   = [
-    "GetCapability",
-    "GetPartnership",
-    "GetProfile",
-    "GetTransformer",
-    "GetTransformerJob",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListCapabilities",
-    "ListPartnerships",
-    "ListProfiles",
-    "ListTransformers"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetCapability",
+      "GetPartnership",
+      "GetProfile",
+      "GetTransformer",
+      "GetTransformerJob",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListCapabilities",
+      "ListPartnerships",
+      "ListProfiles",
+      "ListTransformers"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

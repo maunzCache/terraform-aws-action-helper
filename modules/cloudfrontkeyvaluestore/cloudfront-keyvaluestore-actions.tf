@@ -59,19 +59,19 @@ locals {
   prefix = "cloudfront-keyvaluestore"
 
   access_level = {
-    write                  = [
-    "DeleteKey",
-    "PutKey",
-    "UpdateKeys"
-]
+    write = [
+      "DeleteKey",
+      "PutKey",
+      "UpdateKeys"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeKeyValueStore",
-    "GetKey"
-]
-    list                   = [
-    "ListKeys"
-]
-    tagging                = []
+    read = [
+      "DescribeKeyValueStore",
+      "GetKey"
+    ]
+    list = [
+      "ListKeys"
+    ]
+    tagging = []
   }
 }

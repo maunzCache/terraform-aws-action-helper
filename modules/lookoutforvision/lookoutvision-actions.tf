@@ -59,39 +59,39 @@ locals {
   prefix = "lookoutvision"
 
   access_level = {
-    write                  = [
-    "CreateDataset",
-    "CreateModel",
-    "CreateProject",
-    "DeleteDataset",
-    "DeleteModel",
-    "DeleteProject",
-    "DetectAnomalies",
-    "StartModel",
-    "StartModelPackagingJob",
-    "StartTrialDetection",
-    "StopModel",
-    "UpdateDatasetEntries"
-]
+    write = [
+      "CreateDataset",
+      "CreateModel",
+      "CreateProject",
+      "DeleteDataset",
+      "DeleteModel",
+      "DeleteProject",
+      "DetectAnomalies",
+      "StartModel",
+      "StartModelPackagingJob",
+      "StartTrialDetection",
+      "StopModel",
+      "UpdateDatasetEntries"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeDataset",
-    "DescribeModel",
-    "DescribeModelPackagingJob",
-    "DescribeProject",
-    "DescribeTrialDetection",
-    "ListDatasetEntries",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListModelPackagingJobs",
-    "ListModels",
-    "ListProjects",
-    "ListTrialDetections"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeDataset",
+      "DescribeModel",
+      "DescribeModelPackagingJob",
+      "DescribeProject",
+      "DescribeTrialDetection",
+      "ListDatasetEntries",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListModelPackagingJobs",
+      "ListModels",
+      "ListProjects",
+      "ListTrialDetections"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

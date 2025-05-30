@@ -59,53 +59,53 @@ locals {
   prefix = "chatbot"
 
   access_level = {
-    write                  = [
-    "AssociateToConfiguration",
-    "CreateChimeWebhookConfiguration",
-    "CreateCustomAction",
-    "CreateMicrosoftTeamsChannelConfiguration",
-    "CreateSlackChannelConfiguration",
-    "DeleteChimeWebhookConfiguration",
-    "DeleteCustomAction",
-    "DeleteMicrosoftTeamsChannelConfiguration",
-    "DeleteMicrosoftTeamsConfiguredTeam",
-    "DeleteMicrosoftTeamsUserIdentity",
-    "DeleteSlackChannelConfiguration",
-    "DeleteSlackUserIdentity",
-    "DeleteSlackWorkspaceAuthorization",
-    "DisassociateFromConfiguration",
-    "RedeemMicrosoftTeamsOauthCode",
-    "RedeemSlackOauthCode",
-    "UpdateAccountPreferences",
-    "UpdateChimeWebhookConfiguration",
-    "UpdateCustomAction",
-    "UpdateMicrosoftTeamsChannelConfiguration",
-    "UpdateSlackChannelConfiguration"
-]
+    write = [
+      "AssociateToConfiguration",
+      "CreateChimeWebhookConfiguration",
+      "CreateCustomAction",
+      "CreateMicrosoftTeamsChannelConfiguration",
+      "CreateSlackChannelConfiguration",
+      "DeleteChimeWebhookConfiguration",
+      "DeleteCustomAction",
+      "DeleteMicrosoftTeamsChannelConfiguration",
+      "DeleteMicrosoftTeamsConfiguredTeam",
+      "DeleteMicrosoftTeamsUserIdentity",
+      "DeleteSlackChannelConfiguration",
+      "DeleteSlackUserIdentity",
+      "DeleteSlackWorkspaceAuthorization",
+      "DisassociateFromConfiguration",
+      "RedeemMicrosoftTeamsOauthCode",
+      "RedeemSlackOauthCode",
+      "UpdateAccountPreferences",
+      "UpdateChimeWebhookConfiguration",
+      "UpdateCustomAction",
+      "UpdateMicrosoftTeamsChannelConfiguration",
+      "UpdateSlackChannelConfiguration"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeChimeWebhookConfigurations",
-    "DescribeSlackChannelConfigurations",
-    "DescribeSlackChannels",
-    "DescribeSlackUserIdentities",
-    "DescribeSlackWorkspaces",
-    "GetAccountPreferences",
-    "GetCustomAction",
-    "GetMicrosoftTeamsChannelConfiguration",
-    "GetMicrosoftTeamsOauthParameters",
-    "GetSlackOauthParameters",
-    "ListAssociations",
-    "ListMicrosoftTeamsChannelConfigurations",
-    "ListMicrosoftTeamsConfiguredTeams",
-    "ListMicrosoftTeamsUserIdentities",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListCustomActions"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeChimeWebhookConfigurations",
+      "DescribeSlackChannelConfigurations",
+      "DescribeSlackChannels",
+      "DescribeSlackUserIdentities",
+      "DescribeSlackWorkspaces",
+      "GetAccountPreferences",
+      "GetCustomAction",
+      "GetMicrosoftTeamsChannelConfiguration",
+      "GetMicrosoftTeamsOauthParameters",
+      "GetSlackOauthParameters",
+      "ListAssociations",
+      "ListMicrosoftTeamsChannelConfigurations",
+      "ListMicrosoftTeamsConfiguredTeams",
+      "ListMicrosoftTeamsUserIdentities",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListCustomActions"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

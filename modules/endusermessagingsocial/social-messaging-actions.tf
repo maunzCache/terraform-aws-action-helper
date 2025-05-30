@@ -59,27 +59,27 @@ locals {
   prefix = "social-messaging"
 
   access_level = {
-    write                  = [
-    "AssociateWhatsAppBusinessAccount",
-    "DeleteWhatsAppMessageMedia",
-    "DisassociateWhatsAppBusinessAccount",
-    "GetWhatsAppMessageMedia",
-    "PostWhatsAppMessageMedia",
-    "PutWhatsAppBusinessAccountEventDestinations",
-    "SendWhatsAppMessage"
-]
+    write = [
+      "AssociateWhatsAppBusinessAccount",
+      "DeleteWhatsAppMessageMedia",
+      "DisassociateWhatsAppBusinessAccount",
+      "GetWhatsAppMessageMedia",
+      "PostWhatsAppMessageMedia",
+      "PutWhatsAppBusinessAccountEventDestinations",
+      "SendWhatsAppMessage"
+    ]
     permissions_management = []
-    read                   = [
-    "GetLinkedWhatsAppBusinessAccount",
-    "GetLinkedWhatsAppBusinessAccountPhoneNumber",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListLinkedWhatsAppBusinessAccounts"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetLinkedWhatsAppBusinessAccount",
+      "GetLinkedWhatsAppBusinessAccountPhoneNumber",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListLinkedWhatsAppBusinessAccounts"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

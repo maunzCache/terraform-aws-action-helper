@@ -59,16 +59,16 @@ locals {
   prefix = "codedeploy-commands-secure"
 
   access_level = {
-    write                  = [
-    "PutHostCommandAcknowledgement",
-    "PutHostCommandComplete"
-]
+    write = [
+      "PutHostCommandAcknowledgement",
+      "PutHostCommandComplete"
+    ]
     permissions_management = []
-    read                   = [
-    "GetDeploymentSpecification",
-    "PollHostCommand"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetDeploymentSpecification",
+      "PollHostCommand"
+    ]
+    list    = []
+    tagging = []
   }
 }

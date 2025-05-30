@@ -59,50 +59,50 @@ locals {
   prefix = "shield"
 
   access_level = {
-    write                  = [
-    "AssociateDRTLogBucket",
-    "AssociateDRTRole",
-    "AssociateHealthCheck",
-    "AssociateProactiveEngagementDetails",
-    "CreateProtection",
-    "CreateProtectionGroup",
-    "CreateSubscription",
-    "DeleteProtection",
-    "DeleteProtectionGroup",
-    "DeleteSubscription",
-    "DisableApplicationLayerAutomaticResponse",
-    "DisableProactiveEngagement",
-    "DisassociateDRTLogBucket",
-    "DisassociateDRTRole",
-    "DisassociateHealthCheck",
-    "EnableApplicationLayerAutomaticResponse",
-    "EnableProactiveEngagement",
-    "UpdateApplicationLayerAutomaticResponse",
-    "UpdateEmergencyContactSettings",
-    "UpdateProtectionGroup",
-    "UpdateSubscription"
-]
+    write = [
+      "AssociateDRTLogBucket",
+      "AssociateDRTRole",
+      "AssociateHealthCheck",
+      "AssociateProactiveEngagementDetails",
+      "CreateProtection",
+      "CreateProtectionGroup",
+      "CreateSubscription",
+      "DeleteProtection",
+      "DeleteProtectionGroup",
+      "DeleteSubscription",
+      "DisableApplicationLayerAutomaticResponse",
+      "DisableProactiveEngagement",
+      "DisassociateDRTLogBucket",
+      "DisassociateDRTRole",
+      "DisassociateHealthCheck",
+      "EnableApplicationLayerAutomaticResponse",
+      "EnableProactiveEngagement",
+      "UpdateApplicationLayerAutomaticResponse",
+      "UpdateEmergencyContactSettings",
+      "UpdateProtectionGroup",
+      "UpdateSubscription"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAttack",
-    "DescribeAttackStatistics",
-    "DescribeDRTAccess",
-    "DescribeEmergencyContactSettings",
-    "DescribeProtection",
-    "DescribeProtectionGroup",
-    "DescribeSubscription",
-    "GetSubscriptionState",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAttacks",
-    "ListProtectionGroups",
-    "ListProtections",
-    "ListResourcesInProtectionGroup"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeAttack",
+      "DescribeAttackStatistics",
+      "DescribeDRTAccess",
+      "DescribeEmergencyContactSettings",
+      "DescribeProtection",
+      "DescribeProtectionGroup",
+      "DescribeSubscription",
+      "GetSubscriptionState",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAttacks",
+      "ListProtectionGroups",
+      "ListProtections",
+      "ListResourcesInProtectionGroup"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

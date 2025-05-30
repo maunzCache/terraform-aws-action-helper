@@ -59,26 +59,26 @@ locals {
   prefix = "arc-zonal-shift"
 
   access_level = {
-    write                  = [
-    "CancelZonalShift",
-    "CreatePracticeRunConfiguration",
-    "DeletePracticeRunConfiguration",
-    "StartZonalShift",
-    "UpdateAutoshiftObserverNotificationStatus",
-    "UpdatePracticeRunConfiguration",
-    "UpdateZonalAutoshiftConfiguration",
-    "UpdateZonalShift"
-]
+    write = [
+      "CancelZonalShift",
+      "CreatePracticeRunConfiguration",
+      "DeletePracticeRunConfiguration",
+      "StartZonalShift",
+      "UpdateAutoshiftObserverNotificationStatus",
+      "UpdatePracticeRunConfiguration",
+      "UpdateZonalAutoshiftConfiguration",
+      "UpdateZonalShift"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAutoshiftObserverNotificationStatus",
-    "GetManagedResource"
-]
-    list                   = [
-    "ListAutoshifts",
-    "ListManagedResources",
-    "ListZonalShifts"
-]
-    tagging                = []
+    read = [
+      "GetAutoshiftObserverNotificationStatus",
+      "GetManagedResource"
+    ]
+    list = [
+      "ListAutoshifts",
+      "ListManagedResources",
+      "ListZonalShifts"
+    ]
+    tagging = []
   }
 }

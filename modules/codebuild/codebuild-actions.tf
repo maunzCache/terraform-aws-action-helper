@@ -59,81 +59,81 @@ locals {
   prefix = "codebuild"
 
   access_level = {
-    write                  = [
-    "BatchDeleteBuilds",
-    "BatchPutCodeCoverages",
-    "BatchPutTestCases",
-    "CreateFleet",
-    "CreateProject",
-    "CreateReport",
-    "CreateReportGroup",
-    "CreateWebhook",
-    "DeleteBuildBatch",
-    "DeleteFleet",
-    "DeleteOAuthToken",
-    "DeleteProject",
-    "DeleteReport",
-    "DeleteReportGroup",
-    "DeleteSourceCredentials",
-    "DeleteWebhook",
-    "ImportSourceCredentials",
-    "InvalidateProjectCache",
-    "PersistOAuthToken",
-    "RetryBuild",
-    "RetryBuildBatch",
-    "StartBuild",
-    "StartBuildBatch",
-    "StartCommandExecution",
-    "StartSandbox",
-    "StartSandboxConnection",
-    "StopBuild",
-    "StopBuildBatch",
-    "StopSandbox",
-    "UpdateFleet",
-    "UpdateProject",
-    "UpdateProjectVisibility",
-    "UpdateReport",
-    "UpdateReportGroup",
-    "UpdateWebhook"
-]
+    write = [
+      "BatchDeleteBuilds",
+      "BatchPutCodeCoverages",
+      "BatchPutTestCases",
+      "CreateFleet",
+      "CreateProject",
+      "CreateReport",
+      "CreateReportGroup",
+      "CreateWebhook",
+      "DeleteBuildBatch",
+      "DeleteFleet",
+      "DeleteOAuthToken",
+      "DeleteProject",
+      "DeleteReport",
+      "DeleteReportGroup",
+      "DeleteSourceCredentials",
+      "DeleteWebhook",
+      "ImportSourceCredentials",
+      "InvalidateProjectCache",
+      "PersistOAuthToken",
+      "RetryBuild",
+      "RetryBuildBatch",
+      "StartBuild",
+      "StartBuildBatch",
+      "StartCommandExecution",
+      "StartSandbox",
+      "StartSandboxConnection",
+      "StopBuild",
+      "StopBuildBatch",
+      "StopSandbox",
+      "UpdateFleet",
+      "UpdateProject",
+      "UpdateProjectVisibility",
+      "UpdateReport",
+      "UpdateReportGroup",
+      "UpdateWebhook"
+    ]
     permissions_management = [
-    "DeleteResourcePolicy",
-    "PutResourcePolicy"
-]
-    read                   = [
-    "BatchGetBuildBatches",
-    "BatchGetBuilds",
-    "BatchGetCommandExecutions",
-    "BatchGetFleets",
-    "BatchGetProjects",
-    "BatchGetReportGroups",
-    "BatchGetReports",
-    "BatchGetSandboxes",
-    "DescribeCodeCoverages",
-    "DescribeTestCases",
-    "GetReportGroupTrend",
-    "GetResourcePolicy"
-]
-    list                   = [
-    "ListBuildBatches",
-    "ListBuildBatchesForProject",
-    "ListBuilds",
-    "ListBuildsForProject",
-    "ListCommandExecutionsForSandbox",
-    "ListConnectedOAuthAccounts",
-    "ListCuratedEnvironmentImages",
-    "ListFleets",
-    "ListProjects",
-    "ListReportGroups",
-    "ListReports",
-    "ListReportsForReportGroup",
-    "ListRepositories",
-    "ListSandboxes",
-    "ListSandboxesForProject",
-    "ListSharedProjects",
-    "ListSharedReportGroups",
-    "ListSourceCredentials"
-]
-    tagging                = []
+      "DeleteResourcePolicy",
+      "PutResourcePolicy"
+    ]
+    read = [
+      "BatchGetBuildBatches",
+      "BatchGetBuilds",
+      "BatchGetCommandExecutions",
+      "BatchGetFleets",
+      "BatchGetProjects",
+      "BatchGetReportGroups",
+      "BatchGetReports",
+      "BatchGetSandboxes",
+      "DescribeCodeCoverages",
+      "DescribeTestCases",
+      "GetReportGroupTrend",
+      "GetResourcePolicy"
+    ]
+    list = [
+      "ListBuildBatches",
+      "ListBuildBatchesForProject",
+      "ListBuilds",
+      "ListBuildsForProject",
+      "ListCommandExecutionsForSandbox",
+      "ListConnectedOAuthAccounts",
+      "ListCuratedEnvironmentImages",
+      "ListFleets",
+      "ListProjects",
+      "ListReportGroups",
+      "ListReports",
+      "ListReportsForReportGroup",
+      "ListRepositories",
+      "ListSandboxes",
+      "ListSandboxesForProject",
+      "ListSharedProjects",
+      "ListSharedReportGroups",
+      "ListSourceCredentials"
+    ]
+    tagging = []
   }
 }

@@ -59,43 +59,43 @@ locals {
   prefix = "amplifyuibuilder"
 
   access_level = {
-    write                  = [
-    "CreateComponent",
-    "CreateForm",
-    "CreateTheme",
-    "DeleteComponent",
-    "DeleteForm",
-    "DeleteTheme",
-    "ExchangeCodeForToken",
-    "PutMetadataFlag",
-    "RefreshToken",
-    "ResetMetadataFlag",
-    "StartCodegenJob",
-    "UpdateComponent",
-    "UpdateForm",
-    "UpdateTheme"
-]
+    write = [
+      "CreateComponent",
+      "CreateForm",
+      "CreateTheme",
+      "DeleteComponent",
+      "DeleteForm",
+      "DeleteTheme",
+      "ExchangeCodeForToken",
+      "PutMetadataFlag",
+      "RefreshToken",
+      "ResetMetadataFlag",
+      "StartCodegenJob",
+      "UpdateComponent",
+      "UpdateForm",
+      "UpdateTheme"
+    ]
     permissions_management = []
-    read                   = [
-    "ExportComponents",
-    "ExportForms",
-    "ExportThemes",
-    "GetCodegenJob",
-    "GetComponent",
-    "GetForm",
-    "GetMetadata",
-    "GetTheme"
-]
-    list                   = [
-    "ListCodegenJobs",
-    "ListComponents",
-    "ListForms",
-    "ListTagsForResource",
-    "ListThemes"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "ExportComponents",
+      "ExportForms",
+      "ExportThemes",
+      "GetCodegenJob",
+      "GetComponent",
+      "GetForm",
+      "GetMetadata",
+      "GetTheme"
+    ]
+    list = [
+      "ListCodegenJobs",
+      "ListComponents",
+      "ListForms",
+      "ListTagsForResource",
+      "ListThemes"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

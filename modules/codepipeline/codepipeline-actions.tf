@@ -59,58 +59,58 @@ locals {
   prefix = "codepipeline"
 
   access_level = {
-    write                  = [
-    "AcknowledgeJob",
-    "AcknowledgeThirdPartyJob",
-    "CreateCustomActionType",
-    "CreatePipeline",
-    "DeleteCustomActionType",
-    "DeletePipeline",
-    "DeleteWebhook",
-    "DeregisterWebhookWithThirdParty",
-    "DisableStageTransition",
-    "EnableStageTransition",
-    "OverrideStageCondition",
-    "PollForJobs",
-    "PollForThirdPartyJobs",
-    "PutActionRevision",
-    "PutApprovalResult",
-    "PutJobFailureResult",
-    "PutJobSuccessResult",
-    "PutThirdPartyJobFailureResult",
-    "PutThirdPartyJobSuccessResult",
-    "PutWebhook",
-    "RegisterWebhookWithThirdParty",
-    "RetryStageExecution",
-    "RollbackStage",
-    "StartPipelineExecution",
-    "StopPipelineExecution",
-    "UpdateActionType",
-    "UpdatePipeline"
-]
+    write = [
+      "AcknowledgeJob",
+      "AcknowledgeThirdPartyJob",
+      "CreateCustomActionType",
+      "CreatePipeline",
+      "DeleteCustomActionType",
+      "DeletePipeline",
+      "DeleteWebhook",
+      "DeregisterWebhookWithThirdParty",
+      "DisableStageTransition",
+      "EnableStageTransition",
+      "OverrideStageCondition",
+      "PollForJobs",
+      "PollForThirdPartyJobs",
+      "PutActionRevision",
+      "PutApprovalResult",
+      "PutJobFailureResult",
+      "PutJobSuccessResult",
+      "PutThirdPartyJobFailureResult",
+      "PutThirdPartyJobSuccessResult",
+      "PutWebhook",
+      "RegisterWebhookWithThirdParty",
+      "RetryStageExecution",
+      "RollbackStage",
+      "StartPipelineExecution",
+      "StopPipelineExecution",
+      "UpdateActionType",
+      "UpdatePipeline"
+    ]
     permissions_management = []
-    read                   = [
-    "GetActionType",
-    "GetJobDetails",
-    "GetPipeline",
-    "GetPipelineExecution",
-    "GetPipelineState",
-    "GetThirdPartyJobDetails",
-    "ListActionExecutions",
-    "ListActionTypes",
-    "ListDeployActionExecutionTargets",
-    "ListRuleExecutions",
-    "ListRuleTypes",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListPipelineExecutions",
-    "ListPipelines",
-    "ListWebhooks"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetActionType",
+      "GetJobDetails",
+      "GetPipeline",
+      "GetPipelineExecution",
+      "GetPipelineState",
+      "GetThirdPartyJobDetails",
+      "ListActionExecutions",
+      "ListActionTypes",
+      "ListDeployActionExecutionTargets",
+      "ListRuleExecutions",
+      "ListRuleTypes",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListPipelineExecutions",
+      "ListPipelines",
+      "ListWebhooks"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,32 +59,32 @@ locals {
   prefix = "route53profiles"
 
   access_level = {
-    write                  = [
-    "AssociateProfile",
-    "AssociateResourceToProfile",
-    "CreateProfile",
-    "DeleteProfile",
-    "DisassociateProfile",
-    "DisassociateResourceFromProfile",
-    "PutProfilePolicy",
-    "UpdateProfileResourceAssociation"
-]
+    write = [
+      "AssociateProfile",
+      "AssociateResourceToProfile",
+      "CreateProfile",
+      "DeleteProfile",
+      "DisassociateProfile",
+      "DisassociateResourceFromProfile",
+      "PutProfilePolicy",
+      "UpdateProfileResourceAssociation"
+    ]
     permissions_management = []
-    read                   = [
-    "GetProfile",
-    "GetProfileAssociation",
-    "GetProfilePolicy",
-    "GetProfileResourceAssociation"
-]
-    list                   = [
-    "ListProfileAssociations",
-    "ListProfileResourceAssociations",
-    "ListProfiles",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetProfile",
+      "GetProfileAssociation",
+      "GetProfilePolicy",
+      "GetProfileResourceAssociation"
+    ]
+    list = [
+      "ListProfileAssociations",
+      "ListProfileResourceAssociations",
+      "ListProfiles",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

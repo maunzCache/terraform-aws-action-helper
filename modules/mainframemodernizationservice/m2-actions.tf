@@ -59,51 +59,51 @@ locals {
   prefix = "m2"
 
   access_level = {
-    write                  = [
-    "CancelBatchJobExecution",
-    "CreateApplication",
-    "CreateDataSetExportTask",
-    "CreateDataSetImportTask",
-    "CreateDeployment",
-    "CreateEnvironment",
-    "DeleteApplication",
-    "DeleteApplicationFromEnvironment",
-    "DeleteEnvironment",
-    "StartApplication",
-    "StartBatchJob",
-    "StopApplication",
-    "UpdateApplication",
-    "UpdateEnvironment"
-]
+    write = [
+      "CancelBatchJobExecution",
+      "CreateApplication",
+      "CreateDataSetExportTask",
+      "CreateDataSetImportTask",
+      "CreateDeployment",
+      "CreateEnvironment",
+      "DeleteApplication",
+      "DeleteApplicationFromEnvironment",
+      "DeleteEnvironment",
+      "StartApplication",
+      "StartBatchJob",
+      "StopApplication",
+      "UpdateApplication",
+      "UpdateEnvironment"
+    ]
     permissions_management = []
-    read                   = [
-    "GetApplication",
-    "GetApplicationVersion",
-    "GetBatchJobExecution",
-    "GetDataSetDetails",
-    "GetDataSetExportTask",
-    "GetDataSetImportTask",
-    "GetDeployment",
-    "GetEnvironment",
-    "GetSignedBluinsightsUrl",
-    "ListApplicationVersions",
-    "ListBatchJobDefinitions",
-    "ListBatchJobExecutions",
-    "ListBatchJobRestartPoints",
-    "ListDataSetExportHistory",
-    "ListDataSetImportHistory",
-    "ListDataSets",
-    "ListDeployments",
-    "ListEngineVersions",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListApplications",
-    "ListEnvironments"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetApplication",
+      "GetApplicationVersion",
+      "GetBatchJobExecution",
+      "GetDataSetDetails",
+      "GetDataSetExportTask",
+      "GetDataSetImportTask",
+      "GetDeployment",
+      "GetEnvironment",
+      "GetSignedBluinsightsUrl",
+      "ListApplicationVersions",
+      "ListBatchJobDefinitions",
+      "ListBatchJobExecutions",
+      "ListBatchJobRestartPoints",
+      "ListDataSetExportHistory",
+      "ListDataSetImportHistory",
+      "ListDataSets",
+      "ListDeployments",
+      "ListEngineVersions",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListApplications",
+      "ListEnvironments"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

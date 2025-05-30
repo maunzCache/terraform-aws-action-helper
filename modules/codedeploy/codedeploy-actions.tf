@@ -59,62 +59,62 @@ locals {
   prefix = "codedeploy"
 
   access_level = {
-    write                  = [
-    "ContinueDeployment",
-    "CreateApplication",
-    "CreateCloudFormationDeployment",
-    "CreateDeployment",
-    "CreateDeploymentConfig",
-    "CreateDeploymentGroup",
-    "DeleteApplication",
-    "DeleteDeploymentConfig",
-    "DeleteDeploymentGroup",
-    "DeleteGitHubAccountToken",
-    "DeleteResourcesByExternalId",
-    "DeregisterOnPremisesInstance",
-    "PutLifecycleEventHookExecutionStatus",
-    "RegisterApplicationRevision",
-    "RegisterOnPremisesInstance",
-    "SkipWaitTimeForInstanceTermination",
-    "StopDeployment",
-    "UpdateApplication",
-    "UpdateDeploymentGroup"
-]
+    write = [
+      "ContinueDeployment",
+      "CreateApplication",
+      "CreateCloudFormationDeployment",
+      "CreateDeployment",
+      "CreateDeploymentConfig",
+      "CreateDeploymentGroup",
+      "DeleteApplication",
+      "DeleteDeploymentConfig",
+      "DeleteDeploymentGroup",
+      "DeleteGitHubAccountToken",
+      "DeleteResourcesByExternalId",
+      "DeregisterOnPremisesInstance",
+      "PutLifecycleEventHookExecutionStatus",
+      "RegisterApplicationRevision",
+      "RegisterOnPremisesInstance",
+      "SkipWaitTimeForInstanceTermination",
+      "StopDeployment",
+      "UpdateApplication",
+      "UpdateDeploymentGroup"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetApplicationRevisions",
-    "BatchGetApplications",
-    "BatchGetDeploymentGroups",
-    "BatchGetDeploymentInstances",
-    "BatchGetDeploymentTargets",
-    "BatchGetDeployments",
-    "BatchGetOnPremisesInstances",
-    "GetDeploymentTarget"
-]
-    list                   = [
-    "GetApplication",
-    "GetApplicationRevision",
-    "GetDeployment",
-    "GetDeploymentConfig",
-    "GetDeploymentGroup",
-    "GetDeploymentInstance",
-    "GetOnPremisesInstance",
-    "ListApplicationRevisions",
-    "ListApplications",
-    "ListDeploymentConfigs",
-    "ListDeploymentGroups",
-    "ListDeploymentInstances",
-    "ListDeploymentTargets",
-    "ListDeployments",
-    "ListGitHubAccountTokenNames",
-    "ListOnPremisesInstances",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "AddTagsToOnPremisesInstances",
-    "RemoveTagsFromOnPremisesInstances",
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchGetApplicationRevisions",
+      "BatchGetApplications",
+      "BatchGetDeploymentGroups",
+      "BatchGetDeploymentInstances",
+      "BatchGetDeploymentTargets",
+      "BatchGetDeployments",
+      "BatchGetOnPremisesInstances",
+      "GetDeploymentTarget"
+    ]
+    list = [
+      "GetApplication",
+      "GetApplicationRevision",
+      "GetDeployment",
+      "GetDeploymentConfig",
+      "GetDeploymentGroup",
+      "GetDeploymentInstance",
+      "GetOnPremisesInstance",
+      "ListApplicationRevisions",
+      "ListApplications",
+      "ListDeploymentConfigs",
+      "ListDeploymentGroups",
+      "ListDeploymentInstances",
+      "ListDeploymentTargets",
+      "ListDeployments",
+      "ListGitHubAccountTokenNames",
+      "ListOnPremisesInstances",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "AddTagsToOnPremisesInstances",
+      "RemoveTagsFromOnPremisesInstances",
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

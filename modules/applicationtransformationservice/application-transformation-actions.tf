@@ -59,26 +59,26 @@ locals {
   prefix = "application-transformation"
 
   access_level = {
-    write                  = [
-    "PutLogData",
-    "PutMetricData",
-    "StartContainerization",
-    "StartDeployment",
-    "StartGroupingAssessment",
-    "StartPortingCompatibilityAssessment",
-    "StartPortingRecommendationAssessment",
-    "StartRuntimeAssessment"
-]
+    write = [
+      "PutLogData",
+      "PutMetricData",
+      "StartContainerization",
+      "StartDeployment",
+      "StartGroupingAssessment",
+      "StartPortingCompatibilityAssessment",
+      "StartPortingRecommendationAssessment",
+      "StartRuntimeAssessment"
+    ]
     permissions_management = []
-    read                   = [
-    "GetContainerization",
-    "GetDeployment",
-    "GetGroupingAssessment",
-    "GetPortingCompatibilityAssessment",
-    "GetPortingRecommendationAssessment",
-    "GetRuntimeAssessment"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetContainerization",
+      "GetDeployment",
+      "GetGroupingAssessment",
+      "GetPortingCompatibilityAssessment",
+      "GetPortingRecommendationAssessment",
+      "GetRuntimeAssessment"
+    ]
+    list    = []
+    tagging = []
   }
 }

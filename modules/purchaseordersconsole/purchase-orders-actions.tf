@@ -59,28 +59,28 @@ locals {
   prefix = "purchase-orders"
 
   access_level = {
-    write                  = [
-    "AddPurchaseOrder",
-    "DeletePurchaseOrder",
-    "ModifyPurchaseOrders",
-    "UpdateConsoleActionSetEnforced",
-    "UpdatePurchaseOrder",
-    "UpdatePurchaseOrderStatus"
-]
+    write = [
+      "AddPurchaseOrder",
+      "DeletePurchaseOrder",
+      "ModifyPurchaseOrders",
+      "UpdateConsoleActionSetEnforced",
+      "UpdatePurchaseOrder",
+      "UpdatePurchaseOrderStatus"
+    ]
     permissions_management = []
-    read                   = [
-    "GetConsoleActionSetEnforced",
-    "GetPurchaseOrder",
-    "ListTagsForResource",
-    "ViewPurchaseOrders"
-]
-    list                   = [
-    "ListPurchaseOrderInvoices",
-    "ListPurchaseOrders"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetConsoleActionSetEnforced",
+      "GetPurchaseOrder",
+      "ListTagsForResource",
+      "ViewPurchaseOrders"
+    ]
+    list = [
+      "ListPurchaseOrderInvoices",
+      "ListPurchaseOrders"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

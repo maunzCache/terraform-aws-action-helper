@@ -59,74 +59,74 @@ locals {
   prefix = "inspector2"
 
   access_level = {
-    write                  = [
-    "AssociateMember",
-    "BatchUpdateMemberEc2DeepInspectionStatus",
-    "CancelFindingsReport",
-    "CancelSbomExport",
-    "CreateCisScanConfiguration",
-    "CreateFilter",
-    "CreateFindingsReport",
-    "CreateSbomExport",
-    "DeleteCisScanConfiguration",
-    "DeleteFilter",
-    "Disable",
-    "DisableDelegatedAdminAccount",
-    "DisassociateMember",
-    "Enable",
-    "EnableDelegatedAdminAccount",
-    "ResetEncryptionKey",
-    "SendCisSessionHealth",
-    "SendCisSessionTelemetry",
-    "StartCisSession",
-    "StopCisSession",
-    "UpdateCisScanConfiguration",
-    "UpdateConfiguration",
-    "UpdateEc2DeepInspectionConfiguration",
-    "UpdateEncryptionKey",
-    "UpdateFilter",
-    "UpdateOrgEc2DeepInspectionConfiguration",
-    "UpdateOrganizationConfiguration"
-]
+    write = [
+      "AssociateMember",
+      "BatchUpdateMemberEc2DeepInspectionStatus",
+      "CancelFindingsReport",
+      "CancelSbomExport",
+      "CreateCisScanConfiguration",
+      "CreateFilter",
+      "CreateFindingsReport",
+      "CreateSbomExport",
+      "DeleteCisScanConfiguration",
+      "DeleteFilter",
+      "Disable",
+      "DisableDelegatedAdminAccount",
+      "DisassociateMember",
+      "Enable",
+      "EnableDelegatedAdminAccount",
+      "ResetEncryptionKey",
+      "SendCisSessionHealth",
+      "SendCisSessionTelemetry",
+      "StartCisSession",
+      "StopCisSession",
+      "UpdateCisScanConfiguration",
+      "UpdateConfiguration",
+      "UpdateEc2DeepInspectionConfiguration",
+      "UpdateEncryptionKey",
+      "UpdateFilter",
+      "UpdateOrgEc2DeepInspectionConfiguration",
+      "UpdateOrganizationConfiguration"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetAccountStatus",
-    "BatchGetCodeSnippet",
-    "BatchGetFindingDetails",
-    "BatchGetFreeTrialInfo",
-    "BatchGetMemberEc2DeepInspectionStatus",
-    "DescribeOrganizationConfiguration",
-    "GetCisScanReport",
-    "GetClustersForImage",
-    "GetConfiguration",
-    "GetDelegatedAdminAccount",
-    "GetEc2DeepInspectionConfiguration",
-    "GetEncryptionKey",
-    "GetFindingsReportStatus",
-    "GetMember",
-    "GetSbomExport",
-    "ListTagsForResource",
-    "SearchVulnerabilities"
-]
-    list                   = [
-    "GetCisScanResultDetails",
-    "ListAccountPermissions",
-    "ListCisScanConfigurations",
-    "ListCisScanResultsAggregatedByChecks",
-    "ListCisScanResultsAggregatedByTargetResource",
-    "ListCisScans",
-    "ListCoverage",
-    "ListCoverageStatistics",
-    "ListDelegatedAdminAccounts",
-    "ListFilters",
-    "ListFindingAggregations",
-    "ListFindings",
-    "ListMembers",
-    "ListUsageTotals"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchGetAccountStatus",
+      "BatchGetCodeSnippet",
+      "BatchGetFindingDetails",
+      "BatchGetFreeTrialInfo",
+      "BatchGetMemberEc2DeepInspectionStatus",
+      "DescribeOrganizationConfiguration",
+      "GetCisScanReport",
+      "GetClustersForImage",
+      "GetConfiguration",
+      "GetDelegatedAdminAccount",
+      "GetEc2DeepInspectionConfiguration",
+      "GetEncryptionKey",
+      "GetFindingsReportStatus",
+      "GetMember",
+      "GetSbomExport",
+      "ListTagsForResource",
+      "SearchVulnerabilities"
+    ]
+    list = [
+      "GetCisScanResultDetails",
+      "ListAccountPermissions",
+      "ListCisScanConfigurations",
+      "ListCisScanResultsAggregatedByChecks",
+      "ListCisScanResultsAggregatedByTargetResource",
+      "ListCisScans",
+      "ListCoverage",
+      "ListCoverageStatistics",
+      "ListDelegatedAdminAccounts",
+      "ListFilters",
+      "ListFindingAggregations",
+      "ListFindings",
+      "ListMembers",
+      "ListUsageTotals"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

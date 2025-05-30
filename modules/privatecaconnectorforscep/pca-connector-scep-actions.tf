@@ -59,26 +59,26 @@ locals {
   prefix = "pca-connector-scep"
 
   access_level = {
-    write                  = [
-    "CreateChallenge",
-    "CreateConnector",
-    "DeleteChallenge",
-    "DeleteConnector"
-]
+    write = [
+      "CreateChallenge",
+      "CreateConnector",
+      "DeleteChallenge",
+      "DeleteConnector"
+    ]
     permissions_management = []
-    read                   = [
-    "GetChallengeMetadata",
-    "GetChallengePassword",
-    "GetConnector",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListChallengeMetadata",
-    "ListConnectors"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetChallengeMetadata",
+      "GetChallengePassword",
+      "GetConnector",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListChallengeMetadata",
+      "ListConnectors"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

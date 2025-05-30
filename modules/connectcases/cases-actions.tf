@@ -59,54 +59,54 @@ locals {
   prefix = "cases"
 
   access_level = {
-    write                  = [
-    "BatchPutFieldOptions",
-    "CreateCase",
-    "CreateCaseRule",
-    "CreateDomain",
-    "CreateField",
-    "CreateLayout",
-    "CreateRelatedItem",
-    "CreateTemplate",
-    "DeleteCaseRule",
-    "DeleteDomain",
-    "DeleteField",
-    "DeleteLayout",
-    "DeleteRelatedItem",
-    "DeleteTemplate",
-    "PutCaseEventConfiguration",
-    "UpdateCase",
-    "UpdateCaseRule",
-    "UpdateField",
-    "UpdateLayout",
-    "UpdateTemplate"
-]
+    write = [
+      "BatchPutFieldOptions",
+      "CreateCase",
+      "CreateCaseRule",
+      "CreateDomain",
+      "CreateField",
+      "CreateLayout",
+      "CreateRelatedItem",
+      "CreateTemplate",
+      "DeleteCaseRule",
+      "DeleteDomain",
+      "DeleteField",
+      "DeleteLayout",
+      "DeleteRelatedItem",
+      "DeleteTemplate",
+      "PutCaseEventConfiguration",
+      "UpdateCase",
+      "UpdateCaseRule",
+      "UpdateField",
+      "UpdateLayout",
+      "UpdateTemplate"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetCaseRule",
-    "BatchGetField",
-    "GetCase",
-    "GetCaseAuditEvents",
-    "GetCaseEventConfiguration",
-    "GetDomain",
-    "GetLayout",
-    "GetTemplate",
-    "ListTagsForResource",
-    "SearchCases",
-    "SearchRelatedItems"
-]
-    list                   = [
-    "ListCaseRules",
-    "ListCasesForContact",
-    "ListDomains",
-    "ListFieldOptions",
-    "ListFields",
-    "ListLayouts",
-    "ListTemplates"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchGetCaseRule",
+      "BatchGetField",
+      "GetCase",
+      "GetCaseAuditEvents",
+      "GetCaseEventConfiguration",
+      "GetDomain",
+      "GetLayout",
+      "GetTemplate",
+      "ListTagsForResource",
+      "SearchCases",
+      "SearchRelatedItems"
+    ]
+    list = [
+      "ListCaseRules",
+      "ListCasesForContact",
+      "ListDomains",
+      "ListFieldOptions",
+      "ListFields",
+      "ListLayouts",
+      "ListTemplates"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

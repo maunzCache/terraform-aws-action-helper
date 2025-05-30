@@ -59,33 +59,33 @@ locals {
   prefix = "pcs"
 
   access_level = {
-    write                  = [
-    "AllowVendedLogDeliveryForResource",
-    "CreateCluster",
-    "CreateComputeNodeGroup",
-    "CreateQueue",
-    "DeleteCluster",
-    "DeleteComputeNodeGroup",
-    "DeleteQueue",
-    "RegisterComputeNodeGroupInstance",
-    "UpdateComputeNodeGroup",
-    "UpdateQueue"
-]
+    write = [
+      "AllowVendedLogDeliveryForResource",
+      "CreateCluster",
+      "CreateComputeNodeGroup",
+      "CreateQueue",
+      "DeleteCluster",
+      "DeleteComputeNodeGroup",
+      "DeleteQueue",
+      "RegisterComputeNodeGroupInstance",
+      "UpdateComputeNodeGroup",
+      "UpdateQueue"
+    ]
     permissions_management = []
-    read                   = [
-    "GetCluster",
-    "GetComputeNodeGroup",
-    "GetQueue",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListClusters",
-    "ListComputeNodeGroups",
-    "ListQueues"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetCluster",
+      "GetComputeNodeGroup",
+      "GetQueue",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListClusters",
+      "ListComputeNodeGroups",
+      "ListQueues"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

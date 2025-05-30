@@ -59,76 +59,76 @@ locals {
   prefix = "ses"
 
   access_level = {
-    write                  = [
-    "CreateAddonInstance",
-    "CreateAddonSubscription",
-    "CreateAddressList",
-    "CreateAddressListImportJob",
-    "CreateArchive",
-    "CreateIngressPoint",
-    "CreateRelay",
-    "CreateRuleSet",
-    "CreateTrafficPolicy",
-    "DeleteAddonInstance",
-    "DeleteAddonSubscription",
-    "DeleteAddressList",
-    "DeleteArchive",
-    "DeleteIngressPoint",
-    "DeleteRelay",
-    "DeleteRuleSet",
-    "DeleteTrafficPolicy",
-    "DeregisterMemberFromAddressList",
-    "RegisterMemberToAddressList",
-    "StartAddressListImportJob",
-    "StartArchiveExport",
-    "StartArchiveSearch",
-    "StopAddressListImportJob",
-    "StopArchiveExport",
-    "StopArchiveSearch",
-    "UpdateArchive",
-    "UpdateIngressPoint",
-    "UpdateRelay",
-    "UpdateRuleSet",
-    "UpdateTrafficPolicy"
-]
+    write = [
+      "CreateAddonInstance",
+      "CreateAddonSubscription",
+      "CreateAddressList",
+      "CreateAddressListImportJob",
+      "CreateArchive",
+      "CreateIngressPoint",
+      "CreateRelay",
+      "CreateRuleSet",
+      "CreateTrafficPolicy",
+      "DeleteAddonInstance",
+      "DeleteAddonSubscription",
+      "DeleteAddressList",
+      "DeleteArchive",
+      "DeleteIngressPoint",
+      "DeleteRelay",
+      "DeleteRuleSet",
+      "DeleteTrafficPolicy",
+      "DeregisterMemberFromAddressList",
+      "RegisterMemberToAddressList",
+      "StartAddressListImportJob",
+      "StartArchiveExport",
+      "StartArchiveSearch",
+      "StopAddressListImportJob",
+      "StopArchiveExport",
+      "StopArchiveSearch",
+      "UpdateArchive",
+      "UpdateIngressPoint",
+      "UpdateRelay",
+      "UpdateRuleSet",
+      "UpdateTrafficPolicy"
+    ]
     permissions_management = [
-    "AllowVendedLogDeliveryForResource"
-]
-    read                   = [
-    "GetAddonInstance",
-    "GetAddonSubscription",
-    "GetAddressList",
-    "GetAddressListImportJob",
-    "GetArchive",
-    "GetArchiveExport",
-    "GetArchiveMessage",
-    "GetArchiveMessageContent",
-    "GetArchiveSearch",
-    "GetArchiveSearchResults",
-    "GetIngressPoint",
-    "GetMemberOfAddressList",
-    "GetRelay",
-    "GetRuleSet",
-    "GetTrafficPolicy",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAddonInstances",
-    "ListAddonSubscriptions",
-    "ListAddressListImportJobs",
-    "ListAddressLists",
-    "ListArchiveExports",
-    "ListArchiveSearches",
-    "ListArchives",
-    "ListIngressPoints",
-    "ListMembersOfAddressList",
-    "ListRelays",
-    "ListRuleSets",
-    "ListTrafficPolicies"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "AllowVendedLogDeliveryForResource"
+    ]
+    read = [
+      "GetAddonInstance",
+      "GetAddonSubscription",
+      "GetAddressList",
+      "GetAddressListImportJob",
+      "GetArchive",
+      "GetArchiveExport",
+      "GetArchiveMessage",
+      "GetArchiveMessageContent",
+      "GetArchiveSearch",
+      "GetArchiveSearchResults",
+      "GetIngressPoint",
+      "GetMemberOfAddressList",
+      "GetRelay",
+      "GetRuleSet",
+      "GetTrafficPolicy",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAddonInstances",
+      "ListAddonSubscriptions",
+      "ListAddressListImportJobs",
+      "ListAddressLists",
+      "ListArchiveExports",
+      "ListArchiveSearches",
+      "ListArchives",
+      "ListIngressPoints",
+      "ListMembersOfAddressList",
+      "ListRelays",
+      "ListRuleSets",
+      "ListTrafficPolicies"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

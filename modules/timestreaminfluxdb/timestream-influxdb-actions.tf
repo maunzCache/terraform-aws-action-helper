@@ -59,31 +59,31 @@ locals {
   prefix = "timestream-influxdb"
 
   access_level = {
-    write                  = [
-    "CreateDbCluster",
-    "CreateDbInstance",
-    "CreateDbParameterGroup",
-    "DeleteDbCluster",
-    "DeleteDbInstance",
-    "UpdateDbCluster",
-    "UpdateDbInstance"
-]
+    write = [
+      "CreateDbCluster",
+      "CreateDbInstance",
+      "CreateDbParameterGroup",
+      "DeleteDbCluster",
+      "DeleteDbInstance",
+      "UpdateDbCluster",
+      "UpdateDbInstance"
+    ]
     permissions_management = []
-    read                   = [
-    "GetDbCluster",
-    "GetDbInstance",
-    "GetDbParameterGroup",
-    "ListDbInstancesForCluster",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListDbClusters",
-    "ListDbInstances",
-    "ListDbParameterGroups"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetDbCluster",
+      "GetDbInstance",
+      "GetDbParameterGroup",
+      "ListDbInstancesForCluster",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListDbClusters",
+      "ListDbInstances",
+      "ListDbParameterGroups"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

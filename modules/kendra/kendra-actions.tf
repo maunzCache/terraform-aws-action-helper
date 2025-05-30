@@ -59,80 +59,80 @@ locals {
   prefix = "kendra"
 
   access_level = {
-    write                  = [
-    "AssociateEntitiesToExperience",
-    "AssociatePersonasToEntities",
-    "BatchDeleteDocument",
-    "BatchDeleteFeaturedResultsSet",
-    "BatchPutDocument",
-    "ClearQuerySuggestions",
-    "CreateAccessControlConfiguration",
-    "CreateDataSource",
-    "CreateExperience",
-    "CreateFaq",
-    "CreateFeaturedResultsSet",
-    "CreateIndex",
-    "CreateQuerySuggestionsBlockList",
-    "CreateThesaurus",
-    "DeleteAccessControlConfiguration",
-    "DeleteDataSource",
-    "DeleteExperience",
-    "DeleteFaq",
-    "DeleteIndex",
-    "DeletePrincipalMapping",
-    "DeleteQuerySuggestionsBlockList",
-    "DeleteThesaurus",
-    "DisassociateEntitiesFromExperience",
-    "DisassociatePersonasFromEntities",
-    "PutPrincipalMapping",
-    "StartDataSourceSyncJob",
-    "StopDataSourceSyncJob",
-    "SubmitFeedback",
-    "UpdateAccessControlConfiguration",
-    "UpdateDataSource",
-    "UpdateExperience",
-    "UpdateFeaturedResultsSet",
-    "UpdateIndex",
-    "UpdateQuerySuggestionsBlockList",
-    "UpdateQuerySuggestionsConfig",
-    "UpdateThesaurus"
-]
+    write = [
+      "AssociateEntitiesToExperience",
+      "AssociatePersonasToEntities",
+      "BatchDeleteDocument",
+      "BatchDeleteFeaturedResultsSet",
+      "BatchPutDocument",
+      "ClearQuerySuggestions",
+      "CreateAccessControlConfiguration",
+      "CreateDataSource",
+      "CreateExperience",
+      "CreateFaq",
+      "CreateFeaturedResultsSet",
+      "CreateIndex",
+      "CreateQuerySuggestionsBlockList",
+      "CreateThesaurus",
+      "DeleteAccessControlConfiguration",
+      "DeleteDataSource",
+      "DeleteExperience",
+      "DeleteFaq",
+      "DeleteIndex",
+      "DeletePrincipalMapping",
+      "DeleteQuerySuggestionsBlockList",
+      "DeleteThesaurus",
+      "DisassociateEntitiesFromExperience",
+      "DisassociatePersonasFromEntities",
+      "PutPrincipalMapping",
+      "StartDataSourceSyncJob",
+      "StopDataSourceSyncJob",
+      "SubmitFeedback",
+      "UpdateAccessControlConfiguration",
+      "UpdateDataSource",
+      "UpdateExperience",
+      "UpdateFeaturedResultsSet",
+      "UpdateIndex",
+      "UpdateQuerySuggestionsBlockList",
+      "UpdateQuerySuggestionsConfig",
+      "UpdateThesaurus"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetDocumentStatus",
-    "DescribeAccessControlConfiguration",
-    "DescribeDataSource",
-    "DescribeExperience",
-    "DescribeFaq",
-    "DescribeFeaturedResultsSet",
-    "DescribeIndex",
-    "DescribePrincipalMapping",
-    "DescribeQuerySuggestionsBlockList",
-    "DescribeQuerySuggestionsConfig",
-    "DescribeThesaurus",
-    "GetQuerySuggestions",
-    "GetSnapshots",
-    "ListTagsForResource",
-    "Query",
-    "Retrieve"
-]
-    list                   = [
-    "ListAccessControlConfigurations",
-    "ListDataSourceSyncJobs",
-    "ListDataSources",
-    "ListEntityPersonas",
-    "ListExperienceEntities",
-    "ListExperiences",
-    "ListFaqs",
-    "ListFeaturedResultsSets",
-    "ListGroupsOlderThanOrderingId",
-    "ListIndices",
-    "ListQuerySuggestionsBlockLists",
-    "ListThesauri"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchGetDocumentStatus",
+      "DescribeAccessControlConfiguration",
+      "DescribeDataSource",
+      "DescribeExperience",
+      "DescribeFaq",
+      "DescribeFeaturedResultsSet",
+      "DescribeIndex",
+      "DescribePrincipalMapping",
+      "DescribeQuerySuggestionsBlockList",
+      "DescribeQuerySuggestionsConfig",
+      "DescribeThesaurus",
+      "GetQuerySuggestions",
+      "GetSnapshots",
+      "ListTagsForResource",
+      "Query",
+      "Retrieve"
+    ]
+    list = [
+      "ListAccessControlConfigurations",
+      "ListDataSourceSyncJobs",
+      "ListDataSources",
+      "ListEntityPersonas",
+      "ListExperienceEntities",
+      "ListExperiences",
+      "ListFaqs",
+      "ListFeaturedResultsSets",
+      "ListGroupsOlderThanOrderingId",
+      "ListIndices",
+      "ListQuerySuggestionsBlockLists",
+      "ListThesauri"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

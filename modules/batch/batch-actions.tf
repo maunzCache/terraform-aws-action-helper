@@ -59,45 +59,45 @@ locals {
   prefix = "batch"
 
   access_level = {
-    write                  = [
-    "CancelJob",
-    "CreateComputeEnvironment",
-    "CreateConsumableResource",
-    "CreateJobQueue",
-    "CreateSchedulingPolicy",
-    "DeleteComputeEnvironment",
-    "DeleteConsumableResource",
-    "DeleteJobQueue",
-    "DeleteSchedulingPolicy",
-    "DeregisterJobDefinition",
-    "RegisterJobDefinition",
-    "SubmitJob",
-    "TerminateJob",
-    "UpdateComputeEnvironment",
-    "UpdateConsumableResource",
-    "UpdateJobQueue",
-    "UpdateSchedulingPolicy"
-]
+    write = [
+      "CancelJob",
+      "CreateComputeEnvironment",
+      "CreateConsumableResource",
+      "CreateJobQueue",
+      "CreateSchedulingPolicy",
+      "DeleteComputeEnvironment",
+      "DeleteConsumableResource",
+      "DeleteJobQueue",
+      "DeleteSchedulingPolicy",
+      "DeregisterJobDefinition",
+      "RegisterJobDefinition",
+      "SubmitJob",
+      "TerminateJob",
+      "UpdateComputeEnvironment",
+      "UpdateConsumableResource",
+      "UpdateJobQueue",
+      "UpdateSchedulingPolicy"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeComputeEnvironments",
-    "DescribeConsumableResource",
-    "DescribeJobDefinitions",
-    "DescribeJobQueues",
-    "DescribeJobs",
-    "DescribeSchedulingPolicies",
-    "GetJobQueueSnapshot",
-    "ListSchedulingPolicies",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListConsumableResources",
-    "ListJobs",
-    "ListJobsByConsumableResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeComputeEnvironments",
+      "DescribeConsumableResource",
+      "DescribeJobDefinitions",
+      "DescribeJobQueues",
+      "DescribeJobs",
+      "DescribeSchedulingPolicies",
+      "GetJobQueueSnapshot",
+      "ListSchedulingPolicies",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListConsumableResources",
+      "ListJobs",
+      "ListJobsByConsumableResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

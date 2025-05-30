@@ -59,36 +59,36 @@ locals {
   prefix = "security-ir"
 
   access_level = {
-    write                  = [
-    "CancelMembership",
-    "CloseCase",
-    "CreateCase",
-    "CreateCaseComment",
-    "CreateMembership",
-    "GetCaseAttachmentUploadUrl",
-    "UpdateCase",
-    "UpdateCaseComment",
-    "UpdateCaseStatus",
-    "UpdateMembership",
-    "UpdateResolverType"
-]
+    write = [
+      "CancelMembership",
+      "CloseCase",
+      "CreateCase",
+      "CreateCaseComment",
+      "CreateMembership",
+      "GetCaseAttachmentUploadUrl",
+      "UpdateCase",
+      "UpdateCaseComment",
+      "UpdateCaseStatus",
+      "UpdateMembership",
+      "UpdateResolverType"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetMemberAccountDetails",
-    "GetCase",
-    "GetCaseAttachmentDownloadUrl",
-    "GetMembership",
-    "ListCaseEdits",
-    "ListComments",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListCases",
-    "ListMemberships"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchGetMemberAccountDetails",
+      "GetCase",
+      "GetCaseAttachmentDownloadUrl",
+      "GetMembership",
+      "ListCaseEdits",
+      "ListComments",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListCases",
+      "ListMemberships"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,38 +59,38 @@ locals {
   prefix = "ecr-public"
 
   access_level = {
-    write                  = [
-    "BatchDeleteImage",
-    "CompleteLayerUpload",
-    "CreateRepository",
-    "DeleteRepository",
-    "DeleteRepositoryPolicy",
-    "InitiateLayerUpload",
-    "PutImage",
-    "PutRegistryCatalogData",
-    "PutRepositoryCatalogData",
-    "UploadLayerPart"
-]
+    write = [
+      "BatchDeleteImage",
+      "CompleteLayerUpload",
+      "CreateRepository",
+      "DeleteRepository",
+      "DeleteRepositoryPolicy",
+      "InitiateLayerUpload",
+      "PutImage",
+      "PutRegistryCatalogData",
+      "PutRepositoryCatalogData",
+      "UploadLayerPart"
+    ]
     permissions_management = [
-    "SetRepositoryPolicy"
-]
-    read                   = [
-    "BatchCheckLayerAvailability",
-    "DescribeImages",
-    "GetAuthorizationToken",
-    "GetRegistryCatalogData",
-    "GetRepositoryCatalogData",
-    "GetRepositoryPolicy",
-    "ListTagsForResource"
-]
-    list                   = [
-    "DescribeImageTags",
-    "DescribeRegistries",
-    "DescribeRepositories"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "SetRepositoryPolicy"
+    ]
+    read = [
+      "BatchCheckLayerAvailability",
+      "DescribeImages",
+      "GetAuthorizationToken",
+      "GetRegistryCatalogData",
+      "GetRepositoryCatalogData",
+      "GetRepositoryPolicy",
+      "ListTagsForResource"
+    ]
+    list = [
+      "DescribeImageTags",
+      "DescribeRegistries",
+      "DescribeRepositories"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

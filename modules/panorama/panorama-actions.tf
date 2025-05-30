@@ -59,50 +59,50 @@ locals {
   prefix = "panorama"
 
   access_level = {
-    write                  = [
-    "CreateApplicationInstance",
-    "CreateJobForDevices",
-    "CreateNodeFromTemplateJob",
-    "CreatePackage",
-    "CreatePackageImportJob",
-    "DeleteDevice",
-    "DeletePackage",
-    "DeregisterPackageVersion",
-    "ProvisionDevice",
-    "RegisterPackageVersion",
-    "RemoveApplicationInstance",
-    "SignalApplicationInstanceNodeInstances",
-    "UpdateDeviceMetadata"
-]
+    write = [
+      "CreateApplicationInstance",
+      "CreateJobForDevices",
+      "CreateNodeFromTemplateJob",
+      "CreatePackage",
+      "CreatePackageImportJob",
+      "DeleteDevice",
+      "DeletePackage",
+      "DeregisterPackageVersion",
+      "ProvisionDevice",
+      "RegisterPackageVersion",
+      "RemoveApplicationInstance",
+      "SignalApplicationInstanceNodeInstances",
+      "UpdateDeviceMetadata"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeApplicationInstance",
-    "DescribeApplicationInstanceDetails",
-    "DescribeDevice",
-    "DescribeDeviceJob",
-    "DescribeNode",
-    "DescribeNodeFromTemplateJob",
-    "DescribePackage",
-    "DescribePackageImportJob",
-    "DescribePackageVersion",
-    "DescribeSoftware",
-    "GetWebSocketURL",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListApplicationInstanceDependencies",
-    "ListApplicationInstanceNodeInstances",
-    "ListApplicationInstances",
-    "ListDevices",
-    "ListDevicesJobs",
-    "ListNodeFromTemplateJobs",
-    "ListNodes",
-    "ListPackageImportJobs",
-    "ListPackages"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeApplicationInstance",
+      "DescribeApplicationInstanceDetails",
+      "DescribeDevice",
+      "DescribeDeviceJob",
+      "DescribeNode",
+      "DescribeNodeFromTemplateJob",
+      "DescribePackage",
+      "DescribePackageImportJob",
+      "DescribePackageVersion",
+      "DescribeSoftware",
+      "GetWebSocketURL",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListApplicationInstanceDependencies",
+      "ListApplicationInstanceNodeInstances",
+      "ListApplicationInstances",
+      "ListDevices",
+      "ListDevicesJobs",
+      "ListNodeFromTemplateJobs",
+      "ListNodes",
+      "ListPackageImportJobs",
+      "ListPackages"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

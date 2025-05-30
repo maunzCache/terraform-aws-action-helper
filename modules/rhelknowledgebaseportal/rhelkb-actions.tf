@@ -61,10 +61,10 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "GetRhelURL"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetRhelURL"
+    ]
+    list    = []
+    tagging = []
   }
 }

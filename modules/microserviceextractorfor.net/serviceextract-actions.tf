@@ -61,10 +61,10 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "GetConfig"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetConfig"
+    ]
+    list    = []
+    tagging = []
   }
 }

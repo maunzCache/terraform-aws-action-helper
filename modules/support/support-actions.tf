@@ -59,41 +59,41 @@ locals {
   prefix = "support"
 
   access_level = {
-    write                  = [
-    "AddAttachmentsToSet",
-    "AddCommunicationToCase",
-    "CreateCase",
-    "InitiateCallForCase",
-    "InitiateChatForCase",
-    "PutCaseAttributes",
-    "RateCaseCommunication",
-    "RefreshTrustedAdvisorCheck",
-    "ResolveCase",
-    "StartInteraction",
-    "UpdateCaseSeverity"
-]
+    write = [
+      "AddAttachmentsToSet",
+      "AddCommunicationToCase",
+      "CreateCase",
+      "InitiateCallForCase",
+      "InitiateChatForCase",
+      "PutCaseAttributes",
+      "RateCaseCommunication",
+      "RefreshTrustedAdvisorCheck",
+      "ResolveCase",
+      "StartInteraction",
+      "UpdateCaseSeverity"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAttachment",
-    "DescribeCaseAttributes",
-    "DescribeCaseOptions",
-    "DescribeCases",
-    "DescribeCommunication",
-    "DescribeCommunications",
-    "DescribeCreateCaseOptions",
-    "DescribeIssueTypes",
-    "DescribeServices",
-    "DescribeSeverityLevels",
-    "DescribeSupportLevel",
-    "DescribeSupportedLanguages",
-    "DescribeTrustedAdvisorCheckRefreshStatuses",
-    "DescribeTrustedAdvisorCheckResult",
-    "DescribeTrustedAdvisorCheckSummaries",
-    "DescribeTrustedAdvisorChecks",
-    "GetInteraction",
-    "SearchForCases"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "DescribeAttachment",
+      "DescribeCaseAttributes",
+      "DescribeCaseOptions",
+      "DescribeCases",
+      "DescribeCommunication",
+      "DescribeCommunications",
+      "DescribeCreateCaseOptions",
+      "DescribeIssueTypes",
+      "DescribeServices",
+      "DescribeSeverityLevels",
+      "DescribeSupportLevel",
+      "DescribeSupportedLanguages",
+      "DescribeTrustedAdvisorCheckRefreshStatuses",
+      "DescribeTrustedAdvisorCheckResult",
+      "DescribeTrustedAdvisorCheckSummaries",
+      "DescribeTrustedAdvisorChecks",
+      "GetInteraction",
+      "SearchForCases"
+    ]
+    list    = []
+    tagging = []
   }
 }

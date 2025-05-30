@@ -59,9 +59,9 @@ locals {
   prefix = "verified-access"
 
   access_level = {
-    write                  = [
-    "AllowVerifiedAccess"
-]
+    write = [
+      "AllowVerifiedAccess"
+    ]
     permissions_management = []
     read                   = []
     list                   = []

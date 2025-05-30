@@ -59,31 +59,31 @@ locals {
   prefix = "cloudhsm"
 
   access_level = {
-    write                  = [
-    "CopyBackupToRegion",
-    "CreateCluster",
-    "CreateHsm",
-    "DeleteBackup",
-    "DeleteCluster",
-    "DeleteHsm",
-    "DeleteResourcePolicy",
-    "InitializeCluster",
-    "ModifyBackupAttributes",
-    "ModifyCluster",
-    "PutResourcePolicy",
-    "RestoreBackup"
-]
+    write = [
+      "CopyBackupToRegion",
+      "CreateCluster",
+      "CreateHsm",
+      "DeleteBackup",
+      "DeleteCluster",
+      "DeleteHsm",
+      "DeleteResourcePolicy",
+      "InitializeCluster",
+      "ModifyBackupAttributes",
+      "ModifyCluster",
+      "PutResourcePolicy",
+      "RestoreBackup"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeBackups",
-    "DescribeClusters",
-    "GetResourcePolicy",
-    "ListTags"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeBackups",
+      "DescribeClusters",
+      "GetResourcePolicy",
+      "ListTags"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

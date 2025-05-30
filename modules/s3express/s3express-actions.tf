@@ -59,35 +59,35 @@ locals {
   prefix = "s3express"
 
   access_level = {
-    write                  = [
-    "CreateAccessPoint",
-    "CreateBucket",
-    "CreateSession",
-    "DeleteAccessPoint",
-    "DeleteBucket",
-    "PutEncryptionConfiguration",
-    "PutLifecycleConfiguration"
-]
+    write = [
+      "CreateAccessPoint",
+      "CreateBucket",
+      "CreateSession",
+      "DeleteAccessPoint",
+      "DeleteBucket",
+      "PutEncryptionConfiguration",
+      "PutLifecycleConfiguration"
+    ]
     permissions_management = [
-    "DeleteAccessPointPolicy",
-    "DeleteAccessPointScope",
-    "DeleteBucketPolicy",
-    "PutAccessPointPolicy",
-    "PutAccessPointScope",
-    "PutBucketPolicy"
-]
-    read                   = [
-    "GetAccessPoint",
-    "GetAccessPointPolicy",
-    "GetAccessPointScope",
-    "GetBucketPolicy",
-    "GetEncryptionConfiguration",
-    "GetLifecycleConfiguration"
-]
-    list                   = [
-    "ListAccessPointsForDirectoryBuckets",
-    "ListAllMyDirectoryBuckets"
-]
-    tagging                = []
+      "DeleteAccessPointPolicy",
+      "DeleteAccessPointScope",
+      "DeleteBucketPolicy",
+      "PutAccessPointPolicy",
+      "PutAccessPointScope",
+      "PutBucketPolicy"
+    ]
+    read = [
+      "GetAccessPoint",
+      "GetAccessPointPolicy",
+      "GetAccessPointScope",
+      "GetBucketPolicy",
+      "GetEncryptionConfiguration",
+      "GetLifecycleConfiguration"
+    ]
+    list = [
+      "ListAccessPointsForDirectoryBuckets",
+      "ListAllMyDirectoryBuckets"
+    ]
+    tagging = []
   }
 }

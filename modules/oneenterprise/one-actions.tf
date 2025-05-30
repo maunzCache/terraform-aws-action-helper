@@ -59,41 +59,41 @@ locals {
   prefix = "one"
 
   access_level = {
-    write                  = [
-    "CreateDeviceActivationQrCode",
-    "CreateDeviceConfigurationTemplate",
-    "CreateDeviceInstance",
-    "CreateDeviceInstanceConfiguration",
-    "CreateSite",
-    "DeleteAssociatedDevice",
-    "DeleteDeviceConfigurationTemplate",
-    "DeleteDeviceInstance",
-    "DeleteSite",
-    "DeleteUserV1",
-    "RebootDevice",
-    "UpdateDeviceConfigurationTemplate",
-    "UpdateDeviceInstance",
-    "UpdateSite",
-    "UpdateSiteAddress"
-]
+    write = [
+      "CreateDeviceActivationQrCode",
+      "CreateDeviceConfigurationTemplate",
+      "CreateDeviceInstance",
+      "CreateDeviceInstanceConfiguration",
+      "CreateSite",
+      "DeleteAssociatedDevice",
+      "DeleteDeviceConfigurationTemplate",
+      "DeleteDeviceInstance",
+      "DeleteSite",
+      "DeleteUserV1",
+      "RebootDevice",
+      "UpdateDeviceConfigurationTemplate",
+      "UpdateDeviceInstance",
+      "UpdateSite",
+      "UpdateSiteAddress"
+    ]
     permissions_management = []
-    read                   = [
-    "GetDeviceConfigurationTemplate",
-    "GetDeviceInstance",
-    "GetDeviceInstanceConfiguration",
-    "GetSite",
-    "GetSiteAddress",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListDeviceConfigurationTemplates",
-    "ListDeviceInstances",
-    "ListSites",
-    "ListUsersV1"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetDeviceConfigurationTemplate",
+      "GetDeviceInstance",
+      "GetDeviceInstanceConfiguration",
+      "GetSite",
+      "GetSiteAddress",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListDeviceConfigurationTemplates",
+      "ListDeviceInstances",
+      "ListSites",
+      "ListUsersV1"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

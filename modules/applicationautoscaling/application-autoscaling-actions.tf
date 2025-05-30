@@ -59,28 +59,28 @@ locals {
   prefix = "application-autoscaling"
 
   access_level = {
-    write                  = [
-    "DeleteScalingPolicy",
-    "DeleteScheduledAction",
-    "DeregisterScalableTarget",
-    "PutScalingPolicy",
-    "PutScheduledAction",
-    "RegisterScalableTarget"
-]
+    write = [
+      "DeleteScalingPolicy",
+      "DeleteScheduledAction",
+      "DeregisterScalableTarget",
+      "PutScalingPolicy",
+      "PutScheduledAction",
+      "RegisterScalableTarget"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeScalableTargets",
-    "DescribeScalingActivities",
-    "DescribeScalingPolicies",
-    "DescribeScheduledActions",
-    "ListTagsForResource"
-]
-    list                   = [
-    "GetPredictiveScalingForecast"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeScalableTargets",
+      "DescribeScalingActivities",
+      "DescribeScalingPolicies",
+      "DescribeScheduledActions",
+      "ListTagsForResource"
+    ]
+    list = [
+      "GetPredictiveScalingForecast"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

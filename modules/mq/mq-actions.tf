@@ -59,39 +59,39 @@ locals {
   prefix = "mq"
 
   access_level = {
-    write                  = [
-    "CreateBroker",
-    "CreateConfiguration",
-    "CreateReplicaBroker",
-    "CreateUser",
-    "DeleteBroker",
-    "DeleteConfiguration",
-    "DeleteUser",
-    "Promote",
-    "RebootBroker",
-    "UpdateBroker",
-    "UpdateConfiguration",
-    "UpdateUser"
-]
+    write = [
+      "CreateBroker",
+      "CreateConfiguration",
+      "CreateReplicaBroker",
+      "CreateUser",
+      "DeleteBroker",
+      "DeleteConfiguration",
+      "DeleteUser",
+      "Promote",
+      "RebootBroker",
+      "UpdateBroker",
+      "UpdateConfiguration",
+      "UpdateUser"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeBroker",
-    "DescribeBrokerEngineTypes",
-    "DescribeBrokerInstanceOptions",
-    "DescribeConfiguration",
-    "DescribeConfigurationRevision",
-    "DescribeUser"
-]
-    list                   = [
-    "ListBrokers",
-    "ListConfigurationRevisions",
-    "ListConfigurations",
-    "ListTags",
-    "ListUsers"
-]
-    tagging                = [
-    "CreateTags",
-    "DeleteTags"
-]
+    read = [
+      "DescribeBroker",
+      "DescribeBrokerEngineTypes",
+      "DescribeBrokerInstanceOptions",
+      "DescribeConfiguration",
+      "DescribeConfigurationRevision",
+      "DescribeUser"
+    ]
+    list = [
+      "ListBrokers",
+      "ListConfigurationRevisions",
+      "ListConfigurations",
+      "ListTags",
+      "ListUsers"
+    ]
+    tagging = [
+      "CreateTags",
+      "DeleteTags"
+    ]
   }
 }

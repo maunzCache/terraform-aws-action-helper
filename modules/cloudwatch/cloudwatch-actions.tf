@@ -59,69 +59,69 @@ locals {
   prefix = "cloudwatch"
 
   access_level = {
-    write                  = [
-    "CreateServiceLevelObjective",
-    "DeleteAlarms",
-    "DeleteAnomalyDetector",
-    "DeleteDashboards",
-    "DeleteInsightRules",
-    "DeleteMetricStream",
-    "DeleteServiceLevelObjective",
-    "DisableAlarmActions",
-    "DisableInsightRules",
-    "EnableAlarmActions",
-    "EnableInsightRules",
-    "EnableTopologyDiscovery",
-    "Link",
-    "PutAnomalyDetector",
-    "PutCompositeAlarm",
-    "PutDashboard",
-    "PutInsightRule",
-    "PutManagedInsightRules",
-    "PutMetricAlarm",
-    "PutMetricData",
-    "PutMetricStream",
-    "SetAlarmState",
-    "StartMetricStreams",
-    "StopMetricStreams",
-    "UpdateServiceLevelObjective"
-]
+    write = [
+      "CreateServiceLevelObjective",
+      "DeleteAlarms",
+      "DeleteAnomalyDetector",
+      "DeleteDashboards",
+      "DeleteInsightRules",
+      "DeleteMetricStream",
+      "DeleteServiceLevelObjective",
+      "DisableAlarmActions",
+      "DisableInsightRules",
+      "EnableAlarmActions",
+      "EnableInsightRules",
+      "EnableTopologyDiscovery",
+      "Link",
+      "PutAnomalyDetector",
+      "PutCompositeAlarm",
+      "PutDashboard",
+      "PutInsightRule",
+      "PutManagedInsightRules",
+      "PutMetricAlarm",
+      "PutMetricData",
+      "PutMetricStream",
+      "SetAlarmState",
+      "StartMetricStreams",
+      "StopMetricStreams",
+      "UpdateServiceLevelObjective"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetServiceLevelIndicatorReport",
-    "BatchGetServiceLevelObjectiveBudgetReport",
-    "DescribeAlarmHistory",
-    "DescribeAlarms",
-    "DescribeAlarmsForMetric",
-    "DescribeAnomalyDetectors",
-    "DescribeInsightRules",
-    "GenerateQuery",
-    "GenerateQueryResultsSummary",
-    "GetDashboard",
-    "GetInsightRuleReport",
-    "GetMetricData",
-    "GetMetricStatistics",
-    "GetMetricStream",
-    "GetMetricWidgetImage",
-    "GetService",
-    "GetServiceData",
-    "GetServiceLevelObjective",
-    "GetTopologyDiscoveryStatus",
-    "GetTopologyMap",
-    "ListManagedInsightRules"
-]
-    list                   = [
-    "ListDashboards",
-    "ListEntitiesForMetric",
-    "ListMetricStreams",
-    "ListMetrics",
-    "ListServiceLevelObjectives",
-    "ListServices",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchGetServiceLevelIndicatorReport",
+      "BatchGetServiceLevelObjectiveBudgetReport",
+      "DescribeAlarmHistory",
+      "DescribeAlarms",
+      "DescribeAlarmsForMetric",
+      "DescribeAnomalyDetectors",
+      "DescribeInsightRules",
+      "GenerateQuery",
+      "GenerateQueryResultsSummary",
+      "GetDashboard",
+      "GetInsightRuleReport",
+      "GetMetricData",
+      "GetMetricStatistics",
+      "GetMetricStream",
+      "GetMetricWidgetImage",
+      "GetService",
+      "GetServiceData",
+      "GetServiceLevelObjective",
+      "GetTopologyDiscoveryStatus",
+      "GetTopologyMap",
+      "ListManagedInsightRules"
+    ]
+    list = [
+      "ListDashboards",
+      "ListEntitiesForMetric",
+      "ListMetricStreams",
+      "ListMetrics",
+      "ListServiceLevelObjectives",
+      "ListServices",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

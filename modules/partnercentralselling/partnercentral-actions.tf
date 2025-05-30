@@ -59,52 +59,52 @@ locals {
   prefix = "partnercentral"
 
   access_level = {
-    write                  = [
-    "AcceptEngagementInvitation",
-    "AssignOpportunity",
-    "AssociateOpportunity",
-    "CreateEngagement",
-    "CreateEngagementInvitation",
-    "CreateOpportunity",
-    "CreateResourceSnapshot",
-    "CreateResourceSnapshotJob",
-    "DeleteResourceSnapshotJob",
-    "DisassociateOpportunity",
-    "PutSellingSystemSettings",
-    "RejectEngagementInvitation",
-    "StartEngagementByAcceptingInvitationTask",
-    "StartEngagementFromOpportunityTask",
-    "StartResourceSnapshotJob",
-    "StopResourceSnapshotJob",
-    "SubmitOpportunity",
-    "UpdateOpportunity"
-]
+    write = [
+      "AcceptEngagementInvitation",
+      "AssignOpportunity",
+      "AssociateOpportunity",
+      "CreateEngagement",
+      "CreateEngagementInvitation",
+      "CreateOpportunity",
+      "CreateResourceSnapshot",
+      "CreateResourceSnapshotJob",
+      "DeleteResourceSnapshotJob",
+      "DisassociateOpportunity",
+      "PutSellingSystemSettings",
+      "RejectEngagementInvitation",
+      "StartEngagementByAcceptingInvitationTask",
+      "StartEngagementFromOpportunityTask",
+      "StartResourceSnapshotJob",
+      "StopResourceSnapshotJob",
+      "SubmitOpportunity",
+      "UpdateOpportunity"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAwsOpportunitySummary",
-    "GetEngagement",
-    "GetEngagementInvitation",
-    "GetOpportunity",
-    "GetResourceSnapshot",
-    "GetResourceSnapshotJob",
-    "GetSellingSystemSettings",
-    "ListEngagementMembers",
-    "ListEngagementResourceAssociations",
-    "ListResourceSnapshots",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListEngagementByAcceptingInvitationTasks",
-    "ListEngagementFromOpportunityTasks",
-    "ListEngagementInvitations",
-    "ListEngagements",
-    "ListOpportunities",
-    "ListResourceSnapshotJobs",
-    "ListSolutions"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetAwsOpportunitySummary",
+      "GetEngagement",
+      "GetEngagementInvitation",
+      "GetOpportunity",
+      "GetResourceSnapshot",
+      "GetResourceSnapshotJob",
+      "GetSellingSystemSettings",
+      "ListEngagementMembers",
+      "ListEngagementResourceAssociations",
+      "ListResourceSnapshots",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListEngagementByAcceptingInvitationTasks",
+      "ListEngagementFromOpportunityTasks",
+      "ListEngagementInvitations",
+      "ListEngagements",
+      "ListOpportunities",
+      "ListResourceSnapshotJobs",
+      "ListSolutions"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

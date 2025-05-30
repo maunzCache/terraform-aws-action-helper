@@ -59,26 +59,26 @@ locals {
   prefix = "networkmonitor"
 
   access_level = {
-    write                  = [
-    "CreateMonitor",
-    "CreateProbe",
-    "DeleteMonitor",
-    "DeleteProbe",
-    "UpdateMonitor",
-    "UpdateProbe"
-]
+    write = [
+      "CreateMonitor",
+      "CreateProbe",
+      "DeleteMonitor",
+      "DeleteProbe",
+      "UpdateMonitor",
+      "UpdateProbe"
+    ]
     permissions_management = []
-    read                   = [
-    "GetMonitor",
-    "GetProbe",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListMonitors"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetMonitor",
+      "GetProbe",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListMonitors"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

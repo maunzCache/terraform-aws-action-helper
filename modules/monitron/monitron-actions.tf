@@ -59,33 +59,33 @@ locals {
   prefix = "monitron"
 
   access_level = {
-    write                  = [
-    "CreateProject",
-    "DeleteProject",
-    "UpdateProject"
-]
+    write = [
+      "CreateProject",
+      "DeleteProject",
+      "UpdateProject"
+    ]
     permissions_management = [
-    "AssociateProjectAdminUser",
-    "CreateProjectUserAssociation",
-    "CreateUserAccessRoleAssociation",
-    "DeleteProjectUserAssociation",
-    "DeleteUserAccessRoleAssociation",
-    "DisassociateProjectAdminUser",
-    "ListProjectAdminUsers"
-]
-    read                   = [
-    "GetProject",
-    "GetProjectAdminUser",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListProjectUserAssociations",
-    "ListProjects",
-    "ListUserAccessRoleAssociations"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "AssociateProjectAdminUser",
+      "CreateProjectUserAssociation",
+      "CreateUserAccessRoleAssociation",
+      "DeleteProjectUserAssociation",
+      "DeleteUserAccessRoleAssociation",
+      "DisassociateProjectAdminUser",
+      "ListProjectAdminUsers"
+    ]
+    read = [
+      "GetProject",
+      "GetProjectAdminUser",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListProjectUserAssociations",
+      "ListProjects",
+      "ListUserAccessRoleAssociations"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

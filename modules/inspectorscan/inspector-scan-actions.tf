@@ -61,10 +61,10 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "ScanSbom"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "ScanSbom"
+    ]
+    list    = []
+    tagging = []
   }
 }

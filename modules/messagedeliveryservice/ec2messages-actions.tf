@@ -59,18 +59,18 @@ locals {
   prefix = "ec2messages"
 
   access_level = {
-    write                  = [
-    "AcknowledgeMessage",
-    "DeleteMessage",
-    "FailMessage",
-    "SendReply"
-]
+    write = [
+      "AcknowledgeMessage",
+      "DeleteMessage",
+      "FailMessage",
+      "SendReply"
+    ]
     permissions_management = []
-    read                   = [
-    "GetEndpoint",
-    "GetMessages"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetEndpoint",
+      "GetMessages"
+    ]
+    list    = []
+    tagging = []
   }
 }

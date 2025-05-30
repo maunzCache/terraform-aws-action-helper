@@ -59,70 +59,70 @@ locals {
   prefix = "globalaccelerator"
 
   access_level = {
-    write                  = [
-    "AddCustomRoutingEndpoints",
-    "AddEndpoints",
-    "AdvertiseByoipCidr",
-    "AllowCustomRoutingTraffic",
-    "CreateAccelerator",
-    "CreateCrossAccountAttachment",
-    "CreateCustomRoutingAccelerator",
-    "CreateCustomRoutingEndpointGroup",
-    "CreateCustomRoutingListener",
-    "CreateEndpointGroup",
-    "CreateListener",
-    "DeleteAccelerator",
-    "DeleteCrossAccountAttachment",
-    "DeleteCustomRoutingAccelerator",
-    "DeleteCustomRoutingEndpointGroup",
-    "DeleteCustomRoutingListener",
-    "DeleteEndpointGroup",
-    "DeleteListener",
-    "DenyCustomRoutingTraffic",
-    "DeprovisionByoipCidr",
-    "ProvisionByoipCidr",
-    "RemoveCustomRoutingEndpoints",
-    "RemoveEndpoints",
-    "UpdateAccelerator",
-    "UpdateAcceleratorAttributes",
-    "UpdateCrossAccountAttachment",
-    "UpdateCustomRoutingAccelerator",
-    "UpdateCustomRoutingAcceleratorAttributes",
-    "UpdateCustomRoutingListener",
-    "UpdateEndpointGroup",
-    "UpdateListener",
-    "WithdrawByoipCidr"
-]
+    write = [
+      "AddCustomRoutingEndpoints",
+      "AddEndpoints",
+      "AdvertiseByoipCidr",
+      "AllowCustomRoutingTraffic",
+      "CreateAccelerator",
+      "CreateCrossAccountAttachment",
+      "CreateCustomRoutingAccelerator",
+      "CreateCustomRoutingEndpointGroup",
+      "CreateCustomRoutingListener",
+      "CreateEndpointGroup",
+      "CreateListener",
+      "DeleteAccelerator",
+      "DeleteCrossAccountAttachment",
+      "DeleteCustomRoutingAccelerator",
+      "DeleteCustomRoutingEndpointGroup",
+      "DeleteCustomRoutingListener",
+      "DeleteEndpointGroup",
+      "DeleteListener",
+      "DenyCustomRoutingTraffic",
+      "DeprovisionByoipCidr",
+      "ProvisionByoipCidr",
+      "RemoveCustomRoutingEndpoints",
+      "RemoveEndpoints",
+      "UpdateAccelerator",
+      "UpdateAcceleratorAttributes",
+      "UpdateCrossAccountAttachment",
+      "UpdateCustomRoutingAccelerator",
+      "UpdateCustomRoutingAcceleratorAttributes",
+      "UpdateCustomRoutingListener",
+      "UpdateEndpointGroup",
+      "UpdateListener",
+      "WithdrawByoipCidr"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAccelerator",
-    "DescribeAcceleratorAttributes",
-    "DescribeCrossAccountAttachment",
-    "DescribeCustomRoutingAccelerator",
-    "DescribeCustomRoutingAcceleratorAttributes",
-    "DescribeCustomRoutingEndpointGroup",
-    "DescribeCustomRoutingListener",
-    "DescribeEndpointGroup",
-    "DescribeListener",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAccelerators",
-    "ListByoipCidrs",
-    "ListCrossAccountAttachments",
-    "ListCrossAccountResourceAccounts",
-    "ListCrossAccountResources",
-    "ListCustomRoutingAccelerators",
-    "ListCustomRoutingEndpointGroups",
-    "ListCustomRoutingListeners",
-    "ListCustomRoutingPortMappings",
-    "ListCustomRoutingPortMappingsByDestination",
-    "ListEndpointGroups",
-    "ListListeners"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeAccelerator",
+      "DescribeAcceleratorAttributes",
+      "DescribeCrossAccountAttachment",
+      "DescribeCustomRoutingAccelerator",
+      "DescribeCustomRoutingAcceleratorAttributes",
+      "DescribeCustomRoutingEndpointGroup",
+      "DescribeCustomRoutingListener",
+      "DescribeEndpointGroup",
+      "DescribeListener",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAccelerators",
+      "ListByoipCidrs",
+      "ListCrossAccountAttachments",
+      "ListCrossAccountResourceAccounts",
+      "ListCrossAccountResources",
+      "ListCustomRoutingAccelerators",
+      "ListCustomRoutingEndpointGroups",
+      "ListCustomRoutingListeners",
+      "ListCustomRoutingPortMappings",
+      "ListCustomRoutingPortMappingsByDestination",
+      "ListEndpointGroups",
+      "ListListeners"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

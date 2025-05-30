@@ -59,73 +59,73 @@ locals {
   prefix = "cleanrooms-ml"
 
   access_level = {
-    write                  = [
-    "CancelTrainedModel",
-    "CancelTrainedModelInferenceJob",
-    "CreateAudienceModel",
-    "CreateConfiguredAudienceModel",
-    "CreateConfiguredModelAlgorithm",
-    "CreateConfiguredModelAlgorithmAssociation",
-    "CreateMLInputChannel",
-    "CreateTrainedModel",
-    "CreateTrainingDataset",
-    "DeleteAudienceGenerationJob",
-    "DeleteAudienceModel",
-    "DeleteConfiguredAudienceModel",
-    "DeleteConfiguredAudienceModelPolicy",
-    "DeleteConfiguredModelAlgorithm",
-    "DeleteConfiguredModelAlgorithmAssociation",
-    "DeleteMLConfiguration",
-    "DeleteMLInputChannelData",
-    "DeleteTrainedModelOutput",
-    "DeleteTrainingDataset",
-    "PutMLConfiguration",
-    "StartAudienceExportJob",
-    "StartAudienceGenerationJob",
-    "StartTrainedModelExportJob",
-    "StartTrainedModelInferenceJob",
-    "UpdateConfiguredAudienceModel"
-]
+    write = [
+      "CancelTrainedModel",
+      "CancelTrainedModelInferenceJob",
+      "CreateAudienceModel",
+      "CreateConfiguredAudienceModel",
+      "CreateConfiguredModelAlgorithm",
+      "CreateConfiguredModelAlgorithmAssociation",
+      "CreateMLInputChannel",
+      "CreateTrainedModel",
+      "CreateTrainingDataset",
+      "DeleteAudienceGenerationJob",
+      "DeleteAudienceModel",
+      "DeleteConfiguredAudienceModel",
+      "DeleteConfiguredAudienceModelPolicy",
+      "DeleteConfiguredModelAlgorithm",
+      "DeleteConfiguredModelAlgorithmAssociation",
+      "DeleteMLConfiguration",
+      "DeleteMLInputChannelData",
+      "DeleteTrainedModelOutput",
+      "DeleteTrainingDataset",
+      "PutMLConfiguration",
+      "StartAudienceExportJob",
+      "StartAudienceGenerationJob",
+      "StartTrainedModelExportJob",
+      "StartTrainedModelInferenceJob",
+      "UpdateConfiguredAudienceModel"
+    ]
     permissions_management = [
-    "PutConfiguredAudienceModelPolicy"
-]
-    read                   = [
-    "GetAudienceGenerationJob",
-    "GetAudienceModel",
-    "GetCollaborationConfiguredModelAlgorithmAssociation",
-    "GetCollaborationMLInputChannel",
-    "GetCollaborationTrainedModel",
-    "GetConfiguredAudienceModel",
-    "GetConfiguredAudienceModelPolicy",
-    "GetConfiguredModelAlgorithm",
-    "GetConfiguredModelAlgorithmAssociation",
-    "GetMLConfiguration",
-    "GetMLInputChannel",
-    "GetTrainedModel",
-    "GetTrainedModelInferenceJob",
-    "GetTrainingDataset"
-]
-    list                   = [
-    "ListAudienceExportJobs",
-    "ListAudienceGenerationJobs",
-    "ListAudienceModels",
-    "ListCollaborationConfiguredModelAlgorithmAssociations",
-    "ListCollaborationMLInputChannels",
-    "ListCollaborationTrainedModelExportJobs",
-    "ListCollaborationTrainedModelInferenceJobs",
-    "ListCollaborationTrainedModels",
-    "ListConfiguredAudienceModels",
-    "ListConfiguredModelAlgorithmAssociations",
-    "ListConfiguredModelAlgorithms",
-    "ListMLInputChannels",
-    "ListTagsForResource",
-    "ListTrainedModelInferenceJobs",
-    "ListTrainedModels",
-    "ListTrainingDatasets"
-]
-    tagging                = [
-    "TagResource",
-    "UnTagResource"
-]
+      "PutConfiguredAudienceModelPolicy"
+    ]
+    read = [
+      "GetAudienceGenerationJob",
+      "GetAudienceModel",
+      "GetCollaborationConfiguredModelAlgorithmAssociation",
+      "GetCollaborationMLInputChannel",
+      "GetCollaborationTrainedModel",
+      "GetConfiguredAudienceModel",
+      "GetConfiguredAudienceModelPolicy",
+      "GetConfiguredModelAlgorithm",
+      "GetConfiguredModelAlgorithmAssociation",
+      "GetMLConfiguration",
+      "GetMLInputChannel",
+      "GetTrainedModel",
+      "GetTrainedModelInferenceJob",
+      "GetTrainingDataset"
+    ]
+    list = [
+      "ListAudienceExportJobs",
+      "ListAudienceGenerationJobs",
+      "ListAudienceModels",
+      "ListCollaborationConfiguredModelAlgorithmAssociations",
+      "ListCollaborationMLInputChannels",
+      "ListCollaborationTrainedModelExportJobs",
+      "ListCollaborationTrainedModelInferenceJobs",
+      "ListCollaborationTrainedModels",
+      "ListConfiguredAudienceModels",
+      "ListConfiguredModelAlgorithmAssociations",
+      "ListConfiguredModelAlgorithms",
+      "ListMLInputChannels",
+      "ListTagsForResource",
+      "ListTrainedModelInferenceJobs",
+      "ListTrainedModels",
+      "ListTrainingDatasets"
+    ]
+    tagging = [
+      "TagResource",
+      "UnTagResource"
+    ]
   }
 }

@@ -59,34 +59,34 @@ locals {
   prefix = "sqs"
 
   access_level = {
-    write                  = [
-    "CancelMessageMoveTask",
-    "ChangeMessageVisibility",
-    "CreateQueue",
-    "DeleteMessage",
-    "DeleteQueue",
-    "PurgeQueue",
-    "SendMessage",
-    "SetQueueAttributes",
-    "StartMessageMoveTask"
-]
+    write = [
+      "CancelMessageMoveTask",
+      "ChangeMessageVisibility",
+      "CreateQueue",
+      "DeleteMessage",
+      "DeleteQueue",
+      "PurgeQueue",
+      "SendMessage",
+      "SetQueueAttributes",
+      "StartMessageMoveTask"
+    ]
     permissions_management = [
-    "AddPermission",
-    "RemovePermission"
-]
-    read                   = [
-    "GetQueueAttributes",
-    "GetQueueUrl",
-    "ListDeadLetterSourceQueues",
-    "ListMessageMoveTasks",
-    "ListQueueTags",
-    "ListQueues",
-    "ReceiveMessage"
-]
-    list                   = []
-    tagging                = [
-    "TagQueue",
-    "UntagQueue"
-]
+      "AddPermission",
+      "RemovePermission"
+    ]
+    read = [
+      "GetQueueAttributes",
+      "GetQueueUrl",
+      "ListDeadLetterSourceQueues",
+      "ListMessageMoveTasks",
+      "ListQueueTags",
+      "ListQueues",
+      "ReceiveMessage"
+    ]
+    list = []
+    tagging = [
+      "TagQueue",
+      "UntagQueue"
+    ]
   }
 }

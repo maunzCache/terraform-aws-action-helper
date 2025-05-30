@@ -59,9 +59,9 @@ locals {
   prefix = "vpce"
 
   access_level = {
-    write                  = [
-    "AllowMultiRegion"
-]
+    write = [
+      "AllowMultiRegion"
+    ]
     permissions_management = []
     read                   = []
     list                   = []

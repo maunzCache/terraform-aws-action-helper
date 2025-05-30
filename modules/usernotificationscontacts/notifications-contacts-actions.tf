@@ -59,23 +59,23 @@ locals {
   prefix = "notifications-contacts"
 
   access_level = {
-    write                  = [
-    "ActivateEmailContact",
-    "CreateEmailContact",
-    "DeleteEmailContact",
-    "SendActivationCode"
-]
+    write = [
+      "ActivateEmailContact",
+      "CreateEmailContact",
+      "DeleteEmailContact",
+      "SendActivationCode"
+    ]
     permissions_management = []
-    read                   = [
-    "GetEmailContact",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListEmailContacts"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetEmailContact",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListEmailContacts"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

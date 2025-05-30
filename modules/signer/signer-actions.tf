@@ -59,34 +59,34 @@ locals {
   prefix = "signer"
 
   access_level = {
-    write                  = [
-    "CancelSigningProfile",
-    "PutSigningProfile",
-    "RevokeSignature",
-    "RevokeSigningProfile",
-    "SignPayload",
-    "StartSigningJob"
-]
+    write = [
+      "CancelSigningProfile",
+      "PutSigningProfile",
+      "RevokeSignature",
+      "RevokeSigningProfile",
+      "SignPayload",
+      "StartSigningJob"
+    ]
     permissions_management = [
-    "AddProfilePermission",
-    "RemoveProfilePermission"
-]
-    read                   = [
-    "DescribeSigningJob",
-    "GetRevocationStatus",
-    "GetSigningPlatform",
-    "GetSigningProfile",
-    "ListProfilePermissions",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListSigningJobs",
-    "ListSigningPlatforms",
-    "ListSigningProfiles"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "AddProfilePermission",
+      "RemoveProfilePermission"
+    ]
+    read = [
+      "DescribeSigningJob",
+      "GetRevocationStatus",
+      "GetSigningPlatform",
+      "GetSigningProfile",
+      "ListProfilePermissions",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListSigningJobs",
+      "ListSigningPlatforms",
+      "ListSigningProfiles"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

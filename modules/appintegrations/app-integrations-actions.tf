@@ -59,42 +59,42 @@ locals {
   prefix = "app-integrations"
 
   access_level = {
-    write                  = [
-    "CreateApplication",
-    "CreateApplicationAssociation",
-    "CreateDataIntegration",
-    "CreateDataIntegrationAssociation",
-    "CreateEventIntegration",
-    "CreateEventIntegrationAssociation",
-    "DeleteApplication",
-    "DeleteApplicationAssociation",
-    "DeleteDataIntegration",
-    "DeleteDataIntegrationAssociation",
-    "DeleteEventIntegration",
-    "DeleteEventIntegrationAssociation",
-    "UpdateApplication",
-    "UpdateDataIntegration",
-    "UpdateDataIntegrationAssociation",
-    "UpdateEventIntegration"
-]
+    write = [
+      "CreateApplication",
+      "CreateApplicationAssociation",
+      "CreateDataIntegration",
+      "CreateDataIntegrationAssociation",
+      "CreateEventIntegration",
+      "CreateEventIntegrationAssociation",
+      "DeleteApplication",
+      "DeleteApplicationAssociation",
+      "DeleteDataIntegration",
+      "DeleteDataIntegrationAssociation",
+      "DeleteEventIntegration",
+      "DeleteEventIntegrationAssociation",
+      "UpdateApplication",
+      "UpdateDataIntegration",
+      "UpdateDataIntegrationAssociation",
+      "UpdateEventIntegration"
+    ]
     permissions_management = []
-    read                   = [
-    "GetApplication",
-    "GetDataIntegration",
-    "GetEventIntegration",
-    "ListEventIntegrationAssociations",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListApplicationAssociations",
-    "ListApplications",
-    "ListDataIntegrationAssociations",
-    "ListDataIntegrations",
-    "ListEventIntegrations"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetApplication",
+      "GetDataIntegration",
+      "GetEventIntegration",
+      "ListEventIntegrationAssociations",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListApplicationAssociations",
+      "ListApplications",
+      "ListDataIntegrationAssociations",
+      "ListDataIntegrations",
+      "ListEventIntegrations"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

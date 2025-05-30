@@ -61,10 +61,10 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "GetCodeGuruFreeTrialSummary"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetCodeGuruFreeTrialSummary"
+    ]
+    list    = []
+    tagging = []
   }
 }

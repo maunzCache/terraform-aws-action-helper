@@ -59,65 +59,65 @@ locals {
   prefix = "elasticloadbalancing"
 
   access_level = {
-    write                  = [
-    "AddListenerCertificates",
-    "AddTrustStoreRevocations",
-    "CreateListener",
-    "CreateLoadBalancer",
-    "CreateRule",
-    "CreateTargetGroup",
-    "CreateTrustStore",
-    "DeleteListener",
-    "DeleteLoadBalancer",
-    "DeleteRule",
-    "DeleteSharedTrustStoreAssociation",
-    "DeleteTargetGroup",
-    "DeleteTrustStore",
-    "DeregisterTargets",
-    "ModifyCapacityReservation",
-    "ModifyIpPools",
-    "ModifyListener",
-    "ModifyListenerAttributes",
-    "ModifyLoadBalancerAttributes",
-    "ModifyRule",
-    "ModifyTargetGroup",
-    "ModifyTargetGroupAttributes",
-    "ModifyTrustStore",
-    "RegisterTargets",
-    "RemoveListenerCertificates",
-    "RemoveTrustStoreRevocations",
-    "SetIpAddressType",
-    "SetRulePriorities",
-    "SetSecurityGroups",
-    "SetSubnets",
-    "SetWebAcl"
-]
+    write = [
+      "AddListenerCertificates",
+      "AddTrustStoreRevocations",
+      "CreateListener",
+      "CreateLoadBalancer",
+      "CreateRule",
+      "CreateTargetGroup",
+      "CreateTrustStore",
+      "DeleteListener",
+      "DeleteLoadBalancer",
+      "DeleteRule",
+      "DeleteSharedTrustStoreAssociation",
+      "DeleteTargetGroup",
+      "DeleteTrustStore",
+      "DeregisterTargets",
+      "ModifyCapacityReservation",
+      "ModifyIpPools",
+      "ModifyListener",
+      "ModifyListenerAttributes",
+      "ModifyLoadBalancerAttributes",
+      "ModifyRule",
+      "ModifyTargetGroup",
+      "ModifyTargetGroupAttributes",
+      "ModifyTrustStore",
+      "RegisterTargets",
+      "RemoveListenerCertificates",
+      "RemoveTrustStoreRevocations",
+      "SetIpAddressType",
+      "SetRulePriorities",
+      "SetSecurityGroups",
+      "SetSubnets",
+      "SetWebAcl"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAccountLimits",
-    "DescribeCapacityReservation",
-    "DescribeListenerAttributes",
-    "DescribeListenerCertificates",
-    "DescribeListeners",
-    "DescribeLoadBalancerAttributes",
-    "DescribeLoadBalancers",
-    "DescribeRules",
-    "DescribeSSLPolicies",
-    "DescribeTags",
-    "DescribeTargetGroupAttributes",
-    "DescribeTargetGroups",
-    "DescribeTargetHealth",
-    "DescribeTrustStoreAssociations",
-    "DescribeTrustStoreRevocations",
-    "DescribeTrustStores",
-    "GetResourcePolicy",
-    "GetTrustStoreCaCertificatesBundle",
-    "GetTrustStoreRevocationContent"
-]
-    list                   = []
-    tagging                = [
-    "AddTags",
-    "RemoveTags"
-]
+    read = [
+      "DescribeAccountLimits",
+      "DescribeCapacityReservation",
+      "DescribeListenerAttributes",
+      "DescribeListenerCertificates",
+      "DescribeListeners",
+      "DescribeLoadBalancerAttributes",
+      "DescribeLoadBalancers",
+      "DescribeRules",
+      "DescribeSSLPolicies",
+      "DescribeTags",
+      "DescribeTargetGroupAttributes",
+      "DescribeTargetGroups",
+      "DescribeTargetHealth",
+      "DescribeTrustStoreAssociations",
+      "DescribeTrustStoreRevocations",
+      "DescribeTrustStores",
+      "GetResourcePolicy",
+      "GetTrustStoreCaCertificatesBundle",
+      "GetTrustStoreRevocationContent"
+    ]
+    list = []
+    tagging = [
+      "AddTags",
+      "RemoveTags"
+    ]
   }
 }

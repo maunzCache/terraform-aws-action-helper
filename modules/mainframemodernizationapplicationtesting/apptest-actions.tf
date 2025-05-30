@@ -59,38 +59,38 @@ locals {
   prefix = "apptest"
 
   access_level = {
-    write                  = [
-    "CreateTestCase",
-    "CreateTestConfiguration",
-    "CreateTestSuite",
-    "DeleteTestCase",
-    "DeleteTestConfiguration",
-    "DeleteTestRun",
-    "DeleteTestSuite",
-    "StartTestRun",
-    "UpdateTestCase",
-    "UpdateTestConfiguration",
-    "UpdateTestSuite"
-]
+    write = [
+      "CreateTestCase",
+      "CreateTestConfiguration",
+      "CreateTestSuite",
+      "DeleteTestCase",
+      "DeleteTestConfiguration",
+      "DeleteTestRun",
+      "DeleteTestSuite",
+      "StartTestRun",
+      "UpdateTestCase",
+      "UpdateTestConfiguration",
+      "UpdateTestSuite"
+    ]
     permissions_management = []
-    read                   = [
-    "GetTestCase",
-    "GetTestConfiguration",
-    "GetTestRunStep",
-    "GetTestSuite",
-    "ListTagsForResource",
-    "ListTestRunSteps",
-    "ListTestRunTestCases"
-]
-    list                   = [
-    "ListTestCases",
-    "ListTestConfigurations",
-    "ListTestRuns",
-    "ListTestSuites"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetTestCase",
+      "GetTestConfiguration",
+      "GetTestRunStep",
+      "GetTestSuite",
+      "ListTagsForResource",
+      "ListTestRunSteps",
+      "ListTestRunTestCases"
+    ]
+    list = [
+      "ListTestCases",
+      "ListTestConfigurations",
+      "ListTestRuns",
+      "ListTestSuites"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

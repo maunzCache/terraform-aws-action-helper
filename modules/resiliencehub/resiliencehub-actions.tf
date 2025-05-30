@@ -59,77 +59,77 @@ locals {
   prefix = "resiliencehub"
 
   access_level = {
-    write                  = [
-    "AcceptResourceGroupingRecommendations",
-    "AddDraftAppVersionResourceMappings",
-    "BatchUpdateRecommendationStatus",
-    "CreateApp",
-    "CreateAppVersionAppComponent",
-    "CreateAppVersionResource",
-    "CreateRecommendationTemplate",
-    "CreateResiliencyPolicy",
-    "DeleteApp",
-    "DeleteAppAssessment",
-    "DeleteAppInputSource",
-    "DeleteAppVersionAppComponent",
-    "DeleteAppVersionResource",
-    "DeleteRecommendationTemplate",
-    "DeleteResiliencyPolicy",
-    "ImportResourcesToDraftAppVersion",
-    "PublishAppVersion",
-    "PutDraftAppVersionTemplate",
-    "RejectResourceGroupingRecommendations",
-    "RemoveDraftAppVersionResourceMappings",
-    "ResolveAppVersionResources",
-    "StartAppAssessment",
-    "StartMetricsExport",
-    "StartResourceGroupingRecommendationTask",
-    "UpdateApp",
-    "UpdateAppVersion",
-    "UpdateAppVersionAppComponent",
-    "UpdateAppVersionResource",
-    "UpdateResiliencyPolicy"
-]
+    write = [
+      "AcceptResourceGroupingRecommendations",
+      "AddDraftAppVersionResourceMappings",
+      "BatchUpdateRecommendationStatus",
+      "CreateApp",
+      "CreateAppVersionAppComponent",
+      "CreateAppVersionResource",
+      "CreateRecommendationTemplate",
+      "CreateResiliencyPolicy",
+      "DeleteApp",
+      "DeleteAppAssessment",
+      "DeleteAppInputSource",
+      "DeleteAppVersionAppComponent",
+      "DeleteAppVersionResource",
+      "DeleteRecommendationTemplate",
+      "DeleteResiliencyPolicy",
+      "ImportResourcesToDraftAppVersion",
+      "PublishAppVersion",
+      "PutDraftAppVersionTemplate",
+      "RejectResourceGroupingRecommendations",
+      "RemoveDraftAppVersionResourceMappings",
+      "ResolveAppVersionResources",
+      "StartAppAssessment",
+      "StartMetricsExport",
+      "StartResourceGroupingRecommendationTask",
+      "UpdateApp",
+      "UpdateAppVersion",
+      "UpdateAppVersionAppComponent",
+      "UpdateAppVersionResource",
+      "UpdateResiliencyPolicy"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeApp",
-    "DescribeAppAssessment",
-    "DescribeAppVersion",
-    "DescribeAppVersionAppComponent",
-    "DescribeAppVersionResource",
-    "DescribeAppVersionResourcesResolutionStatus",
-    "DescribeAppVersionTemplate",
-    "DescribeDraftAppVersionResourcesImportStatus",
-    "DescribeMetricsExport",
-    "DescribeResiliencyPolicy",
-    "DescribeResourceGroupingRecommendationTask",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAlarmRecommendations",
-    "ListAppAssessmentComplianceDrifts",
-    "ListAppAssessmentResourceDrifts",
-    "ListAppAssessments",
-    "ListAppComponentCompliances",
-    "ListAppComponentRecommendations",
-    "ListAppInputSources",
-    "ListAppVersionAppComponents",
-    "ListAppVersionResourceMappings",
-    "ListAppVersionResources",
-    "ListAppVersions",
-    "ListApps",
-    "ListMetrics",
-    "ListRecommendationTemplates",
-    "ListResiliencyPolicies",
-    "ListResourceGroupingRecommendations",
-    "ListSopRecommendations",
-    "ListSuggestedResiliencyPolicies",
-    "ListTestRecommendations",
-    "ListUnsupportedAppVersionResources"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeApp",
+      "DescribeAppAssessment",
+      "DescribeAppVersion",
+      "DescribeAppVersionAppComponent",
+      "DescribeAppVersionResource",
+      "DescribeAppVersionResourcesResolutionStatus",
+      "DescribeAppVersionTemplate",
+      "DescribeDraftAppVersionResourcesImportStatus",
+      "DescribeMetricsExport",
+      "DescribeResiliencyPolicy",
+      "DescribeResourceGroupingRecommendationTask",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAlarmRecommendations",
+      "ListAppAssessmentComplianceDrifts",
+      "ListAppAssessmentResourceDrifts",
+      "ListAppAssessments",
+      "ListAppComponentCompliances",
+      "ListAppComponentRecommendations",
+      "ListAppInputSources",
+      "ListAppVersionAppComponents",
+      "ListAppVersionResourceMappings",
+      "ListAppVersionResources",
+      "ListAppVersions",
+      "ListApps",
+      "ListMetrics",
+      "ListRecommendationTemplates",
+      "ListResiliencyPolicies",
+      "ListResourceGroupingRecommendations",
+      "ListSopRecommendations",
+      "ListSuggestedResiliencyPolicies",
+      "ListTestRecommendations",
+      "ListUnsupportedAppVersionResources"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,45 +59,45 @@ locals {
   prefix = "voiceid"
 
   access_level = {
-    write                  = [
-    "AssociateFraudster",
-    "CreateDomain",
-    "CreateWatchlist",
-    "DeleteDomain",
-    "DeleteFraudster",
-    "DeleteSpeaker",
-    "DeleteWatchlist",
-    "DisassociateFraudster",
-    "EvaluateSession",
-    "OptOutSpeaker",
-    "RegisterComplianceConsent",
-    "StartFraudsterRegistrationJob",
-    "StartSpeakerEnrollmentJob",
-    "UpdateDomain",
-    "UpdateWatchlist"
-]
+    write = [
+      "AssociateFraudster",
+      "CreateDomain",
+      "CreateWatchlist",
+      "DeleteDomain",
+      "DeleteFraudster",
+      "DeleteSpeaker",
+      "DeleteWatchlist",
+      "DisassociateFraudster",
+      "EvaluateSession",
+      "OptOutSpeaker",
+      "RegisterComplianceConsent",
+      "StartFraudsterRegistrationJob",
+      "StartSpeakerEnrollmentJob",
+      "UpdateDomain",
+      "UpdateWatchlist"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeComplianceConsent",
-    "DescribeDomain",
-    "DescribeFraudster",
-    "DescribeFraudsterRegistrationJob",
-    "DescribeSpeaker",
-    "DescribeSpeakerEnrollmentJob",
-    "DescribeWatchlist",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListDomains",
-    "ListFraudsterRegistrationJobs",
-    "ListFraudsters",
-    "ListSpeakerEnrollmentJobs",
-    "ListSpeakers",
-    "ListWatchlists"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeComplianceConsent",
+      "DescribeDomain",
+      "DescribeFraudster",
+      "DescribeFraudsterRegistrationJob",
+      "DescribeSpeaker",
+      "DescribeSpeakerEnrollmentJob",
+      "DescribeWatchlist",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListDomains",
+      "ListFraudsterRegistrationJobs",
+      "ListFraudsters",
+      "ListSpeakerEnrollmentJobs",
+      "ListSpeakers",
+      "ListWatchlists"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

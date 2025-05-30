@@ -61,14 +61,14 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "CalculateIsolines",
-    "CalculateRouteMatrix",
-    "CalculateRoutes",
-    "OptimizeWaypoints",
-    "SnapToRoads"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "CalculateIsolines",
+      "CalculateRouteMatrix",
+      "CalculateRoutes",
+      "OptimizeWaypoints",
+      "SnapToRoads"
+    ]
+    list    = []
+    tagging = []
   }
 }

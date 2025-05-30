@@ -59,33 +59,33 @@ locals {
   prefix = "translate"
 
   access_level = {
-    write                  = [
-    "CreateParallelData",
-    "DeleteParallelData",
-    "DeleteTerminology",
-    "ImportTerminology",
-    "StartTextTranslationJob",
-    "StopTextTranslationJob",
-    "UpdateParallelData"
-]
+    write = [
+      "CreateParallelData",
+      "DeleteParallelData",
+      "DeleteTerminology",
+      "ImportTerminology",
+      "StartTextTranslationJob",
+      "StopTextTranslationJob",
+      "UpdateParallelData"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeTextTranslationJob",
-    "GetParallelData",
-    "GetTerminology",
-    "ListTagsForResource",
-    "TranslateDocument",
-    "TranslateText"
-]
-    list                   = [
-    "ListLanguages",
-    "ListParallelData",
-    "ListTerminologies",
-    "ListTextTranslationJobs"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeTextTranslationJob",
+      "GetParallelData",
+      "GetTerminology",
+      "ListTagsForResource",
+      "TranslateDocument",
+      "TranslateText"
+    ]
+    list = [
+      "ListLanguages",
+      "ListParallelData",
+      "ListTerminologies",
+      "ListTextTranslationJobs"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

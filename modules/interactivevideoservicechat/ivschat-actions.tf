@@ -59,31 +59,31 @@ locals {
   prefix = "ivschat"
 
   access_level = {
-    write                  = [
-    "CreateChatToken",
-    "CreateLoggingConfiguration",
-    "CreateRoom",
-    "DeleteLoggingConfiguration",
-    "DeleteMessage",
-    "DeleteRoom",
-    "DisconnectUser",
-    "SendEvent",
-    "UpdateLoggingConfiguration",
-    "UpdateRoom"
-]
+    write = [
+      "CreateChatToken",
+      "CreateLoggingConfiguration",
+      "CreateRoom",
+      "DeleteLoggingConfiguration",
+      "DeleteMessage",
+      "DeleteRoom",
+      "DisconnectUser",
+      "SendEvent",
+      "UpdateLoggingConfiguration",
+      "UpdateRoom"
+    ]
     permissions_management = []
-    read                   = [
-    "GetLoggingConfiguration",
-    "GetRoom",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListLoggingConfigurations",
-    "ListRooms"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetLoggingConfiguration",
+      "GetRoom",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListLoggingConfigurations",
+      "ListRooms"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

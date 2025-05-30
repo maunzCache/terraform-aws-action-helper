@@ -59,48 +59,48 @@ locals {
   prefix = "glacier"
 
   access_level = {
-    write                  = [
-    "AbortMultipartUpload",
-    "CompleteMultipartUpload",
-    "CreateVault",
-    "DeleteArchive",
-    "DeleteVault",
-    "DeleteVaultNotifications",
-    "InitiateJob",
-    "InitiateMultipartUpload",
-    "PurchaseProvisionedCapacity",
-    "SetVaultNotifications",
-    "UploadArchive",
-    "UploadMultipartPart"
-]
+    write = [
+      "AbortMultipartUpload",
+      "CompleteMultipartUpload",
+      "CreateVault",
+      "DeleteArchive",
+      "DeleteVault",
+      "DeleteVaultNotifications",
+      "InitiateJob",
+      "InitiateMultipartUpload",
+      "PurchaseProvisionedCapacity",
+      "SetVaultNotifications",
+      "UploadArchive",
+      "UploadMultipartPart"
+    ]
     permissions_management = [
-    "AbortVaultLock",
-    "CompleteVaultLock",
-    "DeleteVaultAccessPolicy",
-    "InitiateVaultLock",
-    "SetDataRetrievalPolicy",
-    "SetVaultAccessPolicy"
-]
-    read                   = [
-    "DescribeJob",
-    "DescribeVault",
-    "GetDataRetrievalPolicy",
-    "GetJobOutput",
-    "GetVaultAccessPolicy",
-    "GetVaultLock",
-    "GetVaultNotifications"
-]
-    list                   = [
-    "ListJobs",
-    "ListMultipartUploads",
-    "ListParts",
-    "ListProvisionedCapacity",
-    "ListTagsForVault",
-    "ListVaults"
-]
-    tagging                = [
-    "AddTagsToVault",
-    "RemoveTagsFromVault"
-]
+      "AbortVaultLock",
+      "CompleteVaultLock",
+      "DeleteVaultAccessPolicy",
+      "InitiateVaultLock",
+      "SetDataRetrievalPolicy",
+      "SetVaultAccessPolicy"
+    ]
+    read = [
+      "DescribeJob",
+      "DescribeVault",
+      "GetDataRetrievalPolicy",
+      "GetJobOutput",
+      "GetVaultAccessPolicy",
+      "GetVaultLock",
+      "GetVaultNotifications"
+    ]
+    list = [
+      "ListJobs",
+      "ListMultipartUploads",
+      "ListParts",
+      "ListProvisionedCapacity",
+      "ListTagsForVault",
+      "ListVaults"
+    ]
+    tagging = [
+      "AddTagsToVault",
+      "RemoveTagsFromVault"
+    ]
   }
 }

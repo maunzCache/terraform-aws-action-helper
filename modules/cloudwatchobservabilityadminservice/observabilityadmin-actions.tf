@@ -59,20 +59,20 @@ locals {
   prefix = "observabilityadmin"
 
   access_level = {
-    write                  = [
-    "StartTelemetryEvaluation",
-    "StartTelemetryEvaluationForOrganization",
-    "StopTelemetryEvaluation",
-    "StopTelemetryEvaluationForOrganization"
-]
+    write = [
+      "StartTelemetryEvaluation",
+      "StartTelemetryEvaluationForOrganization",
+      "StopTelemetryEvaluation",
+      "StopTelemetryEvaluationForOrganization"
+    ]
     permissions_management = []
-    read                   = [
-    "GetTelemetryEvaluationStatus",
-    "GetTelemetryEvaluationStatusForOrganization",
-    "ListResourceTelemetry",
-    "ListResourceTelemetryForOrganization"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetTelemetryEvaluationStatus",
+      "GetTelemetryEvaluationStatusForOrganization",
+      "ListResourceTelemetry",
+      "ListResourceTelemetryForOrganization"
+    ]
+    list    = []
+    tagging = []
   }
 }

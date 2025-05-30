@@ -59,50 +59,50 @@ locals {
   prefix = "connect-campaigns"
 
   access_level = {
-    write                  = [
-    "CreateCampaign",
-    "DeleteCampaign",
-    "DeleteCampaignChannelSubtypeConfig",
-    "DeleteCampaignCommunicationLimits",
-    "DeleteCampaignCommunicationTime",
-    "DeleteConnectInstanceConfig",
-    "DeleteConnectInstanceIntegration",
-    "DeleteInstanceOnboardingJob",
-    "PauseCampaign",
-    "PutConnectInstanceIntegration",
-    "PutDialRequestBatch",
-    "PutOutboundRequestBatch",
-    "PutProfileOutboundRequestBatch",
-    "ResumeCampaign",
-    "StartCampaign",
-    "StartInstanceOnboardingJob",
-    "StopCampaign",
-    "UpdateCampaignChannelSubtypeConfig",
-    "UpdateCampaignCommunicationLimits",
-    "UpdateCampaignCommunicationTime",
-    "UpdateCampaignDialerConfig",
-    "UpdateCampaignFlowAssociation",
-    "UpdateCampaignName",
-    "UpdateCampaignOutboundCallConfig",
-    "UpdateCampaignSchedule",
-    "UpdateCampaignSource"
-]
+    write = [
+      "CreateCampaign",
+      "DeleteCampaign",
+      "DeleteCampaignChannelSubtypeConfig",
+      "DeleteCampaignCommunicationLimits",
+      "DeleteCampaignCommunicationTime",
+      "DeleteConnectInstanceConfig",
+      "DeleteConnectInstanceIntegration",
+      "DeleteInstanceOnboardingJob",
+      "PauseCampaign",
+      "PutConnectInstanceIntegration",
+      "PutDialRequestBatch",
+      "PutOutboundRequestBatch",
+      "PutProfileOutboundRequestBatch",
+      "ResumeCampaign",
+      "StartCampaign",
+      "StartInstanceOnboardingJob",
+      "StopCampaign",
+      "UpdateCampaignChannelSubtypeConfig",
+      "UpdateCampaignCommunicationLimits",
+      "UpdateCampaignCommunicationTime",
+      "UpdateCampaignDialerConfig",
+      "UpdateCampaignFlowAssociation",
+      "UpdateCampaignName",
+      "UpdateCampaignOutboundCallConfig",
+      "UpdateCampaignSchedule",
+      "UpdateCampaignSource"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeCampaign",
-    "GetCampaignState",
-    "GetCampaignStateBatch",
-    "GetConnectInstanceConfig",
-    "GetInstanceOnboardingJobStatus",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListCampaigns",
-    "ListConnectInstanceIntegrations"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeCampaign",
+      "GetCampaignState",
+      "GetCampaignStateBatch",
+      "GetConnectInstanceConfig",
+      "GetInstanceOnboardingJobStatus",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListCampaigns",
+      "ListConnectInstanceIntegrations"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

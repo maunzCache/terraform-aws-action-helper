@@ -59,18 +59,18 @@ locals {
   prefix = "user-subscriptions"
 
   access_level = {
-    write                  = [
-    "CreateClaim",
-    "DeleteClaim",
-    "UpdateClaim"
-]
+    write = [
+      "CreateClaim",
+      "DeleteClaim",
+      "UpdateClaim"
+    ]
     permissions_management = []
     read                   = []
-    list                   = [
-    "ListApplicationClaims",
-    "ListClaims",
-    "ListUserSubscriptions"
-]
-    tagging                = []
+    list = [
+      "ListApplicationClaims",
+      "ListClaims",
+      "ListUserSubscriptions"
+    ]
+    tagging = []
   }
 }

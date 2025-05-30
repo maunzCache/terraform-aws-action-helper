@@ -59,47 +59,47 @@ locals {
   prefix = "cloudsearch"
 
   access_level = {
-    write                  = [
-    "BuildSuggesters",
-    "CreateDomain",
-    "DefineAnalysisScheme",
-    "DefineExpression",
-    "DefineIndexField",
-    "DefineSuggester",
-    "DeleteAnalysisScheme",
-    "DeleteDomain",
-    "DeleteExpression",
-    "DeleteIndexField",
-    "DeleteSuggester",
-    "IndexDocuments",
-    "UpdateAvailabilityOptions",
-    "UpdateDomainEndpointOptions",
-    "UpdateScalingParameters",
-    "document"
-]
+    write = [
+      "BuildSuggesters",
+      "CreateDomain",
+      "DefineAnalysisScheme",
+      "DefineExpression",
+      "DefineIndexField",
+      "DefineSuggester",
+      "DeleteAnalysisScheme",
+      "DeleteDomain",
+      "DeleteExpression",
+      "DeleteIndexField",
+      "DeleteSuggester",
+      "IndexDocuments",
+      "UpdateAvailabilityOptions",
+      "UpdateDomainEndpointOptions",
+      "UpdateScalingParameters",
+      "document"
+    ]
     permissions_management = [
-    "UpdateServiceAccessPolicies"
-]
-    read                   = [
-    "DescribeAnalysisSchemes",
-    "DescribeAvailabilityOptions",
-    "DescribeDomainEndpointOptions",
-    "DescribeExpressions",
-    "DescribeIndexFields",
-    "DescribeScalingParameters",
-    "DescribeServiceAccessPolicies",
-    "DescribeSuggesters",
-    "ListTags",
-    "search",
-    "suggest"
-]
-    list                   = [
-    "DescribeDomains",
-    "ListDomainNames"
-]
-    tagging                = [
-    "AddTags",
-    "RemoveTags"
-]
+      "UpdateServiceAccessPolicies"
+    ]
+    read = [
+      "DescribeAnalysisSchemes",
+      "DescribeAvailabilityOptions",
+      "DescribeDomainEndpointOptions",
+      "DescribeExpressions",
+      "DescribeIndexFields",
+      "DescribeScalingParameters",
+      "DescribeServiceAccessPolicies",
+      "DescribeSuggesters",
+      "ListTags",
+      "search",
+      "suggest"
+    ]
+    list = [
+      "DescribeDomains",
+      "ListDomainNames"
+    ]
+    tagging = [
+      "AddTags",
+      "RemoveTags"
+    ]
   }
 }

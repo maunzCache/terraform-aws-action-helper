@@ -59,26 +59,26 @@ locals {
   prefix = "apigateway"
 
   access_level = {
-    write                  = [
-    "DELETE",
-    "PATCH",
-    "POST",
-    "PUT"
-]
+    write = [
+      "DELETE",
+      "PATCH",
+      "POST",
+      "PUT"
+    ]
     permissions_management = [
-    "AddCertificateToDomain",
-    "CreateAccessAssociation",
-    "RejectAccessAssociation",
-    "RemoveCertificateFromDomain",
-    "SetWebACL",
-    "UpdateDomainNameManagementPolicy",
-    "UpdateDomainNamePolicy",
-    "UpdateRestApiPolicy"
-]
-    read                   = [
-    "GET"
-]
-    list                   = []
-    tagging                = []
+      "AddCertificateToDomain",
+      "CreateAccessAssociation",
+      "RejectAccessAssociation",
+      "RemoveCertificateFromDomain",
+      "SetWebACL",
+      "UpdateDomainNameManagementPolicy",
+      "UpdateDomainNamePolicy",
+      "UpdateRestApiPolicy"
+    ]
+    read = [
+      "GET"
+    ]
+    list    = []
+    tagging = []
   }
 }

@@ -59,15 +59,15 @@ locals {
   prefix = "aws-marketplace"
 
   access_level = {
-    write                  = [
-    "StartBuild"
-]
+    write = [
+      "StartBuild"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeBuilds",
-    "ListBuilds"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "DescribeBuilds",
+      "ListBuilds"
+    ]
+    list    = []
+    tagging = []
   }
 }

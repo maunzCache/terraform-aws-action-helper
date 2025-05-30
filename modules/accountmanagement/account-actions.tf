@@ -59,28 +59,28 @@ locals {
   prefix = "account"
 
   access_level = {
-    write                  = [
-    "AcceptPrimaryEmailUpdate",
-    "CloseAccount",
-    "DeleteAlternateContact",
-    "DisableRegion",
-    "EnableRegion",
-    "PutAccountName",
-    "PutAlternateContact",
-    "PutContactInformation",
-    "StartPrimaryEmailUpdate"
-]
+    write = [
+      "AcceptPrimaryEmailUpdate",
+      "CloseAccount",
+      "DeleteAlternateContact",
+      "DisableRegion",
+      "EnableRegion",
+      "PutAccountName",
+      "PutAlternateContact",
+      "PutContactInformation",
+      "StartPrimaryEmailUpdate"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAccountInformation",
-    "GetAlternateContact",
-    "GetContactInformation",
-    "GetPrimaryEmail",
-    "GetRegionOptStatus"
-]
-    list                   = [
-    "ListRegions"
-]
-    tagging                = []
+    read = [
+      "GetAccountInformation",
+      "GetAlternateContact",
+      "GetContactInformation",
+      "GetPrimaryEmail",
+      "GetRegionOptStatus"
+    ]
+    list = [
+      "ListRegions"
+    ]
+    tagging = []
   }
 }

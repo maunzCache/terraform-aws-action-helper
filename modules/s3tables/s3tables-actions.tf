@@ -59,47 +59,47 @@ locals {
   prefix = "s3tables"
 
   access_level = {
-    write                  = [
-    "CreateNamespace",
-    "CreateTable",
-    "CreateTableBucket",
-    "DeleteNamespace",
-    "DeleteTable",
-    "DeleteTableBucket",
-    "DeleteTableBucketEncryption",
-    "PutTableBucketEncryption",
-    "PutTableBucketMaintenanceConfiguration",
-    "PutTableData",
-    "PutTableEncryption",
-    "PutTableMaintenanceConfiguration",
-    "RenameTable",
-    "UpdateTableMetadataLocation"
-]
+    write = [
+      "CreateNamespace",
+      "CreateTable",
+      "CreateTableBucket",
+      "DeleteNamespace",
+      "DeleteTable",
+      "DeleteTableBucket",
+      "DeleteTableBucketEncryption",
+      "PutTableBucketEncryption",
+      "PutTableBucketMaintenanceConfiguration",
+      "PutTableData",
+      "PutTableEncryption",
+      "PutTableMaintenanceConfiguration",
+      "RenameTable",
+      "UpdateTableMetadataLocation"
+    ]
     permissions_management = [
-    "DeleteTableBucketPolicy",
-    "DeleteTablePolicy",
-    "PutTableBucketPolicy",
-    "PutTablePolicy"
-]
-    read                   = [
-    "GetNamespace",
-    "GetTable",
-    "GetTableBucket",
-    "GetTableBucketEncryption",
-    "GetTableBucketMaintenanceConfiguration",
-    "GetTableBucketPolicy",
-    "GetTableData",
-    "GetTableEncryption",
-    "GetTableMaintenanceConfiguration",
-    "GetTableMaintenanceJobStatus",
-    "GetTableMetadataLocation",
-    "GetTablePolicy"
-]
-    list                   = [
-    "ListNamespaces",
-    "ListTableBuckets",
-    "ListTables"
-]
-    tagging                = []
+      "DeleteTableBucketPolicy",
+      "DeleteTablePolicy",
+      "PutTableBucketPolicy",
+      "PutTablePolicy"
+    ]
+    read = [
+      "GetNamespace",
+      "GetTable",
+      "GetTableBucket",
+      "GetTableBucketEncryption",
+      "GetTableBucketMaintenanceConfiguration",
+      "GetTableBucketPolicy",
+      "GetTableData",
+      "GetTableEncryption",
+      "GetTableMaintenanceConfiguration",
+      "GetTableMaintenanceJobStatus",
+      "GetTableMetadataLocation",
+      "GetTablePolicy"
+    ]
+    list = [
+      "ListNamespaces",
+      "ListTableBuckets",
+      "ListTables"
+    ]
+    tagging = []
   }
 }

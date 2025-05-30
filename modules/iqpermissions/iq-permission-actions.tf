@@ -59,21 +59,21 @@ locals {
   prefix = "iq-permission"
 
   access_level = {
-    write                  = [
-    "ApproveAccessGrant",
-    "ApprovePermissionRequest",
-    "AssumePermissionRole",
-    "CreatePermissionRequest",
-    "RejectPermissionRequest",
-    "RevokePermissionRequest",
-    "WithdrawPermissionRequest"
-]
+    write = [
+      "ApproveAccessGrant",
+      "ApprovePermissionRequest",
+      "AssumePermissionRole",
+      "CreatePermissionRequest",
+      "RejectPermissionRequest",
+      "RevokePermissionRequest",
+      "WithdrawPermissionRequest"
+    ]
     permissions_management = []
-    read                   = [
-    "GetPermissionRequest",
-    "ListPermissionRequests"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetPermissionRequest",
+      "ListPermissionRequests"
+    ]
+    list    = []
+    tagging = []
   }
 }

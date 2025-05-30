@@ -59,43 +59,43 @@ locals {
   prefix = "healthlake"
 
   access_level = {
-    write                  = [
-    "CancelFHIRExportJobWithDelete",
-    "CreateFHIRDatastore",
-    "CreateResource",
-    "DeleteFHIRDatastore",
-    "DeleteResource",
-    "ProcessBundle",
-    "StartFHIRExportJob",
-    "StartFHIRExportJobWithGet",
-    "StartFHIRExportJobWithPost",
-    "StartFHIRImportJob",
-    "UpdateResource"
-]
+    write = [
+      "CancelFHIRExportJobWithDelete",
+      "CreateFHIRDatastore",
+      "CreateResource",
+      "DeleteFHIRDatastore",
+      "DeleteResource",
+      "ProcessBundle",
+      "StartFHIRExportJob",
+      "StartFHIRExportJobWithGet",
+      "StartFHIRExportJobWithPost",
+      "StartFHIRImportJob",
+      "UpdateResource"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeFHIRDatastore",
-    "DescribeFHIRExportJob",
-    "DescribeFHIRExportJobWithGet",
-    "DescribeFHIRImportJob",
-    "GetCapabilities",
-    "GetExportedFile",
-    "GetHistoryByResourceId",
-    "ReadResource",
-    "SearchEverything",
-    "SearchWithGet",
-    "SearchWithPost",
-    "VersionReadResource"
-]
-    list                   = [
-    "ListFHIRDatastores",
-    "ListFHIRExportJobs",
-    "ListFHIRImportJobs",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeFHIRDatastore",
+      "DescribeFHIRExportJob",
+      "DescribeFHIRExportJobWithGet",
+      "DescribeFHIRImportJob",
+      "GetCapabilities",
+      "GetExportedFile",
+      "GetHistoryByResourceId",
+      "ReadResource",
+      "SearchEverything",
+      "SearchWithGet",
+      "SearchWithPost",
+      "VersionReadResource"
+    ]
+    list = [
+      "ListFHIRDatastores",
+      "ListFHIRExportJobs",
+      "ListFHIRImportJobs",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

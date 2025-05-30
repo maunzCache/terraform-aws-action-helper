@@ -59,28 +59,28 @@ locals {
   prefix = "iotdeviceadvisor"
 
   access_level = {
-    write                  = [
-    "CreateSuiteDefinition",
-    "DeleteSuiteDefinition",
-    "StartSuiteRun",
-    "StopSuiteRun",
-    "UpdateSuiteDefinition"
-]
+    write = [
+      "CreateSuiteDefinition",
+      "DeleteSuiteDefinition",
+      "StartSuiteRun",
+      "StopSuiteRun",
+      "UpdateSuiteDefinition"
+    ]
     permissions_management = []
-    read                   = [
-    "GetEndpoint",
-    "GetSuiteDefinition",
-    "GetSuiteRun",
-    "GetSuiteRunReport",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListSuiteDefinitions",
-    "ListSuiteRuns"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetEndpoint",
+      "GetSuiteDefinition",
+      "GetSuiteRun",
+      "GetSuiteRunReport",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListSuiteDefinitions",
+      "ListSuiteRuns"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

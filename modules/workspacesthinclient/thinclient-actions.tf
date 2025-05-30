@@ -59,32 +59,32 @@ locals {
   prefix = "thinclient"
 
   access_level = {
-    write                  = [
-    "CreateEnvironment",
-    "DeleteDevice",
-    "DeleteEnvironment",
-    "DeregisterDevice",
-    "UpdateDevice",
-    "UpdateEnvironment",
-    "UpdateSoftwareSet"
-]
+    write = [
+      "CreateEnvironment",
+      "DeleteDevice",
+      "DeleteEnvironment",
+      "DeregisterDevice",
+      "UpdateDevice",
+      "UpdateEnvironment",
+      "UpdateSoftwareSet"
+    ]
     permissions_management = []
-    read                   = [
-    "GetDevice",
-    "GetDeviceDetails",
-    "GetEnvironment",
-    "GetSoftwareSet"
-]
-    list                   = [
-    "ListDeviceSessions",
-    "ListDevices",
-    "ListEnvironments",
-    "ListSoftwareSets",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetDevice",
+      "GetDeviceDetails",
+      "GetEnvironment",
+      "GetSoftwareSet"
+    ]
+    list = [
+      "ListDeviceSessions",
+      "ListDevices",
+      "ListEnvironments",
+      "ListSoftwareSets",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

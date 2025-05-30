@@ -59,46 +59,46 @@ locals {
   prefix = "neptune-db"
 
   access_level = {
-    write                  = [
-    "CancelLoaderJob",
-    "CancelMLDataProcessingJob",
-    "CancelMLModelTrainingJob",
-    "CancelMLModelTransformJob",
-    "CancelQuery",
-    "CreateMLEndpoint",
-    "DeleteDataViaQuery",
-    "DeleteMLEndpoint",
-    "DeleteStatistics",
-    "ManageStatistics",
-    "ResetDatabase",
-    "StartLoaderJob",
-    "StartMLDataProcessingJob",
-    "StartMLModelTrainingJob",
-    "StartMLModelTransformJob",
-    "WriteDataViaQuery",
-    "connect"
-]
+    write = [
+      "CancelLoaderJob",
+      "CancelMLDataProcessingJob",
+      "CancelMLModelTrainingJob",
+      "CancelMLModelTransformJob",
+      "CancelQuery",
+      "CreateMLEndpoint",
+      "DeleteDataViaQuery",
+      "DeleteMLEndpoint",
+      "DeleteStatistics",
+      "ManageStatistics",
+      "ResetDatabase",
+      "StartLoaderJob",
+      "StartMLDataProcessingJob",
+      "StartMLModelTrainingJob",
+      "StartMLModelTransformJob",
+      "WriteDataViaQuery",
+      "connect"
+    ]
     permissions_management = []
-    read                   = [
-    "GetEngineStatus",
-    "GetGraphSummary",
-    "GetLoaderJobStatus",
-    "GetMLDataProcessingJobStatus",
-    "GetMLEndpointStatus",
-    "GetMLModelTrainingJobStatus",
-    "GetMLModelTransformJobStatus",
-    "GetQueryStatus",
-    "GetStatisticsStatus",
-    "GetStreamRecords",
-    "ReadDataViaQuery"
-]
-    list                   = [
-    "ListLoaderJobs",
-    "ListMLDataProcessingJobs",
-    "ListMLEndpoints",
-    "ListMLModelTrainingJobs",
-    "ListMLModelTransformJobs"
-]
-    tagging                = []
+    read = [
+      "GetEngineStatus",
+      "GetGraphSummary",
+      "GetLoaderJobStatus",
+      "GetMLDataProcessingJobStatus",
+      "GetMLEndpointStatus",
+      "GetMLModelTrainingJobStatus",
+      "GetMLModelTransformJobStatus",
+      "GetQueryStatus",
+      "GetStatisticsStatus",
+      "GetStreamRecords",
+      "ReadDataViaQuery"
+    ]
+    list = [
+      "ListLoaderJobs",
+      "ListMLDataProcessingJobs",
+      "ListMLEndpoints",
+      "ListMLModelTrainingJobs",
+      "ListMLModelTransformJobs"
+    ]
+    tagging = []
   }
 }

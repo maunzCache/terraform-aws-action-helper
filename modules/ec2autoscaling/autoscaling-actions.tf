@@ -59,79 +59,79 @@ locals {
   prefix = "autoscaling"
 
   access_level = {
-    write                  = [
-    "AttachInstances",
-    "AttachLoadBalancerTargetGroups",
-    "AttachLoadBalancers",
-    "AttachTrafficSources",
-    "BatchDeleteScheduledAction",
-    "BatchPutScheduledUpdateGroupAction",
-    "CancelInstanceRefresh",
-    "CompleteLifecycleAction",
-    "CreateAutoScalingGroup",
-    "CreateLaunchConfiguration",
-    "DeleteAutoScalingGroup",
-    "DeleteLaunchConfiguration",
-    "DeleteLifecycleHook",
-    "DeleteNotificationConfiguration",
-    "DeletePolicy",
-    "DeleteScheduledAction",
-    "DeleteWarmPool",
-    "DetachInstances",
-    "DetachLoadBalancerTargetGroups",
-    "DetachLoadBalancers",
-    "DetachTrafficSources",
-    "DisableMetricsCollection",
-    "EnableMetricsCollection",
-    "EnterStandby",
-    "ExecutePolicy",
-    "ExitStandby",
-    "PutLifecycleHook",
-    "PutNotificationConfiguration",
-    "PutScalingPolicy",
-    "PutScheduledUpdateGroupAction",
-    "PutWarmPool",
-    "RecordLifecycleActionHeartbeat",
-    "ResumeProcesses",
-    "RollbackInstanceRefresh",
-    "SetDesiredCapacity",
-    "SetInstanceHealth",
-    "SetInstanceProtection",
-    "StartInstanceRefresh",
-    "SuspendProcesses",
-    "TerminateInstanceInAutoScalingGroup",
-    "UpdateAutoScalingGroup"
-]
+    write = [
+      "AttachInstances",
+      "AttachLoadBalancerTargetGroups",
+      "AttachLoadBalancers",
+      "AttachTrafficSources",
+      "BatchDeleteScheduledAction",
+      "BatchPutScheduledUpdateGroupAction",
+      "CancelInstanceRefresh",
+      "CompleteLifecycleAction",
+      "CreateAutoScalingGroup",
+      "CreateLaunchConfiguration",
+      "DeleteAutoScalingGroup",
+      "DeleteLaunchConfiguration",
+      "DeleteLifecycleHook",
+      "DeleteNotificationConfiguration",
+      "DeletePolicy",
+      "DeleteScheduledAction",
+      "DeleteWarmPool",
+      "DetachInstances",
+      "DetachLoadBalancerTargetGroups",
+      "DetachLoadBalancers",
+      "DetachTrafficSources",
+      "DisableMetricsCollection",
+      "EnableMetricsCollection",
+      "EnterStandby",
+      "ExecutePolicy",
+      "ExitStandby",
+      "PutLifecycleHook",
+      "PutNotificationConfiguration",
+      "PutScalingPolicy",
+      "PutScheduledUpdateGroupAction",
+      "PutWarmPool",
+      "RecordLifecycleActionHeartbeat",
+      "ResumeProcesses",
+      "RollbackInstanceRefresh",
+      "SetDesiredCapacity",
+      "SetInstanceHealth",
+      "SetInstanceProtection",
+      "StartInstanceRefresh",
+      "SuspendProcesses",
+      "TerminateInstanceInAutoScalingGroup",
+      "UpdateAutoScalingGroup"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeTags"
-]
-    list                   = [
-    "DescribeAccountLimits",
-    "DescribeAdjustmentTypes",
-    "DescribeAutoScalingGroups",
-    "DescribeAutoScalingInstances",
-    "DescribeAutoScalingNotificationTypes",
-    "DescribeInstanceRefreshes",
-    "DescribeLaunchConfigurations",
-    "DescribeLifecycleHookTypes",
-    "DescribeLifecycleHooks",
-    "DescribeLoadBalancerTargetGroups",
-    "DescribeLoadBalancers",
-    "DescribeMetricCollectionTypes",
-    "DescribeNotificationConfigurations",
-    "DescribePolicies",
-    "DescribeScalingActivities",
-    "DescribeScalingProcessTypes",
-    "DescribeScheduledActions",
-    "DescribeTerminationPolicyTypes",
-    "DescribeTrafficSources",
-    "DescribeWarmPool",
-    "GetPredictiveScalingForecast"
-]
-    tagging                = [
-    "CreateOrUpdateTags",
-    "DeleteTags"
-]
+    read = [
+      "DescribeTags"
+    ]
+    list = [
+      "DescribeAccountLimits",
+      "DescribeAdjustmentTypes",
+      "DescribeAutoScalingGroups",
+      "DescribeAutoScalingInstances",
+      "DescribeAutoScalingNotificationTypes",
+      "DescribeInstanceRefreshes",
+      "DescribeLaunchConfigurations",
+      "DescribeLifecycleHookTypes",
+      "DescribeLifecycleHooks",
+      "DescribeLoadBalancerTargetGroups",
+      "DescribeLoadBalancers",
+      "DescribeMetricCollectionTypes",
+      "DescribeNotificationConfigurations",
+      "DescribePolicies",
+      "DescribeScalingActivities",
+      "DescribeScalingProcessTypes",
+      "DescribeScheduledActions",
+      "DescribeTerminationPolicyTypes",
+      "DescribeTrafficSources",
+      "DescribeWarmPool",
+      "GetPredictiveScalingForecast"
+    ]
+    tagging = [
+      "CreateOrUpdateTags",
+      "DeleteTags"
+    ]
   }
 }

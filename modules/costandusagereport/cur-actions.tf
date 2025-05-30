@@ -59,25 +59,25 @@ locals {
   prefix = "cur"
 
   access_level = {
-    write                  = [
-    "DeleteReportDefinition",
-    "ModifyReportDefinition",
-    "PutClassicReportPreferences",
-    "PutReportDefinition"
-]
+    write = [
+      "DeleteReportDefinition",
+      "ModifyReportDefinition",
+      "PutClassicReportPreferences",
+      "PutReportDefinition"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeReportDefinitions",
-    "GetClassicReport",
-    "GetClassicReportPreferences",
-    "GetUsageReport",
-    "ListTagsForResource",
-    "ValidateReportDestination"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeReportDefinitions",
+      "GetClassicReport",
+      "GetClassicReportPreferences",
+      "GetUsageReport",
+      "ListTagsForResource",
+      "ValidateReportDestination"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

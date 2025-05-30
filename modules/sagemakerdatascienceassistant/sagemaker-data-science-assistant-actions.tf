@@ -59,9 +59,9 @@ locals {
   prefix = "sagemaker-data-science-assistant"
 
   access_level = {
-    write                  = [
-    "SendConversation"
-]
+    write = [
+      "SendConversation"
+    ]
     permissions_management = []
     read                   = []
     list                   = []

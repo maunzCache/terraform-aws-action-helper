@@ -59,14 +59,14 @@ locals {
   prefix = "rds-data"
 
   access_level = {
-    write                  = [
-    "BatchExecuteStatement",
-    "BeginTransaction",
-    "CommitTransaction",
-    "ExecuteSql",
-    "ExecuteStatement",
-    "RollbackTransaction"
-]
+    write = [
+      "BatchExecuteStatement",
+      "BeginTransaction",
+      "CommitTransaction",
+      "ExecuteSql",
+      "ExecuteStatement",
+      "RollbackTransaction"
+    ]
     permissions_management = []
     read                   = []
     list                   = []

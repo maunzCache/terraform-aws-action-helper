@@ -59,83 +59,83 @@ locals {
   prefix = "route53resolver"
 
   access_level = {
-    write                  = [
-    "AssociateFirewallRuleGroup",
-    "AssociateResolverEndpointIpAddress",
-    "AssociateResolverQueryLogConfig",
-    "AssociateResolverRule",
-    "CreateFirewallDomainList",
-    "CreateFirewallRule",
-    "CreateFirewallRuleGroup",
-    "CreateOutpostResolver",
-    "CreateResolverEndpoint",
-    "CreateResolverQueryLogConfig",
-    "CreateResolverRule",
-    "DeleteFirewallDomainList",
-    "DeleteFirewallRule",
-    "DeleteFirewallRuleGroup",
-    "DeleteOutpostResolver",
-    "DeleteResolverEndpoint",
-    "DeleteResolverQueryLogConfig",
-    "DeleteResolverRule",
-    "DisassociateFirewallRuleGroup",
-    "DisassociateResolverEndpointIpAddress",
-    "DisassociateResolverQueryLogConfig",
-    "DisassociateResolverRule",
-    "ImportFirewallDomains",
-    "UpdateFirewallConfig",
-    "UpdateFirewallDomains",
-    "UpdateFirewallRule",
-    "UpdateFirewallRuleGroupAssociation",
-    "UpdateOutpostResolver",
-    "UpdateResolverConfig",
-    "UpdateResolverDnssecConfig",
-    "UpdateResolverEndpoint",
-    "UpdateResolverRule"
-]
+    write = [
+      "AssociateFirewallRuleGroup",
+      "AssociateResolverEndpointIpAddress",
+      "AssociateResolverQueryLogConfig",
+      "AssociateResolverRule",
+      "CreateFirewallDomainList",
+      "CreateFirewallRule",
+      "CreateFirewallRuleGroup",
+      "CreateOutpostResolver",
+      "CreateResolverEndpoint",
+      "CreateResolverQueryLogConfig",
+      "CreateResolverRule",
+      "DeleteFirewallDomainList",
+      "DeleteFirewallRule",
+      "DeleteFirewallRuleGroup",
+      "DeleteOutpostResolver",
+      "DeleteResolverEndpoint",
+      "DeleteResolverQueryLogConfig",
+      "DeleteResolverRule",
+      "DisassociateFirewallRuleGroup",
+      "DisassociateResolverEndpointIpAddress",
+      "DisassociateResolverQueryLogConfig",
+      "DisassociateResolverRule",
+      "ImportFirewallDomains",
+      "UpdateFirewallConfig",
+      "UpdateFirewallDomains",
+      "UpdateFirewallRule",
+      "UpdateFirewallRuleGroupAssociation",
+      "UpdateOutpostResolver",
+      "UpdateResolverConfig",
+      "UpdateResolverDnssecConfig",
+      "UpdateResolverEndpoint",
+      "UpdateResolverRule"
+    ]
     permissions_management = [
-    "PutFirewallRuleGroupPolicy",
-    "PutResolverQueryLogConfigPolicy",
-    "PutResolverRulePolicy"
-]
-    read                   = [
-    "GetFirewallConfig",
-    "GetFirewallDomainList",
-    "GetFirewallRuleGroup",
-    "GetFirewallRuleGroupAssociation",
-    "GetFirewallRuleGroupPolicy",
-    "GetOutpostResolver",
-    "GetResolverConfig",
-    "GetResolverDnssecConfig",
-    "GetResolverEndpoint",
-    "GetResolverQueryLogConfig",
-    "GetResolverQueryLogConfigAssociation",
-    "GetResolverQueryLogConfigPolicy",
-    "GetResolverRule",
-    "GetResolverRuleAssociation",
-    "GetResolverRulePolicy",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListFirewallConfigs",
-    "ListFirewallDomainLists",
-    "ListFirewallDomains",
-    "ListFirewallRuleGroupAssociations",
-    "ListFirewallRuleGroups",
-    "ListFirewallRules",
-    "ListOutpostResolvers",
-    "ListResolverConfigs",
-    "ListResolverDnssecConfigs",
-    "ListResolverEndpointIpAddresses",
-    "ListResolverEndpoints",
-    "ListResolverQueryLogConfigAssociations",
-    "ListResolverQueryLogConfigs",
-    "ListResolverRuleAssociations",
-    "ListResolverRules"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "PutFirewallRuleGroupPolicy",
+      "PutResolverQueryLogConfigPolicy",
+      "PutResolverRulePolicy"
+    ]
+    read = [
+      "GetFirewallConfig",
+      "GetFirewallDomainList",
+      "GetFirewallRuleGroup",
+      "GetFirewallRuleGroupAssociation",
+      "GetFirewallRuleGroupPolicy",
+      "GetOutpostResolver",
+      "GetResolverConfig",
+      "GetResolverDnssecConfig",
+      "GetResolverEndpoint",
+      "GetResolverQueryLogConfig",
+      "GetResolverQueryLogConfigAssociation",
+      "GetResolverQueryLogConfigPolicy",
+      "GetResolverRule",
+      "GetResolverRuleAssociation",
+      "GetResolverRulePolicy",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListFirewallConfigs",
+      "ListFirewallDomainLists",
+      "ListFirewallDomains",
+      "ListFirewallRuleGroupAssociations",
+      "ListFirewallRuleGroups",
+      "ListFirewallRules",
+      "ListOutpostResolvers",
+      "ListResolverConfigs",
+      "ListResolverDnssecConfigs",
+      "ListResolverEndpointIpAddresses",
+      "ListResolverEndpoints",
+      "ListResolverQueryLogConfigAssociations",
+      "ListResolverQueryLogConfigs",
+      "ListResolverRuleAssociations",
+      "ListResolverRules"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

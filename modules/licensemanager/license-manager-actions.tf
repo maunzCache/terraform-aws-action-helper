@@ -59,65 +59,65 @@ locals {
   prefix = "license-manager"
 
   access_level = {
-    write                  = [
-    "AcceptGrant",
-    "CheckInLicense",
-    "CheckoutBorrowLicense",
-    "CheckoutLicense",
-    "CreateGrant",
-    "CreateGrantVersion",
-    "CreateLicense",
-    "CreateLicenseConfiguration",
-    "CreateLicenseConversionTaskForResource",
-    "CreateLicenseManagerReportGenerator",
-    "CreateLicenseVersion",
-    "CreateToken",
-    "DeleteGrant",
-    "DeleteLicense",
-    "DeleteLicenseConfiguration",
-    "DeleteLicenseManagerReportGenerator",
-    "DeleteToken",
-    "ExtendLicenseConsumption",
-    "RejectGrant",
-    "UpdateLicenseConfiguration",
-    "UpdateLicenseManagerReportGenerator",
-    "UpdateLicenseSpecificationsForResource"
-]
+    write = [
+      "AcceptGrant",
+      "CheckInLicense",
+      "CheckoutBorrowLicense",
+      "CheckoutLicense",
+      "CreateGrant",
+      "CreateGrantVersion",
+      "CreateLicense",
+      "CreateLicenseConfiguration",
+      "CreateLicenseConversionTaskForResource",
+      "CreateLicenseManagerReportGenerator",
+      "CreateLicenseVersion",
+      "CreateToken",
+      "DeleteGrant",
+      "DeleteLicense",
+      "DeleteLicenseConfiguration",
+      "DeleteLicenseManagerReportGenerator",
+      "DeleteToken",
+      "ExtendLicenseConsumption",
+      "RejectGrant",
+      "UpdateLicenseConfiguration",
+      "UpdateLicenseManagerReportGenerator",
+      "UpdateLicenseSpecificationsForResource"
+    ]
     permissions_management = [
-    "UpdateServiceSettings"
-]
-    read                   = [
-    "GetAccessToken",
-    "GetGrant",
-    "GetLicense",
-    "GetLicenseConfiguration",
-    "GetLicenseConversionTask",
-    "GetLicenseManagerReportGenerator",
-    "GetLicenseUsage",
-    "ListLicenseConfigurations",
-    "ListLicenses",
-    "ListTagsForResource"
-]
-    list                   = [
-    "GetServiceSettings",
-    "ListAssociationsForLicenseConfiguration",
-    "ListDistributedGrants",
-    "ListFailuresForLicenseConfigurationOperations",
-    "ListLicenseConversionTasks",
-    "ListLicenseManagerReportGenerators",
-    "ListLicenseSpecificationsForResource",
-    "ListLicenseVersions",
-    "ListReceivedGrants",
-    "ListReceivedGrantsForOrganization",
-    "ListReceivedLicenses",
-    "ListReceivedLicensesForOrganization",
-    "ListResourceInventory",
-    "ListTokens",
-    "ListUsageForLicenseConfiguration"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "UpdateServiceSettings"
+    ]
+    read = [
+      "GetAccessToken",
+      "GetGrant",
+      "GetLicense",
+      "GetLicenseConfiguration",
+      "GetLicenseConversionTask",
+      "GetLicenseManagerReportGenerator",
+      "GetLicenseUsage",
+      "ListLicenseConfigurations",
+      "ListLicenses",
+      "ListTagsForResource"
+    ]
+    list = [
+      "GetServiceSettings",
+      "ListAssociationsForLicenseConfiguration",
+      "ListDistributedGrants",
+      "ListFailuresForLicenseConfigurationOperations",
+      "ListLicenseConversionTasks",
+      "ListLicenseManagerReportGenerators",
+      "ListLicenseSpecificationsForResource",
+      "ListLicenseVersions",
+      "ListReceivedGrants",
+      "ListReceivedGrantsForOrganization",
+      "ListReceivedLicenses",
+      "ListReceivedLicensesForOrganization",
+      "ListResourceInventory",
+      "ListTokens",
+      "ListUsageForLicenseConfiguration"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

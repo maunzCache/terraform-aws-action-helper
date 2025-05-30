@@ -59,38 +59,38 @@ locals {
   prefix = "gameliftstreams"
 
   access_level = {
-    write                  = [
-    "AddStreamGroupLocations",
-    "AssociateApplications",
-    "CreateApplication",
-    "CreateStreamGroup",
-    "CreateStreamSessionConnection",
-    "DeleteApplication",
-    "DeleteStreamGroup",
-    "DisassociateApplications",
-    "ExportStreamSessionFiles",
-    "RemoveStreamGroupLocations",
-    "StartStreamSession",
-    "TerminateStreamSession",
-    "UpdateApplication",
-    "UpdateStreamGroup"
-]
+    write = [
+      "AddStreamGroupLocations",
+      "AssociateApplications",
+      "CreateApplication",
+      "CreateStreamGroup",
+      "CreateStreamSessionConnection",
+      "DeleteApplication",
+      "DeleteStreamGroup",
+      "DisassociateApplications",
+      "ExportStreamSessionFiles",
+      "RemoveStreamGroupLocations",
+      "StartStreamSession",
+      "TerminateStreamSession",
+      "UpdateApplication",
+      "UpdateStreamGroup"
+    ]
     permissions_management = []
-    read                   = [
-    "GetApplication",
-    "GetStreamGroup",
-    "GetStreamSession",
-    "ListStreamSessions",
-    "ListStreamSessionsByAccount",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListApplications",
-    "ListStreamGroups"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetApplication",
+      "GetStreamGroup",
+      "GetStreamSession",
+      "ListStreamSessions",
+      "ListStreamSessionsByAccount",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListApplications",
+      "ListStreamGroups"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

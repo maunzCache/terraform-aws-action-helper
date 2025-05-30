@@ -59,27 +59,27 @@ locals {
   prefix = "pi"
 
   access_level = {
-    write                  = [
-    "CreatePerformanceAnalysisReport",
-    "DeletePerformanceAnalysisReport"
-]
+    write = [
+      "CreatePerformanceAnalysisReport",
+      "DeletePerformanceAnalysisReport"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeDimensionKeys",
-    "GetDimensionKeyDetails",
-    "GetPerformanceAnalysisReport",
-    "GetResourceMetadata",
-    "GetResourceMetrics",
-    "ListAvailableResourceDimensions",
-    "ListAvailableResourceMetrics"
-]
-    list                   = [
-    "ListPerformanceAnalysisReports",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeDimensionKeys",
+      "GetDimensionKeyDetails",
+      "GetPerformanceAnalysisReport",
+      "GetResourceMetadata",
+      "GetResourceMetrics",
+      "ListAvailableResourceDimensions",
+      "ListAvailableResourceMetrics"
+    ]
+    list = [
+      "ListPerformanceAnalysisReports",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

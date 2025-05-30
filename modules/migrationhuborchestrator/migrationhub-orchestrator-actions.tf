@@ -59,48 +59,48 @@ locals {
   prefix = "migrationhub-orchestrator"
 
   access_level = {
-    write                  = [
-    "CreateTemplate",
-    "CreateWorkflow",
-    "CreateWorkflowStep",
-    "CreateWorkflowStepGroup",
-    "DeleteTemplate",
-    "DeleteWorkflow",
-    "DeleteWorkflowStep",
-    "DeleteWorkflowStepGroup",
-    "RegisterPlugin",
-    "RetryWorkflowStep",
-    "SendMessage",
-    "StartWorkflow",
-    "StopWorkflow",
-    "UpdateTemplate",
-    "UpdateWorkflow",
-    "UpdateWorkflowStep",
-    "UpdateWorkflowStepGroup"
-]
+    write = [
+      "CreateTemplate",
+      "CreateWorkflow",
+      "CreateWorkflowStep",
+      "CreateWorkflowStepGroup",
+      "DeleteTemplate",
+      "DeleteWorkflow",
+      "DeleteWorkflowStep",
+      "DeleteWorkflowStepGroup",
+      "RegisterPlugin",
+      "RetryWorkflowStep",
+      "SendMessage",
+      "StartWorkflow",
+      "StopWorkflow",
+      "UpdateTemplate",
+      "UpdateWorkflow",
+      "UpdateWorkflowStep",
+      "UpdateWorkflowStepGroup"
+    ]
     permissions_management = []
-    read                   = [
-    "GetMessage",
-    "GetTemplate",
-    "GetTemplateStep",
-    "GetTemplateStepGroup",
-    "GetWorkflow",
-    "GetWorkflowStep",
-    "GetWorkflowStepGroup",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListPlugins",
-    "ListTemplateStepGroups",
-    "ListTemplateSteps",
-    "ListTemplates",
-    "ListWorkflowStepGroups",
-    "ListWorkflowSteps",
-    "ListWorkflows"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetMessage",
+      "GetTemplate",
+      "GetTemplateStep",
+      "GetTemplateStepGroup",
+      "GetWorkflow",
+      "GetWorkflowStep",
+      "GetWorkflowStepGroup",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListPlugins",
+      "ListTemplateStepGroups",
+      "ListTemplateSteps",
+      "ListTemplates",
+      "ListWorkflowStepGroups",
+      "ListWorkflowSteps",
+      "ListWorkflows"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

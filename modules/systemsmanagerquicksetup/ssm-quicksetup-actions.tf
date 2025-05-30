@@ -59,28 +59,28 @@ locals {
   prefix = "ssm-quicksetup"
 
   access_level = {
-    write                  = [
-    "CreateConfigurationManager",
-    "DeleteConfigurationManager",
-    "UpdateConfigurationDefinition",
-    "UpdateConfigurationManager",
-    "UpdateServiceSettings"
-]
+    write = [
+      "CreateConfigurationManager",
+      "DeleteConfigurationManager",
+      "UpdateConfigurationDefinition",
+      "UpdateConfigurationManager",
+      "UpdateServiceSettings"
+    ]
     permissions_management = []
-    read                   = [
-    "GetConfiguration",
-    "GetConfigurationManager",
-    "GetServiceSettings",
-    "ListQuickSetupTypes",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListConfigurationManagers",
-    "ListConfigurations"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetConfiguration",
+      "GetConfigurationManager",
+      "GetServiceSettings",
+      "ListQuickSetupTypes",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListConfigurationManagers",
+      "ListConfigurations"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,73 +59,73 @@ locals {
   prefix = "robomaker"
 
   access_level = {
-    write                  = [
-    "BatchDeleteWorlds",
-    "CancelDeploymentJob",
-    "CancelSimulationJob",
-    "CancelSimulationJobBatch",
-    "CancelWorldExportJob",
-    "CancelWorldGenerationJob",
-    "CreateDeploymentJob",
-    "CreateFleet",
-    "CreateRobot",
-    "CreateRobotApplication",
-    "CreateRobotApplicationVersion",
-    "CreateSimulationApplication",
-    "CreateSimulationApplicationVersion",
-    "CreateSimulationJob",
-    "CreateWorldExportJob",
-    "CreateWorldGenerationJob",
-    "CreateWorldTemplate",
-    "DeleteFleet",
-    "DeleteRobot",
-    "DeleteRobotApplication",
-    "DeleteSimulationApplication",
-    "DeleteWorldTemplate",
-    "DeregisterRobot",
-    "RegisterRobot",
-    "RestartSimulationJob",
-    "StartSimulationJobBatch",
-    "SyncDeploymentJob",
-    "UpdateRobotApplication",
-    "UpdateRobotDeployment",
-    "UpdateSimulationApplication",
-    "UpdateWorldTemplate"
-]
+    write = [
+      "BatchDeleteWorlds",
+      "CancelDeploymentJob",
+      "CancelSimulationJob",
+      "CancelSimulationJobBatch",
+      "CancelWorldExportJob",
+      "CancelWorldGenerationJob",
+      "CreateDeploymentJob",
+      "CreateFleet",
+      "CreateRobot",
+      "CreateRobotApplication",
+      "CreateRobotApplicationVersion",
+      "CreateSimulationApplication",
+      "CreateSimulationApplicationVersion",
+      "CreateSimulationJob",
+      "CreateWorldExportJob",
+      "CreateWorldGenerationJob",
+      "CreateWorldTemplate",
+      "DeleteFleet",
+      "DeleteRobot",
+      "DeleteRobotApplication",
+      "DeleteSimulationApplication",
+      "DeleteWorldTemplate",
+      "DeregisterRobot",
+      "RegisterRobot",
+      "RestartSimulationJob",
+      "StartSimulationJobBatch",
+      "SyncDeploymentJob",
+      "UpdateRobotApplication",
+      "UpdateRobotDeployment",
+      "UpdateSimulationApplication",
+      "UpdateWorldTemplate"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchDescribeSimulationJob",
-    "DescribeDeploymentJob",
-    "DescribeFleet",
-    "DescribeRobot",
-    "DescribeRobotApplication",
-    "DescribeSimulationApplication",
-    "DescribeSimulationJob",
-    "DescribeSimulationJobBatch",
-    "DescribeWorld",
-    "DescribeWorldExportJob",
-    "DescribeWorldGenerationJob",
-    "DescribeWorldTemplate",
-    "GetWorldTemplateBody"
-]
-    list                   = [
-    "ListDeploymentJobs",
-    "ListFleets",
-    "ListRobotApplications",
-    "ListRobots",
-    "ListSimulationApplications",
-    "ListSimulationJobBatches",
-    "ListSimulationJobs",
-    "ListSupportedAvailabilityZones",
-    "ListTagsForResource",
-    "ListWorldExportJobs",
-    "ListWorldGenerationJobs",
-    "ListWorldTemplates",
-    "ListWorlds"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchDescribeSimulationJob",
+      "DescribeDeploymentJob",
+      "DescribeFleet",
+      "DescribeRobot",
+      "DescribeRobotApplication",
+      "DescribeSimulationApplication",
+      "DescribeSimulationJob",
+      "DescribeSimulationJobBatch",
+      "DescribeWorld",
+      "DescribeWorldExportJob",
+      "DescribeWorldGenerationJob",
+      "DescribeWorldTemplate",
+      "GetWorldTemplateBody"
+    ]
+    list = [
+      "ListDeploymentJobs",
+      "ListFleets",
+      "ListRobotApplications",
+      "ListRobots",
+      "ListSimulationApplications",
+      "ListSimulationJobBatches",
+      "ListSimulationJobs",
+      "ListSupportedAvailabilityZones",
+      "ListTagsForResource",
+      "ListWorldExportJobs",
+      "ListWorldGenerationJobs",
+      "ListWorldTemplates",
+      "ListWorlds"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

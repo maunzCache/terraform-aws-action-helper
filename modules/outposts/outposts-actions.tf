@@ -59,49 +59,49 @@ locals {
   prefix = "outposts"
 
   access_level = {
-    write                  = [
-    "CancelCapacityTask",
-    "CancelOrder",
-    "CreateOrder",
-    "CreateOutpost",
-    "CreatePrivateConnectivityConfig",
-    "CreateSite",
-    "DeleteOutpost",
-    "DeleteSite",
-    "StartCapacityTask",
-    "StartConnection",
-    "UpdateOutpost",
-    "UpdateSite",
-    "UpdateSiteAddress",
-    "UpdateSiteRackPhysicalProperties"
-]
+    write = [
+      "CancelCapacityTask",
+      "CancelOrder",
+      "CreateOrder",
+      "CreateOutpost",
+      "CreatePrivateConnectivityConfig",
+      "CreateSite",
+      "DeleteOutpost",
+      "DeleteSite",
+      "StartCapacityTask",
+      "StartConnection",
+      "UpdateOutpost",
+      "UpdateSite",
+      "UpdateSiteAddress",
+      "UpdateSiteRackPhysicalProperties"
+    ]
     permissions_management = []
-    read                   = [
-    "GetCapacityTask",
-    "GetCatalogItem",
-    "GetConnection",
-    "GetOrder",
-    "GetOutpost",
-    "GetOutpostInstanceTypes",
-    "GetOutpostSupportedInstanceTypes",
-    "GetPrivateConnectivityConfig",
-    "GetSite",
-    "GetSiteAddress",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAssetInstances",
-    "ListAssets",
-    "ListBlockingInstancesForCapacityTask",
-    "ListCapacityTasks",
-    "ListCatalogItems",
-    "ListOrders",
-    "ListOutposts",
-    "ListSites"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetCapacityTask",
+      "GetCatalogItem",
+      "GetConnection",
+      "GetOrder",
+      "GetOutpost",
+      "GetOutpostInstanceTypes",
+      "GetOutpostSupportedInstanceTypes",
+      "GetPrivateConnectivityConfig",
+      "GetSite",
+      "GetSiteAddress",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAssetInstances",
+      "ListAssets",
+      "ListBlockingInstancesForCapacityTask",
+      "ListCapacityTasks",
+      "ListCatalogItems",
+      "ListOrders",
+      "ListOutposts",
+      "ListSites"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

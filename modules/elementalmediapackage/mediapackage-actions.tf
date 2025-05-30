@@ -59,32 +59,32 @@ locals {
   prefix = "mediapackage"
 
   access_level = {
-    write                  = [
-    "ConfigureLogs",
-    "CreateChannel",
-    "CreateHarvestJob",
-    "CreateOriginEndpoint",
-    "DeleteChannel",
-    "DeleteOriginEndpoint",
-    "RotateChannelCredentials",
-    "RotateIngestEndpointCredentials",
-    "UpdateChannel",
-    "UpdateOriginEndpoint"
-]
+    write = [
+      "ConfigureLogs",
+      "CreateChannel",
+      "CreateHarvestJob",
+      "CreateOriginEndpoint",
+      "DeleteChannel",
+      "DeleteOriginEndpoint",
+      "RotateChannelCredentials",
+      "RotateIngestEndpointCredentials",
+      "UpdateChannel",
+      "UpdateOriginEndpoint"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeChannel",
-    "DescribeHarvestJob",
-    "DescribeOriginEndpoint",
-    "ListChannels",
-    "ListHarvestJobs",
-    "ListOriginEndpoints",
-    "ListTagsForResource"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeChannel",
+      "DescribeHarvestJob",
+      "DescribeOriginEndpoint",
+      "ListChannels",
+      "ListHarvestJobs",
+      "ListOriginEndpoints",
+      "ListTagsForResource"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

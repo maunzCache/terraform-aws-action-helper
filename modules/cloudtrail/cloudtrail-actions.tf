@@ -59,79 +59,79 @@ locals {
   prefix = "cloudtrail"
 
   access_level = {
-    write                  = [
-    "CancelQuery",
-    "CreateChannel",
-    "CreateDashboard",
-    "CreateEventDataStore",
-    "CreateServiceLinkedChannel",
-    "CreateTrail",
-    "DeleteChannel",
-    "DeleteDashboard",
-    "DeleteEventDataStore",
-    "DeleteResourcePolicy",
-    "DeleteServiceLinkedChannel",
-    "DeleteTrail",
-    "DeregisterOrganizationDelegatedAdmin",
-    "DisableFederation",
-    "EnableFederation",
-    "GenerateQuery",
-    "PutEventConfiguration",
-    "PutEventSelectors",
-    "PutInsightSelectors",
-    "PutResourcePolicy",
-    "RegisterOrganizationDelegatedAdmin",
-    "RestoreEventDataStore",
-    "StartDashboardRefresh",
-    "StartEventDataStoreIngestion",
-    "StartImport",
-    "StartLogging",
-    "StartQuery",
-    "StopEventDataStoreIngestion",
-    "StopImport",
-    "StopLogging",
-    "UpdateChannel",
-    "UpdateDashboard",
-    "UpdateEventDataStore",
-    "UpdateServiceLinkedChannel",
-    "UpdateTrail"
-]
+    write = [
+      "CancelQuery",
+      "CreateChannel",
+      "CreateDashboard",
+      "CreateEventDataStore",
+      "CreateServiceLinkedChannel",
+      "CreateTrail",
+      "DeleteChannel",
+      "DeleteDashboard",
+      "DeleteEventDataStore",
+      "DeleteResourcePolicy",
+      "DeleteServiceLinkedChannel",
+      "DeleteTrail",
+      "DeregisterOrganizationDelegatedAdmin",
+      "DisableFederation",
+      "EnableFederation",
+      "GenerateQuery",
+      "PutEventConfiguration",
+      "PutEventSelectors",
+      "PutInsightSelectors",
+      "PutResourcePolicy",
+      "RegisterOrganizationDelegatedAdmin",
+      "RestoreEventDataStore",
+      "StartDashboardRefresh",
+      "StartEventDataStoreIngestion",
+      "StartImport",
+      "StartLogging",
+      "StartQuery",
+      "StopEventDataStoreIngestion",
+      "StopImport",
+      "StopLogging",
+      "UpdateChannel",
+      "UpdateDashboard",
+      "UpdateEventDataStore",
+      "UpdateServiceLinkedChannel",
+      "UpdateTrail"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeQuery",
-    "DescribeTrails",
-    "GenerateQueryResultsSummary",
-    "GetChannel",
-    "GetDashboard",
-    "GetEventConfiguration",
-    "GetEventDataStore",
-    "GetEventDataStoreData",
-    "GetEventSelectors",
-    "GetImport",
-    "GetInsightSelectors",
-    "GetQueryResults",
-    "GetResourcePolicy",
-    "GetServiceLinkedChannel",
-    "GetTrail",
-    "GetTrailStatus",
-    "ListImportFailures",
-    "ListPublicKeys",
-    "ListTags",
-    "LookupEvents",
-    "SearchSampleQueries"
-]
-    list                   = [
-    "ListChannels",
-    "ListDashboards",
-    "ListEventDataStores",
-    "ListImports",
-    "ListQueries",
-    "ListServiceLinkedChannels",
-    "ListTrails"
-]
-    tagging                = [
-    "AddTags",
-    "RemoveTags"
-]
+    read = [
+      "DescribeQuery",
+      "DescribeTrails",
+      "GenerateQueryResultsSummary",
+      "GetChannel",
+      "GetDashboard",
+      "GetEventConfiguration",
+      "GetEventDataStore",
+      "GetEventDataStoreData",
+      "GetEventSelectors",
+      "GetImport",
+      "GetInsightSelectors",
+      "GetQueryResults",
+      "GetResourcePolicy",
+      "GetServiceLinkedChannel",
+      "GetTrail",
+      "GetTrailStatus",
+      "ListImportFailures",
+      "ListPublicKeys",
+      "ListTags",
+      "LookupEvents",
+      "SearchSampleQueries"
+    ]
+    list = [
+      "ListChannels",
+      "ListDashboards",
+      "ListEventDataStores",
+      "ListImports",
+      "ListQueries",
+      "ListServiceLinkedChannels",
+      "ListTrails"
+    ]
+    tagging = [
+      "AddTags",
+      "RemoveTags"
+    ]
   }
 }

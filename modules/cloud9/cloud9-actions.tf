@@ -59,43 +59,43 @@ locals {
   prefix = "cloud9"
 
   access_level = {
-    write                  = [
-    "ActivateEC2Remote",
-    "CreateEnvironmentEC2",
-    "CreateEnvironmentMembership",
-    "CreateEnvironmentSSH",
-    "DeleteEnvironment",
-    "DeleteEnvironmentMembership",
-    "ModifyTemporaryCredentialsOnEnvironmentEC2",
-    "UpdateEnvironment",
-    "UpdateEnvironmentMembership",
-    "UpdateEnvironmentSettings",
-    "UpdateMembershipSettings",
-    "UpdateSSHRemote",
-    "UpdateUserSettings"
-]
+    write = [
+      "ActivateEC2Remote",
+      "CreateEnvironmentEC2",
+      "CreateEnvironmentMembership",
+      "CreateEnvironmentSSH",
+      "DeleteEnvironment",
+      "DeleteEnvironmentMembership",
+      "ModifyTemporaryCredentialsOnEnvironmentEC2",
+      "UpdateEnvironment",
+      "UpdateEnvironmentMembership",
+      "UpdateEnvironmentSettings",
+      "UpdateMembershipSettings",
+      "UpdateSSHRemote",
+      "UpdateUserSettings"
+    ]
     permissions_management = []
-    read                   = [
-    "CreateEnvironmentToken",
-    "DescribeEC2Remote",
-    "DescribeEnvironmentMemberships",
-    "DescribeEnvironmentStatus",
-    "DescribeEnvironments",
-    "DescribeSSHRemote",
-    "GetEnvironmentConfig",
-    "GetEnvironmentSettings",
-    "GetMembershipSettings",
-    "GetMigrationExperiences",
-    "GetUserPublicKey",
-    "GetUserSettings",
-    "ListEnvironments",
-    "ListTagsForResource",
-    "ValidateEnvironmentName"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "CreateEnvironmentToken",
+      "DescribeEC2Remote",
+      "DescribeEnvironmentMemberships",
+      "DescribeEnvironmentStatus",
+      "DescribeEnvironments",
+      "DescribeSSHRemote",
+      "GetEnvironmentConfig",
+      "GetEnvironmentSettings",
+      "GetMembershipSettings",
+      "GetMigrationExperiences",
+      "GetUserPublicKey",
+      "GetUserSettings",
+      "ListEnvironments",
+      "ListTagsForResource",
+      "ValidateEnvironmentName"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

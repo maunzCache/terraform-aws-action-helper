@@ -59,80 +59,80 @@ locals {
   prefix = "datasync"
 
   access_level = {
-    write                  = [
-    "AddStorageSystem",
-    "CancelTaskExecution",
-    "CreateAgent",
-    "CreateLocationAzureBlob",
-    "CreateLocationEfs",
-    "CreateLocationFsxLustre",
-    "CreateLocationFsxOntap",
-    "CreateLocationFsxOpenZfs",
-    "CreateLocationFsxWindows",
-    "CreateLocationHdfs",
-    "CreateLocationNfs",
-    "CreateLocationObjectStorage",
-    "CreateLocationS3",
-    "CreateLocationSmb",
-    "CreateTask",
-    "DeleteAgent",
-    "DeleteLocation",
-    "DeleteTask",
-    "GenerateRecommendations",
-    "RemoveStorageSystem",
-    "StartDiscoveryJob",
-    "StartTaskExecution",
-    "StopDiscoveryJob",
-    "UpdateAgent",
-    "UpdateDiscoveryJob",
-    "UpdateLocationAzureBlob",
-    "UpdateLocationEfs",
-    "UpdateLocationFsxLustre",
-    "UpdateLocationFsxOntap",
-    "UpdateLocationFsxOpenZfs",
-    "UpdateLocationFsxWindows",
-    "UpdateLocationHdfs",
-    "UpdateLocationNfs",
-    "UpdateLocationObjectStorage",
-    "UpdateLocationS3",
-    "UpdateLocationSmb",
-    "UpdateStorageSystem",
-    "UpdateTask",
-    "UpdateTaskExecution"
-]
+    write = [
+      "AddStorageSystem",
+      "CancelTaskExecution",
+      "CreateAgent",
+      "CreateLocationAzureBlob",
+      "CreateLocationEfs",
+      "CreateLocationFsxLustre",
+      "CreateLocationFsxOntap",
+      "CreateLocationFsxOpenZfs",
+      "CreateLocationFsxWindows",
+      "CreateLocationHdfs",
+      "CreateLocationNfs",
+      "CreateLocationObjectStorage",
+      "CreateLocationS3",
+      "CreateLocationSmb",
+      "CreateTask",
+      "DeleteAgent",
+      "DeleteLocation",
+      "DeleteTask",
+      "GenerateRecommendations",
+      "RemoveStorageSystem",
+      "StartDiscoveryJob",
+      "StartTaskExecution",
+      "StopDiscoveryJob",
+      "UpdateAgent",
+      "UpdateDiscoveryJob",
+      "UpdateLocationAzureBlob",
+      "UpdateLocationEfs",
+      "UpdateLocationFsxLustre",
+      "UpdateLocationFsxOntap",
+      "UpdateLocationFsxOpenZfs",
+      "UpdateLocationFsxWindows",
+      "UpdateLocationHdfs",
+      "UpdateLocationNfs",
+      "UpdateLocationObjectStorage",
+      "UpdateLocationS3",
+      "UpdateLocationSmb",
+      "UpdateStorageSystem",
+      "UpdateTask",
+      "UpdateTaskExecution"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAgent",
-    "DescribeDiscoveryJob",
-    "DescribeLocationAzureBlob",
-    "DescribeLocationEfs",
-    "DescribeLocationFsxLustre",
-    "DescribeLocationFsxOntap",
-    "DescribeLocationFsxOpenZfs",
-    "DescribeLocationFsxWindows",
-    "DescribeLocationHdfs",
-    "DescribeLocationNfs",
-    "DescribeLocationObjectStorage",
-    "DescribeLocationS3",
-    "DescribeLocationSmb",
-    "DescribeStorageSystem",
-    "DescribeTask",
-    "DescribeTaskExecution",
-    "ListTagsForResource"
-]
-    list                   = [
-    "DescribeStorageSystemResourceMetrics",
-    "DescribeStorageSystemResources",
-    "ListAgents",
-    "ListDiscoveryJobs",
-    "ListLocations",
-    "ListStorageSystems",
-    "ListTaskExecutions",
-    "ListTasks"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeAgent",
+      "DescribeDiscoveryJob",
+      "DescribeLocationAzureBlob",
+      "DescribeLocationEfs",
+      "DescribeLocationFsxLustre",
+      "DescribeLocationFsxOntap",
+      "DescribeLocationFsxOpenZfs",
+      "DescribeLocationFsxWindows",
+      "DescribeLocationHdfs",
+      "DescribeLocationNfs",
+      "DescribeLocationObjectStorage",
+      "DescribeLocationS3",
+      "DescribeLocationSmb",
+      "DescribeStorageSystem",
+      "DescribeTask",
+      "DescribeTaskExecution",
+      "ListTagsForResource"
+    ]
+    list = [
+      "DescribeStorageSystemResourceMetrics",
+      "DescribeStorageSystemResources",
+      "ListAgents",
+      "ListDiscoveryJobs",
+      "ListLocations",
+      "ListStorageSystems",
+      "ListTaskExecutions",
+      "ListTasks"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

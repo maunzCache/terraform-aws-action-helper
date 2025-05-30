@@ -59,44 +59,44 @@ locals {
   prefix = "rolesanywhere"
 
   access_level = {
-    write                  = [
-    "CreateProfile",
-    "CreateTrustAnchor",
-    "DeleteAttributeMapping",
-    "DeleteCrl",
-    "DeleteProfile",
-    "DeleteTrustAnchor",
-    "DisableCrl",
-    "DisableProfile",
-    "DisableTrustAnchor",
-    "EnableCrl",
-    "EnableProfile",
-    "EnableTrustAnchor",
-    "ImportCrl",
-    "PutAttributeMapping",
-    "PutNotificationSettings",
-    "ResetNotificationSettings",
-    "UpdateCrl",
-    "UpdateProfile",
-    "UpdateTrustAnchor"
-]
+    write = [
+      "CreateProfile",
+      "CreateTrustAnchor",
+      "DeleteAttributeMapping",
+      "DeleteCrl",
+      "DeleteProfile",
+      "DeleteTrustAnchor",
+      "DisableCrl",
+      "DisableProfile",
+      "DisableTrustAnchor",
+      "EnableCrl",
+      "EnableProfile",
+      "EnableTrustAnchor",
+      "ImportCrl",
+      "PutAttributeMapping",
+      "PutNotificationSettings",
+      "ResetNotificationSettings",
+      "UpdateCrl",
+      "UpdateProfile",
+      "UpdateTrustAnchor"
+    ]
     permissions_management = []
-    read                   = [
-    "GetCrl",
-    "GetProfile",
-    "GetSubject",
-    "GetTrustAnchor"
-]
-    list                   = [
-    "ListCrls",
-    "ListProfiles",
-    "ListSubjects",
-    "ListTagsForResource",
-    "ListTrustAnchors"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetCrl",
+      "GetProfile",
+      "GetSubject",
+      "GetTrustAnchor"
+    ]
+    list = [
+      "ListCrls",
+      "ListProfiles",
+      "ListSubjects",
+      "ListTagsForResource",
+      "ListTrustAnchors"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

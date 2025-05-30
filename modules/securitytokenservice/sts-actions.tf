@@ -59,26 +59,26 @@ locals {
   prefix = "sts"
 
   access_level = {
-    write                  = [
-    "AssumeRole",
-    "AssumeRoleWithSAML",
-    "AssumeRoleWithWebIdentity",
-    "AssumeRoot",
-    "DecodeAuthorizationMessage",
-    "SetContext",
-    "SetSourceIdentity"
-]
+    write = [
+      "AssumeRole",
+      "AssumeRoleWithSAML",
+      "AssumeRoleWithWebIdentity",
+      "AssumeRoot",
+      "DecodeAuthorizationMessage",
+      "SetContext",
+      "SetSourceIdentity"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAccessKeyInfo",
-    "GetCallerIdentity",
-    "GetFederationToken",
-    "GetServiceBearerToken",
-    "GetSessionToken"
-]
-    list                   = []
-    tagging                = [
-    "TagSession"
-]
+    read = [
+      "GetAccessKeyInfo",
+      "GetCallerIdentity",
+      "GetFederationToken",
+      "GetServiceBearerToken",
+      "GetSessionToken"
+    ]
+    list = []
+    tagging = [
+      "TagSession"
+    ]
   }
 }

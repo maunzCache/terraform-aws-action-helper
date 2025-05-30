@@ -59,38 +59,38 @@ locals {
   prefix = "ssm-sap"
 
   access_level = {
-    write                  = [
-    "BackupDatabase",
-    "DeleteResourcePermission",
-    "DeregisterApplication",
-    "PutResourcePermission",
-    "RegisterApplication",
-    "RestoreDatabase",
-    "StartApplication",
-    "StartApplicationRefresh",
-    "StopApplication",
-    "UpdateApplicationSettings",
-    "UpdateHANABackupSettings"
-]
+    write = [
+      "BackupDatabase",
+      "DeleteResourcePermission",
+      "DeregisterApplication",
+      "PutResourcePermission",
+      "RegisterApplication",
+      "RestoreDatabase",
+      "StartApplication",
+      "StartApplicationRefresh",
+      "StopApplication",
+      "UpdateApplicationSettings",
+      "UpdateHANABackupSettings"
+    ]
     permissions_management = []
-    read                   = [
-    "GetApplication",
-    "GetComponent",
-    "GetDatabase",
-    "GetOperation",
-    "GetResourcePermission",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListApplications",
-    "ListComponents",
-    "ListDatabases",
-    "ListOperationEvents",
-    "ListOperations"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetApplication",
+      "GetComponent",
+      "GetDatabase",
+      "GetOperation",
+      "GetResourcePermission",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListApplications",
+      "ListComponents",
+      "ListDatabases",
+      "ListOperationEvents",
+      "ListOperations"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

@@ -59,17 +59,17 @@ locals {
   prefix = "appstudio"
 
   access_level = {
-    write                  = [
-    "StartEnablementJob",
-    "StartRollbackEnablementJob",
-    "StartTeamDeployment"
-]
+    write = [
+      "StartEnablementJob",
+      "StartRollbackEnablementJob",
+      "StartTeamDeployment"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAccountStatus",
-    "GetEnablementJobStatus"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetAccountStatus",
+      "GetEnablementJobStatus"
+    ]
+    list    = []
+    tagging = []
   }
 }

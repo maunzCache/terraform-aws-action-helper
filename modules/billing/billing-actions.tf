@@ -59,39 +59,39 @@ locals {
   prefix = "billing"
 
   access_level = {
-    write                  = [
-    "CreateBillingView",
-    "DeleteBillingView",
-    "PutContractInformation",
-    "RedeemCredits",
-    "UpdateBillingPreferences",
-    "UpdateBillingView",
-    "UpdateIAMAccessPreference"
-]
+    write = [
+      "CreateBillingView",
+      "DeleteBillingView",
+      "PutContractInformation",
+      "RedeemCredits",
+      "UpdateBillingPreferences",
+      "UpdateBillingView",
+      "UpdateIAMAccessPreference"
+    ]
     permissions_management = [
-    "DeleteResourcePolicy",
-    "GetResourcePolicy",
-    "PutResourcePolicy"
-]
-    read                   = [
-    "GetBillingData",
-    "GetBillingDetails",
-    "GetBillingNotifications",
-    "GetBillingPreferences",
-    "GetBillingView",
-    "GetContractInformation",
-    "GetCredits",
-    "GetIAMAccessPreference",
-    "GetSellerOfRecord",
-    "ListBillingViews",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListSourceViewsForBillingView"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "DeleteResourcePolicy",
+      "GetResourcePolicy",
+      "PutResourcePolicy"
+    ]
+    read = [
+      "GetBillingData",
+      "GetBillingDetails",
+      "GetBillingNotifications",
+      "GetBillingPreferences",
+      "GetBillingView",
+      "GetContractInformation",
+      "GetCredits",
+      "GetIAMAccessPreference",
+      "GetSellerOfRecord",
+      "ListBillingViews",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListSourceViewsForBillingView"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

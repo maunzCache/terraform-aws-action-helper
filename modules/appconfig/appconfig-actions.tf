@@ -59,61 +59,61 @@ locals {
   prefix = "appconfig"
 
   access_level = {
-    write                  = [
-    "CreateApplication",
-    "CreateConfigurationProfile",
-    "CreateDeploymentStrategy",
-    "CreateEnvironment",
-    "CreateExtension",
-    "CreateExtensionAssociation",
-    "CreateHostedConfigurationVersion",
-    "DeleteApplication",
-    "DeleteConfigurationProfile",
-    "DeleteDeploymentStrategy",
-    "DeleteEnvironment",
-    "DeleteExtension",
-    "DeleteExtensionAssociation",
-    "DeleteHostedConfigurationVersion",
-    "StartConfigurationSession",
-    "StartDeployment",
-    "StopDeployment",
-    "UpdateAccountSettings",
-    "UpdateApplication",
-    "UpdateConfigurationProfile",
-    "UpdateDeploymentStrategy",
-    "UpdateEnvironment",
-    "UpdateExtension",
-    "UpdateExtensionAssociation",
-    "ValidateConfiguration"
-]
+    write = [
+      "CreateApplication",
+      "CreateConfigurationProfile",
+      "CreateDeploymentStrategy",
+      "CreateEnvironment",
+      "CreateExtension",
+      "CreateExtensionAssociation",
+      "CreateHostedConfigurationVersion",
+      "DeleteApplication",
+      "DeleteConfigurationProfile",
+      "DeleteDeploymentStrategy",
+      "DeleteEnvironment",
+      "DeleteExtension",
+      "DeleteExtensionAssociation",
+      "DeleteHostedConfigurationVersion",
+      "StartConfigurationSession",
+      "StartDeployment",
+      "StopDeployment",
+      "UpdateAccountSettings",
+      "UpdateApplication",
+      "UpdateConfigurationProfile",
+      "UpdateDeploymentStrategy",
+      "UpdateEnvironment",
+      "UpdateExtension",
+      "UpdateExtensionAssociation",
+      "ValidateConfiguration"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAccountSettings",
-    "GetApplication",
-    "GetConfiguration",
-    "GetConfigurationProfile",
-    "GetDeployment",
-    "GetDeploymentStrategy",
-    "GetEnvironment",
-    "GetExtension",
-    "GetExtensionAssociation",
-    "GetHostedConfigurationVersion",
-    "GetLatestConfiguration",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListApplications",
-    "ListConfigurationProfiles",
-    "ListDeploymentStrategies",
-    "ListDeployments",
-    "ListEnvironments",
-    "ListExtensionAssociations",
-    "ListExtensions",
-    "ListHostedConfigurationVersions"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetAccountSettings",
+      "GetApplication",
+      "GetConfiguration",
+      "GetConfigurationProfile",
+      "GetDeployment",
+      "GetDeploymentStrategy",
+      "GetEnvironment",
+      "GetExtension",
+      "GetExtensionAssociation",
+      "GetHostedConfigurationVersion",
+      "GetLatestConfiguration",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListApplications",
+      "ListConfigurationProfiles",
+      "ListDeploymentStrategies",
+      "ListDeployments",
+      "ListEnvironments",
+      "ListExtensionAssociations",
+      "ListExtensions",
+      "ListHostedConfigurationVersions"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

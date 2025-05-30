@@ -59,9 +59,9 @@ locals {
   prefix = "sso-oauth"
 
   access_level = {
-    write                  = [
-    "CreateTokenWithIAM"
-]
+    write = [
+      "CreateTokenWithIAM"
+    ]
     permissions_management = []
     read                   = []
     list                   = []

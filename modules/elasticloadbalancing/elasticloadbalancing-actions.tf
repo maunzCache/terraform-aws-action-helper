@@ -59,42 +59,42 @@ locals {
   prefix = "elasticloadbalancing"
 
   access_level = {
-    write                  = [
-    "ApplySecurityGroupsToLoadBalancer",
-    "AttachLoadBalancerToSubnets",
-    "ConfigureHealthCheck",
-    "CreateAppCookieStickinessPolicy",
-    "CreateLBCookieStickinessPolicy",
-    "CreateLoadBalancer",
-    "CreateLoadBalancerListeners",
-    "CreateLoadBalancerPolicy",
-    "DeleteLoadBalancer",
-    "DeleteLoadBalancerListeners",
-    "DeleteLoadBalancerPolicy",
-    "DeregisterInstancesFromLoadBalancer",
-    "DetachLoadBalancerFromSubnets",
-    "DisableAvailabilityZonesForLoadBalancer",
-    "EnableAvailabilityZonesForLoadBalancer",
-    "ModifyLoadBalancerAttributes",
-    "RegisterInstancesWithLoadBalancer",
-    "SetLoadBalancerListenerSSLCertificate",
-    "SetLoadBalancerPoliciesForBackendServer",
-    "SetLoadBalancerPoliciesOfListener"
-]
+    write = [
+      "ApplySecurityGroupsToLoadBalancer",
+      "AttachLoadBalancerToSubnets",
+      "ConfigureHealthCheck",
+      "CreateAppCookieStickinessPolicy",
+      "CreateLBCookieStickinessPolicy",
+      "CreateLoadBalancer",
+      "CreateLoadBalancerListeners",
+      "CreateLoadBalancerPolicy",
+      "DeleteLoadBalancer",
+      "DeleteLoadBalancerListeners",
+      "DeleteLoadBalancerPolicy",
+      "DeregisterInstancesFromLoadBalancer",
+      "DetachLoadBalancerFromSubnets",
+      "DisableAvailabilityZonesForLoadBalancer",
+      "EnableAvailabilityZonesForLoadBalancer",
+      "ModifyLoadBalancerAttributes",
+      "RegisterInstancesWithLoadBalancer",
+      "SetLoadBalancerListenerSSLCertificate",
+      "SetLoadBalancerPoliciesForBackendServer",
+      "SetLoadBalancerPoliciesOfListener"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeInstanceHealth",
-    "DescribeLoadBalancerAttributes",
-    "DescribeLoadBalancerPolicies",
-    "DescribeLoadBalancerPolicyTypes",
-    "DescribeTags"
-]
-    list                   = [
-    "DescribeLoadBalancers"
-]
-    tagging                = [
-    "AddTags",
-    "RemoveTags"
-]
+    read = [
+      "DescribeInstanceHealth",
+      "DescribeLoadBalancerAttributes",
+      "DescribeLoadBalancerPolicies",
+      "DescribeLoadBalancerPolicyTypes",
+      "DescribeTags"
+    ]
+    list = [
+      "DescribeLoadBalancers"
+    ]
+    tagging = [
+      "AddTags",
+      "RemoveTags"
+    ]
   }
 }

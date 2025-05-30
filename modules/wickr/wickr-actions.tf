@@ -59,21 +59,21 @@ locals {
   prefix = "wickr"
 
   access_level = {
-    write                  = [
-    "CreateAdminSession",
-    "CreateNetwork",
-    "DeleteNetwork",
-    "ListNetworks",
-    "UpdateNetworkDetails"
-]
+    write = [
+      "CreateAdminSession",
+      "CreateNetwork",
+      "DeleteNetwork",
+      "ListNetworks",
+      "UpdateNetworkDetails"
+    ]
     permissions_management = []
-    read                   = [
-    "ListTagsForResource"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "ListTagsForResource"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

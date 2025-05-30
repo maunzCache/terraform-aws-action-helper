@@ -59,31 +59,31 @@ locals {
   prefix = "kinesisanalytics"
 
   access_level = {
-    write                  = [
-    "AddApplicationInput",
-    "AddApplicationOutput",
-    "AddApplicationReferenceDataSource",
-    "CreateApplication",
-    "DeleteApplication",
-    "DeleteApplicationOutput",
-    "DeleteApplicationReferenceDataSource",
-    "StartApplication",
-    "StopApplication",
-    "UpdateApplication"
-]
+    write = [
+      "AddApplicationInput",
+      "AddApplicationOutput",
+      "AddApplicationReferenceDataSource",
+      "CreateApplication",
+      "DeleteApplication",
+      "DeleteApplicationOutput",
+      "DeleteApplicationReferenceDataSource",
+      "StartApplication",
+      "StopApplication",
+      "UpdateApplication"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeApplication",
-    "DiscoverInputSchema",
-    "GetApplicationState",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListApplications"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeApplication",
+      "DiscoverInputSchema",
+      "GetApplicationState",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListApplications"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

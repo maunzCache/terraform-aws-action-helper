@@ -59,53 +59,53 @@ locals {
   prefix = "iotevents"
 
   access_level = {
-    write                  = [
-    "BatchAcknowledgeAlarm",
-    "BatchDeleteDetector",
-    "BatchDisableAlarm",
-    "BatchEnableAlarm",
-    "BatchPutMessage",
-    "BatchResetAlarm",
-    "BatchSnoozeAlarm",
-    "BatchUpdateDetector",
-    "CreateAlarmModel",
-    "CreateDetectorModel",
-    "CreateInput",
-    "DeleteAlarmModel",
-    "DeleteDetectorModel",
-    "DeleteInput",
-    "PutLoggingOptions",
-    "StartDetectorModelAnalysis",
-    "UpdateAlarmModel",
-    "UpdateDetectorModel",
-    "UpdateInput",
-    "UpdateInputRouting"
-]
+    write = [
+      "BatchAcknowledgeAlarm",
+      "BatchDeleteDetector",
+      "BatchDisableAlarm",
+      "BatchEnableAlarm",
+      "BatchPutMessage",
+      "BatchResetAlarm",
+      "BatchSnoozeAlarm",
+      "BatchUpdateDetector",
+      "CreateAlarmModel",
+      "CreateDetectorModel",
+      "CreateInput",
+      "DeleteAlarmModel",
+      "DeleteDetectorModel",
+      "DeleteInput",
+      "PutLoggingOptions",
+      "StartDetectorModelAnalysis",
+      "UpdateAlarmModel",
+      "UpdateDetectorModel",
+      "UpdateInput",
+      "UpdateInputRouting"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAlarm",
-    "DescribeAlarmModel",
-    "DescribeDetector",
-    "DescribeDetectorModel",
-    "DescribeDetectorModelAnalysis",
-    "DescribeInput",
-    "DescribeLoggingOptions",
-    "GetDetectorModelAnalysisResults",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAlarmModelVersions",
-    "ListAlarmModels",
-    "ListAlarms",
-    "ListDetectorModelVersions",
-    "ListDetectorModels",
-    "ListDetectors",
-    "ListInputRoutings",
-    "ListInputs"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeAlarm",
+      "DescribeAlarmModel",
+      "DescribeDetector",
+      "DescribeDetectorModel",
+      "DescribeDetectorModelAnalysis",
+      "DescribeInput",
+      "DescribeLoggingOptions",
+      "GetDetectorModelAnalysisResults",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAlarmModelVersions",
+      "ListAlarmModels",
+      "ListAlarms",
+      "ListDetectorModelVersions",
+      "ListDetectorModels",
+      "ListDetectors",
+      "ListInputRoutings",
+      "ListInputs"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

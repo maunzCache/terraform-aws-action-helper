@@ -59,20 +59,20 @@ locals {
   prefix = "qdeveloper"
 
   access_level = {
-    write                  = [
-    "ExportArtifact",
-    "ImportArtifact",
-    "StartAgentSession",
-    "TransformCode"
-]
+    write = [
+      "ExportArtifact",
+      "ImportArtifact",
+      "StartAgentSession",
+      "TransformCode"
+    ]
     permissions_management = []
     read                   = []
-    list                   = [
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    list = [
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

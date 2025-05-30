@@ -59,24 +59,24 @@ locals {
   prefix = "pipes"
 
   access_level = {
-    write                  = [
-    "CreatePipe",
-    "DeletePipe",
-    "StartPipe",
-    "StopPipe",
-    "UpdatePipe"
-]
+    write = [
+      "CreatePipe",
+      "DeletePipe",
+      "StartPipe",
+      "StopPipe",
+      "UpdatePipe"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribePipe",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListPipes"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribePipe",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListPipes"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

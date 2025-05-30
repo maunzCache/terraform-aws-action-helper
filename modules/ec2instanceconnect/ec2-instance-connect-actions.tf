@@ -59,11 +59,11 @@ locals {
   prefix = "ec2-instance-connect"
 
   access_level = {
-    write                  = [
-    "OpenTunnel",
-    "SendSSHPublicKey",
-    "SendSerialConsoleSSHPublicKey"
-]
+    write = [
+      "OpenTunnel",
+      "SendSSHPublicKey",
+      "SendSerialConsoleSSHPublicKey"
+    ]
     permissions_management = []
     read                   = []
     list                   = []

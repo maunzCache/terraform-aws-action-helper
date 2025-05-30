@@ -59,64 +59,64 @@ locals {
   prefix = "elasticbeanstalk"
 
   access_level = {
-    write                  = [
-    "AbortEnvironmentUpdate",
-    "ApplyEnvironmentManagedAction",
-    "AssociateEnvironmentOperationsRole",
-    "ComposeEnvironments",
-    "CreateApplication",
-    "CreateApplicationVersion",
-    "CreateConfigurationTemplate",
-    "CreateEnvironment",
-    "CreatePlatformVersion",
-    "CreateStorageLocation",
-    "DeleteApplication",
-    "DeleteApplicationVersion",
-    "DeleteConfigurationTemplate",
-    "DeleteEnvironmentConfiguration",
-    "DeletePlatformVersion",
-    "DisassociateEnvironmentOperationsRole",
-    "PutInstanceStatistics",
-    "RebuildEnvironment",
-    "RestartAppServer",
-    "SwapEnvironmentCNAMEs",
-    "TerminateEnvironment",
-    "UpdateApplication",
-    "UpdateApplicationResourceLifecycle",
-    "UpdateApplicationVersion",
-    "UpdateConfigurationTemplate",
-    "UpdateEnvironment"
-]
+    write = [
+      "AbortEnvironmentUpdate",
+      "ApplyEnvironmentManagedAction",
+      "AssociateEnvironmentOperationsRole",
+      "ComposeEnvironments",
+      "CreateApplication",
+      "CreateApplicationVersion",
+      "CreateConfigurationTemplate",
+      "CreateEnvironment",
+      "CreatePlatformVersion",
+      "CreateStorageLocation",
+      "DeleteApplication",
+      "DeleteApplicationVersion",
+      "DeleteConfigurationTemplate",
+      "DeleteEnvironmentConfiguration",
+      "DeletePlatformVersion",
+      "DisassociateEnvironmentOperationsRole",
+      "PutInstanceStatistics",
+      "RebuildEnvironment",
+      "RestartAppServer",
+      "SwapEnvironmentCNAMEs",
+      "TerminateEnvironment",
+      "UpdateApplication",
+      "UpdateApplicationResourceLifecycle",
+      "UpdateApplicationVersion",
+      "UpdateConfigurationTemplate",
+      "UpdateEnvironment"
+    ]
     permissions_management = []
-    read                   = [
-    "CheckDNSAvailability",
-    "DescribeAccountAttributes",
-    "DescribeConfigurationOptions",
-    "DescribeConfigurationSettings",
-    "DescribeEnvironmentHealth",
-    "DescribeEnvironmentManagedActionHistory",
-    "DescribeEnvironmentManagedActions",
-    "DescribeEnvironmentResources",
-    "DescribeEvents",
-    "DescribeInstancesHealth",
-    "DescribePlatformVersion",
-    "ListTagsForResource",
-    "RequestEnvironmentInfo",
-    "RetrieveEnvironmentInfo",
-    "ValidateConfigurationSettings"
-]
-    list                   = [
-    "DescribeApplicationVersions",
-    "DescribeApplications",
-    "DescribeEnvironments",
-    "ListAvailableSolutionStacks",
-    "ListPlatformBranches",
-    "ListPlatformVersions"
-]
-    tagging                = [
-    "AddTags",
-    "RemoveTags",
-    "UpdateTagsForResource"
-]
+    read = [
+      "CheckDNSAvailability",
+      "DescribeAccountAttributes",
+      "DescribeConfigurationOptions",
+      "DescribeConfigurationSettings",
+      "DescribeEnvironmentHealth",
+      "DescribeEnvironmentManagedActionHistory",
+      "DescribeEnvironmentManagedActions",
+      "DescribeEnvironmentResources",
+      "DescribeEvents",
+      "DescribeInstancesHealth",
+      "DescribePlatformVersion",
+      "ListTagsForResource",
+      "RequestEnvironmentInfo",
+      "RetrieveEnvironmentInfo",
+      "ValidateConfigurationSettings"
+    ]
+    list = [
+      "DescribeApplicationVersions",
+      "DescribeApplications",
+      "DescribeEnvironments",
+      "ListAvailableSolutionStacks",
+      "ListPlatformBranches",
+      "ListPlatformVersions"
+    ]
+    tagging = [
+      "AddTags",
+      "RemoveTags",
+      "UpdateTagsForResource"
+    ]
   }
 }

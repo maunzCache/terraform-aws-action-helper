@@ -59,56 +59,56 @@ locals {
   prefix = "fms"
 
   access_level = {
-    write                  = [
-    "AssociateAdminAccount",
-    "AssociateThirdPartyFirewall",
-    "BatchAssociateResource",
-    "BatchDisassociateResource",
-    "DeleteAppsList",
-    "DeleteNotificationChannel",
-    "DeletePolicy",
-    "DeleteProtocolsList",
-    "DeleteResourceSet",
-    "DisassociateAdminAccount",
-    "DisassociateThirdPartyFirewall",
-    "PutAdminAccount",
-    "PutAppsList",
-    "PutNotificationChannel",
-    "PutPolicy",
-    "PutProtocolsList",
-    "PutResourceSet"
-]
+    write = [
+      "AssociateAdminAccount",
+      "AssociateThirdPartyFirewall",
+      "BatchAssociateResource",
+      "BatchDisassociateResource",
+      "DeleteAppsList",
+      "DeleteNotificationChannel",
+      "DeletePolicy",
+      "DeleteProtocolsList",
+      "DeleteResourceSet",
+      "DisassociateAdminAccount",
+      "DisassociateThirdPartyFirewall",
+      "PutAdminAccount",
+      "PutAppsList",
+      "PutNotificationChannel",
+      "PutPolicy",
+      "PutProtocolsList",
+      "PutResourceSet"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAdminAccount",
-    "GetAdminScope",
-    "GetAppsList",
-    "GetComplianceDetail",
-    "GetNotificationChannel",
-    "GetPolicy",
-    "GetProtectionStatus",
-    "GetProtocolsList",
-    "GetResourceSet",
-    "GetThirdPartyFirewallAssociationStatus",
-    "GetViolationDetails",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListAdminAccountsForOrganization",
-    "ListAdminsManagingAccount",
-    "ListAppsLists",
-    "ListComplianceStatus",
-    "ListDiscoveredResources",
-    "ListMemberAccounts",
-    "ListPolicies",
-    "ListProtocolsLists",
-    "ListResourceSetResources",
-    "ListResourceSets",
-    "ListThirdPartyFirewallFirewallPolicies"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetAdminAccount",
+      "GetAdminScope",
+      "GetAppsList",
+      "GetComplianceDetail",
+      "GetNotificationChannel",
+      "GetPolicy",
+      "GetProtectionStatus",
+      "GetProtocolsList",
+      "GetResourceSet",
+      "GetThirdPartyFirewallAssociationStatus",
+      "GetViolationDetails",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListAdminAccountsForOrganization",
+      "ListAdminsManagingAccount",
+      "ListAppsLists",
+      "ListComplianceStatus",
+      "ListDiscoveredResources",
+      "ListMemberAccounts",
+      "ListPolicies",
+      "ListProtocolsLists",
+      "ListResourceSetResources",
+      "ListResourceSets",
+      "ListThirdPartyFirewallFirewallPolicies"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

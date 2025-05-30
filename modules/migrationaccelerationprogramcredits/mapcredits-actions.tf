@@ -62,11 +62,11 @@ locals {
     write                  = []
     permissions_management = []
     read                   = []
-    list                   = [
-    "ListAssociatedPrograms",
-    "ListQuarterCredits",
-    "ListQuarterSpend"
-]
-    tagging                = []
+    list = [
+      "ListAssociatedPrograms",
+      "ListQuarterCredits",
+      "ListQuarterSpend"
+    ]
+    tagging = []
   }
 }

@@ -59,70 +59,70 @@ locals {
   prefix = "iotmanagedintegrations"
 
   access_level = {
-    write                  = [
-    "CreateCredentialLocker",
-    "CreateDestination",
-    "CreateEventLogConfiguration",
-    "CreateManagedThing",
-    "CreateNotificationConfiguration",
-    "CreateOtaTask",
-    "CreateOtaTaskConfiguration",
-    "CreateProvisioningProfile",
-    "DeleteCredentialLocker",
-    "DeleteDestination",
-    "DeleteEventLogConfiguration",
-    "DeleteManagedThing",
-    "DeleteNotificationConfiguration",
-    "DeleteOtaTask",
-    "DeleteOtaTaskConfiguration",
-    "DeleteProvisioningProfile",
-    "PutDefaultEncryptionConfiguration",
-    "PutHubConfiguration",
-    "PutRuntimeLogConfiguration",
-    "RegisterCustomEndpoint",
-    "ResetRuntimeLogConfiguration",
-    "SendManagedThingCommand",
-    "StartDeviceDiscovery",
-    "UpdateDestination",
-    "UpdateEventLogConfiguration",
-    "UpdateManagedThing",
-    "UpdateNotificationConfiguration",
-    "UpdateOtaTask"
-]
+    write = [
+      "CreateCredentialLocker",
+      "CreateDestination",
+      "CreateEventLogConfiguration",
+      "CreateManagedThing",
+      "CreateNotificationConfiguration",
+      "CreateOtaTask",
+      "CreateOtaTaskConfiguration",
+      "CreateProvisioningProfile",
+      "DeleteCredentialLocker",
+      "DeleteDestination",
+      "DeleteEventLogConfiguration",
+      "DeleteManagedThing",
+      "DeleteNotificationConfiguration",
+      "DeleteOtaTask",
+      "DeleteOtaTaskConfiguration",
+      "DeleteProvisioningProfile",
+      "PutDefaultEncryptionConfiguration",
+      "PutHubConfiguration",
+      "PutRuntimeLogConfiguration",
+      "RegisterCustomEndpoint",
+      "ResetRuntimeLogConfiguration",
+      "SendManagedThingCommand",
+      "StartDeviceDiscovery",
+      "UpdateDestination",
+      "UpdateEventLogConfiguration",
+      "UpdateManagedThing",
+      "UpdateNotificationConfiguration",
+      "UpdateOtaTask"
+    ]
     permissions_management = []
-    read                   = [
-    "GetCredentialLocker",
-    "GetCustomEndpoint",
-    "GetDefaultEncryptionConfiguration",
-    "GetDestination",
-    "GetDeviceDiscovery",
-    "GetEventLogConfiguration",
-    "GetHubConfiguration",
-    "GetManagedThing",
-    "GetManagedThingCapabilities",
-    "GetManagedThingConnectivityData",
-    "GetManagedThingMetaData",
-    "GetManagedThingState",
-    "GetNotificationConfiguration",
-    "GetOtaTask",
-    "GetOtaTaskConfiguration",
-    "GetProvisioningProfile",
-    "GetRuntimeLogConfiguration",
-    "GetSchemaVersion",
-    "ListManagedThingSchemas",
-    "ListOtaTaskExecutions"
-]
-    list                   = [
-    "ListCredentialLockers",
-    "ListDestinations",
-    "ListEventLogConfigurations",
-    "ListManagedThings",
-    "ListNotificationConfigurations",
-    "ListOtaTaskConfigurations",
-    "ListOtaTasks",
-    "ListProvisioningProfiles",
-    "ListSchemaVersions"
-]
-    tagging                = []
+    read = [
+      "GetCredentialLocker",
+      "GetCustomEndpoint",
+      "GetDefaultEncryptionConfiguration",
+      "GetDestination",
+      "GetDeviceDiscovery",
+      "GetEventLogConfiguration",
+      "GetHubConfiguration",
+      "GetManagedThing",
+      "GetManagedThingCapabilities",
+      "GetManagedThingConnectivityData",
+      "GetManagedThingMetaData",
+      "GetManagedThingState",
+      "GetNotificationConfiguration",
+      "GetOtaTask",
+      "GetOtaTaskConfiguration",
+      "GetProvisioningProfile",
+      "GetRuntimeLogConfiguration",
+      "GetSchemaVersion",
+      "ListManagedThingSchemas",
+      "ListOtaTaskExecutions"
+    ]
+    list = [
+      "ListCredentialLockers",
+      "ListDestinations",
+      "ListEventLogConfigurations",
+      "ListManagedThings",
+      "ListNotificationConfigurations",
+      "ListOtaTaskConfigurations",
+      "ListOtaTasks",
+      "ListProvisioningProfiles",
+      "ListSchemaVersions"
+    ]
+    tagging = []
   }
 }

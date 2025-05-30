@@ -59,89 +59,89 @@ locals {
   prefix = "opsworks"
 
   access_level = {
-    write                  = [
-    "AssignInstance",
-    "AssignVolume",
-    "AssociateElasticIp",
-    "AttachElasticLoadBalancer",
-    "CloneStack",
-    "CreateApp",
-    "CreateDeployment",
-    "CreateInstance",
-    "CreateLayer",
-    "CreateStack",
-    "CreateUserProfile",
-    "DeleteApp",
-    "DeleteInstance",
-    "DeleteLayer",
-    "DeleteStack",
-    "DeleteUserProfile",
-    "DeregisterEcsCluster",
-    "DeregisterElasticIp",
-    "DeregisterInstance",
-    "DeregisterRdsDbInstance",
-    "DeregisterVolume",
-    "DetachElasticLoadBalancer",
-    "DisassociateElasticIp",
-    "GrantAccess",
-    "RebootInstance",
-    "RegisterEcsCluster",
-    "RegisterElasticIp",
-    "RegisterInstance",
-    "RegisterRdsDbInstance",
-    "RegisterVolume",
-    "SetLoadBasedAutoScaling",
-    "SetTimeBasedAutoScaling",
-    "StartInstance",
-    "StartStack",
-    "StopInstance",
-    "StopStack",
-    "UnassignInstance",
-    "UnassignVolume",
-    "UpdateApp",
-    "UpdateElasticIp",
-    "UpdateInstance",
-    "UpdateLayer",
-    "UpdateMyUserProfile",
-    "UpdateRdsDbInstance",
-    "UpdateStack",
-    "UpdateVolume"
-]
+    write = [
+      "AssignInstance",
+      "AssignVolume",
+      "AssociateElasticIp",
+      "AttachElasticLoadBalancer",
+      "CloneStack",
+      "CreateApp",
+      "CreateDeployment",
+      "CreateInstance",
+      "CreateLayer",
+      "CreateStack",
+      "CreateUserProfile",
+      "DeleteApp",
+      "DeleteInstance",
+      "DeleteLayer",
+      "DeleteStack",
+      "DeleteUserProfile",
+      "DeregisterEcsCluster",
+      "DeregisterElasticIp",
+      "DeregisterInstance",
+      "DeregisterRdsDbInstance",
+      "DeregisterVolume",
+      "DetachElasticLoadBalancer",
+      "DisassociateElasticIp",
+      "GrantAccess",
+      "RebootInstance",
+      "RegisterEcsCluster",
+      "RegisterElasticIp",
+      "RegisterInstance",
+      "RegisterRdsDbInstance",
+      "RegisterVolume",
+      "SetLoadBasedAutoScaling",
+      "SetTimeBasedAutoScaling",
+      "StartInstance",
+      "StartStack",
+      "StopInstance",
+      "StopStack",
+      "UnassignInstance",
+      "UnassignVolume",
+      "UpdateApp",
+      "UpdateElasticIp",
+      "UpdateInstance",
+      "UpdateLayer",
+      "UpdateMyUserProfile",
+      "UpdateRdsDbInstance",
+      "UpdateStack",
+      "UpdateVolume"
+    ]
     permissions_management = [
-    "SetPermission",
-    "UpdateUserProfile"
-]
-    read                   = [
-    "GetHostnameSuggestion"
-]
-    list                   = [
-    "DescribeAgentVersions",
-    "DescribeApps",
-    "DescribeCommands",
-    "DescribeDeployments",
-    "DescribeEcsClusters",
-    "DescribeElasticIps",
-    "DescribeElasticLoadBalancers",
-    "DescribeInstances",
-    "DescribeLayers",
-    "DescribeLoadBasedAutoScaling",
-    "DescribeMyUserProfile",
-    "DescribeOperatingSystems",
-    "DescribePermissions",
-    "DescribeRaidArrays",
-    "DescribeRdsDbInstances",
-    "DescribeServiceErrors",
-    "DescribeStackProvisioningParameters",
-    "DescribeStackSummary",
-    "DescribeStacks",
-    "DescribeTimeBasedAutoScaling",
-    "DescribeUserProfiles",
-    "DescribeVolumes",
-    "ListTags"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+      "SetPermission",
+      "UpdateUserProfile"
+    ]
+    read = [
+      "GetHostnameSuggestion"
+    ]
+    list = [
+      "DescribeAgentVersions",
+      "DescribeApps",
+      "DescribeCommands",
+      "DescribeDeployments",
+      "DescribeEcsClusters",
+      "DescribeElasticIps",
+      "DescribeElasticLoadBalancers",
+      "DescribeInstances",
+      "DescribeLayers",
+      "DescribeLoadBasedAutoScaling",
+      "DescribeMyUserProfile",
+      "DescribeOperatingSystems",
+      "DescribePermissions",
+      "DescribeRaidArrays",
+      "DescribeRdsDbInstances",
+      "DescribeServiceErrors",
+      "DescribeStackProvisioningParameters",
+      "DescribeStackSummary",
+      "DescribeStacks",
+      "DescribeTimeBasedAutoScaling",
+      "DescribeUserProfiles",
+      "DescribeVolumes",
+      "ListTags"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

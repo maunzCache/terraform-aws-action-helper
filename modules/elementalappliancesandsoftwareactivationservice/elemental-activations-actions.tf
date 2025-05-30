@@ -59,25 +59,25 @@ locals {
   prefix = "elemental-activations"
 
   access_level = {
-    write                  = [
-    "CompleteAccountRegistration",
-    "CompleteFileUpload",
-    "ConfirmAccount",
-    "GenerateLicense",
-    "GenerateLicenses",
-    "StartFileUpload"
-]
+    write = [
+      "CompleteAccountRegistration",
+      "CompleteFileUpload",
+      "ConfirmAccount",
+      "GenerateLicense",
+      "GenerateLicenses",
+      "StartFileUpload"
+    ]
     permissions_management = []
-    read                   = [
-    "DownloadKickstart",
-    "DownloadSoftware",
-    "GetArtifactGroupSoftwareVersions",
-    "GetAsset",
-    "GetAssets",
-    "GetProductAdvisories",
-    "GetSoftwareVersions"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "DownloadKickstart",
+      "DownloadSoftware",
+      "GetArtifactGroupSoftwareVersions",
+      "GetAsset",
+      "GetAssets",
+      "GetProductAdvisories",
+      "GetSoftwareVersions"
+    ]
+    list    = []
+    tagging = []
   }
 }

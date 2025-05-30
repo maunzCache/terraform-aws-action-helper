@@ -59,30 +59,30 @@ locals {
   prefix = "ds-data"
 
   access_level = {
-    write                  = [
-    "AddGroupMember",
-    "CreateGroup",
-    "CreateUser",
-    "DeleteGroup",
-    "DeleteUser",
-    "DisableUser",
-    "RemoveGroupMember",
-    "UpdateGroup",
-    "UpdateUser"
-]
+    write = [
+      "AddGroupMember",
+      "CreateGroup",
+      "CreateUser",
+      "DeleteGroup",
+      "DeleteUser",
+      "DisableUser",
+      "RemoveGroupMember",
+      "UpdateGroup",
+      "UpdateUser"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeGroup",
-    "DescribeUser",
-    "SearchGroups",
-    "SearchUsers"
-]
-    list                   = [
-    "ListGroupMembers",
-    "ListGroups",
-    "ListGroupsForMember",
-    "ListUsers"
-]
-    tagging                = []
+    read = [
+      "DescribeGroup",
+      "DescribeUser",
+      "SearchGroups",
+      "SearchUsers"
+    ]
+    list = [
+      "ListGroupMembers",
+      "ListGroups",
+      "ListGroupsForMember",
+      "ListUsers"
+    ]
+    tagging = []
   }
 }

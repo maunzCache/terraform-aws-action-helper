@@ -61,11 +61,11 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read                   = [
-    "GetSupportTroubleshootingResponse",
-    "StartSupportTroubleshooting"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetSupportTroubleshootingResponse",
+      "StartSupportTroubleshooting"
+    ]
+    list    = []
+    tagging = []
   }
 }

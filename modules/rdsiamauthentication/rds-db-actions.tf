@@ -59,12 +59,12 @@ locals {
   prefix = "rds-db"
 
   access_level = {
-    write                  = []
+    write = []
     permissions_management = [
-    "connect"
-]
-    read                   = []
-    list                   = []
-    tagging                = []
+      "connect"
+    ]
+    read    = []
+    list    = []
+    tagging = []
   }
 }

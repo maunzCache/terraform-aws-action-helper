@@ -59,43 +59,43 @@ locals {
   prefix = "fis"
 
   access_level = {
-    write                  = [
-    "CreateExperimentTemplate",
-    "CreateTargetAccountConfiguration",
-    "DeleteExperimentTemplate",
-    "DeleteTargetAccountConfiguration",
-    "InjectApiInternalError",
-    "InjectApiThrottleError",
-    "InjectApiUnavailableError",
-    "StartExperiment",
-    "StopExperiment",
-    "UpdateExperimentTemplate",
-    "UpdateSafetyLeverState",
-    "UpdateTargetAccountConfiguration"
-]
+    write = [
+      "CreateExperimentTemplate",
+      "CreateTargetAccountConfiguration",
+      "DeleteExperimentTemplate",
+      "DeleteTargetAccountConfiguration",
+      "InjectApiInternalError",
+      "InjectApiThrottleError",
+      "InjectApiUnavailableError",
+      "StartExperiment",
+      "StopExperiment",
+      "UpdateExperimentTemplate",
+      "UpdateSafetyLeverState",
+      "UpdateTargetAccountConfiguration"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAction",
-    "GetExperiment",
-    "GetExperimentTargetAccountConfiguration",
-    "GetExperimentTemplate",
-    "GetSafetyLever",
-    "GetTargetAccountConfiguration",
-    "GetTargetResourceType",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListActions",
-    "ListExperimentResolvedTargets",
-    "ListExperimentTargetAccountConfigurations",
-    "ListExperimentTemplates",
-    "ListExperiments",
-    "ListTargetAccountConfigurations",
-    "ListTargetResourceTypes"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetAction",
+      "GetExperiment",
+      "GetExperimentTargetAccountConfiguration",
+      "GetExperimentTemplate",
+      "GetSafetyLever",
+      "GetTargetAccountConfiguration",
+      "GetTargetResourceType",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListActions",
+      "ListExperimentResolvedTargets",
+      "ListExperimentTargetAccountConfigurations",
+      "ListExperimentTemplates",
+      "ListExperiments",
+      "ListTargetAccountConfigurations",
+      "ListTargetResourceTypes"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

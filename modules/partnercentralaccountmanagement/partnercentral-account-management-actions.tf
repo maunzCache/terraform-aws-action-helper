@@ -59,11 +59,11 @@ locals {
   prefix = "partnercentral-account-management"
 
   access_level = {
-    write                  = [
-    "AssociatePartnerAccount",
-    "AssociatePartnerUser",
-    "DisassociatePartnerUser"
-]
+    write = [
+      "AssociatePartnerAccount",
+      "AssociatePartnerUser",
+      "DisassociatePartnerUser"
+    ]
     permissions_management = []
     read                   = []
     list                   = []

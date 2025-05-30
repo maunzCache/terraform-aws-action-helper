@@ -59,23 +59,23 @@ locals {
   prefix = "rbin"
 
   access_level = {
-    write                  = [
-    "CreateRule",
-    "DeleteRule",
-    "LockRule",
-    "UnlockRule",
-    "UpdateRule"
-]
+    write = [
+      "CreateRule",
+      "DeleteRule",
+      "LockRule",
+      "UnlockRule",
+      "UpdateRule"
+    ]
     permissions_management = []
-    read                   = [
-    "GetRule",
-    "ListRules",
-    "ListTagsForResource"
-]
-    list                   = []
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetRule",
+      "ListRules",
+      "ListTagsForResource"
+    ]
+    list = []
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

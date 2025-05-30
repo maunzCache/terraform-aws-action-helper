@@ -59,63 +59,63 @@ locals {
   prefix = "lookoutequipment"
 
   access_level = {
-    write                  = [
-    "CreateDataset",
-    "CreateInferenceScheduler",
-    "CreateLabel",
-    "CreateLabelGroup",
-    "CreateModel",
-    "CreateRetrainingScheduler",
-    "DeleteDataset",
-    "DeleteInferenceScheduler",
-    "DeleteLabel",
-    "DeleteLabelGroup",
-    "DeleteModel",
-    "DeleteResourcePolicy",
-    "DeleteRetrainingScheduler",
-    "ImportDataset",
-    "ImportModelVersion",
-    "PutResourcePolicy",
-    "StartDataIngestionJob",
-    "StartInferenceScheduler",
-    "StartRetrainingScheduler",
-    "StopInferenceScheduler",
-    "StopRetrainingScheduler",
-    "UpdateActiveModelVersion",
-    "UpdateInferenceScheduler",
-    "UpdateLabelGroup",
-    "UpdateModel",
-    "UpdateRetrainingScheduler"
-]
+    write = [
+      "CreateDataset",
+      "CreateInferenceScheduler",
+      "CreateLabel",
+      "CreateLabelGroup",
+      "CreateModel",
+      "CreateRetrainingScheduler",
+      "DeleteDataset",
+      "DeleteInferenceScheduler",
+      "DeleteLabel",
+      "DeleteLabelGroup",
+      "DeleteModel",
+      "DeleteResourcePolicy",
+      "DeleteRetrainingScheduler",
+      "ImportDataset",
+      "ImportModelVersion",
+      "PutResourcePolicy",
+      "StartDataIngestionJob",
+      "StartInferenceScheduler",
+      "StartRetrainingScheduler",
+      "StopInferenceScheduler",
+      "StopRetrainingScheduler",
+      "UpdateActiveModelVersion",
+      "UpdateInferenceScheduler",
+      "UpdateLabelGroup",
+      "UpdateModel",
+      "UpdateRetrainingScheduler"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeDataIngestionJob",
-    "DescribeDataset",
-    "DescribeInferenceScheduler",
-    "DescribeLabelGroup",
-    "DescribeModel",
-    "DescribeModelVersion",
-    "DescribeResourcePolicy",
-    "DescribeRetrainingScheduler",
-    "Describelabel",
-    "ListInferenceEvents",
-    "ListInferenceExecutions",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListDataIngestionJobs",
-    "ListDatasets",
-    "ListInferenceSchedulers",
-    "ListLabelGroups",
-    "ListLabels",
-    "ListModelVersions",
-    "ListModels",
-    "ListRetrainingSchedulers",
-    "ListSensorStatistics"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeDataIngestionJob",
+      "DescribeDataset",
+      "DescribeInferenceScheduler",
+      "DescribeLabelGroup",
+      "DescribeModel",
+      "DescribeModelVersion",
+      "DescribeResourcePolicy",
+      "DescribeRetrainingScheduler",
+      "Describelabel",
+      "ListInferenceEvents",
+      "ListInferenceExecutions",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListDataIngestionJobs",
+      "ListDatasets",
+      "ListInferenceSchedulers",
+      "ListLabelGroups",
+      "ListLabels",
+      "ListModelVersions",
+      "ListModels",
+      "ListRetrainingSchedulers",
+      "ListSensorStatistics"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

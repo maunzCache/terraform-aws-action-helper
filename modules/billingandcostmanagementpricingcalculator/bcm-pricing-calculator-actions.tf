@@ -59,50 +59,50 @@ locals {
   prefix = "bcm-pricing-calculator"
 
   access_level = {
-    write                  = [
-    "CreateBillEstimate",
-    "CreateBillScenario",
-    "CreateBillScenarioCommitmentModification",
-    "CreateBillScenarioUsageModification",
-    "CreateWorkloadEstimate",
-    "CreateWorkloadEstimateUsage",
-    "DeleteBillEstimate",
-    "DeleteBillScenario",
-    "DeleteBillScenarioCommitmentModification",
-    "DeleteBillScenarioUsageModification",
-    "DeleteWorkloadEstimate",
-    "DeleteWorkloadEstimateUsage",
-    "UpdateBillEstimate",
-    "UpdateBillScenario",
-    "UpdateBillScenarioCommitmentModification",
-    "UpdateBillScenarioUsageModification",
-    "UpdatePreferences",
-    "UpdateWorkloadEstimate",
-    "UpdateWorkloadEstimateUsage"
-]
+    write = [
+      "CreateBillEstimate",
+      "CreateBillScenario",
+      "CreateBillScenarioCommitmentModification",
+      "CreateBillScenarioUsageModification",
+      "CreateWorkloadEstimate",
+      "CreateWorkloadEstimateUsage",
+      "DeleteBillEstimate",
+      "DeleteBillScenario",
+      "DeleteBillScenarioCommitmentModification",
+      "DeleteBillScenarioUsageModification",
+      "DeleteWorkloadEstimate",
+      "DeleteWorkloadEstimateUsage",
+      "UpdateBillEstimate",
+      "UpdateBillScenario",
+      "UpdateBillScenarioCommitmentModification",
+      "UpdateBillScenarioUsageModification",
+      "UpdatePreferences",
+      "UpdateWorkloadEstimate",
+      "UpdateWorkloadEstimateUsage"
+    ]
     permissions_management = []
-    read                   = [
-    "GetBillEstimate",
-    "GetBillScenario",
-    "GetPreferences",
-    "GetWorkloadEstimate"
-]
-    list                   = [
-    "ListBillEstimateCommitments",
-    "ListBillEstimateInputCommitmentModifications",
-    "ListBillEstimateInputUsageModifications",
-    "ListBillEstimateLineItems",
-    "ListBillEstimates",
-    "ListBillScenarioCommitmentModifications",
-    "ListBillScenarioUsageModifications",
-    "ListBillScenarios",
-    "ListWorkloadEstimateUsage",
-    "ListWorkloadEstimates"
-]
-    tagging                = [
-    "ListTagsForResource",
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetBillEstimate",
+      "GetBillScenario",
+      "GetPreferences",
+      "GetWorkloadEstimate"
+    ]
+    list = [
+      "ListBillEstimateCommitments",
+      "ListBillEstimateInputCommitmentModifications",
+      "ListBillEstimateInputUsageModifications",
+      "ListBillEstimateLineItems",
+      "ListBillEstimates",
+      "ListBillScenarioCommitmentModifications",
+      "ListBillScenarioUsageModifications",
+      "ListBillScenarios",
+      "ListWorkloadEstimateUsage",
+      "ListWorkloadEstimates"
+    ]
+    tagging = [
+      "ListTagsForResource",
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

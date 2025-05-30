@@ -59,33 +59,33 @@ locals {
   prefix = "application-signals"
 
   access_level = {
-    write                  = [
-    "BatchUpdateExclusionWindows",
-    "CreateServiceLevelObjective",
-    "DeleteServiceLevelObjective",
-    "Link",
-    "StartDiscovery",
-    "UpdateServiceLevelObjective"
-]
+    write = [
+      "BatchUpdateExclusionWindows",
+      "CreateServiceLevelObjective",
+      "DeleteServiceLevelObjective",
+      "Link",
+      "StartDiscovery",
+      "UpdateServiceLevelObjective"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetServiceLevelObjectiveBudgetReport",
-    "GetService",
-    "GetServiceLevelObjective",
-    "ListServiceDependencies",
-    "ListServiceDependents",
-    "ListServiceOperations",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListObservedEntities",
-    "ListServiceLevelObjectiveExclusionWindows",
-    "ListServiceLevelObjectives",
-    "ListServices"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchGetServiceLevelObjectiveBudgetReport",
+      "GetService",
+      "GetServiceLevelObjective",
+      "ListServiceDependencies",
+      "ListServiceDependents",
+      "ListServiceOperations",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListObservedEntities",
+      "ListServiceLevelObjectiveExclusionWindows",
+      "ListServiceLevelObjectives",
+      "ListServices"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

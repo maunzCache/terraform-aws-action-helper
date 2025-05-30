@@ -59,14 +59,14 @@ locals {
   prefix = "workmailmessageflow"
 
   access_level = {
-    write                  = [
-    "PutRawMessageContent"
-]
+    write = [
+      "PutRawMessageContent"
+    ]
     permissions_management = []
-    read                   = [
-    "GetRawMessageContent"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetRawMessageContent"
+    ]
+    list    = []
+    tagging = []
   }
 }

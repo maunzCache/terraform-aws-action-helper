@@ -59,18 +59,18 @@ locals {
   prefix = "application-cost-profiler"
 
   access_level = {
-    write                  = [
-    "DeleteReportDefinition",
-    "ImportApplicationUsage",
-    "PutReportDefinition",
-    "UpdateReportDefinition"
-]
+    write = [
+      "DeleteReportDefinition",
+      "ImportApplicationUsage",
+      "PutReportDefinition",
+      "UpdateReportDefinition"
+    ]
     permissions_management = []
-    read                   = [
-    "GetReportDefinition",
-    "ListReportDefinitions"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetReportDefinition",
+      "ListReportDefinitions"
+    ]
+    list    = []
+    tagging = []
   }
 }

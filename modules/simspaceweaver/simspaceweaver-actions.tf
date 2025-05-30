@@ -59,30 +59,30 @@ locals {
   prefix = "simspaceweaver"
 
   access_level = {
-    write                  = [
-    "CreateSnapshot",
-    "DeleteApp",
-    "DeleteSimulation",
-    "StartApp",
-    "StartClock",
-    "StartSimulation",
-    "StopApp",
-    "StopClock",
-    "StopSimulation"
-]
+    write = [
+      "CreateSnapshot",
+      "DeleteApp",
+      "DeleteSimulation",
+      "StartApp",
+      "StartClock",
+      "StartSimulation",
+      "StopApp",
+      "StopClock",
+      "StopSimulation"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeApp",
-    "DescribeSimulation",
-    "ListApps",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListSimulations"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeApp",
+      "DescribeSimulation",
+      "ListApps",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListSimulations"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

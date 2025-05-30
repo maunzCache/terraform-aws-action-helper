@@ -59,40 +59,40 @@ locals {
   prefix = "snowball"
 
   access_level = {
-    write                  = [
-    "CancelCluster",
-    "CancelJob",
-    "CreateAddress",
-    "CreateCluster",
-    "CreateJob",
-    "CreateLongTermPricing",
-    "CreateReturnShippingLabel",
-    "UpdateCluster",
-    "UpdateJob",
-    "UpdateJobShipmentState",
-    "UpdateLongTermPricing"
-]
+    write = [
+      "CancelCluster",
+      "CancelJob",
+      "CreateAddress",
+      "CreateCluster",
+      "CreateJob",
+      "CreateLongTermPricing",
+      "CreateReturnShippingLabel",
+      "UpdateCluster",
+      "UpdateJob",
+      "UpdateJobShipmentState",
+      "UpdateLongTermPricing"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeAddress",
-    "DescribeCluster",
-    "DescribeJob",
-    "DescribeReturnShippingLabel",
-    "GetJobManifest",
-    "GetJobUnlockCode",
-    "GetSnowballUsage",
-    "GetSoftwareUpdates",
-    "ListLongTermPricing"
-]
-    list                   = [
-    "DescribeAddresses",
-    "ListClusterJobs",
-    "ListClusters",
-    "ListCompatibleImages",
-    "ListJobs",
-    "ListPickupLocations",
-    "ListServiceVersions"
-]
-    tagging                = []
+    read = [
+      "DescribeAddress",
+      "DescribeCluster",
+      "DescribeJob",
+      "DescribeReturnShippingLabel",
+      "GetJobManifest",
+      "GetJobUnlockCode",
+      "GetSnowballUsage",
+      "GetSoftwareUpdates",
+      "ListLongTermPricing"
+    ]
+    list = [
+      "DescribeAddresses",
+      "ListClusterJobs",
+      "ListClusters",
+      "ListCompatibleImages",
+      "ListJobs",
+      "ListPickupLocations",
+      "ListServiceVersions"
+    ]
+    tagging = []
   }
 }

@@ -59,60 +59,60 @@ locals {
   prefix = "mgh"
 
   access_level = {
-    write                  = [
-    "AcceptConnection",
-    "AssociateAutomationUnitRole",
-    "AssociateCreatedArtifact",
-    "AssociateDiscoveredResource",
-    "AssociateSourceResource",
-    "BatchAssociateIamRoleWithConnection",
-    "BatchDisassociateIamRoleFromConnection",
-    "CreateAutomationRun",
-    "CreateAutomationUnit",
-    "CreateHomeRegionControl",
-    "CreateProgressUpdateStream",
-    "DeleteAutomationRun",
-    "DeleteAutomationUnit",
-    "DeleteConnection",
-    "DeleteHomeRegionControl",
-    "DeleteProgressUpdateStream",
-    "DisassociateAutomationUnitRole",
-    "DisassociateCreatedArtifact",
-    "DisassociateDiscoveredResource",
-    "DisassociateSourceResource",
-    "ImportMigrationTask",
-    "NotifyApplicationState",
-    "NotifyMigrationTaskState",
-    "PutResourceAttributes",
-    "RejectConnection"
-]
+    write = [
+      "AcceptConnection",
+      "AssociateAutomationUnitRole",
+      "AssociateCreatedArtifact",
+      "AssociateDiscoveredResource",
+      "AssociateSourceResource",
+      "BatchAssociateIamRoleWithConnection",
+      "BatchDisassociateIamRoleFromConnection",
+      "CreateAutomationRun",
+      "CreateAutomationUnit",
+      "CreateHomeRegionControl",
+      "CreateProgressUpdateStream",
+      "DeleteAutomationRun",
+      "DeleteAutomationUnit",
+      "DeleteConnection",
+      "DeleteHomeRegionControl",
+      "DeleteProgressUpdateStream",
+      "DisassociateAutomationUnitRole",
+      "DisassociateCreatedArtifact",
+      "DisassociateDiscoveredResource",
+      "DisassociateSourceResource",
+      "ImportMigrationTask",
+      "NotifyApplicationState",
+      "NotifyMigrationTaskState",
+      "PutResourceAttributes",
+      "RejectConnection"
+    ]
     permissions_management = []
-    read                   = [
-    "DescribeApplicationState",
-    "DescribeAutomationRun",
-    "DescribeAutomationUnit",
-    "DescribeMigrationTask",
-    "GetConnection",
-    "GetHomeRegion"
-]
-    list                   = [
-    "DescribeHomeRegionControls",
-    "ListApplicationStates",
-    "ListAutomationRuns",
-    "ListAutomationUnits",
-    "ListConnectionRoles",
-    "ListConnections",
-    "ListCreatedArtifacts",
-    "ListDiscoveredResources",
-    "ListMigrationTaskUpdates",
-    "ListMigrationTasks",
-    "ListProgressUpdateStreams",
-    "ListSourceResources",
-    "ListTagsForResource"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "DescribeApplicationState",
+      "DescribeAutomationRun",
+      "DescribeAutomationUnit",
+      "DescribeMigrationTask",
+      "GetConnection",
+      "GetHomeRegion"
+    ]
+    list = [
+      "DescribeHomeRegionControls",
+      "ListApplicationStates",
+      "ListAutomationRuns",
+      "ListAutomationUnits",
+      "ListConnectionRoles",
+      "ListConnections",
+      "ListCreatedArtifacts",
+      "ListDiscoveredResources",
+      "ListMigrationTaskUpdates",
+      "ListMigrationTasks",
+      "ListProgressUpdateStreams",
+      "ListSourceResources",
+      "ListTagsForResource"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

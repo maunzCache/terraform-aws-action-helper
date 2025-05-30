@@ -59,26 +59,26 @@ locals {
   prefix = "aws-marketplace-management"
 
   access_level = {
-    write                  = [
-    "PutAdditionalSellerNotificationRecipients",
-    "PutBankAccountVerificationDetails",
-    "PutSecondaryUserVerificationDetails",
-    "PutSellerVerificationDetails",
-    "uploadFiles"
-]
+    write = [
+      "PutAdditionalSellerNotificationRecipients",
+      "PutBankAccountVerificationDetails",
+      "PutSecondaryUserVerificationDetails",
+      "PutSellerVerificationDetails",
+      "uploadFiles"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAdditionalSellerNotificationRecipients",
-    "GetBankAccountVerificationDetails",
-    "GetSecondaryUserVerificationDetails",
-    "GetSellerVerificationDetails"
-]
-    list                   = [
-    "viewMarketing",
-    "viewReports",
-    "viewSettings",
-    "viewSupport"
-]
-    tagging                = []
+    read = [
+      "GetAdditionalSellerNotificationRecipients",
+      "GetBankAccountVerificationDetails",
+      "GetSecondaryUserVerificationDetails",
+      "GetSellerVerificationDetails"
+    ]
+    list = [
+      "viewMarketing",
+      "viewReports",
+      "viewSettings",
+      "viewSupport"
+    ]
+    tagging = []
   }
 }

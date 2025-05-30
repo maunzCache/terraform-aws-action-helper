@@ -59,15 +59,15 @@ locals {
   prefix = "uxc"
 
   access_level = {
-    write                  = [
-    "DeleteAccountColor",
-    "PutAccountColor"
-]
+    write = [
+      "DeleteAccountColor",
+      "PutAccountColor"
+    ]
     permissions_management = []
-    read                   = [
-    "GetAccountColor"
-]
-    list                   = []
-    tagging                = []
+    read = [
+      "GetAccountColor"
+    ]
+    list    = []
+    tagging = []
   }
 }

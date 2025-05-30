@@ -59,12 +59,12 @@ locals {
   prefix = "ssmmessages"
 
   access_level = {
-    write                  = [
-    "CreateControlChannel",
-    "CreateDataChannel",
-    "OpenControlChannel",
-    "OpenDataChannel"
-]
+    write = [
+      "CreateControlChannel",
+      "CreateDataChannel",
+      "OpenControlChannel",
+      "OpenDataChannel"
+    ]
     permissions_management = []
     read                   = []
     list                   = []

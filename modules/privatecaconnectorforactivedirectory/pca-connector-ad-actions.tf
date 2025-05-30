@@ -59,39 +59,39 @@ locals {
   prefix = "pca-connector-ad"
 
   access_level = {
-    write                  = [
-    "CreateConnector",
-    "CreateDirectoryRegistration",
-    "CreateServicePrincipalName",
-    "CreateTemplate",
-    "CreateTemplateGroupAccessControlEntry",
-    "DeleteConnector",
-    "DeleteDirectoryRegistration",
-    "DeleteServicePrincipalName",
-    "DeleteTemplate",
-    "DeleteTemplateGroupAccessControlEntry",
-    "UpdateTemplate",
-    "UpdateTemplateGroupAccessControlEntry"
-]
+    write = [
+      "CreateConnector",
+      "CreateDirectoryRegistration",
+      "CreateServicePrincipalName",
+      "CreateTemplate",
+      "CreateTemplateGroupAccessControlEntry",
+      "DeleteConnector",
+      "DeleteDirectoryRegistration",
+      "DeleteServicePrincipalName",
+      "DeleteTemplate",
+      "DeleteTemplateGroupAccessControlEntry",
+      "UpdateTemplate",
+      "UpdateTemplateGroupAccessControlEntry"
+    ]
     permissions_management = []
-    read                   = [
-    "GetConnector",
-    "GetDirectoryRegistration",
-    "GetServicePrincipalName",
-    "GetTemplate",
-    "GetTemplateGroupAccessControlEntry",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListConnectors",
-    "ListDirectoryRegistrations",
-    "ListServicePrincipalNames",
-    "ListTemplateGroupAccessControlEntries",
-    "ListTemplates"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetConnector",
+      "GetDirectoryRegistration",
+      "GetServicePrincipalName",
+      "GetTemplate",
+      "GetTemplateGroupAccessControlEntry",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListConnectors",
+      "ListDirectoryRegistrations",
+      "ListServicePrincipalNames",
+      "ListTemplateGroupAccessControlEntries",
+      "ListTemplates"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

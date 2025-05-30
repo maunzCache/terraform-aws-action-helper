@@ -59,55 +59,55 @@ locals {
   prefix = "amplify"
 
   access_level = {
-    write                  = [
-    "AssociateWebACL",
-    "CreateApp",
-    "CreateBackendEnvironment",
-    "CreateBranch",
-    "CreateDeployment",
-    "CreateDomainAssociation",
-    "CreateWebHook",
-    "DeleteApp",
-    "DeleteBackendEnvironment",
-    "DeleteBranch",
-    "DeleteDomainAssociation",
-    "DeleteJob",
-    "DeleteWebHook",
-    "DisassociateWebACL",
-    "GenerateAccessLogs",
-    "StartDeployment",
-    "StartJob",
-    "StopJob",
-    "UpdateApp",
-    "UpdateBranch",
-    "UpdateDomainAssociation",
-    "UpdateWebHook"
-]
+    write = [
+      "AssociateWebACL",
+      "CreateApp",
+      "CreateBackendEnvironment",
+      "CreateBranch",
+      "CreateDeployment",
+      "CreateDomainAssociation",
+      "CreateWebHook",
+      "DeleteApp",
+      "DeleteBackendEnvironment",
+      "DeleteBranch",
+      "DeleteDomainAssociation",
+      "DeleteJob",
+      "DeleteWebHook",
+      "DisassociateWebACL",
+      "GenerateAccessLogs",
+      "StartDeployment",
+      "StartJob",
+      "StopJob",
+      "UpdateApp",
+      "UpdateBranch",
+      "UpdateDomainAssociation",
+      "UpdateWebHook"
+    ]
     permissions_management = []
-    read                   = [
-    "GetApp",
-    "GetArtifactUrl",
-    "GetBackendEnvironment",
-    "GetBranch",
-    "GetDomainAssociation",
-    "GetJob",
-    "GetWebACLForResource",
-    "GetWebHook",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListApps",
-    "ListArtifacts",
-    "ListBackendEnvironments",
-    "ListBranches",
-    "ListDomainAssociations",
-    "ListJobs",
-    "ListResourcesForWebACL",
-    "ListWebHooks"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetApp",
+      "GetArtifactUrl",
+      "GetBackendEnvironment",
+      "GetBranch",
+      "GetDomainAssociation",
+      "GetJob",
+      "GetWebACLForResource",
+      "GetWebHook",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListApps",
+      "ListArtifacts",
+      "ListBackendEnvironments",
+      "ListBranches",
+      "ListDomainAssociations",
+      "ListJobs",
+      "ListResourcesForWebACL",
+      "ListWebHooks"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

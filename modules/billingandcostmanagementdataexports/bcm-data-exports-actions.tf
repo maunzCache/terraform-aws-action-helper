@@ -59,26 +59,26 @@ locals {
   prefix = "bcm-data-exports"
 
   access_level = {
-    write                  = [
-    "CreateExport",
-    "DeleteExport",
-    "UpdateExport"
-]
+    write = [
+      "CreateExport",
+      "DeleteExport",
+      "UpdateExport"
+    ]
     permissions_management = []
-    read                   = [
-    "GetExecution",
-    "GetExport",
-    "GetTable",
-    "ListTagsForResource"
-]
-    list                   = [
-    "ListExecutions",
-    "ListExports",
-    "ListTables"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "GetExecution",
+      "GetExport",
+      "GetTable",
+      "ListTagsForResource"
+    ]
+    list = [
+      "ListExecutions",
+      "ListExports",
+      "ListTables"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

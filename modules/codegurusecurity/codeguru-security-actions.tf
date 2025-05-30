@@ -59,29 +59,29 @@ locals {
   prefix = "codeguru-security"
 
   access_level = {
-    write                  = [
-    "CreateScan",
-    "CreateUploadUrl",
-    "DeleteScansByCategory",
-    "UpdateAccountConfiguration"
-]
+    write = [
+      "CreateScan",
+      "CreateUploadUrl",
+      "DeleteScansByCategory",
+      "UpdateAccountConfiguration"
+    ]
     permissions_management = []
-    read                   = [
-    "BatchGetFindings",
-    "GetAccountConfiguration",
-    "GetMetricsSummary",
-    "GetScan",
-    "ListTagsForResource"
-]
-    list                   = [
-    "GetFindings",
-    "ListFindings",
-    "ListFindingsMetrics",
-    "ListScans"
-]
-    tagging                = [
-    "TagResource",
-    "UntagResource"
-]
+    read = [
+      "BatchGetFindings",
+      "GetAccountConfiguration",
+      "GetMetricsSummary",
+      "GetScan",
+      "ListTagsForResource"
+    ]
+    list = [
+      "GetFindings",
+      "ListFindings",
+      "ListFindingsMetrics",
+      "ListScans"
+    ]
+    tagging = [
+      "TagResource",
+      "UntagResource"
+    ]
   }
 }

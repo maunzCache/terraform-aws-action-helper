@@ -59,38 +59,38 @@ locals {
   prefix = "acm-pca"
 
   access_level = {
-    write                  = [
-    "CreateCertificateAuthority",
-    "CreateCertificateAuthorityAuditReport",
-    "DeleteCertificateAuthority",
-    "ImportCertificateAuthorityCertificate",
-    "IssueCertificate",
-    "RestoreCertificateAuthority",
-    "RevokeCertificate",
-    "UpdateCertificateAuthority"
-]
+    write = [
+      "CreateCertificateAuthority",
+      "CreateCertificateAuthorityAuditReport",
+      "DeleteCertificateAuthority",
+      "ImportCertificateAuthorityCertificate",
+      "IssueCertificate",
+      "RestoreCertificateAuthority",
+      "RevokeCertificate",
+      "UpdateCertificateAuthority"
+    ]
     permissions_management = [
-    "CreatePermission",
-    "DeletePermission",
-    "DeletePolicy",
-    "PutPolicy"
-]
-    read                   = [
-    "DescribeCertificateAuthority",
-    "DescribeCertificateAuthorityAuditReport",
-    "GetCertificate",
-    "GetCertificateAuthorityCertificate",
-    "GetCertificateAuthorityCsr",
-    "GetPolicy",
-    "ListPermissions",
-    "ListTags"
-]
-    list                   = [
-    "ListCertificateAuthorities"
-]
-    tagging                = [
-    "TagCertificateAuthority",
-    "UntagCertificateAuthority"
-]
+      "CreatePermission",
+      "DeletePermission",
+      "DeletePolicy",
+      "PutPolicy"
+    ]
+    read = [
+      "DescribeCertificateAuthority",
+      "DescribeCertificateAuthorityAuditReport",
+      "GetCertificate",
+      "GetCertificateAuthorityCertificate",
+      "GetCertificateAuthorityCsr",
+      "GetPolicy",
+      "ListPermissions",
+      "ListTags"
+    ]
+    list = [
+      "ListCertificateAuthorities"
+    ]
+    tagging = [
+      "TagCertificateAuthority",
+      "UntagCertificateAuthority"
+    ]
   }
 }
