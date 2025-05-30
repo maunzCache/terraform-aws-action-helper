@@ -59,40 +59,43 @@ locals {
   prefix = "discovery"
 
   access_level = {
-    write = [
-      "AssociateConfigurationItemsToApplication",
-      "BatchDeleteImportData",
-      "CreateApplication",
-      "DeleteApplications",
-      "DisassociateConfigurationItemsFromApplication",
-      "ExportConfigurations",
-      "StartContinuousExport",
-      "StartDataCollectionByAgentIds",
-      "StartExportTask",
-      "StartImportTask",
-      "StopContinuousExport",
-      "StopDataCollectionByAgentIds",
-      "UpdateApplication"
-    ]
+    write                  = [
+    "AssociateConfigurationItemsToApplication",
+    "BatchDeleteAgents",
+    "BatchDeleteImportData",
+    "CreateApplication",
+    "DeleteApplications",
+    "DisassociateConfigurationItemsFromApplication",
+    "ExportConfigurations",
+    "StartBatchDeleteConfigurationTask",
+    "StartContinuousExport",
+    "StartDataCollectionByAgentIds",
+    "StartExportTask",
+    "StartImportTask",
+    "StopContinuousExport",
+    "StopDataCollectionByAgentIds",
+    "UpdateApplication"
+]
     permissions_management = []
-    read = [
-      "DescribeAgents",
-      "DescribeConfigurations",
-      "DescribeContinuousExports",
-      "DescribeExportConfigurations",
-      "DescribeExportTasks",
-      "DescribeTags",
-      "GetDiscoverySummary",
-      "GetNetworkConnectionGraph"
-    ]
-    list = [
-      "DescribeImportTasks",
-      "ListConfigurations",
-      "ListServerNeighbors"
-    ]
-    tagging = [
-      "CreateTags",
-      "DeleteTags"
-    ]
+    read                   = [
+    "DescribeAgents",
+    "DescribeBatchDeleteConfigurationTask",
+    "DescribeConfigurations",
+    "DescribeContinuousExports",
+    "DescribeExportConfigurations",
+    "DescribeExportTasks",
+    "DescribeTags",
+    "GetDiscoverySummary",
+    "GetNetworkConnectionGraph"
+]
+    list                   = [
+    "DescribeImportTasks",
+    "ListConfigurations",
+    "ListServerNeighbors"
+]
+    tagging                = [
+    "CreateTags",
+    "DeleteTags"
+]
   }
 }

@@ -59,28 +59,44 @@ locals {
   prefix = "codecatalyst"
 
   access_level = {
-    write = [
-      "AcceptConnection",
-      "AssociateIamRoleToConnection",
-      "DeleteConnection",
-      "DisassociateIamRoleFromConnection",
-      "PutBillingAuthorization",
-      "RejectConnection"
-    ]
+    write                  = [
+    "AcceptConnection",
+    "AssociateIamRoleToConnection",
+    "AssociateIdentityCenterApplicationToSpace",
+    "AssociateIdentityToIdentityCenterApplication",
+    "BatchAssociateIdentitiesToIdentityCenterApplication",
+    "BatchDisassociateIdentitiesFromIdentityCenterApplication",
+    "CreateIdentityCenterApplication",
+    "CreateSpace",
+    "CreateSpaceAdminRoleAssignment",
+    "DeleteConnection",
+    "DeleteIdentityCenterApplication",
+    "DisassociateIamRoleFromConnection",
+    "DisassociateIdentityCenterApplicationFromSpace",
+    "DisassociateIdentityFromIdentityCenterApplication",
+    "PutBillingAuthorization",
+    "RejectConnection",
+    "SynchronizeIdentityCenterApplication",
+    "UpdateIdentityCenterApplication"
+]
     permissions_management = []
-    read = [
-      "GetBillingAuthorization",
-      "GetConnection",
-      "GetPendingConnection",
-      "ListTagsForResource"
-    ]
-    list = [
-      "ListConnections",
-      "ListIamRolesForConnection"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "GetBillingAuthorization",
+    "GetConnection",
+    "GetIdentityCenterApplication",
+    "GetPendingConnection",
+    "ListTagsForResource"
+]
+    list                   = [
+    "ListConnections",
+    "ListIamRolesForConnection",
+    "ListIdentityCenterApplications",
+    "ListIdentityCenterApplicationsForSpace",
+    "ListSpacesForIdentityCenterApplication"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

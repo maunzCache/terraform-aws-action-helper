@@ -59,57 +59,73 @@ locals {
   prefix = "finspace"
 
   access_level = {
-    write = [
-      "ConnectKxCluster",
-      "CreateEnvironment",
-      "CreateKxChangeset",
-      "CreateKxCluster",
-      "CreateKxDatabase",
-      "CreateKxEnvironment",
-      "CreateKxUser",
-      "CreateUser",
-      "DeleteEnvironment",
-      "DeleteKxCluster",
-      "DeleteKxDatabase",
-      "DeleteKxEnvironment",
-      "DeleteKxUser",
-      "LoadSampleDataSetGroupIntoEnvironment",
-      "MountKxDatabase",
-      "ResetUserPassword",
-      "UpdateEnvironment",
-      "UpdateKxClusterDatabases",
-      "UpdateKxDatabase",
-      "UpdateKxEnvironment",
-      "UpdateKxEnvironmentNetwork",
-      "UpdateKxUser",
-      "UpdateUser"
-    ]
+    write                  = [
+    "ConnectKxCluster",
+    "CreateEnvironment",
+    "CreateKxChangeset",
+    "CreateKxCluster",
+    "CreateKxDatabase",
+    "CreateKxDataview",
+    "CreateKxEnvironment",
+    "CreateKxScalingGroup",
+    "CreateKxUser",
+    "CreateKxVolume",
+    "CreateUser",
+    "DeleteEnvironment",
+    "DeleteKxCluster",
+    "DeleteKxClusterNode",
+    "DeleteKxDatabase",
+    "DeleteKxDataview",
+    "DeleteKxEnvironment",
+    "DeleteKxScalingGroup",
+    "DeleteKxUser",
+    "DeleteKxVolume",
+    "LoadSampleDataSetGroupIntoEnvironment",
+    "MountKxDatabase",
+    "ResetUserPassword",
+    "UpdateEnvironment",
+    "UpdateKxClusterCodeConfiguration",
+    "UpdateKxClusterDatabases",
+    "UpdateKxDatabase",
+    "UpdateKxDataview",
+    "UpdateKxEnvironment",
+    "UpdateKxEnvironmentNetwork",
+    "UpdateKxUser",
+    "UpdateKxVolume",
+    "UpdateUser"
+]
     permissions_management = []
-    read = [
-      "GetEnvironment",
-      "GetKxChangeset",
-      "GetKxCluster",
-      "GetKxConnectionString",
-      "GetKxDatabase",
-      "GetKxEnvironment",
-      "GetKxUser",
-      "GetLoadSampleDataSetGroupIntoEnvironmentStatus",
-      "GetUser"
-    ]
-    list = [
-      "ListEnvironments",
-      "ListKxChangesets",
-      "ListKxClusterNodes",
-      "ListKxClusters",
-      "ListKxDatabases",
-      "ListKxEnvironments",
-      "ListKxUsers",
-      "ListTagsForResource",
-      "ListUsers"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "GetEnvironment",
+    "GetKxChangeset",
+    "GetKxCluster",
+    "GetKxConnectionString",
+    "GetKxDatabase",
+    "GetKxDataview",
+    "GetKxEnvironment",
+    "GetKxScalingGroup",
+    "GetKxUser",
+    "GetKxVolume",
+    "GetLoadSampleDataSetGroupIntoEnvironmentStatus",
+    "GetUser"
+]
+    list                   = [
+    "ListEnvironments",
+    "ListKxChangesets",
+    "ListKxClusterNodes",
+    "ListKxClusters",
+    "ListKxDatabases",
+    "ListKxDataviews",
+    "ListKxEnvironments",
+    "ListKxScalingGroups",
+    "ListKxUsers",
+    "ListKxVolumes",
+    "ListTagsForResource",
+    "ListUsers"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

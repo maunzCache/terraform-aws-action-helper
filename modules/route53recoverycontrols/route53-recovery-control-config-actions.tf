@@ -59,38 +59,42 @@ locals {
   prefix = "route53-recovery-control-config"
 
   access_level = {
-    write = [
-      "CreateCluster",
-      "CreateControlPanel",
-      "CreateRoutingControl",
-      "CreateSafetyRule",
-      "DeleteCluster",
-      "DeleteControlPanel",
-      "DeleteRoutingControl",
-      "DeleteSafetyRule",
-      "UpdateControlPanel",
-      "UpdateRoutingControl",
-      "UpdateSafetyRule"
-    ]
+    write                  = [
+    "CreateCluster",
+    "CreateControlPanel",
+    "CreateRoutingControl",
+    "CreateSafetyRule",
+    "DeleteCluster",
+    "DeleteControlPanel",
+    "DeleteResourcePolicy",
+    "DeleteRoutingControl",
+    "DeleteSafetyRule",
+    "PutResourcePolicy",
+    "UpdateCluster",
+    "UpdateControlPanel",
+    "UpdateRoutingControl",
+    "UpdateSafetyRule"
+]
     permissions_management = []
-    read = [
-      "DescribeCluster",
-      "DescribeControlPanel",
-      "DescribeRoutingControl",
-      "DescribeRoutingControlByName",
-      "DescribeSafetyRule",
-      "ListClusters",
-      "ListControlPanels",
-      "ListRoutingControls",
-      "ListSafetyRules",
-      "ListTagsForResource"
-    ]
-    list = [
-      "ListAssociatedRoute53HealthChecks"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "DescribeCluster",
+    "DescribeControlPanel",
+    "DescribeRoutingControl",
+    "DescribeRoutingControlByName",
+    "DescribeSafetyRule",
+    "GetResourcePolicy",
+    "ListClusters",
+    "ListControlPanels",
+    "ListRoutingControls",
+    "ListSafetyRules",
+    "ListTagsForResource"
+]
+    list                   = [
+    "ListAssociatedRoute53HealthChecks"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

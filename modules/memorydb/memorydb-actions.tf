@@ -59,52 +59,59 @@ locals {
   prefix = "memorydb"
 
   access_level = {
-    write = [
-      "BatchUpdateCluster",
-      "Connect",
-      "CopySnapshot",
-      "CreateAcl",
-      "CreateCluster",
-      "CreateParameterGroup",
-      "CreateSnapshot",
-      "CreateSubnetGroup",
-      "CreateUser",
-      "DeleteAcl",
-      "DeleteCluster",
-      "DeleteParameterGroup",
-      "DeleteSnapshot",
-      "DeleteSubnetGroup",
-      "DeleteUser",
-      "FailoverShard",
-      "PurchaseReservedNodesOffering",
-      "ResetParameterGroup",
-      "UpdateAcl",
-      "UpdateCluster",
-      "UpdateParameterGroup",
-      "UpdateSubnetGroup",
-      "UpdateUser"
-    ]
+    write                  = [
+    "BatchUpdateCluster",
+    "Connect",
+    "CopySnapshot",
+    "CreateAcl",
+    "CreateCluster",
+    "CreateMultiRegionCluster",
+    "CreateParameterGroup",
+    "CreateSnapshot",
+    "CreateSubnetGroup",
+    "CreateUser",
+    "DeleteAcl",
+    "DeleteCluster",
+    "DeleteMultiRegionCluster",
+    "DeleteParameterGroup",
+    "DeleteSnapshot",
+    "DeleteSubnetGroup",
+    "DeleteUser",
+    "FailoverShard",
+    "PurchaseReservedNodesOffering",
+    "ResetParameterGroup",
+    "UpdateAcl",
+    "UpdateCluster",
+    "UpdateMultiRegionCluster",
+    "UpdateParameterGroup",
+    "UpdateSubnetGroup",
+    "UpdateUser"
+]
     permissions_management = []
-    read = [
-      "DescribeAcls",
-      "DescribeClusters",
-      "DescribeEngineVersions",
-      "DescribeEvents",
-      "DescribeParameterGroups",
-      "DescribeParameters",
-      "DescribeReservedNodes",
-      "DescribeReservedNodesOfferings",
-      "DescribeServiceUpdates",
-      "DescribeSnapshots",
-      "DescribeSubnetGroups",
-      "DescribeUsers",
-      "ListAllowedNodeTypeUpdates",
-      "ListTags"
-    ]
-    list = []
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "DescribeAcls",
+    "DescribeClusters",
+    "DescribeEngineVersions",
+    "DescribeEvents",
+    "DescribeMultiRegionClusters",
+    "DescribeMultiRegionParameterGroups",
+    "DescribeMultiRegionParameters",
+    "DescribeParameterGroups",
+    "DescribeParameters",
+    "DescribeReservedNodes",
+    "DescribeReservedNodesOfferings",
+    "DescribeServiceUpdates",
+    "DescribeSnapshots",
+    "DescribeSubnetGroups",
+    "DescribeUsers",
+    "ListAllowedMultiRegionClusterUpdates",
+    "ListAllowedNodeTypeUpdates",
+    "ListTags"
+]
+    list                   = []
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

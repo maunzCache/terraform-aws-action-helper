@@ -59,45 +59,54 @@ locals {
   prefix = "dataexchange"
 
   access_level = {
-    write = [
-      "CancelJob",
-      "CreateAsset",
-      "CreateDataSet",
-      "CreateEventAction",
-      "CreateJob",
-      "CreateRevision",
-      "DeleteAsset",
-      "DeleteDataSet",
-      "DeleteEventAction",
-      "DeleteRevision",
-      "PublishDataSet",
-      "RevokeRevision",
-      "SendApiAsset",
-      "StartJob",
-      "UpdateAsset",
-      "UpdateDataSet",
-      "UpdateEventAction",
-      "UpdateRevision"
-    ]
+    write                  = [
+    "AcceptDataGrant",
+    "CancelJob",
+    "CreateAsset",
+    "CreateDataGrant",
+    "CreateDataSet",
+    "CreateEventAction",
+    "CreateJob",
+    "CreateRevision",
+    "DeleteAsset",
+    "DeleteDataGrant",
+    "DeleteDataSet",
+    "DeleteEventAction",
+    "DeleteRevision",
+    "PublishDataSet",
+    "PublishToDataGrant",
+    "RevokeRevision",
+    "SendApiAsset",
+    "SendDataSetNotification",
+    "StartJob",
+    "UpdateAsset",
+    "UpdateDataSet",
+    "UpdateEventAction",
+    "UpdateRevision"
+]
     permissions_management = []
-    read = [
-      "GetAsset",
-      "GetDataSet",
-      "GetEventAction",
-      "GetJob",
-      "GetRevision"
-    ]
-    list = [
-      "ListDataSetRevisions",
-      "ListDataSets",
-      "ListEventActions",
-      "ListJobs",
-      "ListRevisionAssets",
-      "ListTagsForResource"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "GetAsset",
+    "GetDataGrant",
+    "GetDataSet",
+    "GetEventAction",
+    "GetJob",
+    "GetReceivedDataGrant",
+    "GetRevision"
+]
+    list                   = [
+    "ListDataGrants",
+    "ListDataSetRevisions",
+    "ListDataSets",
+    "ListEventActions",
+    "ListJobs",
+    "ListReceivedDataGrants",
+    "ListRevisionAssets",
+    "ListTagsForResource"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

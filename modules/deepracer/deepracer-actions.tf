@@ -59,63 +59,66 @@ locals {
   prefix = "deepracer"
 
   access_level = {
-    write = [
-      "AddLeaderboardAccessPermission",
-      "AdminManageUser",
-      "AdminSetAccountConfig",
-      "CloneReinforcementLearningModel",
-      "CreateCar",
-      "CreateLeaderboard",
-      "CreateLeaderboardAccessToken",
-      "CreateLeaderboardSubmission",
-      "CreateReinforcementLearningModel",
-      "DeleteLeaderboard",
-      "DeleteModel",
-      "EditLeaderboard",
-      "ImportModel",
-      "MigrateModels",
-      "PerformLeaderboardOperation",
-      "RemoveLeaderboardAccessPermission",
-      "SetAlias",
-      "StartEvaluation",
-      "StopEvaluation",
-      "StopTrainingReinforcementLearningModel",
-      "TestRewardFunction",
-      "UpdateCar"
-    ]
+    write                  = [
+    "AddLeaderboardAccessPermission",
+    "AdminManageUser",
+    "AdminSetAccountConfig",
+    "AdminUpdateAccountKey",
+    "CloneReinforcementLearningModel",
+    "CreateCar",
+    "CreateLeaderboard",
+    "CreateLeaderboardAccessToken",
+    "CreateLeaderboardSubmission",
+    "CreateReinforcementLearningModel",
+    "DeleteLeaderboard",
+    "DeleteModel",
+    "EditLeaderboard",
+    "ImportModel",
+    "MigrateModels",
+    "PerformLeaderboardOperation",
+    "RemoveLeaderboardAccessPermission",
+    "SetAlias",
+    "StartEvaluation",
+    "StopEvaluation",
+    "StopTrainingReinforcementLearningModel",
+    "TestRewardFunction",
+    "UpdateCar"
+]
     permissions_management = []
-    read = [
-      "AdminGetAccountConfig",
-      "AdminListAssociatedResources",
-      "AdminListAssociatedUsers",
-      "GetAccountConfig",
-      "GetAlias",
-      "GetAssetUrl",
-      "GetCar",
-      "GetCars",
-      "GetEvaluation",
-      "GetLatestUserSubmission",
-      "GetLeaderboard",
-      "GetModel",
-      "GetPrivateLeaderboard",
-      "GetRankedUserSubmission",
-      "GetTrack",
-      "GetTrainingJob",
-      "ListEvaluations",
-      "ListLeaderboardSubmissions",
-      "ListLeaderboards",
-      "ListModels",
-      "ListPrivateLeaderboardParticipants",
-      "ListPrivateLeaderboards",
-      "ListSubscribedPrivateLeaderboards",
-      "ListTagsForResource",
-      "ListTracks",
-      "ListTrainingJobs"
-    ]
-    list = []
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "AdminDescribeAccountKey",
+    "AdminGetAccountConfig",
+    "AdminListAssociatedResources",
+    "AdminListAssociatedUsers",
+    "GetAccountConfig",
+    "GetAlias",
+    "GetAssetUrl",
+    "GetCar",
+    "GetCars",
+    "GetEvaluation",
+    "GetLatestUserSubmission",
+    "GetLeaderboard",
+    "GetModel",
+    "GetPrivateLeaderboard",
+    "GetRankedUserSubmission",
+    "GetTrack",
+    "GetTrainingJob",
+    "ListEvaluations",
+    "ListLeaderboardEvaluations",
+    "ListLeaderboardSubmissions",
+    "ListLeaderboards",
+    "ListModels",
+    "ListPrivateLeaderboardParticipants",
+    "ListPrivateLeaderboards",
+    "ListSubscribedPrivateLeaderboards",
+    "ListTagsForResource",
+    "ListTracks",
+    "ListTrainingJobs"
+]
+    list                   = []
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

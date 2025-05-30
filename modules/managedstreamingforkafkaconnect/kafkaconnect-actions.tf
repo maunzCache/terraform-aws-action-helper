@@ -59,24 +59,31 @@ locals {
   prefix = "kafkaconnect"
 
   access_level = {
-    write = [
-      "CreateConnector",
-      "CreateCustomPlugin",
-      "CreateWorkerConfiguration",
-      "DeleteConnector",
-      "DeleteCustomPlugin",
-      "UpdateConnector"
-    ]
+    write                  = [
+    "CreateConnector",
+    "CreateCustomPlugin",
+    "CreateWorkerConfiguration",
+    "DeleteConnector",
+    "DeleteCustomPlugin",
+    "DeleteWorkerConfiguration",
+    "UpdateConnector"
+]
     permissions_management = []
-    read = [
-      "DescribeConnector",
-      "DescribeCustomPlugin",
-      "DescribeWorkerConfiguration",
-      "ListConnectors",
-      "ListCustomPlugins",
-      "ListWorkerConfigurations"
-    ]
-    list    = []
-    tagging = []
+    read                   = [
+    "DescribeConnector",
+    "DescribeConnectorOperation",
+    "DescribeCustomPlugin",
+    "DescribeWorkerConfiguration",
+    "ListConnectorOperations",
+    "ListConnectors",
+    "ListCustomPlugins",
+    "ListTagsForResource",
+    "ListWorkerConfigurations"
+]
+    list                   = []
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

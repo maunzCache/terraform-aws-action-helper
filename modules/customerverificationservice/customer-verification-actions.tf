@@ -59,16 +59,17 @@ locals {
   prefix = "customer-verification"
 
   access_level = {
-    write = [
-      "CreateCustomerVerificationDetails",
-      "UpdateCustomerVerificationDetails"
-    ]
+    write                  = [
+    "CreateCustomerVerificationDetails",
+    "CreateUploadUrls",
+    "UpdateCustomerVerificationDetails"
+]
     permissions_management = []
-    read = [
-      "GetCustomerVerificationDetails",
-      "GetCustomerVerificationEligibility"
-    ]
-    list    = []
-    tagging = []
+    read                   = [
+    "GetCustomerVerificationDetails",
+    "GetCustomerVerificationEligibility"
+]
+    list                   = []
+    tagging                = []
   }
 }

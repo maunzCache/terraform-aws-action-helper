@@ -59,79 +59,86 @@ locals {
   prefix = "dynamodb"
 
   access_level = {
-    write = [
-      "BatchWriteItem",
-      "CreateBackup",
-      "CreateGlobalTable",
-      "CreateTable",
-      "CreateTableReplica",
-      "DeleteBackup",
-      "DeleteItem",
-      "DeleteTable",
-      "DeleteTableReplica",
-      "DisableKinesisStreamingDestination",
-      "EnableKinesisStreamingDestination",
-      "ExportTableToPointInTime",
-      "ImportTable",
-      "PartiQLDelete",
-      "PartiQLInsert",
-      "PartiQLUpdate",
-      "PurchaseReservedCapacityOfferings",
-      "PutItem",
-      "RestoreTableFromAwsBackup",
-      "RestoreTableFromBackup",
-      "RestoreTableToPointInTime",
-      "StartAwsBackupJob",
-      "UpdateContinuousBackups",
-      "UpdateContributorInsights",
-      "UpdateGlobalTable",
-      "UpdateGlobalTableSettings",
-      "UpdateGlobalTableVersion",
-      "UpdateItem",
-      "UpdateTable",
-      "UpdateTableReplicaAutoScaling",
-      "UpdateTimeToLive"
-    ]
-    permissions_management = []
-    read = [
-      "BatchGetItem",
-      "ConditionCheckItem",
-      "DescribeBackup",
-      "DescribeContinuousBackups",
-      "DescribeContributorInsights",
-      "DescribeEndpoints",
-      "DescribeExport",
-      "DescribeGlobalTable",
-      "DescribeGlobalTableSettings",
-      "DescribeImport",
-      "DescribeKinesisStreamingDestination",
-      "DescribeLimits",
-      "DescribeReservedCapacity",
-      "DescribeReservedCapacityOfferings",
-      "DescribeStream",
-      "DescribeTable",
-      "DescribeTableReplicaAutoScaling",
-      "DescribeTimeToLive",
-      "GetItem",
-      "GetRecords",
-      "GetShardIterator",
-      "ListStreams",
-      "ListTagsOfResource",
-      "PartiQLSelect",
-      "Query",
-      "Scan"
-    ]
-    list = [
-      "ListBackups",
-      "ListContributorInsights",
-      "ListExports",
-      "ListGlobalTables",
-      "ListImports",
-      "ListTables"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    write                  = [
+    "BatchWriteItem",
+    "CreateBackup",
+    "CreateGlobalTable",
+    "CreateTable",
+    "CreateTableReplica",
+    "DeleteBackup",
+    "DeleteItem",
+    "DeleteTable",
+    "DeleteTableReplica",
+    "DisableKinesisStreamingDestination",
+    "EnableKinesisStreamingDestination",
+    "ExportTableToPointInTime",
+    "ImportTable",
+    "PartiQLDelete",
+    "PartiQLInsert",
+    "PartiQLUpdate",
+    "PurchaseReservedCapacityOfferings",
+    "PutItem",
+    "RestoreTableFromAwsBackup",
+    "RestoreTableFromBackup",
+    "RestoreTableToPointInTime",
+    "StartAwsBackupJob",
+    "UpdateContinuousBackups",
+    "UpdateContributorInsights",
+    "UpdateGlobalTable",
+    "UpdateGlobalTableSettings",
+    "UpdateGlobalTableVersion",
+    "UpdateItem",
+    "UpdateKinesisStreamingDestination",
+    "UpdateTable",
+    "UpdateTableReplicaAutoScaling",
+    "UpdateTimeToLive"
+]
+    permissions_management = [
+    "DeleteResourcePolicy",
+    "PutResourcePolicy",
+    "UpdateAbacStatus"
+]
+    read                   = [
+    "BatchGetItem",
+    "ConditionCheckItem",
+    "DescribeBackup",
+    "DescribeContinuousBackups",
+    "DescribeContributorInsights",
+    "DescribeEndpoints",
+    "DescribeExport",
+    "DescribeGlobalTable",
+    "DescribeGlobalTableSettings",
+    "DescribeImport",
+    "DescribeKinesisStreamingDestination",
+    "DescribeLimits",
+    "DescribeReservedCapacity",
+    "DescribeReservedCapacityOfferings",
+    "DescribeStream",
+    "DescribeTable",
+    "DescribeTableReplicaAutoScaling",
+    "DescribeTimeToLive",
+    "GetAbacStatus",
+    "GetItem",
+    "GetRecords",
+    "GetResourcePolicy",
+    "GetShardIterator",
+    "ListStreams",
+    "ListTagsOfResource",
+    "PartiQLSelect",
+    "Query",
+    "Scan"
+]
+    list                   = [
+    "ListBackups",
+    "ListContributorInsights",
+    "ListExports",
+    "ListGlobalTables",
+    "ListImports",
+    "ListTables"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

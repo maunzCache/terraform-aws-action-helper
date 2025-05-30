@@ -59,27 +59,50 @@ locals {
   prefix = "scn"
 
   access_level = {
-    write = [
-      "AssignAdminPermissionsToUser",
-      "CreateInstance",
-      "CreateSSOApplication",
-      "DeleteInstance",
-      "DeleteSSOApplication",
-      "RemoveAdminPermissionsForUser",
-      "UpdateInstance"
-    ]
+    write                  = [
+    "AssignAdminPermissionsToUser",
+    "CreateBillOfMaterialsImportJob",
+    "CreateDataIntegrationFlow",
+    "CreateDataLakeDataset",
+    "CreateDataLakeNamespace",
+    "CreateInstance",
+    "CreateSSOApplication",
+    "DeleteDataIntegrationFlow",
+    "DeleteDataLakeDataset",
+    "DeleteDataLakeNamespace",
+    "DeleteInstance",
+    "DeleteSSOApplication",
+    "RemoveAdminPermissionsForUser",
+    "SendDataIntegrationEvent",
+    "UpdateDataIntegrationFlow",
+    "UpdateDataLakeDataset",
+    "UpdateDataLakeNamespace",
+    "UpdateInstance"
+]
     permissions_management = []
-    read = [
-      "DescribeInstance"
-    ]
-    list = [
-      "ListAdminUsers",
-      "ListInstances",
-      "ListTagsForResource"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "DescribeInstance",
+    "GetBillOfMaterialsImportJob",
+    "GetDataIntegrationEvent",
+    "GetDataIntegrationFlow",
+    "GetDataIntegrationFlowExecution",
+    "GetDataLakeDataset",
+    "GetDataLakeNamespace",
+    "GetInstance"
+]
+    list                   = [
+    "ListAdminUsers",
+    "ListDataIntegrationEvents",
+    "ListDataIntegrationFlowExecutions",
+    "ListDataIntegrationFlows",
+    "ListDataLakeDatasets",
+    "ListDataLakeNamespaces",
+    "ListInstances",
+    "ListTagsForResource"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

@@ -59,55 +59,79 @@ locals {
   prefix = "controltower"
 
   access_level = {
-    write = [
-      "CreateManagedAccount",
-      "DeleteLandingZone",
-      "DeregisterManagedAccount",
-      "DeregisterOrganizationalUnit",
-      "DisableControl",
-      "DisableGuardrail",
-      "EnableControl",
-      "EnableGuardrail",
-      "ManageOrganizationalUnit",
-      "SetupLandingZone",
-      "UpdateAccountFactoryConfig"
-    ]
+    write                  = [
+    "CreateLandingZone",
+    "CreateManagedAccount",
+    "DeleteLandingZone",
+    "DeregisterManagedAccount",
+    "DeregisterOrganizationalUnit",
+    "DisableBaseline",
+    "DisableControl",
+    "DisableGuardrail",
+    "EnableBaseline",
+    "EnableControl",
+    "EnableGuardrail",
+    "ManageOrganizationalUnit",
+    "ResetEnabledBaseline",
+    "ResetEnabledControl",
+    "ResetLandingZone",
+    "SetupLandingZone",
+    "UpdateAccountFactoryConfig",
+    "UpdateEnabledBaseline",
+    "UpdateEnabledControl",
+    "UpdateLandingZone"
+]
     permissions_management = []
-    read = [
-      "DescribeAccountFactoryConfig",
-      "DescribeCoreService",
-      "DescribeGuardrail",
-      "DescribeGuardrailForTarget",
-      "DescribeLandingZoneConfiguration",
-      "DescribeManagedAccount",
-      "DescribeManagedOrganizationalUnit",
-      "DescribeRegisterOrganizationalUnitOperation",
-      "DescribeSingleSignOn",
-      "GetAccountInfo",
-      "GetAvailableUpdates",
-      "GetControlOperation",
-      "GetGuardrailComplianceStatus",
-      "GetHomeRegion",
-      "GetLandingZoneDriftStatus",
-      "GetLandingZoneStatus",
-      "ListDriftDetails",
-      "ListExternalConfigRuleCompliance",
-      "PerformPreLaunchChecks"
-    ]
-    list = [
-      "ListDirectoryGroups",
-      "ListEnabledControls",
-      "ListEnabledGuardrails",
-      "ListExtendGovernancePrecheckDetails",
-      "ListGuardrailViolations",
-      "ListGuardrails",
-      "ListGuardrailsForTarget",
-      "ListManagedAccounts",
-      "ListManagedAccountsForGuardrail",
-      "ListManagedAccountsForParent",
-      "ListManagedOrganizationalUnits",
-      "ListManagedOrganizationalUnitsForGuardrail"
-    ]
-    tagging = []
+    read                   = [
+    "DescribeAccountFactoryConfig",
+    "DescribeCoreService",
+    "DescribeGuardrail",
+    "DescribeGuardrailForTarget",
+    "DescribeLandingZoneConfiguration",
+    "DescribeManagedAccount",
+    "DescribeManagedOrganizationalUnit",
+    "DescribeRegisterOrganizationalUnitOperation",
+    "DescribeSingleSignOn",
+    "GetAccountInfo",
+    "GetAvailableUpdates",
+    "GetBaseline",
+    "GetBaselineOperation",
+    "GetControlOperation",
+    "GetEnabledBaseline",
+    "GetEnabledControl",
+    "GetGuardrailComplianceStatus",
+    "GetHomeRegion",
+    "GetLandingZone",
+    "GetLandingZoneDriftStatus",
+    "GetLandingZoneOperation",
+    "GetLandingZoneStatus",
+    "ListDriftDetails",
+    "ListExternalConfigRuleCompliance",
+    "ListTagsForResource",
+    "PerformPreLaunchChecks"
+]
+    list                   = [
+    "ListBaselines",
+    "ListControlOperations",
+    "ListDirectoryGroups",
+    "ListEnabledBaselines",
+    "ListEnabledControls",
+    "ListEnabledGuardrails",
+    "ListExtendGovernancePrecheckDetails",
+    "ListGuardrailViolations",
+    "ListGuardrails",
+    "ListGuardrailsForTarget",
+    "ListLandingZoneOperations",
+    "ListLandingZones",
+    "ListManagedAccounts",
+    "ListManagedAccountsForGuardrail",
+    "ListManagedAccountsForParent",
+    "ListManagedOrganizationalUnits",
+    "ListManagedOrganizationalUnitsForGuardrail"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

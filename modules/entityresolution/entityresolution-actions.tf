@@ -59,30 +59,54 @@ locals {
   prefix = "entityresolution"
 
   access_level = {
-    write = [
-      "CreateMatchingWorkflow",
-      "CreateSchemaMapping",
-      "DeleteMatchingWorkflow",
-      "DeleteSchemaMapping",
-      "StartMatchingJob",
-      "UpdateMatchingWorkflow"
-    ]
-    permissions_management = []
-    read = [
-      "GetMatchId",
-      "GetMatchingJob",
-      "GetMatchingWorkflow",
-      "GetSchemaMapping",
-      "ListTagsForResource"
-    ]
-    list = [
-      "ListMatchingJobs",
-      "ListMatchingWorkflows",
-      "ListSchemaMappings"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    write                  = [
+    "BatchDeleteUniqueId",
+    "CreateIdMappingWorkflow",
+    "CreateIdNamespace",
+    "CreateMatchingWorkflow",
+    "CreateSchemaMapping",
+    "DeleteIdMappingWorkflow",
+    "DeleteIdNamespace",
+    "DeleteMatchingWorkflow",
+    "DeleteSchemaMapping",
+    "StartIdMappingJob",
+    "StartMatchingJob",
+    "UpdateIdMappingWorkflow",
+    "UpdateIdNamespace",
+    "UpdateMatchingWorkflow",
+    "UpdateSchemaMapping"
+]
+    permissions_management = [
+    "AddPolicyStatement",
+    "DeletePolicyStatement",
+    "PutPolicy",
+    "UseIdNamespace",
+    "UseWorkflow"
+]
+    read                   = [
+    "GetIdMappingJob",
+    "GetIdMappingWorkflow",
+    "GetIdNamespace",
+    "GetMatchId",
+    "GetMatchingJob",
+    "GetMatchingWorkflow",
+    "GetPolicy",
+    "GetProviderService",
+    "GetSchemaMapping",
+    "ListTagsForResource"
+]
+    list                   = [
+    "ListIdMappingJobs",
+    "ListIdMappingWorkflows",
+    "ListIdNamespaces",
+    "ListMatchingJobs",
+    "ListMatchingWorkflows",
+    "ListProviderServices",
+    "ListSchemaMappings"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

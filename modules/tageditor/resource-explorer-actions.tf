@@ -1,5 +1,5 @@
 locals {
-  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awstageditor.html
+  # Reference: https://docs.aws.amazon.com/service-authorization/latest/reference/list_tageditor.html
 
   # TODO: Code below duplicates. Find a better way to DRY it.
 
@@ -61,13 +61,13 @@ locals {
   access_level = {
     write                  = []
     permissions_management = []
-    read = [
-      "ListTags"
-    ]
-    list = [
-      "ListResourceTypes",
-      "ListResources"
-    ]
-    tagging = []
+    read                   = [
+    "ListTags"
+]
+    list                   = [
+    "ListResourceTypes",
+    "ListResources"
+]
+    tagging                = []
   }
 }

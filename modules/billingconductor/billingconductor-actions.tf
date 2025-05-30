@@ -59,45 +59,46 @@ locals {
   prefix = "billingconductor"
 
   access_level = {
-    write = [
-      "AssociateAccounts",
-      "AssociatePricingRules",
-      "BatchAssociateResourcesToCustomLineItem",
-      "BatchDisassociateResourcesFromCustomLineItem",
-      "CreateBillingGroup",
-      "CreateCustomLineItem",
-      "CreatePricingPlan",
-      "CreatePricingRule",
-      "DeleteBillingGroup",
-      "DeleteCustomLineItem",
-      "DeletePricingPlan",
-      "DeletePricingRule",
-      "DisassociateAccounts",
-      "DisassociatePricingRules",
-      "UpdateBillingGroup",
-      "UpdateCustomLineItem",
-      "UpdatePricingPlan",
-      "UpdatePricingRule"
-    ]
+    write                  = [
+    "AssociateAccounts",
+    "AssociatePricingRules",
+    "BatchAssociateResourcesToCustomLineItem",
+    "BatchDisassociateResourcesFromCustomLineItem",
+    "CreateBillingGroup",
+    "CreateCustomLineItem",
+    "CreatePricingPlan",
+    "CreatePricingRule",
+    "DeleteBillingGroup",
+    "DeleteCustomLineItem",
+    "DeletePricingPlan",
+    "DeletePricingRule",
+    "DisassociateAccounts",
+    "DisassociatePricingRules",
+    "UpdateBillingGroup",
+    "UpdateCustomLineItem",
+    "UpdatePricingPlan",
+    "UpdatePricingRule"
+]
     permissions_management = []
-    read = [
-      "ListBillingGroupCostReports",
-      "ListBillingGroups",
-      "ListCustomLineItemVersions",
-      "ListCustomLineItems",
-      "ListPricingPlans",
-      "ListPricingRules",
-      "ListTagsForResource"
-    ]
-    list = [
-      "ListAccountAssociations",
-      "ListPricingPlansAssociatedWithPricingRule",
-      "ListPricingRulesAssociatedToPricingPlan",
-      "ListResourcesAssociatedToCustomLineItem"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "GetBillingGroupCostReport",
+    "ListBillingGroupCostReports",
+    "ListBillingGroups",
+    "ListCustomLineItemVersions",
+    "ListCustomLineItems",
+    "ListPricingPlans",
+    "ListPricingRules",
+    "ListTagsForResource"
+]
+    list                   = [
+    "ListAccountAssociations",
+    "ListPricingPlansAssociatedWithPricingRule",
+    "ListPricingRulesAssociatedToPricingPlan",
+    "ListResourcesAssociatedToCustomLineItem"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

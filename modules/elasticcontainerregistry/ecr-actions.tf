@@ -59,58 +59,67 @@ locals {
   prefix = "ecr"
 
   access_level = {
-    write = [
-      "BatchDeleteImage",
-      "BatchImportUpstreamImage",
-      "CompleteLayerUpload",
-      "CreatePullThroughCacheRule",
-      "CreateRepository",
-      "DeleteLifecyclePolicy",
-      "DeletePullThroughCacheRule",
-      "DeleteRepository",
-      "InitiateLayerUpload",
-      "PutImage",
-      "PutImageScanningConfiguration",
-      "PutImageTagMutability",
-      "PutLifecyclePolicy",
-      "PutRegistryScanningConfiguration",
-      "PutReplicationConfiguration",
-      "ReplicateImage",
-      "StartImageScan",
-      "StartLifecyclePolicyPreview",
-      "UploadLayerPart"
-    ]
+    write                  = [
+    "BatchDeleteImage",
+    "BatchImportUpstreamImage",
+    "CompleteLayerUpload",
+    "CreatePullThroughCacheRule",
+    "CreateRepository",
+    "CreateRepositoryCreationTemplate",
+    "DeleteLifecyclePolicy",
+    "DeletePullThroughCacheRule",
+    "DeleteRepository",
+    "DeleteRepositoryCreationTemplate",
+    "InitiateLayerUpload",
+    "PutAccountSetting",
+    "PutImage",
+    "PutImageScanningConfiguration",
+    "PutImageTagMutability",
+    "PutLifecyclePolicy",
+    "PutRegistryScanningConfiguration",
+    "PutReplicationConfiguration",
+    "ReplicateImage",
+    "StartImageScan",
+    "StartLifecyclePolicyPreview",
+    "UpdatePullThroughCacheRule",
+    "UpdateRepositoryCreationTemplate",
+    "UploadLayerPart"
+]
     permissions_management = [
-      "DeleteRegistryPolicy",
-      "DeleteRepositoryPolicy",
-      "PutRegistryPolicy",
-      "SetRepositoryPolicy"
-    ]
-    read = [
-      "BatchCheckLayerAvailability",
-      "BatchGetImage",
-      "BatchGetRepositoryScanningConfiguration",
-      "DescribeImageReplicationStatus",
-      "DescribeImageScanFindings",
-      "DescribeRegistry",
-      "DescribeRepositories",
-      "GetAuthorizationToken",
-      "GetDownloadUrlForLayer",
-      "GetLifecyclePolicy",
-      "GetLifecyclePolicyPreview",
-      "GetRegistryPolicy",
-      "GetRegistryScanningConfiguration",
-      "GetRepositoryPolicy",
-      "ListTagsForResource"
-    ]
-    list = [
-      "DescribeImages",
-      "DescribePullThroughCacheRules",
-      "ListImages"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    "DeleteRegistryPolicy",
+    "DeleteRepositoryPolicy",
+    "PutRegistryPolicy",
+    "SetRepositoryPolicy"
+]
+    read                   = [
+    "BatchCheckLayerAvailability",
+    "BatchGetImage",
+    "BatchGetRepositoryScanningConfiguration",
+    "DescribeImageReplicationStatus",
+    "DescribeImageScanFindings",
+    "DescribeRegistry",
+    "DescribeRepositories",
+    "DescribeRepositoryCreationTemplates",
+    "GetAccountSetting",
+    "GetAuthorizationToken",
+    "GetDownloadUrlForLayer",
+    "GetImageCopyStatus",
+    "GetLifecyclePolicy",
+    "GetLifecyclePolicyPreview",
+    "GetRegistryPolicy",
+    "GetRegistryScanningConfiguration",
+    "GetRepositoryPolicy",
+    "ListTagsForResource",
+    "ValidatePullThroughCacheRule"
+]
+    list                   = [
+    "DescribeImages",
+    "DescribePullThroughCacheRules",
+    "ListImages"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

@@ -59,34 +59,40 @@ locals {
   prefix = "grafana"
 
   access_level = {
-    write = [
-      "AssociateLicense",
-      "CreateWorkspace",
-      "CreateWorkspaceApiKey",
-      "DeleteWorkspace",
-      "DeleteWorkspaceApiKey",
-      "DisassociateLicense",
-      "UpdateWorkspace",
-      "UpdateWorkspaceAuthentication",
-      "UpdateWorkspaceConfiguration"
-    ]
+    write                  = [
+    "AssociateLicense",
+    "CreateWorkspace",
+    "CreateWorkspaceApiKey",
+    "CreateWorkspaceServiceAccount",
+    "CreateWorkspaceServiceAccountToken",
+    "DeleteWorkspace",
+    "DeleteWorkspaceApiKey",
+    "DeleteWorkspaceServiceAccount",
+    "DeleteWorkspaceServiceAccountToken",
+    "DisassociateLicense",
+    "UpdateWorkspace",
+    "UpdateWorkspaceAuthentication",
+    "UpdateWorkspaceConfiguration"
+]
     permissions_management = [
-      "UpdatePermissions"
-    ]
-    read = [
-      "DescribeWorkspace",
-      "DescribeWorkspaceAuthentication",
-      "DescribeWorkspaceConfiguration",
-      "ListTagsForResource",
-      "ListWorkspaces"
-    ]
-    list = [
-      "ListPermissions",
-      "ListVersions"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    "UpdatePermissions"
+]
+    read                   = [
+    "DescribeWorkspace",
+    "DescribeWorkspaceAuthentication",
+    "DescribeWorkspaceConfiguration",
+    "ListTagsForResource",
+    "ListWorkspaceServiceAccountTokens",
+    "ListWorkspaceServiceAccounts",
+    "ListWorkspaces"
+]
+    list                   = [
+    "ListPermissions",
+    "ListVersions"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

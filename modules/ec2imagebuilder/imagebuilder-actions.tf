@@ -59,71 +59,90 @@ locals {
   prefix = "imagebuilder"
 
   access_level = {
-    write = [
-      "CancelImageCreation",
-      "CreateComponent",
-      "CreateContainerRecipe",
-      "CreateDistributionConfiguration",
-      "CreateImage",
-      "CreateImagePipeline",
-      "CreateImageRecipe",
-      "CreateInfrastructureConfiguration",
-      "DeleteComponent",
-      "DeleteContainerRecipe",
-      "DeleteDistributionConfiguration",
-      "DeleteImage",
-      "DeleteImagePipeline",
-      "DeleteImageRecipe",
-      "DeleteInfrastructureConfiguration",
-      "ImportComponent",
-      "ImportVmImage",
-      "StartImagePipelineExecution",
-      "UpdateDistributionConfiguration",
-      "UpdateImagePipeline",
-      "UpdateInfrastructureConfiguration"
-    ]
+    write                  = [
+    "CancelImageCreation",
+    "CancelLifecycleExecution",
+    "CreateComponent",
+    "CreateContainerRecipe",
+    "CreateDistributionConfiguration",
+    "CreateImage",
+    "CreateImagePipeline",
+    "CreateImageRecipe",
+    "CreateInfrastructureConfiguration",
+    "CreateLifecyclePolicy",
+    "CreateWorkflow",
+    "DeleteComponent",
+    "DeleteContainerRecipe",
+    "DeleteDistributionConfiguration",
+    "DeleteImage",
+    "DeleteImagePipeline",
+    "DeleteImageRecipe",
+    "DeleteInfrastructureConfiguration",
+    "DeleteLifecyclePolicy",
+    "DeleteWorkflow",
+    "ImportComponent",
+    "ImportDiskImage",
+    "ImportVmImage",
+    "SendWorkflowStepAction",
+    "StartImagePipelineExecution",
+    "StartResourceStateUpdate",
+    "UpdateDistributionConfiguration",
+    "UpdateImagePipeline",
+    "UpdateInfrastructureConfiguration",
+    "UpdateLifecyclePolicy"
+]
     permissions_management = [
-      "PutComponentPolicy",
-      "PutContainerRecipePolicy",
-      "PutImagePolicy",
-      "PutImageRecipePolicy"
-    ]
-    read = [
-      "GetComponent",
-      "GetComponentPolicy",
-      "GetContainerRecipe",
-      "GetContainerRecipePolicy",
-      "GetDistributionConfiguration",
-      "GetImage",
-      "GetImagePipeline",
-      "GetImagePolicy",
-      "GetImageRecipe",
-      "GetImageRecipePolicy",
-      "GetInfrastructureConfiguration",
-      "GetWorkflowExecution",
-      "GetWorkflowStepExecution",
-      "ListTagsForResource"
-    ]
-    list = [
-      "ListComponentBuildVersions",
-      "ListComponents",
-      "ListContainerRecipes",
-      "ListDistributionConfigurations",
-      "ListImageBuildVersions",
-      "ListImagePackages",
-      "ListImagePipelineImages",
-      "ListImagePipelines",
-      "ListImageRecipes",
-      "ListImageScanFindingAggregations",
-      "ListImageScanFindings",
-      "ListImages",
-      "ListInfrastructureConfigurations",
-      "ListWorkflowExecutions",
-      "ListWorkflowStepExecutions"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    "PutComponentPolicy",
+    "PutContainerRecipePolicy",
+    "PutImagePolicy",
+    "PutImageRecipePolicy"
+]
+    read                   = [
+    "GetComponent",
+    "GetComponentPolicy",
+    "GetContainerRecipe",
+    "GetContainerRecipePolicy",
+    "GetDistributionConfiguration",
+    "GetImage",
+    "GetImagePipeline",
+    "GetImagePolicy",
+    "GetImageRecipe",
+    "GetImageRecipePolicy",
+    "GetInfrastructureConfiguration",
+    "GetLifecycleExecution",
+    "GetLifecyclePolicy",
+    "GetMarketplaceResource",
+    "GetWorkflow",
+    "GetWorkflowExecution",
+    "GetWorkflowStepExecution",
+    "ListTagsForResource"
+]
+    list                   = [
+    "ListComponentBuildVersions",
+    "ListComponents",
+    "ListContainerRecipes",
+    "ListDistributionConfigurations",
+    "ListImageBuildVersions",
+    "ListImagePackages",
+    "ListImagePipelineImages",
+    "ListImagePipelines",
+    "ListImageRecipes",
+    "ListImageScanFindingAggregations",
+    "ListImageScanFindings",
+    "ListImages",
+    "ListInfrastructureConfigurations",
+    "ListLifecycleExecutionResources",
+    "ListLifecycleExecutions",
+    "ListLifecyclePolicies",
+    "ListWaitingWorkflowSteps",
+    "ListWorkflowBuildVersions",
+    "ListWorkflowExecutions",
+    "ListWorkflowStepExecutions",
+    "ListWorkflows"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

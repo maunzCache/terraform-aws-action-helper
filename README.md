@@ -298,17 +298,29 @@ Please note that the script is fragile in regards to getting the information abo
 
 TODO: Update required to reflect current status.
 
-Ensure to install all python dependencies first:
+Choose your favorite package manager and install the dependencies.
+The following examples uses `pip` and `virtualenv` to install all python dependencies:
 
 ```shell
-python3 -m pip install -r requirements.txt
+cd .generate
+virtualenv .venv
+python3 -m pip install .
 ```
 
-To generate or cache the latest information about a service use the following call:
+If you want to go update all existing services (e.g. for changed actions), simply call:
 
 ```shell
 cd .generate/
-./generate_module.py --docs-page list_amazonec2
+python3 -m generate_module --all --generate
+```
+
+This will only take cached services into account which are listed in `services_list.json`. If you want to add new AWS services, you will need to remove that file first and then run the command above.
+
+To generate or cache the latest information about a specific AWS services actions use the following call:
+
+```shell
+cd .generate/
+python3 -m generate_module --docs-page list_amazonec2
 ```
 
 This call will only write a cache file for upcoming calls of the script.
@@ -319,7 +331,7 @@ If you want to update or generate a new module, simply add the`--generate` param
 
 ```shell
 cd .generate/
-./generate_module.py --docs-page list_amazonec2 --generate
+python3 -m generate_module --docs-page list_amazonec2 --generate
 ```
 
 This will create or replace a directory in the `modules/` directory.
@@ -328,7 +340,7 @@ This will create or replace a directory in the `modules/` directory.
 
 If you find any bugs, have recommendations or want to add/update a module, feel free to add a pull request or create an issue.
 
-I prefer test driven development as well as clean code, so if you need to update any code, please try to stick to the current code style and provide testing.
+If you need to update any code, please try to stick to the current code style and provide testing when it makes sense.
 
 ## License
 

@@ -59,21 +59,24 @@ locals {
   prefix = "cloudshell"
 
   access_level = {
-    write = [
-      "CreateEnvironment",
-      "CreateSession",
-      "DeleteEnvironment",
-      "GetFileDownloadUrls",
-      "GetFileUploadUrls",
-      "PutCredentials",
-      "StartEnvironment",
-      "StopEnvironment"
-    ]
+    write                  = [
+    "CreateEnvironment",
+    "CreateSession",
+    "DeleteEnvironment",
+    "GetFileDownloadUrls",
+    "GetFileUploadUrls",
+    "PutCredentials",
+    "StartEnvironment",
+    "StopEnvironment"
+]
     permissions_management = []
-    read = [
-      "GetEnvironmentStatus"
-    ]
-    list    = []
-    tagging = []
+    read                   = [
+    "ApproveCommand",
+    "GetEnvironmentStatus"
+]
+    list                   = [
+    "DescribeEnvironments"
+]
+    tagging                = []
   }
 }

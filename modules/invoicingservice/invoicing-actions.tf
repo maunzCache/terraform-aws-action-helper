@@ -59,16 +59,27 @@ locals {
   prefix = "invoicing"
 
   access_level = {
-    write = [
-      "PutInvoiceEmailDeliveryPreferences"
-    ]
+    write                  = [
+    "CreateInvoiceUnit",
+    "DeleteInvoiceUnit",
+    "PutInvoiceEmailDeliveryPreferences",
+    "UpdateInvoiceUnit"
+]
     permissions_management = []
-    read = [
-      "GetInvoiceEmailDeliveryPreferences",
-      "GetInvoicePDF",
-      "ListInvoiceSummaries"
-    ]
-    list    = []
-    tagging = []
+    read                   = [
+    "BatchGetInvoiceProfile",
+    "GetInvoiceEmailDeliveryPreferences",
+    "GetInvoicePDF",
+    "GetInvoiceUnit",
+    "ListInvoiceSummaries",
+    "ListTagsForResource"
+]
+    list                   = [
+    "ListInvoiceUnits"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

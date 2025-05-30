@@ -59,64 +59,72 @@ locals {
   prefix = "ce"
 
   access_level = {
-    write = [
-      "CreateAnomalyMonitor",
-      "CreateAnomalySubscription",
-      "CreateCostCategoryDefinition",
-      "CreateNotificationSubscription",
-      "CreateReport",
-      "DeleteAnomalyMonitor",
-      "DeleteAnomalySubscription",
-      "DeleteCostCategoryDefinition",
-      "DeleteNotificationSubscription",
-      "DeleteReport",
-      "ProvideAnomalyFeedback",
-      "StartSavingsPlansPurchaseRecommendationGeneration",
-      "UpdateAnomalyMonitor",
-      "UpdateAnomalySubscription",
-      "UpdateConsoleActionSetEnforced",
-      "UpdateCostAllocationTagsStatus",
-      "UpdateCostCategoryDefinition",
-      "UpdateNotificationSubscription",
-      "UpdatePreferences",
-      "UpdateReport"
-    ]
+    write                  = [
+    "CreateAnomalyMonitor",
+    "CreateAnomalySubscription",
+    "CreateCostCategoryDefinition",
+    "CreateNotificationSubscription",
+    "CreateReport",
+    "DeleteAnomalyMonitor",
+    "DeleteAnomalySubscription",
+    "DeleteCostCategoryDefinition",
+    "DeleteNotificationSubscription",
+    "DeleteReport",
+    "ProvideAnomalyFeedback",
+    "StartCommitmentPurchaseAnalysis",
+    "StartCostAllocationTagBackfill",
+    "StartSavingsPlansPurchaseRecommendationGeneration",
+    "UpdateAnomalyMonitor",
+    "UpdateAnomalySubscription",
+    "UpdateConsoleActionSetEnforced",
+    "UpdateCostAllocationTagsStatus",
+    "UpdateCostCategoryDefinition",
+    "UpdateNotificationSubscription",
+    "UpdatePreferences",
+    "UpdateReport"
+]
     permissions_management = []
-    read = [
-      "DescribeCostCategoryDefinition",
-      "DescribeNotificationSubscription",
-      "DescribeReport",
-      "GetAnomalies",
-      "GetAnomalyMonitors",
-      "GetAnomalySubscriptions",
-      "GetConsoleActionSetEnforced",
-      "GetCostAndUsage",
-      "GetCostAndUsageWithResources",
-      "GetCostCategories",
-      "GetCostForecast",
-      "GetDimensionValues",
-      "GetPreferences",
-      "GetReservationCoverage",
-      "GetReservationPurchaseRecommendation",
-      "GetReservationUtilization",
-      "GetRightsizingRecommendation",
-      "GetSavingsPlanPurchaseRecommendationDetails",
-      "GetSavingsPlansCoverage",
-      "GetSavingsPlansPurchaseRecommendation",
-      "GetSavingsPlansUtilization",
-      "GetSavingsPlansUtilizationDetails",
-      "GetTags",
-      "GetUsageForecast",
-      "ListTagsForResource"
-    ]
-    list = [
-      "ListCostAllocationTags",
-      "ListCostCategoryDefinitions",
-      "ListSavingsPlansPurchaseRecommendationGeneration"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "DescribeCostCategoryDefinition",
+    "DescribeNotificationSubscription",
+    "DescribeReport",
+    "GetAnomalies",
+    "GetAnomalyMonitors",
+    "GetAnomalySubscriptions",
+    "GetApproximateUsageRecords",
+    "GetCommitmentPurchaseAnalysis",
+    "GetConsoleActionSetEnforced",
+    "GetCostAndUsage",
+    "GetCostAndUsageComparisons",
+    "GetCostAndUsageWithResources",
+    "GetCostCategories",
+    "GetCostComparisonDrivers",
+    "GetCostForecast",
+    "GetDimensionValues",
+    "GetPreferences",
+    "GetReservationCoverage",
+    "GetReservationPurchaseRecommendation",
+    "GetReservationUtilization",
+    "GetRightsizingRecommendation",
+    "GetSavingsPlanPurchaseRecommendationDetails",
+    "GetSavingsPlansCoverage",
+    "GetSavingsPlansPurchaseRecommendation",
+    "GetSavingsPlansUtilization",
+    "GetSavingsPlansUtilizationDetails",
+    "GetTags",
+    "GetUsageForecast",
+    "ListTagsForResource"
+]
+    list                   = [
+    "ListCommitmentPurchaseAnalyses",
+    "ListCostAllocationTagBackfillHistory",
+    "ListCostAllocationTags",
+    "ListCostCategoryDefinitions",
+    "ListSavingsPlansPurchaseRecommendationGeneration"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

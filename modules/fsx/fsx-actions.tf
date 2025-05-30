@@ -59,60 +59,67 @@ locals {
   prefix = "fsx"
 
   access_level = {
-    write = [
-      "AssociateFileGateway",
-      "AssociateFileSystemAliases",
-      "CancelDataRepositoryTask",
-      "CopyBackup",
-      "CreateBackup",
-      "CreateDataRepositoryAssociation",
-      "CreateDataRepositoryTask",
-      "CreateFileCache",
-      "CreateFileSystem",
-      "CreateFileSystemFromBackup",
-      "CreateSnapshot",
-      "CreateStorageVirtualMachine",
-      "CreateVolume",
-      "CreateVolumeFromBackup",
-      "DeleteBackup",
-      "DeleteDataRepositoryAssociation",
-      "DeleteFileCache",
-      "DeleteFileSystem",
-      "DeleteSnapshot",
-      "DeleteStorageVirtualMachine",
-      "DeleteVolume",
-      "DisassociateFileGateway",
-      "DisassociateFileSystemAliases",
-      "ReleaseFileSystemNfsV3Locks",
-      "RestoreVolumeFromSnapshot",
-      "UpdateDataRepositoryAssociation",
-      "UpdateFileCache",
-      "UpdateFileSystem",
-      "UpdateSnapshot",
-      "UpdateStorageVirtualMachine",
-      "UpdateVolume"
-    ]
+    write                  = [
+    "AssociateFileGateway",
+    "AssociateFileSystemAliases",
+    "CancelDataRepositoryTask",
+    "CopyBackup",
+    "CopySnapshotAndUpdateVolume",
+    "CreateBackup",
+    "CreateDataRepositoryAssociation",
+    "CreateDataRepositoryTask",
+    "CreateFileCache",
+    "CreateFileSystem",
+    "CreateFileSystemFromBackup",
+    "CreateSnapshot",
+    "CreateStorageVirtualMachine",
+    "CreateVolume",
+    "CreateVolumeFromBackup",
+    "DeleteBackup",
+    "DeleteDataRepositoryAssociation",
+    "DeleteFileCache",
+    "DeleteFileSystem",
+    "DeleteSnapshot",
+    "DeleteStorageVirtualMachine",
+    "DeleteVolume",
+    "DisassociateFileGateway",
+    "DisassociateFileSystemAliases",
+    "ReleaseFileSystemNfsV3Locks",
+    "RestoreVolumeFromSnapshot",
+    "StartMisconfiguredStateRecovery",
+    "UpdateDataRepositoryAssociation",
+    "UpdateFileCache",
+    "UpdateFileSystem",
+    "UpdateSharedVpcConfiguration",
+    "UpdateSnapshot",
+    "UpdateStorageVirtualMachine",
+    "UpdateVolume"
+]
     permissions_management = [
-      "BypassSnaplockEnterpriseRetention",
-      "ManageBackupPrincipalAssociations"
-    ]
-    read = [
-      "DescribeAssociatedFileGateways",
-      "DescribeBackups",
-      "DescribeDataRepositoryAssociations",
-      "DescribeDataRepositoryTasks",
-      "DescribeFileCaches",
-      "DescribeFileSystemAliases",
-      "DescribeFileSystems",
-      "DescribeSnapshots",
-      "DescribeStorageVirtualMachines",
-      "DescribeVolumes",
-      "ListTagsForResource"
-    ]
-    list = []
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    "BypassSnaplockEnterpriseRetention",
+    "DeleteResourcePolicy",
+    "GetResourcePolicy",
+    "ManageBackupPrincipalAssociations",
+    "PutResourcePolicy"
+]
+    read                   = [
+    "DescribeAssociatedFileGateways",
+    "DescribeBackups",
+    "DescribeDataRepositoryAssociations",
+    "DescribeDataRepositoryTasks",
+    "DescribeFileCaches",
+    "DescribeFileSystemAliases",
+    "DescribeFileSystems",
+    "DescribeSharedVpcConfiguration",
+    "DescribeSnapshots",
+    "DescribeStorageVirtualMachines",
+    "DescribeVolumes",
+    "ListTagsForResource"
+]
+    list                   = []
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

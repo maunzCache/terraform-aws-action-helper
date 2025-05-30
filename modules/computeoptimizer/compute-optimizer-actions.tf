@@ -59,34 +59,41 @@ locals {
   prefix = "compute-optimizer"
 
   access_level = {
-    write = [
-      "DeleteRecommendationPreferences",
-      "ExportAutoScalingGroupRecommendations",
-      "ExportEBSVolumeRecommendations",
-      "ExportEC2InstanceRecommendations",
-      "ExportECSServiceRecommendations",
-      "ExportLambdaFunctionRecommendations",
-      "PutRecommendationPreferences",
-      "UpdateEnrollmentStatus"
-    ]
+    write                  = [
+    "DeleteRecommendationPreferences",
+    "ExportAutoScalingGroupRecommendations",
+    "ExportEBSVolumeRecommendations",
+    "ExportEC2InstanceRecommendations",
+    "ExportECSServiceRecommendations",
+    "ExportIdleRecommendations",
+    "ExportLambdaFunctionRecommendations",
+    "ExportLicenseRecommendations",
+    "ExportRDSDatabaseRecommendations",
+    "PutRecommendationPreferences",
+    "UpdateEnrollmentStatus"
+]
     permissions_management = []
-    read = [
-      "GetEffectiveRecommendationPreferences",
-      "GetRecommendationPreferences"
-    ]
-    list = [
-      "DescribeRecommendationExportJobs",
-      "GetAutoScalingGroupRecommendations",
-      "GetEBSVolumeRecommendations",
-      "GetEC2InstanceRecommendations",
-      "GetEC2RecommendationProjectedMetrics",
-      "GetECSServiceRecommendationProjectedMetrics",
-      "GetECSServiceRecommendations",
-      "GetEnrollmentStatus",
-      "GetEnrollmentStatusesForOrganization",
-      "GetLambdaFunctionRecommendations",
-      "GetRecommendationSummaries"
-    ]
-    tagging = []
+    read                   = [
+    "GetEffectiveRecommendationPreferences",
+    "GetRecommendationPreferences"
+]
+    list                   = [
+    "DescribeRecommendationExportJobs",
+    "GetAutoScalingGroupRecommendations",
+    "GetEBSVolumeRecommendations",
+    "GetEC2InstanceRecommendations",
+    "GetEC2RecommendationProjectedMetrics",
+    "GetECSServiceRecommendationProjectedMetrics",
+    "GetECSServiceRecommendations",
+    "GetEnrollmentStatus",
+    "GetEnrollmentStatusesForOrganization",
+    "GetIdleRecommendations",
+    "GetLambdaFunctionRecommendations",
+    "GetLicenseRecommendations",
+    "GetRDSDatabaseRecommendationProjectedMetrics",
+    "GetRDSDatabaseRecommendations",
+    "GetRecommendationSummaries"
+]
+    tagging                = []
   }
 }

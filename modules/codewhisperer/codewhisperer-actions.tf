@@ -59,22 +59,33 @@ locals {
   prefix = "codewhisperer"
 
   access_level = {
-    write = [
-      "CreateProfile",
-      "DeleteProfile",
-      "UpdateProfile"
-    ]
-    permissions_management = []
-    read = [
-      "GenerateRecommendations"
-    ]
-    list = [
-      "ListProfiles",
-      "ListTagsForResource"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    write                  = [
+    "AssociateCustomizationPermission",
+    "CreateCustomization",
+    "CreateProfile",
+    "DeleteCustomization",
+    "DeleteProfile",
+    "DisassociateCustomizationPermission",
+    "UpdateCustomization",
+    "UpdateProfile"
+]
+    permissions_management = [
+    "AllowVendedLogDeliveryForResource"
+]
+    read                   = [
+    "GenerateRecommendations",
+    "GetCustomization"
+]
+    list                   = [
+    "ListCustomizationPermissions",
+    "ListCustomizationVersions",
+    "ListCustomizations",
+    "ListProfiles",
+    "ListTagsForResource"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

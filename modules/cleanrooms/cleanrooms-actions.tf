@@ -59,59 +59,100 @@ locals {
   prefix = "cleanrooms"
 
   access_level = {
-    write = [
-      "CreateAnalysisTemplate",
-      "CreateCollaboration",
-      "CreateConfiguredTable",
-      "CreateConfiguredTableAnalysisRule",
-      "CreateConfiguredTableAssociation",
-      "CreateMembership",
-      "DeleteAnalysisTemplate",
-      "DeleteCollaboration",
-      "DeleteConfiguredTable",
-      "DeleteConfiguredTableAnalysisRule",
-      "DeleteConfiguredTableAssociation",
-      "DeleteMember",
-      "DeleteMembership",
-      "StartProtectedQuery",
-      "UpdateAnalysisTemplate",
-      "UpdateCollaboration",
-      "UpdateConfiguredTable",
-      "UpdateConfiguredTableAnalysisRule",
-      "UpdateConfiguredTableAssociation",
-      "UpdateMembership",
-      "UpdateProtectedQuery"
-    ]
+    write                  = [
+    "CreateAnalysisTemplate",
+    "CreateCollaboration",
+    "CreateConfiguredAudienceModelAssociation",
+    "CreateConfiguredTable",
+    "CreateConfiguredTableAnalysisRule",
+    "CreateConfiguredTableAssociation",
+    "CreateConfiguredTableAssociationAnalysisRule",
+    "CreateIdMappingTable",
+    "CreateIdNamespaceAssociation",
+    "CreateMembership",
+    "CreatePrivacyBudgetTemplate",
+    "DeleteAnalysisTemplate",
+    "DeleteCollaboration",
+    "DeleteConfiguredAudienceModelAssociation",
+    "DeleteConfiguredTable",
+    "DeleteConfiguredTableAnalysisRule",
+    "DeleteConfiguredTableAssociation",
+    "DeleteConfiguredTableAssociationAnalysisRule",
+    "DeleteIdMappingTable",
+    "DeleteIdNamespaceAssociation",
+    "DeleteMember",
+    "DeleteMembership",
+    "DeletePrivacyBudgetTemplate",
+    "PopulateIdMappingTable",
+    "StartProtectedJob",
+    "StartProtectedQuery",
+    "UpdateAnalysisTemplate",
+    "UpdateCollaboration",
+    "UpdateConfiguredAudienceModelAssociation",
+    "UpdateConfiguredTable",
+    "UpdateConfiguredTableAnalysisRule",
+    "UpdateConfiguredTableAssociation",
+    "UpdateConfiguredTableAssociationAnalysisRule",
+    "UpdateIdMappingTable",
+    "UpdateIdNamespaceAssociation",
+    "UpdateMembership",
+    "UpdatePrivacyBudgetTemplate",
+    "UpdateProtectedJob",
+    "UpdateProtectedQuery"
+]
     permissions_management = []
-    read = [
-      "BatchGetCollaborationAnalysisTemplate",
-      "BatchGetSchema",
-      "GetAnalysisTemplate",
-      "GetCollaboration",
-      "GetCollaborationAnalysisTemplate",
-      "GetConfiguredTable",
-      "GetConfiguredTableAnalysisRule",
-      "GetConfiguredTableAssociation",
-      "GetMembership",
-      "GetProtectedQuery",
-      "GetSchema",
-      "GetSchemaAnalysisRule"
-    ]
-    list = [
-      "ListAnalysisTemplates",
-      "ListCollaborationAnalysisTemplates",
-      "ListCollaborations",
-      "ListConfiguredTableAssociations",
-      "ListConfiguredTables",
-      "ListMembers",
-      "ListMemberships",
-      "ListProtectedQueries",
-      "ListSchemas",
-      "ListTagsForResource"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "BatchGetCollaborationAnalysisTemplate",
+    "BatchGetSchema",
+    "BatchGetSchemaAnalysisRule",
+    "GetAnalysisTemplate",
+    "GetCollaboration",
+    "GetCollaborationAnalysisTemplate",
+    "GetCollaborationConfiguredAudienceModelAssociation",
+    "GetCollaborationIdNamespaceAssociation",
+    "GetCollaborationPrivacyBudgetTemplate",
+    "GetConfiguredAudienceModelAssociation",
+    "GetConfiguredTable",
+    "GetConfiguredTableAnalysisRule",
+    "GetConfiguredTableAssociation",
+    "GetConfiguredTableAssociationAnalysisRule",
+    "GetIdMappingTable",
+    "GetIdNamespaceAssociation",
+    "GetMembership",
+    "GetPrivacyBudgetTemplate",
+    "GetProtectedJob",
+    "GetProtectedQuery",
+    "GetSchema",
+    "GetSchemaAnalysisRule",
+    "PassCollaboration",
+    "PassMembership",
+    "PreviewPrivacyImpact"
+]
+    list                   = [
+    "ListAnalysisTemplates",
+    "ListCollaborationAnalysisTemplates",
+    "ListCollaborationConfiguredAudienceModelAssociations",
+    "ListCollaborationIdNamespaceAssociations",
+    "ListCollaborationPrivacyBudgetTemplates",
+    "ListCollaborationPrivacyBudgets",
+    "ListCollaborations",
+    "ListConfiguredAudienceModelAssociations",
+    "ListConfiguredTableAssociations",
+    "ListConfiguredTables",
+    "ListIdMappingTables",
+    "ListIdNamespaceAssociations",
+    "ListMembers",
+    "ListMemberships",
+    "ListPrivacyBudgetTemplates",
+    "ListPrivacyBudgets",
+    "ListProtectedJobs",
+    "ListProtectedQueries",
+    "ListSchemas",
+    "ListTagsForResource"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

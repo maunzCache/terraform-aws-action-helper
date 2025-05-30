@@ -59,65 +59,91 @@ locals {
   prefix = "profile"
 
   access_level = {
-    write = [
-      "AddProfileKey",
-      "CreateCalculatedAttributeDefinition",
-      "CreateDomain",
-      "CreateEventStream",
-      "CreateIntegrationWorkflow",
-      "CreateProfile",
-      "DeleteCalculatedAttributeDefinition",
-      "DeleteDomain",
-      "DeleteEventStream",
-      "DeleteIntegration",
-      "DeleteProfile",
-      "DeleteProfileKey",
-      "DeleteProfileObject",
-      "DeleteProfileObjectType",
-      "DeleteWorkflow",
-      "MergeProfiles",
-      "PutIntegration",
-      "PutProfileObject",
-      "PutProfileObjectType",
-      "UpdateCalculatedAttributeDefinition",
-      "UpdateDomain",
-      "UpdateProfile"
-    ]
+    write                  = [
+    "AddProfileKey",
+    "CreateCalculatedAttributeDefinition",
+    "CreateDomain",
+    "CreateDomainLayout",
+    "CreateEventStream",
+    "CreateEventTrigger",
+    "CreateIntegrationWorkflow",
+    "CreateProfile",
+    "CreateSegmentDefinition",
+    "CreateSegmentEstimate",
+    "CreateSegmentSnapshot",
+    "CreateSnapshot",
+    "DeleteCalculatedAttributeDefinition",
+    "DeleteDomain",
+    "DeleteDomainLayout",
+    "DeleteEventStream",
+    "DeleteEventTrigger",
+    "DeleteIntegration",
+    "DeleteProfile",
+    "DeleteProfileKey",
+    "DeleteProfileObject",
+    "DeleteProfileObjectType",
+    "DeleteSegmentDefinition",
+    "DeleteWorkflow",
+    "MergeProfiles",
+    "PutIntegration",
+    "PutProfileObject",
+    "PutProfileObjectType",
+    "UpdateCalculatedAttributeDefinition",
+    "UpdateDomain",
+    "UpdateDomainLayout",
+    "UpdateEventTrigger",
+    "UpdateProfile"
+]
     permissions_management = []
-    read = [
-      "GetAutoMergingPreview",
-      "GetCalculatedAttributeDefinition",
-      "GetCalculatedAttributeForProfile",
-      "GetDomain",
-      "GetEventStream",
-      "GetIdentityResolutionJob",
-      "GetIntegration",
-      "GetProfileObjectType",
-      "GetProfileObjectTypeTemplate",
-      "GetWorkflow",
-      "GetWorkflowSteps",
-      "ListTagsForResource",
-      "SearchProfiles"
-    ]
-    list = [
-      "GetMatches",
-      "GetSimilarProfiles",
-      "ListAccountIntegrations",
-      "ListCalculatedAttributeDefinitions",
-      "ListCalculatedAttributesForProfile",
-      "ListDomains",
-      "ListEventStreams",
-      "ListIdentityResolutionJobs",
-      "ListIntegrations",
-      "ListProfileObjectTypeTemplates",
-      "ListProfileObjectTypes",
-      "ListProfileObjects",
-      "ListRuleBasedMatches",
-      "ListWorkflows"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "BatchGetCalculatedAttributeForProfile",
+    "BatchGetProfile",
+    "DetectProfileObjectType",
+    "GetAutoMergingPreview",
+    "GetCalculatedAttributeDefinition",
+    "GetCalculatedAttributeForProfile",
+    "GetDomain",
+    "GetDomainLayout",
+    "GetEventStream",
+    "GetEventTrigger",
+    "GetIdentityResolutionJob",
+    "GetIntegration",
+    "GetProfileObjectType",
+    "GetProfileObjectTypeTemplate",
+    "GetSegmentDefinition",
+    "GetSegmentEstimate",
+    "GetSegmentMembership",
+    "GetSegmentSnapshot",
+    "GetSnapshot",
+    "GetWorkflow",
+    "GetWorkflowSteps",
+    "ListTagsForResource",
+    "SearchProfiles"
+]
+    list                   = [
+    "GetMatches",
+    "GetSimilarProfiles",
+    "ListAccountIntegrations",
+    "ListCalculatedAttributeDefinitions",
+    "ListCalculatedAttributesForProfile",
+    "ListDomainLayouts",
+    "ListDomains",
+    "ListEventStreams",
+    "ListEventTriggers",
+    "ListIdentityResolutionJobs",
+    "ListIntegrations",
+    "ListObjectTypeAttributes",
+    "ListProfileAttributeValues",
+    "ListProfileObjectTypeTemplates",
+    "ListProfileObjectTypes",
+    "ListProfileObjects",
+    "ListRuleBasedMatches",
+    "ListSegmentDefinitions",
+    "ListWorkflows"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

@@ -59,33 +59,41 @@ locals {
   prefix = "resource-explorer-2"
 
   access_level = {
-    write = [
-      "AssociateDefaultView",
-      "CreateIndex",
-      "CreateView",
-      "DeleteIndex",
-      "DeleteView",
-      "DisassociateDefaultView",
-      "UpdateIndexType",
-      "UpdateView"
-    ]
+    write                  = [
+    "AssociateDefaultView",
+    "CreateIndex",
+    "CreateManagedView",
+    "CreateView",
+    "DeleteIndex",
+    "DeleteResourcePolicy",
+    "DeleteView",
+    "DisassociateDefaultView",
+    "PutResourcePolicy",
+    "UpdateIndexType",
+    "UpdateView"
+]
     permissions_management = []
-    read = [
-      "BatchGetView",
-      "GetDefaultView",
-      "GetIndex",
-      "GetView",
-      "ListTagsForResource",
-      "Search"
-    ]
-    list = [
-      "ListIndexes",
-      "ListSupportedResourceTypes",
-      "ListViews"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "BatchGetView",
+    "GetAccountLevelServiceConfiguration",
+    "GetDefaultView",
+    "GetIndex",
+    "GetManagedView",
+    "GetResourcePolicy",
+    "GetView",
+    "ListTagsForResource",
+    "Search"
+]
+    list                   = [
+    "ListIndexes",
+    "ListIndexesForMembers",
+    "ListManagedViews",
+    "ListSupportedResourceTypes",
+    "ListViews"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

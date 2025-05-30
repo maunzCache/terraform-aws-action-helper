@@ -59,35 +59,52 @@ locals {
   prefix = "codestar-connections"
 
   access_level = {
-    write = [
-      "CreateConnection",
-      "CreateHost",
-      "DeleteConnection",
-      "DeleteHost",
-      "UpdateConnectionInstallation",
-      "UpdateHost"
-    ]
+    write                  = [
+    "CreateConnection",
+    "CreateHost",
+    "CreateRepositoryLink",
+    "CreateSyncConfiguration",
+    "DeleteConnection",
+    "DeleteHost",
+    "DeleteRepositoryLink",
+    "DeleteSyncConfiguration",
+    "UpdateConnectionInstallation",
+    "UpdateHost",
+    "UpdateRepositoryLink",
+    "UpdateSyncBlocker",
+    "UpdateSyncConfiguration"
+]
     permissions_management = []
-    read = [
-      "GetConnection",
-      "GetHost",
-      "GetIndividualAccessToken",
-      "GetInstallationUrl",
-      "PassConnection",
-      "RegisterAppCode",
-      "StartAppRegistrationHandshake",
-      "StartOAuthHandshake",
-      "UseConnection"
-    ]
-    list = [
-      "ListConnections",
-      "ListHosts",
-      "ListInstallationTargets",
-      "ListTagsForResource"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "GetConnection",
+    "GetConnectionToken",
+    "GetHost",
+    "GetIndividualAccessToken",
+    "GetInstallationUrl",
+    "GetRepositoryLink",
+    "GetRepositorySyncStatus",
+    "GetResourceSyncStatus",
+    "GetSyncBlockerSummary",
+    "GetSyncConfiguration",
+    "PassConnection",
+    "PassRepository",
+    "RegisterAppCode",
+    "StartAppRegistrationHandshake",
+    "StartOAuthHandshake",
+    "UseConnection"
+]
+    list                   = [
+    "ListConnections",
+    "ListHosts",
+    "ListInstallationTargets",
+    "ListRepositoryLinks",
+    "ListRepositorySyncDefinitions",
+    "ListSyncConfigurations",
+    "ListTagsForResource"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

@@ -59,31 +59,27 @@ locals {
   prefix = "elemental-appliances-software"
 
   access_level = {
-    write = [
-      "CompleteUpload",
-      "CreateOrderV1",
-      "StartUpload",
-      "SubmitOrderV1",
-      "UpdateQuote"
-    ]
+    write                  = [
+    "CompleteUpload",
+    "CreateOrderV1",
+    "CreateQuote",
+    "StartUpload",
+    "SubmitOrderV1",
+    "UpdateQuote"
+]
     permissions_management = []
-    read = [
-      "GetAvsCorrectAddress",
-      "GetBillingAddresses",
-      "GetDeliveryAddressesV2",
-      "GetOrder",
-      "GetOrdersV2",
-      "GetQuote",
-      "GetTaxes",
-      "ListTagsForResource"
-    ]
-    list = [
-      "ListQuotes"
-    ]
-    tagging = [
-      "CreateQuote",
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "GetAvsCorrectAddress",
+    "GetBillingAddresses",
+    "GetDeliveryAddressesV2",
+    "GetOrder",
+    "GetOrdersV2",
+    "GetQuote",
+    "GetTaxes"
+]
+    list                   = [
+    "ListQuotes"
+]
+    tagging                = []
   }
 }

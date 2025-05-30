@@ -59,48 +59,58 @@ locals {
   prefix = "xray"
 
   access_level = {
-    write = [
-      "CreateGroup",
-      "CreateSamplingRule",
-      "DeleteGroup",
-      "DeleteResourcePolicy",
-      "DeleteSamplingRule",
-      "Link",
-      "PutResourcePolicy",
-      "PutTelemetryRecords",
-      "PutTraceSegments",
-      "UpdateGroup",
-      "UpdateSamplingRule"
-    ]
+    write                  = [
+    "CreateGroup",
+    "CreateSamplingRule",
+    "DeleteGroup",
+    "DeleteResourcePolicy",
+    "DeleteSamplingRule",
+    "Link",
+    "PutResourcePolicy",
+    "PutSpans",
+    "PutSpansForIndexing",
+    "PutTelemetryRecords",
+    "PutTraceSegments",
+    "UpdateGroup",
+    "UpdateIndexingRule",
+    "UpdateSamplingRule",
+    "UpdateTraceSegmentDestination"
+]
     permissions_management = [
-      "PutEncryptionConfig"
-    ]
-    read = [
-      "BatchGetTraceSummaryById",
-      "GetDistinctTraceGraphs",
-      "GetEncryptionConfig",
-      "GetGroup",
-      "GetGroups",
-      "GetInsight",
-      "GetInsightEvents",
-      "GetInsightImpactGraph",
-      "GetInsightSummaries",
-      "GetSamplingRules",
-      "GetSamplingStatisticSummaries",
-      "GetSamplingTargets",
-      "GetServiceGraph",
-      "GetTimeSeriesServiceStatistics",
-      "GetTraceGraph",
-      "GetTraceSummaries"
-    ]
-    list = [
-      "BatchGetTraces",
-      "ListResourcePolicies",
-      "ListTagsForResource"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    "PutEncryptionConfig"
+]
+    read                   = [
+    "BatchGetTraceSummaryById",
+    "CancelTraceRetrieval",
+    "GetDistinctTraceGraphs",
+    "GetEncryptionConfig",
+    "GetGroup",
+    "GetGroups",
+    "GetIndexingRules",
+    "GetInsight",
+    "GetInsightEvents",
+    "GetInsightImpactGraph",
+    "GetInsightSummaries",
+    "GetRetrievedTracesGraph",
+    "GetSamplingRules",
+    "GetSamplingStatisticSummaries",
+    "GetSamplingTargets",
+    "GetServiceGraph",
+    "GetTimeSeriesServiceStatistics",
+    "GetTraceGraph",
+    "GetTraceSegmentDestination",
+    "GetTraceSummaries",
+    "StartTraceRetrieval"
+]
+    list                   = [
+    "BatchGetTraces",
+    "ListResourcePolicies",
+    "ListRetrievedTraces",
+    "ListTagsForResource"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

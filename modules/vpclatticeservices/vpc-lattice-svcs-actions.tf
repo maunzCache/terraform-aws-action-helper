@@ -59,9 +59,10 @@ locals {
   prefix = "vpc-lattice-svcs"
 
   access_level = {
-    write = [
-      "Invoke"
-    ]
+    write                  = [
+    "Connect",
+    "Invoke"
+]
     permissions_management = []
     read                   = []
     list                   = []

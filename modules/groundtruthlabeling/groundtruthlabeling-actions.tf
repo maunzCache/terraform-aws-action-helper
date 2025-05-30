@@ -59,17 +59,28 @@ locals {
   prefix = "groundtruthlabeling"
 
   access_level = {
-    write = [
-      "AssociatePatchToManifestJob",
-      "RunFilterOrSampleDatasetJob",
-      "RunGenerateManifestByCrawlingJob"
-    ]
+    write                  = [
+    "AssociatePatchToManifestJob",
+    "CreateBatch",
+    "CreateIntakeForm",
+    "CreateProject",
+    "CreateWorkflowDefinition",
+    "GenerateLIDARPreviewTaskConfigJob",
+    "RunFilterOrSampleDatasetJob",
+    "RunGenerateManifestByCrawlingJob",
+    "RunGenerateManifestMetricsJob",
+    "UpdateBatch"
+]
     permissions_management = []
-    read = [
-      "DescribeConsoleJob",
-      "ListDatasetObjects"
-    ]
-    list    = []
-    tagging = []
+    read                   = [
+    "DescribeConsoleJob",
+    "GetBatch",
+    "GetIntakeFormStatus",
+    "ListBatches",
+    "ListDatasetObjects",
+    "ListProjects"
+]
+    list                   = []
+    tagging                = []
   }
 }

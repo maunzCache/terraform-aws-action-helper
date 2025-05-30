@@ -59,47 +59,31 @@ locals {
   prefix = "cloudhsm"
 
   access_level = {
-    write = [
-      "CopyBackupToRegion",
-      "CreateCluster",
-      "CreateHapg",
-      "CreateHsm",
-      "CreateLunaClient",
-      "DeleteBackup",
-      "DeleteCluster",
-      "DeleteHapg",
-      "DeleteHsm",
-      "DeleteLunaClient",
-      "InitializeCluster",
-      "ModifyBackupAttributes",
-      "ModifyCluster",
-      "ModifyHapg",
-      "ModifyHsm",
-      "ModifyLunaClient",
-      "RestoreBackup"
-    ]
+    write                  = [
+    "CopyBackupToRegion",
+    "CreateCluster",
+    "CreateHsm",
+    "DeleteBackup",
+    "DeleteCluster",
+    "DeleteHsm",
+    "DeleteResourcePolicy",
+    "InitializeCluster",
+    "ModifyBackupAttributes",
+    "ModifyCluster",
+    "PutResourcePolicy",
+    "RestoreBackup"
+]
     permissions_management = []
-    read = [
-      "DescribeBackups",
-      "DescribeClusters",
-      "DescribeHapg",
-      "DescribeHsm",
-      "DescribeLunaClient",
-      "GetConfig",
-      "ListTags",
-      "ListTagsForResource"
-    ]
-    list = [
-      "ListAvailableZones",
-      "ListHapgs",
-      "ListHsms",
-      "ListLunaClients"
-    ]
-    tagging = [
-      "AddTagsToResource",
-      "RemoveTagsFromResource",
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "DescribeBackups",
+    "DescribeClusters",
+    "GetResourcePolicy",
+    "ListTags"
+]
+    list                   = []
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

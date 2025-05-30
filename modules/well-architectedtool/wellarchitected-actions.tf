@@ -59,70 +59,87 @@ locals {
   prefix = "wellarchitected"
 
   access_level = {
-    write = [
-      "AssociateLenses",
-      "AssociateProfiles",
-      "CreateLensShare",
-      "CreateLensVersion",
-      "CreateMilestone",
-      "CreateProfile",
-      "CreateProfileShare",
-      "CreateWorkload",
-      "CreateWorkloadShare",
-      "DeleteLens",
-      "DeleteLensShare",
-      "DeleteProfile",
-      "DeleteProfileShare",
-      "DeleteWorkload",
-      "DeleteWorkloadShare",
-      "DisassociateLenses",
-      "DisassociateProfiles",
-      "ImportLens",
-      "UpdateAnswer",
-      "UpdateGlobalSettings",
-      "UpdateLensReview",
-      "UpdateProfile",
-      "UpdateShareInvitation",
-      "UpdateWorkload",
-      "UpdateWorkloadShare",
-      "UpgradeLensReview",
-      "UpgradeProfileVersion"
-    ]
+    write                  = [
+    "AssociateLenses",
+    "AssociateProfiles",
+    "ConfigureIntegration",
+    "CreateLensShare",
+    "CreateLensVersion",
+    "CreateMilestone",
+    "CreateProfile",
+    "CreateProfileShare",
+    "CreateReviewTemplate",
+    "CreateTemplateShare",
+    "CreateWorkload",
+    "CreateWorkloadShare",
+    "DeleteLens",
+    "DeleteLensShare",
+    "DeleteProfile",
+    "DeleteProfileShare",
+    "DeleteReviewTemplate",
+    "DeleteTemplateShare",
+    "DeleteWorkload",
+    "DeleteWorkloadShare",
+    "DisassociateLenses",
+    "DisassociateProfiles",
+    "ImportLens",
+    "UpdateAnswer",
+    "UpdateGlobalSettings",
+    "UpdateIntegration",
+    "UpdateLensReview",
+    "UpdateProfile",
+    "UpdateReviewTemplate",
+    "UpdateReviewTemplateAnswer",
+    "UpdateReviewTemplateLensReview",
+    "UpdateShareInvitation",
+    "UpdateWorkload",
+    "UpdateWorkloadShare",
+    "UpgradeLensReview",
+    "UpgradeProfileVersion",
+    "UpgradeReviewTemplateLensReview"
+]
     permissions_management = []
-    read = [
-      "ExportLens",
-      "GetAnswer",
-      "GetConsolidatedReport",
-      "GetLens",
-      "GetLensReview",
-      "GetLensReviewReport",
-      "GetLensVersionDifference",
-      "GetMilestone",
-      "GetProfile",
-      "GetProfileTemplate",
-      "GetWorkload",
-      "ListTagsForResource"
-    ]
-    list = [
-      "ListAnswers",
-      "ListCheckDetails",
-      "ListCheckSummaries",
-      "ListLensReviewImprovements",
-      "ListLensReviews",
-      "ListLensShares",
-      "ListLenses",
-      "ListMilestones",
-      "ListNotifications",
-      "ListProfileNotifications",
-      "ListProfileShares",
-      "ListProfiles",
-      "ListShareInvitations",
-      "ListWorkloadShares",
-      "ListWorkloads"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "ExportLens",
+    "GetAnswer",
+    "GetConsolidatedReport",
+    "GetGlobalSettings",
+    "GetLens",
+    "GetLensReview",
+    "GetLensReviewReport",
+    "GetLensVersionDifference",
+    "GetMilestone",
+    "GetProfile",
+    "GetProfileTemplate",
+    "GetReviewTemplate",
+    "GetReviewTemplateAnswer",
+    "GetReviewTemplateLensReview",
+    "GetWorkload",
+    "ListTagsForResource"
+]
+    list                   = [
+    "ListAnswers",
+    "ListCheckDetails",
+    "ListCheckSummaries",
+    "ListLensReviewImprovements",
+    "ListLensReviews",
+    "ListLensShares",
+    "ListLenses",
+    "ListMilestones",
+    "ListNotifications",
+    "ListProfileNotifications",
+    "ListProfileShares",
+    "ListProfiles",
+    "ListReviewTemplateAnswers",
+    "ListReviewTemplates",
+    "ListShareInvitations",
+    "ListTemplateShares",
+    "ListWorkloadShares",
+    "ListWorkloads"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

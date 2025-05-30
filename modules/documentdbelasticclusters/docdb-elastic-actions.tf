@@ -59,27 +59,33 @@ locals {
   prefix = "docdb-elastic"
 
   access_level = {
-    write = [
-      "CreateCluster",
-      "CreateClusterSnapshot",
-      "DeleteCluster",
-      "DeleteClusterSnapshot",
-      "RestoreClusterFromSnapshot",
-      "UpdateCluster"
-    ]
+    write                  = [
+    "ApplyPendingMaintenanceAction",
+    "CopyClusterSnapshot",
+    "CreateCluster",
+    "CreateClusterSnapshot",
+    "DeleteCluster",
+    "DeleteClusterSnapshot",
+    "RestoreClusterFromSnapshot",
+    "StartCluster",
+    "StopCluster",
+    "UpdateCluster"
+]
     permissions_management = []
-    read = [
-      "GetCluster",
-      "GetClusterSnapshot"
-    ]
-    list = [
-      "ListClusterSnapshots",
-      "ListClusters",
-      "ListTagsForResource"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "GetCluster",
+    "GetClusterSnapshot",
+    "GetPendingMaintenanceAction"
+]
+    list                   = [
+    "ListClusterSnapshots",
+    "ListClusters",
+    "ListPendingMaintenanceActions",
+    "ListTagsForResource"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

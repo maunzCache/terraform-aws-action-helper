@@ -59,48 +59,53 @@ locals {
   prefix = "states"
 
   access_level = {
-    write = [
-      "CreateActivity",
-      "CreateStateMachine",
-      "CreateStateMachineAlias",
-      "DeleteActivity",
-      "DeleteStateMachine",
-      "DeleteStateMachineAlias",
-      "DeleteStateMachineVersion",
-      "GetActivityTask",
-      "PublishStateMachineVersion",
-      "SendTaskFailure",
-      "SendTaskHeartbeat",
-      "SendTaskSuccess",
-      "StartExecution",
-      "StartSyncExecution",
-      "StopExecution",
-      "UpdateMapRun",
-      "UpdateStateMachine",
-      "UpdateStateMachineAlias"
-    ]
+    write                  = [
+    "CreateActivity",
+    "CreateStateMachine",
+    "CreateStateMachineAlias",
+    "DeleteActivity",
+    "DeleteStateMachine",
+    "DeleteStateMachineAlias",
+    "DeleteStateMachineVersion",
+    "GetActivityTask",
+    "InvokeHTTPEndpoint",
+    "PublishStateMachineVersion",
+    "RedriveExecution",
+    "SendTaskFailure",
+    "SendTaskHeartbeat",
+    "SendTaskSuccess",
+    "StartExecution",
+    "StartSyncExecution",
+    "StopExecution",
+    "TestState",
+    "UpdateMapRun",
+    "UpdateStateMachine",
+    "UpdateStateMachineAlias"
+]
     permissions_management = []
-    read = [
-      "DescribeActivity",
-      "DescribeExecution",
-      "DescribeMapRun",
-      "DescribeStateMachine",
-      "DescribeStateMachineAlias",
-      "DescribeStateMachineForExecution",
-      "GetExecutionHistory"
-    ]
-    list = [
-      "ListActivities",
-      "ListExecutions",
-      "ListMapRuns",
-      "ListStateMachineAliases",
-      "ListStateMachineVersions",
-      "ListStateMachines",
-      "ListTagsForResource"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "DescribeActivity",
+    "DescribeExecution",
+    "DescribeMapRun",
+    "DescribeStateMachine",
+    "DescribeStateMachineAlias",
+    "DescribeStateMachineForExecution",
+    "GetExecutionHistory",
+    "RevealSecrets",
+    "ValidateStateMachineDefinition"
+]
+    list                   = [
+    "ListActivities",
+    "ListExecutions",
+    "ListMapRuns",
+    "ListStateMachineAliases",
+    "ListStateMachineVersions",
+    "ListStateMachines",
+    "ListTagsForResource"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

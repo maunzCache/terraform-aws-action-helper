@@ -59,54 +59,79 @@ locals {
   prefix = "redshift-serverless"
 
   access_level = {
-    write = [
-      "ConvertRecoveryPointToSnapshot",
-      "CreateEndpointAccess",
-      "CreateNamespace",
-      "CreateSnapshot",
-      "CreateUsageLimit",
-      "CreateWorkgroup",
-      "DeleteEndpointAccess",
-      "DeleteNamespace",
-      "DeleteResourcePolicy",
-      "DeleteSnapshot",
-      "DeleteUsageLimit",
-      "DeleteWorkgroup",
-      "GetCredentials",
-      "PutResourcePolicy",
-      "RestoreFromRecoveryPoint",
-      "RestoreFromSnapshot",
-      "RestoreTableFromSnapshot",
-      "UpdateEndpointAccess",
-      "UpdateNamespace",
-      "UpdateSnapshot",
-      "UpdateUsageLimit",
-      "UpdateWorkgroup"
-    ]
+    write                  = [
+    "ConvertRecoveryPointToSnapshot",
+    "CreateCustomDomainAssociation",
+    "CreateEndpointAccess",
+    "CreateNamespace",
+    "CreateReservation",
+    "CreateScheduledAction",
+    "CreateSnapshot",
+    "CreateSnapshotCopyConfiguration",
+    "CreateUsageLimit",
+    "CreateWorkgroup",
+    "DeleteCustomDomainAssociation",
+    "DeleteEndpointAccess",
+    "DeleteNamespace",
+    "DeleteResourcePolicy",
+    "DeleteScheduledAction",
+    "DeleteSnapshot",
+    "DeleteSnapshotCopyConfiguration",
+    "DeleteUsageLimit",
+    "DeleteWorkgroup",
+    "GetCredentials",
+    "PutResourcePolicy",
+    "RestoreFromRecoveryPoint",
+    "RestoreFromSnapshot",
+    "RestoreTableFromRecoveryPoint",
+    "RestoreTableFromSnapshot",
+    "UpdateCustomDomainAssociation",
+    "UpdateEndpointAccess",
+    "UpdateNamespace",
+    "UpdateScheduledAction",
+    "UpdateSnapshot",
+    "UpdateSnapshotCopyConfiguration",
+    "UpdateUsageLimit",
+    "UpdateWorkgroup"
+]
     permissions_management = []
-    read = [
-      "GetEndpointAccess",
-      "GetNamespace",
-      "GetRecoveryPoint",
-      "GetResourcePolicy",
-      "GetSnapshot",
-      "GetTableRestoreStatus",
-      "GetUsageLimit",
-      "GetWorkgroup"
-    ]
-    list = [
-      "ListEndpointAccess",
-      "ListNamespaces",
-      "ListRecoveryPoints",
-      "ListSnapshots",
-      "ListTableRestoreStatus",
-      "ListTagsForResource",
-      "ListUsageLimits",
-      "ListWorkgroups"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "DescribeOneTimeCredit",
+    "GetCustomDomainAssociation",
+    "GetEndpointAccess",
+    "GetManagedWorkgroup",
+    "GetNamespace",
+    "GetRecoveryPoint",
+    "GetReservation",
+    "GetReservationOffering",
+    "GetResourcePolicy",
+    "GetScheduledAction",
+    "GetSnapshot",
+    "GetTableRestoreStatus",
+    "GetTrack",
+    "GetUsageLimit",
+    "GetWorkgroup"
+]
+    list                   = [
+    "ListCustomDomainAssociations",
+    "ListEndpointAccess",
+    "ListManagedWorkgroups",
+    "ListNamespaces",
+    "ListRecoveryPoints",
+    "ListReservationOfferings",
+    "ListReservations",
+    "ListScheduledActions",
+    "ListSnapshotCopyConfigurations",
+    "ListSnapshots",
+    "ListTableRestoreStatus",
+    "ListTagsForResource",
+    "ListTracks",
+    "ListUsageLimits",
+    "ListWorkgroups"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

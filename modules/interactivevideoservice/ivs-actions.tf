@@ -59,56 +59,82 @@ locals {
   prefix = "ivs"
 
   access_level = {
-    write = [
-      "BatchStartViewerSessionRevocation",
-      "CreateChannel",
-      "CreateParticipantToken",
-      "CreateRecordingConfiguration",
-      "CreateStage",
-      "CreateStreamKey",
-      "DeleteChannel",
-      "DeletePlaybackKeyPair",
-      "DeleteRecordingConfiguration",
-      "DeleteStage",
-      "DeleteStreamKey",
-      "DisconnectParticipant",
-      "ImportPlaybackKeyPair",
-      "PutMetadata",
-      "StartViewerSessionRevocation",
-      "StopStream",
-      "UpdateChannel",
-      "UpdateStage"
-    ]
+    write                  = [
+    "BatchStartViewerSessionRevocation",
+    "CreateChannel",
+    "CreateEncoderConfiguration",
+    "CreateIngestConfiguration",
+    "CreateParticipantToken",
+    "CreatePlaybackRestrictionPolicy",
+    "CreateRecordingConfiguration",
+    "CreateStage",
+    "CreateStorageConfiguration",
+    "CreateStreamKey",
+    "DeleteChannel",
+    "DeleteEncoderConfiguration",
+    "DeleteIngestConfiguration",
+    "DeletePlaybackKeyPair",
+    "DeletePlaybackRestrictionPolicy",
+    "DeletePublicKey",
+    "DeleteRecordingConfiguration",
+    "DeleteStage",
+    "DeleteStorageConfiguration",
+    "DeleteStreamKey",
+    "DisconnectParticipant",
+    "ImportPlaybackKeyPair",
+    "ImportPublicKey",
+    "PutMetadata",
+    "StartComposition",
+    "StartViewerSessionRevocation",
+    "StopComposition",
+    "StopStream",
+    "UpdateChannel",
+    "UpdateIngestConfiguration",
+    "UpdatePlaybackRestrictionPolicy",
+    "UpdateStage"
+]
     permissions_management = []
-    read = [
-      "BatchGetChannel",
-      "BatchGetStreamKey",
-      "GetChannel",
-      "GetParticipant",
-      "GetPlaybackKeyPair",
-      "GetRecordingConfiguration",
-      "GetStage",
-      "GetStageSession",
-      "GetStream",
-      "GetStreamKey",
-      "GetStreamSession",
-      "ListTagsForResource"
-    ]
-    list = [
-      "ListChannels",
-      "ListParticipantEvents",
-      "ListParticipants",
-      "ListPlaybackKeyPairs",
-      "ListRecordingConfigurations",
-      "ListStageSessions",
-      "ListStages",
-      "ListStreamKeys",
-      "ListStreamSessions",
-      "ListStreams"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "BatchGetChannel",
+    "BatchGetStreamKey",
+    "GetChannel",
+    "GetComposition",
+    "GetEncoderConfiguration",
+    "GetIngestConfiguration",
+    "GetParticipant",
+    "GetPlaybackKeyPair",
+    "GetPlaybackRestrictionPolicy",
+    "GetPublicKey",
+    "GetRecordingConfiguration",
+    "GetStage",
+    "GetStageSession",
+    "GetStorageConfiguration",
+    "GetStream",
+    "GetStreamKey",
+    "GetStreamSession",
+    "ListTagsForResource"
+]
+    list                   = [
+    "ListChannels",
+    "ListCompositions",
+    "ListEncoderConfigurations",
+    "ListIngestConfigurations",
+    "ListParticipantEvents",
+    "ListParticipants",
+    "ListPlaybackKeyPairs",
+    "ListPlaybackRestrictionPolicies",
+    "ListPublicKeys",
+    "ListRecordingConfigurations",
+    "ListStageSessions",
+    "ListStages",
+    "ListStorageConfigurations",
+    "ListStreamKeys",
+    "ListStreamSessions",
+    "ListStreams"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

@@ -59,15 +59,24 @@ locals {
   prefix = "license-manager-linux-subscriptions"
 
   access_level = {
-    write = [
-      "GetServiceSettings",
-      "ListLinuxSubscriptionInstances",
-      "ListLinuxSubscriptions",
-      "UpdateServiceSettings"
-    ]
+    write                  = [
+    "DeregisterSubscriptionProvider",
+    "RegisterSubscriptionProvider",
+    "UpdateServiceSettings"
+]
     permissions_management = []
-    read                   = []
+    read                   = [
+    "GetRegisteredSubscriptionProvider",
+    "GetServiceSettings",
+    "ListLinuxSubscriptionInstances",
+    "ListLinuxSubscriptions",
+    "ListRegisteredSubscriptionProviders",
+    "ListTagsForResource"
+]
     list                   = []
-    tagging                = []
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

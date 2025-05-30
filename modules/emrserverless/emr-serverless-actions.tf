@@ -59,29 +59,32 @@ locals {
   prefix = "emr-serverless"
 
   access_level = {
-    write = [
-      "CancelJobRun",
-      "CreateApplication",
-      "DeleteApplication",
-      "StartApplication",
-      "StartJobRun",
-      "StopApplication",
-      "UpdateApplication"
-    ]
+    write                  = [
+    "AccessInteractiveEndpoints",
+    "AccessLivyEndpoints",
+    "CancelJobRun",
+    "CreateApplication",
+    "DeleteApplication",
+    "StartApplication",
+    "StartJobRun",
+    "StopApplication",
+    "UpdateApplication"
+]
     permissions_management = []
-    read = [
-      "GetApplication",
-      "GetDashboardForJobRun",
-      "GetJobRun",
-      "ListTagsForResource"
-    ]
-    list = [
-      "ListApplications",
-      "ListJobRuns"
-    ]
-    tagging = [
-      "TagResource",
-      "UntagResource"
-    ]
+    read                   = [
+    "GetApplication",
+    "GetDashboardForJobRun",
+    "GetJobRun",
+    "ListTagsForResource"
+]
+    list                   = [
+    "ListApplications",
+    "ListJobRunAttempts",
+    "ListJobRuns"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

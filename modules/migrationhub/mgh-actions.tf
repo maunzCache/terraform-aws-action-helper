@@ -59,33 +59,60 @@ locals {
   prefix = "mgh"
 
   access_level = {
-    write = [
-      "AssociateCreatedArtifact",
-      "AssociateDiscoveredResource",
-      "CreateHomeRegionControl",
-      "CreateProgressUpdateStream",
-      "DeleteProgressUpdateStream",
-      "DisassociateCreatedArtifact",
-      "DisassociateDiscoveredResource",
-      "ImportMigrationTask",
-      "NotifyApplicationState",
-      "NotifyMigrationTaskState",
-      "PutResourceAttributes"
-    ]
+    write                  = [
+    "AcceptConnection",
+    "AssociateAutomationUnitRole",
+    "AssociateCreatedArtifact",
+    "AssociateDiscoveredResource",
+    "AssociateSourceResource",
+    "BatchAssociateIamRoleWithConnection",
+    "BatchDisassociateIamRoleFromConnection",
+    "CreateAutomationRun",
+    "CreateAutomationUnit",
+    "CreateHomeRegionControl",
+    "CreateProgressUpdateStream",
+    "DeleteAutomationRun",
+    "DeleteAutomationUnit",
+    "DeleteConnection",
+    "DeleteHomeRegionControl",
+    "DeleteProgressUpdateStream",
+    "DisassociateAutomationUnitRole",
+    "DisassociateCreatedArtifact",
+    "DisassociateDiscoveredResource",
+    "DisassociateSourceResource",
+    "ImportMigrationTask",
+    "NotifyApplicationState",
+    "NotifyMigrationTaskState",
+    "PutResourceAttributes",
+    "RejectConnection"
+]
     permissions_management = []
-    read = [
-      "DescribeApplicationState",
-      "DescribeMigrationTask",
-      "GetHomeRegion"
-    ]
-    list = [
-      "DescribeHomeRegionControls",
-      "ListApplicationStates",
-      "ListCreatedArtifacts",
-      "ListDiscoveredResources",
-      "ListMigrationTasks",
-      "ListProgressUpdateStreams"
-    ]
-    tagging = []
+    read                   = [
+    "DescribeApplicationState",
+    "DescribeAutomationRun",
+    "DescribeAutomationUnit",
+    "DescribeMigrationTask",
+    "GetConnection",
+    "GetHomeRegion"
+]
+    list                   = [
+    "DescribeHomeRegionControls",
+    "ListApplicationStates",
+    "ListAutomationRuns",
+    "ListAutomationUnits",
+    "ListConnectionRoles",
+    "ListConnections",
+    "ListCreatedArtifacts",
+    "ListDiscoveredResources",
+    "ListMigrationTaskUpdates",
+    "ListMigrationTasks",
+    "ListProgressUpdateStreams",
+    "ListSourceResources",
+    "ListTagsForResource"
+]
+    tagging                = [
+    "TagResource",
+    "UntagResource"
+]
   }
 }

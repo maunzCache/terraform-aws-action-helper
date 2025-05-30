@@ -59,23 +59,29 @@ locals {
   prefix = "artifact"
 
   access_level = {
-    write = [
-      "AcceptAgreement",
-      "PutAccountSettings",
-      "TerminateAgreement"
-    ]
+    write                  = [
+    "AcceptAgreement",
+    "AcceptNdaForAgreement",
+    "PutAccountSettings",
+    "TerminateAgreement"
+]
     permissions_management = []
-    read = [
-      "DownloadAgreement",
-      "Get",
-      "GetAccountSettings",
-      "GetReport",
-      "GetReportMetadata",
-      "GetTermForReport"
-    ]
-    list = [
-      "ListReports"
-    ]
-    tagging = []
+    read                   = [
+    "DownloadAgreement",
+    "Get",
+    "GetAccountSettings",
+    "GetAgreement",
+    "GetCustomerAgreement",
+    "GetNdaForAgreement",
+    "GetReport",
+    "GetReportMetadata",
+    "GetTermForReport"
+]
+    list                   = [
+    "ListAgreements",
+    "ListCustomerAgreements",
+    "ListReports"
+]
+    tagging                = []
   }
 }
